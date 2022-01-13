@@ -1,6 +1,10 @@
 state={
 	id=254
 	name="Cornwall"
+		history = {
+		owner = NUL
+		controller = NUL
+		}
 	provinces={
 		3878 6770 7003 9328 13321 13347 13436 13460 
 	}

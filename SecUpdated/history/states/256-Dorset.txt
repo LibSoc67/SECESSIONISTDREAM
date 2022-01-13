@@ -1,6 +1,10 @@
 state={
 	id=256
 	name="Dorset"
+		history = {
+		owner = NUL
+		controller = NUL
+		}
 	provinces={
 		7736 10347 13358 13388 13401 
 	}
