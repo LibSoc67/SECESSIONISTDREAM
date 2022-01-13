@@ -460,13 +460,13 @@
 		
 		
 		available = { 
-		ADA = {has_faction = yes}
+		ADA = {is_in_faction = yes}
 				}
 		bypass = {
 		}
 		
 		cost = 10		
-		prerequisite = {focus = cat_dem_15 focus = cat_dem_16}
+		prerequisite = {focus = cat_dem_14 focus = cat_dem_16}
 		relative_position_id = cat_dem_12
 		cancel_if_invalid = yes
 		continue_if_invalid = no
