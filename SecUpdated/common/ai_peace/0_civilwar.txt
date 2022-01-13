@@ -1,1 +1,5 @@
+# Default Logic behaviour that the AI will fallback on if they are in a civil war
+# Should focus on getting the nation united again no matter their ideology
+# Written by Henrik "Groogy" Hansson
+
 civilwar_peace = {
