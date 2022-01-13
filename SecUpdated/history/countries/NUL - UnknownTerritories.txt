@@ -1,2 +1,3 @@
 ﻿capital = 1
-add_ideas = nullidea
+add_ideas = NUL_idea
+
