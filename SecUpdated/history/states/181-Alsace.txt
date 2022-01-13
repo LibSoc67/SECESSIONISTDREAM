@@ -1,0 +1,28 @@
+
+state={
+	id=181
+	name="Friesland"
+	provinces={
+		736 7006 9486 12894 12924 17370 17371 17372 17373 
+	}
+	history={
+		owner = FRI
+		add_core_of = FRI
+		victory_points = {
+		7006 10	
+		}
+		victory_points = {
+		9486 3	
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+			docyard = 1
+		}
+
+	}
+	manpower=412982
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,154 @@
+﻿capital = 93
+
+oob = "CAV_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_mountaineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	fighter1 = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+	fuel_silos = 1
+	motorised_infantry = 1
+}
+set_research_slots = 3
+set_convoys = 20
+recruit_character = CAV_wenceslao_carrillo
+recruit_character = CAV_jose_maria_gilrobles
+recruit_character = CAV_divided_state
+recruit_character = CAV_francesc_cambó_i_batlle
+recruit_character = CAV_juan_yague
+recruit_character = CAV_emilio_esteban
+recruit_character = CAV_gonzalo_queipo_de_llano
+recruit_character = CAV_emilio_mola
+recruit_character = CAV_onesimo_redondo
+recruit_character = CAV_ramled
+recruit_character = CAV_rafsan
+recruit_character = CAV_alfgar
+recruit_character = CAV_pilpri
+recruit_character = CAV_raifer
+recruit_character = CAV_ramled
+recruit_character = CAV_rafsan
+recruit_character = CAV_alfgar
+recruit_character = CAV_pilpri
+recruit_character = CAV_raifer
+recruit_character = CAV_manu
+recruit_character = CAV_usencio
+recruit_character = CAV_tejera
+recruit_character = CAV_naval_strike_aviation_council
+recruit_character = CAV_close_aviation_council
+recruit_character = CAV_alcaide
+recruit_character = CAV_calvo
+recruit_character = theorist_navy_generic_SP
+recruit_character = theorist_army_generic_SP
+recruit_character = theorist_air_generic_SP
+
+
+1939.1.1 = {
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	set_technology = {
+
+		#doctrines
+		grand_battle_plan = 1
+		trench_warfare = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+set_politics = {
+	ruling_party = fascism
+	last_election = "1934.4.2"
+	election_frequency = 24
+	elections_allowed = no
+	
+}
+set_popularities = {
+	democratic = 24
+	fascism = 46
+	communism = 2
+	mlism = 8
+	neutrality = 17
+	anarchy = 3
+}
+
+create_faction = "Castilla sphere"
+add_to_faction = CAV
+set_party_name = { 
+    ideology = communism 
+    long_name = "Partido Marxista de Castilla"
+    name = "PMC"
+}
+set_party_name = { 
+    ideology = neutrality 
+    long_name = "Borbones"
+    name = "Borbones"
+}				
+set_party_name = { 
+    ideology = democratic 
+    long_name = "Unión Democrática"
+    name = "UD"
+}				
+set_party_name = { 
+    ideology = fascism 
+    long_name = Falange_Castellana
+    name = FC
+}
+add_ideas = {
+	extensive_conscription
+	partial_economic_mobilisation
+	castilla_nationalism
+	casimp
+	cav_unifiers
+	cav_infra
+}
+
+
+
+create_equipment_variant = {
+		name = "Nueva España I"
+		type = light_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_auto_cannon
+			turret_type_slot = tank_light_two_man_tank_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 3
+			tank_nsb_armor_upgrade = 2
+		}
+		icon = "gfx/interface/technologies/ger_imp_light_tank.dds"
+	}

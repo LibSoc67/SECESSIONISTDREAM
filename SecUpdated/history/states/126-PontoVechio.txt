@@ -1,0 +1,29 @@
+
+state={
+	id=126
+	name="Ponto Vechio"
+	provinces={
+		2935 15890 15969 
+	}
+	history={
+		owner = COR
+		add_core_of = COR
+		victory_points = {
+		15890 3
+		}
+		victory_points = {
+		15969 3
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			dockyard = 1
+			15890 = {
+				naval_base = 1
+			}
+		}
+	}
+	state_category=rural
+	manpower=39521
+	buildings_max_level_factor=1.000
+}

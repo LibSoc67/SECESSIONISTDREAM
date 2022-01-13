@@ -1,0 +1,35 @@
+
+state={
+	id=61
+	name="Madrid"
+resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=12.000
+		oil=0.000
+		chromium=0.000
+		aluminium=36.000
+	}
+	history={
+		owner = MDR
+		add_core_of = MDR
+		victory_points = {
+			15957 50 
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 4
+			industrial_complex = 4
+			air_base = 7
+
+		}
+
+	}
+
+	provinces={
+	2947 3603 4111 7588 9090 15770 15796 15834 15893 15956 15957 15983 16002 
+	}
+	manpower=1463984
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

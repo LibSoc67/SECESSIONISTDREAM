@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=53
+	name="Albanian Adriatic"
+	provinces={
+		17499 17661 17696 17781 18294 18477 18577 18946 18953 
+	}
+	naval_terrain=water_fjords
+	weather={
+	}
+}

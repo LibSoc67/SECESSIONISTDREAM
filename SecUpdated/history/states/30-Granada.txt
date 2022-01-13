@@ -1,0 +1,35 @@
+
+state={
+	id=30
+	name="Granada"
+	provinces={
+		5077 7471 9796 11214 11319 16563 16594 16599 16603 16608 
+	}
+	resources={
+		rubber=0.000
+		tungsten=3.000
+		steel=16.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+	set_demilitarized_zone = yes
+		owner = ADA
+		add_core_of = ADA
+		add_core_of = GRA
+		victory_points = {
+		11214 16	
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 3
+			 
+		}
+	}
+	state_category=town
+	manpower=443093
+	buildings_max_level_factor=1.000
+}

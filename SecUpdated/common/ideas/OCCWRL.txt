@@ -1,0 +1,570 @@
+ideas = {
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ RHO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#	
+country = {
+		rhoanar1 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			conscription = 0.03
+			}
+			}
+			
+			}			
+	country = {
+		rhocom1 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			conscription = 0.01
+			army_org_factor = 0.07
+			}
+			}
+			}
+	
+	########################################## - AUV - ############################
+	country = {
+		auvfas1 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			political_power_gain = 0.1
+			fascism_drift = 0.05
+			conscription = 0.01
+			}
+			}
+			}			
+		
+country = {
+		auvfas2 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			conscription = 0.01
+			army_core_defence_factor = 0.05
+			}
+			}
+			}
+
+
+######################################################### RHO & AUV ############################################################
+country = {
+1934_rhoauv1 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			political_power_gain = -0.1
+			stability_factor = -0.05
+			war_support_factor = -0.05
+			}
+			}
+			}
+	country = {
+1934_rhoauv2 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			political_power_gain = 0.1
+			stability_factor = 0.05
+			war_support_factor = 0.05
+			}
+			}
+			}
+######################################################### AQU ####################################################################
+country = {
+		aqudem1 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			political_power_gain = 0.1
+			democratic_drift = 0.1
+			}
+			}
+			}			
+	
+country = {
+		aqufas1 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			political_power_gain = 0.1
+			fascism_drift = 0.1
+			}
+			}
+			}			
+	country = {
+		aquforking = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			army_org_factor = 0.03
+			army_core_defence_factor = 0.03
+			industrial_capacity_factory = 0.03
+			}
+			}
+			}
+	country = {
+		aquconscription = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			conscription = 0.015
+			}
+			}
+			}		
+################################# - PRO - ##################################################
+
+country = {
+		pro_free = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			army_org_factor = 0.07
+			army_core_defence_factor = 0.06
+			}
+			}
+			}
+			
+############################## - LANGUEDOC - ######################################
+country = {
+		lan1 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			army_core_defence_factor = 0.1
+			}
+			}
+			}
+country = {
+		lan2 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			political_power_gain = -0.5
+			stability_factor = -0.5
+			offence = -0.5
+			defence = -0.5
+			army_org = -0.3
+			army_morale = -0.3
+			}
+			}
+			}
+country = {
+		lan3 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			political_power_gain = -0.15
+			stability_factor = -0.2
+			conscription_factor = -0.50
+			production_speed_buildings_factor = -0.1
+			}
+			}
+			}			
+country = {
+		lan4 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			political_power_gain = -0.10
+			stability_factor = -0.15
+			conscription_factor = -0.30
+			}
+			}
+			}			
+country = {
+		lan5 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			political_power_gain = -0.05
+			stability_factor = -0.1
+			conscription_factor = -0.15
+			}
+			}
+			}
+country = {
+		lan6 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			stability_factor = -0.1
+			fascism_drift = 0.05
+			}
+			}
+			}			
+country = {
+		lan7 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			stability_factor = 0.1
+			neutrality_drift = 0.1
+			political_power_gain = 0.1
+			
+			}
+			}
+			}	
+
+country = {
+		lan8 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			army_core_defence_factor = 0.07
+			
+			}
+			}
+			}			
+country = {
+		lan9 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			army_core_defence_factor = 0.07
+			production_speed_buildings_factor = 0.04
+			industrial_capacity_factory = 0.03
+			}
+			}
+			}			
+political_advisor = {
+LAN_adv3 = {
+		name = "Nolan Plessis"		
+		picture = occadv3
+		allowed = {
+				original_tag = LAN
+				NOT = {
+					has_available_idea_with_traits = { idea = occ_nationalist  limit = 1 }
+			}
+			}
+		visible = {
+		has_country_flag = lantak2
+		}
+			traits = {occ_nationalist}
+		}
+LAN_adv4 = {
+		name = "Mehdi Thibaut"		
+		picture = occadv4
+		allowed = {
+				original_tag = LAN
+				NOT = {
+					has_available_idea_with_traits = { idea = occ_miner limit = 1 }
+			}
+			}
+		visible = {
+		has_country_flag = lantak2
+		}
+			traits = {occ_miner}
+		}
+LAN_adv1 = {
+		name = "Stephen Lévêque"		
+		picture = lanadv1
+		allowed = {
+				original_tag = LAN
+				NOT = {
+					has_available_idea_with_traits = { idea = ambitious_negotiator_fascism limit = 1 }
+			}
+			}
+			traits = {ambitious_negotiator_fascism}
+		}
+LAN_adv2 = {
+		name = "Hugo Pelletier"		
+		picture = lanadv2
+		allowed = {
+				original_tag = LAN
+				NOT = {
+					has_available_idea_with_traits = { idea = freedom_fighter limit = 1 }
+			}
+			}
+			traits = {freedom_fighter}
+		}
+		}
+theorist = {
+
+		### Vanilla ###
+
+		lan_theo_land = {
+			ledger = army
+
+			name = "Conselh militar de l'armada de tèrra"			
+					
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = military_theorist  limit = 1 } }
+				original_tag = OCC
+				original_tag = AQU
+				original_tag = AUV
+				original_tag = PRO
+				original_tag = RHO
+				original_tag = PEI
+				original_tag = LIM
+				original_tag = LAN
+			}
+			
+			picture = SPR_anarchist_council
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+lan_theo_wat = {
+			ledger = army
+
+			name = "Conselh de la marina"			
+					
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = naval_theorist  limit = 1 } }
+				original_tag = OCC
+				original_tag = AQU
+				original_tag = AUV
+				original_tag = PRO
+				original_tag = RHO
+				original_tag = PEI
+				original_tag = LIM
+				original_tag = LAN
+				
+			}
+			
+			picture = SPR_anarchist_council
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+				}
+	lan_theo_air = {
+			ledger = army
+
+			name = "Conselh de l'aire"			
+					
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = air_warfare_theorist  limit = 1 } }
+				original_tag = OCC
+				original_tag = AQU
+				original_tag = AUV
+				original_tag = PRO
+				original_tag = RHO
+				original_tag = PEI
+				original_tag = LIM
+				original_tag = LAN
+				
+			}
+			
+			picture = SPR_anarchist_council
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+				}
+				}
+##################################### - GENERIC - ##########################################################
+
+country = {
+		occwrl1 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			political_power_gain = 0.05
+			conscription = 0.005
+			}
+			}
+			}
+country = {
+		occwrl2 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			stability_factor = -0.1
+			political_power_gain = -0.1
+			}
+			}
+			}
+
+country = {
+		occwrl3 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			stability_factor = -0.05
+			political_power_gain = -0.05
+			}
+			}
+			}
+country = {
+		occwrl4 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			production_speed_bunker_factor = 0.15
+			}
+			}
+			}
+
+
+country = {
+		wrlcat = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			production_speed_buildings_factor = 0.05
+			industrial_capacity_factory = 0.07
+			}
+			}
+			}
+country = {
+		wrlcav = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			army_org_factor = 0.05
+			offence = 0.05
+			}
+			}
+			}
+country = {
+		wrlocc = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			political_power_gain = 0.15
+			stability_factor = 0.2
+			}
+			}
+			}
+country = {
+		wrlglc = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			industrial_capacity_dockyard = 0.15
+			repair_speed_factor = 0.2
+			naval_invasion_prep_speed = 0.1
+			}
+			}
+			}
+
+
+
+
+
+
+			
+}

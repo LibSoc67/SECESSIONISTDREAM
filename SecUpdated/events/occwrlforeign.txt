@@ -1,0 +1,1013 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = occwrlforeign
+
+########################################################### PROVENCE #######################################################################
+country_event = {
+	id = occwrlforeign.1
+	title = "Foreign help"
+	desc = "We can't do everything alone. We can ask one foreign nation to help us in our deeds." 
+	picture = GFX_report_event_journalists_speech
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Catalonia"
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = cet_occwrlforcat
+		CAT = { 
+		country_event = { id = occwrlforeign.2 days = 2}
+	}
+}
+	option = { 
+		name = "Castilla"
+		ai_chance = { factor = 100 }
+	custom_effect_tooltip = cet_occwrlforcav
+		CAV = {
+		country_event = { id = occwrlforeign.3 days = 2}
+				}
+	
+
+}
+option = { 
+		name = "Occitania"
+		ai_chance = { factor = 100 }
+	custom_effect_tooltip = cet_occwrlforocc
+		OCC = {
+		country_event = { id =occwrlforeign.4 days = 2 }
+				}
+	
+
+}
+option = { 
+		name = "Galicia"
+		ai_chance = { factor = 100 }
+	custom_effect_tooltip = cet_occwrlforglc
+		GLC = {
+		country_event = { id = occwrlforeign.5 days = 2 }
+				}
+	
+
+}
+}
+country_event = {
+	id = occwrlforeign.2
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	PRO = {country_event = occwrlforeign.6 add_ideas = wrlcat}
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 100 }
+	PRO = {country_event = occwrlforeign.7 add_opinion_modifier { target = CAT modifier = medium_decrease}
+				}
+	
+
+}}
+country_event = {
+	id = occwrlforeign.3
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	PRO = {country_event = occwrlforeign.6 add_ideas = wrlcav}	
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 100 }
+	PRO = {country_event = occwrlforeign.7 add_opinion_modifier { target = CAV modifier = medium_decrease}
+	
+
+}}}
+country_event = {
+	id = occwrlforeign.4
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	PRO = {country_event = occwrlforeign.6 add_ideas = wrlocc}	
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 100 }
+	PRO = {country_event = occwrlforeign.7 add_opinion_modifier { target = OCC modifier = medium_decrease}
+				}
+	
+
+}}
+country_event = {
+	id = occwrlforeign.5
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	PRO = {country_event = occwrlforeign.6 add_ideas = wrlglc}	
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 100 }
+	PRO = {country_event = occwrlforeign.7 add_opinion_modifier { target = GLC modifier = medium_decrease}
+				}
+	
+
+}}
+country_event = {
+	id = occwrlforeign.6
+	title = "We have a response"
+	desc = "After hours of intense negotiation, our diplomats were able to reach a deal with a superpower. This will help us inmensely." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Great!"
+		ai_chance = { factor = 100 }
+		
+		
+
+}
+	}
+country_event = {
+	id = occwrlforeign.7
+	title = "We have a response"
+	desc = "Despise our efforts, our diplomats weren't able to reach a deal with a superpower. We are alone." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Shame"
+		ai_chance = { factor = 100 }
+		
+		
+
+}
+	}
+	
+########################################################### RHONES-ALPES #######################################################################
+country_event = {
+	id = occwrlforeign.8
+	title = "Foreign help"
+	desc = "We can't do everything alone. We can ask one foreign nation to help us in our deeds." 
+	picture = GFX_report_event_journalists_speech
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Catalonia"
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = cet_occwrlforcat
+		CAT = { 
+		country_event = { id = occwrlforeign.9 days = 2}
+	}
+}
+	option = { 
+		name = "Castilla"
+		ai_chance = { factor = 0 }
+	custom_effect_tooltip = cet_occwrlforcav
+		CAV = {
+		country_event = { id = occwrlforeign.10 days = 2}
+				}
+	
+
+}
+option = { 
+		name = "Occitania"
+		ai_chance = { factor = 0 }
+	custom_effect_tooltip = cet_occwrlforocc
+		OCC = {
+		country_event = { id =occwrlforeign.11 days = 2 }
+				}
+	
+
+}
+option = { 
+		name = "Galicia"
+		ai_chance = { factor = 0 }
+	custom_effect_tooltip = cet_occwrlforglc
+		GLC = {
+		country_event = { id = occwrlforeign.12 days = 2 }
+				}
+	
+
+}
+}
+country_event = {
+	id = occwrlforeign.9
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	RHO = {country_event = occwrlforeign.6 add_ideas = wrlcat}
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 0 }
+	RHO = {country_event = occwrlforeign.7 add_opinion_modifier { target = CAT modifier = medium_decrease}
+				}
+	
+
+}}
+country_event = {
+	id = occwrlforeign.10
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	RHO = {country_event = occwrlforeign.6 add_ideas = wrlcav}	
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 100 }
+	RHO = {country_event = occwrlforeign.7 add_opinion_modifier { target = CAV modifier = medium_decrease}
+	
+
+}}}
+country_event = {
+	id = occwrlforeign.11
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	RHO = {country_event = occwrlforeign.6 add_ideas = wrlocc}	
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 100 }
+	RHO = {country_event = occwrlforeign.7 add_opinion_modifier { target = OCC modifier = medium_decrease}
+				}
+	
+
+}}
+country_event = {
+	id = occwrlforeign.12
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	RHO = {country_event = occwrlforeign.6 add_ideas = wrlglc}	
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 100 }
+	RHO = {country_event = occwrlforeign.7 add_opinion_modifier { target = GLC modifier = medium_decrease}
+				}
+	
+
+}}
+################################################## AUVERGNE ##############################################################
+country_event = {
+	id = occwrlforeign.13
+	title = "Foreign help"
+	desc = "We can't do everything alone. We can ask one foreign nation to help us in our deeds." 
+	picture = GFX_report_event_journalists_speech
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Catalonia"
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = cet_occwrlforcat
+		CAT = { 
+		country_event = { id = occwrlforeign.14 days = 2}
+	}
+}
+	option = { 
+		name = "Castilla"
+		ai_chance = { factor = 100 }
+	custom_effect_tooltip = cet_occwrlforcav
+		CAV = {
+		country_event = { id = occwrlforeign.15 days = 2}
+				}
+	
+
+}
+option = { 
+		name = "Occitania"
+		ai_chance = { factor = 10 }
+	custom_effect_tooltip = cet_occwrlforocc
+		OCC = {
+		country_event = { id =occwrlforeign.16 days = 2 }
+				}
+	
+
+}
+option = { 
+		name = "Galicia"
+		ai_chance = { factor = 0 }
+	custom_effect_tooltip = cet_occwrlforglc
+		GLC = {
+		country_event = { id = occwrlforeign.17 days = 2 }
+				}
+	
+
+}
+}
+country_event = {
+	id = occwrlforeign.14
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 0 }
+	AUV = {country_event = occwrlforeign.6 add_ideas = wrlcat}
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 10 }
+	AUV = {country_event = occwrlforeign.7 add_opinion_modifier { target = CAT modifier = medium_decrease}
+				}
+	
+
+}}
+country_event = {
+	id = occwrlforeign.15
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	AUV = {country_event = occwrlforeign.6 add_ideas = wrlcav}	
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 0 }
+	AUV = {country_event = occwrlforeign.7 add_opinion_modifier { target = CAV modifier = medium_decrease}
+	
+
+}}}
+country_event = {
+	id = occwrlforeign.16
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	AUV = {country_event = occwrlforeign.6 add_ideas = wrlocc}	
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 100 }
+	AUV = {country_event = occwrlforeign.7 add_opinion_modifier { target = OCC modifier = medium_decrease}
+				}
+	
+
+}}
+country_event = {
+	id = occwrlforeign.17
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	AUV = {country_event = occwrlforeign.6 add_ideas = wrlglc}	
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 100 }
+	AUV = {country_event = occwrlforeign.7 add_opinion_modifier { target = GLC modifier = medium_decrease}
+				}
+	
+
+}}
+############################################### AQUITANIA #########################################################
+country_event = {
+	id = occwrlforeign.18
+	title = "Foreign help"
+	desc = "We can't do everything alone. We can ask one foreign nation to help us in our deeds." 
+	picture = GFX_report_event_journalists_speech
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Catalonia"
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = cet_occwrlforcat
+		CAT = { 
+		country_event = { id = occwrlforeign.19 days = 2}
+	}
+}
+	option = { 
+		name = "Castilla"
+		ai_chance = { factor = 100 }
+	custom_effect_tooltip = cet_occwrlforcav
+		CAV = {
+		country_event = { id = occwrlforeign.20 days = 2}
+				}
+	
+
+}
+option = { 
+		name = "Occitania"
+		ai_chance = { factor = 100 }
+	custom_effect_tooltip = cet_occwrlforocc
+		OCC = {
+		country_event = { id =occwrlforeign.21 days = 2 }
+				}
+	
+
+}
+option = { 
+		name = "Galicia"
+		ai_chance = { factor = 40 }
+	custom_effect_tooltip = cet_occwrlforglc
+		GLC = {
+		country_event = { id = occwrlforeign.22 days = 2 }
+				}
+	
+
+}
+}
+country_event = {
+	id = occwrlforeign.19
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	AQU = {country_event = occwrlforeign.6 add_ideas = wrlcat}
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 100 }
+	AQU = {country_event = occwrlforeign.7 add_opinion_modifier { target = CAT modifier = medium_decrease}
+				}
+	
+
+}}
+country_event = {
+	id = occwrlforeign.20
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	AQU = {country_event = occwrlforeign.6 add_ideas = wrlcav}	
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 100 }
+	AQU = {country_event = occwrlforeign.7 add_opinion_modifier { target = CAV modifier = medium_decrease}
+	
+
+}}}
+country_event = {
+	id = occwrlforeign.21
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	AQU = {country_event = occwrlforeign.6 add_ideas = wrlocc}	
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 100 }
+	AQU = {country_event = occwrlforeign.7 add_opinion_modifier { target = OCC modifier = medium_decrease}
+				}
+	
+
+}}
+country_event = {
+	id = occwrlforeign.22
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	AQU = {country_event = occwrlforeign.6 add_ideas = wrlglc}	
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 100 }
+	AQU = {country_event = occwrlforeign.7 add_opinion_modifier { target = GLC modifier = medium_decrease}
+				}
+	
+
+}}
+#################################################### PEIROSA ##################################################
+country_event = {
+	id = occwrlforeign.23
+	title = "Foreign help"
+	desc = "We can't do everything alone. We can ask one foreign nation to help us in our deeds." 
+	picture = GFX_report_event_journalists_speech
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Catalonia"
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = cet_occwrlforcat
+		CAT = { 
+		country_event = { id = occwrlforeign.24 days = 2}
+	}
+}
+	option = { 
+		name = "Castilla"
+		ai_chance = { factor = 0 }
+	custom_effect_tooltip = cet_occwrlforcav
+		CAV = {
+		country_event = { id = occwrlforeign.25 days = 2}
+				}
+	
+
+}
+option = { 
+		name = "Occitania"
+		ai_chance = { factor = 100 }
+	custom_effect_tooltip = cet_occwrlforocc
+		OCC = {
+		country_event = { id =occwrlforeign.26 days = 2 }
+				}
+	
+
+}
+option = { 
+		name = "Galicia"
+		ai_chance = { factor = 40 }
+	custom_effect_tooltip = cet_occwrlforglc
+		GLC = {
+		country_event = { id = occwrlforeign.27 days = 2 }
+				}
+	
+
+}
+}
+country_event = {
+	id = occwrlforeign.24
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	PEI = {country_event = occwrlforeign.6 add_ideas = wrlcat}
+	add_political_power = 50
+		
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 0 }
+	PEI = {country_event = occwrlforeign.7 add_opinion_modifier { target = CAT modifier = medium_decrease}
+				}
+	
+
+}}
+country_event = {
+	id = occwrlforeign.25
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	PEI = {country_event = occwrlforeign.6 add_ideas = wrlcav}	
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 100 }
+	PEI = {country_event = occwrlforeign.7 add_opinion_modifier { target = CAV modifier = medium_decrease}
+	
+
+}}}
+country_event = {
+	id = occwrlforeign.26
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	PEI = {country_event = occwrlforeign.6 add_ideas = wrlocc}	
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 0 }
+	PEI = {country_event = occwrlforeign.7 add_opinion_modifier { target = OCC modifier = medium_decrease}
+				}
+	
+
+}}
+country_event = {
+	id = occwrlforeign.27
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	PEI = {country_event = occwrlforeign.6 add_ideas = wrlglc}	
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 0 }
+	PEI = {country_event = occwrlforeign.7 add_opinion_modifier { target = GLC modifier = medium_decrease}
+				}
+	
+
+}}
+################################################### LIMOUSIN ############################################################
+country_event = {
+	id = occwrlforeign.28
+	title = "Foreign help"
+	desc = "We can't do everything alone. We can ask one foreign nation to help us in our deeds." 
+	picture = GFX_report_event_journalists_speech
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Catalonia"
+		ai_chance = { factor = 10 }
+		custom_effect_tooltip = cet_occwrlforcat
+		CAT = { 
+		country_event = { id = occwrlforeign.29 days = 2}
+	}
+}
+	option = { 
+		name = "Castilla"
+		ai_chance = { factor = 0 }
+	custom_effect_tooltip = cet_occwrlforcav
+		CAV = {
+		country_event = { id = occwrlforeign.30 days = 2}
+				}
+	
+
+}
+option = { 
+		name = "Occitania"
+		ai_chance = { factor = 100 }
+	custom_effect_tooltip = cet_occwrlforocc
+		OCC = {
+		country_event = { id =occwrlforeign.31 days = 2 }
+				}
+	
+
+}
+option = { 
+		name = "Galicia"
+		ai_chance = { factor = 40 }
+	custom_effect_tooltip = cet_occwrlforglc
+		GLC = {
+		country_event = { id = occwrlforeign.32 days = 2 }
+				}
+	
+
+}
+}
+country_event = {
+	id = occwrlforeign.29
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	LIM = {country_event = occwrlforeign.6 add_ideas = wrlcat}
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 0 }
+	LIM = {country_event = occwrlforeign.7 add_opinion_modifier { target = CAT modifier = medium_decrease}
+				}
+	
+
+}}
+country_event = {
+	id = occwrlforeign.30
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	LIM = {country_event = occwrlforeign.6 add_ideas = wrlcav}	
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 100 }
+	LIM = {country_event = occwrlforeign.7 add_opinion_modifier { target = CAV modifier = medium_decrease}
+	
+
+}}}
+country_event = {
+	id = occwrlforeign.31
+	title = occwrlforeign.20.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	LIM = {country_event = occwrlforeign.6 add_ideas = wrlocc}	
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 0 }
+	LIM = {country_event = occwrlforeign.7 add_opinion_modifier { target = OCC modifier = medium_decrease}
+				}
+	
+
+}}
+country_event = {
+	id = occwrlforeign.32
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	LIM = {country_event = occwrlforeign.6 add_ideas = wrlglc}	
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 0 }
+	LIM = {country_event = occwrlforeign.7 add_opinion_modifier { target = GLC modifier = medium_decrease}
+				}
+	
+
+}}
+################################################### POITOU-CHARENTES ############################################################
+country_event = {
+	id = occwrlforeign.33
+	title = "Foreign help"
+	desc = "We can't do everything alone. We can ask one foreign nation to help us in our deeds." 
+	picture = GFX_report_event_journalists_speech
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Catalonia"
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = cet_occwrlforcat
+		CAT = { 
+		country_event = { id = occwrlforeign.34 days = 2}
+	}
+}
+	option = { 
+		name = "Castilla"
+		ai_chance = { factor = 100 }
+	custom_effect_tooltip = cet_occwrlforcav
+		CAV = {
+		country_event = { id = occwrlforeign.35 days = 2}
+				}
+	
+
+}
+option = { 
+		name = "Occitania"
+		ai_chance = { factor = 100 }
+	custom_effect_tooltip = cet_occwrlforocc
+		OCC = {
+		country_event = { id =occwrlforeign.36 days = 2 }
+				}
+	
+
+}
+option = { 
+		name = "Galicia"
+		ai_chance = { factor = 40 }
+	custom_effect_tooltip = cet_occwrlforglc
+		GLC = {
+		country_event = { id = occwrlforeign.37 days = 2 }
+				}
+	
+
+}
+}
+country_event = {
+	id = occwrlforeign.34
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	POI = {country_event = occwrlforeign.6 add_ideas = wrlcat}
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 100 }
+	POI = {country_event = occwrlforeign.7 add_opinion_modifier { target = CAT modifier = medium_decrease}
+				}
+	
+
+}}
+country_event = {
+	id = occwrlforeign.35
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	POI = {country_event = occwrlforeign.6 add_ideas = wrlcav}	
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 100 }
+	POI = {country_event = occwrlforeign.7 add_opinion_modifier { target = CAV modifier = medium_decrease}
+	
+
+}}}
+country_event = {
+	id = occwrlforeign.36
+	title = occwrlforeign.20.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	POI = {country_event = occwrlforeign.6 add_ideas = wrlocc}	
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 100 }
+	POI = {country_event = occwrlforeign.7 add_opinion_modifier { target = OCC modifier = medium_decrease}
+				}
+	
+
+}}
+country_event = {
+	id = occwrlforeign.37
+	title = occwrlforeign.2.t
+	desc = "A foreign diplomat has met with our government, and he is asking us to help their country develop. It costs us nothing to share our knowledge, and it could make us a valuable ally in the future. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We accept"
+		ai_chance = { factor = 100 }
+	POI = {country_event = occwrlforeign.6 add_ideas = wrlglc}	
+	add_political_power = 50	
+
+}
+	option = { 
+		name = "We will refuse"
+		ai_chance = { factor = 100 }
+	POI = {country_event = occwrlforeign.7 add_opinion_modifier { target = GLC modifier = medium_decrease}
+				}
+	
+
+}}

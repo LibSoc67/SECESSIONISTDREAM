@@ -1,0 +1,43 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = andbecomescom
+
+# penis
+country_event = {
+	id = andbecomescom.1
+	title = "Establishment of a socialist state."
+	desc = "We must give the agrarian unions more power in order to establish a moderate socialist state. " 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Hurra!"
+		ai_chance = { factor = 100 }
+		
+    
+	add_political_power = 100
+}
+}
+country_event = {
+	id = andbecomescom.2
+	title = "Colectivitzation ends in desaster!"
+	desc = "Comarade, our efforts to colectivize the land by giving the unions more power is not going as great as we thought. Our production is going down! Many people are going to die if we continue like this!" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Oh no!"
+		ai_chance = { factor = 100 }
+		
+    
+	add_timed_idea = { idea = andcomeco1 days = 365}
+	
+}
+}
+	
+	
+	

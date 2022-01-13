@@ -1,0 +1,32 @@
+
+state={
+	id=218
+	name="Jura"
+	provinces={
+		2648 4512 5665 6778 7959 9666 10759 14480 14493 14527 14558 
+	}
+	resources={
+		rubber=0.000
+		tungsten=5.000
+		steel=0.000
+		oil=0.000
+		chromium=0.000
+		aluminium=17.000
+	}
+	history={
+		owner = FCO
+		add_core_of = FCO
+		victory_points = { 7959 1 }
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			#dockyard = 
+			air_base = 3
+			# = {naval_base = 9}
+		}
+	}
+	state_category=rural
+	manpower=220797
+	buildings_max_level_factor=1.000
+}

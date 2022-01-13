@@ -1,0 +1,23 @@
+
+state={
+	id=87
+	name="Medina Del Pomar"
+	provinces={
+		3800 4940 5080 6931 
+	}
+	history={
+		owner = CAV
+		add_core_of = CAV
+		victory_points = {
+		6931 3
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			 
+		}
+	}
+	state_category=pastoral
+	manpower=60492
+	buildings_max_level_factor=1.000
+}

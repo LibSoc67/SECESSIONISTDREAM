@@ -1,0 +1,73 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = andcem
+
+# penis
+country_event = {
+	id = andcem.1
+	title = "Ultimatum from Andalucia"
+	desc = "Andalucia has sent us a ultimatum. Either we join or they declare war to us." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We must accept"
+		ai_chance = { factor = 90 }
+ADA = { add_threat = 1 
+	country_event = andcem.2
+	annex_country = {
+    target = CEM
+    transfer_troops = no
+	}
+	}
+}
+	option = { 
+		name = "We will refuse!"
+		ai_chance = { factor = 10 }
+	
+		ADA = { create_wargoal = {
+				type = annex_everything
+				target = CEM
+				expire = 0
+				} 
+				country_event = andcem.3
+				}
+				
+	add_threat = 1 
+ 
+		CEM = {add_war_support	= 0.1 }
+
+}}
+country_event = {
+	id = andcem.2
+	title = "Ceuta And Melilla have accepted"
+	desc = "Both cities have accepted to join us." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Nice"
+		ai_chance = { factor = 90 }
+ADA = { add_state_core = 841 add_state_core = 859
+	}
+	}
+}
+country_event = {
+	id = andcem.3
+	title = "Ceuta And Melilla have refused"
+	desc = "Both cities have refused to join us. It's time for war." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Indeed"
+		ai_chance = { factor = 90 }
+
+	}
+	}
+}

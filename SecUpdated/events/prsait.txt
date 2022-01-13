@@ -1,0 +1,279 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = prsait
+
+# penis
+
+country_event = {
+	id = prsait.1
+	title = "The Great Congress of the AIT"
+	desc = prsait.1.d 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "A more unified front is necessary"
+		ai_chance = { factor = 0 }
+
+    ARA = { country_event = prsait.2 }
+	
+custom_effect_tooltip = "Most likely, Aragon will refuse the outcome of this assembly, and they will leave the AIT."
+	}
+	option = { 
+		name = "We must respect their local institutions"
+		ai_chance = { factor = 100 }
+add_stability = 0.05
+    ARA = { country_event = prsait.5 }
+	
+custom_effect_tooltip = "Aragon will get a big boost to stability, war support and political power."
+	}
+}
+country_event = {
+	id = prsait.2
+	title = "The Outcome of the Great Congress of the AIT"
+	desc = prsait.2.d 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Long live mother anarchy!"
+		ai_chance = { factor = 10 }
+
+    PRS = { country_event = prsait.3 }
+	
+
+	}
+	option = { 
+		name = "This is tirany!"
+		ai_chance = { factor = 90 }
+
+    PRS = { country_event = prsait.4 }
+	
+
+	}
+}
+country_event = {
+	id = prsait.3
+	title = "The Aragonese agree"
+	desc = "The Aragonese have ratified the assembly. We are now one." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Long live mother anarchy!"
+		ai_chance = { factor = 90 }
+
+    PRS = {
+	add_state_core = 23
+	add_state_core = 22
+	add_state_core = 21
+	add_state_core = 20
+	add_state_core = 19
+	set_cosmetic_tag = form_ait
+	set_country_flag = formed_ait
+	annex_country = {
+    target = ARA
+    transfer_troops = yes
+	} }
+	
+
+	}
+	
+}
+country_event = {
+	id = prsait.4
+	title = "The Aragonese disagree"
+	desc = "The Aragonese have refused the assembly. Shamefuly, this has pushed them out of the AIT, as they see it as a proto-state who excerts tyranical power to the people." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "A sad day for anarchy"
+		ai_chance = { factor = 90 }
+
+    PRS = { 
+	set_cosmetic_tag = form_ait
+	set_country_flag = formed_ait
+	remove_from_faction = ARA
+	add_opinion_modifier = { target = ARA modifier = large_decrease }
+	}
+	ARA = {
+	add_opinion_modifier = { target = PRS modifier = large_decrease }
+	}
+	}
+	
+
+	}
+	
+country_event = {
+	id = prsait.5
+	title = "The Great Congress of the AIT"
+	desc = prsait.5.d
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Long live mother anarchy"
+		ai_chance = { factor = 0 }
+
+	add_stability = 0.1
+	add_war_support = 0.1
+	add_political_power = 100
+
+	}
+}
+country_event = {
+	id = prsait.6
+	title = "The AIT sends help"
+	desc = "Paris has send economic help in our lands."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	option = { 
+		name = "Long live mother anarchy"
+		ai_chance = { factor = 0 }
+
+	
+	add_opinion_modifier = { target = PRS modifier = small_increase }
+	}
+}
+country_event = {
+	id = prsait.7
+	title = "AIT advisors have arrived"
+	desc = "Paris has send economic help in our lands."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	option = { 
+		name = "Long live mother anarchy"
+		ai_chance = { factor = 0 }
+
+	
+	add_opinion_modifier = { target = PRS modifier = medium_increase }
+	}
+}
+country_event = {
+	id = prsait.8
+	title = "The Paris-Tolouse Pact"
+	desc = "In recent years, the anarchists have taken control of all the north of France. Luckily, the French Commune wants to improve relations with us, and they propose a non agression pact."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	
+	option = { 
+		name = "The start of a friendship"
+		ai_chance = { factor = 100 }
+	news_event = { id = iberianews.20 days = 2}
+	set_country_flag = occ_gives_up_poi
+	add_opinion_modifier = { target = PRS modifier = medium_increase }
+	PRS = {add_opinion_modifier = { target = OCC modifier = medium_increase }}
+	diplomatic_relation = { country = PRS relation = non_aggression_pact }
+	}
+	
+	
+	option = { 
+		name = "Never"
+		ai_chance = { factor = 0 }
+	news_event = { id = iberianews.21 days = 2}
+	PRS = {create_wargoal = {
+		type = annex_everything target = OCC expire = 365
+			}}
+	add_opinion_modifier = { target = PRS modifier = large_decrease }
+	PRS = {add_opinion_modifier = { target = OCC modifier = large_decrease }}
+	}
+}
+country_event = {
+	id = prsait.9
+	title = "Honoring the pact"
+	desc = prsait.9.d
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	option = { 
+		name = "We must honor the pact"
+		ai_chance = { factor = 100 }
+	PRS = {if = {limit = {164 = {is_owned_and_controlled_by = OCC} } transfer_state = 164 } }
+	PRS = {if = {limit = {161 = {is_owned_and_controlled_by = OCC} } transfer_state = 161 } }
+	PRS = {if = {limit = {168 = {is_owned_and_controlled_by = OCC} } transfer_state = 168 } }
+	PRS = {if = {limit = {169 = {is_owned_and_controlled_by = OCC} } transfer_state = 169 } }
+	PRS = {if = {limit = {170 = {is_owned_and_controlled_by = OCC} } transfer_state = 170 } }
+	PRS = {if = {limit = {171 = {is_owned_and_controlled_by = OCC} } transfer_state = 171 } }
+	PRS = {if = {limit = {159 = {is_owned_and_controlled_by = OCC} } transfer_state = 159 } }
+	PRS = {if = {limit = {155 = {is_owned_and_controlled_by = OCC} } transfer_state = 155 } }
+	PRS = {if = {limit = {156 = {is_owned_and_controlled_by = OCC} } transfer_state = 156 } }
+	PRS = {if = {limit = {157 = {is_owned_and_controlled_by = OCC} } transfer_state = 157 } }
+	PRS = {if = {limit = {158 = {is_owned_and_controlled_by = OCC} } transfer_state = 158 } }
+	
+	}
+	option = { 
+		name = "Never"
+		ai_chance = { factor = 0 }
+	news_event = { id = iberianews.22 days = 2}
+	PRS = {create_wargoal = {
+		type = annex_everything target = OCC expire = 365
+			}}
+	diplomatic_relation = {
+			country = PRS
+			relation = non_aggression_pact
+			active = no
+		}		
+			
+	add_opinion_modifier = { target = PRS modifier = large_decrease }
+	PRS = {add_opinion_modifier = { target = OCC modifier = large_decrease }}
+	}
+}
+country_event = {
+	id = prsait.10
+	title = "Honoring the pact"
+	desc = prsait.10.d
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	option = { 
+		name = "We must honor the pact"
+		ai_chance = { factor = 100 }
+		
+	OCC = {if = {limit = {167 = {is_owned_and_controlled_by = PRS} } transfer_state = 164 } }
+	OCC = {if = {limit = {166 = {is_owned_and_controlled_by = PRS} } transfer_state = 161 } }
+	OCC = {if = {limit = {165 = {is_owned_and_controlled_by = PRS} } transfer_state = 168 } }
+	OCC = {if = {limit = {162 = {is_owned_and_controlled_by = PRS} } transfer_state = 169 } }
+	OCC = {if = {limit = {163 = {is_owned_and_controlled_by = PRS} } transfer_state = 170 } }
+	OCC = {if = {limit = {160 = {is_owned_and_controlled_by = PRS} } transfer_state = 171 } }
+	OCC = {if = {limit = {153 = {is_owned_and_controlled_by = PRS} } transfer_state = 159 } }
+	OCC = {if = {limit = {154 = {is_owned_and_controlled_by = PRS} } transfer_state = 155 } }
+	OCC = {if = {limit = {137 = {is_owned_and_controlled_by = PRS} } transfer_state = 156 } }
+	OCC = {if = {limit = {136 = {is_owned_and_controlled_by = PRS} } transfer_state = 157 } }
+	OCC = {if = {limit = {135 = {is_owned_and_controlled_by = PRS} } transfer_state = 158 } }
+	OCC = {if = {limit = {133 = {is_owned_and_controlled_by = PRS} } transfer_state = 158 } }
+	
+	}
+	option = { 
+		name = "Never"
+		ai_chance = { factor = 0 }
+	news_event = { id = iberianews.23 days = 2}
+	OCC = {create_wargoal = {
+		type = annex_everything target = PRS expire = 365
+			}}
+	diplomatic_relation = {
+			country = OCC
+			relation = non_aggression_pact
+			active = no
+		}		
+			
+	add_opinion_modifier = { target = OCC modifier = large_decrease }
+	OCC = {add_opinion_modifier = { target = PRS modifier = large_decrease }}
+	}
+}

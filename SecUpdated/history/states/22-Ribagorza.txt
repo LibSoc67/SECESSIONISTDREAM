@@ -1,0 +1,23 @@
+
+state={
+	id=22
+	name="Ribagorza"
+	provinces={
+		357 5305 7061 10942 15663 
+	}
+	history={
+		owner = ARA
+		add_core_of = ARA
+		victory_points = {
+		357 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			 
+		}
+	}
+	state_category=pastoral
+	manpower=31456
+	buildings_max_level_factor=1.000
+}

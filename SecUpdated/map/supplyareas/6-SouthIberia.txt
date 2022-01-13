@@ -1,0 +1,9 @@
+
+supply_area={
+	id=6
+	name="South Iberia"
+	value=11
+	states={
+		72 48 51 67 25 50 35 53 32 36 37 33 34 38 42 31 30 41 29 39 
+	}
+}

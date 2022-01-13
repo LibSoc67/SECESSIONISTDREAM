@@ -1,0 +1,41 @@
+
+state={
+	id=32
+	name="Murcia"
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=7.000
+		oil=5.000
+		chromium=0.000
+		aluminium=0.000
+	}
+
+	history={
+		owner = MUR
+		add_core_of = MUR
+		victory_points = {
+			9538 15 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 1
+			air_base = 3
+			11237 = {
+				naval_base = 3
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		9538 16481 16495 
+	}
+	manpower=302019
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,378 @@
+﻿focus_tree = {
+
+	id = provence_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 70
+			tag = PRO
+}
+}
+shared_focus = occwrlfoc1
+shared_focus = occwrlfoc2 
+shared_focus = occwrlfoc16
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 0 }
+
+
+	focus = {
+		id = profoc1
+		icon = GFX_focus_proism
+		x = 12
+		y = 0
+ 	ai_will_do = {
+			factor = 99
+		}
+		
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		mutually_exclusive = {focus = occwrlfoc1 focus = occwrlfoc2 }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		OCC = {add_opinion_modifier = { target = ROOT modifier = small_decrease}}
+		CEN = {add_opinion_modifier = { target = ROOT modifier = small_decrease}}
+		add_stability = 0.05
+			}
+		}
+focus = {
+		id = profoc2
+		icon = GFX_focus_provence
+		x = 0
+		y = 1
+ 	
+		relative_position_id = profoc1
+		prerequisite = { focus = profoc1 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_stability = 0.05
+			}
+		}
+focus = {
+		id = profoc3
+		icon = GFX_goal_generic_construct_civilian
+		x = -1
+		y = 1
+ 	mutually_exclusive = {focus = profoc4 }
+		relative_position_id = profoc2
+		prerequisite = { focus = profoc2 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		147 = { 
+			add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				
+		}
+			}
+		}
+	focus = {
+		id = profoc4
+		icon = GFX_goal_generic_construction
+		x = 1
+		y = 1
+ 	mutually_exclusive = {focus = profoc3 }
+		relative_position_id = profoc2
+		prerequisite = { focus = profoc2 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		set_capital	= 151
+		151 = { 
+			add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				
+		}
+			}
+		}
+	focus = {
+		id = profoc5
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 3
+		y = 1
+		relative_position_id = profoc2
+		prerequisite = { focus = profoc2 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_ideas = pro_free
+			}
+		}
+	focus = {
+		id = profoc6
+		icon = GFX_focus_attack_occ
+		x = -3
+		y = 1
+		relative_position_id = profoc2
+		prerequisite = { focus = profoc2 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+	147 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 15358
+							instant_build = yes
+						}}
+	147 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 10745
+							instant_build = yes
+						}}
+	147 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 7192
+							instant_build = yes
+						}}
+	149 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 2500
+							instant_build = yes
+						}}
+			}
+		}
+	focus = {
+		id = profoc7
+		icon = GFX_focus_aquantio
+		x = 0
+		y = 1
+		relative_position_id = profoc3
+		prerequisite = { focus = profoc3 focus = profoc4 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		remove_ideas = occism
+			}
+		}
+	focus = {
+		id = profoc8
+		icon = GFX_focus_aquantif
+		x = 2
+		y = 1
+		relative_position_id = profoc3
+		prerequisite = { focus = profoc3 focus = profoc4 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		remove_ideas = fraism
+			}
+		}
+	focus = {
+		id = profoc9
+		icon = GFX_focus_generic_military_mission
+		x = 1
+		y = 1
+		relative_position_id = profoc7
+		prerequisite = { focus = profoc7 }
+		prerequisite = { focus = profoc8 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_state_claim = 182
+		add_state_claim = 183
+			}
+		}
+	focus = {
+		id = profoc10
+		icon = GFX_goal_generic_more_territorial_claims
+		x = -1
+		y = 1
+		relative_position_id = profoc9
+		prerequisite = { focus = profoc9 }
+		available = {
+		PEI = {exists = yes}
+				}
+		bypass = {
+		PEI = {exists = no}
+		}
+		
+		cost = 10		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		PEI = {country_event = propei.1} 
+			}
+		}
+	focus = {
+		id = profoc11
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 1
+		relative_position_id = profoc10
+		prerequisite = { focus = profoc10 }
+		available = {
+		182 = {is_owned_and_controlled_by = PRO}
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_state_core = 182
+			}
+		}
+	focus = {
+		id = profoc12
+		icon = GFX_goal_generic_major_war
+		x = 1
+		y = 1
+		relative_position_id = profoc9
+		prerequisite = { focus = profoc9 }
+		available = {
+		MNC = {exists = yes}
+				}
+		bypass = {
+		MNC = {exists = no}
+		}
+		
+		cost = 10		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		create_wargoal = {
+				type = annex_everything
+				target = MNC
+				expire = 0
+			}
+			}
+		}
+	focus = {
+		id = profoc13
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 1
+		relative_position_id = profoc12
+		prerequisite = { focus = profoc12 }
+		available = {
+		183 = {is_owned_and_controlled_by = PRO}
+				}
+		bypass = { 
+		}
+		
+		cost = 10		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_state_core = 183
+			}
+		}
+	}

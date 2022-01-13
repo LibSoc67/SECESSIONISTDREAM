@@ -1,0 +1,28 @@
+
+state={
+	id=164
+	name="Allier"
+
+	history={
+		owner = AUV
+		add_core_of = AUV
+		add_claim_by = OCC
+		victory_points = {
+			6508 4 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		2017 3439 3588 6508 8830 10653 14677 14704 
+	}
+	manpower=368923
+	buildings_max_level_factor=1.000
+	state_category=town
+}

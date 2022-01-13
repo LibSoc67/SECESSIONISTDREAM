@@ -1,0 +1,50 @@
+﻿focus_tree = {
+
+	id = poi_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 70
+			tag = POI			
+			
+}
+}
+shared_focus = occwrlfoc1
+shared_focus = occwrlfoc2 
+shared_focus = occwrlfoc9
+shared_focus = occwrlfoc16
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 0 }
+
+
+	focus = {
+		id = limfoc1
+		icon = GFX_focus_generic_support_the_left_right
+		x = 12
+		y = 0
+ 	
+		
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		mutually_exclusive = {focus = occwrlfoc1 focus = occwrlfoc2 }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_stability = 0.05
+			}
+		}
+
+	}

@@ -1,0 +1,32 @@
+
+state={
+	id=215
+	name="Belfort"
+	provinces={
+		556 4198 9150 14389 14423 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=14.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = FCO
+		add_core_of = FCO
+		victory_points = { 14389 4 }
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+			#dockyard = 
+			#air_base = 
+			# = {naval_base = 9}
+		}
+	}
+	state_category=rural
+	manpower=98237
+	buildings_max_level_factor=1.000
+}

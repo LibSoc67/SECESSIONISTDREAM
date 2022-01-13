@@ -1,0 +1,22 @@
+
+state={
+	id=47
+	name="Jerez"
+	provinces={
+		5981 7820 16573 
+	}
+	history={
+		owner = ADA
+		add_core_of = ADA
+		
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+
+			 
+		}
+	}
+	state_category=rural
+	manpower=195023
+	buildings_max_level_factor=1.000
+}

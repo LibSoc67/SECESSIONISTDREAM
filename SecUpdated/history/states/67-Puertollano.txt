@@ -1,0 +1,20 @@
+
+state={
+	id=67
+	name="Puertollano"
+	provinces={
+		6230 8265 16458 
+	}
+	history={
+		owner = ADA
+		add_core_of = ADA
+		
+		buildings = {
+			infrastructure = 5
+			 
+		}
+	}
+	state_category=pastoral
+	manpower=80392
+	buildings_max_level_factor=1.000
+}

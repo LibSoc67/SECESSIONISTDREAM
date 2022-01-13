@@ -1,0 +1,24 @@
+
+state={
+	id=122
+	name="Nuoro"
+	provinces={
+		341 3430 5434 8425 10897 11097 16197 16236 16270 16272 16382 
+	}
+	history={
+		owner = SAR
+		add_core_of = SAR
+		victory_points = {
+		16272 6	
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			
+		}
+	}
+	state_category=rural
+	manpower=195329
+	buildings_max_level_factor=1.000
+}

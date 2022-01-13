@@ -1,0 +1,240 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = occevent
+
+# penis
+country_event = {
+	id = occevent.1  
+	title = "A invitation"
+	desc = occevent.1.d
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "I will go"
+		ai_chance = { factor = 50 }
+	
+	hidden_effect = {country_event = { id = occevent.2 days = 2} }
+
+	}
+
+	option = { 
+		name = "We must imprision them!"
+		ai_chance = { factor = 50 }
+	remove_ideas = occcatars
+	add_stability = -0.05	
+	set_country_flag = catarsdead
+	}
+	
+ 
+	 
+	}
+country_event = {
+	id = occevent.2 
+	title = "The meeting"
+	desc = occevent.2.d
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Distributism"
+		ai_chance = { factor = 50 }
+	swap_ideas = {
+						remove_idea = occcatars
+						add_idea = occcatars1
+					}
+
+	set_country_flag = distributism
+	country_event = occevent.3
+	}
+
+	option = { 
+		name = "Oligarchy"
+		ai_chance = { factor = 50 }
+	swap_ideas = {
+						remove_idea = occcatars
+						add_idea = occcatars1
+					}
+
+	set_country_flag = elitism
+	country_event = occevent.3
+	}
+	
+ 
+	 
+	}
+country_event = {
+	id = occevent.3
+	title = "The Speech"
+	desc = "You stand up and start a epic speech. When you finish, almost everyone is applauding you. It seems like you convinced them."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Great"
+		ai_chance = { factor = 50 }
+	}
+
+	
+ 
+	 
+	}
+country_event = {
+	id = occevent.4
+	title = "A proposal from Occitania"
+	desc = "Occitania has proposed to form an aliance with us. We will keep our independence."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Sounds great"
+		ai_chance = { factor = 100 }
+		OCC  = { add_to_faction = LIM}
+	}
+	option = { 
+		name = "No way!"
+		ai_chance = { factor = 0 }
+		OCC = {add_opinion_modifier = { target = LIM modifier = medium_decrease }}
+	}
+	
+ 
+	 
+	}
+country_event = {
+	id = occevent.5
+	title = "A proposal from Occitania"
+	desc = "Occitania has proposed to form an aliance with us. We will keep our independence."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Sounds great"
+		ai_chance = { factor = 0 }
+		OCC  = { add_to_faction = POI}
+	}
+	option = { 
+		name = "No way!"
+		ai_chance = { factor = 100 }
+		OCC = {add_opinion_modifier = { target = POI modifier = medium_decrease }}
+	}
+	
+ 
+	 
+	}
+country_event = {
+	id = occevent.6
+	title = "A proposal from Occitania"
+	desc = "Occitania has proposed to form an aliance with us. We will keep our independence."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Sounds great"
+		ai_chance = { factor = 70 }
+		OCC  = { add_to_faction = AQU}
+	}
+	option = { 
+		name = "No way!"
+		ai_chance = { factor = 30 }
+		OCC = {add_opinion_modifier = { target = AQU modifier = medium_decrease }}
+	}
+	
+ 
+	 
+	}
+country_event = {
+	id = occevent.7
+	title = "A proposal from Occitania"
+	desc = "Occitania has proposed to form an aliance with us. We will keep our independence."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Sounds great"
+		ai_chance = { factor = 50 }
+		OCC  = { add_to_faction = RHO}
+	}
+	option = { 
+		name = "No way!"
+		ai_chance = { factor = 50 }
+		OCC = {add_opinion_modifier = { target = RHO modifier = medium_decrease }}
+	}
+	
+ 
+	 
+	}
+country_event = {
+	id = occevent.8
+	title = "A proposal from Occitania"
+	desc = "Occitania has proposed to form an aliance with us. We will keep our independence."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Sounds great"
+		ai_chance = { factor = 2 }
+		OCC  = { add_to_faction = AUV}
+	}
+	option = { 
+		name = "No way!"
+		ai_chance = { factor = 98 }
+		OCC = {add_opinion_modifier = { target = AUV modifier = medium_decrease }}
+	}
+	
+ 
+	 
+	}	
+country_event = {
+	id = occevent.9
+	title = "A proposal from Occitania"
+	desc = "Occitania has proposed to form an aliance with us. We will keep our independence."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Sounds great"
+		ai_chance = { factor = 60 }
+		OCC  = { add_to_faction = PRO}
+	}
+	option = { 
+		name = "No way!"
+		ai_chance = { factor = 40 }
+		OCC = {add_opinion_modifier = { target = PRO modifier = medium_decrease }}
+	}
+	
+ 
+	 
+	}
+country_event = {
+	id = occevent.10
+	title = "A proposal from Occitania"
+	desc = "Occitania has proposed to form an aliance with us. We will keep our independence."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Sounds great"
+		ai_chance = { factor = 100 }
+		OCC  = { add_to_faction = PEI}
+	}
+	option = { 
+		name = "No way!"
+		ai_chance = { factor = 0 }
+		OCC = {add_opinion_modifier = { target = PEI modifier = medium_decrease }}
+	}
+	
+ 
+	 
+	}

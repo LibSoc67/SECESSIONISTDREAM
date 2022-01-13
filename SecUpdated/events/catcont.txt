@@ -1,0 +1,129 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = catcont
+
+# penis
+country_event = {
+	id = catcont.1
+	title = "Dealing with Valencia"
+	desc = "Valencia is now under our control, now we must choose whether we want to fully integrate them into our country, or we give them some self goverment." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Fully integrated"
+		ai_chance = { factor = 99 }
+			hidden_effect = {
+
+add_state_core = 12 	
+ add_state_core = 13 		
+ add_state_core = 11 	
+ add_state_core = 227
+ 12 = { set_state_name = "València" } 
+ 11 = { set_state_name = "Castelló" } 
+ 13 = { set_state_name = "Alacant" }
+ 227 = { set_state_name = "Ponent" }
+228 = { set_state_name = "Edetània" } } 
+ add_stability = -0.04
+}
+	option = { 
+		name = "A self governed València"
+		ai_chance = { factor = 1 }
+	hidden_effect = {
+	 12 = { set_state_name = "València" } 
+ 11 = { set_state_name = "Castelló" } 
+ 13 = { set_state_name = "Alacant" }
+ 228 = { set_state_name = "Edetània" }
+ 227 = { set_state_name = "Ponent" }
+		VAL = {
+			
+		transfer_state = 11
+		transfer_state = 12
+		transfer_state = 13
+		transfer_state = 227
+		transfer_state = 228
+		set_cosmetic_tag = Cosmetic_CATVAL		
+				}
+		puppet = VAL
+			}	
+	add_political_power = 50
+  
+	
+
+}}
+country_event = {
+	id = catcont.2
+	title = "Dealing with Mallorca"
+	desc = "Mallorca is now under our control, now we must choose whether we want to fully integrate them into our country, or we give them some self goverment." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Fully integrated"
+		ai_chance = { factor = 100 }
+ hidden_effect= {add_state_core = 16 	
+ add_state_core = 15 		
+ add_state_core = 14 	
+14 = { set_state_name = "Eivissa" }
+}
+ add_stability = -0.02
+}
+	option = { 
+		name = "A self governed Mallorca"
+		ai_chance = { factor = 0 }
+	hidden_effect = {
+	14 = { set_state_name = "Eivissa" }
+		MLL = {
+		transfer_state = 14
+		transfer_state = 15
+		transfer_state = 16
+		set_cosmetic_tag = Cosmetic_CATMLL		
+				}
+		puppet = MLL
+				}
+	add_political_power = 50
+  
+	
+
+}}
+country_event = {
+	id = catcont.3
+	title = "Dealing with Perpinyà"
+	desc = "Perpinyà is now under our control, now we must choose whether we want to fully integrate them into our country, or we give them some self goverment." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Fully integrated"
+		ai_chance = { factor = 100 }
+ hidden_effect= {
+ add_state_core = 18 	
+17 = { set_state_name = "Perpinyà"
+}
+ add_stability = -0.01
+}}
+	option = { 
+		name = "A self governed Perpinyà"
+		ai_chance = { factor = 0 }
+	hidden_effect = {
+	17 = { set_state_name = "Perpinyà"
+}
+	PRP = {
+		transfer_state = 17
+		transfer_state = 18
+		transfer_state = 226
+		set_cosmetic_tag = Cosmetic_CATPRP		
+	
+				}
+		puppet = PRP
+				}
+	add_political_power = 50
+  
+	
+
+}}

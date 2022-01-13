@@ -1,0 +1,29 @@
+
+state={
+	id=46
+	name="La Jarida"
+	provinces={
+		720 16628 16644 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=0.000
+		oil=11.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = ADA
+		add_core_of = ADA
+		
+		buildings = {
+			infrastructure = 6
+
+			 
+		}
+	}
+	state_category=pastoral
+	manpower=150320
+	buildings_max_level_factor=1.000
+}

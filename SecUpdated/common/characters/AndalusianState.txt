@@ -1,0 +1,438 @@
+characters={
+
+ADA_Blas_Infante = {
+	name = "Blas Infante"
+	portraits={
+			civilian={
+				large="gfx/leaders/ADA/anddem.dds"
+			}
+		}
+	country_leader={
+			ideology=liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	 
+}
+
+ADA_José_Diaz = {
+	name = "José Diaz"
+	portraits={
+			civilian={
+				large="gfx/leaders/ADA/andcom.dds"
+			}
+		}
+	country_leader={
+			ideology=stalinism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+}
+ADA_Ciriaco_Cascajo = {
+	name = "Ciriaco Cascajo"
+	portraits={
+			army={
+				large="gfx/leaders/ADA/and1.dds"
+				small="GFX_idea_ADA_ciriaco"
+			}
+		}
+	corps_commander = {	
+	traits = { trickster  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+	legacy_id=-1
+	}
+}
+
+ADA_Francisco_Patxot = {
+	name = "Francisco Patxot"
+	portraits={
+			army={
+				large="gfx/leaders/ADA/and2.dds"
+				small="GFX_idea_ADA_francisco"
+			}
+		}
+	corps_commander = {	
+	traits = {   }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+	legacy_id=-1
+	}
+}
+ADA_Jesús_Garcia = {
+	name = "Jesús Garcia del Amo"
+	portraits={
+			army={
+				large="gfx/leaders/ADA/and3.dds"
+				small="GFX_idea_ADA_jesus"
+			}
+		}
+	corps_commander = {	
+	traits = {   }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+	legacy_id=-1
+	}
+}
+
+ADA_Eduardo_Sáenz = {
+	name = "Eduardo Sáenz de Buruaga"
+	portraits={
+			army={
+				large="gfx/leaders/ADA/and4.dds"
+				small="GFX_idea_ADA_eduardo"
+			}
+		}
+	field_marshall = {	
+	traits = {   }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+	legacy_id=-1
+	}
+}
+ADA_Juan_Modesto = {
+	name = "Juan Modesto"
+	portraits={
+			army={
+				large="gfx/leaders/ADA/andgen2.dds"
+				small="GFX_idea_ADA_juan"
+			}
+		}
+	corps_commander = {	
+	traits = {  trait_mountaineer }
+		skill = 3
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 3
+	    logistics_skill = 4
+	legacy_id=-1
+	}
+}
+ADA_Antonio_Cordón = {
+	name = "Antonio Cordón García"
+	portraits={
+			army={
+				large="gfx/leaders/ADA/andgen1.dds"
+				small="GFX_idea_ADA_antonio"
+			}
+		}
+	corps_commander = {	
+	traits = { infantry_leader }
+		skill = 2
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 4
+	    logistics_skill = 2
+	legacy_id=-1
+	}
+}
+ADA_adv_rafael= {
+			name = "Rafael Jurado"
+		portraits={
+			army={
+				small="GFX_idea_rafael"
+			}
+		}	
+		advisor={
+			cost = 150
+			slot = political_advisor
+			allowed = {
+					original_tag = ADA
+				}
+			available = {
+				has_completed_focus = andfoc2
+			}	
+				traits = {
+					ada_miner 	
+				}
+		}	
+		}
+ADA_lorca= {
+			name = "Frederico G. Lorca"
+	portraits={
+			army={
+				small="GFX_idea_lorca"
+			}
+		}	
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = ADA_lorca
+				allowed = {
+					original_tag = ADA
+				}
+				
+				traits = {
+					popular_figurehead
+				}
+		}
+		}
+		
+		
+	ADA_blanco= {
+			name = "Eduardo Blanco Fernández"
+			portraits={
+			army={
+				small="GFX_idea_blanco"
+			}
+		}	
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = ADA_blanco
+				allowed = {
+					original_tag = ADA
+				}
+				
+				traits = {
+					anti_fascist_agent
+				}
+		}
+		}
+		
+		AND_fernando= {
+		name = "Fernando de los Ríos"
+			portraits={
+			army={
+				small="GFX_idea_fernando"
+			}
+		}	
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = AND_fernando
+				allowed = {
+					original_tag = ADA
+				}
+				
+				traits = {
+					liberal_journalist
+				}
+		}	
+		}		
+		AND_zamora= {
+			name = "Niceto Alcalá-Zamora"
+			portraits={
+			army={
+				small="GFX_idea_zamora"
+			}
+		}	
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = AND_zamora
+				allowed = {
+					original_tag = ADA
+				}
+				
+				traits = {
+					silent_workhorse
+				}
+			
+		}
+		}
+		ADA_manuel= {
+			name = "Manuel Goded"
+			portraits={
+			army={
+				large="gfx/leaders/ADA/big_ada_manuel.dds"
+				small="GFX_idea_ADA_manuel"
+			}
+		}	
+		corps_commander = {	
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+	legacy_id=-1
+	}
+		}
+	
+
+AND_random1={
+		name= "Marco Antonio Fernandez"
+		portraits={
+			army={
+				
+				small="generic_army_europe_3"
+			}
+		}	
+		advisor={
+			slot = high_command
+			idea_token = AND_random1
+			ledger = army
+			allowed = {
+				original_tag = ADA
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+		}
+	AND_random129={
+		name= "Adan Jimenez"
+		portraits={
+			army={
+				
+				small="generic_army_europe_5"
+			}
+		}	
+		advisor={
+			slot = high_command
+			idea_token = AND_random129
+			ledger = army
+			allowed = {
+				original_tag = ADA
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+		}
+	AND_random2={
+		name= "Yeray Sánchez"
+		portraits={
+			army={
+				
+				small="generic_army_europe_4"
+			}
+		}	
+		advisor={
+			slot = high_command
+			idea_token = AND_random2
+			ledger = army
+			allowed = {
+				original_tag = ADA
+			}
+			traits = {
+				air_air_superiority_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+		}
+	AND_random3={
+		name= "Guillermo García"
+		portraits={
+			army={
+				
+				small="generic_army_europe_3"
+			}
+		}	
+		advisor={
+			slot = high_command
+			idea_token = AND_random3
+			ledger = army
+			allowed = {
+				original_tag = ADA
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+		}
+	AND_random4={
+		name= "Guillermo García"
+		portraits={
+			army={
+				
+				small="generic_army_europe_3"
+			}
+		}	
+		advisor={
+			slot = high_command
+			idea_token = AND_random4
+			ledger = army
+			allowed = {
+				original_tag = ADA
+			}
+			traits = {
+				army_commando_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+		}
+
+AND_random5={
+		name= "Ernaldo Burillo"
+		portraits={
+			army={
+				
+				small="generic_army_europe_1"
+			}
+		}	
+		advisor={
+			slot = army_chief
+			idea_token = AND_random5
+			ledger = army
+			allowed = {
+				original_tag = ADA
+			}
+			traits = {
+				army_chief_maneuver_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+		}
+AND_random6={
+		name= "Alejandro Moya"
+		portraits={
+			army={
+				
+				small="generic_army_europe_6"
+			}
+		}	
+		advisor={
+			slot = army_chief
+			idea_token = AND_random6
+			ledger = army
+			allowed = {
+				original_tag = ADA
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+		}
+		}
+	

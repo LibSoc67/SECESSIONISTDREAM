@@ -1,0 +1,2570 @@
+﻿focus_tree = {
+
+	id = castillalavieja_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 70
+			tag = CAV
+}
+}
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 0 }
+
+
+	focus = {
+		id = continuewithredondo
+		icon = GFX_goal_continuewithredondo
+		x = 21
+		y = 0
+		#relative_position_id = AST_empower_the_workers		
+		ai_will_do = {
+			factor = 99
+		}
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 5		
+		#prerequisite = { focus = AST_workers_paradise }
+		mutually_exclusive = {focus = getridofonesimo}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+				add_political_power= 100
+				add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+
+				}
+				
+			}
+		}
+
+		
+		
+		
+	focus = {
+		id = dreamofabigcastille
+		icon = GFX_goal_dreamofabigcastille
+		x = 0
+		y = 1
+		relative_position_id = continuewithredondo		
+		
+		available = {
+				}
+				bypass = {
+		}
+		
+		cost = 5		
+		prerequisite = { focus = continuewithredondo }
+	
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+				add_war_support= 0.1
+				add_state_claim = 80
+				add_state_claim = 96
+				add_state_claim = 94
+				add_state_claim = 95
+
+		
+				hidden_effect = {
+				add_threat = 3
+				}
+				custom_effect_tooltip = cem_dreamofabigcastille 
+			}
+		}
+
+		
+		
+		focus = {
+		id = anendtoleon
+		icon = GFX_goal_focus_war1
+		x = -1
+		y = 1
+		relative_position_id = dreamofabigcastille		
+		
+		available = {not = {is_subject = yes}
+				}
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = dreamofabigcastille }
+	
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+				create_wargoal = {
+				type = annex_everything
+				target = LEO
+				expire = 0
+			}
+		}
+	}
+		
+		focus = {
+		id = integrateleon
+		icon = GFX_goal_focus_integrateleon
+		x = 0
+		y = 1
+		relative_position_id = anendtoleon		
+		
+		available = { 
+		custom_trigger_tooltip = {
+		94 = {is_owned_and_controlled_by = CAV}		
+		95 = {is_owned_and_controlled_by = CAV}
+		96 = {is_owned_and_controlled_by = CAV}	
+		tooltip = ctt_intleon		
+				}}
+				bypass = {
+		}
+		
+		cost = 5		
+		prerequisite = { focus = anendtoleon }
+	
+
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+				add_state_core = 94  
+				add_state_core = 95 
+				add_state_core = 96
+			}
+		}
+
+	focus = {
+		id = ultimatumtorioja
+		icon = GFX_goal_focus_ultimatum
+		x = 1
+		y = 1
+		relative_position_id = dreamofabigcastille		
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = dreamofabigcastille }
+	
+available = {not = {is_subject = yes}}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+				
+    LAR = { country_event = {id = ultimatumtorioja.1
+    days = 1
+    random = 1
+	}}
+			}
+}
+	focus = {
+		id = Integraterioja
+		icon = GFX_goal_focus_integrateleon
+		x = 0
+		y = 1
+		relative_position_id = ultimatumtorioja		
+				bypass = {
+		}
+		
+		cost = 5		
+		prerequisite = { focus = ultimatumtorioja }
+	
+		available = {
+		custom_trigger_tooltip = {
+	80 = {is_owned_and_controlled_by = CAV}
+	tooltip = ctt_integraterioja
+}
+
+}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_state_core = 80 
+				
+			}
+		}
+	focus = {
+		id = greatstruggle
+		icon = GFX_goal_focus_army
+		x = -1
+		y = 1
+		relative_position_id = Integraterioja		
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = {focus = Integraterioja}
+		prerequisite = {focus = integrateleon } 
+		
+
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = greatstruggle
+		
+				
+			}
+		}
+	focus = {
+		id = thirdresearch
+		icon = GFX_goal_generic_scientific_exchange
+		x = 0
+		y = 1
+		relative_position_id = greatstruggle		
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = {focus = greatstruggle} 
+		
+
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_research_slot =	1
+		
+				
+			}
+		}
+	focus = {
+		id = marchnorth
+		icon = GFX_goal_focus_marchnorth
+		x = -4
+		y = 2
+		relative_position_id = greatstruggle		
+				bypass = {
+		}
+		available = {not = {is_subject = yes}}
+		cost = 5		
+		prerequisite = {focus = greatstruggle} 
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		hidden_effect = {
+		news_event = { id = iberianews.10 days = 2}
+				add_threat = 3
+				}
+		add_state_claim = 85
+		add_state_claim = 86
+		
+		add_state_claim = 89
+		add_state_claim = 90
+		add_state_claim = 91
+		
+		add_state_claim = 97
+		add_state_claim = 98
+		add_state_claim = 99
+		add_state_claim = 100
+		add_political_power = 100
+every_other_country = {
+			limit = {
+					OR = {
+						original_tag = ASR
+						original_tag = CAB
+						original_tag = GLC
+					}
+					exists = yes
+				}
+				add_opinion_modifier = { target = CAV modifier = unprovoked_aggression }
+add_war_support = 0.1				
+	}}}
+	
+	focus = {
+		id = tothesouth
+		icon = GFX_goal_generic_military_sphere
+		x = 4
+		y = 2
+		relative_position_id = greatstruggle		
+				bypass = {
+		}
+		
+		cost = 5		
+		prerequisite = {focus = greatstruggle} 
+		
+		available = {not = {is_subject = yes}}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_state_claim = 54
+		add_state_claim = 55
+		add_state_claim = 56
+		add_state_claim = 57
+		add_state_claim = 58
+		add_state_claim = 59
+		add_state_claim = 60
+		add_state_claim = 62
+		add_state_claim = 63
+		add_state_claim = 64
+		add_state_claim = 65
+		add_state_claim = 66
+		add_state_claim = 68
+		add_state_claim = 69
+		add_state_claim = 70
+		add_political_power = 100
+		hidden_effect = {
+		news_event = { id = iberianews.11 days = 2}
+				add_threat = 3
+				}
+	every_other_country = {
+			limit = {
+					OR = {
+						TAG = CAL
+					}
+					exists = yes
+					not = { has_war_with = CAV }
+				}
+				add_opinion_modifier = { target = CAV modifier = unprovoked_aggression }
+				add_war_support = 0.1
+			}
+		
+	
+				
+			}
+		}
+	focus = {
+		id = navarraallies
+		icon = GFX_goal_generic_military_deal
+		x = -1
+		y = 1
+		relative_position_id = marchnorth		
+				bypass = {
+				NOT = {country_exists = NAR 
+		} }
+		mutually_exclusive = { focus = aworthyfoe }	
+		cost = 7		
+		prerequisite = {focus = marchnorth} 
+		
+		available = {not = {is_subject = yes}
+		AND = { is_faction_lider = yes} }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		NAR = { country_event = {id = narjoincav.1
+    days = 1
+    random = 1
+	}}
+			}
+		}
+	focus = {
+		id = aworthyfoe
+		icon = GFX_goal_focus_aworthyfoe
+		x = 1
+		y = 1
+		relative_position_id = marchnorth		
+				bypass = {
+		}
+		mutually_exclusive = { focus = navarraallies }	
+		cost = 10		
+		prerequisite = {focus = marchnorth} 
+		
+
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = aworthyfoe
+		
+				
+			}
+		}
+	focus = {
+		id = warforsupremacy
+		icon = GFX_goal_generic_more_territorial_claims
+		x = -1
+		y = 1
+		relative_position_id = aworthyfoe		
+				bypass = {
+		}
+		available = { has_army_manpower = { size > 39999 }
+			not = {is_subject = yes}}
+		
+		cost = 10		
+		 prerequisite = {  focus = navarraallies 
+								  focus = aworthyfoe} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		hidden_effect = {
+				add_threat = 3
+				}
+		create_wargoal = {
+				type = annex_everything
+				target = GLC
+				expire = 0
+		
+				
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ASR
+				expire = 0
+		
+				
+			}
+				create_wargoal = {
+				type = annex_everything
+				target = CAB
+				expire = 0
+		
+				
+			}
+		
+		}
+	}
+	
+	
+	focus = {
+		id = forcedcomplianceglc
+		icon = GFX_goal_focus_integrateleon
+		x = 0
+		y = 1
+		relative_position_id = warforsupremacy		
+				bypass = {
+		}
+		available = {
+		NOT = { has_political_power < 50 } 
+		custom_trigger_tooltip = {
+		
+		97 = {is_owned_and_controlled_by = CAV}		
+		98 = {is_owned_and_controlled_by = CAV}		
+		99 = {is_owned_and_controlled_by = CAV}		
+		100 = {is_owned_and_controlled_by = CAV}		
+		tooltip = ctt_forcglc
+    }}
+		cost = 5		
+		prerequisite = {focus = warforsupremacy} 
+
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		97 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+		98 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+		99 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+		100 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	
+	add_political_power= -50 }
+		}
+		
+		
+		focus = {
+		id = forcedcomplianceasr
+		icon = GFX_goal_focus_integrateleon
+		x = -2
+		y = 1
+		relative_position_id = warforsupremacy		
+				bypass = {
+		}
+		available = {
+		NOT = { has_political_power < 35 } 
+		custom_trigger_tooltip = {
+		89 = {is_owned_and_controlled_by = CAV}
+		90 = {is_owned_and_controlled_by = CAV}
+		91 = {is_owned_and_controlled_by = CAV}
+		tooltip = ctt_forcasr
+		}
+		}
+		cost = 5		
+		prerequisite = {focus = warforsupremacy} 
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		89 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+		90 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+		91 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}	
+	add_political_power= -35 }
+		}	
+	
+		focus = {
+		id = forcedcompliancecab
+		icon = GFX_goal_focus_integrateleon
+		x = 2
+		y = 1
+		relative_position_id = warforsupremacy		
+				bypass = {
+		}
+		available = {
+		NOT = { has_political_power < 35 } 
+		custom_trigger_tooltip = {
+		85 = {is_owned_and_controlled_by = CAV}
+		86 = {is_owned_and_controlled_by = CAV}
+		tooltip = ctt_forccab
+		}}
+		cost = 5		
+		prerequisite = {focus = warforsupremacy} 
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		85 = { add_state_modifier = {
+		
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+		86 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+		
+	add_political_power= -35 }
+		}
+		
+		
+		focus = {
+		id = supportmdrrebels
+		icon = GFX_goal_generic_military_deal
+		x = -1
+		y = 1
+		relative_position_id = tothesouth		
+				bypass = {
+				
+}
+				
+		
+		available = {
+		 }
+		cost = 7		
+		prerequisite = { focus = tothesouth } 
+			mutually_exclusive = { focus = unifythecastillas }	
+
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_manpower = 25000
+		}
+			}
+	focus = {
+		id = unifythecastillas
+		icon = GFX_goal_focus_aworthyfoe
+		x = 1
+		y = 1
+		relative_position_id = tothesouth		
+				bypass = {
+		}
+		mutually_exclusive = { focus = supportmdrrebels }	
+		cost = 10		
+		prerequisite = {focus = tothesouth} 
+		
+		available = {CAL = {exists = yes}}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = unifycas
+		
+				
+			}
+		}
+		focus = {
+		id = thegreatwar
+		
+		icon = GFX_goal_focus_war2
+		x = -1
+		y = 1
+		relative_position_id = unifythecastillas		
+				bypass = { CAL = {exists = no}
+		}
+		
+		cost = 10		
+		prerequisite = {  focus = unifythecastillas
+								focus = supportmdrrebels} 
+		available = {has_army_manpower = { size > 39999 }
+		not = {is_subject = yes}}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		hidden_effect = {
+			
+				add_threat = 3
+				}
+		create_wargoal = {
+				type = annex_everything
+				target = CAL
+				expire = 0
+		
+				
+			}
+		
+			}
+		}
+		focus = {
+		id = cavwarmdr
+		icon = GFX_focus_cavwarmdr
+		x = -4
+		y = 1
+		relative_position_id = frutsofvic		
+				bypass = {
+				MDR = {exists = no}
+		}
+		
+		cost = 5		
+		prerequisite = { focus = frutsofvic} 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		create_wargoal = {
+				type = annex_everything
+				target = MDR
+				expire = 0
+		
+				
+			}
+		}
+			
+		}	
+		
+		focus = {
+		id = cavnewcapital
+		icon = GFX_goal_focus_integrateleon
+		x = 0
+		y = 1
+		relative_position_id = cavwarmdr		
+				bypass = {
+		}
+		available = {
+		NOT = { has_political_power < 50 } 
+		61 = {is_owned_and_controlled_by = CAV}
+		}
+		cost = 5		
+		prerequisite = { focus = cavwarmdr} 
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_capital	= 61
+			add_political_power = -50
+			61 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+			
+
+		}
+			
+		}	
+		focus = {
+		id = calconmpl
+		icon = GFX_goal_focus_integrateleon
+		x = 1
+		y = 1
+		relative_position_id = thegreatwar		
+				bypass = {
+		}
+		available = {
+		NOT = { has_political_power < 35 } 
+		55 = {is_owned_and_controlled_by = CAV}
+		56 = {is_owned_and_controlled_by = CAV}
+		57 = {is_owned_and_controlled_by = CAV}
+		58 = {is_owned_and_controlled_by = CAV}
+		59 = {is_owned_and_controlled_by = CAV}
+		60 = {is_owned_and_controlled_by = CAV}
+		62 = {is_owned_and_controlled_by = CAV}
+		63 = {is_owned_and_controlled_by = CAV}
+		64 = {is_owned_and_controlled_by = CAV}
+		65 = {is_owned_and_controlled_by = CAV}
+		66 = {is_owned_and_controlled_by = CAV}
+		68 = {is_owned_and_controlled_by = CAV}
+		69 = {is_owned_and_controlled_by = CAV}
+		70 = {is_owned_and_controlled_by = CAV}
+		}
+		cost = 5		
+		prerequisite = { focus = thegreatwar} 
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+	55 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}	
+	56 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	57 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	58 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}	
+	59 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	60 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	62 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	63 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	64 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	65 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	66 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	68 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	69 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	70 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	add_political_power = -35
+		}
+			
+		}
+focus = {
+		id = befriendmur
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = -1
+		y = 1
+		relative_position_id = thegreatwar		
+				bypass = {
+				MUR = {exists = no}
+		}
+		available = {
+		53 = {is_owned_and_controlled_by = CAV}
+
+		country_exists = MUR
+		}
+		cost = 5		
+		prerequisite = { focus = thegreatwar}  
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_political_power = 100
+		add_stability = 0.1
+		add_opinion_modifier { 
+		target = MUR
+		modifier = large_increase
+		}
+		MUR = {
+				add_opinion_modifier = { target = CAV modifier = huge_increase }
+				add_popularity { ideology = fascism popularity = 0.1}
+				transfer_state = 53
+				add_state_core = 53
+				
+			}}}		
+		focus = {
+		id = frutsofvic
+		icon = GFX_goal_focus_generic_support_the_left_right
+		x = -6
+		y = 1
+		relative_position_id = calconmpl		
+				bypass = {
+		}
+		
+		cost = 5		
+		prerequisite = { focus = calconmpl} 
+		prerequisite = { focus = forcedcomplianceasr} 
+		prerequisite = { focus = forcedcomplianceglc} 
+		prerequisite = { focus = forcedcompliancecab} 
+		prerequisite = { focus = befriendmur} 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = frutsofvic
+		}
+			
+		}
+		
+		focus = {
+		id = intmur
+		icon = GFX_goal_focus_generic_little_entente
+		x = 2
+		y = 1
+		relative_position_id = frutsofvic		
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = frutsofvic} 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { 
+		MUR = { 
+		country_event = {id = ultimatumtorioja.2 days = 1 random = 1
+						}			
+			}
+		add_state_core = 53
+		add_state_core = 36
+		add_state_core = 35
+		add_state_core = 32
+		add_state_core = 33
+		add_state_core = 34
+		}}
+		
+		
+		focus = {
+		id = denounceand
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 0
+		y = 1
+		relative_position_id = frutsofvic		
+				
+				bypass = { 
+		}
+		
+		cost = 5		
+		prerequisite = { focus = frutsofvic} 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		hidden_effect = {
+				add_threat = 3
+				}
+		every_other_country = {
+			limit = {
+					OR = {
+						original_tag = ADA
+						original_tag = EXT
+						
+					}
+					exists = yes
+					not = { has_war_with = CAV }
+				}
+				add_opinion_modifier = { target = CAV modifier = unprovoked_aggression }
+				add_war_support = 0.1 
+			}
+		add_state_claim = 24
+		add_state_claim = 45
+		add_state_claim = 43
+		add_state_claim = 27
+		add_state_claim = 28
+		add_state_claim = 47
+		add_state_claim = 48
+		add_state_claim = 44
+		add_state_claim = 26
+		add_state_claim = 49
+		add_state_claim = 67
+		add_state_claim = 51
+		add_state_claim = 25
+		add_state_claim = 50
+		add_state_claim = 46
+		
+		}
+			
+		}
+		focus = {
+		id = alasteffort
+		icon = GFX_goal_focus_generic_little_entente
+		x = 0
+		y = 1
+		relative_position_id = denounceand		
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = denounceand} 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = alasteffort	
+		}}
+		focus = {
+		id = endand
+		icon = GFX_goal_focus_generic_major_war
+		x = 0
+		y = 1
+		relative_position_id = alasteffort		
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = alasteffort} 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		hidden_effect = {
+				add_threat = 3
+				}
+		create_wargoal = {
+				type = annex_everything
+				target = ADA
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = EXT
+				expire = 0
+			}
+			
+		}
+			
+		}
+		focus = {
+		id = intand
+		icon = GFX_goal_focus_integrateleon
+		x = -1
+		y = 1
+		relative_position_id = endand		
+				bypass = {
+		}
+		available = { 
+		NOT = { has_political_power < 50 } 
+		AND = {
+		
+		
+    any_state = {
+				AND = {
+					state = 24
+				}
+				OWNER = {
+						tag = CAV
+					}
+				}
+		any_state = {
+				AND = {
+					state = 45
+				}
+				OWNER = {
+						tag = CAV
+					}
+				}		
+		any_state = {
+				AND = {
+					state = 43
+				}
+				OWNER = {
+						tag = CAV
+					}
+				}		
+			any_state = {
+				AND = {
+					state = 27
+				}
+				OWNER = {
+						tag = CAV
+					}
+				}	
+			any_state = {
+				AND = {
+					state = 28
+				}
+				OWNER = {
+						tag = CAV
+					}
+				}
+any_state = {
+				AND = {
+					state = 47
+				}
+				OWNER = {
+						tag = CAV
+					}
+				}
+any_state = {
+				AND = {
+					state = 48
+				}
+				OWNER = {
+						tag = CAV
+					}
+				}	
+any_state = {
+				AND = {
+					state = 44
+				}
+				OWNER = {
+						tag = CAV
+					}
+				}
+any_state = {
+				AND = {
+					state = 26
+				}
+				OWNER = {
+						tag = CAV
+					}
+				}
+any_state = {
+				AND = {
+					state = 49
+				}
+				OWNER = {
+						tag = CAV
+					}
+				}
+any_state = {
+				AND = {
+					state = 67
+				}
+				OWNER = {
+						tag = CAV
+					}
+				}
+any_state = {
+				AND = {
+					state = 51
+				}
+				OWNER = {
+						tag = CAV
+					}
+				}
+any_state = {
+				AND = {
+					state = 25
+				}
+				OWNER = {
+						tag = CAV
+					}
+				}
+any_state = {
+				AND = {
+					state = 50
+				}
+				OWNER = {
+						tag = CAV
+					}
+				}
+any_state = {
+				AND = {
+					state = 46
+				}
+				OWNER = {
+						tag = CAV
+					}
+				}				
+				}} 
+				bypass = {
+		}
+		cost = 10	
+		prerequisite = { focus = endand} 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		24 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	43 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	45 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	27 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	28 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	47 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	48 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	44 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	26 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	49 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	67 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	51 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	25 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	50 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	46 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+		add_political_power = -50}
+			
+		}
+		focus = {
+		id = intext
+		icon = GFX_goal_focus_integrateleon
+		x = 1
+		y = 1
+		relative_position_id = endand		
+		available = { 
+		NOT = { has_political_power < 35 } 
+		AND = {
+    any_state = {
+				AND = {
+					state = 66
+				}
+				OWNER = {
+					and = {
+						tag = CAV
+					}
+				}} 
+	any_state = {
+				AND = {
+					state = 71
+				OWNER = {
+					and = {
+						tag = CAV
+					}
+				}}
+				}
+	any_state = {
+				AND = {
+					state = 72
+				}
+				OWNER = {
+					and = {
+						tag = CAV
+					}
+				}}
+	any_state = {
+				AND = {
+					state = 73
+				OWNER = {
+					and = {
+						tag = CAV
+					}
+				}}
+				}
+	any_state = {
+				AND = {
+					state = 74
+				OWNER = {
+					and = {
+						tag = CAV
+					}
+				}}
+				}			
+				}
+				}
+		cost = 5
+		prerequisite = { focus = endand} 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+	add_political_power = -35	
+	66 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	71 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	72 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	73 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	74 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+		}
+			
+		
+		}
+focus = {
+		id = newgenerals
+		icon = GFX_focus_usa_honor_the_confederacy
+		x = 0
+		y = -1
+		relative_position_id = workersrevolt		
+				bypass = {
+		}
+		
+		cost = 2		
+		prerequisite = { focus = furtherantifa } 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		create_corps_commander = {
+	name = "Segismundo Casado"
+	picture = "segcas.dds"
+	traits = { cavalry_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+		}}
+		
+		
+		
+		
+focus = {
+		id = expandcaleconomy1
+		icon = GFX_goal_focus_generic_industry1
+		x = 18
+		y = 0
+		relative_position_id = continuewithredondo		
+				bypass = {
+		}
+		
+		cost = 5		
+		prerequisite = { } 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+							} }
+	random_owned_controlled_state = {
+
+add_extra_state_shared_building_slots = 1							
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+
+						
+		}}}
+focus = {
+		id = expandcaleconomy2
+		icon = GFX_goal_focus_generic_industry2
+		x = -1
+		y = 1
+		relative_position_id = expandcaleconomy1		
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = {focus = expandcaleconomy1 }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}}}}
+		focus = {
+		id = expandcaleconomy3
+		icon = GFX_goal_focus_generic_industry3
+		x = 0
+		y = 1
+		relative_position_id = expandcaleconomy2		
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = expandcaleconomy2 } 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}}}}
+		focus = {
+		id = expandmilitary1
+		icon = GFX_goal_focus_military_1
+		x = 1
+		y = 1
+		relative_position_id = expandcaleconomy1		
+				bypass = {
+		}
+		
+		cost = 10	
+		prerequisite = { focus = expandcaleconomy1 } 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+							} }
+	}}
+			focus = {
+		id = expandmilitary2
+		icon = GFX_goal_focus_generic_tank_production
+		x = 0
+		y = 1
+		relative_position_id = expandmilitary1		
+				bypass = {
+		}
+		
+		cost = 10	
+		prerequisite = { focus = expandmilitary1 } 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+							} }
+	}}
+	
+			
+			
+		focus = {
+		id = 1mil2civ
+		icon = GFX_goal_focus_generic_the_giant_wakes
+		x = 0
+		y = 1
+		relative_position_id = expandcaleconomy3		
+				bypass = {
+		}
+		mutually_exclusive = { focus = 2mil1civ }	
+		prerequisite = { focus = expandcaleconomy3} 		
+		cost = 12	
+		prerequisite = { } 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+				random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = industrial_complex
+								level = 2
+								instant_build = yes
+							}}
+									random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+							}}
+			}
+			
+	}
+	
+		focus = {
+		id = 2mil1civ
+		icon = GFX_goal_generic_construct_civilian
+		x = 0
+		y = 1
+		relative_position_id = expandmilitary2		
+				bypass = {
+		}
+		prerequisite = { focus = expandmilitary2 } 		
+		cost = 12	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+				random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}}
+									random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = arms_factory
+								level = 2
+								instant_build = yes
+							}}
+			}
+		mutually_exclusive = { focus = 1mil2civ }	
+	}
+focus = {
+		id = forthresearch
+		icon = GFX_goal_generic_scientific_exchange
+		x = -1
+		y = 1
+		relative_position_id = 2mil1civ		
+		cost = 8		
+		prerequisite = { focus = 2mil1civ 
+								  focus = 1mil2civ }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_research_slot =	1
+}}
+
+	focus = {
+		id = cavres1
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = expandcaleconomy1 }
+		x = -3
+		y = 1
+		relative_position_id = expandcaleconomy1
+		cost = 15
+		available_if_capitulated = yes
+		completion_reward = {
+	87 = {	
+	add_resource = {
+		type = oil
+		amount = 5
+	}
+	add_resource = {
+		type = steel
+		amount = 7
+	}
+	add_resource = {
+		type = chromium
+		amount = 14
+	}
+	}
+	92 = {	
+	add_resource = {
+		type = steel
+		amount = 6
+	}
+	add_resource = {
+		type = chromium
+		amount = 5
+	}
+	}}}
+	focus = {
+		id = cavres2
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = expandcaleconomy1 }
+		x = 6
+		y = 0
+		relative_position_id = cavres1
+		cost = 15
+		available_if_capitulated = yes
+		completion_reward = { 
+			remove_ideas = {cav_infra}
+			add_timed_idea = {idea = cav_infra2 days = 200}
+		build_railway = {
+			level = 2
+			build_only_on_allied = yes
+			path = { 10321 15629 15584 15642 6724 }
+		}
+		}
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	focus = {
+		id = getridofonesimo
+		icon = GFX_focus_spr_crush_the_revolution
+		x = 10
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = continuewithredondo
+		mutually_exclusive = {focus = continuewithredondo}
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+		add_ideas = { cavantifas }
+		}
+	}
+	focus = {
+		id = negotiatecomsupport
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 0
+		y = 1
+		available = { 
+		NOT = { has_political_power < 50 } }
+		relative_position_id = getridofonesimo
+		prerequisite = { focus = getridofonesimo }
+		cost = 10
+		available_if_capitulated = yes
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		completion_reward = {
+	add_political_power = -50
+	add_war_support = 0.10
+	}
+	}
+
+	focus = {
+		id = furtherantifa
+		icon = GFX_focus_generic_support_the_left_right
+		x = 0
+		y = 1
+		relative_position_id = negotiatecomsupport
+		prerequisite = { focus = negotiatecomsupport }
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			start_civil_war = {
+				ruling_party = democratic
+				ideology = fascism
+				size = var:party_popularity@fascism
+			}
+			add_ideas = {nationalunderdog}
+		}
+	}
+	focus = {
+		id = securethenewstatecav
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+		relative_position_id = furtherantifa
+		prerequisite = { focus = furtherantifa }
+		cost = 10
+		available_if_capitulated = yes
+		available = { is_puppet = no
+			has_war = no
+			NOT = {
+				any_country = {
+					original_tag = CAV
+					has_government = fascism
+				}
+			}}
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 120
+			remove_ideas =  {nationalunderdog cavantifas}
+			add_ideas = {cavaftermachofthewar}
+		}
+	}
+		focus = {
+		id = workersrevolt
+		icon = GFX_focus_prc_agrarian_socialism
+		x = -2
+		y = 1
+		mutually_exclusive = {focus = demshalprev}
+		relative_position_id = securethenewstatecav
+		prerequisite = { focus = securethenewstatecav }
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			add_war_support = 0.1
+			remove_ideas =  {cavaftermachofthewar}
+			set_politics = { ruling_party = communism elections_allowed = no }
+			add_popularity = {
+			ideology = communism
+			popularity = 0.15}
+		}
+	}
+	focus = {
+		id = comendtoleon
+		icon = GFX_goal_focus_war1
+		x = -1
+		y = 1
+		relative_position_id = workersrevolt		
+		
+		available = {not = {is_subject = yes}
+				}
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = workersrevolt }
+	
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+				create_wargoal = {
+				type = annex_everything
+				target = LEO
+				expire = 0
+			}
+		add_state_core = 94  
+		add_state_core = 95 
+		add_state_core = 96
+				}
+	}
+		focus = {
+		id = comendtorioja
+		icon = GFX_goal_focus_war1
+		x = 1
+		y = 1
+		relative_position_id = workersrevolt		
+		
+		available = {not = {is_subject = yes}
+				}
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = workersrevolt }
+	
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+				create_wargoal = {
+				type = annex_everything
+				target = LAR
+				expire = 0
+			}
+		add_state_core = 80 
+		}
+	}
+			focus = {
+		id = comnoborders
+		icon = GFX_focus_ger_great_red_menace
+		x = -1
+		y = 1
+		relative_position_id = comendtorioja		
+		cost = 10		
+		prerequisite = {  focus = comendtorioja focus = comendtoleon} 
+		available = {not = {is_subject = yes}
+				}
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = cavnoborders
+		}
+	}
+	focus = {
+		id = demshalprev
+		icon = GFX_focus_usa_voter_registration_act
+		x = 2
+		y = 1
+		mutually_exclusive = {focus = workersrevolt}
+		relative_position_id = securethenewstatecav
+		prerequisite = { focus = securethenewstatecav }
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = 0.1
+			remove_ideas =  {cavaftermachofthewar}
+			set_politics = { ruling_party = democratic elections_allowed = yes }
+			add_popularity = {
+			ideology = democratic
+			popularity = 0.15}
+		}
+	}
+	focus = {
+		id = demendtoara
+		icon = GFX_goal_focus_war1
+		x = 1
+		y = 1
+		relative_position_id = demshalprev		
+		
+		available = {not = {is_subject = yes}
+				}
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = demshalprev }
+	
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+				create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ARA
+				expire = 0
+			}
+		}
+	}
+	focus = {
+		id = cavanticom
+		icon = GFX_goal_focus_war1
+		x = -1
+		y = 1
+		relative_position_id = demshalprev		
+		
+	available = {
+			is_puppet = no
+			OR = {
+				any_country = { 
+					original_tag = VAS
+					has_government = communism 
+				}
+				any_country = { 
+					original_tag = CAT
+					has_government = communism 
+				}	
+				any_country = { 
+					original_tag = CAL
+					has_government = communism 
+				}				} }
+		
+		cost = 10		
+		prerequisite = { focus = demshalprev }
+	
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+if = {
+				limit = {
+					any_country = { 
+						original_tag = CAL
+						has_government = communism 
+					}
+				}
+						CAV = {
+							create_wargoal = {
+								type = topple_government
+								target = CAL
+								expire = 0
+							}
+						}
+					}
+					if = {
+				limit = {
+					any_country = { 
+						original_tag = CAT
+						has_government = communism 
+					}
+				}
+						CAV = {
+							create_wargoal = {
+								type = topple_government
+								target = CAT
+								expire = 0
+							}
+						}
+					}
+					if = {
+				limit = {
+					any_country = { 
+						original_tag = VAS
+						has_government = communism 
+					}
+				}
+						CAV = {
+							create_wargoal = {
+								type = topple_government
+								target = VAS
+								expire = 0
+							}
+						}
+					}
+				}
+			}
+	focus = {
+		id = demfinal
+		icon = GFX_focus_spa_unify_the_nationalist_front
+		x = 1
+		y = 1
+		relative_position_id = cavanticom		
+		
+		available = {not = {is_subject = yes}
+				}
+		cost = 10		
+		prerequisite = { focus = demendtoara focus = cavanticom}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = demduty }
+	}
+focus = {
+		id = cavfin1
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = -2
+		y = 1
+		relative_position_id = frutsofvic		
+		
+		available = {
+				}
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = frutsofvic }
+	
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_state_claim = 19
+		add_state_claim = 20
+		add_state_claim = 21
+		add_state_claim = 22
+		add_state_claim = 23
+		ARA = {add_opinion_modifier = { target = CAV modifier = large_decrease }}
+		}
+	}
+focus = {
+		id = cavfin2
+		icon = GFX_goal_focus_war1
+		x = 0
+		y = 1
+		relative_position_id = cavfin1		
+		
+		available = {not = {is_subject = yes} ARA = {exists = yes}
+				}
+				bypass = {ARA = {exists = no}
+		}
+		
+		cost = 10		
+		prerequisite = { focus = cavfin1 }
+	
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+				create_wargoal = {
+				type = annex_everything
+				target = ARA
+				expire = 0
+			}
+		}
+	}
+focus = {
+		id = cavfin3
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 1
+		relative_position_id = cavfin2		
+		
+		available = { 19 = {owner = {tag = CAV}} 20 = {owner = {tag = CAV}} 21 = {owner = {tag = CAV}} 22 = {owner = {tag = CAV}} 23 = {owner = {tag = CAV}}
+				}
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = cavfin2 }
+	
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+	19 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}	
+	20 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	21 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	22 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	23 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.5
+		local_non_core_manpower = 0.2
+		required_garrison_factor = -0.3
+    }}}
+		}
+	}	
+	focus = {
+		id = cavfin4
+		icon = GFX_goal_focus_generic_major_war
+		x = 4
+		y = 1
+		relative_position_id = frutsofvic		
+		
+		available = {not = {is_subject = yes} 
+		OR = {VAS = {exists = yes} CAT = {exists = yes}
+				}}
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = frutsofvic }
+	
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+				create_wargoal = {
+				type = annex_everything
+				target = CAT
+				expire = 0
+			}
+		}
+		completion_reward = {
+				create_wargoal = {
+				type = annex_everything
+				target = VAS
+				expire = 0
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = focus_cav_head1
+		icon = GFX_focus_cav_head
+		x = -10
+		y = 1
+		relative_position_id = continuewithredondo		
+		
+		available = {has_government = fascism}
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = continuewithredondo }
+	
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		remove_country_leader_trait = Divided
+		add_country_leader_trait = Divided1
+			}
+	}
+	focus = {
+		id = focus_cav_head2
+		icon = GFX_focus_cav_head_primo
+		x = -3
+		y = 1
+		relative_position_id = focus_cav_head1		
+		
+		available = {has_government = fascism}
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = focus_cav_head1 }
+	
+		mutually_exclusive = {focus = focus_cav_head4}
+		mutually_exclusive = {focus = focus_cav_head3}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		hidden_effect = {
+		country_event = {
+		id = cavhead.1 days = 28
+		}
+		}
+		custom_effect_tooltip = cet_focus_cav2
+			}
+	}
+	
+	focus = {
+		id = focus_cav_head3
+		icon = GFX_focus_cav_head_mola
+		x = 3
+		y = 1
+		relative_position_id = focus_cav_head1		
+		
+		available = {has_government = fascism}
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = focus_cav_head1 }
+		mutually_exclusive = {focus = focus_cav_head2}
+		mutually_exclusive = {focus = focus_cav_head4}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		hidden_effect = {
+		country_event = {
+		id = cavhead.2 days = 28
+		}
+		}
+		custom_effect_tooltip = cet_focus_cav3
+			}
+	}
+	focus = {
+		id = focus_cav_head4
+		icon = GFX_focus_cav_head_onesimo
+		x = 0
+		y = 1
+		relative_position_id = focus_cav_head1		
+		mutually_exclusive = {focus = focus_cav_head2}
+		available = {has_government = fascism}
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = focus_cav_head1 }
+		mutually_exclusive = {focus = focus_cav_head3}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		hidden_effect = {
+		country_event = {
+		id = cavhead.3 days = 28
+		}
+		}
+		custom_effect_tooltip = cet_focus_cav4
+			}
+	}
+	
+	focus = {
+		id = focus_cav_head5
+		icon = GFX_focus_cav_head_fuse
+		x = 0
+		y = 1
+		relative_position_id = focus_cav_head2		
+		
+		available = {has_government = fascism}
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = focus_cav_head2 }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		set_party_name = { 
+			ideology = fascism 
+			long_name = "Nacional-Sindicalistas"
+			name = "NS"
+		}
+		add_popularity = {
+			ideology = mlism
+			popularity = -1.0}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1}
+		add_country_leader_trait = fascistmarxist
+		custom_effect_tooltip = cet_focus_cav_head5
+		}
+	}
+	focus = {
+		id = focus_cav_head6
+		icon = GFX_focus_spr_class_war
+		x = 0
+		y = 1
+		relative_position_id = focus_cav_head5		
+		
+		available = {has_government = fascism}
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = focus_cav_head5 }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = natclass
+		}
+	}
+	focus = {
+		id = focus_cav_head7
+		icon = GFX_focus_generic_self_management 
+		x = 0
+		y = 1
+		relative_position_id = focus_cav_head3		
+		
+		available = {has_government = fascism}
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = focus_cav_head3 }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_country_leader_trait = headstrong
+		}
+	}
+	focus = {
+		id = focus_cav_head8
+		icon = GFX_focus_cav_head_jews
+		x = 0
+		y = 3
+		relative_position_id = focus_cav_head4		
+		
+		available = {has_government = fascism}
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = focus_cav_head9 focus = focus_cav_head6 focus = focus_cav_head11}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+							add_offsite_building = { type = industrial_complex level = 2 }
+							93 = {add_manpower = -3751}
+							77 = {add_manpower = -2858}
+							76 = {add_manpower = -2425}
+							75 = {add_manpower = -5938}
+							87 = {add_manpower = -492}
+							81 = {add_manpower = -2492}
+							add_manpower = -4000
+							custom_effect_tooltip = "Most of the jews and their allies will be killed. We will expropiate their money."
+		}
+	}
+	
+	focus = {
+		id = focus_cav_head9
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 0
+		y = 1
+		relative_position_id = focus_cav_head7		
+		
+		available = {has_government = fascism}
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = focus_cav_head7 }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		93 = {
+		add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+		
+		}
+		88 = {
+		add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+							}
+		
+		}
+		}
+	}
+	focus = {
+		id = focus_cav_head10
+		icon = GFX_focus_cav_head_pron 
+		x = 0
+		y = 1
+		relative_position_id = focus_cav_head4		
+		
+		available = {has_government = fascism}
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = focus_cav_head4 }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_country_leader_trait = pronunciamiento
+		add_political_power = 120
+		army_experience = 10
+		}
+	}
+	
+	focus = {
+		id = focus_cav_head11
+		icon = GFX_focus_spa_the_spanish_miracle
+		x = 0
+		y = 1
+		relative_position_id = focus_cav_head10		
+		
+		available = {has_government = fascism}
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = focus_cav_head10 }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		93 = {
+		add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+		
+		}
+		88 = {
+		add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+		
+		}
+		77 = {
+		add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+		
+		}
+		75 = {
+		add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+		
+		}
+		}
+	}	
+focus = {
+		id = focus_cav_head12
+		icon = GFX_focus_spa_unify_the_nationalist_front
+		x = 0
+		y = 1
+		relative_position_id = focus_cav_head8	
+		
+		available = {has_government = fascism}
+				bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = focus_cav_head8 }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_war_support = 0.1
+		add_stability = 0.05
+		add_popularity = {
+		ideology = fascism
+		popularity = 0.1
+		}
+		}
+	}	
+
+
+}
+

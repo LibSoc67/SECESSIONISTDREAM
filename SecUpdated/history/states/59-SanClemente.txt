@@ -1,0 +1,21 @@
+
+state={
+	id=59
+	name="San Clemente"
+	provinces={
+		1351 1756 3545 8696 9067 16161 16186 16225 16230 16255 
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+	}
+	state_category=pastoral
+	manpower=104830
+	buildings_max_level_factor=1.000
+}

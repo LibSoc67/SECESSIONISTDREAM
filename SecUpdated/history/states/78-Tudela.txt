@@ -1,0 +1,32 @@
+
+state={
+	id=78
+	name="Tudela"
+	provinces={
+		3284 5769 5809 7767 15535
+	}
+	resources={
+		rubber=6.000
+		tungsten=0.000
+		steel=9.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = NAR
+		add_core_of = NAR
+		add_claim_by = VAS
+		victory_points = {
+		15535 5	
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			 
+		}
+	}
+	state_category=rural
+	manpower=104934
+	buildings_max_level_factor=1.000
+}

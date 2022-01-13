@@ -1,0 +1,73 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = hnojoinsprs
+
+# penis
+country_event = {
+	id = hnojoinsprs.1
+	title = "Cooperation with the Paris Commune?"
+	desc = "The libertarian socialists came with a proposal last night. They wish to lift the ban on state socialist parties in the AIT, the International Workers Asociation. Also they have formaly invited us to join their faction. How shall we respond?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Let's join"
+		ai_chance = { factor = 100 }
+		PRS = { 
+		add_to_faction = HNO 
+		country_event = hnojoinsprs.2
+		}
+}
+	
+	
+	option = { 
+		name = "Damn be those utopianists!"
+		ai_chance = { factor = 0 }
+	 PRS={
+			add_opinion_modifier { 
+			target = HNO
+			modifier = large_decrease
+		}
+		}	
+	HNO={
+			add_opinion_modifier { 
+			target = PRS
+			modifier = large_decrease
+		}
+		}	
+		PRS ={ country_event = hnojoinsprs.3}
+		set_country_flag = hnono		
+
+
+}}
+country_event = {
+	id = hnojoinsprs.2
+	title = "The negotiation has been successful"
+	desc = "After a few days of intense negotiation, Haute Normandie and us have finally agreed on cooperating." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Great!"
+		ai_chance = { factor = 100 }
+		
+}
+}
+country_event = {
+	id = hnojoinsprs.3
+	title = "The negotiation has failed"
+	desc = "After a few days of intense negotiation, we failed to reach an agreement with the Hautes Normandians. We will have to liberate them by force." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We will teach them a lesson"
+		ai_chance = { factor = 100 }
+	custom_effect_tooltip = "Ungrateful bastards..."
+}
+}

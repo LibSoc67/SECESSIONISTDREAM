@@ -1,0 +1,35 @@
+
+state={
+	id=150
+	name="Alpes de Haute Provence"
+	provinces={
+		3530 4875 8891 10618 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=0.000
+		oil=0.000
+		chromium=0.000
+		aluminium=35.000
+	}
+	history={
+		owner = PRO
+		add_core_of = PRO
+		add_claim_by = OCC
+		victory_points = {
+		10618 1
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 0
+			industrial_complex = 0
+			#dockyard = 
+			#air_base = 
+			# = {naval_base = 4}
+		}
+	}
+	state_category = pastoral
+	manpower=85090
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,187 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = catocc
+
+# penis
+country_event = {
+	id = catocc.1
+	title = "Catalan Coup d'Etat!"
+	desc = "There has been a pro catalan communist revolt in Carcassone, and they have declared independent and pleged loyalty to Barcelona. How shall we respond?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We must surrender to them!"
+		ai_chance = { factor = 2 }
+COC = { add_threat = 10 
+
+	annex_country = {
+    target = OCC
+    transfer_troops = yes
+	}
+	}
+	news_event = { id = iberianews.4 days = 1}
+}
+	option = { 
+		name = "War it is!"
+		ai_chance = { factor = 98 }
+	
+		OCC = { create_wargoal = {
+				type = annex_everything
+				target = COC
+				expire = 0
+				} 
+				}
+				
+	add_threat = 3 
+ news_event = { id = iberianews.3 days = 1}
+		OCC = {add_war_support	= 0.1 }
+
+}}
+country_event = {
+	id = catocc.2
+	title = "A historical friend"
+	desc = "Catalonia, our historical brother, has sent a formal invitation to a shared military sphere. They claim that our fraternity is greater that the ideological diferences. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "No deal with the communists"
+		ai_chance = { factor = 0 }
+			CAT = {
+			country_event = catocc.3
+			add_opinion_modifier = { target = OCC modifier = large_decrease }
+			}
+			add_opinion_modifier = { target = CAT modifier = large_decrease }
+			}
+	option = { 
+		name = "Fraternity over politics!"
+		ai_chance = { factor = 10 }
+	
+			CAT = { 
+			add_to_faction = OCC 
+			country_event = catocc.4
+			}
+	
+}
+	option = { 
+		name = "With some conditions"
+		ai_chance = { factor = 90 }
+	
+			CAT = { 
+			country_event = catocc.5
+			}
+
+}
+}
+country_event = {
+	id = catocc.3
+	title = "They have refused"
+	desc = "Our brothers have declined our grateful offer. The future is darker than ever."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Life goes on"
+		ai_chance = { factor = 95 }
+	
+			news_event = { id = iberianews.17 days = 1}
+	}
+	option = { 
+		name = "We will teach them a lesson"
+		ai_chance = { factor = 5 }
+			
+			news_event = { id = iberianews.17 days = 1}
+			
+			create_wargoal = {
+				type = annex_everything
+				target = OCC
+				expire = 0
+			}
+		
+		}
+
+}
+country_event = {
+	id = catocc.4
+	title = "They have accepted"
+	desc = "Our brothers have unconditionaly accepted our offer. The future is brighter than ever."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Great"
+		ai_chance = { factor = 95 }
+	
+			news_event = { id = iberianews.18 days = 1}
+	}
+	
+
+}
+country_event = {
+	id = catocc.5
+	title = "Counter offer"
+	desc = "Our brothers have accepted our offer, but with one condition: the shared administration of the Catalan-Occitan territories. Shall we accept?."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Yes"
+		ai_chance = { factor = 95 }
+	
+			news_event = { id = iberianews.19 days = 1}
+			FNL = {transfer_state = 226 create_country_leader = {name = "Joint government" picture = "fnl.dds" ideology = moderatism} }
+			ARN = {transfer_state = 9 create_country_leader = {name = "Joint government" picture = "fnl.dds" ideology = moderatism} }
+			add_to_faction = FNL
+			add_to_faction = ARN
+			add_to_faction = OCC
+			OCC = {country_event = catocc.6 }
+	}
+	
+	option = { 
+		name = "No"
+		ai_chance = { factor = 0 }
+			
+			news_event = { id = iberianews.17 days = 1}
+			OCC = {country_event = catocc.7 }
+			add_opinion_modifier = { target = OCC modifier = large_decrease }
+			OCC = {add_opinion_modifier = { target = CAT modifier = large_decrease }}
+	}
+}
+country_event = {
+	id = catocc.6
+	title = "They have accepted"
+	desc = "Our brothers have accepted our offer. We are now together, and we share ownership of la Fenolheda and la Val d'Aran."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Great!"
+		ai_chance = { factor = 95 }
+	
+			
+	}
+}
+country_event = {
+	id = catocc.7
+	title = "They have refused"
+	desc = "The Catalans have refused our offer! They are not our brothers, no brother wants to dominate the other! They are just like the french. We have cut every diplomatic tie."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Great!"
+		ai_chance = { factor = 95 }
+	
+			
+	}
+}

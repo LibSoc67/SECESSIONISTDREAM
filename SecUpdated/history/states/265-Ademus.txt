@@ -1,0 +1,22 @@
+state={
+	id=265
+	name="Rincón de Ademuz"
+	provinces={
+		9702 
+	}
+	history={
+		owner = VAL
+		add_core_of = VAL
+		add_core_of = ADE
+		buildings = {
+			infrastructure = 1
+
+
+		}
+
+	}
+	manpower=3029
+	buildings_max_level_factor=1.000
+	local_supplies=1.000
+	state_category=wasteland
+}

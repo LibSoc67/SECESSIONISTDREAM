@@ -1,0 +1,36 @@
+
+state={
+	id=124
+	name="Caligari"
+	provinces={
+		2705 5456 8119 9930 16426 16433 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=0.000
+		oil=47.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = SAR
+		add_core_of = SAR
+		victory_points = {
+		16433 17	
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 1
+			air_base = 4
+			16433 = {
+				naval_base = 4
+			}
+		}
+	}
+	state_category=town
+	manpower=420192
+	buildings_max_level_factor=1.000
+}

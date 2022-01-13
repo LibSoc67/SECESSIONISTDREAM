@@ -1,0 +1,77 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = cateco
+
+# penis
+country_event = {
+	id = cateco.1
+	title = "The Two Year Plan"
+	desc = "The State has a lot of control over the economy. This means we can decide wich direction the economy will go to. What should we focus on?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Civilian Industry"
+		ai_chance = { factor = 100 }
+		add_timed_idea = { idea = civfocus days = 730}
+}
+	option = { 
+		name = "Military Industry"
+		ai_chance = { factor = 0 }
+	
+		add_timed_idea = { idea = milfocus days = 730}
+				
+
+}
+option = { 
+		name = "Long Term Benefit"
+		ai_chance = { factor = 0 }
+	random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
+	random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
+	random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }		
+	random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
+}
+
+
+
+
+
+}
+country_event = {
+	id = cateco.2
+	title = "The Second Two Year Plan"
+	desc = "The State has a lot of control over the economy. This means we can decide wich direction the economy will go to. What should we focus on?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Civilian Industry"
+		ai_chance = { factor = 100 }
+		add_timed_idea = { idea = civfocus days = 730}
+}
+	option = { 
+		name = "Military Industry"
+		ai_chance = { factor = 0 }
+	
+		add_timed_idea = { idea = milfocus days = 730}
+				
+
+}
+option = { 
+		name = "Long Term Benefit"
+		ai_chance = { factor = 0 }
+	random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
+	random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
+	random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }		
+	random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
+}
+
+
+
+
+
+}

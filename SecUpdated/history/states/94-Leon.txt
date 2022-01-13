@@ -1,0 +1,35 @@
+
+state={
+	id=94
+	name="León"
+resources={
+		rubber=0.000
+		tungsten=16.000
+		steel=19.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = LEO
+		add_core_of = LEO
+		victory_points = {
+			3793 10 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 3
+
+		}
+
+	}
+
+	provinces={
+		27 368 659 3793 4792 4988 5322 11135 15239 15292 15342 15385 15394 
+	}
+	manpower=389202
+	buildings_max_level_factor=1.000
+	state_category=town
+}

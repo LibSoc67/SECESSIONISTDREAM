@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=39
+	name="Cornwall"
+	provinces={
+		17538 17563 17579 17697 17934 17953 17983 17998 18033 18062 18146 18261 18649 18650 18677 18723 18813 18912 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

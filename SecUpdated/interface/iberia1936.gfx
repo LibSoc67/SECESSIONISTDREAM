@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_iberia1936"
+		texturefile = "gfx/interface/iberia1936.dds"
+	}
+}

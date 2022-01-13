@@ -1,0 +1,17 @@
+characters={
+	BOU_jules={
+		name="Jules Jeanneney"
+		portraits={
+			civilian={
+				large="gfx/leaders/BOU/bou1.dds"
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			expire="1965.1.1.1"
+			id=-1
+			traits={ french_revanchist  }
+		}
+	}
+	
+}

@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=50
+	name="Sardinia Coast"
+	provinces={
+		17630 17637 17705 17733 17772 17868 17996 18144 18510 18512 18528 18556 18559 18654 18681 18741 18781 18791 18799 18985 18993 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

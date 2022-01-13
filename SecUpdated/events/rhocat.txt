@@ -1,0 +1,71 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = rhocat
+
+# penis
+country_event = {
+	id = rhocat.1
+	title = "An offert from Rhones"
+	desc = "There is a communist warlord in Occitania. They want to join our faction. This could lead to war with Occitania or France, so it might not be a very good idea." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Let them in"
+		ai_chance = { factor = 100 }
+		CAT = { add_to_faction = RHO }
+		RHO = {country_event = rhocat.2}
+}
+	
+	
+	option = { 
+		name = "We don't want more enemies"
+		ai_chance = { factor = 0 }
+	 RHO={
+			add_opinion_modifier { 
+			target = CAT
+			modifier = large_decrease
+		}
+		}	
+	CAT={
+			add_opinion_modifier { 
+			target = RHO
+			modifier = large_decrease
+		}
+		}	
+		RHO ={ country_event = rhocat.3}
+				
+
+
+}}
+country_event = {
+	id = rhocat.2
+	title = "The negotiation has been successful"
+	desc = "After a few days of intense negotiation, Catalonia and us have finally agreed on cooperating." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Great!"
+		ai_chance = { factor = 100 }
+		
+}
+}
+country_event = {
+	id = rhocat.3
+	title = "The negotiation has failed"
+	desc = "After a few days of intense negotiation, Catalonia and us have failed on trying to cooperate more. It appears that we are not far left enought for them." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We are on our own now."
+		ai_chance = { factor = 100 }
+	
+}
+}

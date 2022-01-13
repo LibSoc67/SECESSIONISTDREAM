@@ -1,0 +1,24 @@
+state={
+	id=237
+	name="Brussels"
+	provinces={
+		9834 
+	}
+	history={
+		owner = BRS
+		add_core_of = BRS 
+		victory_points = {
+		9834 40	
+		}
+		buildings = {
+			infrastructure = 10
+			arms_factory = 2
+			industrial_complex = 3
+			air_base = 8
+		}
+
+	}
+	manpower=360392
+	state_category = city
+	buildings_max_level_factor=1.000
+}

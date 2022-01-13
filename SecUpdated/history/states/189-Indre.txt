@@ -1,0 +1,32 @@
+
+state={
+	id=189
+	name="Indre"
+	provinces={
+		499 4254 5138 5659 5727 6348 9070 11285 14487 14497 14552 14563 14604 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=10.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = CEN
+		add_core_of = CEN 
+		victory_points = { 5727 3 }
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			#dockyard = 
+			air_base = 4
+			# = {naval_base = 9}
+		}
+	}
+	state_category=town
+	manpower=245622
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=79
+	name="Pamplona"
+
+	history={
+		owner = NAR
+		add_core_of = NAR
+		add_claim_by = VAS
+		victory_points = {
+			7446 12 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		6922 7446 8296 9631 10995 15308 15335 15365 15414 15480 
+	}
+	manpower=240592
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

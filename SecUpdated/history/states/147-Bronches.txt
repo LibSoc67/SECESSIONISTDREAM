@@ -1,0 +1,35 @@
+
+state={
+	id=147
+	name="Bounches Du Rhone"
+	provinces={
+		2416 3805 7192 9327 10745 15358 15380 15403 15406 15443 15454 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=0.000
+		oil=15.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = PRO
+		add_core_of = PRO
+		add_claim_by = OCC
+		victory_points = {
+		15454 25
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 6
+			15454 = {naval_base = 7}
+		}
+	}
+	state_category=large_city
+	manpower=1224802
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=24
+	name="Huelva"
+	provinces={
+		2158 2374 4725 5108 7139 9618 16463 16523 
+	}
+	resources={
+		rubber=0.000
+		tungsten=12.000
+		steel=12.000
+		oil=5.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = ADA
+		add_core_of = ADA
+		add_core_of = HUE
+		victory_points = {
+		4725 10	
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			 
+		}
+		set_demilitarized_zone = yes
+	}
+	state_category = rural
+	manpower=340190
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,26 @@
+
+state={
+	id=274
+	name="Alessandria"
+	provinces={
+		404 3852 4051 10322 14984 
+	}
+	history={
+		owner = PIE
+		add_core_of = PIE
+		victory_points = {
+		404 3
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			military_complex = 1
+
+		}
+
+	}
+	state_category=town
+	manpower=310759
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

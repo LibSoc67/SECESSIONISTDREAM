@@ -1,0 +1,29 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = glccabinet
+
+# penis
+country_event = {
+	id = glccabinet.1
+	title = "The Castelao Cabinet"
+	desc = "Castelao can't be alone in the goverment. Two contestans have tried to gain his favor. Basilao Álvarez is an excelent economist, while Alexandre Bóveda is a great patriot. The two have already stated that they don't want to collaborate with the other. Who will join Castelao in his goverment?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Basilio and his economic plans"
+		ai_chance = { factor = 50 }
+		set_country_flag = glccabinet1
+}
+	option = { 
+		name = "Alexandre and his nationalistic tendencies"
+		ai_chance = { factor = 50 }
+	set_country_flag = glccabinet2
+		
+ }
+		
+
+}

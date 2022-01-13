@@ -1,0 +1,21 @@
+
+state={
+	id=69
+	name="Ciudad Real"
+	provinces={
+		4772 5680 10570 16221 16242 16262 16299 
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL
+		
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			 
+		}
+	}
+	state_category=rural 
+	manpower=179492
+	buildings_max_level_factor=1.000
+}

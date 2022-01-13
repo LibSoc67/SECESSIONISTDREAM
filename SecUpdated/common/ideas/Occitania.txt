@@ -1,0 +1,812 @@
+ideas = {
+country = {
+		occism = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+			TAG = OCC
+			attack_bonus_against = -0.2
+			defense_bonus_against = -0.15
+			
+			}
+			modifier = {conscription = -0.002}
+			}
+			}
+	country = {
+		fraism = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+			TAG = FRA
+			attack_bonus_against = -0.2
+			defense_bonus_against = -0.15
+			
+			}
+			modifier = {conscription = -0.002}
+			}
+			}		
+			
+			country = {
+		auvunited = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+			TAG = CAT
+			defense_bonus_against = 0.15
+			}
+			
+			modifier = {
+			political_power_gain= 0.15
+			}
+			rule = { can_create_factions = yes
+			}
+			}
+			}
+			country = {
+		occcatars = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = 0.05
+			war_support_factor = -0.05
+			industry_repair_factor = 0.05
+			neutrality_drift = 0.01
+			}
+			
+			}}
+			country = {
+		occcatars1 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = 0.1
+			war_support_factor = -0.1
+			industry_repair_factor = 0.1
+			neutrality_drift = 0.03
+			}
+			
+			}
+			}
+			country = {
+		occcatars2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = 0.15
+			war_support_factor = -0.15
+			industry_repair_factor = 0.15
+			surrender_limit = -0.1
+			neutrality_drift = 0.05
+			}
+			
+			}
+			}
+			country = {
+		occcatars3 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = 0.15
+			war_support_factor = -0.10
+			industry_repair_factor = 0.15
+			surrender_limit = -0.07
+			neutrality_drift = 0.05
+			}
+			
+			}
+			}
+			country = {
+		occcatars4 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = 0.15
+			industry_repair_factor = 0.15
+			neutrality_drift = 0.05
+			}
+			
+			}
+			}
+			country = {
+		occcatars5 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = 0.15
+			industry_repair_factor = 0.15
+			communism_drift = 0.05
+			}
+			
+			}
+			}
+		country = {
+		occopaque = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			crypto_strength = 2
+			enemy_justify_war_goal_time = 0.25
+			agency_upgrade_time = -0.10
+			}
+			
+			}
+			}
+country = {
+		occwar1 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			conscription = 0.01
+			}
+			
+			}
+			}
+country = {
+		occwar2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			conscription = 0.02
+			}
+			
+			}
+			}
+country = {
+		occcop = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			production_factory_efficiency_gain_factor = 0.1
+			production_speed_buildings_factor = 0.05
+			
+			}
+			
+			}
+			}
+country = {
+		occcop1 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			production_factory_efficiency_gain_factor = 0.1
+			production_speed_buildings_factor = 0.05
+			drift_defence_factor = 0.1
+			compliance_growth = 0.15
+			annex_cost_factor = -0.10
+			}
+			
+			}
+			}
+country = {
+		occoliga = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			political_power_gain = 0.15
+			}
+			
+			}
+			}
+country = {
+		occoliga1 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			political_power_gain = 0.15
+			research_speed_factor = 0.05
+			}
+			
+			}
+			}
+country = {
+		occbroken = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			political_power_gain = -0.15
+			
+			}
+			
+			}
+			}
+			
+country = {
+		occbroken1 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			political_power_gain = -0.10
+			
+			}
+			
+			}
+			}			
+country = {
+		occbroken2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			political_power_gain = -0.05
+			
+			}
+			
+			}
+			}			
+			
+country = {
+		occbroken3 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			
+			
+			}
+			
+			}
+			}			
+country = {
+		occbroken4 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			political_power_gain = 0.05
+			
+			}
+			
+			}
+			}			
+			
+country = {
+		occbroken5 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			political_power_gain = 0.1
+			
+			}
+			
+			}
+			}			
+			
+country = {
+		occbroken6 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			political_power_gain =  0.15
+			
+			}
+			
+			}
+			}			
+			
+country = {
+		occbroken7 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			political_power_gain = 0.2
+			
+			}
+			
+			}
+			}			
+			
+country = {
+		occrural = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			production_speed_buildings_factor = -0.1
+			industrial_capacity_factory = -0.15
+			production_factory_efficiency_gain_factor = -0.15
+			
+			}
+			
+			}
+			}				
+	country = {
+		occrural1 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			production_speed_buildings_factor = -0.07
+			industrial_capacity_factory = -0.12
+			production_factory_efficiency_gain_factor = -0.12
+			
+			}
+			
+			}
+			}
+	country = {
+		occrural2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			production_speed_buildings_factor = -0.05
+			industrial_capacity_factory = -0.10
+			production_factory_efficiency_gain_factor = -0.10
+			
+			}
+			
+			}
+			}
+	country = {
+		occrural3 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			production_speed_buildings_factor = -0.02
+			industrial_capacity_factory = -0.07
+			production_factory_efficiency_gain_factor = -0.05
+			
+			}
+			
+			}
+			}
+	country = {
+		occrural4 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			industrial_capacity_factory = -0.03
+
+			
+			}
+			
+			}
+			}
+	country = {
+		occlog = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			resistance_target = -0.2
+			
+			}
+			
+			}
+			}		
+	country = {
+		occlog1 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			resistance_target = -0.2
+			stability_factor = 0.1
+			
+			}
+			
+			}
+			}		
+	country = {
+		occlog2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			resistance_target = -0.3
+			stability_factor = 0.15
+			
+			}
+			
+			}
+			}		
+	country = {
+		occsocial = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			monthly_population = 0.15
+			industry_free_repair_factor = 0.15
+			consumer_goods_factor = 0.03
+			
+			}
+			
+			}
+			}		
+	country = {
+		occsocial1 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			monthly_population = 0.15
+			industry_free_repair_factor = 0.15
+			consumer_goods_factor = 0.05
+			political_power_factor = 0.05
+			}
+			
+			}
+			}		
+	country = {
+		occaus= {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			consumer_goods_factor = -0.05
+			}
+			
+			}
+			}	
+	country = {
+		occnat= {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			army_core_defence_factor = 0.05
+			}
+			
+			}
+			}
+	country = {
+		occnat1= {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			army_core_defence_factor = 0.07
+			conscription = 0.01
+			}
+			
+			}
+			}
+			
+	country = {
+		occsocial2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			monthly_population = 0.20
+			industry_free_repair_factor = 0.20
+			consumer_goods_factor = 0.07
+			political_power_factor = 0.05
+			army_org_factor = 0.05
+			}
+			
+			}
+			}
+	country = {
+		occtindra= {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			production_speed_buildings_factor = 0.20
+			}
+			
+			}
+			}		
+			
+	country = {
+		occbef= {
+
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+			production_speed_arms_factory_factor = 0.10
+			political_power_gain = -0.05
+			}
+			
+			}
+			}		
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

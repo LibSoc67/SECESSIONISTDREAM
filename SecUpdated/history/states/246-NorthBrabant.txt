@@ -1,0 +1,35 @@
+state={
+	id=246
+	name="North Brabant"
+	provinces={
+		4912 5877 7532 13267 13297 13324 13331 13363 13389 13432 13385 780 13290
+	}
+	history={
+		owner = BRT
+		add_core_of = BRT
+		victory_points = {
+		13331 20	
+		}
+		victory_points = {
+		13324 15	
+		}
+		victory_points = {
+		4912 12	
+		}
+		victory_points = {
+		13297 10	
+		}
+		victory_points = {
+		780 7	
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 3
+			industrial_complex = 3
+		}
+
+	}
+	manpower=1531521
+	state_category = city
+	buildings_max_level_factor=1.000
+}

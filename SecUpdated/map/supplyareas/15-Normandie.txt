@@ -1,0 +1,9 @@
+
+supply_area={
+	id=15
+	name="Normandie"
+	value=14
+	states={
+		186 185 187 188 184 224 225 
+	}
+}

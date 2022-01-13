@@ -1,0 +1,23 @@
+
+state={
+	id=63
+	name="Guadalajara"
+	provinces={
+		3023 4709 6164 7282 8762 10018 15808 15817 
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL
+		victory_points = {
+		10018 7
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+	}
+	state_category=rural
+	manpower=179302
+	buildings_max_level_factor=1.000
+}

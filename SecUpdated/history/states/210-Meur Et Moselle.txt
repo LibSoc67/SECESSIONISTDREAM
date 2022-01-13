@@ -1,0 +1,27 @@
+
+state={
+	id=210
+	name="Meurthe Et Moselle"
+
+	history={
+		owner = LOR
+		add_core_of = LOR
+		victory_points = {
+			2684 17
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		2684 6450 13944 14019 14073 14115 14155 
+	}
+	manpower=576041
+	buildings_max_level_factor=1.000
+	state_category=city
+}

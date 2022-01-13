@@ -1,0 +1,9 @@
+
+supply_area={
+	id=21
+	name="Centre Sud"
+	value=15
+	states={
+		189 192 191 190 
+	}
+}

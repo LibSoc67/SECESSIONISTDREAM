@@ -1,0 +1,214 @@
+ideas = {
+country = {
+		mncmonarchy1 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			political_power_gain = 0.05
+			stability_factor = 0.05
+			}
+			}
+			}
+			
+country = {
+		mncmonarchy2 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			political_power_gain = 0.10
+			stability_factor = 0.10
+			}
+			}
+			}
+country = {
+		mncmonarchy3 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			political_power_gain = 0.13
+			stability_factor = 0.13
+			army_core_defence_factor = 0.05
+			}
+			}
+			}			
+country = {
+		mncmonarchy4 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			}
+			}
+			}		
+country = {
+		mncmonarchy5 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			political_power_gain = -0.05
+			stability_factor = -0.05
+			}
+			}
+			}
+country = {
+		mncmonarchy6 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			political_power_gain = -0.10
+			stability_factor = -0.10
+			}
+			}
+			}
+	country = {
+		mncmonarchy7 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			political_power_gain = -0.13
+			stability_factor = -0.13
+			army_core_defence_factor = -0.05
+			}
+			}
+			}	
+country = {
+		mncconst= {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			democratic_drift = 0.05
+			political_power_gain = 0.05
+			}
+			}
+			}		
+country = {
+		vhtaxes= {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			political_power_gain = 0.1
+			production_factory_max_efficiency_factor = 0.1
+			consumer_goods_factor = -0.07
+			}
+			}
+			}
+country = {
+		htaxes= {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			political_power_gain = 0.05
+			consumer_goods_factor = -0.04
+			}
+			}
+			}
+country = {
+		ltaxes= {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			consumer_goods_factor = -0.01
+			}
+			}
+			}
+country = {
+		vltaxes= {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			political_power_gain = -0.05
+			consumer_goods_factor = 0.04
+			} 
+			}			
+			}
+country = {
+		mncabs= {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			stability_factor = 0.1
+			neutrality_drift = 0.05
+			} 
+			}			
+			}
+country = {
+		mncspring= {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			stability_factor = -0.1
+			democratic_drift= 0.2
+			} 
+			}			
+			}
+			
+country = {
+		mncspring1= {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			stability_factor = 0.1
+			political_power_gain = 0.05
+			} 
+			}			
+			}
+}		

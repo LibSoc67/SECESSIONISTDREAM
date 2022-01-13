@@ -1,0 +1,23 @@
+
+state={
+	id=57
+	name="Motilla"
+
+	history={
+		owner = CAL
+		add_core_of = CAL
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		1400 1982 16190 16246 8557
+	}
+	manpower=72039
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

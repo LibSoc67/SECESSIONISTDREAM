@@ -1,0 +1,142 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = glcand1
+
+# penis
+country_event = {
+	id = glcand1.1
+	title = "Ultimatum from Galicia"
+	desc = "Galicia has sent us a ultimatum. Either we give them our Portuguese land or they will declare war." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We must accept"
+		ai_chance = { factor = 20 }
+GLC = { add_threat = 6
+	country_event = glcand1.2
+	transfer_state = 113
+	transfer_state = 114
+	transfer_state = 116
+	transfer_state = 117
+	transfer_state = 118
+	}
+	ADA = {add_opinion_modifier = { target = GLC modifier = large_decrease }}
+}
+	option = { 
+		name = "We will refuse!"
+		ai_chance = { factor = 80 }
+	
+		GLC = { create_wargoal = {
+				type = annex_everything
+				target = ADA
+				expire = 0
+				} 
+				country_event = glcand1.3
+				}
+				
+	GLC = {add_threat = 6
+ }
+		
+
+}}
+country_event = {
+	id = glcand1.2
+	title = "They have accepted"
+	desc = "Surprisingly they have accepted to return our territory." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Nice"
+		ai_chance = { factor = 90 }
+
+	}
+	}
+
+country_event = {
+	id = glcand1.3
+	title = "They have refused!"
+	desc = "To no one surprise they have refused. It's time for war." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Indeed"
+		ai_chance = { factor = 90 }
+
+	}
+	}
+country_event = {
+	id = glcand1.4
+	title = "Galicia wants to join us"
+	desc = "Today a diplomat from Galicia has announced that the Northern Republic has intentions of joining our faction. We both share a common enemy, Castilla, so it would make sense. Shall we let them in?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We will accept"
+		ai_chance = { factor = 100 }
+		ADA = { add_to_faction = GLC }
+	GLC = {country_event = glcand1.5 }
+}
+	
+	
+	option = { 
+		name = "We will refuse!"
+		ai_chance = { factor = 0 }
+	GLC = {country_event = glcand1.6 }
+
+		GLC = { 
+		add_opinion_modifier { 
+		target = ADA
+		modifier = medium_decrease
+		}
+				}
+				
+	ADA = { 
+		add_opinion_modifier { 
+		target = GLC
+		modifier = medium_decrease
+		}
+				}
+
+}
+	}
+country_event = {
+	id = glcand1.5
+	title = "Success!"
+	desc = "Andalucia has accepted our proposal. The future looks bright if we are together." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Great"
+		ai_chance = { factor = 100 }
+		
+	
+}	
+	}
+
+country_event = {
+	id = glcand1.6
+	title = "Failure!"
+	desc = "Andalucia has rejected our proposal. Nobody truly knows why they have refused." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Damn"
+		ai_chance = { factor = 100 }
+		
+	
+}	
+	}

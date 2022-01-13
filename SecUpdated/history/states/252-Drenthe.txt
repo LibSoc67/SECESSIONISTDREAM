@@ -1,0 +1,25 @@
+state={
+	id=252
+	name="Drenthe"
+	provinces={
+		4706 10009 10812 12968
+	}
+	history={
+		owner = FRI
+		add_core_of = FRI
+		victory_points = {
+		10812 3	
+		}
+		victory_points = {
+		4706 7	
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+
+	}
+	manpower=278372
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

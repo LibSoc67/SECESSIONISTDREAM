@@ -1,0 +1,1803 @@
+﻿ focus_tree = {
+
+	id = andalucia_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 70
+			tag = ADA 
+}
+}
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 0 }
+
+focus = {
+		id = andfoc1
+		icon = GFX_focus_adafoc1
+		x = 18
+		y = 0
+ 	
+		
+		available = { 
+				}
+		bypass = {
+		}
+		
+		cost = 3		
+
+		mutually_exclusive = {focus = antiblas}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_stability = -0.05
+			}
+		}
+focus = {
+		id = andfoc2
+		icon = GFX_focus_andfoc2
+		x = 0
+		y = 1
+		relative_position_id = 	anddem
+		prerequisite = { focus = anddem }  
+		
+		available = { 
+				}
+		bypass = {
+		}
+		
+		cost = 3		
+
+		mutually_exclusive = {focus = antiblas}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_popularity = {
+		ideology = communism
+		popularity = 0.10
+		}
+		remove_ideas = comprotests
+			}
+		}
+focus = {
+		id = andfoc3
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 0
+		y = 1
+		relative_position_id = 	antiblas
+		prerequisite = { focus = antiblas }  
+		
+		available = { 
+				}
+		bypass = {
+		}
+		
+		cost = 3		
+
+		mutually_exclusive = {focus = antiblas}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_popularity = {
+		ideology = fascism
+		popularity = 0.10
+		}
+		remove_ideas = granada
+			}
+		}
+	focus = {
+		id = anddem
+		icon = GFX_goal_continuous_boost_freedom
+		x = -1
+		y = 1
+		
+		relative_position_id = 	andfoc1
+		prerequisite = { focus = andfoc1 } 
+		available = { 
+				}
+		bypass = {
+		}
+		
+		cost = 4		
+
+		mutually_exclusive = {focus = antiblas}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_political_power = 100
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.10}
+			}
+		}
+	focus = {
+		id = blas
+		icon = GFX_focus_antifas
+		x = -7
+		y = 1
+		relative_position_id = 	anddem
+		prerequisite = { focus = anddem } 
+		available = {
+		custom_trigger_tooltip = {
+		tooltip = ctt_blas
+		AND = {
+		has_country_flag = ada_civil_war_over
+		has_war = no
+		24 = {is_owned_and_controlled_by = ADA}
+		30 = { is_owned_and_controlled_by = ADA }
+		}
+		}
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		mutually_exclusive = {focus = }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = blasin
+			}
+		}
+focus = {
+		id = agriculture
+		icon = GFX_goal_generic_construct_civilian
+		x = 0
+		y = 1
+		relative_position_id = 	blas
+		prerequisite = { focus = blas } 
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		mutually_exclusive = {focus = }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = agriculture
+			}
+		}
+focus = { 
+		id = takeovercom
+		icon = GFX_focus_por_workers_of_iberia
+		x = -10
+		y = 1
+		relative_position_id = 	agriculture
+		prerequisite = { focus =  agriculture} 
+		available = { has_completed_focus = andfoc2
+				}
+		bypass = {
+		}
+		
+		cost = 7		
+
+		mutually_exclusive = {focus = }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_political_power = -50
+		set_party_name = { 
+    ideology = communism 
+    long_name = "Partido Democratico Agrario Andaluz"
+    name = "PDAA"
+}	
+		create_country_leader = {
+		name = "Blas Infante"
+	picture = "anddem.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+			}
+			
+		} } 
+focus = { 
+		id = empoweragra
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 5
+		}
+		relative_position_id = 	takeovercom
+		prerequisite = { focus = takeovercom } 
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 8		
+
+		mutually_exclusive = {focus = freeact}
+		mutually_exclusive = {focus = muslim2 }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_popularity = {
+		ideology = communism
+			popularity = 0.30
+		}
+		add_popularity = {
+		ideology = democratic
+			popularity = -0.30
+		}
+		add_stability = -0.05
+		swap_ideas = {
+		remove_idea = andrep
+		add_idea = andcom
+					}
+		set_politics = { ruling_party = communism elections_allowed = no }
+		country_event = andbecomescom.1
+			}
+		}
+focus = { 
+		id = dembeacon
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 0
+		y = 1
+		relative_position_id = 	agriculture
+		prerequisite = { focus = agriculture } 
+		available = {
+				}
+		bypass = {
+		}
+		cost = 7		
+		mutually_exclusive = {focus = }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		add_stability = 0.05
+		add_political_power = 50
+		EXT = {
+			add_popularity = {
+			ideology = democratic
+			popularity = 0.15}
+			add_stability = -0.05
+		}
+		MUR = {
+			add_popularity = {
+			ideology = democratic
+			popularity = 0.12}
+			add_stability = -0.05
+		}
+		CAL = {
+			add_popularity = {
+			ideology = democratic
+			popularity = 0.12}
+			add_stability = -0.05
+		}
+			}
+		}
+
+		
+		focus = {
+		id = freeact
+		icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 95
+		}
+ 	relative_position_id = 	dembeacon
+		prerequisite = { focus = dembeacon } 
+		
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		mutually_exclusive = {focus = empoweragra}
+		mutually_exclusive = {focus = muslim2 }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = freeact
+		if = {
+				limit = {
+					OR = {
+						has_idea = disarmed_nation
+						has_idea = volunteer_only
+					}
+				}
+				add_ideas = limited_conscription
+			}
+			else = {
+				add_political_power = 150
+			}
+			create_faction = "The Free Concordate"
+			}
+		}	
+	focus = {
+		id = muslim1
+		icon = GFX_focus_TUR_turanist_ambition
+		x = 10
+		y = 1
+ 	relative_position_id = 	agriculture
+		prerequisite = { focus = agriculture } 
+		
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 7		
+
+		mutually_exclusive = {focus = }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_stability = -0.10
+		add_political_power = -100 
+		
+		set_party_name = { 
+    ideology = neutrality 
+    long_name = "Partido Democratico Fundamentalista Andaluz"
+    name = "PDFA"
+}	
+		create_country_leader = {
+		name = "Blas Infante"
+	picture = "anddem.dds"
+	expire = "1965.1.1"
+	ideology = moderatism
+			}
+		remove_ideas = islprotests
+			}
+		}	
+	focus = {
+		id = muslim2
+		icon = GFX_focus_generic_support_the_left_right
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 0
+		}
+ 	relative_position_id = 	muslim1
+		prerequisite = { focus = muslim1 } 
+		
+		available = { 
+				}
+		bypass = {
+		}
+		
+		cost = 8		
+
+		mutually_exclusive = {focus = freeact }
+		mutually_exclusive = {focus = empoweragra }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		start_civil_war = {
+				ruling_party = neutrality
+				ideology = democratic
+				size = var:party_popularity@democratic
+			} 
+			}
+		}	
+	focus = {
+		id = colletciveeconomy
+		icon = GFX_focus_spr_class_war
+		x = 1
+		y = 1
+ 	relative_position_id = 	empoweragra
+		prerequisite = { focus = empoweragra } 
+		
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 5		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_stability = -0.05
+		random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+							} }
+						random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							} }	
+							random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							} }
+						hidden_effect = {country_event = { id = andbecomescom.2 days = 47 }
+			}}
+		}	
+	focus = {
+		id = commilitia
+		icon = GFX_goal_generic_defence
+		x = -1
+		y = 1
+ 	relative_position_id = 	empoweragra
+		prerequisite = { focus = empoweragra } 
+		
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 5		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = commilitia
+		}	
+		}
+	focus = {
+		id = collectivistethos
+		icon = GFX_goal_generic_propaganda
+		x = 0
+		y = 1
+ 	relative_position_id = 	colletciveeconomy
+		prerequisite = { focus = colletciveeconomy } 
+		
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 5		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_timed_idea = {idea = collective days= 200}
+		}	
+		}	
+	focus = {
+		id = armedpopulation
+		icon = GFX_goal_generic_military_sphere
+		x = 0
+		y = 1
+ 	relative_position_id = 	commilitia
+		prerequisite = { focus = commilitia } 
+		
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 5		
+		cancel_if_invalid = yes  
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		swap_ideas = { remove_idea = commilitia add_idea = armedpopulation }
+		add_stability = -0.05
+		}	
+		}	
+		
+focus = {
+		id = andcommie
+		icon = GFX_goal_generic_propaganda
+		x = 0
+		y = 1
+ 	relative_position_id = 	collectivistethos
+		prerequisite = { focus = collectivistethos } prerequisite = {focus = armedpopulation} 
+		
+		available = {
+		CAT = {
+		AND = {has_completed_focus = keepnin exists = yes is_puppet = no
+		}}
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		CAT = {country_event = andjoinscat.1}
+		}	
+		}
+focus = {
+		id = andcommie2
+		icon = GFX_goal_generic_propaganda
+		x = -2
+		y = 1
+ 	relative_position_id = 	collectivistethos
+		prerequisite = { focus = collectivistethos}prerequisite ={ focus = armedpopulation} 
+		
+		available = {
+		is_puppet = NO
+		AND = { 
+		OR = {
+		CAT = {has_completed_focus = astalinistcoup }has_country_flag = andcatrefused CAT = {exists = no}
+		
+		} 
+		}
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		create_faction = "The Social Democrat Internationale"
+		add_war_support = 0.05
+		}	
+		}
+focus = {
+		id = andcommie3
+		icon = GFX_goal_generic_propaganda
+		x = -1
+		y = 1
+ 	relative_position_id = 	andcommie
+		prerequisite = { focus = andcommie2 focus = andcommie} 
+		
+		available = {
+		
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		CAL={
+			add_opinion_modifier { 
+			target = ADA
+			modifier = large_decrease
+		}
+		}	
+		VAS={
+			add_opinion_modifier { 
+			target = ADA
+			modifier = large_decrease
+		}
+		}	
+		}
+		}
+		
+focus = {
+		id = thalassocracy
+		icon = GFX_focus_generic_coastal_fort
+		x = -1
+		y = 1
+ 	relative_position_id = 	freeact
+		prerequisite = { focus = freeact } 
+		
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 5		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		random_owned_controlled_state = {
+			limit = {is_coastal = yes}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+					}
+		add_tech_bonus = {
+				name = ENG_secure_the_imperial_shipping_routes
+				bonus = 1.0
+				uses = 2
+				category = cl_tech
+			}
+			add_ideas = ENG_secure_the_imperial_shipping_routes
+			add_war_support= 0.05
+		}	
+		}	
+focus = {
+		id = navalsupremacy
+		icon = GFX_focus_generic_navy_battleship2
+		x = 0
+		y = 1
+ 	relative_position_id = 	thalassocracy
+		prerequisite = { focus = thalassocracy } 
+		
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 5		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+	
+			add_ideas = navalsupremacy
+		}	
+		}			 
+focus = {
+		id = strategicallies
+		icon = GFX_goal_generic_improve_relations
+		x = 1
+		y = 1
+ 	relative_position_id = 	freeact
+		prerequisite = { focus = freeact } 
+		
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 5		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = {
+		MDR={
+			add_opinion_modifier { 
+			target = ADA
+			modifier = huge_increase
+		}
+		}
+		GLC={
+			add_opinion_modifier { 
+			target = ADA
+			modifier = huge_increase
+		}
+		}
+	}		
+}	
+	focus = {
+		id = enforcedfreedom
+		icon = GFX_focus_spr_maintain_the_republic
+		x = 0
+		y = 1
+ 	relative_position_id = 	strategicallies
+		prerequisite = { focus = strategicallies } 
+		
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 5		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = {
+		
+			MDR = {country_event = andpressure.1}
+		 
+		
+		}
+	}		
+	focus = { 
+		id = influenceareas
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = -1
+		y = 1
+ 	relative_position_id = 	enforcedfreedom
+		prerequisite = { focus = enforcedfreedom } prerequisite ={ focus = navalsupremacy }
+		
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = {
+		add_state_claim = 74
+		add_state_claim = 71
+		add_state_claim = 72
+		add_state_claim = 73
+		add_state_claim = 66
+		add_state_claim = 65
+		add_state_claim = 68
+		add_state_claim = 69
+		add_state_claim = 56
+		add_state_claim = 55
+		add_state_claim = 53
+		add_state_claim = 54
+		add_state_claim = 57
+		add_state_claim = 58
+		add_state_claim = 62
+		add_state_claim = 32
+		add_state_claim = 33
+		add_state_claim = 34
+		add_state_claim = 35
+		add_state_claim = 36
+		add_state_claim = 37
+		MDR = {
+		add_state_claim = 64
+		add_state_claim = 70
+		add_state_claim = 59
+		add_state_claim = 60
+		add_state_claim = 63
+		add_state_claim = 77
+		add_state_claim = 76
+		}
+		}
+	}	
+	focus = { 
+		id = comonwealth
+		icon = GFX_focus_generic_treaty
+		x = -3
+		y = 1
+ 	relative_position_id = 	influenceareas
+		prerequisite = { focus = influenceareas focus = andcommie focus = andcommie2}
+		
+		available = {
+				}
+		bypass = {EXT = {exists = no}
+		}
+		
+		cost = 10		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = {
+		EXT = { country_event = comonwealth.1 }
+		}
+	}	
+	
+	focus = { 
+		id = portugal
+		icon = GFX_focus_generic_attack_portugal
+		x = -6
+		y = 1
+ 	relative_position_id = 	influenceareas
+		prerequisite = { focus = influenceareas focus = andcommie focus = andcommie2 }
+		
+		available = {
+				}
+		bypass = { ALA = {exists = no}
+		}
+		
+		cost = 10		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = {
+		create_wargoal = {
+				type = annex_everything
+				target = ALA
+				expire = 0
+			}
+		}
+	}	
+	focus = { 
+		id = integrateext
+		icon = GFX_goal_demand_sudetenland
+		x = 0
+		y = 1
+ 	relative_position_id = 	comonwealth
+		prerequisite = { focus = comonwealth }
+		
+		available = { EXT = { is_puppet_of = ADA }
+				}
+		bypass = { EXT = {exists = no}
+		}
+		
+		cost = 5		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = {
+		annex_country = {
+    target = EXT
+    transfer_troops = yes
+	}
+	}
+		}
+		focus = {   
+		id = retaketherock
+		icon = GFX_focus_attack_britain
+		x = 0
+		y = 1
+ 	relative_position_id = 	influenceareas
+		prerequisite = { focus = influenceareas focus = andcommie focus = andcommie2}
+		
+		available = { 
+				}
+		bypass = { GIB = {exists = no}
+		}
+		
+		cost = 5		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = {
+		create_wargoal = {
+				type = annex_everything
+				target = GIB
+				expire = 0
+			}
+		}	
+	}
+	focus = { 
+		id = smallmur 
+		icon = GFX_focus_cat_mur2
+		x = 0
+		y = 1
+ 	relative_position_id = 	retaketherock
+		prerequisite = { focus = retaketherock }
+		mutually_exclusive = {focus = splitmur}
+		available = { 
+				}
+		bypass = { MUR = {exists = no}
+		}
+		
+		cost = 10		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = {
+	MUR = {country_event = adalorca.1}
+		}	
+	}
+		focus = { 
+		id = endmur 
+		icon = GFX_goal_generic_special_forces
+		x = -1
+		y = 1
+ 	relative_position_id = 	smallmur
+		prerequisite = { focus = smallmur }
+		mutually_exclusive = {focus = splitmur}
+		available = { 
+				}
+		bypass = { MUR = {exists = no}
+		}
+		
+		cost = 10		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = {
+	CAT = {country_event = cat_ada_mur.10}
+		create_wargoal = {
+				type = annex_everything
+				target = MUR
+				expire = 0
+			}
+		}	
+	}
+	focus = { 
+		id = splitmur 
+		icon = GFX_focus_cat_mur3
+		x = 1
+		y = 1
+ 	relative_position_id = 	smallmur
+		prerequisite = { focus = smallmur }
+		
+		available = { CAT = {exists = yes} MUR = {exists = yes}
+				}
+		bypass = { MUR = {exists = no}
+		}
+		mutually_exclusive = {focus = endmur}
+		cost = 10		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = {
+		CAT = {country_event = cat_ada_mur.9}
+		}	
+	}
+	focus = { 
+		id = endale 
+		icon = GFX_goal_generic_major_war
+		x = 0
+		y = 1
+ 	relative_position_id = 	portugal
+		prerequisite = { focus = portugal }
+		
+		available = { 
+				}
+		bypass = { ALE = {exists = no}
+		}
+		
+		cost = 10		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = {
+		create_wargoal = {
+				type = annex_everything
+				target = ALE
+				expire = 0
+			}
+		}	
+	}	
+	focus = { 
+		id = establishpor 
+		icon = GFX_focus_por_the_fifth_empire
+		x = -1
+		y = 1
+ 	relative_position_id = 	endale
+		prerequisite = { focus = endale }
+		mutually_exclusive = { focus = breakthepor }
+		available = {
+custom_trigger_tooltip={
+			tooltip = ctt_establishpor
+			
+			1 = {OR = {
+						tag = ADA AND = { tag = ALE ALE = { is_puppet_of= ADA }
+					}
+				}
+		}}
+		}
+		bypass = { 
+		}
+		
+		cost = 10		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = { 
+	add_state_core = 911
+		ALE = { 
+		add_state_core = 867 
+		transfer_state = 179 
+		transfer_state = 868 
+		transfer_state = 870 
+		transfer_state = 869 
+		transfer_state = 867
+		} 
+		puppet = ALE
+		}	
+	}	
+	focus = { 
+		id = breakthepor 
+		icon = GFX_goal_continuous_restrict_freedom
+		x = 1
+		y = 1
+ 	relative_position_id = 	endale
+		prerequisite = { focus = endale }
+		mutually_exclusive = { focus = establishpor }
+		available = { 
+custom_trigger_tooltip={
+			tooltip = ctt_establishpor		
+		1 = {is_owned_and_controlled_by = ADA}
+				}}
+		bypass = { 
+		}
+		
+		cost = 10		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = { 
+		
+ 1 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.2
+		required_garrison_factor = -0.3
+    }}}	
+	add_state_core = 1	
+			
+	}		
+	}	
+		
+focus = { 
+		id = breakext 
+		icon = GFX_goal_continuous_increase_nu
+		x = 0
+		y = 1
+ 	relative_position_id = 	integrateext
+		prerequisite = { focus = integrateext }
+		available = {  
+		71 = {is_owned_and_controlled_by = ADA}
+		72 = {is_owned_and_controlled_by = ADA}
+		73 = {is_owned_and_controlled_by = ADA}
+		74 = {is_owned_and_controlled_by = ADA}
+				}
+		bypass = { 
+		}
+		
+		cost = 10		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = { 
+		
+		add_state_core = 71
+		add_state_core = 72
+		add_state_core = 73
+		add_state_core = 74
+	}			
+	}	
+focus = { 
+		id = breakmur 
+		icon = GFX_goal_continuous_increase_nu
+		x = 1
+		y = 1
+ 	relative_position_id = 	endmur
+		prerequisite = { focus = endmur focus = splitmur }
+		available = {  
+		33 = {is_owned_and_controlled_by = ADA}
+		34 = {is_owned_and_controlled_by = ADA}
+		35 = {is_owned_and_controlled_by = ADA}
+		52 = {is_owned_and_controlled_by = ADA}
+		}
+		
+		bypass = { 
+		}
+		 
+		
+		cost = 10		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = { 
+		
+		add_state_core = 35
+		add_state_core = 33
+		add_state_core = 34
+		add_state_core = 52
+if = { limit = {32 = {is_owned_and_controlled_by = ADA}}
+32 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	}
+if = { limit = {32 = {is_owned_and_controlled_by = ADA}}
+36 = { add_state_modifier = {
+    modifier = {
+        compliance_gain = 0.2
+		required_garrison_factor = -0.3
+    }}}
+	}
+	custom_effect_tooltip = cet_breakmur
+	}
+	}		
+	focus = { 
+		id = endextr 
+		icon = GFX_focus_prc_infiltration
+		x = 4
+		y = 1
+ 	relative_position_id = 	influenceareas
+		prerequisite = { focus = influenceareas } 
+		
+		available = { CAL = { is_puppet = no exists = yes }
+				}
+		bypass = { 
+		}
+		
+		cost = 5		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = {
+		CAL = {add_ideas = andpressur}
+		}	
+	}	
+		
+	focus = { 
+		id = calcivilwar 
+		icon = GFX_focus_generic_support_the_left_right
+		x = 0
+		y = 1
+ 	relative_position_id = 	endextr
+		prerequisite = { focus = endextr } 
+		
+		available = { CAL = { exists = yes
+				is_puppet = no
+				democratic > 0.40 }
+				}
+		bypass = { CAL = {exists = no}
+		}
+		
+		cost = 10		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = {
+		CAL = {country_event = andcal.1}
+		
+		}	
+	}	
+	focus = {
+		id = secularstate 
+		icon = GFX_goal_generic_scientific_exchange
+		x = -5
+		y = 1
+		relative_position_id = freeact		
+		cost = 10		
+		prerequisite = { focus = freeact focus = empoweragra} 
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_research_slot =	1 remove_ideas = islprotests
+}}	
+focus = {
+		id = dividecal 
+		icon = GFX_goal_generic_CAS
+		x = 0
+		y = 1
+		relative_position_id = calcivilwar		
+		cost = 10		
+		prerequisite = { focus = calcivilwar } 
+		available = { CAL = { is_puppet_of = ADA} }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		transfer_state = 69
+		transfer_state = 65
+		transfer_state = 68
+		transfer_state = 56
+		transfer_state = 55
+		transfer_state = 53
+		transfer_state = 54
+		transfer_state = 57
+		transfer_state = 58
+		transfer_state = 62
+		MDR = {
+		transfer_state = 64
+		transfer_state = 70
+		transfer_state = 60
+		transfer_state = 63
+		transfer_state = 59
+		}
+		annex_country = {
+		target = CAL
+    transfer_troops = no
+		}
+}}		
+		
+focus = {
+		id = destroycal 
+		icon = GFX_goal_generic_major_war
+		x = 0
+		y = 1
+		relative_position_id = dividecal		
+		cost = 10		
+		prerequisite = { focus = dividecal } 
+		available = { CAV = { exists = yes} }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		create_wargoal = {
+				type = annex_everything
+				target = CAV
+				expire = 0
+			}
+}}		
+focus = {
+		id = demandcem  
+		icon = GFX_goal_generic_attack_allies
+		x = -8
+		y = 1
+		relative_position_id = influenceareas		
+		cost = 10		
+		prerequisite = { focus = influenceareas focus = andcommie focus = andcommie2} 
+		available = { CEM = { exists = yes} }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		CEM = {country_event = andcem.1}
+}}		
+		
+	focus = {
+		id = antiblas
+		icon = GFX_goal_generic_attack_allies
+		x =2
+		y = 0
+ 	 
+		
+		available = { has_country_flag =  
+				}
+		bypass = {
+		}
+		
+		cost = 4		
+		relative_position_id = anddem
+		mutually_exclusive = {focus = anddem}
+		prerequisite = { focus = andfoc1}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_political_power = -50
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.10}
+			add_popularity = {
+			ideology = neutrality
+			popularity = 0.10}
+			
+			}
+		}	
+	focus = {
+		id = andfinale
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 0
+		y = 1
+ 	
+		
+		available = { 
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = {focus = destroycal}
+		
+
+        relative_position_id =destroycal
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = warmonger
+			}
+		}	
+		
+		
+	focus = {
+		id = andeco1
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 25
+		y = 0
+		
+		available = {
+		custom_trigger_tooltip = {
+		tooltip = ctt_blas
+		AND = {
+		has_country_flag = ada_civil_war_over
+		has_war = no
+		24 = {is_owned_and_controlled_by = ADA}
+		30 = { is_owned_and_controlled_by = ADA }
+		}
+		}
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = {}
+		
+
+        relative_position_id =andfoc1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_timed_idea = {idea = andindustry days = 300} 
+			}
+		}	
+	
+	focus = {
+		id = andeco3
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		mutually_exclusive = { focus =  }
+		
+		available = { 
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = {focus = andeco1}
+		
+
+        relative_position_id = andeco1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							} }
+		add_stability = 0.03					
+		}	
+		}
+	focus = {
+		id = andeco4
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -1
+		y = 1
+		mutually_exclusive = { focus = andeco5 }
+		
+		available = { 
+		has_war = no
+				}
+		bypass = {
+		}
+		
+		cost = 12		
+		prerequisite = {focus = andeco3}
+		
+
+        relative_position_id = andeco3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		build_railway = {
+			level = 3
+			build_only_on_allied = yes
+			fallback = yes
+			path = { 16514 16522 10300 5085 400 16538 3461  }
+		}
+		build_railway = {
+			level = 3
+			build_only_on_allied = yes
+			fallback = yes
+			path = { 16538 11214 16563 7471 8863 1378 }
+		}
+		build_railway = {
+			level = 2
+			build_only_on_allied = yes
+			fallback = yes
+			path = { 3353 1088 16564 10078 9158 }
+		}
+		build_railway = {
+			level = 2
+			build_only_on_allied = yes
+			fallback = yes
+			path = { 1088 16573 5981 16627 2378 116}
+		}
+		build_railway = {
+			level = 2
+			build_only_on_allied = yes
+			fallback = yes
+			path = { 3353 5979 10008 16436 9852 16459 8949 }
+		}
+		
+		}		
+		}
+	focus = {
+		id = andeco5
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 1
+		y = 1
+		mutually_exclusive = { focus = andeco4 }
+		
+		available = {  
+		has_war = no
+				}
+		
+		bypass = {
+		}
+		
+		cost = 12	
+		prerequisite = {focus = andeco3}
+		
+
+        relative_position_id = andeco3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { 
+		29 = { add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				} }
+		30 = { add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				} }
+		31 = { add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				} }
+		26 = { add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				} }
+		27 = { add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				} }
+		24 = { add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				} }
+		
+		}	
+		}	
+	focus = {
+		id = andeco6
+		icon = GFX_goal_generic_defence
+		x = 0
+		y = 1
+		mutually_exclusive = { focus = andeco7 }
+		
+		available = {  
+				}
+		
+		bypass = {
+		}
+		
+		cost = 10	
+		prerequisite = {focus = andeco5 focus = andeco4 }
+		
+
+        relative_position_id = andeco4
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = protectionism
+		}	
+		} 	
+	focus = {
+		id = andeco7
+		icon = GFX_goal_generic_trade
+		x = 0
+		y = 1
+		mutually_exclusive = { focus = andeco6		}
+		
+		available = {   }
+				
+		
+		bypass = {
+		}
+		
+		cost = 10	
+		prerequisite = {focus = andeco5 focus = andeco4 }
+		
+
+        relative_position_id = andeco5
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = freemarket
+		}	
+		}	
+	focus = {
+		id = andeco8
+		icon = GFX_goal_generic_fortify_city
+		x = 0
+		y = 1
+		mutually_exclusive = { focus =  andeco9}
+		
+		available = { 
+		
+		30 = {is_owned_and_controlled_by = ADA}
+		27 = {is_owned_and_controlled_by = ADA}
+		26 = {is_owned_and_controlled_by = ADA}
+		31 = {is_owned_and_controlled_by = ADA}
+		29 = {is_owned_and_controlled_by = ADA}
+		has_war = NO	  }
+			
+		
+		bypass = {
+		}
+		
+		cost = 10	
+		prerequisite = {focus = andeco6 focus = andeco7 }
+		
+
+        relative_position_id = andeco7
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		custom_effect_tooltip = "Fortifies the most important cities with level 3 forts. Sevilla is fortified with level 5 forts."
+		hidden_effect = {
+		30 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11214
+							instant_build = yes
+						}}
+		27 = { add_building_construction = {
+							type = bunker
+							level = 5
+							province = 3353
+							instant_build = yes
+						}}
+		26 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 16514
+							instant_build = yes
+						}
+		}
+		31 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 1378
+							instant_build = yes
+						}
+		}
+		29 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 116
+							instant_build = yes
+						}
+		}
+		}	 
+		}	
+		}
+		
+		focus = {
+		id = andeco9
+		icon = GFX_focus_generic_aluminum
+		x = 0
+		y = 1
+		mutually_exclusive = { focus = andeco8 }
+		
+		available = { has_war = NO	  }
+				
+		
+		bypass = {
+		}
+		
+		cost = 10	
+		prerequisite = {focus = andeco6 focus = andeco7 }
+		
+
+        relative_position_id = andeco6
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = { andresources }
+		}	
+		}
+	focus = {
+		id = andeco10
+		icon = GFX_goal_continuous_research
+		x = 0
+		y = 1
+		mutually_exclusive = { focus = andeco11 }
+		
+		available = { has_war = NO	  }
+				
+		
+		bypass = {
+		}
+		
+		cost = 10	
+		prerequisite = {focus = andeco8 focus = andeco9 }
+		
+
+        relative_position_id = andeco8
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = { andtech }
+		}	
+		}	
+	focus = {
+		id = andeco11
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 1
+		mutually_exclusive = { focus = andeco10 }
+		
+		available = { has_war = NO	  }
+				
+		
+		bypass = {
+		}
+		
+		cost = 10	
+		prerequisite = {focus = andeco8 focus = andeco9 }
+		
+
+        relative_position_id = andeco9
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = { andmoral }
+		}	
+		}
+focus = { 
+		id = adufoc1
+		icon = GFX_goal_generic_major_war
+		x = 0
+		y = 1
+ 	relative_position_id = 	andcommie3
+		prerequisite = { focus = andcommie3}
+		
+		available = {
+				}
+		bypass = { CAL = {exists = no}
+		}
+		
+		cost = 10		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = {
+		create_wargoal = {
+				type = annex_everything
+				target = CAL
+				expire = 0
+			}
+			add_state_claim = 65
+			add_state_claim = 68
+			add_state_claim = 69
+			add_state_claim = 56
+			add_state_claim = 53
+			MDR = {country_event = { id = mdrvscal.1 days = 5}} 
+		}
+	}	
+focus = { 
+		id = adufoc2
+		icon = GFX_goal_continuous_increase_nu
+		x = 0
+		y = 1
+ 	relative_position_id = 	adufoc1
+		prerequisite = { focus = adufoc1}
+		
+		available = {
+				}
+		
+		
+		
+		cost = 10		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = {
+		add_state_core = 65
+		add_state_core = 68
+		add_state_core = 69
+		add_state_core = 56
+		add_state_core = 53
+		}
+	}		
+focus = { 
+		id = adufoc3
+		icon = GFX_goal_generic_major_war
+		x = 0
+		y = 1
+ 	relative_position_id = 	adufoc2
+		prerequisite = { focus = adufoc2}
+		
+		available = { CAV ={NOT = {has_government = communism }}
+				}
+		bypass = { CAV = {exists = no}
+		}
+		
+		cost = 10		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = {
+		create_wargoal = {
+				type = annex_everything
+				target = CAV
+				expire = 0
+			}
+		
+			 
+		}
+	}
+
+			}	

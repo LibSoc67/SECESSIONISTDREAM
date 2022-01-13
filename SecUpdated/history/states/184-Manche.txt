@@ -1,0 +1,33 @@
+
+state={
+	id=184
+	name="Manche"
+	provinces={
+		849 2740 9421 10363 13664 13745 13765 13850 13860 13908 14050 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=19.000
+		oil=7.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = BNO
+		add_core_of = BNO
+		add_claim_by = HNO
+		victory_points = { 13860 2}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 0
+			industrial_complex = 1 
+			dockyard = 1
+			air_base = 2
+			# = {naval_base = 9}
+		}
+	}
+	state_category=large_town
+	manpower=433473
+	buildings_max_level_factor=1.000
+}

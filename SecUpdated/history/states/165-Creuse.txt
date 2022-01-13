@@ -1,0 +1,35 @@
+
+state={
+	id=165
+	name="Creuse"
+	provinces={
+		7616 7974 8395 9946 14655 14681 14685 14780 
+	}
+	resources={
+		rubber=0.000
+		tungsten=9.000
+		steel=0.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = LIM
+		add_core_of = LIM 
+		add_claim_by = OCC
+		victory_points = {
+		14685 2
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 0
+			industrial_complex = 1
+			#dockyard = 
+			#air_base = 
+			# = {naval_base = 4}
+		}
+	}
+	state_category = rural
+	manpower=201844
+	buildings_max_level_factor=1.000
+}

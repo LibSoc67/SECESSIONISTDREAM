@@ -1,0 +1,165 @@
+﻿division_template = {
+	name = "División de choque"
+	division_names_group = SPAN_INFB_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+	}
+	
+}
+division_template = {
+	name = "Capeones nacionales"  
+	division_names_group = SPR_ARM_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 0 }
+	}
+}
+division_template = {
+	name = "Regimiento de infanteria"  
+	division_names_group = SPAN_INFB_01
+	priority = 2
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1  y = 1 }
+		infantry = { x = 1  y = 0 }
+		artillery_brigade = { x = 1  y = 3 }
+		artillery_brigade = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2513
+		division_template = "División de choque"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "1a Brig. de Caballería 'Floridita'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10834
+		division_template = "División de choque" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+
+	}
+	division= {	# "1a Brig. de Caballería 'Floridita'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 6931
+		division_template = "División de choque" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+
+	}
+	division= {	# "1a Brig. de Caballería 'Floridita'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 5363
+		division_template = "Capeones nacionales" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+		division= {	# "1a Brig. de Caballería 'Floridita'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3961
+		division_template = "Regimiento de infanteria" 
+		start_experience_factor = 0.05
+		start_equipment_factor = 1.0
+
+	}
+division= {	# "1a Brig. de Caballería 'Floridita'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10590
+		division_template = "Regimiento de infanteria" 
+		start_experience_factor = 0.05
+		start_equipment_factor = 1.0
+
+	}
+division= {	# "1a Brig. de Caballería 'Floridita'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2513
+		division_template = "Regimiento de infanteria" 
+		start_experience_factor = 0.05
+		start_equipment_factor = 1.0
+
+	}
+division= {	# "1a Brig. de Caballería 'Floridita'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7993
+		division_template = "Regimiento de infanteria" 
+		start_experience_factor = 0.05
+		start_equipment_factor = 1.0
+
+	}
+	##### No Notable Naval Forces #####
+}
+
+##### No Notable Air Forces #####
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "CAV"
+		}
+		requested_factories = 1
+		progress = 0.21
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "CAV"
+		}
+		requested_factories = 1
+		progress = 0.71
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = anti_air_equipment_1
+			creator = "CAV"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 100
+	}
+}

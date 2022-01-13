@@ -1,0 +1,460 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = iberianews
+
+# Marco Polo Bridge I
+news_event = {
+	id = iberianews.1
+	title = "Spanish genocide in Catalonia!"
+	desc = iberianews.1.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Those bastards deserve it!"
+		trigger = {
+				TAG = CAT
+		}
+	}
+	option = {
+		name = "Oh jesus"
+		trigger = {NOT = { TAG = CAT }}
+	}
+}
+
+news_event = {
+	id = iberianews.2
+	title = "Catalan countries reborn"
+	desc = iberianews.2.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Glorious!"
+		trigger = {
+				TAG = CAT
+		}
+	}
+	option = {
+		name = "They are delusioned"
+		trigger = {NOT = { TAG = CAT }}
+	}
+}
+
+news_event = {
+	id = iberianews.3
+	title = "Revolt in Occitania"
+	desc = iberianews.3.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We might had something to do with this"
+		trigger = {
+				TAG = CAT
+		}
+	}
+	option = {
+		name = "Assholes!"
+		trigger = {
+				TAG = OCC
+		}
+	}
+	option = {
+		name = "Those catalans"
+		trigger = {NOT = { TAG = CAT }}
+	}
+}
+
+news_event = {
+	id = iberianews.4
+	title = "Coup d'Etat in Occitania"
+	desc = iberianews.4.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "All according to plan"
+		trigger = {
+				TAG = CAT
+		}
+	}
+	option = {
+		name = "Those catalans"
+		trigger = {NOT = { TAG = CAT }}
+	}
+}
+news_event = {
+	id = iberianews.5
+	title = "Revolt in Catalonia!"
+	desc = iberianews.5.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Fuck"
+		trigger = {
+				TAG = CAT
+		}
+	}
+	option = {
+		name = "Great!"
+		trigger = {
+				TAG = CAV
+		}
+	}
+	option = {
+		name = "Oh"
+		trigger = {NOT = { TAG = CAT TAG = CAV }}
+	}
+}
+news_event = {
+	id = iberianews.6
+	title = "Failed revolt in Catalonia!"
+	desc = iberianews.6.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Thanks god"
+		trigger = {
+				TAG = CAT
+		}
+	}
+	option = {
+		name = "Everything would have changed if Barcelona had fallen"
+		trigger = {NOT = { TAG = CAT }}
+	}
+}
+news_event = {
+	id = iberianews.7
+	title = "The Shadow Realm reborn"
+	desc = iberianews.7.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will rule them all!"
+		trigger = {
+				TAG = OCC
+		}
+	}
+	option = {
+		name = "They are insane"
+		trigger = {NOT = { TAG = OCC }}
+	}
+}
+news_event = {
+	id = iberianews.8
+	title = "La Rioja annexion"
+	desc = iberianews.8.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "One step closer to greatness"
+		trigger = {
+				TAG = CAV
+		}
+	}
+	option = {
+		name = "Doesn't matter"
+		trigger = {NOT = { TAG = CAV }}
+	}
+}
+news_event = {
+	id = iberianews.9
+	title = "La Rioja fights back"
+	desc = iberianews.9.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "They will pay!"
+		trigger = {
+				TAG = CAV
+		}
+	}
+	option = {
+		name = "We will defend ourselves!"
+		trigger = {
+				TAG = LAR
+		}
+	}
+	option = {
+		name = "War is inevitable"
+		trigger = {NOT = { OR ={TAG = CAV TAG = LAR}}}
+	}
+}
+news_event = {
+	id = iberianews.10
+	title = "Marching North"
+	desc = iberianews.10.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will win this war"
+		trigger = {
+				OR ={TAG = CAV TAG = GLC TAG = ASR TAG = CAB 
+		}}
+	}
+	option = {
+		name = "Not my problem"
+		trigger = {NOT = { OR ={TAG = CAV TAG = GLC TAG = ASR TAG = CAB }}}
+	}
+}
+news_event = {
+	id = iberianews.11
+	title = "The Great War"
+	desc = iberianews.11.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will win this war"
+		trigger = {
+				OR ={TAG = CAV TAG = MDR TAG = CAL
+		}}
+	}
+	option = {
+		name = "Not my problem"
+		trigger = {NOT = { OR ={TAG = CAV TAG = MDR TAG = CAL}}}
+	}
+}
+news_event = {
+	id = iberianews.12
+	title = "Occitanian Failure"
+	desc = iberianews.12.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This is embarassing"
+		
+		trigger = {NOT = {TAG = LAN }}		
+		}
+	
+	option = {
+		name = "GG"
+		trigger = {TAG = LAN }}
+	}
+news_event = {
+	id = iberianews.13
+	title = "Duran seizes control"
+	desc = iberianews.13.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Unexpected"
+		
+		trigger = {NOT = {TAG = LAN }}		
+		}
+	
+	option = {
+		name = "Hurra"
+		trigger = {TAG = LAN }}
+	}
+news_event = {
+	id = iberianews.14
+	title = "Primo seizes control"
+	desc = iberianews.14.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Uncertain future"
+		
+		trigger = {NOT = {TAG = CAV }}		
+		}
+	
+	option = {
+		name = "Viva Castilla!"
+		trigger = {TAG = CAV }}
+	}
+news_event = {
+	id = iberianews.15
+	title = "Mola seizes control"
+	desc = iberianews.15.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Uncertain future"
+		
+		trigger = {NOT = {TAG = CAV }}		
+		}
+	
+	option = {
+		name = "Viva Castilla!"
+		trigger = {TAG = CAV }}
+	}
+news_event = {
+	id = iberianews.16
+	title = "Onésimo seizes control"
+	desc = iberianews.16.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Uncertain future"
+		
+		trigger = {NOT = {TAG = CAV }}		
+		}
+	
+	option = {
+		name = "Viva Castilla!"
+		trigger = {TAG = CAV }}
+	}
+news_event = {
+	id = iberianews.17
+	title = "Catalano-Occitan split"
+	desc = iberianews.17.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Wow"
+		
+		}
+	}
+news_event = {
+	id = iberianews.18
+	title = "Unconditional acceptance"
+	desc = iberianews.18.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Wow"
+		
+		}
+	}
+news_event = {
+	id = iberianews.19
+	title = "Conditional acceptance"
+	desc = iberianews.19.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Wow"
+		
+		}
+	}
+news_event = {
+	id = iberianews.20
+	title = "The Paris-Tolouse Pact"
+	desc = iberianews.20.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ok"
+		}
+	}
+news_event = {
+	id = iberianews.21
+	title = "The Price of Peace"
+	desc = iberianews.21.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ok"
+		}
+}
+news_event = {
+	id = iberianews.22
+	title = "The Breakover of the Pact"
+	desc = iberianews.22.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ok"
+		}
+}
+news_event = {
+	id = iberianews.23
+	title = "The Breakover of the Pact"
+	desc = iberianews.23.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ok"
+		}
+}

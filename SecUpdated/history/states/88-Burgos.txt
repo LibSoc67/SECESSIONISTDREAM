@@ -1,0 +1,33 @@
+
+state={
+	id=88
+	name="Burgos"
+resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=45.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = CAV
+		add_core_of = CAV
+		victory_points = {
+			4122 10 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		217 4097 4122 8122 10853 15584 15642 15705 
+	}
+	manpower=293492
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

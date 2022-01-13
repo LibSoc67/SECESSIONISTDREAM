@@ -1,0 +1,9 @@
+
+supply_area={
+	id=18
+	name="Grand Est"
+	value=15
+	states={
+		206 205 207 208 
+	}
+}

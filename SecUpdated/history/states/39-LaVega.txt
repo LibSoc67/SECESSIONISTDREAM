@@ -1,0 +1,21 @@
+
+state={
+	id=39
+	name="La Vega"
+	provinces={
+		10852 16551 16558 16574 16583 
+	}
+	history={
+		owner = ADA
+		add_core_of = ADA
+		add_core_of = GRA
+		
+		buildings = {
+			infrastructure = 3
+			 
+		}
+	}
+	state_category=pastoral
+	manpower=40394
+	buildings_max_level_factor=1.000
+}

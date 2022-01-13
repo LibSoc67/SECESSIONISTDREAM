@@ -1,0 +1,37 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = stalinists
+
+# penis
+country_event = {
+	id = stalinists.1
+	title = "The Trial"
+	desc = "The 17 were a group of stalinists intelectuals who openly claimed to overthrow the goverment. Now they are in a trial for betrayal to the nation. What will the outcome of this trial be?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Death"
+		ai_chance = { factor = 33 }
+set_country_flag = death
+}
+option = { 
+		name = "Prison"
+		ai_chance = { factor = 33 }
+set_country_flag = prison
+}
+option = { 
+		name = "Free them"
+		ai_chance = { factor = 33 }
+set_country_flag = free
+remove_ideas = stalinists
+}
+
+
+
+
+}
+

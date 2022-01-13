@@ -1,0 +1,23 @@
+
+state={
+	id=45
+	name="El Andévalo"
+provinces={
+		6754 10378 16434 16454 
+	}
+	history={
+	set_demilitarized_zone = yes
+		owner = ADA
+		add_core_of = ADA
+		add_core_of = HUE
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+
+	
+	manpower=109402
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	}

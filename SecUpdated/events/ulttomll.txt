@@ -1,0 +1,42 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = ulttomll
+
+# penis
+country_event = {
+	id = ulttomll.1
+	title = "Ultimatum from Catalonia"
+	desc = "Catalonia has sent us a ultimatum. Either we join or they declare war to us." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We must accept"
+		ai_chance = { factor = 100 }
+CAT = { add_threat = 3 
+
+	annex_country = {
+    target = MLL
+    transfer_troops = yes
+	}
+	}
+}
+	option = { 
+		name = "We will refuse!"
+		ai_chance = { factor = 10 }
+	
+		CAT = { create_wargoal = {
+				type = annex_everything
+				target = MLL
+				expire = 0
+				} 
+				}
+				
+	add_threat = 3 
+ 
+		MLL = {add_war_support	= 0.1 }
+
+}}

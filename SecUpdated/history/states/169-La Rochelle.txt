@@ -1,0 +1,29 @@
+
+state={
+	id=169
+	name="Charente Maritime"
+	provinces={
+		699 2396 4285 4531 7570 8919 10622 10629 14603 14638 14663 14744 14783 14843 17390 
+	}
+	history={
+		owner = POI
+		add_core_of = POI
+		victory_points = {
+		14603 8
+		}
+		victory_points = {
+		10629 2
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			#dockyard = 
+			air_base = 2
+			14603 = {naval_base = 4}
+		}
+	}
+	state_category = town
+	manpower=419021
+	buildings_max_level_factor=1.000
+}

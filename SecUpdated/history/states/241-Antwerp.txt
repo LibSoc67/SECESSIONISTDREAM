@@ -1,0 +1,25 @@
+
+state={
+	id=241
+	name="Antwerp"
+	provinces={
+		4833 13393 13421 13447 
+	}
+	history={
+		owner = VLD
+		add_core_of = VLD 
+		victory_points = {
+		13447 15	
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 3
+			air_base = 5
+		}
+
+	}
+	manpower=1017983
+	state_category = city
+	buildings_max_level_factor=1.000
+}

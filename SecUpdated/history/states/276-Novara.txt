@@ -1,0 +1,28 @@
+
+state={
+	id=276
+	name="Novara"
+	provinces={
+		5729 8473 14732 14737 14823 
+	}
+	history={
+		owner = PIE
+		add_core_of = PIE
+		victory_points = {
+		8473 4	
+		}
+		victory_points = {
+		5729 1	
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+	state_category=rural
+	manpower=290427
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

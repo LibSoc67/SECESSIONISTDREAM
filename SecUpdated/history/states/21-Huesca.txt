@@ -1,0 +1,33 @@
+
+state={
+	id=21
+	name="Huesca"
+	provinces={
+		1059 2911 7402 7561 8382 9173 11316 15509 15565 15578 15624 15659 15678 15733 15778 15786 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=7.000
+		oil=0.000
+		chromium=2.000
+		aluminium=5.000
+	}
+	history={
+		owner = ARA
+		add_core_of = ARA
+		victory_points = {
+		15624 10
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			
+			 
+		}
+	}
+	state_category=town
+	manpower=170293
+	buildings_max_level_factor=1.000
+}

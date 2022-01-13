@@ -1,0 +1,31 @@
+
+state={
+	id=41
+	name="Costa Tropical"
+	provinces={
+		3965 8546 11042 16614 16619 
+	}
+	resources={
+		rubber=2.000
+		tungsten=0.000
+		steel=0.000
+		oil=7.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+	set_demilitarized_zone = yes
+		owner = ADA
+		add_core_of = ADA
+		add_core_of = GRA
+		
+		buildings = {
+			infrastructure = 4 
+			dockyard = 1
+			 
+		}
+	}
+	state_category=pastoral
+	manpower=93920
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,580 @@
+ideas = {
+country = {
+		glc_geology = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			production_lack_of_resource_penalty_factor = -0.1
+			country_resource_oil = 5
+			}
+			}
+			}
+country = {
+		glc_geology1 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			production_lack_of_resource_penalty_factor = -0.15
+			country_resource_oil = 16
+			fuel_gain_factor = 0.1
+			}
+			}
+			}
+country = {
+		defarc = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			conscription= 0.0025
+			army_leader_start_defense_level = 1
+			production_speed_bunker_factor = 0.15
+			production_speed_anti_air_building_factor = 0.15
+			max_dig_in = 0.5
+			army_speed_factor = -0.15
+			}
+			}
+			}
+country = {
+		glcantifa = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			
+			targeted_modifier = {
+			TAG = CAV
+			attack_bonus_against = 0.07
+			defense_bonus_against = 0.07
+			}
+			
+			}
+			}			
+country = {
+		northpact = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			guarantee_tension = -0.50
+			}
+			rule = {can_create_factions = yes}
+			}
+			}
+country = {
+		paganism = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			conscription = 0.03
+			stability_factor = -0.20
+			}
+			
+			}
+			}						
+country = {
+		paganism1 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			conscription = 0.03
+			stability_factor = -0.15
+			political_power_gain = 0.05
+			}
+			
+			}
+			}	
+country = {
+		paganism2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			conscription = 0.03
+			stability_factor = -0.10
+			political_power_gain = 0.10
+			}
+			}
+			}
+country = {
+		paganism3 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			conscription = 0.03
+			stability_factor = -0.07
+			political_power_gain = 0.20
+			}
+			
+			}
+			}			
+			
+country = {
+		paganism4 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			conscription = 0.04
+			political_power_gain = 0.25
+			}
+			
+			}
+			}	
+country = {
+		glcmilitia = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			conscription = 0.03
+			army_attack_factor = -0.15
+			army_core_attack_factor = 0.15
+			army_defence_factor = -0.15
+			army_core_defence_factor = 0.2
+			army_org = -1
+			max_planning_factor = -0.1
+			}
+			
+			}
+			}
+country = {
+		glcmilitia1 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			conscription = 0.03
+			army_attack_factor = -0.15
+			army_core_attack_factor = 0.20
+			army_defence_factor = -0.15
+			army_core_defence_factor = 0.25
+			army_org = -2
+			max_planning_factor = -0.10
+			}
+			
+			}
+			}			
+country = {
+		glcmilitia2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			conscription = 0.03
+			army_attack_factor = -0.15
+			army_core_attack_factor = 0.25
+			army_defence_factor = -0.15
+			army_core_defence_factor = 0.30
+			army_org = -3
+			max_planning_factor = -0.10
+			}
+			
+			}
+			}			
+country = {
+		glcmilitia3 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			conscription = 0.03
+			army_attack_factor = -0.15
+			army_core_attack_factor = 0.30
+			army_defence_factor = -0.15
+			army_core_defence_factor = 0.35
+			army_org = -4
+			max_planning_factor = -0.10
+			}
+			
+			}
+			}			
+country = {
+		glcmilitia4 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			conscription = 0.02
+			army_attack_factor = -0.07
+			army_core_attack_factor = 0.13
+			army_defence_factor = -0.07
+			army_core_defence_factor = 0.17
+			max_planning_factor = -0.05
+			}
+			
+			}
+			}			
+	country = {
+		glcmilitia5 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			conscription = 0.01
+			army_attack_factor = 0.03
+			army_core_attack_factor = 0.10
+			army_defence_factor = 0.03
+			army_core_defence_factor = 0.10
+			}
+			
+			}
+			}		
+	country = {
+		glcmilitia6 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			army_attack_factor = 0.10
+			army_core_attack_factor = 0.10
+			army_core_defence_factor = 0.10
+			army_defence_factor = 0.05
+			max_planning_factor = 0.05
+			}
+			
+			}
+			}
+			
+	country = {
+		glcmilitia7 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+		army_leader_start_level = 1
+		experience_gain_army = 0.05
+			}
+			
+			}
+			}		
+	country = {
+		glcmilitia8 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+		army_leader_start_level = 1
+		experience_gain_army = 0.1
+		max_planning_factor = 0.05
+			}
+			
+			}
+			}
+
+
+	country = {
+		glcmilitia9 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+		army_leader_start_level = 1
+		experience_gain_army = 0.05
+		army_attack_factor = 0.03
+		army_defence_factor = 0.03
+		army_speed_factor = 0.03
+			}
+			
+			}
+			}		
+	country = {
+		glcpacifism = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+		war_support_factor = -0.50
+		production_speed_arms_factory_factor = -0.2
+			}
+			
+			}
+			}	
+
+
+
+
+
+
+
+
+
+		
+			
+	
+				}		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}				

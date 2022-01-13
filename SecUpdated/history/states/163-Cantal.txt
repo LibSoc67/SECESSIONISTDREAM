@@ -1,0 +1,35 @@
+
+state={
+	id=163
+	name="Cantal"
+	provinces={
+		2747 3731 6456 6895 14842 14862 14912 14964 
+	}
+	resources={
+		rubber=0.000
+		tungsten=14.000
+		steel=23.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = AUV
+		add_core_of = AUV
+		add_claim_by = OCC
+		victory_points = {
+		14912 2
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 0
+			#dockyard = 
+			#air_base = 
+			# = {naval_base = 4}
+		}
+	}
+	state_category = rural
+	manpower=190888
+	buildings_max_level_factor=1.000
+}

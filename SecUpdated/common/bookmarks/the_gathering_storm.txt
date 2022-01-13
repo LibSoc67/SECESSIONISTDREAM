@@ -1,0 +1,255 @@
+bookmarks = {
+	bookmark = {
+		name = "Latin Countries"
+		desc = "All the Latin interesting countries."
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "CAV"
+		default = yes
+		
+		"CAV" = {
+			minor = no
+			history = CAV_1936_DESC
+			ideology = fascism
+			ideas = {
+			castilla_nationalism
+			casimp	
+			cav_unifiers			
+			}
+			focuses = {
+			warforsupremacy
+			thegreatwar
+			endand
+			}
+		}
+		"CAT" = {
+			minor = no
+			history = CAT_1936_DESC
+			ideology = communism
+			ideas = {
+			catpermrev
+			awarsocialism
+			meltingpot
+			economicboom
+			fullemployment
+			minorrebelions
+			}
+			focuses = {
+			ulttoval
+			warara
+			astalinistcoup
+			}
+		}
+		"ADA" = {
+			minor = no
+			history = "The old republic, Andalucia, faces many challenges. Muslim extremist and communists are raiding the country. How will Blas deal with it?"
+			ideology = democratic
+			ideas = {
+			andrep
+			comprotests
+			islprotests
+			granada
+			}
+			focuses = { influenceareas breakthepor calcivilwar
+			}
+		}
+		"GLC" = {
+			minor = no
+			history = "The Great Galician Republic is in a tricky situation. In the south they have the fascists, who are destroying everything they touch. In the east communists forces are getting stronger. How will the Northern Republic deal with this?"
+			ideology = democratic
+			ideas = {
+			glcmilitia
+			glcpacifism
+			}
+			focuses = { glc9 glc13 glc20
+			}
+		}
+		"PRS" = {
+			minor = no
+			history = "WIP"
+			ideology = anarchy
+			ideas = {
+			paris_comune1
+			paris_comune3
+			paris_comune4
+			}
+			focuses = {
+			}
+		}
+		"LAR" = {
+			minor = yes
+			history = "La Rioja is a very small region, but they face a enormous problem, Castillas Ambicions. Can the little nation resist?"
+			ideology = neutrality
+			ideas = {
+			
+			}
+			focuses = { larfoc8 larfoc6 larfoc5
+			}
+		}
+		"AQU" = {
+			minor = yes
+			history = "Aquitania is a nation that is claimed both by Occitania and France. In the south, the Basques also claim part of our territory. They are in a tricky situation indeed."
+			ideology = neutrality
+			ideas = {
+			fraism
+			occism
+			}
+			focuses = {
+			aqufoc1
+			occwrlfoc1
+			occwrlfoc2
+			}
+		}
+		"RHO" = {
+			minor = yes
+			history = "The communists and the anarchists are disputing the control over Rhones-Alpes. On the outside, both France and Occitania want to annex them."
+			ideology = neutrality
+			ideas = {
+			fraism
+			occism
+			}
+			focuses = {
+			rhofoc1
+			occwrlfoc1
+			occwrlfoc2
+			1934_rhoauv1
+			}
+		}
+		"AUV" = {
+			minor = yes
+			history = "Auvergne is under a ultra nationalist regime. Both France and Occitania want to annex them."
+			ideology = neutrality
+			ideas = {
+			fraism
+			occism
+			1934_rhoauv2
+			}
+			focuses = {
+			auvfoc1
+			occwrlfoc1
+			occwrlfoc2
+			
+			}
+		}
+		"PRO" = {
+			minor = yes
+			history = "The Mediterranean Republic is a very proud democracy. Their independence is being threatened by Occitania and France."
+			ideology = neutrality
+			ideas = {
+			fraism
+			occism
+			}
+			focuses = {
+			profoc1
+			occwrlfoc1
+			occwrlfoc2
+			}
+		}
+		"PEI" = {
+			minor = yes
+			history = "Periosa, a republic in the alpes. Many want to annex them. Who will do it?"
+			ideology = neutrality
+			ideas = {
+			fraism
+			occism
+			}
+			focuses = {
+			occwrl9
+			occwrlfoc1
+			occwrlfoc2
+			}
+		}
+		"POI" = {
+			minor = yes
+			history = "Poitours, a beautiful country. France wants them. Occitania has an irrenderist claim to them. Aquitania has ambitions to annex them. Who will do it?"
+			ideology = neutrality
+			ideas = {
+			fraism
+			occism
+			}
+			focuses = {
+			occwrl9
+			occwrlfoc1
+			occwrlfoc2
+			}
+		}
+		"LIM" = {
+			minor = yes
+			history = "Limousin, a beautiful country. Both France and Occitania want them. Aquitania has ambitions to annex them. Who will do it?"
+			ideology = neutrality
+			ideas = {
+			fraism
+			occism
+			}
+			focuses = {
+			occwrl9
+			occwrlfoc1
+			occwrlfoc2
+			}
+		}
+		"LAN" = {
+			minor = yes
+			history = "Languedoc is in a disastrous situation. This military dictatorship is being invaded by Occitania. On the other hand, if they manage to repell the invaders, maybe they will be able to take over the Occitanian government! Will they be able to do it?"
+			ideology = neutrality
+			ideas = {
+			fraism
+			occism
+			}
+			focuses = {
+			lanfoc6
+			lanfoc3
+			}
+		}
+		"OCC" = {
+			minor = no
+			history = "Occitania is in a bad position. The country is very fragmented, and thus very weak. Outside powers might take advantage of that, and they might attempt to control us. Our only hope to mantain independence is to reunite all the occitans under a single banner."
+			ideology = democratic
+			ideas = {
+			occbroken
+			occcatars
+			occrural
+			}
+			focuses = { 
+			occfoc14
+			occfoc12
+			}
+		}
+		"MNC" = {
+			minor = yes
+			history = mnc_book_DESC
+			ideology = democratic
+			ideas = {
+			mncmonarchy1
+			mncconst
+			}
+			focuses = { 
+			
+			}
+		}
+		"CEN" = {
+			minor = no
+			history = CEN_1936_DESC
+			ideology = fascism
+			ideas = {
+			cen_legacy
+			cen_msn
+			cen_nat_marx
+			}
+			focuses = {
+			
+			}
+		}
+
+"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+		# minors from DLC ####
+		
+		
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

@@ -1,0 +1,35 @@
+
+state={
+	id=159
+	name="Lyon"
+	provinces={
+		5657 8801 9364 10405 14671 14714 14755 14762 14834 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=42.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = RHO
+		add_core_of = RHO
+		add_claim_by = OCC
+		victory_points = {
+		14755 30
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 2
+			#dockyard = 
+			air_base = 6
+			# = {naval_base = 4}
+		}
+	}
+	state_category =large_city
+	manpower=1028379
+	buildings_max_level_factor=1.000
+}

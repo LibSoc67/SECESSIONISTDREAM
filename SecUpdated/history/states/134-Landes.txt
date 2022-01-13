@@ -1,0 +1,38 @@
+
+state={
+	id=134
+	name="Landes"
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=18.000
+		oil=0.000
+		chromium=0.000
+		aluminium=25.000
+	}
+
+	history={
+		owner = AQU
+		add_core_of = AQU
+		add_claim_by = OCC
+		victory_points = {
+			2282 2 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 1
+			air_base = 0
+
+		}
+
+	}
+
+	provinces={
+		1670 2282 3197 4126 5029 5038 5957 6677 7406 8897 9999 11009 14979 15102 15129 15138 15148 15179 
+	}
+	manpower=251436
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

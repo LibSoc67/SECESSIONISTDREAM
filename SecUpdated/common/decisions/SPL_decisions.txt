@@ -1,0 +1,28 @@
+spl1 = {			
+sploob = {	
+		icon = generic_form_nation		
+		available = {	
+		exists = yes
+}
+		fire_only_once = yes #If set to yes, the decision will only appear once, after execution will not appear again.
+		visible = {		
+		original_tag = SPL
+		}	
+		cost = 0	
+		complete_effect = {		
+		add_manpower=40000
+		load_oob = "sploob"	
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+
+	}
+
+	
+	
+	
+	
+	
+	

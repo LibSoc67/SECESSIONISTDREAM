@@ -1,0 +1,33 @@
+
+state={
+	id=19
+	name="Zaragoza"
+	provinces={
+		795 1303 2452 5693 7720 7729 8853 10434 10545 10831 11250 11340 15575 15658 15700 15749 15762 15822 15840 15905 
+	}
+	resources={
+		rubber=0.000
+		tungsten=18.000
+		steel=23.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = ARA
+		add_core_of = ARA
+		victory_points = {
+		5693 20	
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 2
+			air_base = 4
+			 
+		}
+	}
+	state_category=large_city
+	manpower=535819
+	buildings_max_level_factor=1.000
+}

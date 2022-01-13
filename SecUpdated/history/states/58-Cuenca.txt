@@ -1,0 +1,31 @@
+
+state={
+	id=58
+	name="Cuenca"
+	provinces={
+		1693 2988 4069 6824 7805 10089 15930 16077 
+	}
+	resources={
+		rubber=0.000
+		tungsten=13.000
+		steel=15.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL 
+		victory_points = {
+		1693 12	
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			 
+		}
+	}
+	state_category=rural
+	manpower=219232
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,27 @@
+
+state={
+	id=233
+	name="Namur"
+	provinces={
+		2611 3507 4370 6390 7920 13601 13632 13737 
+	}
+	history={
+		owner = WLL
+		add_core_of = WLL 
+		victory_points = {
+		13601 13	
+		}
+		victory_points = {
+		7920 3
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 4
+		}
+
+	}
+	manpower=350928
+	state_category = city
+	buildings_max_level_factor=1.000
+}

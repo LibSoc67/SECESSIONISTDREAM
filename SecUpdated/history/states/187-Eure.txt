@@ -1,0 +1,36 @@
+
+state={
+	id=187
+	name="Eure"
+	resources={
+		rubber=0.000
+		tungsten=7.000
+		steel=31.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+
+	history={
+		owner = HNO
+		add_core_of = HNO
+		add_claim_by = BNO
+		victory_points = {
+			10124 3 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		4808 5348 8017 9110 10124 10689 13853 13893 13909 14028 
+	}
+	manpower=303829
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,50 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = ulttomur
+
+# penis
+country_event = {
+	id = ulttomur.1
+	title = "Union With Castilla?"
+	desc = "Castilla and us have a very similar culture. Shall we unite under a single banner?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We must accept"
+		ai_chance = { factor = 100 }
+		CAV = {add_war_support	= 0.05
+		add_named_threat = { 
+		threat = 1
+		name = "Union With Murcia"
+}
+	annex_country = {
+    target = MUR
+    transfer_troops = yes
+	}}
+} 
+fire_only_once = yes
+	option = { 
+		name = "We will refuse!"
+		ai_chance = { factor = 0 }
+	
+	news_event = {
+    id = ultimatumriojanewsdef.1
+    days = 2
+    random = 2
+	}
+		CAV = { create_wargoal = {
+				type = annex_everything
+				target = MUR
+				expire = 0
+				} 
+				}
+				
+	add_threat = 3 
+ 
+		MUR = {add_war_support	= 0.1 }
+
+}}

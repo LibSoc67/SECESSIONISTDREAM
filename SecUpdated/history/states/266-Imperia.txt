@@ -1,0 +1,27 @@
+
+state={
+	id=266
+	name="Imperia"
+	provinces={
+		4232 15313 
+	}
+	history={
+		owner = LIG
+		add_core_of = LIG
+		victory_points = {
+		4232 2
+		}
+		buildings = {
+			infrastructure = 6
+			dockyard = 1
+		}
+
+	}
+	state_category=rural
+	
+	
+	manpower=112342
+	buildings_max_level_factor=1.000
+	
+	local_supplies=0.000
+}

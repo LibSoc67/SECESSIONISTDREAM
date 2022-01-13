@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=40
+	name="The Chanel"
+	provinces={
+		17382 17383 17571 17666 17820 17846 17892 17941 18157 18202 18324 18433 18502 18509 18601 18635 18797 18900 18906 18911 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

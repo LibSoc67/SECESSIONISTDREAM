@@ -1,0 +1,2826 @@
+﻿focus_tree = {
+
+	id = occitanian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 70
+			tag = OCC
+}
+} 
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 0 }
+
+
+	focus = {
+		id = occfoc1
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 20
+		y = 0
+ 	
+		
+		available = {
+		has_war = no
+				}
+		bypass = {
+		}
+		
+		cost = 5	  	
+
+		mutually_exclusive = {focus = }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_stability = 0.1
+		if = {
+		limit = { tag = occ }
+		hidden_effect = {country_event = { id = occevent.1 days = 21} } }
+			}
+		}
+	focus = {
+		id = occfoc2
+		icon = GFX_goal_generic_demand_territory
+		x = 0
+		y = 1
+ 	
+		relative_position_id = 	occfoc1
+		prerequisite = { focus = occfoc1 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 5		
+
+		mutually_exclusive = {focus = }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_war_support = 0.05
+		
+			}
+		}
+	focus = {
+		id = occfoc3
+		icon = GFX_focus_occcatars
+		x = 8 
+		y = 1
+ 	
+		relative_position_id = 	occfoc2
+		prerequisite = { focus = occfoc2 }
+		available = {
+		tag = OCC
+		has_idea = occcatars1
+				} 
+		bypass = {
+		}
+		
+		cost = 10		
+
+		mutually_exclusive = {focus = occfoc4}
+		mutually_exclusive = {focus = occfoc68}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		custom_effect_tooltip = cet_occfoc3
+		add_popularity = {ideology = neutrality popularity = 0.05}
+		swap_ideas = {
+						remove_idea = occcatars1
+						add_idea = occcatars2
+					}
+			}
+		}
+	focus = {
+		id = occfoc4
+		icon = GFX_focus_usa_voter_registration_act
+		x = 0
+		y = 1
+ 	
+		relative_position_id = 	occfoc2
+		prerequisite = { focus = occfoc2 }
+		available = {
+		tag = OCC
+		NOT = {has_idea = occcatars1
+				} }
+		bypass = {
+		}
+		
+		cost = 10		
+
+		mutually_exclusive = {focus = occfoc3}
+		mutually_exclusive = {focus = occfoc68}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		custom_effect_tooltip = cet_occfoc4
+		add_popularity = {ideology = democratic popularity = 0.15}
+			}
+		}
+	
+	focus = {
+		id = occfoc5
+		icon = GFX_focus_generic_support_the_left_right
+		x = 0
+		y = 1
+ 	
+		relative_position_id = 	occfoc3
+		prerequisite = { focus = occfoc3 }
+		available = {
+		neutrality > 0.27
+		}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		add_popularity = {ideology = neutrality popularity = 0.40}
+		add_popularity = {ideology = communism popularity = 0.20}
+		set_politics = { ruling_party = neutrality elections_allowed = no }
+		hidden_effect = {news_event = { id = iberianews.7 days = 2}}
+			}
+		}
+	focus = { 
+		id = occfoc6
+		icon = GFX_focus_prc_infiltration
+		x = 0
+		y = 1
+ 	
+		relative_position_id = 	occfoc5
+		prerequisite = { focus = occfoc5 }
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 5		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		add_ideas = occopaque
+			}
+		}
+	
+	focus = { 
+		id = occfoc7
+		icon = GFX_goal_generic_fortify_city
+		x = -3
+		y = 1
+ 	
+		relative_position_id = 	occfoc6
+		prerequisite = { focus = occfoc6 }
+		available = {
+		130 = {is_owned_and_controlled_by = ROOT}
+		131 = {is_owned_and_controlled_by = ROOT}
+		}
+		bypass = {
+		}
+		
+		cost = 5		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		130 = { add_building_construction = {
+							type = bunker
+							level = 4
+							province = 15398
+							instant_build = yes
+						}}
+		130 = { add_building_construction = {
+							type = bunker
+							level = 4
+							province = 1233
+							instant_build = yes
+						}}
+		131 = { add_building_construction = {
+							type = bunker
+							level = 4
+							province = 136
+							instant_build = yes
+						}}
+		swap_ideas = {
+		add_idea = occcatars3
+		remove_idea = occcatars2
+		}
+		
+			}
+		}
+	focus = { 
+		id = occfoc8
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		x = 0
+		y = 1
+ 	
+		relative_position_id = 	occfoc7
+		prerequisite = { focus = occfoc7 }
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 5		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		
+		swap_ideas = {
+		add_idea = occcatars4
+		remove_idea = occcatars3
+		}
+		
+			}
+		}
+	
+focus = { 
+		id = occfoc9
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 1
+ 	
+		relative_position_id = 	occfoc8
+		prerequisite = { focus = occfoc8 }
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		
+		add_ideas = occwar1
+		custom_effect_tooltip = cet_occfoc9  
+			}
+		}
+	
+	focus = { 
+		id = occfoc10 
+		icon = GFX_focus_distributism
+		x = -1
+		y = 1
+ 	
+		relative_position_id = 	occfoc6
+		prerequisite = { focus = occfoc6 }
+		available = {
+		has_country_flag = distributism
+		has_completed_focus = occfoc8
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+		mutually_exclusive = {focus = occfoc13}
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		swap_ideas = {
+		add_idea = occcatars5
+		remove_idea = occcatars4
+		}
+		add_popularity = {ideology = communism popularity = 0.20}
+		add_popularity = {ideology = neutrality popularity = -0.20}
+		set_politics = { ruling_party = communism elections_allowed = no }
+			}
+		}
+	focus = { 
+		id = occfoc11 
+		icon = GFX_goal_generic_major_alliance
+		x = 0
+		y = 1
+ 	
+		relative_position_id = 	occfoc10
+		prerequisite = { focus = occfoc10 }
+		available = {
+	
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		
+		add_ideas = occcop 
+		
+		}
+		}
+	focus = { 
+		id = occfoc12 
+		icon = GFX_focus_por_concordat
+		x = 0
+		y = 1
+ 	
+		relative_position_id = 	occfoc11
+		prerequisite = { focus = occfoc11 }
+		available = {
+	
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		
+		swap_ideas = {
+						remove_idea = occcop
+						add_idea = occcop1
+					}
+		
+		}
+		}
+focus = { 
+		id = occfoc13
+		icon = GFX_focus_occolig
+		x = 1
+		y = 1
+ 	
+		relative_position_id = 	occfoc6
+		prerequisite = { focus = occfoc6 }
+		available = {
+		has_country_flag = elitism
+		has_completed_focus = occfoc8
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+		mutually_exclusive = {focus = occfoc10}
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		add_political_power= 150
+			}
+		}
+focus = {  
+		id = occfoc14
+		icon = GFX_focus_oliga
+		x = 0
+		y = 1
+ 	
+		relative_position_id = 	occfoc13
+		prerequisite = { focus = occfoc13 }
+		available = {
+		
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		add_ideas = occoliga
+			} 
+		}
+focus = {   
+		id = occfoc15
+		icon = GFX_goal_generic_scientific_exchange
+		x = 0
+		y = 1
+ 	
+		relative_position_id = 	occfoc14
+		prerequisite = { focus = occfoc14 }
+		available = {
+		
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+	swap_ideas = {
+						remove_idea = occoliga
+						add_idea = occoliga1
+					}
+			} 
+		}
+ focus = {   
+		id = occfoc16
+		icon = GFX_goal_generic_neutrality_focus
+		x = 3
+		y = 1
+ 	
+		relative_position_id = 	occfoc6
+		prerequisite = { focus = occfoc6 }
+		available = {
+		
+		
+		}
+		bypass = {
+		}
+		
+		cost = 5	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+	add_ideas = occlog
+			} 
+		}
+focus = {   
+		id = occfoc17
+		icon = GFX_focus_generic_self_management
+		x = 0
+		y = 1
+ 	
+		relative_position_id = 	occfoc16
+		prerequisite = { focus = occfoc16 }
+		available = {
+		
+		
+		}
+		bypass = {
+		}
+		
+		cost = 5	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+	swap_ideas = {
+						remove_idea = occlog
+						add_idea = occlog1
+					}
+			} 
+		}
+focus = {   
+		id = occfoc18
+		icon = GFX_focus_focus_fra_national_resistance_council
+		x = 0
+		y = 1
+ 	
+		relative_position_id = 	occfoc17
+		prerequisite = { focus = occfoc17 }
+		available = {
+		
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+	swap_ideas = {
+						remove_idea = occlog1
+						add_idea = occlog2 
+					}
+			} 
+		}
+focus = {   
+		id = occfoc19
+		icon = GFX_focus_occdeffontaines
+		x = 0
+		y = 1
+ 	
+		relative_position_id = 	occfoc4
+		prerequisite = { focus = occfoc4 }
+		available = {
+		date < 1940.1.1
+		
+		}
+		bypass = {
+		date > 1940.1.1
+		}
+		
+		cost = 10
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+	add_stability = 0.05
+	add_political_power = 150
+			} 
+		}
+focus = {   
+		id = occfoc20   
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 1
+		y = 1
+ 	
+		relative_position_id = 	occfoc19
+		prerequisite = { focus = occfoc19 }
+		available = {
+		date < 1940.1.1
+		
+		}
+		bypass = {
+		date > 1940.1.1
+		}
+		
+		cost = 10
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		custom_effect_tooltip = "This will be added in a future update."
+			} 
+		}
+focus = {   
+		id = occfoc21   
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+ 	
+		relative_position_id = 	occfoc19
+		prerequisite = { focus = occfoc19 }
+		available = {
+		date < 1940.1.1
+		
+		}
+		bypass = {
+		date > 1940.1.1
+		}
+		
+		cost = 10
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+	add_ideas = occsocial 
+			} 
+		}
+focus = {   
+		id = occfoc22   
+		icon = GFX_focus_occscultists
+		x = 0
+		y = 1
+ 	
+		relative_position_id = 	occfoc21
+		prerequisite = { focus = occfoc21 }
+		available = {
+		date < 1940.1.1
+		
+		}
+		bypass = {
+		date > 1940.1.1
+		}
+		
+		cost = 10
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+	add_research_slot = 1
+	swap_ideas = {
+	remove_idea = occsocial
+	add_idea = occsocial1
+	}
+			} 
+		}
+focus = {   
+		id = occfoc23   
+		icon = GFX_focus_occfra
+		x = 0
+		y = 1
+ 	
+		relative_position_id = 	occfoc20
+		prerequisite = { focus = occfoc20 }
+		available = {
+		date < 1940.1.1
+		NOT = { 168 = { is_owned_and_controlled_by = ROOT }}
+		}
+		bypass = {
+		date > 1940.1.1
+		}
+		
+		cost = 10
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+	custom_effect_tooltip = "This will be added in a future update."
+			} 
+		}
+focus = {   
+		id = occfoc24   
+		icon = GFX_focus_occgov
+		x = -1
+		y = 1
+ 	
+		relative_position_id = 	occfoc23
+		prerequisite = { focus = occfoc23 focus = occfoc22}
+		available = {
+		date > 1940.1.1
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 5
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+	country_event = occdemoc.1
+			} 
+		}
+focus = {   
+		id = occfoc25 
+		icon = GFX_focus_occdream
+		x = 14
+		y = 0
+ 	
+		relative_position_id = 	occfoc1
+		prerequisite = {  }
+		available = {
+		OR = {
+	has_completed_focus = occfoc8 has_completed_focus = occfoc23 has_completed_focus = occfoc74
+		}
+		
+		}
+		bypass = {
+		}
+		mutually_exclusive = {focus = occfoc26}
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		
+		add_war_support = -0.10 
+		
+		
+		}
+		}		
+focus = {   
+		id = occfoc26 
+		icon = GFX_focus_occaliance
+		x = 8
+		y = 0
+ 	mutually_exclusive = {focus = occfoc25 } 
+		relative_position_id = occfoc25
+		prerequisite = {  }
+		available = {
+	OR = {
+	has_completed_focus = occfoc8 has_completed_focus = occfoc23
+		}
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		
+		add_stability= 0.05
+		
+		
+		}
+		}			
+focus = {   
+		id = occfoc27
+		icon = GFX_goal_generic_demand_territory
+		x = 4
+		y = 1
+ 	
+		relative_position_id = occfoc25
+		prerequisite = { focus = occfoc25 focus = occfoc26  }
+		available = {
+	
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		
+		custom_effect_tooltip = cet_occfoc27   
+		
+		
+		} 
+		}		
+focus = {   
+		id = occfoc28
+		icon = GFX_goal_generic_propaganda
+		x = 0
+		y = 1
+ 	
+		relative_position_id = occfoc25
+		prerequisite = { focus = occfoc25  }
+		available = {
+	
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		
+		add_war_support = 0.10
+		
+		} 
+		}		
+focus = {   
+		id = occfoc29
+		icon = GFX_focus_aquism
+		x = 0
+		y = 1
+ 	
+		relative_position_id = occfoc28
+		prerequisite = { focus = occfoc28 }
+		available = {
+	
+		}
+		bypass = {
+		}
+		
+		cost = 5	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		AQU = {
+		add_opinion_modifier = { target = ROOT modifier = large_decrease}
+		add_war_support = 0.1
+		}
+		LIM = {
+		add_opinion_modifier = { target = ROOT modifier = large_decrease}
+		add_war_support = 0.1
+		}
+		add_threat = 1
+		hidden_effect = {
+		add_state_core = 133
+		add_state_core = 134
+		add_state_core = 136
+		add_state_core = 135
+		add_state_core = 137
+		add_state_core = 166
+		add_state_core = 165
+		add_state_core = 167
+		}
+		custom_effect_tooltip = cet_occfoc_cores_aqu
+		}
+		}		
+focus = {   
+		id = occfoc30
+		icon = GFX_focus_proism
+		x = -2
+		y = 1
+ 	
+		relative_position_id = occfoc28
+		prerequisite = { focus = occfoc28 }
+		available = {
+	
+		}
+		bypass = {
+		}
+		
+		cost = 5	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		PRO = {
+		add_opinion_modifier = { target = ROOT modifier = large_decrease}
+		add_war_support = 0.1
+		}
+		PEI  = {
+		add_opinion_modifier = { target = ROOT modifier = large_decrease}
+		add_war_support = 0.1
+		}
+		hidden_effect = {
+		add_state_core = 147
+		add_state_core = 148
+		add_state_core = 149
+		add_state_core = 150
+		add_state_core = 151
+		add_state_core = 152
+		add_state_core = 182
+		}
+		custom_effect_tooltip = cet_occfoc_cores_pro
+		add_threat = 1
+		}
+		}				
+focus = {   
+		id = occfoc31
+		icon = GFX_focus_rhoism
+		x = 2
+		y = 1
+ 	
+		relative_position_id = occfoc28
+		prerequisite = { focus = occfoc28 }
+		available = {
+	
+		}
+		bypass = {
+		}
+		
+		cost = 5	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		RHO = {
+		add_opinion_modifier = { target = ROOT modifier = large_decrease}
+		add_war_support = 0.1
+		}
+		AUV  = {
+		add_opinion_modifier = { target = ROOT modifier = large_decrease}
+		add_war_support = 0.1
+		} 
+		add_threat = 1
+		custom_effect_tooltip = cet_occfoc_cores_rhoau
+		hidden_effect = {
+		add_state_core = 153
+		add_state_core = 154
+		add_state_core = 160
+		add_state_core = 162
+		add_state_core = 163
+		}
+		}
+		}					
+focus = {   
+		id = occfoc32
+		icon = GFX_goal_generic_major_war
+		x = 0
+		y = 1
+		will_lead_to_war_with = PRO
+		will_lead_to_war_with = PEI
+		relative_position_id = occfoc30
+		prerequisite = { focus = occfoc30 }
+		available = {
+	
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		 declare_war_on = {
+				target = PEI
+				type = annex_everything
+			}	
+		declare_war_on = {
+				target = PRO
+				type = annex_everything
+			}	
+		}
+		}		
+focus = {   
+		id = occfoc33
+		icon = GFX_goal_generic_major_war
+		x = 0
+		y = 1
+		will_lead_to_war_with = AQU
+		will_lead_to_war_with = LIM
+		relative_position_id = occfoc29
+		prerequisite = { focus = occfoc29 }
+		available = {
+	
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		 declare_war_on = {
+				target = AQU
+				type = annex_everything
+			}	
+		declare_war_on = {
+				target = LIM
+				type = annex_everything
+			}	
+		}
+		}		
+focus = {   
+		id = occfoc34
+		icon = GFX_goal_generic_major_war
+		x = 0
+		y = 1
+		will_lead_to_war_with = AUV
+		will_lead_to_war_with = RHO
+		relative_position_id = occfoc31
+		prerequisite = { focus = occfoc31 }
+		available = {
+	
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		 declare_war_on = {
+				target = AUV
+				type = annex_everything
+			}	
+		declare_war_on = {
+				target = RHO
+				type = annex_everything
+			}	
+		}
+		}		
+	focus = {   
+		id = occfoc35
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 1
+		relative_position_id = occfoc33
+		prerequisite = { focus = occfoc33 }prerequisite = { focus = occfoc34 }prerequisite = {focus = occfoc32 }
+		available = {
+		 custom_trigger_tooltip={
+			tooltip = ctt_occfoc35
+			OR = {has_idea = occbroken6 has_idea = occbroken7
+		}}
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		add_political_power = 75
+		add_stability = 0.1
+		}
+		}	
+	focus = {   
+		id = occfoc36
+		icon = GFX_focus_occbigger
+		x = 4
+		y = 1
+		relative_position_id = occfoc35
+		prerequisite = { focus = occfoc35 focus = occfoc46 }
+		available = {
+		date > 1940.1.1
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		add_war_support = 0.05
+		LIM = {
+		add_opinion_modifier = { target = ROOT modifier = large_decrease}
+		add_war_support = 0.15
+		}
+		VAS = {
+		add_opinion_modifier = { target = ROOT modifier = large_decrease}
+		add_war_support = 0.05
+		}
+		CAT = {
+		add_opinion_modifier = { target = ROOT modifier = large_decrease}
+		}
+		}
+		}	
+	focus = {   
+		id = occfoc37
+		icon = GFX_goal_continuous_increase_nu
+		x = -3
+		y = 1
+		relative_position_id = occfoc36
+		prerequisite = { focus = occfoc36 }
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		add_state_core = 164
+		add_state_core = 161
+		add_state_core = 159
+		add_state_core = 155
+		add_state_core = 156
+		add_state_core = 157
+		add_state_core = 158
+		
+		}
+		}	
+	focus = {   
+		id = occfoc38
+		icon = GFX_goal_generic_improve_relations
+		x = -1
+		y = 1
+		relative_position_id = occfoc36
+		prerequisite = { focus = occfoc36 }
+		mutually_exclusive = {focus = occfoc39}
+		available = {
+		NOT = {has_war_with = CAT}
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		18={remove_claim_by = ROOT}
+		17={remove_claim_by = ROOT}
+		226={remove_claim_by = ROOT}
+		9 ={remove_claim_by = ROOT}
+		CAT ={add_opinion_modifier = { target = ROOT modifier = huge_increase }
+		}
+		custom_effect_tooltip = cet_occfoc38
+		}
+		}	
+	focus = {   
+		id = occfoc39
+		icon = GFX_goal_generic_forceful_treaty
+		x = 1
+		y = 1
+		relative_position_id = occfoc36
+		prerequisite = { focus = occfoc36 }
+		mutually_exclusive = {focus = occfoc38}
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		hidden_effect = {add_threat = 5}
+		if = {
+				limit = {
+				PRP = {exists = yes}
+				NOT = {is_in_faction_with = PRP}
+				}
+		create_wargoal = {
+				type = annex_everything
+				target = PRP
+				expire = 0
+		}		
+					}
+		create_wargoal = {
+				type = annex_everything
+				target = CAT
+				expire = 0
+		}
+		add_state_core = 226
+		add_state_core = 9
+		}
+		}	
+	focus = {   
+		id = occfoc40
+		icon = GFX_goal_generic_special_forces
+		x = 3
+		y = 1
+		relative_position_id = occfoc36
+		prerequisite = { focus = occfoc36 }
+		available = {
+		NOT = {has_country_flag = occ_gives_up_poi}
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		create_wargoal = {
+				type = annex_everything
+				target = POI
+				expire = 0
+		}
+		add_state_core = 170
+		add_state_core = 169
+		add_state_core = 168
+		add_state_core = 171
+		}
+		}	
+	
+	focus = {   
+		id = occfoc41
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+		relative_position_id = occfoc38
+		prerequisite = { focus = occfoc38 focus = occfoc39}
+		mutually_exclusive = {focus = occfoc42}
+		available = {
+		NOT = {has_war_with = VAS}
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		129={remove_claim_by = ROOT}
+		VAS ={add_opinion_modifier = { target = ROOT modifier = huge_increase 
+		
+		}
+		}
+		
+		}
+		}	
+	focus = {   
+		id = occfoc42
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 1
+		relative_position_id = occfoc39
+		prerequisite = { focus = occfoc38 focus = occfoc39 }
+		mutually_exclusive = {focus = occfoc41}
+		available = {
+		NOT = {
+		is_in_faction_with = VAS
+		
+		}
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		hidden_effect = {add_threat = 3}
+		if = {
+				limit = {
+				NAF = {exists = yes}
+				NOT = {is_in_faction_with = NAF}
+				}
+		create_wargoal = {
+				type = annex_everything
+				target = NAF
+				expire = 0
+		}		
+					}
+		create_wargoal = {
+				type = annex_everything
+				target = VAS
+				expire = 0
+		}
+		add_state_core = 129
+		}
+		}
+	
+	
+	
+	focus = {   
+		id = occfoc43
+		icon = GFX_goal_tripartite_pact 
+		x = 0
+		y = 1
+		relative_position_id = occfoc26
+		prerequisite = { focus = occfoc26 }
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 15	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		LIM = {add_opinion_modifier = { target = ROOT modifier = medium_increase }}
+		POI = {add_opinion_modifier = { target = ROOT modifier = medium_increase }}
+		AQU = {add_opinion_modifier = { target = ROOT modifier = medium_increase }}
+		RHO = {add_opinion_modifier = { target = ROOT modifier = medium_increase }}
+		AUV = {add_opinion_modifier = { target = ROOT modifier = medium_increase }}
+		PRO = {add_opinion_modifier = { target = ROOT modifier = medium_increase }}
+		PEI = {add_opinion_modifier = { target = ROOT modifier = medium_increase }}
+		hidden_effect = {
+		add_state_core = 153
+		add_state_core = 154
+		add_state_core = 160
+		add_state_core = 162
+		add_state_core = 163
+		add_state_core = 147
+		add_state_core = 148
+		add_state_core = 149
+		add_state_core = 150
+		add_state_core = 151
+		add_state_core = 152
+		add_state_core = 182
+		add_state_core = 133
+		add_state_core = 134
+		add_state_core = 136
+		add_state_core = 135
+		add_state_core = 137
+		add_state_core = 166
+		add_state_core = 165
+		add_state_core = 167
+		}
+		custom_effect_tooltip = cet_occfoc_cores 
+		add_political_power = -100
+		}
+		}
+	focus = {   
+		id = occfoc44
+		icon = GFX_goal_anschluss
+		x = 0
+		y = 1
+		relative_position_id = occfoc43
+		prerequisite = { focus = occfoc43 }
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 15	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		create_faction = "United Front"
+		custom_effect_tooltip = cet_occfoc44
+		hidden_effect ={ 
+
+		if = { limit = {LIM = {is_puppet = no has_faction = no}} LIM = {country_event = { id = occevent.4 days = 3}}}
+		if = { limit = {POI = {is_puppet = no has_faction = no}} POI = {country_event = { id = occevent.5 days = 3}}}
+		if = { limit = {AQU = {is_puppet = no has_faction = no}} AQU = {country_event = { id = occevent.6 days = 3}}}
+		if = { limit = {RHO = {is_puppet = no has_faction = no}} RHO = {country_event = { id = occevent.7 days = 3}}}
+		if = { limit = {AUV = {is_puppet = no has_faction = no}} AUV = {country_event = { id = occevent.8 days = 3}}}
+		if = { limit = {PRO = {is_puppet = no has_faction = no}} PRO = {country_event = { id = occevent.9 days = 3}}}
+		if = { limit = {PEI = {is_puppet = no has_faction = no}} PEI = {country_event = { id = occevent.10 days = 3}}}
+		}}
+		}
+	focus = {   
+		id = occfoc45
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 0
+		y = 1
+		relative_position_id = occfoc44
+		prerequisite = { focus = occfoc44 }
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		custom_effect_tooltip = cet_occfoc45
+		set_country_flag = occannpup
+		}
+		}
+	focus = {   
+		id = occfoc46
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		x = 0
+		y = 1
+		relative_position_id = occfoc45
+		prerequisite = { focus = occfoc45 }
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {    
+		custom_effect_tooltip = cet_occfoc46
+		}
+		} 
+	focus = {   
+		id = occfoc47
+		icon = GFX_goal_generic_attack_allies
+		x = -2
+		y = 1
+		relative_position_id = occfoc44
+		prerequisite = { focus = occfoc44 }
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 15	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {    
+		if = {
+				limit = {
+				LIM = {exists = yes}
+				NOT = {is_in_faction_with = LIM}
+				}
+		create_wargoal = {
+				type = annex_everything
+				target = LIM
+				expire = 0
+		}		
+					}
+		if = {
+				limit = {
+				AQU = {exists = yes}
+				NOT = {is_in_faction_with = AQU}
+				}
+		create_wargoal = {
+				type = annex_everything
+				target = AQU
+				expire = 0
+		}		
+					}
+		if = {
+				limit = {
+				AUV = {exists = yes}
+				NOT = {is_in_faction_with = AUV}
+				}
+		create_wargoal = {
+				type = annex_everything
+				target = AUV
+				expire = 0
+		}		
+					}
+					
+		if = {
+				limit = {
+				RHO = {exists = yes}
+				NOT = {is_in_faction_with = RHO}
+				}
+		create_wargoal = {
+				type = annex_everything
+				target = RHO
+				expire = 0
+		}		
+					}
+
+		if = {
+				limit = {
+				PRO = {exists = yes}
+				NOT = {is_in_faction_with = PRO}
+				}
+		create_wargoal = {
+				type = annex_everything
+				target = PRO
+				expire = 0
+		}		
+					}
+		
+		if = {
+				limit = {
+				PEI = {exists = yes}
+				NOT = {is_in_faction_with = PEI}
+				}
+		create_wargoal = {
+				type = annex_everything
+				target = PEI
+				expire = 0
+		}		
+					}
+					
+		}
+		}
+	focus = {   
+		id = occfoc48
+		icon = GFX_focus_occdemoc
+		x = -2
+		y = 1
+		relative_position_id = occfoc24
+		prerequisite = { focus = occfoc24 }
+		available = {
+		has_country_flag = orpwon
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+		mutually_exclusive = {focus = occfoc49}
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+	
+	add_stability = 0.05	
+		}
+		}
+	focus = {   
+		id = occfoc49
+		icon = GFX_focus_occdemoc1
+		x = 2
+		y = 1
+		relative_position_id = occfoc24
+		prerequisite = { focus = occfoc24 }
+		available = {
+		has_country_flag = cpowon
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+		mutually_exclusive = {focus = occfoc48}
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		
+	
+add_war_support = 0.05
+		}
+		}
+	focus = {    
+		id = occfoc50
+		icon = GFX_goal_generic_production2
+		x = -1
+		y = 1
+		relative_position_id = occfoc49
+		prerequisite = { focus = occfoc49 }
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+		
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		add_ideas = occaus
+		}
+		}
+	focus = {    
+		id = occfoc51
+		icon = GFX_focus_mex_privatisation
+		x = 0
+		y = 1
+		relative_position_id = occfoc50
+		prerequisite = { focus = occfoc50 }
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+		
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		custom_effect_tooltip = cet_occfoc51
+		hidden_effect = {
+		random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
+		random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
+		if = {
+			limit = {has_idea = occsocial}
+		remove_ideas = occsocial	
+		}
+		else_if = {
+			limit = {has_idea = occsocial1}
+		remove_ideas = occsocial1	
+		}
+		else_if = {
+			limit = {AND = {NOT =  {has_idea = occsocial1} NOT = {has_idea occsocial} } }
+		random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
+		random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
+		}
+		}
+		}
+		} 
+	focus = {    
+		id = occfoc52
+		icon = GFX_goal_generic_demand_territory
+		x = 1
+		y = 1
+		relative_position_id = occfoc49
+		prerequisite = { focus = occfoc49 }
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+		
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		add_ideas = occnat
+		}
+		} 
+	focus = {    
+		id = occfoc53
+		icon = GFX_focus_generic_manpower
+		x = 0 
+		y = 1
+		relative_position_id = occfoc52
+		prerequisite = { focus = occfoc52 }
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+		
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		swap_ideas = {
+		add_idea = occnat1
+		remove_idea = occnat 
+		}
+		}
+		} 
+	focus = {    
+		id = occfoc54
+		icon = GFX_focus_generic_the_giant_wakes
+		x = -1
+		y = 1
+		relative_position_id = occfoc48
+		prerequisite = { focus = occfoc48 }
+		available = {
+		139 = {is_owned_and_controlled_by = ROOT}
+		141 = {is_owned_and_controlled_by = ROOT}
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+		
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		139 = {
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+		141 = {
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+		}
+		}
+	focus = {
+		id = occfoc55
+		icon = GFX_focus_hospital
+		x = 0
+		y = 1
+		relative_position_id = occfoc54
+		prerequisite = { focus = occfoc54 }
+		available = {
+		has_completed_focus = occfoc22
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+		
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		swap_ideas = {
+	remove_idea = occsocial1
+	add_idea = occsocial2 
+	}
+		}
+		}
+	focus = {
+		id = occfoc56
+		icon = GFX_goal_generic_defence
+		x = 1
+		y = 1
+		relative_position_id = occfoc48
+		prerequisite = { focus = occfoc48 }
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+		
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		add_political_power = 150
+		}
+		}
+	focus = {
+		id = occfoc57
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		relative_position_id = occfoc56
+		prerequisite = { focus = occfoc56 }
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+		
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		add_timed_idea = {
+		idea = occtindra days = 150
+		}
+		}
+		} 
+	focus = {
+		id = occfoc58
+		icon = GFX_focus_generic_industry_1
+		x = 7
+		y = 0
+		relative_position_id = occfoc26
+		available = {
+		num_of_factories > 9
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+		
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		swap_ideas = {
+		remove_idea = occrural
+		add_idea = occrural1
+		}
+		}
+		}
+	focus = {
+		id = occfoc59
+		icon = GFX_focus_generic_industry_2
+		x = 0
+		y = 1
+		relative_position_id = occfoc58
+		available = {
+		num_of_factories > 15
+		}
+		bypass = {
+		}
+		prerequisite = { focus = occfoc58}
+		cost = 10	
+		
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		swap_ideas = {
+		remove_idea = occrural1
+		add_idea = occrural2
+		}
+		}
+		}	
+	focus = {
+		id = occfoc60
+		icon = GFX_focus_generic_industry_3
+		x = 0
+		y = 1
+		relative_position_id = occfoc59
+		available = {
+		num_of_factories > 30
+		}
+		bypass = {
+		}
+		prerequisite = { focus = occfoc59}
+		cost = 10	
+		
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		swap_ideas = {
+		remove_idea = occrural2
+		add_idea = occrural3
+		}
+		}
+		}	
+	focus = { 
+		id = occfoc61
+		icon = GFX_focus_generic_tank_production
+		x = 0
+		y = 1
+		relative_position_id = occfoc60
+		available = {
+		num_of_factories > 40
+		}
+		bypass = {
+		}
+		prerequisite = { focus = occfoc60}
+		cost = 10	
+		
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		swap_ideas = {
+		remove_idea = occrural3
+		add_idea = occrural4
+		}
+		}
+		}	
+	focus = { 
+		id = occfoc62
+		icon = GFX_goal_generic_construction2
+		x = -2
+		y = 1
+		relative_position_id = occfoc58
+		available = {
+		132 = {is_owned_and_controlled_by = ROOT}
+		}
+		bypass = {
+		}
+		prerequisite = { focus = occfoc58}
+		cost = 10	
+		
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		132 = { add_resource = {
+				type = steel
+				amount = 17 } }
+		132 = { add_resource = {
+				type = aluminium
+				amount = 6 } }
+		
+		}
+		}	
+	focus = { 
+		id = occfoc63
+		icon = GFX_focus_occbef
+		x = 2
+		y = 1
+		relative_position_id = occfoc58
+		available = {
+		
+		}
+		bypass = {
+		}
+		prerequisite = { focus = occfoc58}
+		cost = 10	
+		
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		add_ideas = occbef  
+		
+		}
+		}	
+	focus = { 
+		id = occfoc64
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -2
+		y = 1
+		relative_position_id = occfoc59
+		available = {
+		
+		}
+		bypass = {
+		}
+		prerequisite = { focus = occfoc59}
+		cost = 10	
+		
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		hidden_effect ={	
+			131 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			132 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+				9 = {is_owned_and_controlled_by = ROOT}
+				}
+		9 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}		
+					}
+			
+			if = {
+				limit = {
+				133 = {is_owned_and_controlled_by = ROOT}
+				}
+		133 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}		
+					}}
+		custom_effect_tooltip = cet_occfoc64
+		
+		}
+		}		
+	focus = { 
+		id = occfoc65
+		icon = GFX_focus_wonderweapons
+		x = 2
+		y = 1
+		
+		available = {
+		is_major = yes
+		}
+		bypass = {
+		}
+		prerequisite = { focus = occfoc59}
+		relative_position_id = occfoc59
+		cost = 10	
+		
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		add_tech_bonus = {
+				name = secret_bonus
+				bonus = 0.75
+				uses = 2
+				category = nuclear
+				category = rocketry
+			}
+		}		
+		}
+	focus = {   
+		id = occfoc66
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+		relative_position_id = occfoc41
+		prerequisite = { focus = occfoc41 focus = occfoc42}
+		mutually_exclusive = {focus = occfoc67}
+		available = {
+		NOT = {has_war_with = MNC}
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		
+		MNC ={add_opinion_modifier = { target = ROOT modifier = huge_increase 
+		
+		}
+		}
+		
+		}
+		}	
+		
+	focus = {   
+		id = occfoc67
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 1
+		relative_position_id = occfoc42
+		prerequisite = { focus = occfoc41 focus = occfoc42}
+		mutually_exclusive = {focus = occfoc66}
+		available = {
+		NOT = {
+		is_in_faction_with = MNC
+		
+		}
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		hidden_effect = {add_threat = 1}
+				
+					
+		create_wargoal = {
+				type = annex_everything
+				target = MNC
+				expire = 0
+		}
+		add_state_core = 183
+		}
+		}	
+	focus = {   
+		id = occfoc68
+		icon = GFX_goal_generic_secret_weapon
+		x = -8
+		y = 0
+		relative_position_id = occfoc4
+		prerequisite = { focus = occfoc2 }
+		mutually_exclusive = {focus = occfoc3}
+		mutually_exclusive = {focus = occfoc4}
+		available = {
+		tag = LAN
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		hidden_effect = { set_cosmetic_tag = lan_becomes_occ }
+		custom_effect_tooltip = cet_occfoc68
+		add_political_power = 100
+		add_stability = 0.05
+		
+		}
+		}	
+focus = {   
+		id = occfoc69
+		icon = GFX_goal_generic_axis_build_infantry
+		x = -4
+		y = 1
+		relative_position_id = occfoc68
+		prerequisite = { focus = occfoc68 }
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		
+add_country_leader_trait = indomitable_perseverance
+add_war_support = 0.1
+
+		}
+		}
+
+focus = {   
+		id = occfoc70
+		icon = GFX_focus_occfoc70
+		x = 4
+		y = 1
+		relative_position_id = occfoc68
+		prerequisite = { focus = occfoc68 }
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = lan3
+		add_idea = lan4
+		}
+		
+		}
+		}
+focus = {   
+		id = occfoc71
+		icon = GFX_focus_occfoc71
+		x = -2
+		y = 1
+		relative_position_id = occfoc68
+		prerequisite = { focus = occfoc68 }
+		available = {
+		has_idea = lan6
+		}
+		mutually_exclusive = {focus = occfoc72}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		set_politics = { ruling_party = fascism elections_allowed = no } 
+		create_country_leader = {
+	name = "Ramau Durand"
+	picture = "lan1.dds"
+	ideology = fascism_ideology
+	
+	}
+if = { limit = {has_completed_focus = occfoc69}
+add_country_leader_trait = indomitable_perseverance
+}
+if = { limit = {NOT = {has_completed_focus = occfoc73}}
+add_country_leader_trait = emergency_powers
+}		}
+		}		
+ 
+focus = {   
+		id = occfoc72
+		icon = GFX_goal_demand_sudetenland
+		x = 2S
+		y = 1
+		relative_position_id = occfoc68
+		prerequisite = { focus = occfoc68 }
+		available = {
+		NOT = {has_idea = lan6}
+		}
+		mutually_exclusive = {focus = occfoc71}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_stability = 0.1
+		remove_ideas = occcatars
+		}
+		}	
+focus = {   
+		id = occfoc73
+		icon = GFX_focus_generic_treaty
+		x = 0
+		y = 1
+		relative_position_id = occfoc70
+		prerequisite = { focus = occfoc70 }
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		remove_country_leader_trait = emergency_powers
+		swap_ideas = {
+		remove_idea = lan4
+		add_idea = lan5
+		}
+		}
+		}		
+focus = {   
+		id = occfoc74
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 0
+		y = 1
+		relative_position_id = occfoc73
+		prerequisite = { focus = occfoc73 }
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_research_slot = 1
+		remove_ideas = lan5 
+		}
+		}
+focus = {   
+		id = occfoc75
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+		relative_position_id = occfoc72
+		prerequisite = { focus = occfoc72 }
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		CAT ={add_opinion_modifier = { target = ROOT modifier = huge_increase }}
+		CAV ={add_opinion_modifier = { target = ROOT modifier = huge_increase }}
+		GLC ={add_opinion_modifier = { target = ROOT modifier = huge_increase }}
+		ADA ={add_opinion_modifier = { target = ROOT modifier = huge_increase }}
+		custom_effect_tooltip = cet_occfoc75
+		}
+		}				
+focus = {   
+		id = occfoc76
+		icon = GFX_focus_generic_combined_arms
+		x = 0
+		y = 1
+		relative_position_id = occfoc75
+		prerequisite = { focus = occfoc75 }
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_ideas = lan7 
+		}
+		}
+focus = {   
+		id = occfoc77
+		icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 1
+		relative_position_id = occfoc71
+		prerequisite = { focus = occfoc71 }
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_ideas = lan8
+		}
+		}	
+focus = {   
+		id = occfoc78
+		icon = GFX_focus_generic_support_the_left_right
+		x = 0
+		y = 1
+		relative_position_id = occfoc77
+		prerequisite = { focus = occfoc77 }
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		swap_ideas = {
+		add_idea = lan9
+		remove_idea = lan8
+		}
+		}
+		}		
+focus = {   
+		id = occfoc79
+		icon = GFX_focus_aliance_cav
+		x = 0
+		y = 1
+		relative_position_id = occfoc78
+		prerequisite = { focus = occfoc78 }
+		available = {
+		CAV = {
+		exists = yes
+		has_government = fascism
+		}
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		CAV = {country_event = { id = lanjoins.5 days = 2 } } }
+		}
+focus = {   
+		id = occfoc80
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 0
+		y = 1
+		relative_position_id = occfoc79
+		prerequisite = { focus = occfoc79 }
+		available = {
+		CAV = {
+		exists = yes
+		has_government = fascism
+		}
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		CAV = {country_event = { id = lanjoins.7 days = 2 } } 
+		
+		}
+		}		
+focus = {   
+		id = occfoc81 
+		icon = GFX_focus_generic_vichy_france_triumphant
+		x = 2
+		y = 1
+		relative_position_id = occfoc78
+		prerequisite = { focus = occfoc78 focus = occfoc76}
+		available = {
+		FRA = {
+		exists = yes
+		has_government = fascism
+		}
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		custom_effect_tooltip = "This will be added in a future update."
+		
+		}
+		}
+focus = {   
+		id = occfoc82 
+		icon = GFX_focus_end_the_divide
+		x = 0
+		y = 1
+		relative_position_id = occfoc81
+		prerequisite = { focus = occfoc81 }
+		available = {
+		FRA = {
+		exists = yes
+		has_government = fascism
+		}
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		custom_effect_tooltip = "This will be added in a future update."
+		
+		}
+		}
+
+focus = {   
+		id = occfoc83 
+		icon = GFX_goal_generic_secret_weapon
+		x = 0
+		y = 1
+		relative_position_id = occfoc76
+		prerequisite = { focus = occfoc76 }
+		available = {
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_country_leader_trait = god_messenger 
+		
+		}
+		}
+		
+focus = {   
+		id = occfoc84
+		icon = GFX_focus_eternal_flame
+		x = 0
+		y = 1
+		relative_position_id = occfoc83
+		prerequisite = { focus = occfoc83 }
+		available = {
+		}
+		bypass = {
+		}
+		
+		cost = 10	
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		remove_country_leader_trait = god_messenger
+		add_country_leader_trait =  god_messenger1
+		}
+		}
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+}	
+
+	
+	
+	

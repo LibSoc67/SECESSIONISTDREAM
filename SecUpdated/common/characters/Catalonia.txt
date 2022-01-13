@@ -1,0 +1,580 @@
+characters={
+	CAT_andreu_nin={
+		name="Andreu Nin i Pérez"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAT/catcom.dds"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAT_lluis_companys={
+		name="Lluís Companys i Jover"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAT/catlider.dds"
+			}
+		}
+		
+	}
+	CAT_macia={
+		name="Francesc Macià"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAT/catmacià.dds"
+			}
+		}
+		
+	}
+	CAT_provisional={
+		name="Popular masses"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAT/catprov.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAT_daniel_cardona={
+		name="Daniel Cardona i Civit"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAT/catfas.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAT_pere_ardiaca={
+		name="Pere Ardiaca"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAT/catcomstalinist.dds"
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAT_francesc_cambo={
+		name="Francesc Cambó i Batlle"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAT/catneu.dds"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAT_federic_escofet={
+		name="Federic Escofet"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/CAT/freesc.dds"
+			}
+		}
+		field_marshal={
+			traits={ cavalry_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	CAT_salvador_gonzalez={
+		name="Salvador Gonzàlez"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/CAT/ran1.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious harsh_leader }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	CAT_jose_rovira={
+		name="José Rovira"
+		portraits={
+			army={
+				large="gfx/leaders/CAT/catgen1.dds"
+				small="GFX_idea_cat_rovira"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer engineer_officer }
+			skill=4
+			attack_skill=2
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+		advisor={
+			slot = high_command
+			idea_token = CAT_jose_rovira
+			ledger = army
+			allowed = {
+				original_tag = CAT
+			}
+			traits = {
+				army_entrenchment_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	CAT_jose_guarner={
+		name="José Guarner"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/CAT/catgen2.dds"
+			}
+		}
+		corps_commander={
+			traits={ organisational_leader }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	CAT_josep_miret={
+		name="Josep Miret"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/CAT/josmir.dds"
+			}
+		}
+		corps_commander={
+			traits={ politically_connected }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	
+	CAT_wilhelm_zaisser={
+		name="Wilhelm Zaisser"
+		portraits={
+			army={
+				small="GFX_idea_cat_willhelm"
+				large="gfx/leaders/CAT/cat_wilhelm.dds"
+			}
+
+		}
+		corps_commander={
+			traits={ organizer politically_connected adaptable has_been_exiled }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+		advisor={
+			slot = high_command
+			idea_token = CAT_wilhelm_zaisser
+			ledger = army
+			allowed = {
+				original_tag = CAT
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	CAT_batet={
+		name="Domenec Batet"
+		portraits={
+			army={
+				small="GFX_idea_SPR_domenec_batet"
+				
+			}
+
+		}
+		advisor={
+			slot = army_chief
+			idea_token = CAT_batet
+			ledger = army
+			allowed = {
+				original_tag = CAT
+			}
+			traits = {
+				army_chief_morale_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	CAT_Zalka={
+		name="Mate Zalka"
+		portraits={
+			army={
+				small="GFX_idea_SPR_mate_zalka"
+				
+			}
+
+		}
+		advisor={
+			slot = army_chief
+			idea_token = CAT_Zalka
+			ledger = army
+			allowed = {
+				original_tag = CAT
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	CAT_rosa={
+		name="Carmel Rosa Baserba"
+		portraits={
+			army={
+				small="generic_army_europe_4"
+				
+			}
+
+		}
+		advisor={
+			slot = high_command
+			idea_token = CAT_rosa
+			ledger = army
+			allowed = {
+				original_tag = CAT
+			}
+			traits = {
+				army_regrouping_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	CAT_ManCar={
+		name="Manuel Carrasco"
+		portraits={
+			army={
+				small="GFX_idea_mancar"
+				
+			}
+
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CAT_ManCar
+			allowed = {
+				original_tag = CAT
+			}
+			available = { has_completed_focus = cat_dem_9}
+			traits = {
+				liberal_journalist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	CAT_carlespi={
+		name="Carles Pi"
+		portraits={
+			army={
+				small="GFX_idea_carlespi"
+				
+			}
+
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CAT_carlespi
+			allowed = {
+				original_tag = CAT
+			}
+			traits = {
+				finance_graduate
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	CAT_joancom={
+		name="Joan Comorera"
+		portraits={
+			army={
+				small="GFX_idea_joancom"
+				
+			}
+
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CAT_joancom
+			allowed = {
+				original_tag = CAT
+			}
+			available = { has_completed_focus = astalinistcoup}
+			traits = {
+				socialist_novelist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	CAT_jorarq={
+		name="Joan Arquer"
+		portraits={
+			army={
+				small="GFX_idea_jorarq"
+				
+			}
+
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CAT_jorarq
+			allowed = {
+				original_tag = CAT
+			}
+			traits = {
+				resistance_banker
+			}
+			cost = 250
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	CAT_perbon={
+		name="Pere Bonet"
+		portraits={
+			army={
+				small="GFX_idea_perbon"
+				
+			}
+
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CAT_perbon
+			allowed = {
+				original_tag = CAT
+			}
+			available = { has_completed_focus = keepnin}
+			traits = {
+				revolutionary_culture_minister
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	CAT_viccol={
+		name="Victor Colomer"
+		portraits={
+			army={
+				small="GFX_idea_viccol"
+				
+			}
+
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CAT_viccol
+			allowed = {
+				original_tag = CAT
+			}
+			traits = {
+				captain_of_industry
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	CAT_italiano={
+		name="Mauricio de Sivatte"
+		portraits={
+			army={
+				small="GFX_idea_italiano"
+				
+			}
+
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CAT_italiano
+			allowed = {
+				original_tag = CAT
+			}
+			available = { has_completed_focus = cat_dem_10}
+			traits = {
+				regional_traditionalist_leader
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	CAT_antonia={
+		name="Antonia Adroher"
+		portraits={
+			army={
+				small="GFX_idea_antonia"
+				
+			}
+
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CAT_antonia
+			allowed = {
+				original_tag = CAT
+			}
+			traits = {
+				red_suffragette
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	CAT_antses={
+		name="Antoni Sesé"
+		portraits={
+			army={
+				small="GFX_idea_antses"
+				
+			}
+
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CAT_antses
+			allowed = {
+				original_tag = CAT
+			}
+			traits = {
+				anti_fascist_agent
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	CAT_naval_strike_aviation_council={
+		name="Joan Laiez"
+		portraits={
+			army={
+				small="GFX_idea_random1"
+				
+			}
+
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = CAT_naval_strike_aviation_council
+			allowed = {
+				original_tag = CAT
+			}
+			traits = {
+				air_naval_strike_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	CAT_close_air_support_aviation_council={
+		name="Fransesc Aparicio"
+		portraits={
+			army={
+				small="GFX_idea_random2"
+				
+			}
+
+		}
+		advisor={
+			slot = air_chief
+			idea_token = CAT_close_air_support_aviation_council
+			allowed = {
+				original_tag = CAT
+			}
+			traits = {
+				air_close_air_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+
+		
+
+}
+ 

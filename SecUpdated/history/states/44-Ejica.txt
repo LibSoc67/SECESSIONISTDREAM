@@ -1,0 +1,32 @@
+
+state={
+	id=44
+	name="Éjica"
+	provinces={
+		3676 4032 4241 11309 16532 16537 16548 16561 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=7.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = ADA
+		add_core_of = ADA
+		victory_points = {
+		4241 6	
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+
+			 
+		}
+	}
+	state_category=rural
+	manpower=231290
+	buildings_max_level_factor=1.000
+}

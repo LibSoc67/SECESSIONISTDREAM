@@ -1,0 +1,21 @@
+state={
+	id=262
+	name="Primorska"
+	provinces={
+		990 7589 10957 11272 14821 14850 
+	}
+	history = {
+	owner = KRA
+	add_core_of = KRA
+
+	}
+	buildings = {
+			infrastructure = 5
+			industrial_complex	= 1
+			dockyard = 1
+
+		}
+	manpower= 285292
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

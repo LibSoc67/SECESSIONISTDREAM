@@ -1,0 +1,9 @@
+
+supply_area={
+	id=22
+	name="Belgium"
+	value=0
+	states={
+		241 240 242 243 236 235 234 237 233 
+	}
+}

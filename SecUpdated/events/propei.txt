@@ -1,0 +1,108 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = propei
+
+# penis
+country_event = {
+	id = propei.1
+	title = "A referendum to join Provence?"
+	desc = "Provence wants us to hold a referendum to unify both nations. Should we allow the referendum?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Yes"
+		ai_chance = { factor = 99 }
+		PRO = {random_list = {
+				10 = {
+					country_event = { id = propei.2 days = 5 } 
+				}
+				90 = {
+					country_event = { id = propei.3 days = 5 } 
+				}
+				
+			}}
+
+
+}
+	option = { 
+		name = "No"
+		ai_chance = { factor = 1 }
+	
+		PRO = { 
+		country_event = propei.4
+				}
+				
+	add_threat = 1 
+ 
+		PEI = {add_war_support	= 0.1 }
+
+}}
+country_event = {
+	id = propei.2
+	title = "The Referendum was allowed, and it was a succes"
+	desc = "With a 52% of the votes, Peirosa has chosen to unify our countries." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Good"
+		ai_chance = { factor = 100 }
+		add_threat = 1 
+
+	annex_country = {
+    target = PEI
+    transfer_troops = yes
+	}
+
+
+}
+	}
+country_event = {
+	id = propei.3
+	title = "The Referendum was allowed, but it failed"
+	desc = "With a 52% of the votes, Peirosa has chosen to remain independant." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Then war it is"
+		ai_chance = { factor = 100 }
+		add_threat = 2 
+
+	create_wargoal = {
+				type = annex_everything
+				target = PEI
+				expire = 0
+				}
+
+
+}
+	}
+country_event = {
+	id = propei.4
+	title = "Peirosa refuses to allow a referendum"
+	desc = "The Peirosa government has rejected our proposal to have a referendum to join both nations." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Then war it is"
+		ai_chance = { factor = 100 }
+		add_threat = 2 
+
+	create_wargoal = {
+				type = annex_everything
+				target = PEI
+				expire = 0
+				}
+
+
+}
+	}

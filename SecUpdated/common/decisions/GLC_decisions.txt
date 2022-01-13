@@ -1,0 +1,651 @@
+
+glcinf = {	
+ glcdes1 = {		#IDK
+
+		icon = generic_form_nation		
+		available = {	}
+		fire_only_once = yes 
+		visible = {		
+		original_tag = GLC
+		has_completed_focus = glc12
+		}		
+
+		cost = 25	
+
+		complete_effect = {		
+		set_country_flag = north1
+			
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+	glcdes2 = {		#IDK
+
+		icon = generic_form_nation		
+		available = {	}
+		fire_only_once = yes 
+		visible = {		
+		original_tag = GLC
+		has_completed_focus = glc12
+		}		
+
+		cost = 25	
+
+		complete_effect = {		
+		set_country_flag = north2
+			
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+	glcdes3 = {		#IDK
+
+		icon = generic_form_nation		
+		available = {	}
+		fire_only_once = yes 
+		visible = {		
+		original_tag = GLC
+		has_completed_focus = glc12
+		}		
+
+		cost = 25	
+
+		complete_effect = {		
+		set_country_flag = north3
+			
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+	glcdes4 = {		#IDK
+
+		icon = generic_form_nation		
+		available = {	}
+		fire_only_once = yes 
+		visible = {		
+		original_tag = GLC
+		has_completed_focus = glc12
+		}		
+
+		cost = 25	
+
+		complete_effect = {		
+		set_country_flag = north4
+			
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+	glcdes5 = {		#IDK
+
+		icon = generic_form_nation		
+		available = {	}
+		fire_only_once = yes 
+		visible = {		
+		original_tag = GLC
+		has_country_flag = north1
+		has_country_flag = north2
+		}		
+
+		cost = 25	
+
+		complete_effect = {		
+		GLC = { puppet = CAB}
+			
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+		glcdes6 = {		#IDK
+
+		icon = generic_form_nation		
+		available = {	}
+		fire_only_once = yes 
+		visible = {		
+		original_tag = GLC
+		has_country_flag = north3
+		has_country_flag = north4
+		}		
+
+		cost = 25	
+
+		complete_effect = {		
+		GLC = { puppet = ASR}
+			
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+	}
+glccore {
+glccore1 = {		
+
+		icon = generic_form_nation		
+		available = {AND = {101 = {owner = {tag = GLC}} 102 = {owner = {tag = GLC}} 103 = {owner = {tag = GLC}}	}}
+		fire_only_once = yes 
+		visible = {		
+		original_tag = GLC
+		
+		}		
+
+		cost = 100	
+
+		complete_effect = {		
+		add_state_core= 101
+		add_state_core = 102
+		add_state_core = 103
+			
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+glccore2 = {		
+
+		icon = generic_form_nation		
+		available = {AND = {104 = {owner = {tag = GLC}} 105 = {owner = {tag = GLC}}	}}
+		fire_only_once = yes 
+		visible = {		
+		original_tag = GLC
+		
+		}		
+
+		cost = 100	
+
+		complete_effect = {		
+		add_state_core= 104
+		add_state_core = 105
+			
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}	
+glccore3 = {		
+
+		icon = generic_form_nation		
+		available = {AND = {106 = {owner = {tag = GLC}} 107 = {owner = {tag = GLC}}	108 = {owner = {tag = GLC}} 109 = {owner = {tag = GLC}} 110 = {owner = {tag = GLC}}
+		}}
+		fire_only_once = yes 
+		visible = {		
+		original_tag = GLC
+		
+		}		
+
+		cost = 150	
+
+		complete_effect = {		
+		add_state_core= 106
+		add_state_core = 107
+		add_state_core = 108
+		add_state_core = 109
+		add_state_core = 110
+			
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}	
+glccore4 = {		
+
+		icon = generic_form_nation		
+		available = {AND = {112 = {owner = {tag = GLC}} 111 = {owner = {tag = GLC}}	115 = {owner = {tag = GLC}} 
+		}}
+		fire_only_once = yes 
+		visible = {		
+		original_tag = GLC
+		
+		}		
+
+		cost = 150	
+
+		complete_effect = {		
+		add_state_core= 112
+		add_state_core = 111
+		add_state_core = 115
+			
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}	
+glccore5 = {		
+
+		icon = generic_form_nation		
+		available = {AND = {113 = {owner = {tag = GLC}} 114 = {owner = {tag = GLC}}	116 = {owner = {tag = GLC}} 117 = {owner = {tag = GLC}}
+		}}
+		fire_only_once = yes 
+		visible = {		
+		original_tag = GLC
+		
+		}		
+
+		cost = 150	
+
+		complete_effect = {		
+		add_state_core= 113
+		add_state_core = 114
+		add_state_core = 116
+		add_state_core = 117
+			
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}	
+glccore6 = {		
+
+		icon = generic_form_nation		
+		available = {AND = {118 = {owner = {tag = GLC}}
+		}}
+		fire_only_once = yes 
+		visible = {		
+		original_tag = GLC
+		
+		}		
+
+		cost = 50	
+
+		complete_effect = {		
+		add_state_core= 118
+		
+			
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}	
+}
+glcpaganism = {
+glcpag1 = {		
+
+		icon = generic_form_nation		
+		
+		fire_only_once = yes 
+		visible = {		
+		original_tag = GLC
+		has_completed_focus = glc27
+		}		
+
+		cost = 50	
+
+		complete_effect = {		
+		swap_ideas= {
+		remove_idea = paganism
+		add_idea = paganism1
+		}
+		set_country_flag = paganism 
+			
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+glcpag2 = {		
+
+		icon = generic_form_nation		
+		
+		fire_only_once = yes 
+		visible = {		
+		original_tag = GLC
+		has_completed_focus = glc27
+		has_country_flag = paganism
+		}		
+
+		cost = 50	
+
+		complete_effect = {		
+		swap_ideas= {
+		remove_idea = paganism1
+		add_idea = paganism2
+		}
+		set_country_flag = paganism1 
+			
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+glcpag3 = {		
+
+		icon = generic_form_nation		
+		
+		fire_only_once = yes 
+		visible = {		
+		original_tag = GLC
+		has_completed_focus = glc27
+		has_country_flag = paganism1
+		}		
+
+		cost = 50	
+
+		complete_effect = {		
+		swap_ideas= {
+		remove_idea = paganism2
+		add_idea = paganism3 
+		}
+		set_country_flag = paganism2 
+			
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	} 
+glcpag4 = {		
+
+		icon = generic_form_nation		
+		
+		fire_only_once = yes 
+		visible = {		
+		original_tag = GLC
+		has_completed_focus = glc27
+		has_country_flag = paganism2
+		}		
+
+		cost = 50	
+
+		complete_effect = {		
+		swap_ideas= {
+		remove_idea = paganism3
+		add_idea = paganism4
+		}
+	
+			
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+}
+glcmilit= {  
+glcmil1 = {		
+
+		icon = generic_form_nation		
+		
+		fire_only_once = yes 
+		visible = {		
+		original_tag = GLC
+		has_completed_focus = glc28
+		}		
+		available = {
+			custom_trigger_tooltip = { tooltip = ctt_xp20 has_army_experience > 20 }
+			
+		}
+		cost = 0	
+
+		complete_effect = {
+army_experience = -20			
+		swap_ideas= {
+		remove_idea = glcmilitia
+		add_idea = glcmilitia1
+			
+		}
+	
+		set_country_flag = glcmil1	
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+glcmil2 = {		
+
+		icon = generic_form_nation		
+		
+		fire_only_once = yes 
+		visible = {		
+		original_tag = GLC
+		has_country_flag = glcmil1
+		}		
+		available = {
+			custom_trigger_tooltip = { tooltip = ctt_xp20 has_army_experience > 20 }
+			
+		}
+		cost = 0	
+
+		complete_effect = {
+army_experience = -20			
+		swap_ideas= {
+		remove_idea = glcmilitia1
+		add_idea = glcmilitia2
+			
+		}
+	set_country_flag = glcmil2
+			
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+glcmil3 = {		
+
+		icon = generic_form_nation		
+		
+		fire_only_once = yes 
+		visible = {		
+		original_tag = GLC
+		has_country_flag = glcmil2
+		}		
+		available = {
+			custom_trigger_tooltip = { tooltip = ctt_xp20 has_army_experience > 20 }
+			
+		}
+		cost = 0	
+
+		complete_effect = {
+army_experience = -20			
+		swap_ideas= {
+		remove_idea = glcmilitia2
+		add_idea = glcmilitia3 
+			
+		}
+		
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+	
+glcmil4 = {		
+
+		icon = generic_form_nation		
+		
+		fire_only_once = yes 
+		visible = {		
+		original_tag = GLC
+		has_completed_focus = glc29
+		}		
+		available = {
+			custom_trigger_tooltip = { tooltip = ctt_xp20 has_army_experience > 20 }
+			
+		}
+		cost = 0	
+
+		complete_effect = {
+army_experience = -20			
+		swap_ideas= {
+		remove_idea = glcmilitia
+		add_idea = glcmilitia4
+			
+		}
+	
+		set_country_flag = glcmil4	
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+glcmil5 = {		
+
+		icon = generic_form_nation		
+		
+		fire_only_once = yes 
+		visible = {		
+		original_tag = GLC
+		has_country_flag = glcmil4
+		}		
+		available = {
+			custom_trigger_tooltip = { tooltip = ctt_xp20 has_army_experience > 20 }
+			
+		}
+		cost = 0	
+
+		complete_effect = {
+army_experience = -20			
+		swap_ideas= {
+		remove_idea = glcmilitia4
+		add_idea = glcmilitia5
+			
+		}
+	set_country_flag = glcmil5
+			
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+glcmil6 = {		
+
+		icon = generic_form_nation		
+		
+		fire_only_once = yes 
+		visible = {		
+		original_tag = GLC
+		has_country_flag = glcmil5
+		}		
+		available = {
+		
+			custom_trigger_tooltip = { tooltip = ctt_xp20 has_army_experience > 20 }
+			
+		}
+		cost = 0	
+
+		complete_effect = {
+army_experience = -20			
+		swap_ideas= {
+		remove_idea = glcmilitia5
+		add_idea = glcmilitia6 
+			
+		}
+		
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+}	

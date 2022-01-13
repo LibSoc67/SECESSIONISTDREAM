@@ -1,0 +1,24 @@
+
+state={
+	id=230
+	name="Grievenmacher"
+	provinces={
+		496 13792 
+	}
+	history={
+		owner = LXM
+		add_core_of = LXM
+		victory_points = {
+			496 3
+		}
+		buildings = {
+			infrastructure = 6 
+			arms_factory = 1
+			industrial_complex = 0
+		}
+
+	}
+	manpower=56726
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+}

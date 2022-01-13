@@ -1,0 +1,47 @@
+# Logic for Democratic AI on how to deal in peace conferences
+# Should favor liberating Democratic countries and forcing government upon other states
+# Written by Henrik "Groogy" Hansson
+
+#Adjustments
+#The generic democratic AI will generally prefer liberation and will mostly seek to install government. 
+#Major democratic nations and minors with overseas colonies can take colonies in peace deals and will prefer to do so after taking cores.
+#Democracies will never annex.
+
+democratic_peace = {
+	enable = {
+		has_government = democratic
+	}
+
+	annex_randomness = 0 #100
+	liberate_randomness = 0 #250
+	puppet_randomness = 0 #200
+	take_states_randomness = 0 #100
+	force_government_randomness = 0 #500
+	
+	annex = {
+		factor = 1000000000 #1500 - insanely high, but necessary for reunification of some nations.
+	}
+
+	liberate = {
+		factor = 0 #200
+
+		
+	}
+
+	puppet = {
+	factor = 0 
+		}
+
+	
+	puppet_all = {
+	factor = 0 
+	}
+	
+	
+	puppet_state = {
+		factor = 0
+	}
+	
+	take_states = {
+		factor = 1000000
+}

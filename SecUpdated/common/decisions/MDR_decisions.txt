@@ -1,0 +1,87 @@
+#####################################################################################################################
+# COMMENTS HAVE BEEN INCLUDED FOR SAKE OF EXPLANATION, CAN BE REMOVED #
+# ID's must not include spaces!
+# Decisions MUST be visible for the AI to execute them, if in doubt, switch tag to the AI country and check if they can see/execute the mission.
+#####################################################################################################################
+andcategory = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
+	form_mdr_dec1 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_form_nation		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	
+		controls_state = 60
+		controls_state = 63
+		controls_state = 64
+		controls_state = 59
+		controls_state = 70
+		}
+		
+		fire_only_once = yes#If set to yes, the decision will only appear once, after execution will not appear again.
+		
+
+		visible = {		
+			original_tag = MDR
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			custom_effect_tooltip = "Cores all the Manchegan Greater Madrid Area"
+			
+			60 = { add_core_of = MDR }
+			63 = { add_core_of = MDR }
+			64 = { add_core_of = MDR }
+			59 = { add_core_of = MDR }
+			70 = { add_core_of = MDR }
+			
+			add_stability=0.1
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000
+		}
+	}
+	form_mdr_dec2 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_form_nation		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	
+		controls_state = 76
+		controls_state = 77
+		}
+		
+		fire_only_once = yes#If set to yes, the decision will only appear once, after execution will not appear again.
+		
+
+		visible = {		
+			original_tag = MDR
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			custom_effect_tooltip = "Cores all the Northern Greater Madrid Area"
+			
+			76 = { add_core_of = MDR }
+			77 = { add_core_of = MDR }
+			add_stability=0.1
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000
+		}
+	}
+	}
+	

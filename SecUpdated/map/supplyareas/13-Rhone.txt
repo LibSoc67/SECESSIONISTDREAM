@@ -1,0 +1,9 @@
+
+supply_area={
+	id=13
+	name="Rhone"
+	value=13
+	states={
+		155 156 157 158 159 161 154 153 160 163 164 162 
+	}
+}

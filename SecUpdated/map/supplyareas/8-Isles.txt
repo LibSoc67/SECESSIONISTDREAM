@@ -1,0 +1,9 @@
+
+supply_area={
+	id=8
+	name="Mediterranean Isles"
+	value=14
+	states={
+		125 127 126 120 122 124 121 123 128 119 
+	}
+}

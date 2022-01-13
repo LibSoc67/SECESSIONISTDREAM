@@ -1,0 +1,24 @@
+
+state={
+	id=236
+	name="Flemish Brabant"
+	provinces={
+		1682 6735 13494 13513 
+	}
+	history={
+		owner = VLD
+		add_core_of = VLD 
+		victory_points = {
+		1682 10	
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 1
+		}
+
+	}
+	manpower=611310
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

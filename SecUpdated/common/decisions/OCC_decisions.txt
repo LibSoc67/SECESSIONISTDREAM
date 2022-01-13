@@ -1,0 +1,1282 @@
+andcategory = {			
+occdec1 = {	
+		
+		icon = generic_form_nation		
+		available = {
+	custom_trigger_tooltip = { tooltip = ctt_xp50 has_army_experience > 50 }
+		exists = yes
+		
+}
+		fire_only_once = yes #else_if set to yes, the decision will only appear once, after execution will not appear again.
+		visible = {		
+		TAG = OCC
+		has_completed_focus = occfoc9
+		}	
+	
+	
+
+		complete_effect = {
+		
+		swap_ideas = {
+		add_idea = occwar2
+		remove_idea = occwar1
+		}
+		
+		army_experience = -50
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+occdec2 = {	#Join Catalonia
+		
+		icon = generic_form_nation		
+		available = {
+	is_puppet = no
+	CAT = {is_faction_leader = yes}
+	has_war = no	
+}
+		fire_only_once = yes #else_if set to yes, the decision will only appear once, after execution will not appear again.
+		visible = {		
+		has_government = communist
+		has_government = mlist
+		has_completed_focus = occfoc38
+		}	
+	cost = 25
+	
+
+		complete_effect = {
+		CAT = {country_event = occjoinscat.1
+		}}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+	}
+healocc={
+occlan= {	
+		
+		icon = generic_form_nation		
+		available = {
+	
+	130 = {is_owned_and_controlled_by = ROOT}
+	144 = {is_owned_and_controlled_by = ROOT}
+	145 = {is_owned_and_controlled_by = ROOT}
+	
+}
+visible = {	tag = OCC}  
+		fire_only_once = yes
+		complete_effect = {
+		
+		if = {
+				limit = {
+				has_idea = occbroken
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken
+		add_idea = occbroken1
+		}
+					}
+		else_if = {
+				limit = {
+				has_idea = occbroken1
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken1
+		add_idea = occbroken2
+		}
+					}
+		
+		else_if = {
+				limit = {
+				has_idea = occbroken2
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken2
+		add_idea = occbroken3
+		}
+					}
+					
+		else_if = {
+				limit = {
+				has_idea = occbroken3
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken3
+		add_idea = occbroken4
+		}
+					}			
+					
+		else_if = {
+				limit = {
+				has_idea = occbroken4
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken4
+		add_idea = occbroken5
+		}
+					}			
+					
+		else_if = {
+				limit = {
+				has_idea = occbroken5
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken5
+		add_idea = occbroken6
+		}
+					}			
+		else_if = {
+				limit = {
+				has_idea = occbroken6
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken6
+		add_idea = occbroken7
+		}
+					}
+		
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+
+
+#########################################################################################################################################################
+occpro= {	
+		
+		icon = generic_form_nation		
+		available = {
+	
+	147 = {is_owned_and_controlled_by = ROOT}
+	149 = {is_owned_and_controlled_by = ROOT}
+	148 = {is_owned_and_controlled_by = ROOT}
+	150 = {is_owned_and_controlled_by = ROOT}
+	152 = {is_owned_and_controlled_by = ROOT}
+	151 = {is_owned_and_controlled_by = ROOT}
+	
+			}
+		fire_only_once = yes
+		complete_effect = {
+		if = {
+				limit = {
+				has_idea = occbroken
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken
+		add_idea = occbroken1
+		}
+					}
+		else_if = {
+				limit = {
+				has_idea = occbroken1
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken1
+		add_idea = occbroken2
+		}
+					}
+		
+		else_if = {
+				limit = {
+				has_idea = occbroken2
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken2
+		add_idea = occbroken3
+		}
+					}
+					
+		else_if = {
+				limit = {
+				has_idea = occbroken3
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken3
+		add_idea = occbroken4
+		}
+					}			
+					
+		else_if = {
+				limit = {
+				has_idea = occbroken4
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken4
+		add_idea = occbroken5
+		}
+					}			
+					
+		else_if = {
+				limit = {
+				has_idea = occbroken5
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken5
+		add_idea = occbroken6
+		}
+					}			
+		else_if = {
+				limit = {
+				has_idea = occbroken6
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken6
+		add_idea = occbroken7
+		}
+					}			
+					
+					
+					
+					
+					
+					
+					
+					
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+#########################################################################################################################################################	
+occauv= {	
+		
+		icon = generic_form_nation		
+		available = {
+	
+	160 = {is_owned_and_controlled_by = ROOT}
+	161 = {is_owned_and_controlled_by = ROOT}
+	163 = {is_owned_and_controlled_by = ROOT}
+	162 = {is_owned_and_controlled_by = ROOT}
+	164 = {is_owned_and_controlled_by = ROOT}
+		}
+		fire_only_once = yes
+		complete_effect = {
+		if = {
+				limit = {
+				has_idea = occbroken
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken
+		add_idea = occbroken1
+		}
+					}
+		else_if = {
+				limit = {
+				has_idea = occbroken1
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken1
+		add_idea = occbroken2
+		}
+					}
+		
+		else_if = {
+				limit = {
+				has_idea = occbroken2
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken2
+		add_idea = occbroken3
+		}
+					}
+					
+		else_if = {
+				limit = {
+				has_idea = occbroken3
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken3
+		add_idea = occbroken4
+		}
+					}			
+					
+		else_if = {
+				limit = {
+				has_idea = occbroken4
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken4
+		add_idea = occbroken5
+		}
+					}			
+					
+		else_if = {
+				limit = {
+				has_idea = occbroken5
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken5
+		add_idea = occbroken6
+		}
+					}			
+		else_if = {
+				limit = {
+				has_idea = occbroken6
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken6
+		add_idea = occbroken7
+		}
+					}			
+					
+					
+					
+					
+					
+					
+					
+					
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+occrho = {	
+		
+		icon = generic_form_nation		
+		available = {
+	
+	159 = {is_owned_and_controlled_by = ROOT}
+	158 = {is_owned_and_controlled_by = ROOT}
+	157 = {is_owned_and_controlled_by = ROOT}
+	156 = {is_owned_and_controlled_by = ROOT}
+	155 = {is_owned_and_controlled_by = ROOT}
+	154 = {is_owned_and_controlled_by = ROOT}
+	153 = {is_owned_and_controlled_by = ROOT}
+	
+			}
+		fire_only_once = yes
+		complete_effect = {
+		if = {
+				limit = {
+				has_idea = occbroken
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken
+		add_idea = occbroken1
+		}
+					}
+		else_if = {
+				limit = {
+				has_idea = occbroken1
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken1
+		add_idea = occbroken2
+		}
+					}
+		
+		else_if = {
+				limit = {
+				has_idea = occbroken2
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken2
+		add_idea = occbroken3
+		}
+					}
+					
+		else_if = {
+				limit = {
+				has_idea = occbroken3
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken3
+		add_idea = occbroken4
+		}
+					}			
+					
+		else_if = {
+				limit = {
+				has_idea = occbroken4
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken4
+		add_idea = occbroken5
+		}
+					}			
+					
+		else_if = {
+				limit = {
+				has_idea = occbroken5
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken5
+		add_idea = occbroken6
+		}
+					}			
+		else_if = {
+				limit = {
+				has_idea = occbroken6
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken6
+		add_idea = occbroken7
+		}
+					}			
+					
+					
+					
+					
+					
+					
+					
+					
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+
+occlim= {	
+		
+		icon = generic_form_nation		
+		available = {
+	
+	165 = {is_owned_and_controlled_by = ROOT}
+	166 = {is_owned_and_controlled_by = ROOT}
+	167 = {is_owned_and_controlled_by = ROOT}
+	
+			}
+		fire_only_once = yes
+		complete_effect = {
+		if = {
+				limit = {
+				has_idea = occbroken
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken
+		add_idea = occbroken1
+		}
+					}
+		else_if = {
+				limit = {
+				has_idea = occbroken1
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken1
+		add_idea = occbroken2
+		}
+					}
+		
+		else_if = {
+				limit = {
+				has_idea = occbroken2
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken2
+		add_idea = occbroken3
+		}
+					}
+					
+		else_if = {
+				limit = {
+				has_idea = occbroken3
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken3
+		add_idea = occbroken4
+		}
+					}			
+					
+		else_if = {
+				limit = {
+				has_idea = occbroken4
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken4
+		add_idea = occbroken5
+		}
+					}			
+					
+		else_if = {
+				limit = {
+				has_idea = occbroken5
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken5
+		add_idea = occbroken6
+		}
+					}			
+		else_if = {
+				limit = {
+				has_idea = occbroken6
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken6
+		add_idea = occbroken7
+		}
+					}			
+					
+					
+					
+					
+					
+					
+					
+					
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+occaqu= {	
+		
+		icon = generic_form_nation		
+		available = {
+	
+	133 = {is_owned_and_controlled_by = ROOT}
+	134 = {is_owned_and_controlled_by = ROOT}
+	135 = {is_owned_and_controlled_by = ROOT}
+	136 = {is_owned_and_controlled_by = ROOT}
+	137 = {is_owned_and_controlled_by = ROOT}
+			}
+		fire_only_once = yes
+		complete_effect = {
+		if = {
+				limit = {
+				has_idea = occbroken
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken
+		add_idea = occbroken1
+		}
+					}
+		else_if = {
+				limit = {
+				has_idea = occbroken1
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken1
+		add_idea = occbroken2
+		}
+					}
+		
+		else_if = {
+				limit = {
+				has_idea = occbroken2
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken2
+		add_idea = occbroken3
+		}
+					}
+					
+		else_if = {
+				limit = {
+				has_idea = occbroken3
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken3
+		add_idea = occbroken4
+		}
+					}			
+					
+		else_if = {
+				limit = {
+				has_idea = occbroken4
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken4
+		add_idea = occbroken5
+		}
+					}			
+					
+		else_if = {
+				limit = {
+				has_idea = occbroken5
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken5
+		add_idea = occbroken6
+		}
+					}			
+		else_if = {
+				limit = {
+				has_idea = occbroken6
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken6
+		add_idea = occbroken7
+		}
+					}			
+					
+					
+					
+					
+					
+					
+					
+					
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+occpoi= {	
+		
+		icon = generic_form_nation		
+		available = {
+	
+	168 = {is_owned_and_controlled_by = ROOT}
+	169 = {is_owned_and_controlled_by = ROOT}
+	170 = {is_owned_and_controlled_by = ROOT}
+	171 = {is_owned_and_controlled_by = ROOT}
+
+			}
+		fire_only_once = yes
+		complete_effect = {
+		if = {
+				limit = {
+				has_idea = occbroken
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken
+		add_idea = occbroken1
+		}
+					}
+		else_if = {
+				limit = {
+				has_idea = occbroken1
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken1
+		add_idea = occbroken2
+		}
+					}
+		
+		else_if = {
+				limit = {
+				has_idea = occbroken2
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken2
+		add_idea = occbroken3
+		}
+					}
+					
+		else_if = {
+				limit = {
+				has_idea = occbroken3
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken3
+		add_idea = occbroken4
+		}
+					}			
+					
+		else_if = {
+				limit = {
+				has_idea = occbroken4
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken4
+		add_idea = occbroken5
+		}
+					}			
+					
+		else_if = {
+				limit = {
+				has_idea = occbroken5
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken5
+		add_idea = occbroken6
+		}
+					}			
+		else_if = {
+				limit = {
+				has_idea = occbroken6
+				}
+			
+
+
+		swap_ideas = {
+		remove_idea = occbroken6
+		add_idea = occbroken7
+		}
+					}			
+					
+					
+					
+					
+					
+					
+					
+					
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+
+
+}
+	 
+	#########################################################################################
+occpuppeting = {	
+	occpuppeting1 = {	
+		
+		icon = generic_form_nation		
+		available = {
+	
+		
+}
+		fire_only_once = yes
+		visible = {
+		
+		POI = {is_in_faction_with = OCC}
+		}	
+	
+	cost = 100
+	days_remove = 100
+		remove_effect = {
+		puppet = POI
+		
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+occpuppeting2 = {	
+		
+		icon = generic_form_nation		
+		available = {
+	
+		
+}
+		fire_only_once = yes
+		visible = {		
+		LIM = {is_in_faction_with = OCC}
+		}	
+	cost = 100
+	days_remove = 100
+
+		remove_effect = {
+		puppet = LIM
+		
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+occpuppeting3 = {	
+		
+		icon = generic_form_nation		
+		available = {
+	
+		
+}
+		fire_only_once = yes
+		visible = {		
+		AQU = {is_in_faction_with = OCC}
+		}	
+	
+	cost = 100
+	days_remove = 100
+		remove_effect = {
+		puppet = AQU
+		
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+occpuppeting4 = {	
+		
+		icon = generic_form_nation		
+		available = {
+	
+		
+}
+		fire_only_once = yes
+		visible = {		
+		AUV = {is_in_faction_with = OCC}
+		}	
+	
+	cost = 100
+	days_remove = 100
+		remove_effect = {
+		puppet = AUV
+		
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+occpuppeting5 = {	
+		
+		icon = generic_form_nation		
+		available = {
+	
+		
+}
+		fire_only_once = yes
+		visible = {		
+		RHO = {is_in_faction_with = OCC}
+		}	
+	cost = 100
+	days_remove = 100
+
+		remove_effect = {
+		puppet = RHO
+		
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+occpuppeting6 = {	
+		
+		icon = generic_form_nation		
+		available = {
+	
+		
+}
+		fire_only_once = yes
+		visible = {		
+		PRO= {is_in_faction_with = OCC}
+		}	
+	
+	cost = 100
+	days_remove = 100
+		remove_effect = {
+		puppet = PRO
+		
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+occpuppeting7 = {	
+		
+		icon = generic_form_nation		
+		available = {
+	
+		
+}
+	cost = 100
+	days_remove = 100
+		fire_only_once = yes
+		visible = {		
+		PEI = {is_in_faction_with = OCC}
+		}	
+	
+	
+
+		remove_effect = {
+		puppet = PEI 
+		
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+	#############################ANNEXING###################################
+occpuppeting8 = {	
+		
+		icon = generic_form_nation		
+		available = {
+	
+		
+}
+	cost = 150
+	days_remove = 150
+		fire_only_once = yes
+		visible = {	
+has_completed_focus =occfoc46		
+		POI = {is_puppet_of = OCC}
+		}	
+	
+	
+
+		remove_effect = {
+		annex_country = {
+    target = POI
+    transfer_troops = no
+	}
+		
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+occpuppeting9 = {	
+		
+		icon = generic_form_nation		
+		available = {
+	
+		
+}
+	cost = 150
+	days_remove = 150
+		fire_only_once = yes
+		visible = {	
+has_completed_focus =occfoc46		
+		LIM = {is_puppet_of = OCC}
+		}	
+	
+	
+
+		remove_effect = {
+		annex_country = {
+    target = LIM
+    transfer_troops = no
+	}
+		
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+occpuppeting10 = {	
+		
+		icon = generic_form_nation		
+		available = {
+	
+		
+}
+	cost = 150
+	days_remove = 150
+		fire_only_once = yes
+		visible = {	
+has_completed_focus =	occfoc46	
+		AQU = {is_puppet_of = OCC}
+		}	
+	
+	
+
+		remove_effect = {
+		annex_country = {
+    target = AQU
+    transfer_troops = no
+	}
+		
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+occpuppeting11 = {	
+		
+		icon = generic_form_nation		
+		available = {
+	
+		
+}
+	cost = 150
+	days_remove = 150
+		fire_only_once = yes
+		visible = {	
+has_completed_focus =	occfoc46	
+		AUV = {is_puppet_of = OCC}
+		}	
+	
+	
+
+		remove_effect = {
+		annex_country = {
+    target = AUV
+    transfer_troops = no
+	}
+		
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+occpuppeting12 = {	
+		
+		icon = generic_form_nation		
+		available = {
+	
+		
+}
+	cost = 150
+	days_remove = 150
+		fire_only_once = yes
+		visible = {	
+has_completed_focus =	occfoc46	
+		RHO = {is_puppet_of = OCC}
+		}	
+	
+	
+
+		remove_effect = {
+		annex_country = {
+    target = RHO
+    transfer_troops = no
+	}
+		
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+occpuppeting13 = {	
+		
+		icon = generic_form_nation		
+		available = {
+	
+		
+}
+	cost = 150
+	days_remove = 150
+		fire_only_once = yes
+		visible = {	
+has_completed_focus =	occfoc46	
+		PRO = {is_puppet_of = OCC}
+		}	
+	
+	
+
+		remove_effect = {
+		annex_country = {
+    target = PRO
+    transfer_troops = no
+	}
+		
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+occpuppeting14 = {	
+		
+		icon = generic_form_nation		
+		available = {
+	
+		
+}
+	cost = 150
+	days_remove = 150
+		fire_only_once = yes
+		visible = {	
+has_completed_focus = occfoc46	
+		PEI = {is_puppet_of = OCC}
+		}	
+	
+	
+
+		remove_effect = {
+		annex_country = {
+    target = PEI
+    transfer_troops = no
+	}
+		
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+	
+	
+occpuppeting15 = {	
+		
+		icon = generic_form_nation		
+		available = {
+	
+		
+}
+	cost = 100
+		fire_only_once = yes
+		visible = {	
+is_in_faction_with = RHO
+OR = {
+TAG = OCC 
+TAG = LAN
+}
+		}	
+	
+	
+
+		complete_effect= {
+		RHO =  {country_event = occannex.1}
+		
+		
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}
+	}
+andcategory = {		
+occpuppeting16 = {	
+		
+		icon = generic_form_nation		
+		available = {
+	 has_war = no
+	 AUV = {has_war = NO}
+		
+}
+	cost = 100
+		fire_only_once = yes
+		visible = {	
+is_in_faction_with = AUV
+OR = {
+TAG = OCC 
+TAG = LAN
+}
+		}	
+	
+	
+
+		complete_effect = {
+		AUV =  {country_event = occannex.2}
+		annex_country = {
+    target = AUV
+    transfer_troops = yes
+	}
+		
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10000
+		}
+	}	
+	}

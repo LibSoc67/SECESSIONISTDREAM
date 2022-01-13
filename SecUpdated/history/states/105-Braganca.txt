@@ -1,0 +1,25 @@
+
+state={
+	id=105
+	name="Bragança"
+	provinces={
+		6189 7743 7766 15474 15587 
+	}
+	history={
+		owner = TMD
+		add_core_of = TMD 
+		victory_points = { 6189 5 }
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex	= 1
+			dockyard = 0
+			air_base= 0
+			#10423 = { naval_base = 6}
+		}
+
+	}
+	state_category = town
+	manpower=155282
+	buildings_max_level_factor=1.000
+}

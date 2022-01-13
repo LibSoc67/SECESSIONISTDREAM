@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=31
+	name="Western Sahara Sea"
+	provinces={
+		17516 17718 17815 17949 18064 18073 18080 18108 18188 18228 18241 18313 18343 18546 18553 18652 18736 18981 18996 19000 19014 
+	}
+	naval_terrain=water_deep_ocean
+	weather={
+	}
+}

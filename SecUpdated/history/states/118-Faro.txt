@@ -1,0 +1,33 @@
+
+state={
+	id=118
+	name="Faro"
+	provinces={
+		291 1951 9352 16462 16475 16476 16480 16489 16506 16507 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=7.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = ALA
+		add_core_of = ALA
+		victory_points = { 16506 10 }
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex	= 1
+			dockyard = 1
+			air_base= 3
+			16506 = { naval_base = 2}
+		}
+
+	}
+	state_category = town
+	manpower=269482
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=52
+	name="Bari Coast"
+	provinces={
+		17541 17943 17954 18063 18070 18223 18240 18352 18403 18478 18562 18602 18694 18713 18787 18959 18964 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

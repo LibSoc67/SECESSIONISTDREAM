@@ -1,0 +1,9 @@
+
+supply_area={
+	id=23
+	name="Luxembourg"
+	value=0
+	states={
+		232 230 231 229 238 239 
+	}
+}

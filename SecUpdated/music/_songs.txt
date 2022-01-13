@@ -1,0 +1,63 @@
+
+music_station = "base_music"
+###### - CATALAN SONGS - ######
+music = {
+	song = "aasegadors"
+	chance = {
+		modifier = {
+			factor = 0.5
+			tag = CAT
+		}		
+	}
+}
+music = {
+	song = "aaestaca"
+	chance = {
+		modifier = {
+			factor = 0.5
+			tag = CAT
+		}		
+	}
+}
+music = {
+	song = "aapresodelleida"
+	chance = {
+		modifier = {
+			factor = 0.5
+			tag = CAT
+		}		
+	}
+}
+music = {
+	song = "aacantsenyera"
+	chance = {
+		modifier = {
+			factor = 0.5
+			tag = CAT
+		}		
+	}
+}
+music = {
+	song = "aacantpoble"
+	chance = {
+		modifier = {
+			factor = 1
+			tag = CAT
+		}		
+	}
+}
+music = {
+	song = "aacancocansat"
+	chance = {
+		modifier = {
+			factor = 1
+			OR = { tag = CAT }
+			
+		}	
+		modifier = {
+			factor = 1
+			OR = { tag = VAL }
+			
+		}	
+	}
+}

@@ -1,0 +1,631 @@
+ideas = {
+
+	country = {
+		prs_women= {
+		 
+		available = {
+		
+		}
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.25
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.15
+			}
+			rule = {
+			}}}
+			
+	country = {
+		paris_comune1= {
+		 
+		available = {
+		has_government = anarchy }
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				anarchy_drift = 0.02
+				army_core_defence_factor = 0.05
+				resistance_growth_on_our_occupied_states  = 0.15
+				stability_weekly_factor	= -0.003
+				war_support_weekly_factor = 0.003
+			}
+			rule = {
+			}}}
+	country = {
+		memories_reformed= {
+		 
+		available = {
+		has_government = anarchy }
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				anarchy_drift = 0.02
+				army_core_defence_factor = 0.05
+				resistance_growth_on_our_occupied_states  = 0.15
+			}
+			rule = {
+			}}}
+	country = {
+		memories_reformed1= {
+		 
+		available = {
+		has_government = anarchy 
+		}
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				anarchy_drift = 0.02
+				army_core_defence_factor = 0.08
+				resistance_growth_on_our_occupied_states  = 0.20
+				conscription = 0.01
+			}
+			rule = {
+			}}}
+	country = {
+		prs_internationalism= {
+		 
+		available = {
+		has_government = anarchy 
+		}
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			resistance_target = -0.40
+			non_core_manpower = 0.5
+			compliance_growth = 0.5
+			justify_war_goal_time = -0.5
+			ai_focus_aggressive_factor = 1.0
+			mobilization_speed = -0.2
+			conscription_factor = -0.2
+			}
+			rule = {
+			}}}
+	country = {
+		paris_comune2= {
+		 
+		available = {
+		has_government = anarchy }
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = -0.02
+				stability_factor	= -0.1
+				political_power_gain = -0.1
+				conscription_factor = -0.30
+			}
+			rule = {
+			}}}
+	country = {
+		paris_comune3= {
+		 
+		available = {
+		has_government = anarchy }
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = -0.07
+				army_morale_factor = -0.1
+				experience_gain_army_unit_factor = -0.25
+				army_chief_cost_factor = 0.25
+				navy_chief_cost_factor = 0.25
+				air_chief_cost_factor = 0.25
+				high_command_cost_factor = 0.25
+				theorist_cost_factor = 0.25
+				attrition = 0.04
+				training_time_factor = 1.0
+			}
+			rule = {
+		
+			}}}
+	country = {
+		paris_comune4= {
+		 
+		available = {
+		has_government = anarchy }
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.3
+				stability_factor = -0.2
+				production_speed_buildings_factor = -0.2
+				
+			}
+			rule = {
+			}}}
+	country = {
+		paris_comune5= {
+		 
+		available = {
+		has_government = anarchy }
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = -0.05
+				stability_factor	= -0.20
+				political_power_gain = -0.2
+				conscription_factor = -0.50
+			}
+			rule = {
+			}}}
+	country = {
+		paris_comune6= {
+		 
+		available = {
+		has_government = anarchy }
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = -0.10
+				stability_factor	= -0.40
+				political_power_gain = -0.50
+				conscription_factor = -0.75
+			}
+			rule = {
+			}}}
+	country = {
+		paris_comune7= {
+		 
+		available = {
+		has_government = anarchy }
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = -0.02
+				stability_factor	= -0.03
+				political_power_gain = -0.05
+				conscription_factor = -0.15
+			}
+			rule = {
+			}}}
+			
+			
+	country = {
+		prs_money= {
+		 
+		available = {
+		has_government = anarchy }
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+			rule = {
+			}}}
+	country = {
+		prs_no_money= {
+		 
+		available = {
+		has_government = anarchy }
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.08
+				industrial_capacity_factory = 0.06
+			}
+			rule = {
+			}}}
+	country = {
+		prs_big_buiss= {
+		 
+		available = {
+		has_government = anarchy }
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.06
+				production_factory_efficiency_gain_factor = 0.06
+			}
+			rule = {
+			}}}
+	country = {
+		prs_small_buiss= {
+		 
+		available = {
+		has_government = anarchy }
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+				industrial_capacity_factory = 0.06
+			}
+			rule = {
+			}}}
+	country = {
+		prs_marxist = {
+		 
+		available = {
+		has_government = anarchy }
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = 0.1	
+			political_power_gain = 0.1
+			}
+			rule = {
+			}}}
+	country = {
+		prs_mutualist = {
+		 
+		available = {
+		has_government = anarchy }
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = 0.1	
+			political_power_gain = 0.1
+			}
+			rule = {
+			}}}
+	country = {
+		paris_reformed= {
+		 
+		available = {
+		has_government = anarchy }
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = -0.02
+				army_morale_factor = -0.05
+				experience_gain_army_unit_factor = -0.12
+				army_chief_cost_factor = 0.10
+				navy_chief_cost_factor = 0.10
+				air_chief_cost_factor = 0.10
+				high_command_cost_factor = 0.10
+				theorist_cost_factor = 0.10
+				attrition = 0.02
+				training_time_factor = 0.5
+			}
+			rule = {
+			}}}
+	country = {
+		paris_reformed1= {
+		 
+		available = {
+		has_government = anarchy }
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = -0.15
+				army_morale_factor = -0.18
+				experience_gain_army_unit_factor = -0.30
+				army_chief_cost_factor = 0.25
+				navy_chief_cost_factor = 0.25
+				air_chief_cost_factor = 0.25
+				high_command_cost_factor = 0.25
+				theorist_cost_factor = 0.25
+				conscription = 0.02
+				training_time_factor = -0.2
+				supply_consumption_factor = -0.05
+				theorist_cost_factor = 0.25
+				training_time_factor = 0.75
+			}
+			rule = {
+			}}}
+	country = {
+		prs_volunt= {
+		 
+		available = {
+		has_government = anarchy }
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			send_volunteer_divisions_required = -0.70
+			send_volunteer_size = 3
+			}
+			rule = {
+			can_send_volunteers = yes
+			}}}
+	country = {
+		atheism= {
+		 
+		available = {
+		has_government = anarchy }
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			research_speed_factor = 0.05
+			}
+			rule = {
+			
+			}}}
+	country = {
+		prs_religious= {
+		 
+		available = {
+		has_government = anarchy }
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = -0.05
+			neutrality_drift = 0.05
+			}
+			rule = {
+			
+			}}}
+	country = {
+		prs_ara_adv= {
+		 
+		available = {
+		has_government = anarchy }
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			army_core_defence_factor = 0.05
+			army_org_factor = 0.05
+			army_morale_factor = 0.05
+			}
+			rule = {
+			
+			}}}
+theorist = {
+
+		### Vanilla ###
+
+		PRS_theorist1 = {
+			ledger = army
+
+			name = "Les Lions"			
+					
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = military_theorist  limit = 1 } }
+				original_tag = PRS
+				
+			}
+			
+			picture = SPR_anarchist_council
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+	PRS_theorist2 = {
+			ledger = army
+
+			name = "Les Requins"			
+					
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = naval_theorist  limit = 1 } }
+				original_tag = PRS
+				
+			}
+			
+			picture = SPR_anarchist_council
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+				}
+	PRS_theorist3 = {
+			ledger = army
+
+			name = "Des Oiseaux"			
+					
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = air_warfare_theorist  limit = 1 } }
+				original_tag = PRS
+				
+			}
+			
+			picture = SPR_anarchist_council
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+				}
+				}
+high_command = { 
+	PRS_high_command1 = { 
+			ledger = army
+			name = "Philippe Leclerc"
+			picture = generic_army_europe_3
+			
+			allowed = {
+			NOT = {
+					has_available_idea_with_traits = { idea = army_armored_2  limit = 1 }
+			}	
+				original_tag = PRS
+			}
+			traits = { army_armored_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		PRS_high_command2 = { # POUM
+			ledger = army
+			name = "Henri Giraud"
+			picture = generic_army_europe_4
+			allowed = {
+			NOT = {	has_available_idea_with_traits = { idea = army_infantry_2  limit = 1 }}
+				original_tag = PRS }
+			traits = { army_infantry_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		PRS_high_command3 = { # POUM
+			ledger = army
+			name = "Emile Fayolle"
+			picture = generic_army_europe_1
+			allowed = {
+			NOT = {	has_available_idea_with_traits = { idea =  air_chief_ground_support_2 limit = 1 }}
+				original_tag = PRS }
+			traits = {air_chief_ground_support_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		PRS_high_command4 = { # POUM
+			ledger = army
+			name = "Henri d'Astier de la Vigerie"
+			picture = generic_army_europe_1
+			allowed = {
+			NOT = {	has_available_idea_with_traits = { idea =  army_regrouping_1 limit = 1 }}
+				original_tag = PRS }
+			traits = {army_regrouping_1 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+}
+army_chief = {
+
+prs_lol1 = {
+			
+			picture = generic_army_europe_2
+			name = "Jean de Lattre de Tassigny"
+			allowed = {
+				original_tag = PRS
+				NOT = {
+					has_available_idea_with_traits = { idea = army_chief_offensive_2  limit = 1 }
+			}
+			}
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+prs_lol2 = {
+			
+			picture = generic_army_europe_5
+			name = "Jean Moulin"
+			allowed = {
+				original_tag = PRS
+				NOT = {
+					has_available_idea_with_traits = { idea = army_commando_2  limit = 1 }
+			}
+			}
+			traits = { army_commando_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		}

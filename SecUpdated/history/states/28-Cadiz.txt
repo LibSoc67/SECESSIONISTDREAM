@@ -1,0 +1,31 @@
+
+state={
+	id=28
+	name="Cádiz"
+	provinces={
+		2850 9158 9455 10078 10133 10906 16622 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=0.000
+		oil=6.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = ADA
+		add_core_of = ADA
+		victory_points = {
+			9158 10
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			9158 = {naval_base = 3}
+		}
+	}
+	state_category=town
+	manpower=279321
+	buildings_max_level_factor=1.000
+}

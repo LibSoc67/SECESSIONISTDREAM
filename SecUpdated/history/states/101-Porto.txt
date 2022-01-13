@@ -1,0 +1,33 @@
+
+state={
+	id=101
+	name="Porto"
+	provinces={
+		652 4263 5182 7266 9282 11354 15557 15609 
+	}
+	resources={
+		rubber=0.000
+		tungsten=34.000
+		steel=18.000
+		oil=9.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = EDM
+		add_core_of = EDM
+		victory_points = { 5182 30 }
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex	= 2
+			dockyard = 1
+			air_base= 7
+			5182 = { naval_base = 6}
+		}
+
+	}
+	state_category = city
+	manpower=904929
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,3082 @@
+﻿focus_tree = {
+
+	id = catalonia_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = { 
+			add = 70
+			tag = CAT
+}
+}
+	default = no 
+	
+	continuous_focus_position = { x = 50 y = 0 }
+
+
+	focus = {
+		id = catcom
+		icon = GFX_goal_support_fourth_int
+		x = 11
+		y = 0
+ 	
+		
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+ 
+		mutually_exclusive = { focus = cat_dem_1}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_political_power = 100
+		add_ideas = catcom1
+		hidden_effect = {country_event = { id = catspanishism.1 days = 156}
+			}}
+		}
+	focus = {
+		id = cat_dem_1
+		icon = GFX_focus_cat_dem
+		x = 15
+		y = 0
+ 	
+		
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		relative_position_id = catcom
+		mutually_exclusive = { focus = catcom}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = catdem1
+		hidden_effect = {country_event = { id = catspanishism.1 days = 156}
+			}}
+		}
+	focus = {
+		id = cat_dem_2
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 0
+		y = 1
+ 	
+		
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = {focus = cat_dem_1}
+		relative_position_id = cat_dem_1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		swap_ideas = {remove_idea = catdem1 add_idea = catdem2} 
+		set_party_name = { 
+			ideology = democratic 
+			long_name = "Unió Democràtica de Catalunya"
+			name = "UDC"
+			}		
+			}
+		}
+	focus = {
+		id = cat_dem_3
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 0
+		y = 1
+ 	
+		
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = {focus = cat_dem_2}
+		relative_position_id = cat_dem_2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		swap_ideas = {remove_idea = catdem2 add_idea = catdem3} 
+		VAL = {remove_ideas = VAL_exiles}
+			}
+		}
+	focus = {
+		id = cat_dem_4
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = -2
+		y = 1
+ 	
+		
+		available = {
+		democratic > 0.40
+		NOT = {has_government = democratic}
+				}
+		bypass = {
+		}
+		
+		cost = 4		
+		prerequisite = {focus = cat_dem_3}
+		relative_position_id = cat_dem_3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_timed_idea = {idea = catdem4 days = 1095}
+			}
+		}	 
+	focus = {
+		id = cat_dem_5
+		icon = GFX_focus_usa_voter_registration_act
+		x = 0
+		y = 1
+ 	
+		
+		available = {
+		democratic > 0.50		
+				}
+		bypass = {
+		}
+		
+		cost = 6		
+		prerequisite = {focus = cat_dem_3}
+		relative_position_id = cat_dem_3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		country_event = cat_dem.1
+			}
+		}
+	focus = {
+		id = cat_dem_6
+		icon = GFX_focus_cat_3arrow
+		x = -1
+		y = 1
+ 	
+		mutually_exclusive = {focus = cat_dem_7}
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 6		
+		prerequisite = {focus = cat_dem_5}
+		relative_position_id = cat_dem_5
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_political_power = 75
+		custom_effect_tooltip = cet_catdem6
+			}
+		}
+		
+	focus = {
+		id = cat_dem_7
+		icon = GFX_focus_cat_poum
+		x = 1
+		y = 1
+		
+		mutually_exclusive = {focus = cat_dem_6}
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 6		
+		prerequisite = {focus = cat_dem_5}
+		relative_position_id = cat_dem_5
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_stability = 0.05
+		custom_effect_tooltip = cet_catdem7
+		
+			}
+		}	
+		focus = {
+		id = cat_dem_8 
+		icon = GFX_focus_occgov
+		x = 1
+		y = 1
+ 	
+		
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 2		
+		prerequisite = {focus = cat_dem_6 focus = cat_dem_7}
+		relative_position_id = cat_dem_6
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		country_event = cat_dem.5
+			}
+		}
+		focus = {
+		id = cat_dem_9
+		icon = GFX_focus_cat_erc
+		x = 1
+		y = 1
+		mutually_exclusive = {focus = cat_dem_10}
+		
+		available = {
+		has_country_flag = cat_erc
+				}
+		bypass = {
+		}
+		
+		cost = 1		
+		prerequisite = {focus = cat_dem_8}
+		relative_position_id = cat_dem_8
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		custom_effect_tooltip = cet_dem9
+		set_party_name = { 
+			ideology = democratic 
+			long_name = "Esquerra Republicana Catalana"
+			name = "ERC"
+			}	
+			}
+		}
+		focus = {
+		id = cat_dem_10
+		icon = GFX_focus_cat_lliga
+		x = -1
+		y = 1
+		mutually_exclusive = {focus = cat_dem_9}
+		
+		available = {
+		has_country_flag = cat_lliga
+				}
+		bypass = {
+		}
+		
+		cost = 1		
+		prerequisite = {focus = cat_dem_8}
+		relative_position_id = cat_dem_8
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		custom_effect_tooltip = cet_dem10
+		set_politics = { ruling_party = neutrality elections_allowed = yes }
+		add_popularity = {ideology = neutrality popularity = 0.15}
+			}
+		}
+	focus = {
+		id = cat_dem_11
+		icon = GFX_focus_generic_self_management
+		x = -1
+		y = 1
+		
+		
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = {focus = cat_dem_9 focus = cat_dem_10}
+		relative_position_id = cat_dem_9
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_stability = 0.1
+		add_political_power = 100
+			}
+		}	
+	focus = {
+		id = cat_dem_12
+		icon = GFX_focus_generic_industry_3
+		x = 0
+		y = 1
+		
+		
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = {focus = cat_dem_11}
+		relative_position_id = cat_dem_11
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		3 = {add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		custom_effect_tooltip = cet_dem12
+		}	
+	}
+	focus = {
+		id = cat_dem_13
+		icon = GFX_focus_generic_military_mission
+		x = -1
+		y = 1
+		
+		
+		available = { 
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = {focus = cat_dem_10}
+		relative_position_id = cat_dem_10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_war_support = 0.1
+		add_ideas = cat_spirit
+		}	
+	}	
+	focus = {
+		id = cat_dem_14
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 0
+		y = 1
+		
+		
+		available = { 
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = {focus = cat_dem_13}
+		relative_position_id = cat_dem_13
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		swap_ideas = {remove_idea = cat_spirit  add_idea = cat_spirit1}
+		}
+	}
+	focus = {
+		id = cat_dem_15
+		icon = GFX_focus_cat_fight
+		x = 1
+		y = 1
+		
+		
+		available = { 
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = {focus = cat_dem_9}
+		relative_position_id = cat_dem_9
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		country_event = cat_dem.6
+		} 
+	} 
+	focus = {
+		id = astalinistcoup
+		icon = GFX_focus_acadia
+		mutually_exclusive = { focus = keepnin}
+		x = -2
+		y = 5
+		relative_position_id = 	catcom
+		available = { 
+		mlism > 0.30
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = trial9 focus = trial7}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_political_power = 100
+		add_stability = -0.05
+remove_ideas= {catpermrev}		
+		set_politics = { ruling_party = mlism elections_allowed = no }
+		add_popularity = {
+			ideology = mlism
+			popularity = 0.20}
+	swap_ideas = {
+						remove_idea = catcom1
+						add_idea = catcom2
+					}
+			}
+		}
+		focus = {
+		id = keepnin
+		icon = GFX_focus_nin
+		x = 2
+		y = 5
+		relative_position_id = 	catcom
+		available = {
+		
+				}
+		mutually_exclusive = { focus = astalinistcoup}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = trial7 focus = trial5}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		swap_ideas = {
+						remove_idea = catcom1
+						add_idea = catcom3
+					}
+add_stability = 0.05
+		}		}
+	
+	
+	focus = {
+		id = catantifascism
+		icon = GFX_focus_antifas
+		x = 2
+		y = 1
+		relative_position_id = 	astalinistcoup
+		
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = astalinistcoup focus = keepnin} 
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {	
+		add_ideas = catantifas
+			}
+		}
+focus = {
+		id = compoliceforce
+		icon = GFX_goal_continuous_suppression
+		x = -1
+		y = 1
+		relative_position_id = 	astalinistcoup
+		
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = astalinistcoup}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {	
+		add_ideas = catpoliceforce
+			}
+		}
+focus = {
+		id = comcomdem
+		icon = GFX_focus_por_workers_of_iberia
+		x = 1
+		y = 1
+		relative_position_id = 	keepnin
+		
+		available = {
+				}
+		bypass = { has_country_flag = death
+		}
+		
+		cost = 10		
+		prerequisite = { focus = keepnin }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {	
+		add_ideas = catcomdem
+		add_political_power = 100
+			}
+		}
+	focus = {
+		id = stalinistsolidarity
+		icon = GFX_focus_ger_great_red_menace
+		x = 0
+		y = 1
+		relative_position_id = 	compoliceforce
+		
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = compoliceforce}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		custom_effect_tooltip = cet_stalinistsolidarity
+		add_opinion_modifier { 
+		target = VAS
+		modifier = huge_increase
+		}
+		add_opinion_modifier { 
+		target = CAL
+		modifier = huge_increase
+		}
+		}		
+		}
+		focus = {
+		id = internationaltrot
+		icon = GFX_goal_generic_propaganda
+		x = 0
+		y = 1
+		relative_position_id = 	comcomdem
+		
+		available = {
+		NOT = { has_political_power < 50 } 
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = comcomdem }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		VAL = {
+			add_popularity = {
+			ideology = communism
+			popularity = 0.10}
+			add_stability = -0.05
+			}
+		PRP = {
+			add_popularity = {
+			ideology = communism
+			popularity = 0.10}
+			add_stability = -0.05
+		}
+		ARA = {
+			add_popularity = {
+			ideology = communism
+			popularity = 0.10}
+			add_stability = -0.05
+		}
+		add_political_power = -50
+		}
+		}	
+	focus = {
+		id = catcon
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 29
+		y = 0
+		relative_position_id = 	catcom
+		
+		available = {  has_completed_focus = catantifascism 
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		custom_effect_tooltip = "Unlocks the influence decisions."
+		add_state_claim	= 10
+		add_state_claim	= 18
+		add_state_claim	= 17
+		add_state_claim	= 11
+		add_state_claim	= 12
+		add_state_claim	= 13
+		add_state_claim	= 14
+		add_state_claim	= 15
+		add_state_claim = 16
+		add_state_claim = 23
+		add_state_claim = 22
+		add_state_claim = 119
+		add_state_claim = 227
+		add_state_claim = 228
+		add_state_claim = 265
+		hidden_effect = {news_event = { id = iberianews.2 days = 2}}
+		}
+		}
+focus = {
+		id = annexanr
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 0
+		y = 1
+		relative_position_id = catcon
+		prerequisite = {focus = catcon}
+		bypass = {
+			}
+		cost = 5		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			ANR = {country_event= anr.1}
+			add_state_core = 10
+			}
+		
+		}		
+	focus = {
+		id = preprp
+		icon = GFX_goal_generic_improve_relations
+		x = -4  
+		y = 1
+		relative_position_id = annexanr
+		
+		available = {
+				}
+		bypass = {
+		}
+		prerequisite = { focus = annexanr}
+		cost = 5		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		if = {
+				limit = {
+				has_government = mlism
+				}
+		PRP = { 
+		add_opinion_modifier { 
+			target = CAT
+			modifier = huge_increase
+		}
+		add_popularity = {
+			ideology = mlism
+			popularity = 0.10}
+		add_ideas = catpresmlism
+		}		
+					}
+		if = {
+				limit = {
+				has_government = communism
+				}
+		PRP = { 
+		add_opinion_modifier { 
+			target = CAT
+			modifier = huge_increase
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.10}
+		add_ideas = catpres
+		}		
+					}
+		
+		}				
+	 }
+	focus = {
+		id = preval
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+		relative_position_id = annexanr
+		prerequisite = { focus = annexanr}
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 5		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		if = {
+				limit = {
+				has_government = mlism
+				}
+		VAL = { 
+		add_opinion_modifier { 
+			target = CAT
+			modifier = huge_increase
+		}
+		add_popularity = {
+			ideology = mlism
+			popularity = 0.10}
+		add_ideas = catpresmlism
+		}		
+					}
+		if = {
+				limit = {
+				has_government = communism
+				}
+		VAL = { 
+		add_opinion_modifier { 
+			target = CAT
+			modifier = huge_increase
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.10}
+		add_ideas = catpres
+		}		
+					}
+		}				
+	 }
+	focus = {
+		id = premll
+		icon = GFX_goal_generic_improve_relations
+		x = 4
+		y = 1
+		relative_position_id = annexanr
+		prerequisite = { focus = annexanr}
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 5		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		if = {
+				limit = {
+				has_government = mlism
+				}
+		MLL = { 
+		add_opinion_modifier { 
+			target = CAT
+			modifier = huge_increase
+		}
+		add_popularity = {
+			ideology = mlism
+			popularity = 0.10}
+		add_ideas = catpresmlism
+		}		
+					}
+		if = {
+				limit = {
+				has_government = communism
+				}
+		MLL = { 
+		add_opinion_modifier { 
+			target = CAT
+			modifier = huge_increase
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.10}
+		add_ideas = catpres
+		}		
+					}
+		}				
+	 }		
+		
+	focus = {
+		id = ulttoprp
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = -1
+		y = 1
+		relative_position_id = preprp
+		mutually_exclusive = { focus = warprp }
+		available = { not = {is_subject = yes } 
+		PRP = {
+				exists = yes
+				is_puppet = no
+				OR = {communism > 0.5 mlism > 0.5}
+			}
+			}
+		will_lead_to_war_with = PRP
+		
+		bypass = {
+						PRP = {
+				exists = yes
+				is_puppet = yes
+			}
+		}
+		prerequisite = { focus = preprp }
+		cost = 10		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		PRP = {  country_event = {id = ulttoprp.1
+    days = 1
+    random = 1
+		
+		}
+		}				
+	 }	
+	}	
+	focus = {
+		id = ulttoval
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = -1
+		y = 1
+		relative_position_id = preval
+		mutually_exclusive = { focus = warval }
+		available = { not = {is_subject = yes } 
+		VAL = {
+				exists = yes
+				is_puppet = no
+				OR = {communism > 0.5 mlism > 0.5}
+			}
+			}
+		
+		will_lead_to_war_with = VAL
+		bypass = {
+				VAL = {
+				exists = yes
+				is_puppet = yes
+			}
+			}
+		
+		prerequisite = { focus = preval }
+		cost = 10		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		VAL = {  country_event = {id = ulttoval.1
+    days = 1
+    random = 1
+		
+		}
+		}
+	
+	hidden_effect = {country_event = {id = ulttoval.2 days = 5 random = 1}}
+	 }	
+	}		
+focus = {
+		id = ulttomll
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = -1
+		y = 1
+		relative_position_id = premll
+		mutually_exclusive = { focus = warmll }
+		available = { not = {is_subject = yes } 
+		MLL = {
+				exists = yes
+				is_puppet = no
+				OR = {communism > 0.5 mlism > 0.5}
+			}
+			}
+		will_lead_to_war_with = MLL
+		bypass = {
+				MLL = {
+				exists = yes
+				is_puppet = yes
+			}
+			}
+		
+		prerequisite = { focus = premll }
+		cost = 10		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		MLL = {  country_event = {id = ulttomll.1
+    days = 1
+    random = 1
+		
+		}
+		}				
+	 }	
+	}		
+focus = {
+		id = catprp
+		icon = GFX_goal_generic_national_unity
+		x = 1
+		y = 1
+		relative_position_id = ulttoprp
+		
+		available = { 
+		17 = { is_owned_by = CAT}
+		18 = { is_owned_and_controlled_by = CAT }	
+}
+
+		bypass = {
+				PRP = {
+				exists = yes
+				is_puppet = yes
+			}
+			}
+		
+		prerequisite = { focus = ulttoprp focus = warprp}
+		cost = 10		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+country_event = catcont.3 
+	 }	
+	}			
+focus = {
+		id = catval
+		icon = GFX_goal_generic_national_unity
+		x = 1
+		y = 1
+		relative_position_id = ulttoval
+		
+		available = { 
+
+    11 = { is_owned_and_controlled_by = CAT}
+	12 = { is_owned_and_controlled_by = CAT}
+	13 = { is_owned_and_controlled_by = CAT}
+	228 = { is_owned_and_controlled_by = CAT}
+	227 = { is_owned_and_controlled_by = CAT}
+		
+}  
+		bypass = {
+				VAL = {
+				exists = yes
+				is_puppet = yes
+			}
+			}
+		
+		prerequisite = { focus = ulttoval focus = warval}
+		cost = 10		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+ country_event = catcont.1 
+
+	 }	
+	}		
+focus = {
+		id = catmll
+		icon = GFX_goal_generic_national_unity
+		x = 1
+		y = 1
+		relative_position_id = ulttomll
+		
+		available = { 
+		14 = { is_owned_and_controlled_by = CAT}
+		15 = { is_owned_and_controlled_by = CAT}
+		16 = { is_owned_and_controlled_by = CAT}
+					
+				
+} 
+		bypass = {
+				MLL = {
+				exists = yes
+				is_puppet = yes
+			}
+			}
+		
+		prerequisite = { focus = ulttomll focus = warmll }
+		cost = 10		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+   country_event = catcont.2
+	 }	
+	}		
+	focus = {
+		id = warprp
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 1
+		y = 1
+		relative_position_id = preprp
+		mutually_exclusive = { focus = ulttoprp }
+		available = { not = {is_subject = yes } 
+			}
+
+		will_lead_to_war_with = PRP
+		
+		bypass = {
+						PRP = {
+				exists = no
+			}
+		}
+		prerequisite = { focus = preprp }
+		cost = 5		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = PRP
+				expire = 0
+		
+				
+			}
+		
+		
+		}
+		
+		}				
+	focus = {
+		id = warval
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 1
+		y = 1
+		relative_position_id = preval
+		mutually_exclusive = { focus = ulttoval }
+		available = { not = {is_subject = yes } 
+			}
+
+		
+		will_lead_to_war_with = VAL
+		bypass = {
+						VAL = {
+				exists = no
+			}
+		}
+		prerequisite = { focus = preval }
+		cost = 5		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		hidden_effect = {country_event = {id = ulttoval.2 days = 5 random = 1}}
+			create_wargoal = {
+				type = annex_everything
+				target = VAL
+				expire = 0
+		
+				
+			}
+		
+		
+		}
+		}
+	focus = {
+		id = warmll
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 1
+		y = 1
+		relative_position_id = premll
+		mutually_exclusive = { focus = ulttomll }
+		available = { not = {is_subject = yes } 
+			}
+
+		
+		will_lead_to_war_with =  MLL
+		bypass = {
+						MLL = {
+				exists = no
+			}
+		}
+		prerequisite = { focus = premll }
+		cost = 5		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MLL
+				expire = 0
+		
+				
+			}
+		
+		
+		}
+		}
+	focus = {
+		id = almostthere
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
+		x = 4
+		y = 1
+		relative_position_id = catprp
+		available = { not = {is_subject = yes } 
+			}
+
+		
+		
+		bypass = {
+						
+		}
+		prerequisite = { focus = catprp }
+		prerequisite = { focus = catval }
+		prerequisite = { focus = catmll }
+		cost = 10		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+			add_war_support = 0.2
+			add_stability = 0.1
+			if = {
+			limit = {has_government = communism}
+				add_popularity = { 
+					ideology = communism 
+					popularity = 0.15 
+				} 	
+			}
+			if = {
+			limit = {has_government = mlism}
+				add_popularity = { 
+					ideology = mlism 
+					popularity = 0.15 
+				} 	
+			}
+		}
+	}			
+	focus = {
+		id = warara
+		icon = GFX_goal_generic_major_war
+		x = -1
+		y = 1
+		relative_position_id = almostthere
+		available = { not = {is_subject = yes } ARA ={exists = yes}
+			}
+
+		
+		will_lead_to_war_with = ARA
+		bypass = {
+						ARA = {
+				exists = no
+			}
+		}
+		prerequisite = { focus = almostthere }
+		cost = 10		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				 type = take_state_focus
+    target = ARA
+    generator = { 22 23 }
+		
+				
+			}
+		
+		
+		}
+		}
+focus = {
+		id = catfra
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 1
+		relative_position_id = warara
+		
+		available = { 
+22 = { is_owned_and_controlled_by = CAT}	
+23 = { is_owned_and_controlled_by = CAT}
+	} 
+		bypass = {
+			}
+			
+		
+		prerequisite = { focus = warara}
+		cost = 10		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+ add_state_core = 22 	
+ add_state_core  = 23 
+ custom_effect_tooltip = cet_catfra
+	 }	
+	}		
+	focus = {
+		id = socsci
+		icon = GFX_focus_generic_socialist_science
+		x = -1
+		y = 1
+		relative_position_id = forthecause
+		available = { 
+			}
+		bypass = {
+			}
+		prerequisite = { focus = forthecause }
+		cost = 10		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_research_slot = 1
+		
+				
+			}
+		
+		
+		}
+	focus = {
+		id = soclif
+		icon = GFX_focus_spr_class_war
+		x = 1
+		y = 1
+		relative_position_id = forthecause
+		available = { 
+			}
+		bypass = {
+			}
+		prerequisite = { focus = forthecause }
+		cost = 10		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.1
+			if = {
+			limit = {has_government = communism}
+			add_popularity = {ideology = communism popularity = 0.05}
+			}
+			if = {
+			limit = {has_government = mlism}
+			add_popularity = {ideology = communism popularity = 0.05} 			
+			}
+			add_timed_idea = { idea = pay1 days = 100}
+			
+			}
+		
+		
+		}
+focus = {
+		id = addmel
+		icon = GFX_focus_meltpot
+		x = 8
+		y = 1
+		relative_position_id = trial
+		
+		available = { 
+		
+		NOT = { has_political_power < 40 } 
+			}
+		bypass = {
+			}
+		prerequisite = { }
+		cost = 1.5		
+		
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = -40
+			
+			}
+		
+		}
+focus = {
+		id = socialistway
+		icon = GFX_focus_prc_agrarian_socialism
+		x = -2
+		y = 1
+		relative_position_id = addmel
+		prerequisite = {focus = addmel}
+		available = {
+		OR = {
+		has_completed_focus = catcom  
+		has_completed_focus = cat_dem_9
+		}	
+			}
+		mutually_exclusive = {focus = conservativeway}
+		bypass = {
+			}
+		prerequisite = { }
+		cost = 5		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_popularity = { ideology = communism popularity = 0.05
+			}
+			add_popularity = { ideology = mlism popularity = 0.05
+			}
+		
+		}
+ }
+ focus = {
+		id = conservativeway
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 2
+		y = 1
+		relative_position_id = addmel
+		prerequisite = {focus = addmel}
+		mutually_exclusive = {focus = socialistway}
+		available = {
+		has_completed_focus = cat_dem_10
+		
+			}
+		bypass = {
+			}
+		
+		cost = 5		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_popularity = { ideology = communism popularity = 0.05
+			}
+			add_popularity = { ideology = mlism popularity = 0.05
+			}
+		
+		}
+ }
+ focus = {
+		id = conservative2 
+		icon = GFX_goal_generic_defence
+		x = 0
+		y = 1
+		relative_position_id = conservativeway
+		prerequisite = {focus = conservativeway}
+		
+		available = {
+		
+		
+			}
+		bypass = {
+			}
+		
+		cost = 5		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		swap_ideas = { remove_idea = meltingpot add_idea = conmeltingpot}
+		}
+ }
+ focus = {
+		id = conservative3
+		icon = GFX_goal_generic_defence
+		x = 0
+		y = 1
+		relative_position_id = conservative2
+		prerequisite = {focus = conservative2}
+		
+		available = {
+		
+		
+			}
+		bypass = {
+			}
+		
+		cost = 5		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		swap_ideas = { remove_idea = conmeltingpot add_idea = conmeltingpot1}
+		}
+ }
+ focus = {
+		id = conservative4
+		icon = GFX_goal_generic_defence
+		x = 0
+		y = 1
+		relative_position_id = conservative3
+		prerequisite = {focus = conservative3}
+		
+		available = {
+		
+		
+			}
+		bypass = {
+			}
+		
+		cost = 5		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		remove_ideas =conmeltingpot1
+		}
+ }
+focus = {
+		id = cm1
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 1
+		relative_position_id = socialistway
+		prerequisite = {focus = socialistway}
+		available = { 
+			}
+		bypass = {
+			}
+		cost = 5		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+						remove_idea = meltingpot
+						add_idea = meltingpot1
+					}
+			}
+		
+		}
+ focus = {
+		id = cm2
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 1
+		relative_position_id = cm1
+		prerequisite = {focus = cm1}
+		available = { 
+			}
+		bypass = {
+			}
+		cost = 5		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+						remove_idea = meltingpot1
+						add_idea = meltingpot2
+					}
+			}
+		 
+		}
+focus = {
+		id = cm3
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 1
+		relative_position_id = cm2
+		prerequisite = {focus = cm2}
+		available = { 
+			}
+		bypass = {
+			}
+		cost = 5		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+						remove_idea = meltingpot2
+						add_idea = meltingpot3
+				}
+			}
+		
+		}
+	focus = {
+		id = cdor
+		icon = GFX_goal_continuous_suppression
+		x = 2
+		y = 0
+		relative_position_id = cm1
+		prerequisite = {focus = socialistway focus = conservativeway}
+		
+		available = { has_completed_focus= cm1
+			}
+		bypass = {
+			}
+		cost = 5		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+						remove_idea = minorrebelions
+						add_idea = almost_no_rebelions
+				}
+			}
+		
+		}
+	focus = {
+		id = cdor1
+		icon = GFX_goal_continuous_suppression
+		x = 0
+		y = 1
+		relative_position_id = cdor
+		prerequisite = {focus = cdor}
+		available = { has_completed_focus= cm2
+			}
+		bypass = {
+			}
+		cost = 5		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+						remove_idea =  almost_no_rebelions 
+						add_idea = noviolence
+				}
+			}
+		
+		}
+	focus = {
+		id = cdor2
+		icon = GFX_goal_continuous_suppression
+		x = 0
+		y = 1
+		relative_position_id = cdor1
+		prerequisite = {focus = cdor1}
+		available = { has_completed_focus= cm3
+			}
+		bypass = {
+			}
+		cost = 5		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = {
+						 noviolence
+				}
+			}
+		
+		}
+focus = {
+		id = catocc
+		icon = GFX_focus_attack_occ 
+		x = 4
+		y = 1
+		relative_position_id = almostthere
+		prerequisite = {focus = almostthere}
+		available = { 
+		NOT = {is_in_faction_with = OCC}
+			}
+		bypass = {
+			}
+		cost = 10		
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		mutually_exclusive = {focus = catandocc}
+		completion_reward = {
+		add_opinion_modifier = { target = OCC modifier = large_decrease }
+		
+		OCC = {add_opinion_modifier = { target = CAT modifier = large_decrease }}
+		
+		}
+	}
+focus = {
+		id = establishthecoc 
+		icon = GFX_focus_aquantio
+		x = 0
+		y = 1
+		relative_position_id = catocc
+		prerequisite = {focus = catocc}
+		available = { 
+
+		NOT = {is_in_faction_with = OCC}
+		}
+		will_lead_to_war_with = OCC
+		bypass = {
+			}
+		cost = 10		
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		custom_effect_tooltip = cet_catocc
+		
+		hidden_effect = {
+		COC = {  
+		add_state_core = 131
+		add_state_core = 132
+		add_state_core = 138
+		add_state_core = 139
+		add_state_core = 140
+		add_state_core = 141
+		add_state_core = 142
+		add_state_core = 143
+		add_state_core = 146
+		add_state_core = 130
+		add_state_core = 144
+		add_state_core = 145
+		transfer_state = 131
+		
+	create_country_leader = {
+	name = "Jordi Arquer"
+	picture = "coccom.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+}
+create_country_leader = {
+	name = "Jordi Arquer"
+	picture = "coccom.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+}
+inherit_technology = OCC
+		}
+		CAT = { puppet = COC }}
+		OCC = { country_event = catocc.1 }
+		}
+		
+	}
+focus = {
+		id = enlargetheocsr 
+		icon = GFX_focus_provence
+		x = 0
+		y = 1
+		relative_position_id = establishthecoc
+		prerequisite = {focus = establishthecoc}
+		available = { AND = { not = {is_subject = yes } COC ={exists = yes } OCC ={exists = no } }NOT = {
+		is_in_faction_with = OCC
+		
+		}
+		}
+			
+		bypass = {
+			}
+		cost = 10		
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		will_lead_to_war_with = PRO
+		completion_reward = {
+		COC = {
+		add_state_core = 147
+		add_state_core = 148
+		add_state_core = 151
+		add_state_core = 183
+		}
+			create_wargoal = {
+				type = annex_everything
+				target = PRO
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MNC
+				expire = 0
+			}
+		
+	}
+}
+focus = {
+		id = catandocc
+		icon = GFX_focus_aquocc
+		x = 6
+		y = 1
+		relative_position_id = almostthere
+		prerequisite = {focus = almostthere}
+		available = { 
+		
+			}
+		bypass = {
+			}
+		cost = 10		
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		mutually_exclusive = {focus = catocc}
+		completion_reward = {
+		add_opinion_modifier = { target = OCC modifier = medium_increase }
+		
+		OCC = {add_opinion_modifier = { target = CAT modifier = medium_increase }}
+		
+		}
+	}
+focus = {
+		id = catandocc1
+		icon = GFX_focus_cat_occ
+		x = 0
+		y = 1
+		relative_position_id = catandocc
+		prerequisite = {focus = catandocc}
+		available = { 
+		
+			}
+		bypass = {
+			}
+		cost = 10		
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		OCC = {country_event = catocc.2}
+		
+		}
+	}
+focus = {
+		id = catsar1
+		icon = GFX_goal_generic_military_sphere
+		x = -4
+		y = 0
+ 	relative_position_id = warara
+	prerequisite = {focus = almostthere}
+		
+		available = { 119 = {owner = {tag = SAR}}
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		mutually_exclusive = {focus = catsar2 focus = catsar4}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		SAR = {country_event = catsarevent.1}
+		}
+}
+focus = {
+		id = catsar2
+		icon = GFX_goal_generic_special_forces
+		x = -2
+		y = 0
+ 	relative_position_id = warara
+	prerequisite = {focus = almostthere}
+		
+		available = { SAR = {exists = yes}
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		mutually_exclusive = {focus = catsar1 focus = catsar4}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		create_wargoal = {
+				type = annex_everything
+				target = SAR
+				expire = 0
+			}
+		}
+}
+focus = {
+		id = catsar3
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 1
+ 	relative_position_id = catsar1
+	prerequisite = {focus = catsar1 focus = catsar2 focus = catsar4}
+		
+		available = { 
+		119 = { is_owned_and_controlled_by = CAT}
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		custom_effect_tooltip = cet_catsar3
+		add_state_core = 119
+		119  = { set_state_name = "L'Alguer" } 
+		}
+}
+
+focus = {
+		id = catsar4
+		icon = GFX_goal_generic_improve_relations
+		x = -6
+		y = 0
+ 	relative_position_id = warara
+	prerequisite = {focus = almostthere}
+		
+		available = { 119 = {owner = {tag = SAR}}
+		SAR = {OR = {has_government = communism has_government = mlism} is_puppet = no}CAT = {OR = {has_government = communism has_government = mlism} is_puppet = no}
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		mutually_exclusive = {focus = catsar2 focus = catsar1}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		SAR = {country_event = catsarevent.2} 
+		custom_effect_tooltip = cet_catsar4
+		}
+}
+
+
+
+
+
+focus = {
+		id = forthecause
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		x = 0
+		y = 2
+		relative_position_id = 	catantifascism
+		
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = internationaltrot focus = stalinistsolidarity }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_political_power = -100
+		remove_ideas = fullemployment
+		add_timed_idea = {
+				idea = semifull
+				days = 365
+			} 
+		}
+			}
+
+
+focus = {
+		id = economy1
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 15
+		y = 0
+		relative_position_id = 	catcon
+		
+		available = {
+		 
+				}
+		bypass = {
+		has_completed_focus = cat_dem_12
+		}
+		
+		cost = 10		
+		prerequisite = { focus = }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		country_event = cateco.1 
+		}
+			}
+	focus = {
+		id = economy2
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -1
+		y = 1
+		relative_position_id = 	economy1
+		
+		available = { 
+		2 = { is_owned_and_controlled_by = CAT}
+		6 = { is_owned_and_controlled_by = CAT}
+		7 = { is_owned_and_controlled_by = CAT}
+		8 = { is_owned_and_controlled_by = CAT}
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = economy1 }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		build_railway = {
+  level = 4
+  build_only_on_allied = yes
+  fallback = yes
+  path = { 5095 15763 15780 1723 9382 10558 15909 6426 3276 15922 4579 10514 }
+}
+build_railway = {
+  level = 4
+  build_only_on_allied = yes
+  fallback = yes
+  path = { 9382 9172 1866 }
+}
+build_railway = {
+  level = 4
+  build_only_on_allied = yes
+  fallback = yes
+  path = { 3276 11320 15729 }
+}
+		}
+			}
+	focus = {
+		id = economy3
+		icon = GFX_goal_generic_construction2
+		x = 1
+		y = 1
+		relative_position_id = 	economy1
+		
+		available = { 
+		4 = { is_owned_and_controlled_by = CAT}
+		9 = { is_owned_and_controlled_by = CAT}
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = economy1 }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		custom_effect_tooltip = "Unlocks decisions to extract more resources."
+		4 = { add_resource = {
+				type = steel
+				amount = 13 } }
+		9 = { add_resource = {
+				type = steel
+				amount = 2
+	
+			} }
+
+		}
+			}
+focus = {
+		id = economy4
+		icon = GFX_goal_generic_construct_civ_factory
+		x = -1
+		y = 1
+		relative_position_id = 	economy3
+		
+		available = { 
+		2 = { is_owned_and_controlled_by = CAT}
+		
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = economy3 focus = economy2 }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		2 = { 
+			add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				
+		}
+
+		}
+			}
+	focus = {
+		id = economy5
+		icon = GFX_goal_generic_construct_civ_factory
+		x = -1
+		y = 1
+		relative_position_id = 	economy4
+		
+		available = { 
+		6 = { is_owned_and_controlled_by = CAT}
+		
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = economy4 }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		6 = { 
+			add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				
+		}
+
+		}
+			}
+
+focus = {
+		id = economy6
+		icon = GFX_goal_generic_construct_civ_factory
+		x = -3
+		y = 1
+		relative_position_id = 	economy4
+		
+		available = { 
+		8 = { is_owned_and_controlled_by = CAT}
+		
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = economy4 }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		8 = { 
+			add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				
+		}
+
+		}
+			}
+	focus = {
+		id = economy7
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 3
+		y = 1
+		relative_position_id = 	economy4
+		
+		available = { 
+		7 = { is_owned_and_controlled_by = CAT}
+		
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = economy4 }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		7 = { 
+			add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				
+		}
+
+		}
+			}
+focus = {
+		id = economy8
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 1
+		y = 1
+		relative_position_id = 	economy5
+	
+		available = { 
+		3 = { is_owned_and_controlled_by = CAT}
+		6 = { is_owned_and_controlled_by = CAT}
+		7 = { is_owned_and_controlled_by = CAT}
+		8 = { is_owned_and_controlled_by = CAT}
+				}
+		bypass = {
+		}
+		
+		cost = 12.9		
+		prerequisite = { focus = economy5 }
+		prerequisite = { focus = economy6 }
+		prerequisite = { focus = economy7 }
+		prerequisite = { focus = economy15 }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		3 = { 
+			add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				
+		}
+		6 = { 
+			add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				
+		}
+		7 = { 
+			add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				
+		}
+		8 = { 
+			add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			
+				
+		}
+		}
+			}
+
+focus = {
+		id = economy9
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = -1
+		y = 1
+		relative_position_id = 	economy8
+		
+		available = {  NOT = {has_idea = milfocus has_idea = civfocus}
+		
+				}
+		bypass = {
+		has_completed_focus = cat_dem_12
+		}
+		
+		cost = 10		
+		prerequisite = { focus = economy8 }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		country_event = cateco.2		
+		}
+			}
+
+focus = {
+		id = economy10
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 1
+		y = 1
+		relative_position_id = 	economy8
+		
+		available = { 
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = economy8 }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_research_slot = 1
+		}
+			}
+
+
+focus = {
+		id = economy11
+		icon = GFX_goal_generic_construct_civilian
+		x = -1
+		y = 1
+		relative_position_id = 	economy10
+		
+		available = {
+			custom_trigger_tooltip={
+			tooltip = "Owns Valencia or they are your puppet."
+				OR = {
+				AND {
+		11 = { is_owned_and_controlled_by = CAT}
+		12 = { is_owned_and_controlled_by = CAT}
+		13 = { is_owned_and_controlled_by = CAT}
+				}
+		VAL = {is_puppet_of = CAT}		
+				}}}
+		bypass = {
+		}
+		
+		cost = 12.9		
+		prerequisite = { focus = economy10 focus = economy9 }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		11 = { 
+			add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				
+		}
+		12 = { 
+			add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				
+		}
+		13 = { 
+			add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				
+		}
+custom_effect_tooltip=cet_economy11
+hidden_effect={VAL = {add_popularity = {ideology = communism popularity = 0.1}}}
+		}
+			}
+focus = {
+		id = economy12
+		icon = GFX_goal_generic_construct_civilian
+		x = 1
+		y = 1
+		relative_position_id = 	economy10
+		
+		available = { custom_trigger_tooltip={
+tooltip = "Owns the Perpinyà or they are your puppet."
+OR = {
+		AND = {17 = { is_owned_and_controlled_by = CAT}18 = {is_owned_and_controlled_by = CAT}}
+		PRP = {is_puppet_of = CAT}
+		
+				}}}
+		bypass = {
+		}
+		
+		cost =10		
+		prerequisite = { focus = economy10 focus = economy9 }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		17 = { 
+			add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				
+		}
+		18 = { 
+			add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				
+		}
+		 custom_effect_tooltip=cet_economy12
+hidden_effect={PRP = {add_popularity = {ideology = communism popularity = 0.1}}}
+		}
+			}
+
+focus = {
+		id = economy13
+		icon = GFX_goal_generic_construct_civilian
+		x = -3
+		y = 1
+		relative_position_id = 	economy10
+		
+		available = { custom_trigger_tooltip={
+tooltip = "Owns the Balearic Islands or they are your puppet."
+OR = {
+		AND {
+		14 = { is_owned_and_controlled_by = CAT}
+		15 = { is_owned_and_controlled_by = CAT}
+		16 = { is_owned_and_controlled_by = CAT}
+			}	
+		MLL ={is_puppet_of = CAT}	
+			}
+				}}
+		bypass = {
+		}
+		
+		cost = 12.9		
+		prerequisite = { focus = economy10 focus = economy9 }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		14 = { 
+			add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				
+		}
+		15 = { 
+			add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				
+		}
+		16 = { 
+			add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				
+		}
+custom_effect_tooltip=cet_economy13
+hidden_effect={MLL = {add_popularity = {ideology = communism popularity = 0.1}}}
+		}
+}
+focus = {
+		id = economy14
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = 	economy11
+		
+		available = { 
+		num_of_factories > 30
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = economy12 }
+		prerequisite = { focus = economy11 }
+		prerequisite = { focus = economy13 }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		swap_ideas = {
+						remove_idea = economicboom
+						add_idea = economicboom1
+					}
+		 
+		}
+			}
+
+focus = {
+		id = economy15
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 1
+		y = 1
+		relative_position_id = 	economy4
+		
+		available = { 
+		3 = { is_owned_and_controlled_by = CAT}
+		
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus = economy4 }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		3 = {
+	
+
+			add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				
+		} 
+
+		}
+			}
+
+focus = {
+		id = trial
+		icon = GFX_goal_continuous_restrict_freedom
+		x = 0
+		y = 1
+		relative_position_id = 	catcom
+		
+		available = { 
+	
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = {focus = catcom}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		country_event = stalinists.1
+		 
+		}
+			}	
+focus = {
+		id = trial1
+		icon = GFX_goal_generic_secret_weapon
+		x = 3
+		y = 1
+		relative_position_id = 	trial
+		mutually_exclusive = {focus = trial2}
+		mutually_exclusive = {focus = trial3}
+		available = { 
+has_country_flag = death
+		
+				}
+		bypass = { has_country_flag = death
+		
+		}
+		
+		cost = 0		
+		prerequisite = {focus = trial}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		custom_effect_tooltip = "Death awaits to the stalinists conspirators."
+		add_popularity = {
+			ideology = mlism
+			popularity = -0.50} 
+		}
+			}
+
+focus = {
+		id = trial2
+		icon = GFX_goal_continuous_suppression
+		x = 0
+		y = 1
+		relative_position_id = 	trial
+		mutually_exclusive = {focus = trial1}
+		mutually_exclusive = {focus = trial3}
+		available = { 
+has_country_flag = prison
+		
+				}
+		bypass = { has_country_flag = prison
+		
+		}
+		
+		cost = 0		
+		prerequisite = {focus = trial}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		custom_effect_tooltip = "Prison awaits to the stalinists agitators."
+		 
+		}
+			}
+
+focus = {
+		id = trial3
+		icon = GFX_goal_continuous_boost_freedom
+		x = -3
+		y = 1
+		relative_position_id = 	trial
+		
+		available = { 
+has_country_flag = free
+		
+				}
+		mutually_exclusive = {focus = trial2}
+		mutually_exclusive = {focus = trial1}
+		bypass = { has_country_flag = free
+		
+		}
+		
+		cost = 0		
+		prerequisite = {focus = trial}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		custom_effect_tooltip = "The stalinists will be forgiven. This might be a bad idea." 
+		 
+		}
+			}
+focus = {
+		id = trial4
+		icon = GFX_goal_anti_comintern_pact
+		x = 0
+		y = 1
+		relative_position_id = 	trial1
+		available = { 
+
+		
+				}
+		
+		bypass = { 
+		
+		}
+		
+		cost = 10		
+		prerequisite = {focus = trial1}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		remove_unit_leader = 740 
+		remove_ideas = stalinists
+		add_ideas = stalinists1
+		set_country_flag = { flag = antsta days = 730 value = 1 }		
+		 
+		}
+			}
+focus = {
+		id = trial5
+		icon = GFX_goal_generic_special_forces
+		x = 0
+		y = 1
+		relative_position_id = 	trial4
+		available = { 
+		custom_trigger_tooltip={
+			tooltip = ctt_trial5
+				
+					NOT = { has_country_flag = antsta} 
+			
+				}}
+	
+		
+				
+			
+		bypass = { 
+		
+		}
+		
+		cost = 10		
+		prerequisite = {focus = trial4}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		remove_ideas = stalinists1
+		add_stability = 0.10
+		
+		 
+		}
+			}
+focus = {
+		id = trial6
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+		relative_position_id = 	trial2
+		available = { 
+		
+		
+		
+				}
+			
+		bypass = { 
+		
+		}
+		
+		cost = 10		
+		prerequisite = {focus = trial2}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		custom_effect_tooltip = "Unlocks some decisions to grand amnesty to the stalinists."
+		
+		
+		 
+		}
+			}
+focus = {
+		id = trial7
+		icon = GFX_focus_spr_unify_the_london_bureau
+		x = 0
+		y = 1
+		relative_position_id = 	trial6
+		available = { 
+		has_country_flag = freee
+		
+		
+				} 
+			
+		bypass = { 
+		
+		}
+		
+		cost = 10		
+		prerequisite = {focus = trial6}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		remove_ideas = stalinists
+		
+		add_political_power = -150
+		 
+		}
+			}
+focus = {
+		id = trial8
+		icon = GFX_goal_generic_propaganda
+		x = 0
+		y = 1
+		relative_position_id = 	trial3
+		available = { 
+	
+		
+		
+				} 
+			
+		bypass = { 
+		
+		}
+		
+		cost = 10		
+		prerequisite = {focus = trial3}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { 
+		
+		
+		custom_effect_tooltip = "Allows you to do special decisions in order to imporve the stalinist suport amongs the population."
+		
+		 
+		}
+			}
+
+
+
+focus = {
+		id = trial9
+		icon = GFX_focus_generic_support_the_left_right
+		x = 0
+		y = 1
+		relative_position_id = 	trial8
+		available = { 
+	has_country_flag = ov1
+	has_country_flag = ov2
+	has_country_flag = ov3		
+				} 
+			
+		bypass = { 
+		
+		}
+		
+		cost = 10		
+		prerequisite = {focus = trial8}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_stability = -0.05
+		
+		custom_effect_tooltip = cet_trial9 
+		
+		 
+		}
+			}
+
+
+	focus = {
+		id = cat_warmurcia
+		icon = GFX_focus_cat_mur1
+		x = 1
+		y = 1
+		relative_position_id = almostthere
+		available = { not = {is_subject = yes } ARA ={exists = yes}
+			}
+
+		
+		will_lead_to_war_with = ARA
+		bypass = {
+						ARA = {
+				exists = no
+			}
+		}
+		prerequisite = { focus = almostthere }
+		cost = 10		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_state_claim = 37
+		
+		
+		}
+		}
+	focus = {
+		id = cat_warmurcia1
+		icon = GFX_goal_generic_major_war
+		x = 0
+		y = 1
+		relative_position_id = cat_warmurcia
+		available = { not = {is_subject = yes } 
+			}
+
+		
+		will_lead_to_war_with = MUR 
+		if = {limit = {37 = {is_owned_and_controlled_by = ADA} }will_lead_to_war_with = ADA }
+		if = {limit = {37 = {is_owned_and_controlled_by = CAV} }will_lead_to_war_with = CAV }
+		bypass = {
+		
+		}
+		prerequisite = { focus = cat_warmurcia }
+		cost = 10		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		if = {limit = {37 = {is_owned_and_controlled_by = ADA}  } ADA = {country_event = catsarevent.3} }	
+		if = {limit = {37 = {is_owned_and_controlled_by = MUR}  } MUR = {country_event = catsarevent.3} }	
+		if = {limit = {37 = {is_owned_and_controlled_by = CAV}  } CAV = {country_event = catsarevent.3} }
+		if = {limit = {37 = {is_owned_and_controlled_by = VAL}  } VAL = {country_event = catsarevent.3} }
+		}
+		}	
+	focus = {
+		id = cat_warmurcia2
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 1
+		relative_position_id = cat_warmurcia1
+		available = { not = {is_subject = yes } custom_trigger_tooltip = {tooltip = ctt_warmur OR = { 37 = {is_owned_and_controlled_by = CAT} AND = { VAL = {is_puppet_of = CAT} 37 = {is_owned_and_controlled_by = VAL} } }
+			}}
+
+		
+		bypass = {
+						
+		}
+		prerequisite = { focus = cat_warmurcia1 }
+		cost = 10		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			if = {limit = {VAL = {exists = no} } add_state_core = 37 }
+			if = {limit = {VAL = {exists = yes is_puppet_of = CAT} } VAL = {add_state_core = 37 transfer_state = 37}}
+		custom_effect_tooltip = cet_warmur1
+		}
+		}		
+			
+	focus = {
+		id = cat_warmurcia3
+		icon = GFX_goal_generic_special_forces
+		x = -1
+		y = 1
+		relative_position_id = cat_warmurcia2
+		available = { MUR = {exists = yes} }
+
+
+		
+		bypass = {
+						
+		}
+		prerequisite = { focus = cat_warmurcia2 }
+		cost = 10		
+		mutually_exclusive = {focus = cat_warmurcia4}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		custom_effect_tooltip = cet_warmurpup
+			create_wargoal = {
+				type = annex_everything
+				target = MUR
+				expire = 0
+		
+				
+			}
+		ADA = {country_event = cat_ada_mur.1}
+		}
+		}		
+		focus = {
+		id = cat_warmurcia4
+		icon = GFX_focus_cat_mur3
+		x = 1
+		y = 1
+		relative_position_id = cat_warmurcia2
+		available = { MUR = {exists = yes} ADA = {exists = yes} }
+		mutually_exclusive = {focus = cat_warmurcia3}
+
+		
+		bypass = {
+						
+		}
+		prerequisite = { focus = cat_warmurcia2 }
+		cost = 10		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		custom_effect_tooltip = cet_warmurpup
+		ADA = {country_event = cat_ada_mur.2
+		}
+		}
+		}
+
+	focus = {
+		id = cat_ademus3
+		icon = GFX_focus_cat_ademus
+		x = 0
+		y = 1
+		relative_position_id = catfra
+		available = { OR = { ARA = {is_puppet_of = CAT} 20 = {is_controlled_by = CAT} } }
+
+		
+		bypass = {
+						
+		}
+		prerequisite = { focus = catfra}
+		cost = 2		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		hidden_effect={
+		265 = {set_state_name = "Racó d'Ademús"}
+		if = {
+		limit={VAL= {exists =yes is_puppet_of = CAT}}
+		VAL = {annex_country = {
+			target = ADE
+			transfer_troops = yes
+		}}
+		}
+		else_if = {
+		annex_country = {
+			target = ADE
+			transfer_troops = yes
+		}
+		}
+		}
+		army_experience = 5
+		custom_effect_tooltip = cet_cat_ademus3 
+		}
+		}
+	}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+# { has_completed_focus = GER_bulwark_against_bolshevism }

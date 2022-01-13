@@ -1,0 +1,20 @@
+state={
+	id=37
+	name="Cartxe"
+	provinces={
+		16469 
+	}
+	history={
+		owner = MUR
+		add_core_of = MUR
+	
+		buildings = {
+			infrastructure = 4
+
+			 
+		}
+	}
+	state_category=wasteland
+	manpower=3203
+	buildings_max_level_factor=1.000
+}

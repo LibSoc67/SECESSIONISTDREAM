@@ -1,0 +1,34 @@
+
+state={
+	id=91
+	name="Navia"
+resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=17.000
+		oil=6.000
+		chromium=6.000
+		aluminium=0.000
+	}
+	history={
+	victory_points = {
+			15017 2 
+		}
+		owner = ASR
+		add_core_of = ASR
+		
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		500 3879 15010 15017 15039 
+	}
+	manpower=82492
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

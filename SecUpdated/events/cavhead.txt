@@ -1,0 +1,67 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = cavhead
+
+country_event = {
+	id = cavhead.1
+	title = "Primo wins the struggle"
+	desc = cavhead.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = { 
+		name = "United towards victory"
+		ai_chance = { factor = 50 }
+		news_event = { id = iberianews.14 days = 1}
+	create_country_leader = {
+	name = "Primo de Rivera"
+	picture = "cavprim.dds"
+	ideology = fascism_ideology
+	
+	}
+	}
+	}
+country_event = {
+	id = cavhead.2
+	title = "Mola wins the struggle"
+	desc = cavhead.2.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = { 
+		name = "United towards victory"
+		ai_chance = { factor = 50 }
+		news_event = { id = iberianews.15 days = 1}
+	create_country_leader = {
+	name = "Emilio Mola"
+	picture = "cavgen1.dds"
+	ideology = fascism_ideology
+	
+	}
+	}
+	}
+country_event = {
+	id = cavhead.3
+	title = "Onésimo wins the struggle"
+	desc = cavhead.3.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = { 
+		name = "United towards victory"
+		ai_chance = { factor = 50 }
+		news_event = { id = iberianews.16 days = 1}
+	create_country_leader = {
+	name = "Onésimo Redondo"
+	picture = "cavones.dds"
+	ideology = fascism_ideology
+	
+	}	
+	}
+	}

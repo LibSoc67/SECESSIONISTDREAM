@@ -1,0 +1,192 @@
+#####################################################################################################################
+# COMMENTS HAVE BEEN INCLUDED FOR SAKE OF EXPLANATION, CAN BE REMOVED #
+# ID's must not include spaces!
+# Decisions MUST be visible for the AI to execute them, if in doubt, switch tag to the AI country and check if they can see/execute the mission.
+#####################################################################################################################
+andcategory = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
+gen1 = {		#Generic Voluntiers
+
+		icon = generic_form_nation		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	
+	has_war = yes
+	}
+				
+		fire_only_once = yes 
+		days_re_enable = 300
+		
+		
+
+		visible = {		
+		NOT = {
+		OR = {
+		original_tag = ANR
+		original_tag = LAR
+		original_tag = NAF
+		original_tag = GIB
+		original_tag = CEM
+		original_tag = ALA
+		original_tag = PRP
+		original_tag = MNC
+		}
+		}
+			}
+				
+
+		cost = 100	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+		
+			add_manpower = 10000
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 40
+		}
+	}
+	gen2 = {		#Military March
+
+		icon = generic_form_nation		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	
+		
+		}
+		
+		fire_only_once = no #If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 360
+
+		visible = {		
+			
+			
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_war_support=0.05
+			army_experience = 15
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	}
+	gen3 = {		#Com subsidize
+
+		icon = generic_form_nation		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	
+		
+		}
+		
+		fire_only_once = yes #If set to yes, the decision will only appear once, after execution will not appear again.
+		
+
+		visible = {		
+			
+			has_government = communism 
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_stability=0.1
+			add_timed_idea = {
+			idea=subsidize
+			days=50
+			}
+			add_popularity { ideology = communism popularity = 0.05}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10
+		}
+	}
+	gen4 = {		#Dem subsidize
+
+		icon = generic_form_nation		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	
+		
+		}
+		
+		fire_only_once = yes #If set to yes, the decision will only appear once, after execution will not appear again.
+		
+
+		visible = {		
+			has_government = democratic 
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_stability=0.1
+			add_timed_idea = {
+			idea=subsidize
+			days=50
+			}
+			add_popularity { ideology = democratic popularity = 0.05}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10
+		}
+	}
+gen5 = {		#Form HE
+ 
+		icon = generic_form_nation		
+	
+		available = {	
+		NOT = {has_idea = glcpacifism}
+}
+				
+		
+		
+		fire_only_once = no
+		days_re_enable = 
+		
+
+		visible = {		
+		
+		has_government = fascism 
+		
+		}		
+
+		cost = 50	
+		
+		complete_effect = {		
+		add_war_support = 0.06
+
+		
+		}
+		ai_will_do = {	
+			factor = 30
+		}
+	}
+
+	}
+	

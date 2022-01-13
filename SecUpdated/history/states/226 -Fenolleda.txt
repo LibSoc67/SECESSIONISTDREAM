@@ -1,0 +1,21 @@
+state={
+	id=226
+	name="Fenolleda"
+	provinces={
+		19262
+	}
+	history={
+		owner = PRP
+		add_core_of = PRP
+		add_core_of = FNL
+		add_claim_by = OCC
+		
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+	manpower=2532
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+}

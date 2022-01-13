@@ -1,0 +1,9 @@
+
+supply_area={
+	id=5
+	name="Portugalicia"
+	value=16
+	states={
+		97 100 99 98 104 111 102 105 103 107 108 106 109 110 101 
+	}
+}

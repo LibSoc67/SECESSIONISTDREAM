@@ -1,0 +1,21 @@
+
+state={
+	id=50
+	name="Segura"
+	provinces={
+		5624 10380 16455 16483 
+	}
+	history={
+		owner = ADA
+		add_core_of = ADA
+		
+		buildings = {
+			infrastructure = 3
+
+			 
+		}
+	}
+	state_category=pastoral
+	manpower=58920
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,132 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = prsass
+
+country_event = {
+	id = prsass.1
+	title = "Stage an assassination"
+	desc = "In order to provoque a war, we can send a assassin to kill a NPC officer. Now we have to choose who will die." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "The President"
+		ai_chance = { factor = 90 }
+		
+	NPC = {country_event = prsass.2 }
+
+	}
+	option = { 
+		name = "The Prime Minister"
+		ai_chance = { factor = 90 }
+		
+	NPC = {country_event = prsass.3 }
+
+	}
+	option = { 
+		name = "The Army General"
+		ai_chance = { factor = 90 }
+		
+	NPC = {country_event = prsass.4 }
+
+	}
+}
+country_event = {
+	id = prsass.2
+	title = "The Presidents death"
+	desc = "The Parisean rats have killed our great president. We can't let this go unpunished." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "To war"
+		ai_chance = { factor = 90 }
+		
+	create_wargoal = {
+				type = annex_everything
+				target = PRS
+				expire = 0
+		
+				
+			}
+	PRS = {
+	
+	create_wargoal = {
+				type = annex_everything
+				target = NPC
+				expire = 0
+		
+				
+			}
+	}
+	}
+	
+}
+country_event = {
+	id = prsass.3
+	title = "The Prime Ministers death"
+	desc = "The Parisean rats have killed our great prime minister. We can't let this go unpunished." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "To war"
+		ai_chance = { factor = 90 }
+		
+	create_wargoal = {
+				type = annex_everything
+				target = PRS
+				expire = 0
+		
+				
+			}
+	PRS = {
+	
+	create_wargoal = {
+				type = annex_everything
+				target = NPC
+				expire = 0
+		
+				
+			}
+	}
+	}
+	
+}
+country_event = {
+	id = prsass.4
+	title = "The Generals death"
+	desc = "The Parisean rats have killed our great general in head. We can't let this go unpunished." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "To war"
+		ai_chance = { factor = 90 }
+		
+	create_wargoal = {
+				type = annex_everything
+				target = PRS
+				expire = 0
+		
+				
+			}
+	PRS = {
+	
+	create_wargoal = {
+				type = annex_everything
+				target = NPC
+				expire = 0
+		
+				
+			}
+	}
+	}
+	
+}

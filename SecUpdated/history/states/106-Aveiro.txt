@@ -1,0 +1,25 @@
+
+state={
+	id=106
+	name="Aveiro"
+	provinces={
+		862 4741 6671 9669 10359 15626 15686 15714 15745 
+	}
+	history={
+		owner = BEI
+		add_core_of = BEI
+		victory_points = { 4741 7 }
+		buildings = {
+			infrastructure = 6
+			arms_factory = 0
+			industrial_complex	= 1
+			dockyard = 1
+			air_base= 0
+			4741= { naval_base = 2}
+		}
+
+	}
+	state_category = rural
+	manpower=407902
+	buildings_max_level_factor=1.000
+}

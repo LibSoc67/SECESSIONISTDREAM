@@ -1,0 +1,26 @@
+bookmarks = {
+	bookmark = {
+		name = "Non-Latin Countries"
+		desc = "This will be added in a future update, once non-latin countries exist."
+		date = 1936.1.1.13
+		picture = "GFX_select_date_1936"
+		default_country = "---"
+		default = yes
+		
+		
+		
+		
+
+"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+		# minors from DLC ####
+		
+		
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

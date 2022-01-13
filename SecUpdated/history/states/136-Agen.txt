@@ -1,0 +1,28 @@
+
+state={
+	id=136
+	name="Lot Et Garonne"
+
+	history={
+		owner = AQU
+		add_core_of = AQU
+		add_claim_by = OCC
+		victory_points = {
+			1721 3 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 0
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		326 1031 1721 2859 4052 6809 14960 15018 15031 
+	}
+	manpower=145726
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

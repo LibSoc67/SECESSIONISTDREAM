@@ -1,0 +1,26 @@
+state={
+	id=225
+	name="Bailiwick of Guernsey"
+	provinces={
+		17382 
+	}
+	history={
+		owner = JER
+		add_core_of = JER
+		victory_points = {
+			17382 3
+		}
+		
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+	17382 = {
+		naval_base = 2
+		}
+		}
+
+	}
+	manpower=45293
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

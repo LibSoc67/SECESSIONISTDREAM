@@ -1,0 +1,32 @@
+
+state={
+	id=83
+	name="Guipúzcoa"
+	provinces={
+		1760 5955 7254 15256 15307 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=7.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = VAS
+		add_core_of = VAS
+		victory_points = {
+		1587 25
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 1
+			 
+		}
+	}
+	state_category=town
+	manpower=305029
+	buildings_max_level_factor=1.000
+}

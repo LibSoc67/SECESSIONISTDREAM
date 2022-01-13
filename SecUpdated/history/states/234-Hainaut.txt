@@ -1,0 +1,33 @@
+
+state={
+	id=234
+	name="Hainaut"
+	provinces={
+		3415 8370 10446 10466 13506 13559 13590 13630 
+	}
+	history={
+		owner = WLL
+		add_core_of = WLL 
+		victory_points = {
+		8370 15	
+		}
+		victory_points = {
+		10446 3	
+		}
+		victory_points = {
+		13590 3	
+		}
+		victory_points = {
+		13506 2	
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+		}
+
+	}
+	manpower=1003928
+	state_category = large_town
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=36
+	name="Altiplano"
+	resources={
+		rubber=0.000
+		tungsten=4.000
+		steel=5.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+
+	history={
+		owner = MUR
+		add_core_of = MUR
+		buildings = {
+			infrastructure = 4
+
+		}
+
+	}
+
+	provinces={
+		8026 8953 
+	}
+	manpower=64023
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

@@ -1,0 +1,73 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = cavcalunion
+
+# penis
+country_event = {
+	id = cavcalunion.1
+	title = "A union with the Northeners?"
+	desc = "In a suprising turn of events, the northern castilleans have drifted towards a very similar communism to ours. It makes little sense to keep our nation separated any longer. Shall we reunite with them?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Yes!"
+		ai_chance = { factor = 5 }
+		
+		
+
+	CAV = { 
+	annex_country = {
+    target = CAL
+    transfer_troops = yes
+	}
+	country_event = cavcalunion.2
+	}}
+
+	option = { 
+		name = "Never, they are fascists!"
+		ai_chance = { factor = 95 }
+	
+		add_opinion_modifier = { target = CAV modifier = large_decrease }
+		CAV = {
+		country_event = cavcalunion.3
+		add_opinion_modifier = { target = CAL modifier = large_decrease }
+				}
+				
+	add_threat = 1 
+ 
+
+}}
+country_event = {
+	id = cavcalunion.2
+	title = "They have accepted!"
+	desc = "In a suprising turn of events, the southern castilleans have accepted our proposal. We are united and strong!" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Arriba Castilla!"
+		ai_chance = { factor = 5 }
+		
+		
+
+	}}
+country_event = {
+	id = cavcalunion.3
+	title = "They have refused"
+	desc = "As expected, the southern castilleans have rejected our proposal. Those degenerates believe that they are much better than fascists, but the truth is the complete opposite." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Arriba Castilla!"
+		ai_chance = { factor = 5 }
+		
+		
+
+	}}

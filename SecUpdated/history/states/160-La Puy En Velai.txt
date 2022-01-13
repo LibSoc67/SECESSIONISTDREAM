@@ -1,0 +1,28 @@
+
+state={
+	id=160
+	name="La Puy-En-Velai"
+
+	history={
+		owner = AUV
+		add_core_of = AUV
+		add_claim_by = OCC
+		victory_points = {
+			14913 3 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 0
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		5169 9905 10632 14870 14913 
+	}
+	manpower=167262
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

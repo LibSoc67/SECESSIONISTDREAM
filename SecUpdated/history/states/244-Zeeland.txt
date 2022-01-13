@@ -1,0 +1,30 @@
+
+state={
+	id=244
+	name="Zeeland"
+	provinces={
+		4857 5764 8368 9862 13266 13310 13349 13351 
+	}
+	history={
+		owner = ZEE
+		add_core_of = VLD
+		add_core_of = ZEE
+		add_core_of = HLL
+		add_core_of = BRT
+		victory_points = {
+		8368 4	
+		}
+		victory_points = {
+		13349 5	
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+		}
+
+	}
+	manpower=284928
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

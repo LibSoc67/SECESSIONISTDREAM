@@ -1,0 +1,227 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = catspanishism
+
+# penis
+country_event = {
+	id = catspanishism.1
+	title = "Pro-Spanish sentiment rising"
+	desc = "Pro-Spanish sentiment is on the rise in our country, specially in Barcelona. We can act now, and ethnicaly clean our country to protect catalanism, or we can let them be." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We must ethnicaly clean our country!"
+		ai_chance = { factor = 80 }
+			
+
+
+ 6 = {add_manpower = -40000 }
+ 2={ add_manpower = -100000 }
+ 3={ add_manpower = -50000 }
+ 8={ add_manpower = -10000 }
+ 5={ add_manpower = -25000 }
+ 7={ add_manpower = -7000 }
+ 4={ add_manpower = -1000 }
+ 9={ add_manpower = -150 }
+ add_timed_idea = { idea = ethnicalcleaning days = 365} 
+custom_effect_tooltip = "All ethnical spanish countries will dislike us. Both Castillas might come to defend the spaniards."
+	hidden_effect = {CAV = {add_opinion_modifier = { target = CAT modifier = large_decrease }}
+	MDR = {add_opinion_modifier = { target = CAT modifier = large_decrease }}
+	ARA = {add_opinion_modifier = { target = CAT modifier = large_decrease }}
+	CAL = {add_opinion_modifier = { target = CAT modifier = large_decrease }}
+	LAR = {add_opinion_modifier = { target = CAT modifier = large_decrease }}
+	ADA = {add_opinion_modifier = { target = CAT modifier = large_decrease }}
+	EXT = {add_opinion_modifier = { target = CAT modifier = large_decrease }}
+	CEM = {add_opinion_modifier = { target = CAT modifier = large_decrease }}
+	CAB = {add_opinion_modifier = { target = CAT modifier = large_decrease }}
+	CAV = {add_opinion_modifier = { target = CAT modifier = large_decrease }}
+	CAV = {add_opinion_modifier = { target = CAT modifier = large_decrease }}
+	CAV = {country_event = catspanishism.2}
+	CAL = {country_event = catspanishism.3}
+	NAR = {add_opinion_modifier = { target = CAT modifier = large_decrease }}
+	}
+	news_event = { id = iberianews.1 days = 2}
+	}
+	
+	 
+	option = { 
+		name = "Let them be..."
+		ai_chance = { factor = 80 }
+		add_ideas = ethnicalcleaning1	
+
+hidden_effect = { CAV = {country_event = { id = catspanishism.4 days = 82 } }}
+custom_effect_tooltip = "I'm sure those spaniards won't cause any trouble in the future."
+}
+}
+
+####################################################################################################################################################
+
+country_event = {
+	id = catspanishism.2
+	title = "Catalonia is genociding our brothers!"
+	desc = "My dear caudillo, the rising tensions between the catalans and the spanish has culminated in a attempt from the Catalan goverment to ethnicaly clean all of Catalonia! They are massacring our brothers in thousands!" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We must protect our brothers in Catalonia!"
+		ai_chance = { factor = 80 }
+		declare_war_on = {
+				target = CAT
+				type = annex_everything
+			}	
+			custom_effect_tooltip = "Unlocks the Defeating Catalonia decisions"
+set_country_flag = cavatwar
+}
+option = {
+name = "There is nothing we can do."
+		ai_chance = { factor = 20 }
+		add_stability = -0.2
+		add_war_support = -0.5
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.20}
+			add_political_power = -200
+}
+}
+
+####################################################################################################################################################
+
+country_event = {
+	id = catspanishism.3
+	title = "Catalonia is genociding our brothers!"
+	desc = "My dear comarade, the rising tensions between the catalans and the spanish has culminated in a attempt from the Catalan goverment to ethnicaly clean all of Catalonia! They are massacring our brothers in thousands!" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We must protect our brothers in Catalonia!"
+		ai_chance = { factor = 75 }
+		declare_war_on = {
+				target = CAT
+				type = annex_everything
+			}	
+			custom_effect_tooltip = "Unlocks the Defeating Catalonia decisions"
+			set_country_flag = calatwar
+}
+option = {
+name = "There is nothing we can do."
+		ai_chance = { factor = 25 }
+		add_stability = -0.2
+		add_war_support = -0.5
+		add_popularity = {
+			ideology = mlism
+			popularity = -0.20}
+			add_political_power = -200
+}
+}
+
+####################################################################################################################################################
+
+country_event = {
+	id = catspanishism.4
+	title = "A pro-Spanish revolt in Catalonia?"
+	desc = "Pro-Spanish sentiment is on the rise in Barcelona. If we give our blessing, rebels will take control over Barcelona, but then we will have to protect them from the Catalan army, and that will mean war with Catalonia. Should we agree to that plan?"
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+option = { 
+		name = "YES!"
+		ai_chance = { factor = 75 }
+	
+add_timed_idea = { idea = fundingrebels days = 150} 
+add_political_power = -100
+hidden_effect =	{	
+random_list = {
+				66 = {
+		
+	CAT = {country_event = { id = catspanishism.5 days = 2 }  }
+	SPL = {transfer_state = 2
+	add_state_core = 2
+	add_state_core = 3
+	add_state_core = 4
+	add_state_core = 5
+	add_state_core = 6
+	add_state_core = 7
+	add_state_core = 8
+	add_state_core = 9
+	add_ideas = ethnicalcleaning2 }
+	CAV = {puppet = SPL	}
+				}
+				34 = {
+					CAT = {country_event = { id = catspanishism.6 days = 2 } }
+				}
+				
+			}
+
+}
+custom_effect_tooltip = cet_catspanishism1
+}
+
+		
+option = {
+name = "A war with Catalonia is in nones interest."
+		ai_chance = { factor = 25 }
+		hidden_effect = { CAT = {country_event = { id = catspanishism.6 days = 2 } }}
+}
+}
+
+####################################################################################################################################################
+
+country_event = {
+	id = catspanishism.5
+	title = "The Spanish have revolted!"
+	desc = "Yesterday our policeman in Barcelona were overun by pro-Spanish rebels. They now have control over Barcelona. Those rebels are supported by Old Castilla, so if we intervene militarily, they will support them."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+option = { 
+		name = "To war!"
+		ai_chance = { factor = 75 }
+hidden_effect = {news_event = { id = iberianews.5 days = 2}}
+	declare_war_on = {
+				target = SPL
+				type = annex_everything
+			}
+			remove_ideas= {ethnicalcleaning1}		
+CAV = {set_country_flag = cavatwar			
+}}
+		
+option = {
+name = "We must recognize them."
+		ai_chance = { factor = 0 }
+hidden_effect = {news_event = { id = iberianews.5 days = 2}		}
+add_war_support = -0.4
+		add_political_power = -200
+		add_stability = -0.3
+		remove_ideas= {ethnicalcleaning1}	
+}
+}
+
+####################################################################################################################################################
+
+country_event = {
+	id = catspanishism.6
+	title = "A failed Spanish revolt!"
+	desc = "Yesterday our policeman in Barcelona were able to resist the pro-Spanish rebels. We have imprisioned all of the rebels, and killed the bigger heads. We can't truly know if Castilla had anything to do with this."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+option = { 
+		name = "Thanks god"
+		ai_chance = { factor = 75 }
+hidden_effect = {news_event = { id = iberianews.6 days = 2}}
+remove_ideas= {ethnicalcleaning1}
+
+}
+		
+}

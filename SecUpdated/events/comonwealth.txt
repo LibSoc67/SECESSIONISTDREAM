@@ -1,0 +1,145 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = comonwealth
+
+# penis
+country_event = {
+	id = comonwealth.1
+	title = "Ultimatum from Andalucia"
+	desc = "Our economy is very dependant on the Andalucian one. They have used this into their advantatge. If we don't become their subjects they will embargo us, wich would destroy our economy, or maybe even invade us." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	option = { 
+		name = "We will become their subject"
+		ai_chance = { factor = 80 }
+		ADA = {
+		country_event = comonwealth.5
+		add_named_threat = { 
+		threat = 2 
+		name = "First Comonwealth Act"
+		}
+		puppet = EXT
+		
+	
+	}
+}
+ 
+fire_only_once = no
+	option = { 
+		name = "We will refuse!"
+		ai_chance = { factor = 20 }
+	
+		ADA = { country_event =  comonwealth.2
+		add_named_threat = { 
+		threat = 3 
+		name = "First Comonwealth Act failure"
+		}
+				}
+				
+	
+ 
+		EXT = {add_war_support	= 0.1 }
+
+}}
+
+
+
+
+country_event = {
+	id = comonwealth.2
+	title = "Extremadura refuses"
+	desc = "Even tho it seems a really stupid thing to do, they have refused our ultimatum. How do we respond?"
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	option = { 
+		name = "War"
+		ai_chance = { factor = 80 }
+		ADA = { create_wargoal = {
+				type = annex_everything
+				target = EXT
+				expire = 0
+				} 
+				}
+} 
+fire_only_once = no
+	option = { 
+		name = "Embargo"
+		ai_chance = { factor = 20 }
+	
+		EXT = { country_event =  comonwealth.3
+		add_ideas = Embargo
+				}
+}}
+
+
+
+
+
+country_event = {
+	id = comonwealth.3
+	title = "Andalucia is embargoing us!"
+	desc = "Our economy, our people, are going to suffer from this. Maybe it isn't worth it?"
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	option = { 
+		name = "Its not worth it. Let's surrender"
+		ai_chance = { factor = 100 }
+		
+		ADA = { puppet = EXT 
+		country_event = comonwealth.4
+				}
+				EXT = {remove_ideas = embargo}
+} 
+fire_only_once = no
+	option = { 
+		name = "Don't care, didn't ask"
+		ai_chance = { factor = 0 }
+	add_stability = -0.03
+	ADA = { create_wargoal = {
+				type = annex_everything
+				target = EXT
+				expire = 0
+				} 
+				} 
+
+}}
+
+
+country_event = {
+	id = comonwealth.4
+	title = "The embargo has proven efective!"
+	desc = "After Extremadura has realised the disaster consequencies that the embargo would have to their country, they have surrendered to us."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	option = { 
+		name = "Great"
+		ai_chance = { factor = 100 }
+		add_political_power = 100
+	
+}}
+ 
+
+
+country_event = {
+	id = comonwealth.5
+	title = "They have surrendered to us!"
+	desc = "Extremadura is now our subject."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	option = { 
+		name = "Great"
+		ai_chance = { factor = 100 }
+	add_political_power = 100
+}}

@@ -1,0 +1,32 @@
+
+state={
+	id=212
+	name="Vosges"
+	provinces={
+		808 2644 3000 7015 8991 14173 14196 14260 14290 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=14.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = LOR
+		add_core_of = LOR
+		victory_points = { 8991 3 }
+		buildings = {
+			infrastructure = 4
+			arms_factory = 0
+			industrial_complex = 2
+			#dockyard = 
+			air_base = 5
+			# = {naval_base = 9}
+		}
+	}
+	state_category=large_town
+	manpower=376926
+	buildings_max_level_factor=1.000
+}

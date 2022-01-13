@@ -1,0 +1,100 @@
+﻿###########################
+# Vasque Joins Catalan
+###########################
+
+add_namespace = vascat
+
+# penis
+country_event = {
+	id = vascat.1
+	title = "A Catalan invitation"
+	desc = "A diplomat from the nation of Catalonia has arrived at our embassy. He says that the mighty nation of Catalonia has plans to invite us to join their military sphere. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We must accept"
+		ai_chance = { factor = 95 }
+		CAT = { add_to_faction = ROOT }
+	
+}
+	
+	
+	option = { 
+		name = "We will refuse!"
+		ai_chance = { factor = 0 }
+	
+
+		CAT = { 
+		add_opinion_modifier { 
+		target = ROOT
+		modifier = medium_decrease
+		}
+				}
+				
+	
+
+}}
+country_event = {
+	id = vascat.2
+	title = "A Catalan invitation"
+	desc = "A diplomat from the nation of Catalonia has arrived at Toledo. He says that the mighty nation of Catalonia has plans to invite us to join their military sphere. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We must accept"
+		ai_chance = { factor = 95 }
+		CAT = { add_to_faction = CAL }
+	
+}
+	
+	
+	option = { 
+		name = "We will refuse!"
+		ai_chance = { factor = 0 }
+	
+
+		CAT = { 
+		add_opinion_modifier { 
+		target = CAL
+		modifier = medium_decrease
+		}
+				}
+				
+	
+
+}}
+country_event = {
+	id = vascat.3
+	title = "A Catalan invitation"
+	desc = "A diplomat from the nation of Catalonia has arrived at Cagliari. He says that the mighty nation of Catalonia has plans to invite us to join their military sphere. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We must accept"
+		ai_chance = { factor = 95 }
+		CAT = { add_to_faction = SAR }
+	
+}
+	
+	
+	option = { 
+		name = "We will refuse!"
+		ai_chance = { factor = 0 }
+	
+
+		CAT = { 
+		add_opinion_modifier { 
+		target = SAR
+		modifier = medium_decrease
+		}
+				}
+				
+	
+
+}}

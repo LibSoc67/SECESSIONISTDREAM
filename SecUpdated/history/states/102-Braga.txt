@@ -1,0 +1,25 @@
+
+state={
+	id=102
+	name="Braga"
+	provinces={
+		5429 8055 11240 15464 
+	}
+	history={
+		owner = EDM
+		add_core_of = EDM
+		victory_points = { 15464 7 }
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex	= 1
+			dockyard = 0
+			air_base= 0
+			#10423 = { naval_base = 6}
+		}
+
+	}
+	state_category = rural
+	manpower=420291
+	buildings_max_level_factor=1.000
+}

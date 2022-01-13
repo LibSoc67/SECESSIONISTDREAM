@@ -1,0 +1,80 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = pic_anarchy
+
+# penis
+country_event = {
+	id = pic_anarchy.1
+	title = "The LP mob!"
+	desc = pic_anarchy.1.d  
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Death to traitors!"
+		ai_chance = { factor = 100 }
+		PRS = {
+add_threat = 3 
+	}
+		PRS = { puppet = PIR}
+		PIC = {
+				country_event = { 
+				id = pic_anarchy.2 days = 5
+				}
+			}
+		PIR = { 
+			transfer_state = 200
+			add_state_core = 200
+			add_state_core = 201 
+			add_state_core = 202
+			load_oob = PIR
+			
+			}	
+	}
+
+	option = { 
+		name = "We will surrender"
+		ai_chance = { factor = 0 }
+				
+	PIR = { 
+				annex_country = {
+				target = PIC
+				transfer_troops = yes
+								}
+			add_state_core = 200
+			add_state_core = 201 
+			add_state_core = 202
+			load_oob = PIR
+			
+			}
+	
+}}
+country_event = {
+	id = pic_anarchy.2
+	title = "It's time for war!"
+	desc = "These fool revelts think they can stop the mighty Picardian army! With us whoever wants, against us whoever can!" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Movilize the troops"
+		ai_chance = { factor = 90 }
+		PIR = {
+			declare_war_on = {
+				target = PIC
+				type = annex_everything
+			}	
+		}
+		PRS = {
+			declare_war_on = {
+				target = PIC
+				type = annex_everything
+			}	
+		}
+
+	}
+}

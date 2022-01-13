@@ -1,0 +1,29 @@
+
+state={
+	id=275
+	name="Biella-Vercelli"
+	provinces={
+		2111 5835 10262 14829 14900 14938 
+	}
+	history={
+		owner = PIE
+		add_core_of = PIE
+		victory_points = {
+		14829 3	
+		}
+		victory_points = {
+		5835 2	
+		}
+		
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+
+		}
+
+	}
+	state_category=rural
+	manpower=269835
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,303 @@
+#####################################################################################################################
+# COMMENTS HAVE BEEN INCLUDED FOR SAKE OF EXPLANATION, CAN BE REMOVED #
+# ID's must not include spaces!
+#####################################################################################################################
+andcategory = {		
+	priority = 9		
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		always = yes
+	}
+	visible = {		
+	}
+}
+cercle_category= {		
+	priority = 200
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		
+	}
+	visible = {	
+		has_completed_focus = cenfoc1
+	}
+}
+cercle_category2= {		
+	priority = 200
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		always = yes
+	}
+	visible = {	
+	has_completed_focus = cenfoc2
+	}
+}
+msn_category= {		
+	priority = 200
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		always = yes
+	}
+	visible = {	
+	has_completed_focus = cenfoc3
+	}
+}
+msn_category2= {		
+	priority = 200
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		always = yes
+	}
+	visible = {		
+	has_completed_focus = cenfoc4
+	}
+}
+nat_marx_category = {
+	priority = 200
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		always = yes
+	}
+	visible = {		
+	has_completed_focus = cenfoc6
+	}
+}
+nat_marx_category1 = {
+	priority = 200
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		always = yes
+	}
+	visible = {		
+	has_completed_focus = cenfoc7
+	}
+}
+spl1 = {		
+	priority = 100
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		always = yes
+	}
+	visible = {		
+	}
+}
+healocc = {		
+	priority = 100
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		always = yes
+	}
+	visible = {		
+	has_completed_focus = occfoc27
+	}
+}
+cavatwarcat = {		
+	priority = 1000		
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		always = yes
+	}
+	visible = {	
+TAG = CAV	
+has_country_flag = cavatwar
+	}
+}
+calatwarcat = {		
+	priority = 1000		
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		always = yes
+	}
+	visible = {	
+TAG = CAL	
+has_country_flag = calatwar
+	}
+}
+resourcescategory = {		
+	priority = 8		
+	icon = generic_prospect_for_resources	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		always = yes
+	}
+	visible = {		
+	}
+}
+amnesty = {		
+	priority = 11		
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		always = yes
+	}
+	visible = {		
+	}
+}
+overthrow = {		
+	priority = 112	
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		always = yes
+	}
+	visible = {		
+	}
+}
+glcinf = {		
+	priority = 112	
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		always = yes
+	}
+	visible = {		
+	}
+}
+glccore = {		
+	priority = 100	
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		always = yes
+	}
+	visible = {	
+has_completed_focus = glc22	
+tag = GLC
+	}
+}
+glcpaganism = {		
+	priority = 50	
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		always = yes
+	}
+	visible = {	
+has_completed_focus = glc27	
+tag = GLC
+	}
+}
+reformcav = {		
+	priority = 150	
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		always = yes
+	}
+	visible = {	
+has_completed_focus = dreamofabigcastille
+tag = CAV	
+	}
+}
+glcmilit = {		
+	priority = 150	
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		always = yes
+	}
+	visible = {	
+#has_completed_focus = dreamofabigcastille
+tag = GLC	
+	}
+}
+occpuppeting = {		
+	priority = 25
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		always = yes
+	}
+	visible = {	
+has_completed_focus = occfoc45
+tag = OCC	
+	}
+}
+sotupg = {		
+	priority = 99		
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		always = yes
+	}
+	visible = {		
+	}
+}
+sotbonus = {		
+	priority = 100		
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		always = yes
+	}
+	visible = {	
+#has_country_flag = sot1done	
+	}
+}
+lan_takeover_group = {		
+	priority = 101		
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		always = yes
+	}
+	visible = {	
+#has_country_flag = sot1done	
+	}
+}
+lan_join_factions = {		
+	priority = 25
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		always = yes
+	}
+	visible = {	
+	has_completed_focus = occfoc75
+	}
+}
+ada_civil_war = {		
+	priority = 2000
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		original_tag = ADA
+	}
+	visible = {	
+	original_tag = ADA
+	}
+}
+prs_militias = {		
+	priority = 1
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		original_tag = PRS
+	}
+	visible = {	
+	original_tag = PRS
+	has_completed_focus = prsfoc21
+	}
+}
+prs_liberation = {		
+	priority = 50
+	icon = generic_formable_nations	
+	picture = GFX_decision_cat_generic_scandinavia
+	allowed = {
+		original_tag = PRS
+	}
+	visible = {	
+	original_tag = PRS
+	has_completed_focus = prsfoc24
+	}
+}

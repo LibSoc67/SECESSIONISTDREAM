@@ -1,0 +1,73 @@
+characters={
+
+theorist_army_generic_SP={
+		name= "Army Focus"
+		portraits={
+			army={
+				
+				small="GFX_idea_SPR_anarchist_council"
+			}
+		}	
+		advisor={
+			slot = theorist
+			idea_token = gerd_von_rundstedt
+			allowed = {
+				
+			}
+			traits = {
+			military_theorist	
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+		}
+theorist_air_generic_SP={
+		name= "Air Focus"
+		portraits={
+			army={
+				
+				small="GFX_idea_SPR_anarchist_council"
+			}
+		}	
+		advisor={
+			slot = theorist
+			idea_token = gerd_von_rundstedt
+			allowed = {
+				
+			}
+			traits = {
+			air_warfare_theorist	
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+		}
+theorist_navy_generic_SP={
+		name= "Naval Focus"
+		portraits={
+			army={
+				
+				small="GFX_idea_SPR_anarchist_council"
+			}
+		}	
+		advisor={
+			slot = theorist
+			idea_token = gerd_von_rundstedt
+			allowed = {
+				
+			}
+			traits = {
+			naval_theorist	
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+		}
+		}
+	

@@ -1,0 +1,33 @@
+
+state={
+	id=3
+	name="Catalunya Central"
+	provinces={
+		1866 7657 8071 9172 10772 15743 15809 
+	}
+	resources={
+		steel=12.000
+	}
+
+	history={
+		owner = CAT
+		add_core_of = CAT
+		victory_points = {
+		15743 5 
+		}
+		victory_points = {
+		8071 1
+		}
+		victory_points = {
+		9172 7
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 2
+		}
+	}
+	state_category=town
+	manpower=431402
+	buildings_max_level_factor=1.000
+}

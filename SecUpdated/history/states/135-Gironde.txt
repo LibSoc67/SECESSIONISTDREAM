@@ -1,0 +1,27 @@
+
+state={
+	id=135
+	name="Gironde"
+	provinces={
+		2133 3327 3728 4147 4586 5258 6182 6738 7097 8641 10159 14764 14812 14869 14898 14923 14935 
+	}
+	history={
+		owner =AQU
+		add_core_of =AQU
+		add_claim_by = OCC
+		victory_points = {
+		8641 25
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 5
+			8641 = {naval_base = 4}
+		}
+	}
+	state_category=city
+	manpower=850567
+	buildings_max_level_factor=1.000
+}

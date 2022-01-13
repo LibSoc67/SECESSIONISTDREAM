@@ -1,0 +1,33 @@
+
+state={
+	id=116
+	name="Setúbal"
+	provinces={
+		8043 9620 10774 11066 16179 16185 16224 16250 16320 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=12.000
+		oil=21.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = ALE
+		add_core_of = ALE
+		victory_points = { 9620 9 }
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex	= 1
+			dockyard = 0
+			air_base= 2
+			9620= { naval_base = 4}
+		}
+
+	}
+	state_category = town
+	manpower=461294
+	buildings_max_level_factor=1.000
+}

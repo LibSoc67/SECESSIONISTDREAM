@@ -1,0 +1,29 @@
+
+state={
+	id=38
+	name="Alto Alzmanzora"
+	provinces={
+		82 3517 3577 9233 9633 16525 16578 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=5.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = ADA
+		add_core_of = ADA
+		add_core_of = GRA
+		
+		buildings = {
+			infrastructure = 4
+
+		}
+	}
+	state_category=pastoral
+	manpower=102393
+	buildings_max_level_factor=1.000
+}

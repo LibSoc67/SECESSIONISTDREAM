@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=60
+	name="Dodecanese"
+	provinces={
+		17483 17497 17906 17915 17956 17994 18074 18083 18140 18409 18514 18541 18691 18699 18969 18975 18976 
+	}
+	naval_terrain=water_fjords
+	weather={
+	}
+}

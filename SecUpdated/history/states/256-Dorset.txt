@@ -1,0 +1,10 @@
+state={
+	id=256
+	name="Dorset"
+	provinces={
+		7736 10347 13358 13388 13401 
+	}
+	manpower=235906
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

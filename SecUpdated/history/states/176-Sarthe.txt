@@ -1,0 +1,26 @@
+
+state={
+	id=176
+	name="Sarthe"
+	provinces={
+		6586 7215 7861 8353 8763 9729 14099 14160 14208 
+	}
+	history={
+		owner = LOI
+		add_core_of = LOI
+		victory_points = {
+		6586 7
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+			#dockyard = 
+			#air_base = 
+			# = {naval_base = 4}
+		}
+	}
+	state_category = town
+	manpower=388519
+	buildings_max_level_factor=1.000
+}

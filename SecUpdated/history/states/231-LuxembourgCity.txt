@@ -1,0 +1,24 @@
+
+state={
+	id=231
+	name="Luxembourg City"
+	provinces={
+		3693 13899 
+	}
+	history={
+		owner = LXM
+		add_core_of = LXM
+		victory_points = {
+		13899 12	
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 1
+			industrial_complex = 1
+		}
+
+	}
+	manpower=150192
+	state_category = town
+	buildings_max_level_factor=1.000
+}

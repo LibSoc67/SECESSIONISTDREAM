@@ -1,0 +1,14 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_ideology_anarchy_group"
+		texturefile = "gfx/interface/ideologies/anarchy_group.dds"			
+	}
+	SpriteType = {
+		name = "GFX_ideology_mutualism"
+		texturefile = "gfx/interface/ideologies/mutualism.dds"			
+	}
+	SpriteType = {
+		name = "GFX_ideology_mlism"
+		texturefile = "gfx/interface/ideologies/mlism.dds"			
+	}
+}

@@ -1,0 +1,27 @@
+
+state={
+	id=251
+	name="Overijssel"
+	provinces={
+		4726 4738 7608 10768 13010 13044 13085 
+	}
+	history={
+		owner = GRL
+		add_core_of = GRL
+		victory_points = {
+		4726 12	
+		}
+		victory_points = {
+		10768 12	
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 2
+		}
+
+	}
+	manpower=782384
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

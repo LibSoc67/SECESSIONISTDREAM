@@ -1,0 +1,24 @@
+
+state={
+	id=240
+	name="Southern Limburg"
+	provinces={
+		1209 2622 3269 6729 13441 13467 13498 
+	}
+	history={
+		owner = VLD
+		add_core_of = VLD 
+		victory_points = {
+		6729 5
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 2
+		}
+
+	}
+	manpower=368372
+	state_category = town
+	buildings_max_level_factor=1.000
+}

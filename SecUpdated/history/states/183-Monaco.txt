@@ -1,0 +1,25 @@
+state={
+	id=183
+	name="Mónaco"
+	provinces={
+		15325 
+	}
+	history={
+		owner = MNC
+		add_core_of = MNC
+		victory_points = {
+		15325 4
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 1
+			#dockyard = 
+			air_base = 1
+			15325 = {naval_base = 4}
+		}
+	}
+	state_category = rural
+	manpower=21392
+	buildings_max_level_factor=1.000
+}

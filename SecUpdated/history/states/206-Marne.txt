@@ -1,0 +1,30 @@
+
+state={
+	id=206
+	name="Marne"
+
+	history={
+		owner = CMP
+		add_core_of = CMP
+		victory_points = {
+			3314 4 
+		}
+		victory_points = {
+			994 10 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+
+	}
+
+	provinces={
+		994 2838 3314 3536 4957 5569 9003 11235 13922 13952 14009 14024 
+	}
+	manpower=410238
+	buildings_max_level_factor=2.000
+	state_category=large_town
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=114
+	name="Évora"
+
+	history={
+		owner = ALE
+		add_core_of = ALE
+		victory_points = {
+			5082 9 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 0
+			air_base = 0
+
+		}
+
+	}
+
+	provinces={
+		5082 7265 8786 8826 11081 16251 16268 16289 
+	}
+	manpower=125928
+	buildings_max_level_factor=1.000
+	state_category=town
+}

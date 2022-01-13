@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=58
+	name="Crete Coast"
+	provinces={
+		17653 17858 17863 17864 17900 18203 18259 18362 18369 18459 18626 18632 18990 18998 
+	}
+	naval_terrain=water_fjords
+	weather={
+	}
+}

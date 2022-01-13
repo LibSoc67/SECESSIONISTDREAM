@@ -1,0 +1,23 @@
+
+state={
+	id=74
+	name="Zafra"
+
+	history={
+		owner = EXT
+		add_core_of = EXT
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		3165 3802 4828 5087 8329 16298 16304 16347 
+	}
+	manpower=94302
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

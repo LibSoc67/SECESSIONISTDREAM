@@ -1,0 +1,583 @@
+characters={
+	OCC_pierre_deffontaines={
+		name="Pierre Deffontaines"
+		portraits={
+			civilian={
+				large="gfx/leaders/OCC/occ1.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	OCC_the_council={
+		name="The Council"
+		portraits={
+			civilian={
+				large="gfx/leaders/OCC/occneu1.dds"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	OCC_aimable_courbet={
+		name="Aimable Courbet"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_4"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ war_industrialist financial_expert }
+			expire="1947.1.1.12"
+			id=-1
+		}
+	}
+	OCC_adolphe_guillaumat={
+		name="Adolphe Guillaumat"
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=mutualism
+			traits={ ideological_crusader }
+			expire="1945.1.1.12"
+			id=-1
+		}
+	}
+	OCC_hubert_pellissier={
+		name="Hubert Péllissier"
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			traits={ fortification_engineer }
+			expire="1942.1.1.12"
+			id=-1
+		}
+	}
+	############################### GENERALS ###############################
+	OCC_samuel_payet={
+		name="Samuel Payet"
+		portraits={
+			army={
+				small="GFX_idea_OCC_gen1"
+			}
+			army={
+				large="gfx/leaders/OCC/occgen1.dds"
+			}
+		}
+		field_marshal={
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+			traits = {offensive_doctrine}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = OCC_samuel_payet
+			allowed = {
+				original_tag = OCC
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+			}
+	}
+	OCC_lucien_giresse={
+		name="Lucien Giresse"
+		portraits={
+			army={
+				small="GFX_idea_OCC_gen4"
+			}
+			army={
+				large="gfx/leaders/OCC/occgen4.dds"
+			}
+		}
+		field_marshal={
+			traits={ war_hero organisational_leader}
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+		advisor={
+			slot = army_chief
+			idea_token = OCC_lucien_giresse
+			allowed = {
+				original_tag = OCC
+			}
+			traits = {
+				army_chief_organizational_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+			}
+	}
+	OCC_gabryel_bibeau={
+		name="Gabryel Bibeau"
+		portraits={
+			army={
+				small="GFX_idea_OCC_gen2"
+			}
+			army={
+				large="gfx/leaders/OCC/occgen2.dds"
+			}
+		}
+		corps_commander={
+			traits={ harsh_leader skilled_staffer }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+		advisor={
+			slot = high_command
+			idea_token = OCC_gabryel_bibeau
+			ledger = army
+			allowed = {
+				original_tag = OCC
+			}
+			traits = {
+				army_logistics_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+			}
+	}
+	OCC_michel_bonhomme={
+		name="Michel Bonhomme"
+		portraits={
+			army={
+				small="GFX_idea_OCC_gen3"
+			}
+			army={
+				large="gfx/leaders/OCC/occgen3.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader panzer_expert }
+			skill=4
+			attack_skill=5
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+		advisor={
+			slot = high_command
+			idea_token = OCC_michel_bonhomme
+			ledger = army
+			allowed = {
+				original_tag = OCC
+			}
+			traits = {
+				army_armored_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+			}
+		
+	}
+	OCC_denis_leger={
+		name="Denis Leger"
+		portraits={
+			army={
+				small="GFX_idea_OCC_gen5"
+			}
+			army={
+				large="gfx/leaders/OCC/occgen5.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	OCC_jean_moulin={
+		name="Jean Moulin"
+		portraits={
+			army={
+				small="GFX_idea_OCC_gen6"
+			}
+			army={
+				large="gfx/leaders/OCC/occgen6.dds"
+			}
+		}
+		corps_commander={
+			traits={ commando }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+		}
+		advisor={
+			slot = high_command
+			idea_token = OCC_jean_moulin
+			ledger = army
+			allowed = {
+				original_tag = OCC
+			}
+			traits = {
+				army_commando_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+			}
+	}
+	OCC_jeanfransois_darlan={
+		name="Jean-François Darlan"
+		portraits={
+			army={
+				small="GFX_idea_OCC_wat"
+			}
+			army={
+				large="gfx/leaders/OCC/occwat1.dds"
+			}
+		}
+		navy_leader={
+			traits={ craven superior_tactician }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	############################### ADVISORS ###############################
+	
+	
+	OCC_adv1={
+	name="Adrien Barbet"
+		portraits={
+			army={
+				small="GFX_idea_occadv1"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = OCC_adv1
+			name  = "Adrien Barbet"
+				available  = {
+					
+				}
+				available = {
+				has_completed_focus = occfoc4
+			}	
+				allowed  = {
+					original_tag  = OCC
+					
+				}
+				traits  = {
+					industry_reformer 
+				}
+		}
+		
+	}
+	
+	
+	
+	OCC_adv2={
+		advisor={
+			slot = political_advisor
+			idea_token = OCC_adv2
+			name  = "Romain De la Cour"
+				available = {
+				has_completed_focus = occfoc4
+			}
+				allowed  = {
+					original_tag  = OCC
+				}
+				traits  = {
+					social_reformer 
+				}
+		}
+		name="Romain De la Cour"
+		portraits={
+			army={
+				small="GFX_idea_occadv2"
+			}
+		}
+	}
+	
+	OCC_adv3={
+		advisor={
+			slot = political_advisor
+			idea_token = OCC_adv3
+			name  = "Nolan Plessis"
+				available  = {
+					has_completed_focus  = occfoc4 
+				}
+				allowed  = {
+					original_tag  = OCC
+					
+				}
+				traits  = {
+					occ_nationalist 
+				}
+		}
+		name="Nolan Plessis"
+		portraits={
+			army={
+				small="GFX_idea_occadv3"
+			}
+		}
+	}
+	
+	OCC_adv4={
+		advisor={
+			slot = political_advisor
+			idea_token = OCC_adv4
+			name  = "Mehdi Thibaut"
+				available  = {
+					has_completed_focus  = occfoc4 
+				}
+				allowed  = {
+					original_tag  = OCC
+					
+				}
+				traits  = {
+					occ_miner 
+				}
+		}
+		name="Mehdi Thibaut"
+		portraits={
+			army={
+				small="GFX_idea_occadv4"
+			}
+		}
+	}
+	OCC_adv5={
+		advisor={
+			slot = political_advisor
+			idea_token = OCC_adv5
+			name  = "Zcx"
+				available  = {
+					has_completed_focus  = occfoc3 
+				}
+				allowed  = {
+					original_tag  = OCC
+					
+				}
+				traits  = {
+					shadow_1 
+				}
+		}
+		name="Zcx"
+		portraits={
+			army={
+				small="GFX_idea_advcatar"
+			}
+		}
+	}
+	OCC_adv6={
+		advisor={
+			slot = political_advisor
+			idea_token = OCC_adv6
+			name  = "elC"
+				available  = {
+					has_completed_focus  = occfoc3 
+				}
+				allowed  = {
+					original_tag  = OCC
+					
+				}
+				traits  = {
+					shadow_2 
+				}
+		}
+		name="elC"
+		portraits={
+			army={
+				small="GFX_idea_advcatar"
+			}
+		}
+	}
+	OCC_adv7={
+		advisor={
+			slot = political_advisor
+			idea_token = OCC_adv7
+			name  = "Tfb"
+				available  = {
+					has_completed_focus  = occfoc3 
+				}
+				allowed  = {
+					original_tag  = OCC
+					
+				}
+				traits  = {
+					shadow_3 
+				}
+		}
+		name="Tfb"
+		portraits={
+			army={
+				small="GFX_idea_advcatar"
+			}
+		}
+	}
+	OCC_adv8={
+		advisor={
+			slot = political_advisor
+			idea_token = OCC_adv8
+			name  = "gKB"
+				available  = {
+					has_completed_focus  = occfoc3 
+				}
+				allowed  = {
+					original_tag  = OCC
+					
+				}
+				traits  = {
+					shadow_4 
+				}
+		}
+		name="gKB"
+		portraits={
+			army={
+				small="GFX_idea_advcatar"
+			}
+		}
+	}
+	############################### THEORISTS ###############################
+	OCC_occ_theo_air={
+		advisor={
+			slot = theorist
+			idea_token = occ_theo_air
+			ledger  = army 
+				name  = "Conselh de l'aire"
+				allowed  = {
+					
+					or  = {
+						original_tag  = OCC
+						original_tag  = AQU
+						original_tag  = AUV
+						original_tag  = PRO
+						original_tag  = RHO
+						original_tag  = PEI
+						original_tag  = LIM
+						original_tag  = LAN
+					}
+				}
+				research_bonus  = {
+					air_doctrine  = 0.100
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="Conselh de l'aire"
+		portraits={
+			army={
+				small="GFX_idea_SPR_anarchist_council"
+			}
+		}
+	}
+	OCC_occ_theo_wat={
+		advisor={
+			slot = theorist
+			idea_token = occ_theo_wat
+			ledger  = army 
+				name  = "Conselh de la marina"
+				allowed  = {
+					
+					or  = {
+						original_tag  = OCC
+						original_tag  = AQU
+						original_tag  = AUV
+						original_tag  = PRO
+						original_tag  = RHO
+						original_tag  = PEI
+						original_tag  = LIM
+						original_tag  = LAN
+					}
+				}
+				research_bonus  = {
+					naval_doctrine  = 0.100
+				}
+				traits = { naval_theorist }
+		}
+		name="Conselh de la marina"
+		portraits={
+			army={
+				small="GFX_idea_SPR_anarchist_council"
+			}
+		}
+	}
+	OCC_occ_theo_land={
+		advisor={
+			slot = theorist
+			idea_token = occ_theo_land
+			ledger  = army 
+				name  = "Conselh militar de l'armada de tèrra"
+				allowed  = {
+					
+					or  = {
+						original_tag  = OCC
+						original_tag  = AQU
+						original_tag  = AUV
+						original_tag  = PRO
+						original_tag  = RHO
+						original_tag  = PEI
+						original_tag  = LIM
+						original_tag  = LAN
+					}
+				}
+				research_bonus  = {
+					land_doctrine  = 0.100
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="Conselh militar de l'armada de tèrra"
+		portraits={
+			army={
+				small="GFX_idea_SPR_anarchist_council"
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,462 @@
+﻿focus_tree = {
+
+	id = auv_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+				tag = AUV
+		}
+	}
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 0 }
+shared_focus = occwrlfoc1
+shared_focus = occwrlfoc2
+shared_focus = occwrlfoc16
+focus = {
+		id = auvfoc1
+		icon = GFX_focus_auvism
+		x = 12
+		y = 0
+ 	ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		
+		mutually_exclusive = {focus = occwrlfoc2 focus = occwrlfoc1} 
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		OCC = {add_opinion_modifier = { target = ROOT modifier = small_decrease}}
+		CEN = {add_opinion_modifier = { target = ROOT modifier = small_decrease}}
+		add_stability = 0.05
+		add_war_support = 0.05
+			}
+		}
+focus = {
+		id = auvfoc2
+		icon = GFX_focus_ger_reichskommisariats
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = auvfoc1
+		prerequisite = { focus = auvfoc1 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_political_power = 150
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.10}
+			}
+		}
+focus = {
+		id = auvfoc3
+		icon = GFX_focus_fascist_indoctrination
+		x = -1
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = auvfoc2
+		prerequisite = { focus = auvfoc2 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_ideas=auvfas1
+			}
+		}
+focus = {
+		id = auvfoc4
+		icon = GFX_focus_antioccfra
+		x = 1
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = auvfoc2
+		prerequisite = { focus = auvfoc2 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		remove_ideas = occism 
+		remove_ideas = fraism
+		add_war_support = 0.05  
+			}
+		}
+focus = {
+		id = auvfoc5
+		icon = GFX_focus_attack_occ
+		x = 3
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = auvfoc2
+		prerequisite = { focus = auvfoc2 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		custom_effect_tooltip = cet_auvfoc5
+		hidden_effect = {
+		163 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6895
+							instant_build = yes
+						}}
+		163 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 14964
+							instant_build = yes
+						}}
+		163 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 14912
+							instant_build = yes
+						}}
+		163 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 2747
+							instant_build = yes
+						}}
+		160 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9905
+							instant_build = yes
+						}}
+		160 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 5169
+							instant_build = yes
+						}}
+		160 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 10632
+							instant_build = yes
+						}}
+		
+		
+		
+		}
+			}
+		}
+	focus = {
+		id = auvfoc6
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = -1
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = auvfoc4
+		prerequisite = { focus = auvfoc3 }
+		prerequisite = { focus = auvfoc4 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_state_core = 159
+		add_state_core = 153
+		add_state_core = 154
+		add_state_core = 155
+		add_state_core = 156
+		add_state_core = 157
+		add_state_core = 158
+		custom_effect_tooltip = cet_auvfoc6
+		hidden_effect = {
+		set_cosmetic_tag = form_rhoauv 
+			}  }
+		}
+	focus = {
+		id = auvfoc7
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = auvfoc6
+		prerequisite = { focus = auvfoc6 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		declare_war_on = {
+				target = RHO
+				type = annex_everything
+			}	  }
+		}
+	focus = {
+		id = auvfoc8
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = -2
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = auvfoc6
+		prerequisite = { focus = auvfoc6 }
+		available = {
+		159 = {is_owned_and_controlled_by = AUV}
+		CAV = {
+			AND = {
+				exists = yes
+				has_government = fascism
+		} 
+		}
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		CAV = {country_event = auvcav.1}
+		}
+		}
+	focus = {
+		id = auvfoc9
+		icon = GFX_focus_generic_manpower
+		x = 2
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = auvfoc6
+		prerequisite = { focus = auvfoc6 }
+		available = {
+		
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_ideas = auvfas2
+		}
+		}
+	focus = {
+		id = auvfoc10
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = auvfoc7
+		prerequisite = { focus = auvfoc7 }
+		available = {
+		custom_trigger_tooltip ={
+		tooltip = "ctt_auvfoc10"
+		153 = {is_owned_and_controlled_by = AUV}
+		154 = {is_owned_and_controlled_by = AUV}
+		156 = {is_owned_and_controlled_by = AUV}
+		155 = {is_owned_and_controlled_by = AUV}
+		157 = {is_owned_and_controlled_by = AUV}
+		159 = {is_owned_and_controlled_by = AUV}
+				}}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_political_power = 150
+		add_war_support = 0.20
+		add_stability = 0.1
+		}
+		}
+		focus = {
+		id = auvfoc11
+		icon = GFX_focus_attack_france
+		x = -3
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = auvfoc2
+		prerequisite = { focus = auvfoc2 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		custom_effect_tooltip = cet_auvfoc11
+		hidden_effect = {
+		164 = { add_building_construction = {
+							type = bunker
+							level = 4
+							province = 3588
+							instant_build = yes
+						}}
+		164 = { add_building_construction = {
+							type = bunker
+							level = 4
+							province = 3439
+							instant_build = yes
+						}}
+		164 = { add_building_construction = {
+							type = bunker
+							level = 4
+							province = 6508
+							instant_build = yes
+						}}
+		164 = { add_building_construction = {
+							type = bunker
+							level = 4
+							province = 8830
+							instant_build = yes
+						}}
+		164 = { add_building_construction = {
+							type = bunker
+							level = 4
+							province = 5666
+							instant_build = yes
+						}}
+		161 = { add_building_construction = {
+							type = bunker
+							level = 4
+							province = 14775
+							instant_build = yes
+						}}				
+		
+		
+		
+		
+		
+		}
+			}
+		}
+	}

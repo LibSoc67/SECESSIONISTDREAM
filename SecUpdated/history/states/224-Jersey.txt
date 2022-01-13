@@ -1,0 +1,28 @@
+state={
+	id=224
+	name="Jérri"
+	provinces={
+		17383 
+	}
+	history={
+		owner = JER
+		add_core_of = JER
+		victory_points = {
+			17383 4
+		}
+		
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			dockyard = 1
+			air_base = 5
+17383 = {
+		naval_base = 4
+		}
+		}
+
+	}
+	manpower=81938
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

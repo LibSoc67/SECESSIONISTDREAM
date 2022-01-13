@@ -1,0 +1,35 @@
+
+state={
+	id=197
+	name="Val d'Oise"
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=3.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+
+	history={
+		owner = PRS
+		add_core_of = PRS
+		victory_points = {
+			13903 2 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 0
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		1786 6827 13877 13903 13940 
+	}
+	manpower=350847
+	buildings_max_level_factor=2.000
+	state_category=rural
+}

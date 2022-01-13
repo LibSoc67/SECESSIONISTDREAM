@@ -1,0 +1,32 @@
+
+state={
+	id=18
+	name="Conflent"
+	provinces={
+		2007 5276 8795 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=7.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = PRP
+		add_core_of = PRP 
+add_claim_by = OCC
+		victory_points = {
+		5276 1	
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			 
+		}
+	}
+	state_category=rural
+	manpower=83103
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,22 @@
+
+state={
+	id=35
+	name="Noroeste"
+
+	history={
+		owner = MUR
+		add_core_of = MUR
+		buildings = {
+			infrastructure = 4
+
+		}
+
+	}
+
+	provinces={
+		2174 2368 3790 16490 
+	}
+	manpower=56203
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

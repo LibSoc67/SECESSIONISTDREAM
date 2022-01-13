@@ -1,0 +1,35 @@
+
+state={
+	id=248
+	name="North Holland"
+	provinces={
+		1695 7197 7653 9786 12977 13048 13080 13084 13122 17374 
+	}
+	history={
+		owner = HLL
+		add_core_of = HLL
+		victory_points = {
+		13084 50	
+		}
+		victory_points = {
+		13080 10
+		}
+		victory_points = {
+		13122 7
+		}
+		buildings = {
+			infrastructure = 9
+			arms_factory = 2
+			dockyard = 1
+			industrial_complex = 5
+			air_base = 7
+			13084 = {
+				naval_base = 9
+			}
+		}
+
+	}
+	manpower=1789321
+	state_category = megalopolis
+	buildings_max_level_factor=1.000
+}

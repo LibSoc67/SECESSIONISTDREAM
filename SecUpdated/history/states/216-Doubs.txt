@@ -1,0 +1,24 @@
+
+state={
+	id=216
+	name="Doubs"
+	provinces={
+		3144 4879 5245 14444 14467 14506 
+	}
+	history={
+		owner = FCO
+		add_core_of = FCO
+		victory_points = { 14506 7 }
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			#dockyard = 
+			air_base = 4
+			# = {naval_base = 9}
+		}
+	}
+	state_category=town
+	manpower=304812
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=192
+	name="Cher"
+resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=7.000
+		oil=0.000
+		chromium=15.000
+		aluminium=14.000
+	}
+	history={
+		owner = CEN
+		add_core_of = CEN
+		victory_points = { 986 4 }
+		buildings = {
+			infrastructure = 6
+			arms_factory = 0
+			industrial_complex = 2
+			air_base = 3
+
+		}
+
+	}
+
+	provinces={
+		986 6625 6746 8565 10573 14422 
+	}
+	manpower=288695
+	buildings_max_level_factor=1.000
+	state_category=town
+}

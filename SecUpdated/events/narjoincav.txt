@@ -1,0 +1,44 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = narjoincav
+
+# penis
+country_event = {
+	id = narjoincav.1
+	title = "Pressure from Castilla"
+	desc = "Castilla is preasuring us to join their military sphere. Shall we join?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We must accept"
+		ai_chance = { factor = 95 }
+		CAV = { add_to_faction = NAR }
+		add_popularity = {
+    ideology = fascism
+    popularity = 0.1
+
+}
+}
+	
+	
+	option = { 
+		name = "We will refuse!"
+		ai_chance = { factor = 5 }
+	
+
+		CAV = { create_wargoal = {
+				type = puppet_wargoal_focus
+				target = NAR
+				expire = 4
+				} 
+				}
+				
+	add_threat = 3 
+ 
+		NAR = {add_war_support	= 0.2 }
+
+}}

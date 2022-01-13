@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=24
+	name="Algerian Coast"
+	provinces={
+		17493 17991 18020 18046 18251 18518 18533 18622 18629 18782 18978 18988 18994 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

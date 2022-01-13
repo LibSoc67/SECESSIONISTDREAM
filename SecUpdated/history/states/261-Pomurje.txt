@@ -1,0 +1,21 @@
+state={
+	id=261
+	name="Pomurje"
+	provinces={
+		1125 2220 4862 8354 14591 
+	}
+	history = {
+	owner = MRP
+	add_core_of = MRP
+
+	}
+	buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex	= 1
+
+		}
+	manpower= 114397
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

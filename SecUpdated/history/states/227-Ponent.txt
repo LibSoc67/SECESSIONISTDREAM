@@ -1,0 +1,23 @@
+
+state={
+	id=227
+	name="Ponente"
+	provinces={
+		681 9791 10045 11027 16449 
+	}
+	history={
+		owner = VAL
+		add_core_of = VAL
+		victory_points = {
+		9791 3	
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+		}
+
+	}
+	manpower=124982
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

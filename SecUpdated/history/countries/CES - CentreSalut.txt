@@ -1,0 +1,144 @@
+﻿capital = 193
+
+# Starting tech
+set_technology = {
+	gw_artillery = 1
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+			interwar_antiair = 1
+			motorised_infantry = 1
+	gwtank_chassis		
+	basic_light_tank_chassis = 1
+	early_fighter = 1
+	fighter1 = 1
+	tactical_bomber1 = 1
+	CAS1 = 1
+	formation_flying = 1
+	synth_oil_experiments = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+}
+
+#recruit_character = 
+
+set_research_slots = 3
+set_convoys = 20
+
+1939.1.1 = {
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	set_technology = {
+		tech_support = 1
+		tech_recon = 1
+		support_weapons = 1
+		gw_artillery = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+create_equipment_variant = {
+		name = "IEP I"
+		type = light_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_auto_cannon
+			turret_type_slot = tank_light_two_man_tank_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 3
+			tank_nsb_armor_upgrade = 2
+		}
+		icon = "gfx/interface/technologies/ger_imp_light_tank.dds"
+	}
+set_politics = {
+	ruling_party = fascism
+	last_election = "1935.6.4"
+	election_frequency = 1
+	elections_allowed = no
+}
+set_party_name = { 
+    ideology = fascism 
+    long_name = "Moviment de Salut National"
+    name = "MSN"
+}
+set_party_name = { 
+    ideology = communism 
+    long_name = "Gauches"
+    name = "GAUCHES"
+}
+set_party_name = { 
+    ideology = anarchy 
+    long_name = "Parisiens"
+    name = "PARIS"
+}
+set_party_name = { 
+    ideology = mlism 
+    long_name = "Revolutión!"
+    name = "REV!"
+}
+set_party_name = { 
+    ideology = neutrality 
+    long_name = "Moviment de Salut National"
+    name = "MSN"
+}
+set_party_name = { 
+    ideology = democratic 
+    long_name = "Libéral"
+    name = "Libéral"
+}
+set_popularities = {
+	democratic = 10
+	fascism = 40
+	anarchy = 3
+	communism = 3
+	neutrality = 40
+	mlism = 4
+}
+add_ideas = {
+	extensive_conscription
+	war_economy
+	cen_msn_militia
+	cen_msn
+}
+
+
+ 

@@ -1,0 +1,22 @@
+
+state={
+	id=263
+	name="Gorenjska"
+	provinces={
+		1308 7971 8535 9354 14669 14680 14768 
+	}
+	history = {
+	owner = KRA
+	add_core_of = KRA
+
+	}
+	buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex	= 2
+
+		}
+	manpower=760800
+	state_category = large_town
+	buildings_max_level_factor=1.000
+}

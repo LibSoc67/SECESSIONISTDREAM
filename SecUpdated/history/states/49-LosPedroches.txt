@@ -1,0 +1,20 @@
+
+state={
+	id=49
+	name="Los Pedroches"
+	provinces={
+		5805 7506 9662 16351 16410 16412 
+	}
+	history={
+		owner = ADA
+		add_core_of = ADA
+		
+		buildings = {
+			infrastructure = 3
+			 
+		}
+	}
+	state_category=rural
+	manpower=79392
+	buildings_max_level_factor=1.000
+}

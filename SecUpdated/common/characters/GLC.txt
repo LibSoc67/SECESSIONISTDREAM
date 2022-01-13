@@ -1,0 +1,452 @@
+characters={
+	GLC_fuco_gomez={
+		name="Fuco Gómez"
+		portraits={
+			civilian={
+				large="gfx/leaders/GLC/glccom.dds"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	GLC_alfonso_daniel_castelao={
+		name="Alfonso Daniel Castelao"
+		portraits={
+			civilian={
+				large="gfx/leaders/GLC/glcdem.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	GLC_vicente_martinez_risco={
+		name="Vicente Martínez Risco"
+		portraits={
+			civilian={
+				large="gfx/leaders/GLC/glcfas.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	GLC_santiago_casares_quiroga={
+		name="Santiago Casares"
+		portraits={
+			civilian={
+				large="gfx/leaders/GLC/glcneu.dds"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	GLC_emilio_martinez_garrido={
+		name="Emilio Martínez Garrido"
+		portraits={
+			army={
+				small="GFX_idea_GLC_emilio"
+			}
+			army={
+				large="gfx/leaders/GLC/glcgeneral1.dds"
+			}
+		}
+		field_marshal={
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	GLC_guillermo_barros_dalmacio_bragado={
+		name="Guillermo Barros"
+		portraits={
+			army={
+				small="GFX_idea_GLC_guillermo"
+			}
+			army={
+				large="gfx/leaders/GLC/glcgeneral2.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	GLC_rogelio_caridad_pita={
+		name="Rogelio Caridad"
+		portraits={
+			army={
+				small="GFX_idea_GLC_rogelio"
+			}
+			army={
+				large="gfx/leaders/GLC/glcgeneral3.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	GLC_enrique_salcedo={
+		name="Enrique Salcedo"
+		portraits={
+			army={
+				small="GFX_idea_GLC_enrique"
+			}
+			army={
+				large="gfx/leaders/GLC/glcgeneral4.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	GLC_antonio_azarola={
+		name="Antonio Azarola"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/GLC/glcgeneral5.dds"
+			}
+		}
+		navy_leader={
+			traits={ gentlemanly naval_lineage superior_tactician }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	GLC_salvador_rivas={
+		name="Salvador Rivas"
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=mutualism
+			traits={ smooth_talking_charmer }
+			expire="1950.1.1.12"
+			id=-1
+		}
+	}
+	GLC_lourenzo_estevez={
+		name="Lourenzo Estévez"
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1956.1.1.12"
+			id=-1
+		}
+	}
+	GLC_glcadv1={
+		name="Basilio Álvarez"
+		portraits={
+			army={
+				small="GFX_idea_glcadv1"
+				
+			}
+
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = gerd_von_rundstedt
+			allowed = {
+				original_tag = GLC
+			}
+			available = {
+				 has_country_flag = glccabinet1
+			}
+			traits = {
+				economic_organizer
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	GLC_glcadv2={
+		name="Alexandre Bóveda"
+		portraits={
+			army={
+				small="GFX_idea_glcadv2"
+				
+			}
+
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = gerd_von_rundstedt
+			allowed = {
+				original_tag = GLC
+			}
+			available = {
+				 has_country_flag = glccabinet2
+			}
+			traits = {
+				national_integralist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	GLC_glcadv3={
+		name="Alexandre Bóveda"
+		portraits={
+			army={
+				small="GFX_idea_glcadv3"
+				
+			}
+
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = gerd_von_rundstedt
+			allowed = {
+				original_tag = GLC
+			}
+			traits = {
+				editor
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	GLC_glcadv4={
+		name="Florentino López"
+		portraits={
+			army={
+				small="GFX_idea_glcadv4"
+				
+			}
+
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = gerd_von_rundstedt
+			allowed = {
+				original_tag = GLC
+			}
+			traits = {
+				backroom_backstabber
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	GLC_glcadv5={
+		name="Ramón Suárez"
+		portraits={
+			army={
+				small="GFX_idea_glcadv5"
+				
+			}
+
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = gerd_von_rundstedt
+			allowed = {
+				original_tag = GLC
+			}
+			traits = {
+				voice_of_restraint
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	GLC_armchi1={
+		name="Iago Garrido"
+		portraits={
+			army={
+				small="generic_army_europe_5"
+				
+			}
+
+		}
+		advisor={
+			slot = army_chief
+			idea_token = gerd_von_rundstedt
+			ledger = army
+			allowed = {
+				original_tag = GLC
+			}
+			traits = {
+				army_chief_defensive_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	GLC_armchi2={
+		name="Xosé Torres"
+		portraits={
+			army={
+				small="generic_army_europe_3"
+				
+			}
+
+		}
+		advisor={
+			slot = army_chief
+			idea_token = gerd_von_rundstedt
+			ledger = army
+			allowed = {
+				original_tag = GLC
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	GLC_Brais={
+		name="Brais Castro"
+		portraits={
+			army={
+				small="generic_army_europe_3"
+				
+			}
+
+		}
+		advisor={
+			slot = high_command
+			idea_token = gerd_von_rundstedt
+			ledger = army
+			allowed = {
+				original_tag = GLC
+			}
+			traits = {
+				army_entrenchment_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+			}
+	}
+	GLC_Xan={
+		name="Xan Suárez"
+		portraits={
+			army={
+				small="generic_army_europe_6"
+				
+			}
+
+		}
+		advisor={
+			slot = high_command
+			idea_token = gerd_von_rundstedt
+			ledger = army
+			allowed = {
+				original_tag = GLC
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+			}
+	}
+	GLC_anxo={
+		name="Anxo Cortés"
+		portraits={
+			army={
+				small="GFX_idea_random1"
+				
+			}
+
+		}
+		advisor={
+			slot = air_chief
+			idea_token = gerd_von_rundstedt
+			allowed = {
+				original_tag = GLC
+			}
+			traits = {
+				air_naval_strike_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	GLC_aldan={
+		name="Aldán Gil"
+		portraits={
+			army={
+				small="GFX_idea_random2"
+				
+			}
+
+		}
+		advisor={
+			slot = air_chief
+			idea_token = gerd_von_rundstedt
+			allowed = {
+				original_tag = GLC
+			}
+			traits = {
+				air_close_air_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+}

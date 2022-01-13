@@ -1,0 +1,10 @@
+state={
+	id=254
+	name="Cornwall"
+	provinces={
+		3878 6770 7003 9328 13321 13347 13436 13460 
+	}
+	manpower=317968
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

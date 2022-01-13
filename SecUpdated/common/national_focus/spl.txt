@@ -1,0 +1,88 @@
+﻿focus_tree = {
+
+	id = splfocus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 70
+			tag = SPL
+}
+}
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 0 }
+
+
+	focus = {
+		id = splfocus1
+		icon = GFX_focus_spa_the_phalanx_ascendant
+		x = 10
+		y = 0
+ 	
+		
+		available = {
+		exists = yes
+				}
+		bypass = {
+		}
+		
+		cost = 5		
+
+		mutually_exclusive = {focus = }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		remove_ideas= {ethnicalcleaning2}
+			}
+		}
+	focus = {
+		id = splfocus2
+		icon = GFX_focus_spa_the_phalanx_ascendant
+		x = 0
+		y = 1
+		relative_position_id = splfocus1
+		prerequisite = { focus = splfocus1 }
+		
+		available = {
+		has_war = no
+				}
+		bypass = {
+		}
+		
+		cost = 5		
+
+		mutually_exclusive = {focus = }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		CAV ={annex_country = {
+    target = SPL
+    transfer_troops = yes
+	}
+	add_state_core = 801
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+			}
+		}	
+	}

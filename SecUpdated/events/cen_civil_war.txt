@@ -1,0 +1,179 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = cen_civil_war
+
+
+######################## CEC & ####################
+country_event = {
+	id = cen_civil_war.1
+	title = "Cooperation is impossible"
+	desc = cen_civil_war.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = { 
+		name = "Oh dear"
+		hidden_effect = {
+		if = {limit= {has_completed_focus = cenfoc1}country_event = {id = cen_civil_war.2 days = 3}}
+		}
+		ai_chance = { factor = 50 }
+		add_stability = -0.05
+	}
+	}
+country_event = {
+	id = cen_civil_war.2
+	title = "The Cercle breaks off!"
+	desc = "The Cércle Proudhon has officialy declared themselves as the rightful leader of Centre! They now control the north!"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = { 
+	
+		name = "For Anarchy and the Nation!"
+		CEN = {
+		hidden_effect = {
+		country_event = cen_civil_war.3
+		}
+		}
+		ai_chance = { factor = 50 }
+		CEC = { change_tag_from = CEN}
+		CEC = {
+		
+		add_war_support = 0.9
+		hidden_effect={
+		add_state_core = 193
+		add_state_core = 194
+		add_state_core = 191
+		add_state_core = 190
+		add_state_core = 189
+		add_state_core = 192
+		}
+		transfer_state = 193 
+		transfer_state = 194
+		declare_war_on = {
+				target = CEN
+				type = annex_everything
+			}
+		}
+	}
+	option = { 
+		name = "Traitors!"
+		ai_chance = { factor = 50 }
+		hidden_effect = {
+		country_event = cen_civil_war.3
+		}
+		CEC = {
+		hidden_effect={
+		add_state_core = 193
+		add_state_core = 194
+		add_state_core = 191
+		add_state_core = 190
+		add_state_core = 189
+		add_state_core = 192
+		}
+		add_war_support = 0.9
+		transfer_state = 193 
+		transfer_state = 194
+		declare_war_on = {
+				target = CEN
+				type = annex_everything
+			}	
+		}
+	}
+	}
+country_event = {
+	id = cen_civil_war.3
+	title = "The MSN breaks off!"
+	desc = "The Moviment de Salut National claims that they should be the sole leaders of Centre! They control the west of the nation"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = { 
+		name = "Power comes through a rifle!"
+		ai_chance = { factor = 50 }
+		CEN = {
+		hidden_effect = {
+		country_event = cen_civil_war.4
+		}
+		}
+		CES = { change_tag_from = CEN}
+		CES = {
+		hidden_effect={
+		add_state_core = 193
+		add_state_core = 194
+		add_state_core = 191
+		add_state_core = 190
+		add_state_core = 189
+		add_state_core = 192
+		}
+		set_war_support = 0.9
+		transfer_state = 190 
+		transfer_state = 191
+		declare_war_on = {target = CEN type = annex_everything}
+		if = {limit={CEC = exists = yes}declare_war_on = {target = CEC type = annex_everything}}
+		}
+	}
+	option = { 
+		name = "Traitors!"
+		ai_chance = { factor = 50 }
+		hidden_effect = {
+		country_event = cen_civil_war.4
+		}
+		CES = {
+		hidden_effect={
+		add_state_core = 193
+		add_state_core = 194
+		add_state_core = 191
+		add_state_core = 190
+		add_state_core = 189
+		add_state_core = 192
+		}
+		set_war_support = 0.9
+		transfer_state = 190 
+		transfer_state = 191
+		declare_war_on = {target = CEN type = annex_everything}
+		if = {limit={CEC = exists = yes}declare_war_on = {target = CEC type = annex_everything}}
+		}
+	}
+	}
+country_event = {
+	id = cen_civil_war.4
+	title = "The National-Marxistes breaks off!"
+	desc = "As a reaction against the current political climate, the National-Marxistes have risen on arms!"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = { 
+		name = "For the Proletarian Nation!"
+		ai_chance = { factor = 50 }
+		
+		CEM = {
+		CEM = { change_tag_from = CEN}
+		hidden_effect={
+		add_state_core = 193
+		add_state_core = 194
+		add_state_core = 191
+		add_state_core = 190
+		add_state_core = 189
+		add_state_core = 192
+		}
+		set_war_support = 0.9
+		transfer_state = 189 
+		transfer_state = 192
+		declare_war_on = {target = CEN type = annex_everything}
+		if = {limit={CEC = exists = yes}declare_war_on = {target = CEC type = annex_everything}}
+		if = {limit={CES = exists = yes}declare_war_on = {target = CES type = annex_everything}}
+		}
+	}
+
+	}

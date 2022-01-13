@@ -1,0 +1,102 @@
+﻿capital = 265
+
+oob = "ADE"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	naval_bomber1 = 1
+	gwtank = 1
+	motorised_infantry = 1
+}
+
+set_convoys = 1
+
+1939.1.1 = {
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	set_technology = {
+
+		#doctrines
+		grand_battle_plan = 1
+		trench_warfare = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1934.4.2"
+	election_frequency = 24
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 40
+	neutrality = 60
+}
+
+
+set_party_name = { 
+    ideology = communism 
+    long_name = "POUM"
+    name = "POUM"
+}
+set_party_name = { 
+    ideology = mlism 
+    long_name = "PSUC"
+    name = "PSUC"
+}
+set_party_name = { 
+    ideology = neutrality 
+    long_name = "Partido Unión Española"
+    name = "UnEsp"
+}				
+set_party_name = { 
+    ideology = democratic 
+    long_name = "Partit Valencianista"
+    name = "PV"
+}				
+set_party_name = { 
+    ideology = fascism 
+    long_name = "Falange Valenciana"
+    name = "FalVal"
+}
+
+create_country_leader = {
+	name = "Military Junta"
+	picture = "salvation_goverment.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+}
+

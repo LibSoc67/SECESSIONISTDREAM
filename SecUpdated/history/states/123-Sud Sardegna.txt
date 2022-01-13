@@ -1,0 +1,31 @@
+
+state={
+	id=123
+	name="Sud Sardegna"
+	provinces={
+		3296 8085 9817 9881 16403 16465 17421 17423 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=35.000
+		oil=0.000
+		chromium=12.000
+		aluminium=0.000
+	}
+	history={
+		owner = SAR
+		add_core_of = SAR
+		victory_points = {
+		16465 3
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			
+		}
+	}
+	state_category=rural
+	manpower=130492
+	buildings_max_level_factor=1.000
+}

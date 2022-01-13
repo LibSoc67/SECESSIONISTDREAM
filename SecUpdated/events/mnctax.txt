@@ -1,0 +1,49 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = mnctax
+
+# penis
+country_event = {
+	id = mnctax.1
+	title = "Taxes in Monaco?"
+	desc = "How high do we want our taxes, if we want them at all?." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Very high!"
+		ai_chance = { factor = 100 }
+		swap_ideas = {
+		remove_idea = mncmonarchy2
+		add_idea = mncmonarchy5
+		}
+		add_ideas = {vhtaxes}
+}
+option = { 
+		name = "High!"
+		ai_chance = { factor = 100 }
+		swap_ideas = {
+		remove_idea = mncmonarchy2
+		add_idea = mncmonarchy4
+		}
+		add_ideas = {htaxes}
+}
+option = { 
+		name = "Low!"
+		ai_chance = { factor = 100 }
+		add_ideas = {ltaxes}
+}
+option = { 
+		name = "Very low!"
+		ai_chance = { factor = 100 }
+		swap_ideas = {
+		remove_idea = mncmonarchy2
+		add_idea = mncmonarchy3
+		}
+		add_ideas = {vltaxes}
+}
+}
+

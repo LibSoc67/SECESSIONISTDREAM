@@ -1,0 +1,39 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = prs_exp
+
+# penis
+country_event = {
+	id = prs_exp.1
+	title = "The Paris Commune have established contact with the LP!"
+	desc = "Members of our counter intelligence department have discovered that the Paris Commune is establishing contacts with the Libération Populaire, a anarchist paramilitary organitzation active within our borders." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Vive le Général Pétain!"
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = cet_prs_exp_1
+		add_popularity = { 
+					ideology = neutrality 
+					popularity = 0.05 
+				}
+		add_stability = -0.1
+}
+	option = { 
+		name = "Vive la Révolution!"
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = cet_prs_exp_2
+		add_popularity = { 
+					ideology = anarchy 
+					popularity = 0.05 
+				}
+		add_stability = -0.1
+}
+				
+
+
+}

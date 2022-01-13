@@ -1,0 +1,9 @@
+
+supply_area={
+	id=10
+	name="Western Andalucia"
+	value=12
+	states={
+		45 43 24 27 28 46 52 40 47 44 26 49 74 
+	}
+}

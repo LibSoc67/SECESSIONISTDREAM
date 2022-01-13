@@ -1,0 +1,35 @@
+
+state={
+	id=81
+	name="Soria"
+resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=5.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = CAV
+		add_core_of = CAV
+		victory_points = {
+			6724 10 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 4
+
+		}
+
+	}
+
+	provinces={
+		4367 6571 6724 7452 8627 15636 15746 
+	}
+	manpower=168422
+	buildings_max_level_factor=1.000
+	state_category=town
+}

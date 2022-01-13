@@ -1,0 +1,82 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = ulttoval
+
+# penis
+country_event = {
+	id = ulttoval.1
+	title = "Ultimatum from Catalonia"
+	desc = "Catalonia has sent us a ultimatum. Either we join or they declare war to us." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We must accept"
+		ai_chance = { factor = 60 }
+		CAT = {
+add_threat = 3 
+
+	annex_country = {
+    target = VAL
+    transfer_troops = yes
+	}
+	}
+}
+	option = { 
+		name = "We will refuse!"
+		ai_chance = { factor = 40 }
+	
+		CAT = { create_wargoal = {
+				type = annex_everything
+				target = VAL
+				expire = 0
+				} 
+				}
+				
+	add_threat = 3 
+ 
+		VAL = {add_war_support	= 0.1 }
+
+}}
+country_event = {
+	id = ulttoval.2
+	title = "Ademús declares independence!"
+	desc = ulttoval.2.d  
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We will annex them later"
+		ai_chance = { factor = 60 }
+	ADE = {transfer_state = 265}	
+}
+
+}
+country_event = {
+	id = ulttoval.3
+	title = "Catalonia asks for military acces"
+	desc = ulttoval.3.d  
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Let's comply"
+		ai_chance = { factor = 60 }
+	give_military_access = CAT	
+	}
+	option = { 
+		name = "No!"
+		ai_chance = { factor = 0 }
+	CAT = { create_wargoal = {
+				type = annex_everything
+				target = CAL
+				expire = 0
+				} 
+				}
+	}
+}

@@ -1,0 +1,26 @@
+
+state={
+	id=222
+	name="Saone Et Loire"
+
+	history={
+		owner = BOU
+		add_core_of = BOU
+		victory_points = { 8282 2 }
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 4
+
+		}
+
+	}
+
+	provinces={
+		3698 3969 4892 5459 5695 6624 7172 7450 8282 9134 10152 14568 14569 14636 14647 14686 
+	}
+	manpower=525676
+	buildings_max_level_factor=1.000
+	state_category=city
+}

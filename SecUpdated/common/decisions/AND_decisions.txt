@@ -1,0 +1,131 @@
+#####################################################################################################################
+# COMMENTS HAVE BEEN INCLUDED FOR SAKE OF EXPLANATION, CAN BE REMOVED #
+# ID's must not include spaces!
+# Decisions MUST be visible for the AI to execute them, if in doubt, switch tag to the AI country and check if they can see/execute the mission.
+#####################################################################################################################
+andcategory = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
+	
+
+	
+		and1 = {		#Com and dem speech
+
+		icon = generic_form_nation		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	
+		ROOT = {has_government = democratic}
+		}
+		
+		fire_only_once = yes #If set to yes, the decision will only appear once, after execution will not appear again.
+		
+
+		visible = {		
+			has_government = democratic
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_stability=0.05
+			add_popularity { ideology = communism popularity = 0.05}
+			add_popularity { ideology = democratic popularity = 0.05}
+			
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 20
+		}
+	}
+	
+		and2 = {		#Fascism lifted
+
+		icon = generic_form_nation		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	
+		NOT = {has_government = fascism } has_completed_focus = antiblas 
+		}
+		
+		fire_only_once = yes #If set to yes, the decision will only appear once, after execution will not appear again.
+		
+
+		visible = {		
+			original_tag = ADA
+			NOT = {has_government = fascism}
+			has_completed_focus = antiblas 
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_war_support=0.02
+			add_stability=-0.05
+			add_popularity { ideology = fascism popularity = 0.1} 
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	}
+	}	
+ada_civil_war = {	
+
+and6 = {		
+		icon = generic_form_nation
+		
+		available = {	
+		always = no
+		
+}
+			days_mission_timeout = 89	
+		
+		
+		fire_only_once = yes 
+		
+
+		visible = {		
+			original_tag = ADA
+		}		
+	
+		timeout_effect = {
+		custom_effect_tooltip = cet_ada_civil_war
+hidden_effect= {
+		
+		if = {
+		limit = {has_idea = granada}
+		GRA = {transfer_state = 30 transfer_state = 31 transfer_state = 41 load_oob = "gra_uprising" add_manpower = 15000 add_ideas = gra_idea_1}
+		create_wargoal = {
+				type = annex_everything
+				target = GRA
+				expire = 150
+			}
+		remove_ideas = granada
+		set_country_flag = ada_civil_war_over
+		}
+		if = {
+		limit = {has_idea = comprotests}
+		HUE = {transfer_state = 24 transfer_state = 45 transfer_state = 43 load_oob = "hue_uprising" add_manpower = 15000 add_ideas = hue_idea_1}
+		create_wargoal = {
+				type = annex_everything
+				target = HUE
+				expire = 150
+			}
+		remove_ideas = comprotests
+		set_country_flag = ada_civil_war_over
+		}
+		}
+}
+		
+	}
+	}
+	

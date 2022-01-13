@@ -1,0 +1,29 @@
+
+state={
+	id=153
+	name="Ardeche"
+
+	history={
+		owner = RHO
+		add_core_of = RHO
+		add_claim_by = OCC
+		victory_points = {
+			10471 2 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 0
+			air_base = 1
+
+		}
+
+	}
+
+	provinces={
+		2128 2620 2709 4085 6321 7585 10210 10471 15165 
+	}
+	manpower=272698
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

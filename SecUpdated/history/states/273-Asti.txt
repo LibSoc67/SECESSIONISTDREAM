@@ -1,0 +1,25 @@
+
+state={
+	id=273
+	name="Asti"
+	provinces={
+		3689 10215 10838 15058 15100 
+	}
+	history={
+		owner = PIE
+		add_core_of = PIE
+		victory_points = {
+		3689 2	
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+
+		}
+
+	}
+	state_category=town
+	manpower=139823
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,39 @@
+
+state={
+	id=97
+	name="A Coruña"
+	provinces={
+		2144 3225 3642 6621 8542 9072 9613 9676 10225 10423 10524 14941 14978 14986 14997 15101 15156 15160 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=14.000
+		oil=21.000
+		chromium=18.000
+		aluminium=0.000
+	}
+	history={
+		owner = GLC
+		add_core_of = GLC
+		victory_points = {
+			10423 17
+		}
+		victory_points = {
+			8542 10
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex	= 2
+			dockyard = 1
+			air_base= 5
+			10423 = { naval_base = 6}
+
+		}
+
+	}
+	state_category = large_town
+	manpower=767301
+	buildings_max_level_factor=1.000
+}

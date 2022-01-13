@@ -1,0 +1,26 @@
+
+state={
+	id=172
+	name="Vendee"
+	provinces={
+		3690 4003 4691 5097 6958 9915 10724 10895 14447 14485 14526 14530 14557 17389 
+	}
+	history={
+		owner = LOI
+		add_core_of = LOI
+		victory_points = {
+		5097 2
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 0
+			industrial_complex = 1
+			#dockyard = 
+			#air_base = 
+			# = {naval_base = 4}
+		}
+	}
+	state_category = rural
+	manpower=389211
+	buildings_max_level_factor=1.000
+}

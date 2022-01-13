@@ -1,0 +1,27 @@
+
+state={
+	id=155
+	name="Isere"
+	provinces={
+		435 2942 6084 7038 7977 8537 9634 10480 10781 14874 14904 14914 15021 
+	}
+	history={
+		owner = RHO
+		add_core_of = RHO
+		add_claim_by = OCC
+		victory_points = {
+		14874 10
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			#dockyard = 
+			air_base = 4
+			# = {naval_base = 4}
+		}
+	}
+	state_category = large_town
+	manpower=572742
+	buildings_max_level_factor=1.000
+}

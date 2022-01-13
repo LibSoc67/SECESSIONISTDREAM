@@ -1,0 +1,872 @@
+ideas = {
+	country = {
+		cat_spirit = {
+		 
+		available = {
+		}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			army_org_factor = 0.04
+			
+			}
+			rule = {
+
+			}
+		}
+	}
+	country = {
+		cat_spirit1 = {
+		 
+		available = {
+		}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			army_org_factor = 0.06
+			army_attack_factor = 0.03
+			production_speed_dockyard_factor = 0.2
+			}
+			rule = {
+
+			}
+		}
+	}
+	country = {
+		catcom1 = {
+		 
+		available = {
+		}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.02
+				mlism_drift = 0.02
+				stability_factor = 0.1
+			}
+			rule = {
+
+			}
+		}
+}
+	country = {
+		catcom2 = {
+		 
+		available = {
+		}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+				mlism_drift = 0.03
+				stability_factor = 0.1
+			}
+			rule = {
+
+			}
+		}
+}
+	country = {
+		catcom3 = {
+		 
+		available = {
+		  }
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+				communism_drift = 0.03
+				stability_factor = 0.1
+			}
+			rule = {
+
+			}
+		}
+}
+	country = {
+		catpoliceforce = {
+		 
+		available = {
+		  }
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			intelligence_agency_defense = 0.5
+			mlism_drift = 0.02
+			}
+			rule = {
+
+			}
+		}
+	}
+	country = {
+		catcomdem = {
+		 
+		available = {
+		  }
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			intelligence_agency_defense = -0.5
+			stability_factor = 0.15
+			communism_drift = -0.02
+			}
+			rule = {
+
+			}
+		}
+	}
+	country = {
+		catpermrev = {
+		 
+		available = {
+		  }
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				 
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			justify_war_goal_time = -0.20
+			}
+			
+		}
+	}
+	country = {
+		awarsocialism = {
+		 
+		
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				 
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			justify_war_goal_time = -0.30
+			war_support_factor = 0.2
+			stability_factor = -0.1
+			}
+			rule = {
+			can_create_factions = yes
+			}
+		}
+	}
+	country = {
+		meltingpot = {
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			monthly_population = 0.5
+			communism_drift = 0.03
+			neutrality_drift = 0.03
+			fascism_drift = 0.03
+			democratic_drift = 0.02
+			anarchy_drift = 0.03
+			mlism_drift = 0.03
+			stability_factor = -0.4
+			}
+			rule = {
+			}
+		}
+	}
+	country = {
+		conmeltingpot = {
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			monthly_population = 0.25
+			communism_drift = 0.01
+			neutrality_drift = 0.02
+			fascism_drift = 0.02
+			democratic_drift = 0.02
+			anarchy_drift = 0.01
+			mlism_drift = 0.01
+			stability_factor = -0.15
+			}
+			rule = {
+			}
+		}
+	}
+	country = {
+		conmeltingpot1 = {
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			monthly_population = 0.1
+			neutrality_drift = 0.02
+			fascism_drift = 0.02
+			stability_factor = -0.1
+			}
+			rule = {
+			}
+		}
+	}
+	country = {
+		meltingpot1 = {
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			monthly_population = 0.5
+			communism_drift = 0.02
+			neutrality_drift = 0.02
+			fascism_drift = 0.02
+			democratic_drift = 0.01
+			anarchy_drift = 0.02
+			mlism_drift = 0.02
+			stability_factor = -0.3
+			consumer_goods_factor =0.04
+			}
+			rule = {
+			}
+		}
+	}
+	country = {
+		meltingpot2 = {
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			monthly_population = 0.5
+			communism_drift = 0.01
+			neutrality_drift = 0.01
+			fascism_drift = 0.01
+			anarchy_drift = 0.01
+			mlism_drift = 0.01
+			stability_factor = -0.2
+			consumer_goods_factor =0.08
+			}
+			rule = {
+			}
+		}
+	}
+	country = {
+		meltingpot3 = {
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			monthly_population = 0.5
+			consumer_goods_factor = 0.12
+			stability_factor = 
+			
+			}
+			rule = {
+			}
+		}
+	}
+	country = {
+		economicboom = {
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = 0.10
+			production_speed_buildings_factor = 0.05
+			production_speed_industrial_complex_factor = 0.05
+
+			
+			}
+			rule = {
+			}
+		}
+	}
+	country = {
+		economicboom1 = {
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = 0.15
+			production_speed_buildings_factor = 0.10
+			production_speed_industrial_complex_factor = 0.10
+
+			
+			}
+			rule = {
+			}
+		}
+	}
+	country = {
+		fullemployment = {
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			conscription_factor = -0.25
+			stability_factor = 0.1
+			
+			}
+			rule = {
+			}
+		}
+	}
+	country = {
+		minorrebelions = {
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = -0.05
+			consumer_goods_factor	 = 0.05
+			fascism_drift  0.02
+			}
+			rule = {
+			}
+		}
+	}
+	country = {
+		almost_no_rebelions = {
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = -0.03
+			consumer_goods_factor	 = 0.03
+			fascism_drift = 0.01
+			}
+			rule = {
+			}
+		}
+	}
+	country = {
+		noviolence = {
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = -0.01
+			consumer_goods_factor	 = 0.01
+			}
+			rule = {
+			}
+		}
+	}
+		country = {
+		catantifas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			fascism_drift = -0.05
+			}}}
+	country = {
+		semifull = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 
+			}
+
+			removal_cost = 100
+			
+			modifier = {
+			stability_factor = -0.1
+			}}}
+		country = {
+	catpres = {
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+			communism_drift = 0.3
+			
+			}
+			targeted_modifier = {
+			TAG = CAT
+			attack_bonus_against = -0.2
+			defense_bonus_against = -0.15
+			
+			}
+			}}
+country = {
+	catpresmlism = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = mlism
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			mlism_drift = 0.3
+			}
+			targeted_modifier = {
+			TAG = CAT
+			attack_bonus_against = -0.2
+			defense_bonus_against = -0.15
+			
+			}
+			}}			
+country = {
+	pay1 = {
+
+			allowed = {
+				always = no
+				
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			consumer_goods_factor = 0.05
+			}}}	
+
+
+country = {
+		civfocus = {
+		 
+		available = {
+		  }
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+			}
+			rule = {
+
+			}
+		}
+}
+country = {
+		milfocus = {
+		 
+		available = {
+		  }
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+			}
+			rule = {
+
+			}
+		}
+}
+
+country = {
+		stalinists = { 
+		 
+		available = {
+		NOT = {has_government = mlism }
+			}
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.5
+				stability_factor = -0.2
+			}
+			rule = {
+
+			}
+		}
+}
+country = {
+		stalinists1 = { 
+		 
+		available = {
+		  }
+			
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.05
+				mlism_drift = -0.1
+			}
+			rule = {
+
+			}
+		}
+}
+country = {
+		ethnicalcleaning = { 
+		 
+			
+			allowed = {
+				always = no
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.3
+				stability_factor = -0.15
+				monthly_population = -0.4
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+				army_morale = -0.2
+			}
+			rule = {
+
+			}
+		}
+}
+country = {
+		ethnicalcleaning1 = { 
+		 
+			
+			allowed = {
+				always = no
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.1
+			}
+			rule = {
+
+			}
+		}
+}
+country = {
+		ethnicalcleaning2 = { 
+		 
+			
+			allowed = {
+				always = no
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.1
+				war_support_factor = -0.2
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+			}
+			rule = {
+
+			}
+		}
+}
+
+country = {
+		catbuying = { 
+		 
+			
+			allowed = {
+				always = no
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+			rule = {
+
+			}
+		}
+}
+country = {
+		catselling= { 
+		 
+			
+			allowed = {
+				always = no
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.07
+			}
+			rule = {
+
+			}
+		}
+}
+country = {
+		catdem1 = {
+		 
+		available = {
+		}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift= 0.1
+				stability_factor = -0.1
+			}
+			rule = {
+
+			}
+		}
+}
+country = {
+		catdem2 = {
+		 
+		available = {
+		}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift= 0.15
+				stability_factor = -0.13
+				political_power_gain = -0.1
+			}
+			rule = {
+
+			}
+		}
+}
+country = {
+		catdem3 = {
+		 
+		available = {
+		}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift= 0.2
+				stability_factor = -0.16
+				political_power_gain = -0.1
+			}
+			rule = {
+
+			}
+		}
+}
+country = {
+		catdem4 = {
+		 
+		available = {
+		}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			political_power_factor = 0.03
+			stability_weekly = 0.001
+			}
+			rule = {
+
+			}
+		}
+}
+}

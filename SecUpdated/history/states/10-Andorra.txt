@@ -1,0 +1,32 @@
+state={
+	id=10
+	name="Andorra"
+	provinces={
+		15600 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=2.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = ANR
+		add_core_of = ANR
+		victory_points = {
+		15600 4	
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+			
+		}
+	}
+	state_category=rural
+	manpower=42034
+	buildings_max_level_factor=1.000
+}

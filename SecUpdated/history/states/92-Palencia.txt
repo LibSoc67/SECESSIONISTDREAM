@@ -1,0 +1,25 @@
+
+state={
+	id=92
+	name="Palencia"
+	provinces={
+		4112 4607 5368 10590 15343 15432 
+	}
+	
+	history={
+		owner = CAV
+		add_core_of = CAV
+		victory_points = {
+			4607 7 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex	= 1
+
+		}
+
+	}
+	state_category = rural
+	manpower=209429
+	buildings_max_level_factor=1.000
+}

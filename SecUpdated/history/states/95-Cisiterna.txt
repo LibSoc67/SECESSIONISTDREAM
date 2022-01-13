@@ -1,0 +1,25 @@
+
+state={
+	id=95
+	name="Cistierna"
+	provinces={
+		3704 6480 6761 8921 15260 
+	}
+	history={
+		owner = LEO
+		add_core_of = LEO
+		victory_points = {
+			15260 2
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex	= 0
+
+		}
+
+	}
+	state_category = rural
+	manpower=67202
+	buildings_max_level_factor=1.000
+}

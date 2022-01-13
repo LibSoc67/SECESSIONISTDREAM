@@ -1,0 +1,22 @@
+
+state={
+	id=56
+	name="Alcatraz"
+	provinces={
+		1210 4267 4356 5573 7551 8239 9511 9975 
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL
+		
+		buildings = {
+			infrastructure = 5
+
+			industrial_complex = 1
+			 
+		}
+	}
+	state_category=rural
+	manpower=102302
+	buildings_max_level_factor=1.000
+}

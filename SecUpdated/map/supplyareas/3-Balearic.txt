@@ -1,0 +1,9 @@
+
+supply_area={
+	id=3
+	name="Balearic"
+	value=14
+	states={
+		15 14 16 
+	}
+}

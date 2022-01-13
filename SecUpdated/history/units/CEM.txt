@@ -1,0 +1,31 @@
+﻿
+division_template = {
+	name = "Camaradas en armas"  
+	division_names_group = SPAN_INFB_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		
+	}
+}
+
+units = {
+	
+
+	##### No Notable Naval Forces #####
+}
+
+##### No Notable Air Forces #####
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "CEM"
+		}
+		requested_factories = 1
+		progress = 0.21
+		efficiency = 100
+	}
+	
+}

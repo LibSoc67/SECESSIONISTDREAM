@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=49
+	name="Naples Coast"
+	provinces={
+		17644 17866 17867 17881 17889 18097 18181 18215 18230 18272 18579 18587 18603 18686 18954 18955 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

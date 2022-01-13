@@ -1,0 +1,37 @@
+
+state={
+	id=100
+	name="Lugo"
+	provinces={
+		991 1147 3328 3369 3811 4941 10394 11227 11290 15002 15071 15215 15247 15282 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=12.000
+		oil=0.000
+		chromium=7.000
+		aluminium=0.000
+	}
+	history={
+		owner = GLC
+		add_core_of = GLC
+		victory_points = {3811 11}
+		victory_points = {15247 4}
+		victory_points = {
+		11227 6
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex	= 1
+			dockyard = 1
+			air_base= 2
+
+		}
+
+	}
+	state_category = town
+	manpower=468619
+	buildings_max_level_factor=1.000
+}

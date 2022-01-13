@@ -1,0 +1,38 @@
+
+state={
+	id=2
+	name="Barcelona"
+	provinces={
+		1723 6426 9382 10558 15835 15863 15909 
+	}
+	resources={
+		steel=6.000
+	}
+
+	history={
+		owner = CAT
+		add_core_of = CAT
+		victory_points = {
+		9382 50	
+		}
+		victory_points = {
+		1723 3	 
+		}
+		victory_points = {
+		15909 2	
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 2
+			industrial_complex = 3
+			dockyard = 1
+			air_base = 8
+			9382 = {
+				naval_base = 9
+			}
+		}
+	}
+	state_category=metropolis
+	manpower=1500345
+	buildings_max_level_factor=1.000
+}

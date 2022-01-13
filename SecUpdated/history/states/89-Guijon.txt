@@ -1,0 +1,35 @@
+
+state={
+	id=89
+	name="Guijón"
+	provinces={
+	5357 5770 10313 10950 15072 15137 15194 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=14.000
+		oil=0.000
+		chromium=28.000
+		aluminium=0.000
+	}
+	history={
+		owner = ASR
+		add_core_of = ASR
+		victory_points = {
+			10313 12 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex	= 1
+			dockyard = 1
+			10313 = { naval_base = 5}
+
+		}
+
+	}
+	state_category = town
+	manpower=376020
+	buildings_max_level_factor=1.000
+}

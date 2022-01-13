@@ -1,0 +1,22 @@
+
+state={
+	id=86
+	name="Campoo"
+	provinces={
+	565	3285 10631 10813 
+	}
+	history={
+		owner = CAB
+		add_core_of = CAB
+		victory_points = {
+		10631 3
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+	}
+	state_category=pastoral
+	manpower=67203
+	buildings_max_level_factor=1.000
+}

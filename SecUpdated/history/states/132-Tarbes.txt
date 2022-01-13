@@ -1,0 +1,34 @@
+
+state={
+	id=132
+	name="Haute Pyrinees"
+	provinces={
+		2134 5617 7984 8682 10138 10140 15386 15391 15405 15433 15465 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=23.000
+		oil=0.000
+		chromium=0.000
+		aluminium=34.000
+	}
+	history={
+		owner =OCC 
+		add_core_of =OCC
+		victory_points = {
+		10140 2
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 0
+			#dockyard = 0
+			#air_base = 
+			# = {naval_base = 4}
+		}
+	}
+	state_category=rural
+	manpower=188604
+	buildings_max_level_factor=1.000
+}

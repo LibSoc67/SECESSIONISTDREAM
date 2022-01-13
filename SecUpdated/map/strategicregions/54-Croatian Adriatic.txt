@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=54
+	name="Croatian Adriatic"
+	provinces={
+		17545 17546 18100 18168 18192 18258 18337 18617 18756 18819 18945 18948 
+	}
+	naval_terrain=water_fjords
+	weather={
+	}
+}

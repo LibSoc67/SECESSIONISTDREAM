@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=41
+	name="Dutch Coast"
+	provinces={
+		17512 17622 17684 17743 17842 17860 18007 18036 18060 18069 18091 18094 18107 18161 18199 18407 18440 18513 18623 18630 18898 18901 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

@@ -1,0 +1,9 @@
+
+supply_area={
+	id=17
+	name="Calais"
+	value=15
+	states={
+		204 200 201 203 202 
+	}
+}

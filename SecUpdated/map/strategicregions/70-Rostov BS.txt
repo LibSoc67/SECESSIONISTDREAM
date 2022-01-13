@@ -1,0 +1,10 @@
+
+strategic_region={
+	id=70
+	name="Rostov BS"
+	provinces={
+		17773 17902 17978 18121 18165 18208 18345 18422 18437 18706 
+	}
+	weather={
+	}
+}

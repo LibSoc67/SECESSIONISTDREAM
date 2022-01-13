@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=55
+	name="Venetian Adriatic"
+	provinces={
+		17575 17939 18159 18307 18331 18708 18937 18940 
+	}
+	naval_terrain=water_fjords
+	weather={
+	}
+}

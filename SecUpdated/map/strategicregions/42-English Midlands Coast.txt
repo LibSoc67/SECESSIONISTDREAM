@@ -1,0 +1,10 @@
+
+strategic_region={
+	id=42
+	name="Midlands Coast"
+	provinces={
+		17548 17658 17677 17738 17930 17961 17981 18068 18175 18515 18606 18619 18825 18888 
+	}
+	weather={
+	}
+}

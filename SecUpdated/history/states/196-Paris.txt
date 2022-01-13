@@ -1,0 +1,28 @@
+
+state={
+	id=196
+	name="Paris"
+
+	history={
+		owner = PRS
+		add_core_of = PRS
+		victory_points = {
+			7941 50 
+		}
+		buildings = {
+			infrastructure = 10
+			arms_factory = 3
+			industrial_complex = 4
+			air_base = 10
+
+		}
+
+	}
+
+	provinces={
+		7941 
+	}
+	manpower=2679345
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

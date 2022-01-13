@@ -1,0 +1,48 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = occdemoc
+
+# penis
+country_event = {
+	id = occdemoc.1  
+	title = "Time to form a new goverment."
+	desc = "The 1940's elections have happened. It's time to form a new goverment."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "The ORP (Social democrat) won"
+		ai_chance = { factor = 50 }
+	set_country_flag = orpwon
+	create_country_leader = {
+	name = "Jean Giono"
+	picture = "occ2.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+}
+
+	}
+
+	option = { 
+		name = "The CPO (Christian conservative) won"
+		ai_chance = { factor = 50 }
+	
+	set_country_flag = cpowon
+	set_party_name = { 
+    ideology = democratic 
+    long_name = "Occitanian Reconciliation Party"
+    name = "CPO"
+}
+	
+ create_country_leader = {
+	name = "Charles Maurras"
+	picture = "occ3.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+}
+}
+	 
+	}

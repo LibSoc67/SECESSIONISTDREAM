@@ -1,0 +1,24 @@
+
+state={
+	id=146
+	name="Lozère"
+	provinces={
+		1793 2011 15065 15116 15125 
+	}
+	history={
+		owner = OCC
+		add_core_of = OCC
+		add_core_of = LAN
+		buildings = {
+			infrastructure = 5
+			arms_factory = 0
+			industrial_complex = 1
+			#dockyard = 
+			#air_base = 
+			# = {naval_base = 4}
+		}
+	}
+	state_category=rural
+	manpower=98480
+	buildings_max_level_factor=1.000
+}

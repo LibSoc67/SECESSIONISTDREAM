@@ -1,0 +1,26 @@
+
+state={
+	id=268
+	name="Zena"
+	provinces={
+		6404 10289 15151 
+	}
+	history={
+		owner = LIG
+		add_core_of = LIG
+		victory_points = {
+		15151 25 
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+		}
+
+	}
+	state_category=city
+	manpower=634646
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

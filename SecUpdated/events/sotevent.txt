@@ -1,0 +1,68 @@
+﻿###########################
+# Vasque Joins Catalan
+###########################
+
+add_namespace = sotevent
+
+# penis
+country_event = {
+	id = sotevent.1
+	title = "The investigation was a success."
+	desc = sotevent.1.d
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	option = { 
+		name = "Great"
+		ai_chance = { factor = 95 }
+		
+	
+}
+	
+	
+
+				
+	
+
+}
+country_event = {
+	id = sotevent.2
+	title = "Progress in the SOT"
+	desc = sotevent.2.d 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	option = { 
+		name = "Great"
+		ai_chance = { factor = 95 }
+		
+	
+}
+	
+	
+				
+	
+
+}
+country_event = {
+	id = sotevent.3
+	title = "The inauguration of the SOT"
+	desc = sotevent.3.d 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	option = { 
+		name = "Great"
+		ai_chance = { factor = 95 }
+		
+	
+}
+	
+	
+				
+	
+
+}}

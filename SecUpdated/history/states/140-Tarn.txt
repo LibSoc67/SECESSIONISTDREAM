@@ -1,0 +1,26 @@
+
+state={
+	id=140
+	name="Tarn"
+	provinces={
+		2669 7753 9291 10947 15139 15263 15297 
+	}
+	history={
+		owner = OCC
+		add_core_of = OCC
+		victory_points = {
+		9291 4
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 0
+			industrial_complex = 1
+			#dockyard = 
+			#air_base = 
+			# = {naval_base = 4}
+		}
+	}
+	state_category=rural
+	manpower=297871
+	buildings_max_level_factor=1.000
+}

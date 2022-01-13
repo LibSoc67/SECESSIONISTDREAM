@@ -1,0 +1,23 @@
+state={
+	id=258
+	name="Kärnten"
+	provinces={
+		1507 5067 7430 8640 10559 14571 14584 14616 14620 14621 14662 
+	}
+	history = {
+	owner = SKR
+	add_core_of = SKR
+
+	
+	buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex	= 1
+
+		}
+		}
+	manpower=179283
+	state_category = rural
+	buildings_max_level_factor=1.000
+	
+}

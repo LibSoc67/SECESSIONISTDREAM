@@ -1,0 +1,26 @@
+
+state={
+	id=131
+	name="Ariege"
+	provinces={
+		136 1157 8147 15415 15470 
+	}
+	history={
+		owner = OCC
+		add_core_of = OCC
+ 		victory_points = {
+		136 5
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 0
+			industrial_complex = 1
+			dockyard = 0
+			air_base = 1
+			# = {naval_base = 4}
+		}
+	}
+	state_category=rural
+	manpower=155134
+	buildings_max_level_factor=1.000
+}

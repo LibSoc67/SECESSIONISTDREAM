@@ -1,0 +1,9 @@
+
+supply_area={
+	id=19
+	name="Champagne"
+	value=13
+	states={
+		217 216 218 222 219 221 220 
+	}
+}

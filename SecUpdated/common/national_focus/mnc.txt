@@ -1,0 +1,538 @@
+﻿focus_tree = {
+
+	id = monaco_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 70
+			tag = MNC
+}
+}
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 0 }
+
+ 
+	focus = {
+		id = mncfoc1
+		icon = GFX_focus_generic_home_defense
+		x = 10
+		y = 0
+ 	
+		
+		available = {
+		has_government = neutrality
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		mutually_exclusive = {focus = }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05}
+		add_political_power = 100
+			}
+		}
+	focus = {
+		id = mncfoc2
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 0
+		y = 1
+ 	
+		
+		available = {
+		has_government = neutrality
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus =mncfoc1}
+		relative_position_id = mncfoc1
+		mutually_exclusive = {focus = }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		 
+		completion_reward = {
+		swap_ideas = {
+		add_idea = mncmonarchy2
+		remove_idea = mncmonarchy1
+		}
+			}
+		}
+	focus = {
+		id = mncfoc3
+		icon = GFX_goal_generic_construct_civilian
+		x = -1
+		y = 1
+ 	
+		
+		available = {
+		has_government = neutrality
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus =mncfoc2}
+		relative_position_id = mncfoc2
+		mutually_exclusive = {focus = }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		 
+		completion_reward = {
+		183 = {
+		add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+		}
+			}
+		}
+	focus = {
+		id = mncfoc4
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 1
+		y = 1
+ 	
+		
+		available = {
+		has_government = neutrality
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus =mncfoc2}
+		relative_position_id = mncfoc2
+		mutually_exclusive = {focus = }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		 
+		completion_reward = {
+		183 = {
+		add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+							}
+		}
+			}
+		}
+	focus = {
+		id = mncfoc5
+		icon = GFX_focus_taxes
+		x = 1
+		y = 1
+ 	
+		
+		available = {
+		has_government = neutrality
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus =mncfoc3}
+		prerequisite = { focus =mncfoc4}
+		relative_position_id = mncfoc3
+		mutually_exclusive = {focus = }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		 
+		completion_reward = {
+		country_event = mnctax.1 
+			} 
+		}
+	focus = {
+		id = mncfoc6
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = -3
+		y = 1
+ 	
+		
+		available = {
+		has_government = neutrality
+		OR = {
+		has_idea = mncmonarchy3
+		has_idea = mncmonarchy2
+		}}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus =mncfoc5}
+		relative_position_id = mncfoc5
+		mutually_exclusive = {focus = mncfoc12}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		 
+		completion_reward = {
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.25}
+			add_stability = 0.05
+			} 
+		}
+	focus = {
+		id = mncfoc7
+		icon = GFX_focus_generic_monarchy_1
+		x = 0
+		y = 1
+ 	
+		
+		available = {
+		has_government = neutrality
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus =mncfoc6}
+		relative_position_id = mncfoc6
+		mutually_exclusive = {focus = }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		 
+		completion_reward = {
+		
+		remove_ideas = {mncconst} add_ideas = {mncabs}
+		
+		}
+	}
+	focus = {
+		id = mncfoc8
+		icon = GFX_goal_generic_military_sphere
+		x = -1
+		y = 1
+ 	
+		
+		available = {
+		has_government = neutrality
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus =mncfoc7}
+		relative_position_id = mncfoc7
+		mutually_exclusive = {focus = }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		 
+		completion_reward = {
+		add_political_power = 150
+		add_war_support = 0.2
+		add_manpower = 2500
+		}
+	}
+	focus = {
+		id = mncfoc9
+		icon = GFX_goal_generic_military_deal
+		x = 1
+		y = 1
+ 	
+		
+		available = {
+		has_government = neutrality
+		OR = {AQU = {exists = yes has_government = neutrality} NAR = {exists = yes has_government = neutrality} }
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus =mncfoc7}
+		relative_position_id = mncfoc7
+		mutually_exclusive = {focus = }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		 
+		completion_reward = {
+		if = {
+		limit = {
+		AQU = {exists = yes has_government = neutrality}
+		}
+		AQU = {country_event = mncpact.1}
+		}
+		if = {
+		limit = {
+		NAR = {exists = yes has_government = neutrality}
+		}
+		NAR = {country_event = mncpact.2}
+		}
+		}
+		
+		
+	}	
+	focus = {
+		id = mncfoc10
+		icon = GFX_focus_mncdef
+		x = 2
+		y = 1
+ 	
+		
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus =mncfoc11 focus = mncfoc16 }
+		relative_position_id = mncfoc11
+		mutually_exclusive = {focus = }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		 
+		completion_reward = {
+		183 = { add_building_construction = {
+							type = bunker
+							level = 5
+							province = 13251
+							instant_build = yes
+						}}
+		}
+		
+		
+	}
+	focus = {
+		id = mncfoc11
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 0
+		y = 1
+ 	
+		
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus =mncfoc9}
+		relative_position_id = mncfoc9
+		mutually_exclusive = {focus = }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		 
+		completion_reward = {
+		create_faction = "United European Monarchies" 
+		if = {
+		limit = {
+		AQU = {exists = yes has_government = neutrality} MNC = {has_country_flag = aquyes}
+		}
+		AQU = {country_event = mncpact.3}
+		}
+		if = {
+		limit = {
+		NAR = {exists = yes has_government = neutrality} MNC = {has_country_flag = naryes}
+		}
+		NAR = {country_event = mncpact.4}
+		}
+		}
+		
+		
+	}
+	
+	focus = {
+		id = mncfoc12
+		icon = GFX_focus_rom_abdicate
+		x = 3
+		y = 1
+ 	
+		
+		available = {
+		OR = {
+		has_idea = mncmonarchy5 
+		has_idea = mncmonarchy4
+				}}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus =mncfoc5}
+		relative_position_id = mncfoc5
+		mutually_exclusive = {focus = mncfoc6 }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		 
+		completion_reward = {
+		add_ideas = mncspring
+		}
+		
+		
+	}
+	focus = {
+		id = mncfoc13
+		icon = GFX_focus_generic_support_the_left_right
+		x = 0
+		y = 1
+ 	
+		
+		available = {
+		democratic > 0.25
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus =mncfoc12}
+		relative_position_id = mncfoc12
+		mutually_exclusive = {focus = }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		 
+		completion_reward = {
+		set_politics = { ruling_party = democratic elections_allowed = yes }
+		}
+		
+		
+	}
+	focus = {
+		id = mncfoc14
+		icon = GFX_goal_continuous_boost_freedom
+		x = 1
+		y = 1
+ 	
+		
+		available = {
+	
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus =mncfoc13}
+		relative_position_id = mncfoc13
+		mutually_exclusive = {focus = }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		 
+		completion_reward = {
+		swap_ideas =  {
+		remove_idea = mncspring
+		add_idea = mncspring1  
+		}
+		}
+		
+		
+	}
+	focus = {
+		id = mncfoc15
+		icon = GFX_goal_generic_secret_weapon
+		x = -1
+		y = 1
+ 	
+		
+		available = {
+	
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus =mncfoc13}
+		relative_position_id = mncfoc13
+		mutually_exclusive = {focus = }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		 
+		completion_reward = {
+		country_event = mncfamily.1
+		}
+		
+		
+	}
+	focus = {
+		id = mncfoc16
+		icon = GFX_focus_mex_privatisation
+		x = 0
+		y = 1
+ 	
+		
+		available = {
+	
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+		prerequisite = { focus =mncfoc15}
+		relative_position_id = mncfoc15
+		mutually_exclusive = {focus = }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		 
+		completion_reward = {
+		183 = {
+		add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+		}
+		}
+		
+		
+	}
+	}

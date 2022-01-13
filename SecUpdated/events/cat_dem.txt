@@ -1,0 +1,131 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = cat_dem
+
+################## CAT DEMOCRATIC ##############
+country_event = {
+	id = cat_dem.1
+	title = "Triumph in the Girona elections!"
+	desc = cat_dem.1.d
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "The end is near"
+		ai_chance = { factor = 100 }
+		add_stability = -0.05
+		hidden_effect = {country_event = {id = cat_dem.2 days = 3}}
+	}
+	
+	
+}
+country_event = {
+	id = cat_dem.2
+	title = "The Catalan Goverment concedes defeat"
+	desc = cat_dem.2.d
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = "They fear us"
+		ai_chance = { factor = 1 }
+		add_political_power = 25
+		hidden_effect = {country_event = {id = cat_dem.3 days = 15 }}
+	}
+}
+country_event = {
+	id = cat_dem.3
+	title = "A multitude of municipalities follow LLeida!"
+	desc = cat_dem.3.d
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = "We are growing"  
+		ai_chance = { factor = 1 }
+		add_stability = -0.05
+		add_political_power = 25
+		hidden_effect = {country_event = {id = cat_dem.4 days = 12 }}
+	}
+}
+country_event = {
+	id = cat_dem.4
+	title = "Nin resigns"
+	desc = cat_dem.4.d
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = "It is time!"
+		ai_chance = { factor = 1 }
+		add_political_power = 25
+		add_stability = 0.15
+		set_politics = { ruling_party = democratic elections_allowed = yes last_election = "1936.1.1" election_frequency = 48 }
+	}
+}
+country_event = { ########BAN COM########
+	id = cat_dem.5
+	title = "Election days!"
+	desc = cat_dem.5.d
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = "A ERC win"
+		ai_chance = { factor = 1 }
+		set_country_flag = cat_erc
+		}
+	option = { 
+		name = "A LLiga win"
+		ai_chance = { factor = 1 }
+		set_country_flag = cat_lliga
+		}
+}
+country_event = { ########BAN COM########
+	id = cat_dem.6
+	title = "A neverending dispute"
+	desc = cat_dem.5.d
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = "Companys"
+		ai_chance = { factor = 1 }
+		add_country_leader_role = {
+				character = "CAT_lluis_companys"
+				country_leader = {
+					ideology = liberalism
+					traits = { broad_base }
+					expire = "1965.3.1.1"
+				}
+				promote_leader = yes 
+			}
+		}
+	option = { 
+		name = "Macià"
+		ai_chance = { factor = 1 }
+		add_country_leader_role = {
+				character = "CAT_macia"
+				country_leader = {
+					ideology = liberalism
+					traits = { radical_nationalist }
+					expire = "1965.3.1.1"
+				}
+				promote_leader = yes 
+			}
+		} 
+		
+}

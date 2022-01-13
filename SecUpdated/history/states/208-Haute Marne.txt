@@ -1,0 +1,27 @@
+
+state={
+	id=208
+	name="Haute Marne"
+
+	history={
+		owner = CMP
+		add_core_of = CMP
+		victory_points = {
+			14222 2 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 0
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		4074 4138 8019 10030 14222 14279 
+	}
+	manpower=188429
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

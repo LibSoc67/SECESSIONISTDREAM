@@ -1,0 +1,10 @@
+
+strategic_region={
+	id=37
+	name="Isle Of Man"
+	provinces={
+		17525 18125 18139 18153 18387 18481 18488 18522 18733 18795 18889 18892 18897 
+	}
+	weather={
+	}
+}

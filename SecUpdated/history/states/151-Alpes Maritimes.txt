@@ -1,0 +1,33 @@
+
+state={
+	id=151
+	name="Alpes Maritimes"
+
+	history={
+		owner = PRO
+		add_core_of = PRO
+		add_claim_by = OCC
+		victory_points = {
+			15328 16 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 4
+			15328 = {
+				naval_base = 6
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		7117 10212 15229 15279 15328 
+	}
+	manpower=513714
+	buildings_max_level_factor=1.000
+	state_category=city
+}

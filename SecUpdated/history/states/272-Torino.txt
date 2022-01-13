@@ -1,0 +1,27 @@
+
+state={
+	id=272
+	name="Torino"
+	provinces={
+		1395 3605 4695 5870 8146 8235 8961 10695 10843 14875 14973 
+	}
+	history={
+		owner = PIE
+		add_core_of = PIE
+		victory_points = {
+		10843 30	
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 2
+			air_base = 6
+
+		}
+
+	}
+	state_category=large_city
+	manpower=1492827
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

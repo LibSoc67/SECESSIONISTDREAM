@@ -1,0 +1,73 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = andpressure
+
+# penis
+country_event = {
+	id = andpressure.1
+	title = "Aliance with Andalucia?"
+	desc = "Andalucia and us have the same enemies. Shall we unite?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We must accept"
+		ai_chance = { factor = 100 }
+		ADA = { add_to_faction = MDR }
+    
+	ADA = {
+	country_event = andpressure.2
+	}
+}
+
+	
+	
+	option = { 
+		name = "We will refuse!"
+		ai_chance = { factor = 0 }
+	
+
+		ADA = { create_wargoal = {
+				type = puppet_wargoal_focus
+				target = MDR
+				expire = 4
+				}
+country_event = andpressure.3				
+				}
+				
+	add_threat = 3 
+ 
+		MDR = {add_war_support	= 0.2 }
+
+}}
+country_event = {
+	id = andpressure.2
+	title = "They have accepted"
+	desc = "Madrid has accepted our proposal." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Great!"
+		ai_chance = { factor = 100 }
+		
+}
+}
+country_event = {
+	id = andpressure.3
+	title = "They have rejected"
+	desc = "Madrid has rejected our proposal." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Now they will pay with blood!"
+		ai_chance = { factor = 100 }
+		
+}
+}

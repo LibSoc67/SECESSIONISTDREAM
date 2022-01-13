@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=65
+	name="Costa Brava"
+	provinces={
+		17506 17517 17611 17647 17777 18078 18134 18347 18376 18458 18507 18696 18710 18810 18943 18944 18950 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

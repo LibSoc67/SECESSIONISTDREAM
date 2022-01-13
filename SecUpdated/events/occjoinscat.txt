@@ -1,0 +1,70 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = occjoinscat
+
+# penis
+country_event = {
+	id = occjoinscat.1
+	title = "Good news from the North"
+	desc = "The distributists, aka the religious communists, in Occitania want to join our faction. Shall we let them join our faction?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Yes, all help is great"
+		ai_chance = { factor = 100 }
+		CAT = { add_to_faction = OCC }
+		OCC = {country_event = occjoinscat.2}
+}
+	
+	
+	option = { 
+		name = "They are too religious!"
+		ai_chance = { factor = 0 }
+	 OCC={
+			add_opinion_modifier { 
+			target = CAT
+			modifier = large_decrease
+		}
+		}	
+	CAT={
+			add_opinion_modifier { 
+			target = OCC
+			modifier = large_decrease
+		}
+		}	
+		OCC ={ country_event = occjoinscat.3}
+				
+
+
+}}
+country_event = {
+	id = occjoinscat.2
+	title = "The negotiation has been successful"
+	desc = "After a few days of intense negotiation, Catalonia and us have finally agreed on cooperating." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Great!"
+		ai_chance = { factor = 100 }
+		
+}
+}
+country_event = {
+	id = occjoinscat.3
+	title = "The negotiation has failed"
+	desc = "After a few days of intense negotiation, Catalonia and us have failed on trying to cooperate more. It appears that we are not far left enought for them." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We are on our own now."
+		ai_chance = { factor = 100 }
+}
+}

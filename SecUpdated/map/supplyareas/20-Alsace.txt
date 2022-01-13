@@ -1,0 +1,9 @@
+
+supply_area={
+	id=20
+	name="Alsace"
+	value=15
+	states={
+		212 215 213 214 211 210 209 
+	}
+}

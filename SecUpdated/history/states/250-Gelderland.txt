@@ -1,0 +1,30 @@
+
+state={
+	id=250
+	name="Gelderland"
+	provinces={
+		2756 4846 7423 8993 10538 13119 13137 13142 
+	}
+	history={
+		owner = GRL
+		add_core_of = GRL
+		victory_points = {
+		7423 12
+		}
+		victory_points = {
+		10538 12
+		}
+		victory_points = {
+		13119 12
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 3
+			industrial_complex = 3
+		}
+
+	}
+	manpower=1498272
+	buildings_max_level_factor=1.000
+	state_category=city
+}

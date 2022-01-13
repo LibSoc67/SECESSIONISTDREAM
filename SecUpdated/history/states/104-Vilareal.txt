@@ -1,0 +1,32 @@
+
+state={
+	id=104
+	name="Vilareal"
+	provinces={
+		2312 2323 9211 15451 15548 15586 15593 
+	}
+	resources={
+		rubber=0.000
+		tungsten=17.000
+		steel=9.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = TMD
+		add_core_of = TMD
+		victory_points = { 15548 4 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex	= 1
+			dockyard = 0
+			air_base= 2
+			#10423 = { naval_base = 6}
+		}
+
+	}
+	state_category = rural
+	manpower=173202
+	buildings_max_level_factor=1.000
+}

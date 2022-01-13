@@ -1,0 +1,33 @@
+
+state={
+	id=194
+	name="Loiret"
+	resources={
+		rubber=0.000
+		tungsten=7.000
+		steel=8.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+
+	history={
+		owner = CEN
+		add_core_of = CEN
+		
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+
+	}
+
+	provinces={
+		8818 10206 10955 14165 14195 14344 
+	}
+	manpower=343865
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

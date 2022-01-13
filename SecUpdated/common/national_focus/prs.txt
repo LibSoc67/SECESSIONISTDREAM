@@ -1,0 +1,2618 @@
+﻿focus_tree = {
+
+	id = prs_foc1
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+				tag = PRS
+		}
+	}
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 0 }
+focus = {
+		id = prsfoc1
+		icon = GFX_focus_prs_red_star_gold_wreath
+		x = 23
+		y = 0
+ 	ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 5
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_political_power = 100
+			}
+		}
+focus = {
+		id = prsfoc2
+		icon = GFX_focus_prs_liberte
+		x = -10
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc1
+		prerequisite = { focus = prsfoc1 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 3
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_war_support = 0.04
+			}
+		}
+focus = {
+		id = prsfoc3
+		icon = GFX_focus_prs_generic_female_rights
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc1
+		prerequisite = { focus = prsfoc1 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 3
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_war_support = 0.02
+		add_stability = 0.02
+			}
+		} 
+focus = {
+		id = prsfoc4
+		icon = GFX_focus_prs_workers_paradise
+		x = 10
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc1
+		prerequisite = { focus = prsfoc1 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 3
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_stability = 0.04
+			}
+		}
+focus = { 
+		id = prsfoc5
+		icon = GFX_focus_prs_property
+		x = 1
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc4
+		prerequisite = { focus = prsfoc4}
+		mutually_exclusive = {focus = prsfoc6}
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		custom_effect_tooltip = cet_10_dis
+		add_ideas = keep_prop
+		hidden_effect = {
+		random_list = {
+				10 = {
+					if = {
+						limit = {has_idea = paris_comune7}
+						swap_ideas = {
+						remove_idea = paris_comune7
+						add_idea = paris_comune2
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune2}
+						swap_ideas = {
+						remove_idea = paris_comune2
+						add_idea = paris_comune5
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune5}
+						swap_ideas = {
+						remove_idea = paris_comune5
+						add_idea = paris_comune6
+					}
+					}
+					
+					else_if = {
+						limit = { NOT = {AND = {has_idea = paris_comune7 has_idea = paris_comune2 has_idea = paris_comune5 has_idea = paris_comune6}}}
+						add_ideas = paris_comune7
+					}
+				}
+				90 = {
+				}
+			}
+			}
+			}
+		}
+focus = {
+		id = prsfoc6
+		icon = GFX_focus_prs_no_property
+		x = -1
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc4
+		prerequisite = { focus = prsfoc4}
+		mutually_exclusive = {focus = prsfoc5}
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		custom_effect_tooltip = cet_20_dis
+		add_ideas =abolis_prop
+		hidden_effect = {
+		random_list = {
+				20 = {
+					if = {
+						limit = {has_idea = paris_comune7}
+						swap_ideas = {
+						remove_idea = paris_comune7
+						add_idea = paris_comune2
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune2}
+						swap_ideas = {
+						remove_idea = paris_comune2
+						add_idea = paris_comune5
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune5}
+						swap_ideas = {
+						remove_idea = paris_comune5
+						add_idea = paris_comune6
+					}
+					}
+					
+					else_if = {
+						limit = { NOT = {AND = {has_idea = paris_comune7 has_idea = paris_comune2 has_idea = paris_comune5 has_idea = paris_comune6}}}
+						add_ideas = paris_comune7
+					}
+				}
+				80 = {
+				}
+			}
+			}
+		}
+		}
+focus = {
+		id = prsfoc7
+		icon = GFX_focus_prs_money
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc5
+		prerequisite = { focus = prsfoc6 focus = prsfoc5}
+		mutually_exclusive = {focus = prsfoc8}
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 7
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		custom_effect_tooltip = cet_10_dis
+		add_ideas = prs_money
+		hidden_effect = {
+		random_list = {
+				10 = {
+					if = {
+						limit = {has_idea = paris_comune7}
+						swap_ideas = {
+						remove_idea = paris_comune7
+						add_idea = paris_comune2
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune2}
+						swap_ideas = {
+						remove_idea = paris_comune2
+						add_idea = paris_comune5
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune5}
+						swap_ideas = {
+						remove_idea = paris_comune5
+						add_idea = paris_comune6
+					}
+					}
+					
+					else_if = {
+						limit = { NOT = {AND = {has_idea = paris_comune7 has_idea = paris_comune2 has_idea = paris_comune5 has_idea = paris_comune6}}}
+						add_ideas = paris_comune7
+					}
+				}
+				90 = {
+				}
+			}
+			}
+			}
+		}
+focus = {
+		id = prsfoc8
+		icon = GFX_focus_prs_no_money
+		x = -2
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc5
+		prerequisite = { focus = prsfoc6 focus = prsfoc5}
+		mutually_exclusive = {focus = prsfoc7}
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 7
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		custom_effect_tooltip = cet_15_dis
+		add_ideas = prs_no_money
+		hidden_effect = {
+		random_list = {
+				15 = {
+					if = {
+						limit = {has_idea = paris_comune7}
+						swap_ideas = {
+						remove_idea = paris_comune7
+						add_idea = paris_comune2
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune2}
+						swap_ideas = {
+						remove_idea = paris_comune2
+						add_idea = paris_comune5
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune5}
+						swap_ideas = {
+						remove_idea = paris_comune5
+						add_idea = paris_comune6
+					}
+					}
+					
+					else_if = {
+						limit = { NOT = {AND = {has_idea = paris_comune7 has_idea = paris_comune2 has_idea = paris_comune5 has_idea = paris_comune6}}}
+						add_ideas = paris_comune7
+					}
+				}
+				85 = {
+				}
+			}
+			}
+		
+			}
+		}
+focus = {
+		id = prsfoc9
+		icon = GFX_focus_prs_big_fact
+		x = -2
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc7
+		prerequisite = { focus = prsfoc7 focus = prsfoc8}
+		mutually_exclusive = {focus = prsfoc10}
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 5
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		custom_effect_tooltip = cet_5_dis
+		add_ideas = prs_big_buiss
+		hidden_effect = {
+		random_list = {
+				5 = {
+					if = {
+						limit = {has_idea = paris_comune7}
+						swap_ideas = {
+						remove_idea = paris_comune7
+						add_idea = paris_comune2
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune2}
+						swap_ideas = {
+						remove_idea = paris_comune2
+						add_idea = paris_comune5
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune5}
+						swap_ideas = {
+						remove_idea = paris_comune5
+						add_idea = paris_comune6
+					}
+					}
+					
+					else_if = {
+						limit = { NOT = {AND = {has_idea = paris_comune7 has_idea = paris_comune2 has_idea = paris_comune5 has_idea = paris_comune6}}}
+						add_ideas = paris_comune7
+					}
+				}
+				95 = {
+				}
+			}
+			}
+			custom_effect_tooltip = cet_prs_foc9
+			if = {
+			limit = {AND = {has_completed_focus = prsfoc8 has_completed_focus = prsfoc6 }}
+			add_ideas = prs_marxist
+			}
+			}
+		}
+focus = {
+		id = prsfoc10
+		icon = GFX_focus_prs_small_fact
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc7
+		prerequisite = { focus = prsfoc7 focus = prsfoc8}
+		mutually_exclusive = {focus = prsfoc9}
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 5
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		custom_effect_tooltip = cet_5_dis
+		add_ideas = prs_small_buiss
+		hidden_effect = {
+		random_list = {
+				5 = {
+					if = {
+						limit = {has_idea = paris_comune7}
+						swap_ideas = {
+						remove_idea = paris_comune7
+						add_idea = paris_comune2
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune2}
+						swap_ideas = {
+						remove_idea = paris_comune2
+						add_idea = paris_comune5
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune5}
+						swap_ideas = {
+						remove_idea = paris_comune5
+						add_idea = paris_comune6
+					}
+					}
+					
+					else_if = {
+						limit = { NOT = {AND = {has_idea = paris_comune7 has_idea = paris_comune2 has_idea = paris_comune5 has_idea = paris_comune6}}}
+						add_ideas = paris_comune7
+					}
+				}
+				95 = {
+				}
+			}
+			}
+			
+			custom_effect_tooltip = cet_prs_foc10
+			if = {
+			limit = {AND = {has_completed_focus = prsfoc5 has_completed_focus = prsfoc7 }}
+			add_ideas = prs_mutualist
+			}
+			
+			}
+		}
+focus = {
+		id = prsfoc11
+		icon = GFX_goal_generic_construct_civ_factory
+		x = -3
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc10
+		prerequisite = { focus = prsfoc10 focus = prsfoc9}
+		available = {
+		196 = { is_owned_and_controlled_by = PRS}
+				}
+		mutually_exclusive = {focus = prsfoc12}
+		mutually_exclusive = {focus = prsfoc13}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		196 = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		
+		}
+			}
+		}
+focus = {
+		id = prsfoc12
+		icon = GFX_goal_generic_construct_civilian
+		x = -1
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		mutually_exclusive = {focus = prsfoc11}
+		mutually_exclusive = {focus = prsfoc13}
+		relative_position_id = prsfoc10
+		prerequisite = { focus = prsfoc10 focus = prsfoc9}
+		available = {
+		223 = {is_owned_and_controlled_by = PRS}
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		223 = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		
+		}
+			}
+		}
+focus = {
+		id = prsfoc13
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 1
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		mutually_exclusive = {focus = prsfoc12}
+		mutually_exclusive = {focus = prsfoc11}
+		relative_position_id = prsfoc10
+		prerequisite = { focus = prsfoc10 focus = prsfoc9}
+		available = {
+		199 = { is_owned_and_controlled_by = PRS }
+		198 = { is_owned_and_controlled_by = PRS }
+		195 = { is_owned_and_controlled_by = PRS }
+		197 = { is_owned_and_controlled_by = PRS }
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		199 = { add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				} 
+		add_extra_state_shared_building_slots = 1		
+				}
+		198 = { add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				} 
+				add_extra_state_shared_building_slots = 1
+				}
+		195 = { add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				} 
+		add_extra_state_shared_building_slots = 1
+		}
+		197 = { add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				} 
+				add_extra_state_shared_building_slots = 1
+				}
+			}
+		}
+focus = {
+		id = prsfoc14
+		icon = GFX_focus_prs_social_churches
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc11
+		prerequisite = { focus = prsfoc11 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+		mutually_exclusive = {focus = prsfoc51}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_stability = 0.15
+		add_war_support = 0.05
+			}
+		}
+focus = {
+		id = prsfoc15 
+		icon = GFX_focus_prs_schools
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc12
+		prerequisite = { focus = prsfoc12 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_research_slot = 1
+			}
+		}
+focus = {
+		id = prsfoc16
+		icon = GFX_goal_generic_construction2
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc13
+		prerequisite = { focus = prsfoc13 }
+		available = {
+		195 = {is_owned_and_controlled_by = PRS}
+		197 = {is_owned_and_controlled_by = PRS}
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		195  = { add_resource = {
+				type = steel
+				amount = 12 } }
+		199 = { add_resource = {
+				type = steel
+				amount = 17 } }
+			}
+		}
+focus = {
+		id = prsfoc17
+		icon = GFX_goal_generic_military_sphere
+		x = -5
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc2
+		prerequisite = { focus = prsfoc2 }
+		mutually_exclusive = {focus = prsfoc18}
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_stability = -0.05
+		custom_effect_tooltip = cet_40_dis 
+		hidden_effect = {
+		random_list = {
+				40 = {
+					if = {
+						limit = {has_idea = paris_comune7}
+						swap_ideas = {
+						remove_idea = paris_comune7
+						add_idea = paris_comune2
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune2}
+						swap_ideas = {
+						remove_idea = paris_comune2
+						add_idea = paris_comune5
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune5}
+						swap_ideas = {
+						remove_idea = paris_comune5
+						add_idea = paris_comune6
+					}
+					}
+					
+					else_if = {
+						limit = { NOT = {AND = {has_idea = paris_comune7 has_idea = paris_comune2 has_idea = paris_comune5 has_idea = paris_comune6}}}
+						add_ideas = paris_comune7
+					}
+				}
+				60 = {
+				}
+			}
+			}
+			}
+		}
+focus = {
+		id = prsfoc18
+		icon = GFX_goal_generic_construct_military
+		x = -1
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc2
+		prerequisite = { focus = prsfoc2 }
+		mutually_exclusive = {focus = prsfoc17}
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_stability = 0.05
+		custom_effect_tooltip = cet_20_con
+		hidden_effect = {
+		random_list = {
+				20 = {
+					if = {
+						limit = { NOT = {has_idea = paris_comune7 has_idea = paris_comune2 has_idea = paris_comune5 has_idea = paris_comune6}}
+						add_political_power = 150
+					}
+					else_if = {
+						limit = {has_idea = paris_comune7}
+						remove_ideas = paris_comune7
+					}
+					
+					else_if = {
+						limit = {has_idea = paris_comune2}
+						swap_ideas = {
+						remove_idea = paris_comune2
+						add_idea = paris_comune7
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune5}
+						swap_ideas = {
+						remove_idea = paris_comune5
+						add_idea = paris_comune2
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune6}
+						swap_ideas = {
+						remove_idea = paris_comune6
+						add_idea = paris_comune5
+					}
+					}
+					
+				}
+				80 = {
+				}
+			}
+			}
+			}
+		}
+focus = {
+		id = prsfoc19
+		icon = GFX_focus_prs_army
+		x = 1
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc2
+		prerequisite = { focus = prsfoc2 }
+		mutually_exclusive = {focus = prsfoc20}
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		custom_effect_tooltip = cet_prs_foc19
+			}
+		}
+focus = {
+		id = prsfoc20
+		icon = GFX_focus_prs_generic_red_guard
+		x = 3
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc2
+		prerequisite = { focus = prsfoc2 }
+		mutually_exclusive = {focus = prsfoc19}
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = paris_comune3
+		add_idea = paris_reformed1
+			}
+		}
+		}
+focus = {
+		id = prsfoc21
+		icon = GFX_focus_prs_syndicalist_workers
+		x = 1
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc19
+		prerequisite = { focus = prsfoc19 focus = prsfoc20}
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		custom_effect_tooltip = cet_prsfoc21
+		swap_ideas = {
+		remove_idea = anarchy_sistem
+		add_idea = anarchy_sistem1
+		}
+			}
+		}
+focus = {
+		id = prsfoc22
+		icon = GFX_focus_prs_sanglante
+		x = 2
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc21
+		prerequisite = { focus = prsfoc21 }
+		prerequisite = { focus = prsfoc46 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = paris_comune1
+		add_idea = memories_reformed
+		
+		}
+			}
+		}
+focus = {
+		id = prsfoc23
+		icon = GFX_focus_por_workers_of_iberia
+		x = -1
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc17
+		prerequisite = { focus = prsfoc17}
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		PIC = { country_event = prs_exp.1 }
+			}
+		}
+focus = {
+		id = prsfoc24
+		icon = GFX_focus_generic_combined_arms
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc23
+		prerequisite = { focus = prsfoc23}
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		custom_effect_tooltip = cet_prsfoc24
+			}
+		}
+focus = {
+		id = prsfoc25
+		icon = GFX_focus_generic_support_the_left_right
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc24
+		prerequisite = { focus = prsfoc24}
+		available = {
+		has_country_flag = prs_lib1
+		has_country_flag = prs_lib2
+		has_country_flag = prs_lib3
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+		will_lead_to_war_with = PIC
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		custom_effect_tooltip = cet_prs_foc25
+		hidden_effect = {PIC = {country_event = {id = pic_anarchy.1 days = 5}}}
+			}
+		}
+focus = {
+		id = prsfoc26
+		icon = GFX_focus_prs_haute1
+		x = 1
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc17
+		prerequisite = { focus = prsfoc17}
+		available = {
+		
+				}
+		bypass = {
+		HNO = {exists = no}
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		HNO = { country_event = hnojoinsprs.1 }
+			}
+		}
+focus = {
+		id = prsfoc27
+		icon = GFX_focus_fra_regiment_normandie
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc26
+		prerequisite = { focus = prsfoc26}
+		available = {
+		HNO = {is_in_faction_with = PRS}
+				}
+		bypass = {
+		has_country_flag = hnono
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		hidden_effect = {set_cosmetic_tag = form_normandie}
+		custom_effect_tooltip = cet_prs_foc27
+		puppet = HNO
+			}
+		}
+focus = {
+		id = prsfoc28
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc27
+		prerequisite = { focus = prsfoc27}
+		available = {
+		HNO = {is_puppet_of = PRS}
+				}
+		bypass = {
+		BNO = {exists = no}
+		}
+		
+		cost = 10
+		will_lead_to_war_with = BNO
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		declare_war_on = {
+				target = BNO
+				type = annex_everything
+			}
+		HNO = {
+		declare_war_on = {
+				target = BNO
+				type = annex_everything
+			}
+		}
+			}
+		}
+focus = {
+		id = prsfoc29
+		icon = GFX_focus_prs_antilib
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc25
+		prerequisite = { focus = prsfoc25 }
+		prerequisite = { focus = prsfoc28 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_popularity = {
+		ideology = democratic
+		popularity = -0.2
+		}
+		NPC = {
+		add_opinion_modifier = { target = PRS modifier = large_decrease }
+		}
+		add_threat = 1
+			}
+		}
+focus = {
+		id = prsfoc30
+		icon = GFX_focus_prs_antifas
+		x = 2
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc25
+		prerequisite = { focus = prsfoc25 }
+		prerequisite = { focus = prsfoc28 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_popularity = {
+		ideology = fascism
+		popularity = -0.2
+		}
+		CEN = {
+		add_opinion_modifier = { target = PRS modifier = large_decrease }
+		}
+		add_threat = 1
+			}
+		}
+focus = {
+		id = prsfoc31
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc29
+		prerequisite = { focus = prsfoc29 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_war_support = 0.05
+		custom_effect_tooltip = cet_prsfoc31
+			}
+		}
+focus = {
+		id = prsfoc32
+		icon = GFX_focus_prs_ded
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc31
+		prerequisite = { focus = prsfoc31 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+		will_lead_to_war_with = NPC
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		country_event = "prsass.1"
+			}
+		}
+focus = {
+		id = prsfoc33
+		icon = GFX_focus_focus_fra_fascist_threat
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc30
+		prerequisite = { focus = prsfoc30 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_war_support = 0.05
+		custom_effect_tooltip = cet_prsfoc33
+			}
+		}
+focus = {
+		id = prsfoc34
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc33
+		prerequisite = { focus = prsfoc33 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+		will_lead_to_war_with = CEN
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		create_wargoal = {
+				type = annex_everything
+				target = CEN
+				expire = 0
+		
+				
+			}
+			}
+		}
+focus = {
+		id = prsfoc35
+		icon = GFX_focus_prs_defense
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc18
+		prerequisite = { focus = prsfoc18 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_timed_idea = {
+		idea = occwrl4 days = 200
+		}
+			}
+		}
+focus = {
+		id = prsfoc36
+		icon = GFX_goal_generic_fortify_city
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc35
+		prerequisite = { focus = prsfoc35 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		hidden_effect = {
+		197 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 13877
+							instant_build = yes
+						}}
+		197 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 13903
+							instant_build = yes
+						}}
+		197 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6827
+							instant_build = yes
+						}}
+		197 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 1786
+							instant_build = yes
+						}}
+		}
+		custom_effect_tooltip = cet_prsfoc36 
+			}
+		}
+focus = {
+		id = prsfoc37
+		icon = GFX_goal_generic_fortify_city
+		x = -1
+		y = 2
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc35
+		prerequisite = { focus = prsfoc35 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		hidden_effect = {199 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 14051
+							instant_build = yes
+						}}
+		199 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 13995
+							instant_build = yes
+						}}
+		199 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 13943
+							instant_build = yes
+						}}
+			}
+		custom_effect_tooltip = cet_prsfoc37
+			}
+			
+		}
+focus = {
+		id = prsfoc38
+		icon = GFX_goal_generic_fortify_city
+		x = 0
+		y = 2
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc36
+		prerequisite = { focus = prsfoc36 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		hidden_effect = {
+		199 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11349
+							instant_build = yes
+						}}
+		198 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 14119
+							instant_build = yes
+						}}
+		198 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 14139
+							instant_build = yes
+						}}
+		198 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 14117
+							instant_build = yes
+						}}
+			}
+			custom_effect_tooltip = cet_prsfoc38
+			}
+		}
+focus = {
+		id = prsfoc39
+		icon = GFX_goal_generic_fortify_city
+		x = 1
+		y = 2
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc35
+		prerequisite = { focus = prsfoc35 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		hidden_effect = {
+		195 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 5387
+							instant_build = yes
+						}}
+		195 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 10172
+							instant_build = yes
+						}}
+		195 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 8996
+							instant_build = yes
+						}}
+		195 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9356
+							instant_build = yes
+						}}
+			}
+			custom_effect_tooltip = cet_prsfoc39
+			} 
+		}
+focus = {
+		id = prsfoc40
+		icon = GFX_focus_generic_air_defense
+		x = -1
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc38
+		prerequisite = { focus = prsfoc37 }
+		prerequisite = { focus = prsfoc38 }
+
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		196 = { add_building_construction = {
+							type = anti_air_building    
+							level = 4
+							instant_build = yes
+						}}
+		197 = { add_building_construction = {
+							type = anti_air_building    
+							level = 1
+							instant_build = yes
+						}}
+		198 = { add_building_construction = {
+							type = anti_air_building    
+							level = 2
+							instant_build = yes
+						}}
+		199 = { add_building_construction = {
+							type = anti_air_building    
+							level = 2
+							instant_build = yes
+						}}
+		195 = { add_building_construction = {
+							type = anti_air_building    
+							level = 1
+							instant_build = yes
+						}}
+		223 = { add_building_construction = {
+							type = anti_air_building    
+							level = 3
+							instant_build = yes
+						}}
+		
+			}
+		}
+focus = { 
+		id = prsfoc41
+		icon = GFX_goal_generic_fortify_city
+		x = 1
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc38
+		prerequisite = { focus = prsfoc39}
+		prerequisite = { focus = prsfoc38 }
+
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		hidden_effect = {
+		196 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 7941
+							instant_build = yes
+						}}
+		223 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 14057
+							instant_build = yes
+						}}
+		223 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9957
+							instant_build = yes
+						}}
+		199 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 1702
+							instant_build = yes
+						}} 
+			}
+			custom_effect_tooltip = cet_prsfoc41
+			}
+		}
+	focus = {  
+		id = prsfoc42
+		icon = GFX_focus_prs_equal
+		x = 1
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc3
+		prerequisite = { focus = prsfoc3}
+
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		custom_effect_tooltip = cet_15_dis
+		hidden_effect = {
+		random_list = {
+				15 = {
+					if = {
+						limit = {has_idea = paris_comune7}
+						swap_ideas = {
+						remove_idea = paris_comune7
+						add_idea = paris_comune2
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune2}
+						swap_ideas = {
+						remove_idea = paris_comune2
+						add_idea = paris_comune5
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune5}
+						swap_ideas = {
+						remove_idea = paris_comune5
+						add_idea = paris_comune6
+					}
+					}
+					
+					else_if = {
+						limit = { NOT = {AND = {has_idea = paris_comune7 has_idea = paris_comune2 has_idea = paris_comune5 has_idea = paris_comune6}}}
+						add_ideas = paris_comune7
+					}
+				}
+				85 = {
+				}
+			}
+			}
+		add_ideas = prs_women
+			}
+		}
+	focus = {  
+		id = prsfoc43
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = -1
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc3
+		prerequisite = { focus = prsfoc3}
+
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		country_event = prsait.1
+		
+			}
+		}
+	focus = {  
+		id = prsfoc44
+		icon = GFX_focus_secret_rearmament
+		x = 1
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc43
+		prerequisite = { focus = prsfoc43 focus = prsfoc42}
+
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_ideas = prs_volunt
+		
+			}
+		}
+		focus = {  
+		id = prsfoc45
+		icon = GFX_focus_spr_regional_defense_council_of_aragon
+		x = -1
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc43
+		prerequisite = { focus = prsfoc43 }
+
+		available = {
+		OR = {19 = {is_owned_and_controlled_by = ARA} 19 = {is_owned_and_controlled_by = PRS}}
+				}
+		bypass = {
+		OR = {
+		ARA = {exists = no}
+		NOT = {is_in_faction_with = ARA}
+		}
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		19 = {
+		add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+		}
+		21 = {
+		add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+		}
+		if = {
+		limit = {ARA = {exists = yes}}
+		ARA = {country_event = prsait.6}
+		}
+			}
+		}
+	focus = {  
+		id = prsfoc46
+		icon = GFX_focus_spr_crush_the_revolution
+		x = -3
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc43
+		prerequisite = { focus = prsfoc43 }
+
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_stability = 0.1
+		add_popularity = {
+		popularity = 0.1
+		ideology = anarchy
+		}
+			}
+		}
+	focus = {  
+		id = prsfoc47
+		icon = GFX_focus_occfoc70
+		x = 3
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc43
+		prerequisite = { focus = prsfoc42 }
+
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		remove_country_leader_trait = direct_democracy
+		add_country_leader_trait = democratic_confederalism
+			}
+		}
+	focus = {  
+		id = prsfoc48
+		icon = GFX_focus_spa_eliminate_the_carlists
+		x = 5
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc43
+		prerequisite = { focus = prsfoc42 }
+
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_political_power = 100
+		add_popularity = {
+		popularity = -0.1
+		ideology = neutrality
+		}
+			}
+		}
+	focus = {  
+		id = prsfoc49
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc48
+		prerequisite = { focus = prsfoc48 }
+
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_ideas = atheism
+			}
+		}
+	focus = {  
+		id = prsfoc50
+		icon = GFX_focus_prs_kill_paud
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc49
+		prerequisite = { focus = prsfoc49}
+
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		remove_ideas = prs_religious
+			}
+		}
+	focus = {  
+		id = prsfoc51
+		icon = GFX_focus_spr_class_war
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc50
+		prerequisite = { focus = prsfoc50}
+		mutually_exclusive = {focus = prsfoc14}
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 2 }
+			}
+		}
+	focus = {  
+		id = prsfoc52
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc47
+		prerequisite = { focus = prsfoc47}
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		hidden_effect = {random_list = {
+				20 = {
+					if = {
+						limit = { NOT = {has_idea = paris_comune7 has_idea = paris_comune2 has_idea = paris_comune5 has_idea = paris_comune6}}
+						add_political_power = 150
+					}
+					else_if = {
+						limit = {has_idea = paris_comune7}
+						remove_ideas = paris_comune7
+					}
+					
+					else_if = {
+						limit = {has_idea = paris_comune2}
+						swap_ideas = {
+						remove_idea = paris_comune2
+						add_idea = paris_comune7
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune5}
+						swap_ideas = {
+						remove_idea = paris_comune5
+						add_idea = paris_comune2
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune6}
+						swap_ideas = {
+						remove_idea = paris_comune6
+						add_idea = paris_comune5
+					}
+					}
+					
+				}
+				80 = {
+				}
+			}}
+		custom_effect_tooltip = cet_20_con
+			
+		add_stability = 0.13
+			}
+		}
+	focus = {  
+		id = prsfoc53
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc52
+		prerequisite = { focus = prsfoc52}
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		hidden_effect = {random_list = {
+				20 = {
+					if = {
+						limit = { NOT = {has_idea = paris_comune7 has_idea = paris_comune2 has_idea = paris_comune5 has_idea = paris_comune6}}
+						add_political_power = 150
+					}
+					else_if = {
+						limit = {has_idea = paris_comune7}
+						remove_ideas = paris_comune7
+					}
+					
+					else_if = {
+						limit = {has_idea = paris_comune2}
+						swap_ideas = {
+						remove_idea = paris_comune2
+						add_idea = paris_comune7
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune5}
+						swap_ideas = {
+						remove_idea = paris_comune5
+						add_idea = paris_comune2
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune6}
+						swap_ideas = {
+						remove_idea = paris_comune6
+						add_idea = paris_comune5
+					}
+					}
+					
+				}
+				80 = {
+				}
+			}}
+		custom_effect_tooltip = cet_20_con
+		add_stability = 0.12	
+			}
+		}
+	focus = {  
+		id = prsfoc54
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc45
+		prerequisite = { focus = prsfoc45}
+		available = {
+		OR = {19 = {is_owned_and_controlled_by = ARA} 19 = {is_owned_and_controlled_by = PRS}}
+				}
+		bypass = {
+		OR = {
+		ARA = {exists = no}
+		NOT = {is_in_faction_with = ARA}
+		}
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		19 = {add_building_construction = {	type = infrastructure level = 1 instant_build = yes }}
+		21 = {add_building_construction = {	type = infrastructure level = 1 instant_build = yes }}
+		20 = {add_building_construction = {	type = infrastructure level = 1 instant_build = yes }}
+		23 = {add_building_construction = {	type = infrastructure level = 1 instant_build = yes }}
+		22 = {add_building_construction = {	type = infrastructure level = 1 instant_build = yes }}
+		ARA = {country_event = prsait.6}	
+			}
+		}
+	focus = {  
+		id = prsfoc55
+		icon = GFX_goal_generic_build_airforce
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc54
+		prerequisite = { focus = prsfoc54}
+		available = {
+		ARA = {exists = yes is_in_faction_with = PRS}
+				}
+		bypass = {
+		OR = {
+		ARA = {exists = no}
+		NOT = {is_in_faction_with = ARA}
+		}
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		army_experience = 15
+		ARA = {country_event = prsait.7 add_ideas = prs_ara_adv}	
+			}
+		}
+	focus = {   
+		id = prsfoc56
+		icon = GFX_focus_focus_fra_border
+		x = 6
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc34
+		prerequisite = { focus = prsfoc34 }
+		prerequisite = { focus = prsfoc32 }
+		prerequisite = { focus = prsfoc22 }
+		available = {
+		NOT = {has_country_flag = formed_ait}
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+		mutually_exclusive = {focus = prsfoc61}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		custom_effect_tooltip = cet_prsfoc56
+		hidden_effect = {
+		set_cosmetic_tag = form_france
+		add_state_core = 184
+		add_state_core = 185
+		add_state_core = 186
+		add_state_core = 187
+		add_state_core = 188
+		add_state_core = 200
+		add_state_core = 201
+		add_state_core = 202
+		add_state_core = 203
+		add_state_core = 204
+		add_state_core = 172
+		add_state_core = 173
+		add_state_core = 174
+		add_state_core = 175
+		add_state_core = 176
+		add_state_core = 189
+		add_state_core = 190
+		add_state_core = 191
+		add_state_core = 192
+		add_state_core = 193
+		add_state_core = 194
+		add_state_core = 219
+		add_state_core = 220
+		add_state_core = 221
+		add_state_core = 222
+		add_state_core = 205
+		add_state_core = 206
+		add_state_core = 207
+		add_state_core = 208
+		add_state_core = 209
+		add_state_core = 210
+		add_state_core = 211
+		add_state_core = 212
+		add_state_core = 215
+		add_state_core = 216
+		add_state_core = 217
+		add_state_core = 218
+		add_state_core = 168
+		add_state_core = 169
+		add_state_core = 170
+		add_state_core = 171
+		add_state_core = 164
+		add_state_core = 161
+		add_state_core = 155
+		add_state_core = 156
+		add_state_core = 157
+		add_state_core = 158
+		add_state_core = 159
+		add_state_core = 232
+		add_state_core = 233
+		add_state_core = 238
+		add_state_core = 235
+		add_state_core = 234
+		}
+		}
+		
+		}
+	focus = {   
+		id = prsfoc57
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = -3
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc56
+		prerequisite = { focus = prsfoc56}
+		available = {
+		
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		custom_effect_tooltip = "Will give you wargoals on all the states that the NEC didn't annex."
+		if = {limit = {LOI = {exists = yes}} create_wargoal = {type = annex_everything target = LOI expire = 0}}
+		if = {limit = {BOU = {exists = yes}} create_wargoal = {type = annex_everything target = BOU expire = 0}}
+		if = {limit = {FCO = {exists = yes}} create_wargoal = {type = annex_everything target = FCO expire = 0}}
+		if = {limit = {CMP = {exists = yes}} create_wargoal = {type = annex_everything target = CMP expire = 0}}
+		if = {limit = {LOR = {exists = yes}} create_wargoal = {type = annex_everything target = LOR expire = 0}}
+		if = {limit = {ALS = {exists = yes}} create_wargoal = {type = annex_everything target = ALS expire = 0}}
+		}
+		
+		}
+	focus = {   
+		id = prsfoc58
+		icon = GFX_focus_aquocc
+		x = -1
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc56
+		prerequisite = { focus = prsfoc56}
+		available = {
+		OCC = {exists = yes NOT = {has_war_with = PRS}}
+		
+				}
+		mutually_exclusive = {focus = prsfoc59}
+		mutually_exclusive = {focus = prsfoc60 }
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		OCC = {country_event = prsait.8 }
+		custom_effect_tooltip = cet_prsfoc58
+		}
+		
+		}
+	
+	focus = {   
+		id = prsfoc59
+		icon = GFX_focus_attack_occ
+		x = 1
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc56
+		prerequisite = { focus = prsfoc56}
+		mutually_exclusive = {focus = prsfoc58 }
+		mutually_exclusive = {focus = prsfoc59 }
+		available = {
+		
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		create_wargoal = {
+		type = annex_everything target = OCC expire = 365
+			}
+		}
+		
+		}
+	focus = {   
+		id = prsfoc60
+		icon = GFX_focus_prs_learn
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc22
+		
+		prerequisite = { focus = prsfoc22}
+		available = {
+		has_stability > 0.60
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		swap_ideas = {
+		add_idea = memories_reformed1
+		remove_idea = memories_reformed
+		}
+		}
+		
+		}
+	focus = {   
+		id = prsfoc61
+		icon = GFX_focus_spr_anarchism_knows_no_borders
+		x = 8
+		y = 0
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc56
+		
+		prerequisite = { focus = prsfoc64}
+		available = {
+		has_country_flag = formed_ait
+				}
+		bypass = {
+		}
+		mutually_exclusive = {focus = prsfoc56}
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		add_ideas = prs_internationalism
+		}
+		
+		}
+	focus = {   
+		id = prsfoc62
+		icon = GFX_focus_focus_fra_national_resistance_council
+		x = 0
+		y = 3
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc44
+		
+		prerequisite = { focus = prsfoc55 }
+		prerequisite = { focus = prsfoc53 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		cost = 5
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		add_stability = 0.1
+		}
+		
+		}
+	focus = {   
+		id = prsfoc63
+		icon = GFX_focus_prs_communist_discourse
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc62
+		
+		prerequisite = { focus = prsfoc62 }
+		
+		available = {
+		
+				}
+		bypass = {
+		}
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		remove_ideas = paris_comune4
+		}
+		
+		}
+	focus = {   
+		id = prsfoc64
+		icon = GFX_focus_prs_river
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = prsfoc63
+		
+		prerequisite = { focus = prsfoc63 }
+		
+		available = {
+		
+				}
+		bypass = {
+		}
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = { 
+		if = {
+						limit = { NOT = {has_idea = paris_comune7 has_idea = paris_comune2 has_idea = paris_comune5 has_idea = paris_comune6}}
+						add_political_power = 150
+					}
+					else_if = {
+						limit = {has_idea = paris_comune7}
+						remove_ideas = paris_comune7
+					}
+					
+					else_if = {
+						limit = {has_idea = paris_comune2}
+						swap_ideas = {
+						remove_idea = paris_comune2
+						add_idea = paris_comune7
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune5}
+						swap_ideas = {
+						remove_idea = paris_comune5
+						add_idea = paris_comune2
+					}
+					}
+					else_if = {
+						limit = {has_idea = paris_comune6}
+						swap_ideas = {
+						remove_idea = paris_comune6
+						add_idea = paris_comune5
+					}
+					}
+					
+		}
+		
+		}
+}

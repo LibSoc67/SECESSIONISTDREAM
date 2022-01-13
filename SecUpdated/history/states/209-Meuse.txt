@@ -1,0 +1,35 @@
+
+state={
+	id=209
+	name="Meuse"
+resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=14.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = LOR
+		add_core_of = LOR
+		victory_points = {
+			6050 5 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 0
+			industrial_complex = 1
+			air_base = 6
+
+		}
+
+	}
+
+	provinces={
+		512 5689 6050 6126 7812 7946 8980 13941 14025 14041 14083 
+	}
+	manpower=216934
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

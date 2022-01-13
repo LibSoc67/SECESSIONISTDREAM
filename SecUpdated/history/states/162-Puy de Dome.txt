@@ -1,0 +1,28 @@
+
+state={
+	id=162
+	name="Puy De Dome"
+
+	history={
+		owner = AUV
+		add_core_of = AUV
+		add_claim_by = OCC
+		victory_points = {
+			14790 10 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		1013 1727 5666 6449 9876 11208 14790 14804 14899 
+	}
+	manpower=486130
+	buildings_max_level_factor=1.000
+	state_category=town
+}

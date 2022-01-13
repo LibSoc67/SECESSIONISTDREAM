@@ -1,0 +1,9 @@
+
+supply_area={
+	id=16
+	name="Ille De Paris"
+	value=17
+	states={
+		198 196 194 195 193 199 197 223
+	}
+}

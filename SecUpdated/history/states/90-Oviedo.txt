@@ -1,0 +1,35 @@
+
+state={
+	id=90
+	name="Oviedo"
+resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=17.000
+		oil=0.000
+		chromium=19.000
+		aluminium=0.000
+	}
+	history={
+		owner = ASR
+		add_core_of = ASR
+		victory_points = {
+			15098 11 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 4
+
+		}
+
+	}
+
+	provinces={
+		3011 9557 15098 15157 15209 
+	}
+	manpower=389302
+	buildings_max_level_factor=1.000
+	state_category=town
+}

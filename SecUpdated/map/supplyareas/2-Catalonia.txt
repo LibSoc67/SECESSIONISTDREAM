@@ -1,0 +1,9 @@
+
+supply_area={
+	id=2
+	name="Catalonia"
+	value=14
+	states={
+		17 18 8 2 4 3 10 9 6 7 5 22 21 19 23 20 11 12 13 226 228 227 
+	}
+}

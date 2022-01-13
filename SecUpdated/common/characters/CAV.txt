@@ -1,0 +1,464 @@
+characters={
+	CAV_wenceslao_carrillo={
+		name="Wenceslao Carrillo"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAV/cavcom.dds"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAV_jose_maria_gilrobles={
+		name="José María Gil-Robles"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAV/cavdem.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAV_divided_state={
+		name="Divided State"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAV/cavfrag.dds"
+			}
+		}
+		country_leader={
+			ideology=falangism
+			traits={ Divided }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAV_francesc_cambó_i_batlle={
+		name="Francesc Cambó i Batlle"
+		portraits={
+			civilian={
+				large="gfx//leaders//Europe//portrait_europe_generic_6.dds"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAV_juan_yague={
+		name="Juan Yagüe"
+		portraits={
+			army={
+				small="GFX_idea_CAV_juan"
+			}
+			army={
+				large="gfx/leaders/CAV/juanyague.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless offensive_doctrine }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	CAV_emilio_esteban={
+		name="Emilio Esteban-Infantes y Martín"
+		portraits={
+			army={
+				small="GFX_idea_CAV_esteban"
+			}
+			army={
+				large="gfx/leaders/CAV/emilioestebaninfantes.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer politically_connected }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	CAV_gonzalo_queipo_de_llano={
+		name="Gonzalo Queipo de Llano"
+		portraits={
+			army={
+				small="GFX_idea_CAV_gonzalo"
+			}
+			army={
+				large="gfx/leaders/CAV/gonzalo.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer war_hero }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	CAV_emilio_mola={
+		name="Emilio Mola"
+		portraits={
+			army={
+				small="GFX_idea_CAV_emilio"
+			}
+			army={
+				large="gfx/leaders/CAV/cavgen1.dds"
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious thorough_planner organisational_leader }
+			skill=5
+			attack_skill=3
+			defense_skill=4
+			planning_skill=6
+			logistics_skill=5
+			legacy_id=-1
+		}
+		advisor={
+			slot = army_chief
+			idea_token = CAV_emilio_mola
+			ledger = army
+			allowed = {
+				original_tag = CAV
+			}
+			traits = {
+				army_chief_planning_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+			}
+	}
+	CAV_onesimo_redondo={
+		name="Onésimo Redondo"
+		portraits={
+			army={
+				small="GFX_idea_CAV_onesimo"
+			}
+			army={
+				large="gfx/leaders/CAV/cavfas.dds"
+			}
+		}
+		field_marshal={
+			traits={ infantry_officer politically_connected }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+		
+	}
+	CAV_ramled={
+		name="Ramiro Ledesma"
+		portraits={
+			army={
+				small="GFX_idea_ramled"
+				
+			}
+
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CAV_ramled
+			allowed = {
+				original_tag = CAV
+			}
+			traits = {
+				syncretic_revanchist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	CAV_rafsan={
+		name="Rafael Sánchez"
+		portraits={
+			army={
+				small="GFX_idea_rafsan"
+				
+			}
+
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CAV_rafsan
+			allowed = {
+				original_tag = CAV
+			}
+			traits = {
+				propaganda_expert
+			}
+			cost = 125
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	CAV_alfgar={
+		name="Alfonso García"
+		portraits={
+			army={
+				small="GFX_idea_alfgar"
+				
+			}
+
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CAV_alfgar
+			allowed = {
+				original_tag = CAV
+			}
+			traits = {
+				technocrat
+			}
+			cost = 125
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	CAV_pilpri={
+		name="Pilar Primo de Rivera"
+		portraits={
+			army={
+				small="GFX_idea_pilpri"
+				
+			}
+
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CAV_pilpri
+			allowed = {
+				original_tag = CAV
+			}
+			traits = {
+				backroom_windbag
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	CAV_raifer={
+		name="Raimundo Fernández-Cuesta"
+		portraits={
+			army={
+				small="GFX_idea_raifer"
+				
+			}
+
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CAV_raifer
+			allowed = {
+				original_tag = CAV
+			}
+			traits = {
+				smooth_talking_charmer
+			}
+			cost = 125
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	CAV_manu={
+		name="Manu Gómez"
+		portraits={
+			army={
+				small="generic_army_europe_3"
+				
+			}
+
+		}
+		advisor={
+			slot = high_command
+			idea_token = CAV_manu
+			ledger = army
+			allowed = {
+				original_tag = CAV
+			}
+			traits = {
+				army_entrenchment_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+			}
+	}
+	CAV_usencio={
+		name="Usencio Hernandez"
+		portraits={
+			army={
+				small="generic_army_europe_4"
+				
+			}
+
+		}
+		advisor={
+			slot = high_command
+			idea_token = CAV_usencio
+			ledger = army
+			allowed = {
+				original_tag = CAV
+			}
+			traits = {
+				army_regrouping_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+			}
+	}
+	CAV_tejera={
+		name="Armando Tejera"
+		portraits={
+			army={
+				small="generic_army_europe_6"
+				
+			}
+
+		}
+		advisor={
+			slot = high_command
+			idea_token = CAV_tejera
+			ledger = army
+			allowed = {
+				original_tag = CAV
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+			}
+	}
+	CAV_naval_strike_aviation_council={
+		name="Luis Nuñes"
+		portraits={
+			army={
+				small="GFX_idea_random1"
+				
+			}
+
+		}
+		advisor={
+			slot = air_chief
+			idea_token = CAV_naval_strike_aviation_council
+			allowed = {
+				original_tag = CAV
+			}
+			traits = {
+				air_naval_strike_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	CAV_close_aviation_council={
+		name="Marcos Alonso"
+		portraits={
+			army={
+				small="GFX_idea_random2"
+				
+			}
+
+		}
+		advisor={
+			slot = air_chief
+			idea_token = CAV_close_aviation_council
+			allowed = {
+				original_tag = CAV
+			}
+			traits = {
+				air_close_air_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	CAV_alcaide={
+		name="Samuel Alcaide"
+		portraits={
+			army={
+				small="generic_army_europe_5"
+				
+			}
+
+		}
+		advisor={
+			slot = army_chief
+			idea_token = CAV_alcaide
+			ledger = army
+			allowed = {
+				original_tag = CAV
+			}
+			traits = {
+				army_chief_morale_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	CAV_calvo={
+		name="Armando Calvo"
+		portraits={
+			army={
+				small="generic_army_europe_4"
+				
+			}
+
+		}
+		advisor={
+			slot = army_chief
+			idea_token = CAV_calvo
+			ledger = army
+			allowed = {
+				original_tag = CAV
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+}

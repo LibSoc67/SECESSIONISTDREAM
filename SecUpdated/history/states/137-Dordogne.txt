@@ -1,0 +1,27 @@
+
+state={
+	id=137
+	name="Dordogne"
+	provinces={
+		2819 5941 7247 8623 8832 10061 10668 10825 11351 14909 14919 
+	}
+	history={
+		owner = AQU
+		add_core_of = AQU
+		add_claim_by = OCC
+		victory_points = {
+		10061 4
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 0
+			industrial_complex = 1
+			#dockyard = 
+			#air_base = 
+			# = {naval_base = 4}
+		}
+	}
+	state_category=town
+	manpower=386963
+	buildings_max_level_factor=1.000
+}

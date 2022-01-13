@@ -1,0 +1,24 @@
+
+state={
+	id=217
+	name="Haute Saone"
+	provinces={
+		1931 5490 5788 6162 14291 14355 14369 14403 14404 14449 
+	}
+	history={
+		owner = FCO
+		add_core_of = FCO
+		victory_points = { 14404 1 }
+		buildings = {
+			infrastructure = 5
+			arms_factory = 0
+			industrial_complex = 1
+			#dockyard = 
+			#air_base = 
+			# = {naval_base = 9}
+		}
+	}
+	state_category=rural
+	manpower=224928
+	buildings_max_level_factor=1.000
+}

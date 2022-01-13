@@ -1,0 +1,456 @@
+﻿focus_tree = {
+shared_focus = occwrlfoc1
+shared_focus = occwrlfoc2 
+shared_focus = occwrlfoc16
+	id = aqu_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+				tag = AQU
+		}
+	}
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 0 }
+
+
+	focus = {
+		id = aqufoc1
+		icon = GFX_focus_aquism
+		x = 12
+		y = 0
+ 	ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		mutually_exclusive = {focus = occwrlfoc2 focus = occwrlfoc1}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		OCC = {add_opinion_modifier = { target = ROOT modifier = small_decrease}}
+		CEN = {add_opinion_modifier = { target = ROOT modifier = small_decrease}}
+		add_stability = 0.05
+		add_war_support = 0.05
+			}
+		}
+		
+	focus = {
+		id = aqufoc2
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 0
+		y = 1
+ 	
+		prerequisite = {focus = aqufoc1}
+		relative_position_id = aqufoc1
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_country_leader_trait = 
+		the_sacred_king
+		}
+		}
+	focus = {
+		id = aqufoc3
+		icon = GFX_focus_aquantio
+		x = -1
+		y = 1
+ 	
+		prerequisite = {focus = aqufoc2}
+		relative_position_id = aqufoc2
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		remove_ideas = occism
+		}
+		}	
+	focus = {
+		id = aqufoc4
+		icon = GFX_focus_aquantif
+		x = 1
+		y = 1
+ 	
+		prerequisite = {focus = aqufoc2}
+		relative_position_id = aqufoc2
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		remove_ideas = fraism
+		}
+		}	
+	focus = {
+		id = aqufoc5
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 1
+		y = 1
+ 	
+		prerequisite = {focus = aqufoc3 focus = aqufoc4}
+		relative_position_id = aqufoc3
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_state_claim = 165 
+		add_state_claim = 166
+		add_state_claim = 167
+		add_state_claim = 168
+		add_state_claim = 169
+		add_state_claim = 170
+		add_state_claim = 171
+		}
+		}		
+	focus = {
+		id = aqufoc6
+		icon = GFX_goal_generic_major_war
+		x = -2
+		y = 1
+ 	
+		prerequisite = {focus = aqufoc5}
+		relative_position_id = aqufoc5
+		available = {
+		has_war = no
+		}
+		bypass = {
+		}
+		
+		cost = 10		
+	will_lead_to_war_with = LIM
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		create_wargoal = {
+				type = annex_everything
+				target = LIM
+				expire = 0
+			}
+		}
+		}		
+	focus = {
+		id = aqufoc7
+		icon = GFX_goal_generic_major_war
+		x = 2
+		y = 1
+ 	
+		prerequisite = {focus = aqufoc5}
+		relative_position_id = aqufoc5
+		available = {
+		has_war = no
+		}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		will_lead_to_war_with = POI
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		create_wargoal = {
+				type = annex_everything
+				target = POI
+				expire = 0
+			}
+		}
+		}	
+	focus = {
+		id = aqufoc8
+		icon = GFX_goal_generic_major_war
+		x = 0
+		y = 1
+ 	
+		prerequisite = {focus = aqufoc5}
+		relative_position_id = aqufoc5
+		available = {
+		has_war = no
+		}
+		bypass = {
+		129 = {owner = {TAG = AQU}}
+		}
+		
+		cost = 10		
+		will_lead_to_war_with = VAS 
+		will_lead_to_war_with = NAF
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		if = {
+				limit = {
+				129 = {is_owned_and_controlled_by = NAF}
+				}
+		create_wargoal = {
+				type = annex_everything
+				target = NAF
+				expire = 0
+		}		
+					}
+		if = {
+				limit = {
+				129 = {is_owned_and_controlled_by = VAS}
+				}
+		create_wargoal = {
+				type = annex_everything
+				target = VAS
+				expire = 0
+		}		
+					}
+		if = {
+				limit = {
+				129 = {is_owned_and_controlled_by = OCC}
+				}
+		create_wargoal = {
+				type = annex_everything
+				target = OCC
+				expire = 0
+		}		
+					}
+		if = {
+				limit = {
+				129 = {is_owned_and_controlled_by = CAV}
+				}
+		create_wargoal = {
+				type = annex_everything
+				target = CAV
+				expire = 0
+		}		
+					}
+		}
+		}	
+	focus = {
+		id = aqufoc10
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 1
+ 	
+		prerequisite = {focus = aqufoc6}
+		relative_position_id = aqufoc6
+		available = {
+		
+		
+		168 = {is_owned_and_controlled_by = AQU}
+		169 = {is_owned_and_controlled_by = AQU}
+		170 = {is_owned_and_controlled_by = AQU}
+		171 = {is_owned_and_controlled_by = AQU}
+		}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_state_core = 168
+		add_state_core = 169
+		add_state_core = 170
+		add_state_core = 171
+		}
+		}
+	focus = {
+		id = aqufoc11
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 1
+ 	
+		prerequisite = {focus = aqufoc7}
+		relative_position_id = aqufoc7
+		available = {
+		167 = {is_owned_and_controlled_by = AQU}
+		166 = {is_owned_and_controlled_by = AQU}
+		165 = {is_owned_and_controlled_by = AQU}
+		}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_state_core = 167
+		add_state_core = 166
+		add_state_core = 165
+		}
+		}
+	focus = {
+		id = aqufoc12
+		icon = GFX_goal_generic_demand_territory
+		x = 0
+		y = 2 
+ 	
+		prerequisite = {focus = aqufoc8 }
+		prerequisite = {focus = aqufoc11}
+		prerequisite = {focus = aqufoc10 }
+		relative_position_id = aqufoc8
+		available = {
+		custom_trigger_tooltip ={
+		tooltip = "ctt_aqufoc12"
+		165 = {is_owned_and_controlled_by = AQU}
+		166 = {is_owned_and_controlled_by = AQU}
+		167 = {is_owned_and_controlled_by = AQU}
+		168 = {is_owned_and_controlled_by = AQU}
+		169 = {is_owned_and_controlled_by = AQU}
+		170 = {is_owned_and_controlled_by = AQU}
+		171 = {is_owned_and_controlled_by = AQU}
+		}
+		}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_political_power = 100
+		}
+		}
+	focus = {
+		id = aqufoc13
+		icon = GFX_focus_BUL_condemn_macedonian_organizations
+		x = 3
+		y = 1		
+ 
+		prerequisite = {focus = aqufoc2 }
+		relative_position_id = aqufoc2
+		available = {
+	
+		}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_ideas = aquconscription
+		}
+		}
+	focus = {
+		id = aqufoc14
+		icon = GFX_focus_aquking
+		x = -3
+		y = 1		
+ 
+		prerequisite = {focus = aqufoc2 }
+		relative_position_id = aqufoc2
+		available = {
+		
+		
+		}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_ideas = aquforking
+		}}
+	}

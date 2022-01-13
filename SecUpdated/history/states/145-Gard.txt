@@ -1,0 +1,27 @@
+
+state={
+	id=145
+	name="Gard"
+	provinces={
+		469 1056 3483 6092 6834 10399 10662 15195 15274 
+	}
+	history={
+		owner = LAN
+		add_core_of = OCC
+		add_core_of = LAN
+		victory_points = {
+		1056 5
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 0
+			industrial_complex = 1
+			dockyard = 1
+			#air_base = 
+			# = {naval_base = 4}
+		}
+	}
+	state_category=rural
+	manpower=395229
+	buildings_max_level_factor=1.000
+}

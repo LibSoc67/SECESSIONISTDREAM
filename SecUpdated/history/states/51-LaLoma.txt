@@ -1,0 +1,22 @@
+
+state={
+	id=51
+	name="La Loma"
+	provinces={
+		2987 3332 5034 7261 16432 
+	}
+	history={
+		owner = ADA
+		add_core_of = ADA
+		victory_points = {
+		3332 4
+		}
+		buildings = {
+			infrastructure = 4
+			 
+		}
+	}
+	state_category=pastoral
+	manpower=105820
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,52 @@
+﻿focus_tree = {
+
+	id = hnobno_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 70
+			tag = HNO
+}
+}
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 0 }
+
+
+	focus = { 
+		id = hno1
+		icon = GFX_focus_fra_regiment_normandie
+		x = 10
+		y = 0
+ 	
+		
+		available = {
+		184 = {is_owned_and_controlled_by = HNO}
+		185 = {is_owned_and_controlled_by = HNO}
+		186 = {is_owned_and_controlled_by = HNO}
+		187 = {is_owned_and_controlled_by = HNO}
+		188 = {is_owned_and_controlled_by = HNO}
+				}
+		bypass = {
+		}
+		
+		cost = 5		
+
+		mutually_exclusive = {focus = }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_state_core = 184
+		add_state_core = 185
+		add_state_core = 186
+			}
+		}
+
+	
+	}

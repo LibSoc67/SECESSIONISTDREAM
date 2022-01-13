@@ -1,0 +1,248 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = cat_ada_mur
+
+################## Andalucian ##############
+country_event = {
+	id = cat_ada_mur.1
+	title = "The Catalans have declared war on Murcia"
+	desc = "Despite us claiming half of Murcia, those Catalan cretins have declared war. If we want to conquer our Murcian claims, we can also movilize." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "To war!"
+		ai_chance = { factor = 100 }
+		create_wargoal = {
+				type = annex_everything
+				target = MUR
+				expire = 0
+		
+				
+			}
+	}
+	option = { 
+		name = "Not worth our time"
+		ai_chance = { factor = 0 }
+		
+	}
+}
+country_event = {
+	id = cat_ada_mur.2
+	title = "Catalonia proposes the partition of Murcia."
+	desc = "Today the Catalan goverment has proposed to split Murcia. They will take Murcia City, Cartxe and Altiplano, and we will get Lorca, Cartagena and Noroeste. Alternatively we also have the option of staying out of this, and leave Murcia to the Catalan mercy; or reject this partition and declare war on Murcia and have a race to see who can take the most Murcian land."
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Agree to the split"
+		ai_chance = { factor = 100 }
+		MUR = {country_event = {id = cat_ada_mur.3 days = 4}}
+		CAT = {country_event = cat_ada_mur.6}
+	}
+
+	option = { 
+		name = "Leave Murcia alone"
+		ai_chance = { factor = 0 }
+		CAT = {country_event = cat_ada_mur.4}
+	}
+	
+	option = { 
+		name = "To war!"
+		ai_chance = { factor = 0 }
+		CAT = {country_event = cat_ada_mur.5}
+		create_wargoal = {
+				type = annex_everything
+				target = MUR
+				expire = 0	
+			}
+	}
+	}
+
+######################## MURCIAN ####################
+country_event = {
+	id = cat_ada_mur.3
+	title = "Andalucia and Catalan pressure"
+	desc = "General, our greatest nightmares have become true. Catalonia and Andalucia have reached a pact to split our beautifull lands. We have little hope, as both nations greatly surpass our military capacities. Shall we surrender or fight?"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = { 
+		name = "Defend the homeland!"
+		ai_chance = { factor = 50 }
+		CAT = { create_wargoal = { type = annex_everything target = MUR expire = 0	} country_event = cat_ada_mur.8}
+		ADA = { create_wargoal = { type = annex_everything target = MUR expire = 0	} country_event = cat_ada_mur.8}
+		add_war_support = 0.10
+	}
+	option = { 
+		name = "There is no hope"
+		ai_chance = { factor = 50 }
+		ADA = {
+		transfer_state = 35 transfer_state = 33 
+		if = {limit = {34 = {NOT = {OR ={is_owned_by = CAT is_owned_by = VAL}}}}transfer_state = 34 } 
+		annex_country = { target = MUR transfer_troops = no }
+		country_event = cat_ada_mur.7
+		}
+		CAT = {
+		transfer_state = 32 transfer_state = 36 
+		if = {limit = {37 = {NOT = {OR ={is_owned_by = CAT is_owned_by = VAL}}}}transfer_state = 37 } 
+		country_event = cat_ada_mur.7
+		}
+	}
+}
+
+
+####################### SHARED ####################
+country_event = {
+	id = cat_ada_mur.4
+	title = "They have abandoned the plan"
+	desc = "Against all odds, they have decided to respect Murcian independence. Now that we are alone, political pressure is not going to work, so we will have to declare war. The good news are that we will take all the land."
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = { 
+		name = "To war!"
+		ai_chance = { factor = 0 }
+		create_wargoal = {
+				type = annex_everything
+				target = MUR
+				expire = 0	
+			}
+	}
+	option = { 
+		name = "We should also back down"
+		ai_chance = { factor = 0 }
+		
+	}
+	}
+country_event = {
+	id = cat_ada_mur.5
+	title = "They have rejected the plan"
+	desc = "Those cretins have decided that this plan is not enough for them. They are going to movilize, and try to take more land than us. It's now a race to see who can take more Murcian land faster."
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = { 
+		name = "To war!"
+		ai_chance = { factor = 0 }
+		create_wargoal = {
+				type = annex_everything
+				target = MUR
+				expire = 0	
+			}
+	}
+	option = { 
+		name = "We should back down"
+		ai_chance = { factor = 0 }
+		
+	}
+	}
+country_event = {
+	id = cat_ada_mur.6
+	title = "They have agreed to the plan to partition Murcia."
+	desc = "Now time will decide if our pressure is enough, or if we will have to go to war."
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = { 
+		name = "Great"
+		ai_chance = { factor = 0 }
+		}
+	}
+################# RESULTS OF THE PARTITION ###############
+country_event = {
+	id = cat_ada_mur.7
+	title = "Murcia folds"
+	desc = "The Murcians have folded. Our flag now flies with pride in more land."
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = { 
+		name = "Great"
+		ai_chance = { factor = 0 }
+		}
+	}
+country_event = {
+	id = cat_ada_mur.8
+	title = "Murcia stands strong"
+	desc = "Despite our pressure, they have rejected our demands."
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = { 
+		name = "Fools"
+		ai_chance = { factor = 0 }
+		}
+	}
+##################### CATALONIA FROM ANDALUCIA ################
+country_event = {
+	id = cat_ada_mur.9
+	title = "Andalucia proposes the partition of Murcia."
+	desc = "Today the Andalucian goverment has proposed to split Murcia. They will take Lorca, Cartagena and Noroeste, and we will get Murcia City, Cartxe and Altiplano. Alternatively we also have the option of staying out of this, and leave Murcia to the Andalucian mercy; or reject this partition and declare war on Murcia and have a race to see who can take the most Murcian land."
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Agree to the split"
+		ai_chance = { factor = 100 }
+		MUR = {country_event = {id = cat_ada_mur.3 days = 4}}
+		ADA = {country_event = cat_ada_mur.6}
+	}
+
+	option = { 
+		name = "Leave Murcia alone"
+		ai_chance = { factor = 0 }
+		ADA = {country_event = cat_ada_mur.4}
+	}
+	
+	option = { 
+		name = "To war!"
+		ai_chance = { factor = 0 }
+		CAT = {country_event = cat_ada_mur.5}
+		create_wargoal = {
+				type = annex_everything
+				target = MUR
+				expire = 0	
+			}
+	}
+	}
+country_event = {
+	id = cat_ada_mur.10
+	title = "The Andalucians have declared war on Murcia"
+	desc = "Despite us claiming half of Murcia, those Andalucian cretins have declared war. If we want to conquer our Murcian claims, we can also movilize." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "To war!"
+		ai_chance = { factor = 100 }
+		create_wargoal = {
+				type = annex_everything
+				target = MUR
+				expire = 0
+		
+				
+			}
+	}
+	option = { 
+		name = "Not worth our time"
+		ai_chance = { factor = 0 }
+		
+	}
+}

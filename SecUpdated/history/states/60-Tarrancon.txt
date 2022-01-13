@@ -1,0 +1,23 @@
+
+state={
+	id=60
+	name="Tarrancón"
+
+	history={
+		owner = CAL
+		add_core_of = CAL
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+
+		}
+
+	}
+
+	provinces={
+		4693 7350 7600 10553 15968 16019 16062 16092 16093 16132 16138 
+	}
+	manpower=93402
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

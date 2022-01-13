@@ -1,0 +1,25 @@
+
+state={
+	id=253
+	name="Groningen"
+	provinces={
+		4950 5676 7661 9201 10353 12903 17368 
+	}
+	history={
+		owner = FRI
+		add_core_of = FRI
+		victory_points = {
+		12903 12	
+		}
+		
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+		}
+
+	}
+	manpower=402938
+	buildings_max_level_factor=1.000
+	state_category=town
+}

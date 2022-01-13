@@ -1,0 +1,27 @@
+
+state={
+	id=190
+	name="Indre Et Loire"
+
+	history={
+		owner = CEN
+		add_core_of = CEN
+		victory_points = {
+			14382 5 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		223 4307 6004 6464 8985 10103 10440 14382 14438 14479 
+	}
+	manpower=343276
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

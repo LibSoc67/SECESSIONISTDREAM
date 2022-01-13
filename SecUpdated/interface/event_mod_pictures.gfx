@@ -1,0 +1,13 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_eventultimatumtorioja"
+		texturefile = "gfx/event_pictures/eventultimatumtorioja.dds"
+	}
+		spriteType = {
+		name = "GFX_newsultimrioja"
+		texturefile = "gfx/event_pictures/newsultimrioja.dds"
+	}
+	
+	
+	
+}

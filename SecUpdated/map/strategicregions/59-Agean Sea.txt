@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=59
+	name="Agean Sea"
+	provinces={
+		17514 17531 17588 17765 17937 18003 18090 18346 18348 18354 18370 18446 18517 18542 18571 18575 18729 18960 
+	}
+	naval_terrain=water_fjords
+	weather={
+	}
+}

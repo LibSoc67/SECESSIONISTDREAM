@@ -1,0 +1,9 @@
+
+supply_area={
+	id=14
+	name="Aquitania"
+	value=14
+	states={
+		135 137 167 165 166 171 168 170 169 136 134 133 129 
+	}
+}

@@ -1,0 +1,32 @@
+
+state={
+	id=201
+	name="Somme"
+	provinces={
+		494 933 5953 7524 13599 13655 13709 
+	}
+	resources={
+		rubber=0.000
+		tungsten=7.000
+		steel=36.000
+		oil=0.000
+		chromium=0.000
+		aluminium=12.000
+	}
+	history={
+		owner = PIC
+		add_core_of = PIC
+		victory_points = { 933 7}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+			#dockyard = 
+			air_base = 5
+			# = {naval_base = 9}
+		}
+	}
+	state_category=large_town
+	manpower=467479
+	buildings_max_level_factor=1.000
+}

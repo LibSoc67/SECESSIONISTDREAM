@@ -1,0 +1,337 @@
+﻿focus_tree = {
+
+	id = lan_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 70
+			tag = CEN
+}
+}
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 0 }
+
+
+	focus = {
+		id = cenfoc1
+		icon = GFX_focus_cen_suport_cercle
+		x = 12
+		y = 0
+ 	
+		
+		available = {
+				}
+		bypass = {
+		}
+		
+		cost = 7		
+
+		mutually_exclusive = {focus = cenfoc2}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_ideas = cen_integrating_cercle
+		custom_effect_tooltip = cet_cenfoc1
+		
+		if = {limit = {NOT = {has_country_flag = integrated_1 has_country_flag = integrated_2}}set_country_flag = integrated_1}
+		else_if = {limit = {NOT = {has_country_flag = integrated_2}}set_country_flag = integrated_2}
+		else_if = {limit = {has_country_flag = integrated_2}set_country_flag = integrated_3}
+			}
+			}
+		
+	focus = {
+		id = cenfoc2
+		icon = GFX_focus_cen_attack_cercle
+		x = 4
+		y = 0
+ 	
+		
+		available = {
+				}
+		bypass = {
+		}
+		relative_position_id = 	cenfoc1
+		#prerequisite = { focus = catcom }
+		cost = 7	
+
+		mutually_exclusive = {focus = cenfoc1 }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		custom_effect_tooltip = cet_cenfoc2
+			}
+		}
+	focus = {
+		id = cenfoc3
+		icon = GFX_focus_cen_msn
+		x = 10
+		y = 0
+ 	
+		
+		available = {
+				}
+		bypass = {
+		}
+		relative_position_id = 	cenfoc1
+		#prerequisite = { focus = catcom }
+		cost = 7	
+
+		mutually_exclusive = {focus = cenfoc4 }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_ideas = cen_integrating_msn
+		custom_effect_tooltip = cet_cenfoc3
+		
+		if = {limit = {NOT = {has_country_flag = integrated_1 has_country_flag = integrated_2}}set_country_flag = integrated_1}
+		else_if = {limit = {NOT = {has_country_flag = integrated_2}}set_country_flag = integrated_2}
+		else_if = {limit = {has_country_flag = integrated_2}set_country_flag = integrated_3}
+			}
+		}
+	focus = {
+		id = cenfoc4
+		icon = GFX_focus_cen_no_msn
+		x = 4
+		y = 0
+ 	
+		
+		available = {
+				}
+		bypass = {
+		}
+		relative_position_id = 	cenfoc3
+		#prerequisite = { focus = catcom }
+		cost = 7	
+
+		mutually_exclusive = {focus = cenfoc3 }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		custom_effect_tooltip = cet_cenfoc4
+			}
+		}
+	
+	focus = {
+		id = cenfoc6 
+		icon = GFX_focus_cen_nat_marx
+		x = 6
+		y = 0
+ 	
+		
+		available = {
+				}
+		bypass = {
+		}
+		relative_position_id = 	cenfoc4
+		
+		cost = 7	
+
+		mutually_exclusive = {focus = cenfoc7 }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_ideas = cen_integrating_nat_marx
+		custom_effect_tooltip = cet_cenfoc5
+		if = {limit = {NOT = {has_country_flag = integrated_1 has_country_flag = integrated_2}}set_country_flag = integrated_1 }
+		else_if = {limit = {NOT = {has_country_flag = integrated_2}}set_country_flag = integrated_2 }
+		else_if = {limit = {has_country_flag = integrated_2}set_country_flag = integrated_3}
+			}
+		}
+	focus = {
+		id = cenfoc7
+		icon = GFX_focus_cen_no_nat_marx
+		x = 4 
+		y = 0
+ 	
+		
+		available = {
+				}
+		bypass = {
+		}
+		relative_position_id = 	cenfoc6
+		
+		cost = 7	
+
+		mutually_exclusive = {focus = cenfoc6 }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		custom_effect_tooltip = cet_cenfoc6
+			}
+		}
+	focus = {
+		id = cenfoc5
+		icon = GFX_focus_fra_le_deluge
+		x = 2
+		y = 1
+ 	
+		
+		available = {
+				}
+		bypass = {
+		}
+		relative_position_id = 	cenfoc3
+		prerequisite = { focus = cenfoc1 focus = cenfoc2 }
+		prerequisite = { focus = cenfoc3 focus = cenfoc4 }
+		prerequisite = { focus = cenfoc6 focus = cenfoc7 }
+		cost = 7	
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		custom_effect_tooltip = cet_cenfoc5
+		hidden_effect = {
+		set_cosmetic_tag = form_france_centre
+		add_state_claim = 184
+		add_state_claim = 185
+		add_state_claim = 186
+		add_state_claim = 187
+		add_state_claim = 188
+		add_state_claim = 200
+		add_state_claim = 201
+		add_state_claim = 202
+		add_state_claim = 203
+		add_state_claim = 204
+		add_state_claim = 172
+		add_state_claim = 173
+		add_state_claim = 174
+		add_state_claim = 175
+		add_state_claim = 176
+		add_state_claim = 189
+		add_state_claim = 190
+		add_state_claim = 191
+		add_state_claim = 192
+		add_state_claim = 193
+		add_state_claim = 194
+		add_state_claim = 219
+		add_state_claim = 220
+		add_state_claim = 221
+		add_state_claim = 222
+		add_state_claim = 205
+		add_state_claim = 206
+		add_state_claim = 207
+		add_state_claim = 208
+		add_state_claim = 209
+		add_state_claim = 210
+		add_state_claim = 211
+		add_state_claim = 212
+		add_state_claim = 215
+		add_state_claim = 216
+		add_state_claim = 217
+		add_state_claim = 218
+		add_state_claim = 168
+		add_state_claim = 169
+		add_state_claim = 170
+		add_state_claim = 171
+		add_state_claim = 164
+		add_state_claim = 161
+		add_state_claim = 155
+		add_state_claim = 156
+		add_state_claim = 157
+		add_state_claim = 158
+		add_state_claim = 159
+		add_state_claim = 232
+		add_state_claim = 233
+		add_state_claim = 238
+		add_state_claim = 235
+		add_state_claim = 234
+		}
+			}
+		}
+	focus = {
+		id = cenfoc8
+		icon = GFX_focus_fra_french_union
+		x = 0
+		y = 1
+ 	
+		
+		available = {
+				}
+		bypass = {
+		}
+		prerequisite =  {focus =cenfoc5}
+		relative_position_id = 	cenfoc5
+		
+		cost = 7	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		custom_effect_tooltip = cet_cenfoc8
+		if = {limit = {has_country_flag = integrated_3 } random_list = {99 = {} 1={add_stability = 0.01}}}
+		}
+		}
+	focus = {
+		id = cenfoc9
+		icon = GFX_focus_prs_communist_discourse
+		x = -3
+		y = 1
+ 	
+		
+		available = {
+		has_completed_focus = cenfoc1
+		has_idea = cen_local_gov
+				}
+		bypass = {
+		}
+		prerequisite =  {focus =cenfoc8}
+		relative_position_id = 	cenfoc8
+		
+		cost = 7	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_country_leader_role = {
+				character = "CEN_valois"
+				country_leader = {
+					ideology = mutualism
+					traits = { anarchy_tendency }
+					expire = "1965.3.1.1"
+				}
+				promote_leader = yes 
+			}
+		}
+		}
+		}
+	
+
+
+
+
+	
+# { has_completed_focus = GER_bulwark_against_bolshevism }

@@ -1,0 +1,25 @@
+﻿focus_tree = {
+
+	id = lim_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 70
+			tag = LIM 
+			
+}
+}
+shared_focus = occwrlfoc1
+shared_focus = occwrlfoc2 
+shared_focus = occwrlfoc9
+shared_focus = occwrlfoc16
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 0 }
+
+
+	
+
+	}

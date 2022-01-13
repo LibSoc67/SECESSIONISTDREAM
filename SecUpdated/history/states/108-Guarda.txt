@@ -1,0 +1,26 @@
+
+state={
+	id=108
+	name="Guarda"
+	provinces={
+		1014 8616 9132 10849 15676 15677 15811 15870 
+	}
+	history={
+		owner = BEI
+		add_core_of = BEI
+		victory_points = { 9132 4 }
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex	= 0
+			dockyard = 0
+			air_base= 0
+			#10423 = { naval_base = 6}
+			
+		}
+
+	}
+	state_category = rural
+	manpower=140592
+	buildings_max_level_factor=1.000
+}

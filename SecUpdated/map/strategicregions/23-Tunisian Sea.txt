@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=23
+	name="Tunisian Coast"
+	provinces={
+		17587 17720 17826 17848 17950 18156 18164 18254 18302 18305 18327 18329 18496 18558 18581 18670 18775 18820 18997 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

@@ -1,0 +1,26 @@
+
+state={
+	id=180
+	name="Ille Et Vilaine"
+	provinces={
+		1442 4196 4903 5982 7775 9622 13978 14007 14098 14131 14176 14204 
+	}
+	history={
+		owner = BRI
+		add_core_of = BRI
+		victory_points = {
+		7775 15
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 2
+			#dockyard = 
+			air_base = 5
+			# = {naval_base = 4}
+		}
+	}
+	state_category = city
+	manpower=566000
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=249
+	name="Utrecht"
+	provinces={
+		1927 3591 6372 13149 13204 
+	}
+	history={
+		owner = GRL
+		add_core_of = GRL
+		victory_points = {
+		1927 10	
+		}
+		
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 2
+		}
+
+	}
+	manpower=204958
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,16 @@
+characters={
+	AUV_Laval={
+		name="Pierre Laval"
+		portraits={
+			civilian={
+				large="gfx/leaders/AUV/auv1.dds"
+			}
+		}
+		country_leader={
+			ideology=nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+}

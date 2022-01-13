@@ -1,0 +1,46 @@
+﻿division_template = {
+	name = "Divisão de Infantaria"  
+	division_names_group = SPR_ARM_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1  y = 1 }
+		infantry = { x = 1  y = 0}
+		artillery_brigade = { x = 1  y = 3 }
+		artillery_brigade = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division= {	# "1a Brigada de Ejercito"
+		division_name = { 
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 16506
+		division_template = "Divisão de Infantaria"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	}
+
+##### No Notable Air Forces #####
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "ALA"
+		}
+		requested_factories = 3
+		progress = 0.21
+		efficiency = 100
+	}
+
+
+}

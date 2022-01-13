@@ -1,0 +1,112 @@
+﻿division_template = {
+	name = "Milices"  
+	division_names_group = FRA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "Armée Alsace"  
+	division_names_group = FRA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1  y = 1 }
+		infantry = { x = 1  y = 0 }
+		artillery_brigade = { x = 1  y = 3 }
+		artillery_brigade = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Voiture de guerre"  
+	division_names_group = FRA_ARM_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		motorized = { x = 1 y = 1 }
+		light_armor = { x = 0 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 0 }
+	}
+}
+
+units = {
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 14166
+		division_template = "Armée Alsace"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8963
+		division_template = "Armée Alsace"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 14333
+		division_template = "Voiture de guerre"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+
+	}
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 6247
+		division_template = "Milices"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}	
+	}
+
+##### No Notable Air Forces #####
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "ALS"
+		}
+		requested_factories = 2
+		progress = 0.21
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "ALS"
+		}
+		requested_factories = 1
+		progress = 0.21
+		efficiency = 100
+	}
+
+
+}

@@ -1,0 +1,19 @@
+state={
+	id=128
+	name="Asinara"
+	provinces={
+		17409 
+	}
+	history={
+		owner = SAR
+		add_core_of = SAR
+		buildings = {
+			infrastructure = 1
+			17409= { naval_base = 1}
+			
+		}
+	}
+	state_category=enclave
+	manpower=1
+	buildings_max_level_factor=1.000
+}

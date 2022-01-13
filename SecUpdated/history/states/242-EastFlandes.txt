@@ -1,0 +1,25 @@
+
+state={
+	id=242
+	name="East Flanders"
+	provinces={
+		4999 6146 13420 13454 13463 
+	}
+	history={
+		owner = VLD
+		add_core_of = VLD 
+		victory_points = {
+		13420 17	
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 3
+		}
+
+	}
+	manpower=1149382
+	state_category = town
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,27 @@
+
+state={
+	id=149
+	name="Vaucluse"
+	provinces={
+		2500 4400 7870 8248 9203 9725 
+	}
+	history={
+		owner = PRO
+		add_core_of = PRO
+		add_claim_by = OCC
+		victory_points = {
+		2500 5
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 0
+			industrial_complex = 1
+			#dockyard = 
+			#air_base = 
+			# = {naval_base = 4}
+		}
+	}
+	state_category = town
+	manpower=245508
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,9 @@
+
+supply_area={
+	id=12
+	name="Alagarve"
+	value=17
+	states={
+		112 113 115 114 116 117 118 
+	}
+}

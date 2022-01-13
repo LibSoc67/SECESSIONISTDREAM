@@ -1,0 +1,16 @@
+characters={
+	AOS_mario={
+		name="Mario Arisio"
+		portraits={
+			civilian={
+				large="gfx/leaders/AOS/aosta_fasc.dds"
+			}
+		}
+		country_leader={
+			ideology=nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+}

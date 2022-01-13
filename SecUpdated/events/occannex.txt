@@ -1,0 +1,72 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = occannex
+
+# penis
+
+country_event = {
+	id = occannex.1
+	title = "A union with the Central Goverment?"
+	desc = "The Central Occitanian Goverment demands a closer integration since we are both in the same faction. Shamefuly, we are in no position to refuse." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "There is no alternative"
+		ai_chance = { factor = 100 }
+		if = {
+		limit = {OCC = {exists = yes}}
+			OCC = {
+				annex_country = {
+				target = RHO
+				transfer_troops = yes
+								}
+				}
+		}
+		if = {
+		limit = {LAN = {exists = yes}}
+			LAN = {
+				annex_country = {
+				target = RHO
+				transfer_troops = yes
+								}
+				}
+		}
+ 
+ }
+	}
+country_event = {
+	id = occannex.2
+	title = "A union with the Central Goverment?"
+	desc = "The Central Occitanian Goverment demands a closer integration since we are both in the same faction. Shamefuly, we are in no position to refuse." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "There is no alternative"
+		ai_chance = { factor = 100 }
+		if = {
+		limit = {OCC = {exists = yes}}
+			OCC = {
+				annex_country = {
+				target = AUV
+				transfer_troops = yes
+								}
+				}
+		}
+		if = {
+		limit = {LAN = {exists = yes}}
+			LAN = {
+				annex_country = {
+				target = AUV
+				transfer_troops = yes
+								}
+				}
+		}
+ 
+ }
+	}

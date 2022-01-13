@@ -1,0 +1,32 @@
+
+state={
+	id=85
+	name="Santander"
+	provinces={
+		1441 5278 5833 11083 15164 15221 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=21.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = CAB
+		add_core_of = CAB
+		victory_points = {
+		15164 15
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 1
+			15164 = {naval_base = 4}
+		}
+	}
+	state_category=town
+	manpower=295021
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,37 @@
+
+state={
+	id=8
+	name="Girona"
+	provinces={
+		4511 5095 5388 7533 15653 15763 15777 15780 15810 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=7.000
+		oil=0.000
+		chromium=0.000
+		aluminium=18.000
+	}
+	history={
+		owner = CAT
+		add_core_of = CAT
+		victory_points = {
+		15763 12	
+		}
+		victory_points = {
+		5095 4
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 1
+			air_base = 3
+			5095 = {naval_base = 2 }
+		}
+	}
+	state_category=town
+	manpower=369230
+	buildings_max_level_factor=1.000
+}

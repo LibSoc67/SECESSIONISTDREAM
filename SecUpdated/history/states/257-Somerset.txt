@@ -1,0 +1,10 @@
+state={
+	id=257
+	name="Somerset"
+	provinces={
+		2170 8100 13206 13254 13285 13289 13296 
+	}
+	manpower=465987
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

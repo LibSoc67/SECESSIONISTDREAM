@@ -1,0 +1,26 @@
+
+state={
+	id=31
+	name="Almeria"
+	provinces={
+		1378 8863 9367 10204 10965 16595 16609 16616 16624 16645 
+	}
+	history={
+	set_demilitarized_zone = yes
+		owner = ADA
+		add_core_of = ADA
+		add_core_of = GRA
+		victory_points = {
+		1378 10	
+		}
+		buildings = {
+			infrastructure =4
+			arms_factory = 1
+			industrial_complex = 1
+			1378 = {naval_base = 4}
+		}
+	}
+	state_category=town
+	manpower=292492
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,45 @@
+characters={
+	
+	CEN_valois={
+		name="Georges Valois"
+		portraits={
+			civilian={
+				large="gfx/leaders/CEN/cen1.dds"
+			}
+		}
+		
+	}
+	CEN_papon={
+		name="Maurice Papon"
+		portraits={
+			civilian={
+				large="gfx/leaders/CEN/cen2.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+			traits={ very_harsh secret_police}
+			
+		}
+	}
+	CEC_valois={
+		name="Georges Valois"
+		portraits={
+			civilian={
+				large="gfx/leaders/CEN/cen1.dds"
+			}
+		}
+		country_leader = {
+					ideology = mutualism
+					traits = { anarchy_tendency }
+					expire = "1965.3.1.1"
+				}
+		country_leader = {
+					ideology = fascism_ideology
+					traits = { anarchy_tendency }
+					expire = "1965.3.1.1"
+				}
+	}
+}

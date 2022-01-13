@@ -1,0 +1,26 @@
+
+state={
+	id=178
+	name="Morbihan"
+	provinces={
+		418 734 1431 2637 3319 6243 14108 14185 14194 14207 14225 14236 14251 17388 
+	}
+	history={
+		owner = BRI
+		add_core_of = BRI
+		victory_points = {
+		14236 3
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+			#dockyard = 
+			#air_base = 
+			14236 = {naval_base = 2}
+		}
+	}
+	state_category = large_town
+	manpower=542421
+	buildings_max_level_factor=1.000
+}

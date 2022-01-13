@@ -1,0 +1,271 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = lanjoins
+
+# penis
+country_event = {
+	id = lanjoins.1
+	title = "The New Occitanian Authority wants to join us"
+	desc = "Today a diplomat from the New Occitanian Authority has announced that they have intentions of joining our faction. They have proven to be a formidable military force. Should we let them join?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We will accept"
+		ai_chance = { factor = 100 }
+		CAT = { add_to_faction = LAN }
+	LAN = {country_event = {id = lanjoins.2 days = 2}}
+}
+	
+	
+	option = { 
+		name = "We will refuse!"
+		ai_chance = { factor = 0 }
+	LAN = {country_event = {id = lanjoins.3 days = 2}}
+
+		LAN = { 
+		add_opinion_modifier { 
+		target = CAT
+		modifier = medium_decrease
+		}
+				}
+				
+	CAT = { 
+		add_opinion_modifier { 
+		target = LAN
+		modifier = medium_decrease
+		}
+				}
+
+}
+	}
+country_event = {
+	id = lanjoins.2
+	title = "Success!"
+	desc = "They have accepted our proposal. The future looks bright if we are together." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Great"
+		ai_chance = { factor = 100 }
+		
+	
+}	
+	}
+
+country_event = {
+	id = lanjoins.3
+	title = "Failure!"
+	desc = "They have rejected our proposal. Nobody truly knows why they have refused." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Damn"
+		ai_chance = { factor = 100 }
+		
+	
+}	
+	}
+country_event = {
+	id = lanjoins.4
+	title = "The New Occitanian Authority wants to join us"
+	desc = "Today a diplomat from the New Occitanian Authority has announced that they have intentions of joining our faction. They have proven to be a formidable military force. Should we let them join?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We will accept"
+		ai_chance = { factor = 100 }
+		ADA = { add_to_faction = LAN }
+	LAN = {country_event = {id = lanjoins.2 days = 2}}
+}
+	
+	
+	option = { 
+		name = "We will refuse!"
+		ai_chance = { factor = 0 }
+	LAN = {country_event = {id = lanjoins.3 days = 2}}
+
+		LAN = { 
+		add_opinion_modifier { 
+		target = ADA
+		modifier = medium_decrease
+		}
+				}
+				
+	ADA = { 
+		add_opinion_modifier { 
+		target = LAN
+		modifier = medium_decrease
+		}
+				}
+
+}
+	}
+country_event = {
+	id = lanjoins.5
+	title = "The New Occitanian Authority wants to join us"
+	desc = "Today a diplomat from the New Occitanian Authority has announced that they have intentions of joining our faction. They have proven to be a formidable military force. Should we let them join?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We will accept"
+		ai_chance = { factor = 100 }
+		CAV = { add_to_faction = LAN }
+	LAN = {country_event = {id = lanjoins.2 days = 2}}
+}
+	
+	
+	option = { 
+		name = "We will refuse!"
+		ai_chance = { factor = 0 }
+	LAN = {country_event = {id = lanjoins.3 days = 2}}
+
+		LAN = { 
+		add_opinion_modifier { 
+		target = CAV
+		modifier = medium_decrease
+		}
+				}
+				
+	CAV = { 
+		add_opinion_modifier { 
+		target = LAN
+		modifier = medium_decrease
+		}
+				}
+
+}
+	}
+country_event = {
+	id = lanjoins.6
+	title = "The New Occitanian Authority wants to join us"
+	desc = "Today a diplomat from the New Occitanian Authority has announced that they have intentions of joining our faction. They have proven to be a formidable military force. Should we let them join?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We will accept"
+		ai_chance = { factor = 100 }
+		GLC = { add_to_faction = LAN }
+	LAN = {country_event = {id = lanjoins.2 days = 2}}
+}
+	
+	
+	option = { 
+		name = "We will refuse!"
+		ai_chance = { factor = 0 }
+	LAN = {country_event = {id = lanjoins.3 days = 2}}
+
+		LAN = { 
+		add_opinion_modifier { 
+		target = GLC
+		modifier = medium_decrease
+		}
+				}
+				
+	GLC = { 
+		add_opinion_modifier { 
+		target = LAN
+		modifier = medium_decrease
+		}
+				}
+
+}
+	}
+country_event = {
+	id = lanjoins.7
+	title = "The RAP"
+	desc = "Today we have recived a proposal from the Languedoc Military Authority. They propose that we share all sort of military knowledge. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "We will accept"
+		ai_chance = { factor = 100 }
+	army_experience = 15
+	add_tech_bonus = {
+				name = POL_standardisation_of_equipment
+				bonus = 0.75
+				uses = 1
+				category = infantry_weapons
+			}
+	add_tech_bonus = {
+				name = "Artillery"
+				bonus = 0.75
+				uses = 1
+				category = artillery
+			}
+	LAN = {
+	country_event = {id = lanjoins.8 days = 2}
+	
+	}
+}
+	
+	
+	option = { 
+		name = "We will refuse!"
+		ai_chance = { factor = 0 }
+	LAN = {country_event = {id = lanjoins.3 days = 2}}
+
+		LAN = { 
+		add_opinion_modifier { 
+		target = CAV
+		modifier = medium_decrease
+		}
+				}
+				
+	CAV = { 
+		add_opinion_modifier { 
+		target = LAN
+		modifier = medium_decrease
+		}
+				}
+
+}
+	}
+country_event = {
+	id = lanjoins.8
+	title = "Success!"
+	desc = "They have accepted our proposal. This will greatly benefit both of our armies." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Great"
+		ai_chance = { factor = 100 }
+		army_experience = 15
+	add_tech_bonus = {
+				name = POL_standardisation_of_equipment
+				bonus = 0.75
+				uses = 1
+				category = infantry_weapons
+			}
+	add_tech_bonus = {
+				name = "Artillery"
+				bonus = 0.75
+				uses = 1
+				category = artillery
+			}
+	add_tech_bonus = {
+				name = "Tanks"
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+	
+}	
+	}

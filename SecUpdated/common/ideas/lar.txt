@@ -1,0 +1,67 @@
+ideas = {
+country = {
+		larwine = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			consumer_goods_factor = -0.05
+			}
+			}
+			}
+			
+country = {
+		lardem1 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			political_power_gain = 0.1
+			democratic_drift = 0.1
+			}
+			}
+			}			
+	country = {
+		lardem2 = {
+
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			political_power_gain = 0.15
+			democratic_drift = 0.15
+			}
+			}
+			}				
+	country = {
+		larnav = {
+available = {
+		AND = {NAR = {exists= yes} LAR =  {exists = yes}}}
+			
+
+			removal_cost = -1
+			
+			
+			modifier = {
+			industrial_capacity_factory= 0.05
+			production_speed_buildings_factor = 0.05
+			}
+			}
+			}		
+			
+			
+			
+			
+			
+			
+			
+}
+			

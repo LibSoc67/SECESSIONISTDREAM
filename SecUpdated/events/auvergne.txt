@@ -1,0 +1,174 @@
+﻿###########################
+# Auvergne makes a united Occitania
+###########################
+
+add_namespace = auv
+
+# penis
+country_event = {
+	id = auv.1
+	title = "A united front?"
+	desc = "Catalonia is going to invade us in the south. The only way to preserve Occitanian culture is to join forces." 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Let's do it"
+		ai_chance = { factor = 100 }
+		add_ideas = auvunited
+AQU = { 
+country_event = auv.3
+}
+PRO = { 
+country_event = auv.2
+}
+ALL = {
+country_event = auv.8
+}
+create_faction = "United Occitania"
+	}
+
+	option = { 
+		name = "We will never colaborate!"
+		ai_chance = { factor = 0 }
+		add_war_support = 0.05
+
+}}
+
+
+country_event = {
+	id = auv.2
+	title = "A united front?"
+	desc = "Catalonia is going to invade us. Divided, we don't stand a chance. If all the Occitanian Kingdoms unite we stand a chance. Do we accept Auvergne's proposal to create a United Front?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Sounds good"
+		ai_chance = { factor = 50 }
+		AUV = { add_to_faction = PRO country_event = auv.5}
+		
+		
+}
+	
+	
+	option = { 
+		name = "No way!"
+		ai_chance = { factor = 50 }
+AUV = {country_event = auv.4}
+}}
+
+
+country_event = {
+	id = auv.3
+	title = "A united front?"
+	desc = "Catalonia is going to invade us. Divided, we don't stand a chance. If all the Occitanian Kingdoms unite we stand a chance. Do we accept Auvergne's proposal to create a United Front?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Sounds good"
+		ai_chance = { factor = 100 }
+		AUV = { add_to_faction = AQU }
+		AUV = {country_event = auv.7}
+		
+}
+	
+	
+	option = { 
+		name = "No way!"
+		ai_chance = { factor = 0 }
+AUV = {country_event = auv.6}
+}}
+
+
+
+country_event = {
+	id = auv.4
+	title = "Provence Refused"
+	desc = "Despite our insistence, Provence refused to join."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Damn it"
+		ai_chance = { factor = 0 }
+		
+}
+	
+	
+}
+
+country_event = {
+	id = auv.5
+	title = "Provence accepted"
+	desc = "Provence has accepted our proposal."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "United we are stronger."
+		ai_chance = { factor = 50 }
+		
+}
+	
+	
+}
+
+
+country_event = {
+	id = auv.6
+	title = "Aquitania Refused"
+	desc = "Despite our insistence, Aquitania refused to join."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Oh no"
+		ai_chance = { factor = 50 }
+		
+}
+	
+	
+}
+
+
+country_event = {
+	id = auv.7
+	title = "Aquitania accepted"
+	desc = "Aquitania has accepted our proposal."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "United we are stronger."
+		ai_chance = { factor = 50 }
+		
+}
+	
+	
+}
+
+country_event = {
+	id = auv.8
+	title = "The United Front"
+	desc = "Due to the threat that Catalonia now represents to the Occitanian Kingdoms, they have decided that the only way for them to survive is to unite under a single faction. It's rather unstable, but Catalonia's threat keep it together."
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Didn't expect that."
+		ai_chance = { factor = 50 }
+		
+}
+	
+	
+}

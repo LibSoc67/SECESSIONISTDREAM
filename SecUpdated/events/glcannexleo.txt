@@ -1,0 +1,43 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = glcannexleo
+
+# penis
+country_event = {
+	id = glcannexleo.1
+	title = "A union with Galicia?"
+	desc = "Galicia has invited us to join their country. Shall we join?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Yes!"
+		ai_chance = { factor = 100 }
+		
+		
+
+	GLC = { annex_country = {
+    target = LEO
+    transfer_troops = yes
+	}}}
+
+	option = { 
+		name = "We will refuse!"
+		ai_chance = { factor = 0 }
+	
+	
+		GLC = { create_wargoal = {
+				type = annex_everything
+				target = LEO
+				expire = 0
+				} 
+				}
+				
+	add_threat = 3 
+ 
+		LEO = {add_war_support	= 0.1 }
+
+}}

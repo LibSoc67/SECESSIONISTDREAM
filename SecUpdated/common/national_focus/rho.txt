@@ -1,0 +1,484 @@
+﻿focus_tree = {
+
+	id = auv_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+				tag = RHO
+		}
+	}
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 0 }
+shared_focus = occwrlfoc1
+shared_focus = occwrlfoc2
+shared_focus = occwrlfoc16
+focus = {
+		id = rhofoc1
+		icon = GFX_focus_rhoism
+		x = 12
+		y = 0
+ 	ai_will_do = {
+			factor = 1000
+		}
+		
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		mutually_exclusive = {focus = occwrlfoc2 focus = occwrlfoc1} 
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		OCC = {add_opinion_modifier = { target = ROOT modifier = small_decrease}}
+		CEN = {add_opinion_modifier = { target = ROOT modifier = small_decrease}}
+		add_stability = 0.05
+		add_war_support = 0.05
+			}
+		}
+focus = {
+		id = rhofoc2
+		icon = GFX_focus_ancom
+		x = -2
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = rhofoc1
+		prerequisite = { focus = rhofoc1 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		mutually_exclusive = {focus = rhofoc3}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_ideas = {anarchy_sistem2}
+		add_popularity = {
+			ideology = anarchy
+			popularity = 0.10}
+		set_politics = { ruling_party = anarchy elections_allowed = no }
+			}
+		}
+focus = {
+		id = rhofoc3
+		icon = GFX_focus_commie
+		x = 2
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = rhofoc1
+		prerequisite = { focus = rhofoc1 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		mutually_exclusive = {focus = rhofoc2 }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_popularity = {
+			ideology = communism
+			popularity = 0.10}
+		add_political_power = 150
+			}
+		}
+focus = {
+		id = rhofoc4
+		icon = GFX_focus_spr_anarchism_knows_no_borders
+		x = 2
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = rhofoc2
+		prerequisite = { focus = rhofoc2 focus = rhofoc3 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		remove_ideas = fraism
+		remove_ideas = occism
+			}
+		}
+focus = {
+		id = rhofoc5
+		icon = GFX_focus_armyanar
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = rhofoc2
+		prerequisite = { focus = rhofoc2 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_ideas =  rhoanar1
+			}
+		}
+focus = {
+		id = rhofoc6
+		icon = GFX_focus_armycom
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = rhofoc3
+		prerequisite = { focus = rhofoc3 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_ideas = rhocom1  
+			}
+		}
+	focus = {
+		id = rhofoc7
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = rhofoc4
+		prerequisite = { focus = rhofoc4 }
+		prerequisite = { focus = rhofoc5 focus = rhofoc6 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_state_core = 160
+		add_state_core = 161
+		add_state_core = 162
+		add_state_core = 163
+		add_state_core = 164
+		custom_effect_tooltip = cet_rhofoc7
+		hidden_effect = {
+		set_cosmetic_tag = form_rhoauv 
+			}  }
+		}
+	focus = {
+		id = rhofoc8
+		icon = GFX_goal_generic_fortify_city
+		x = -2
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = rhofoc7
+		prerequisite = { focus = rhofoc7 }
+		
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		153 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6321
+							instant_build = yes
+						}}
+		153 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 2128
+							instant_build = yes
+						}}
+		153 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 2709
+							instant_build = yes
+						}}
+		153 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 15165
+							instant_build = yes
+						}}
+		154 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 15140
+							instant_build = yes
+						}}
+		154 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 2673
+							instant_build = yes
+						}}
+			}
+		}
+	focus = {
+		id = rhofoc9
+		icon = GFX_goal_generic_fortify_city
+		x = 2
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = rhofoc7
+		prerequisite = { focus = rhofoc7 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		158 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 14682
+							instant_build = yes
+						}}
+		158 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3212
+							instant_build = yes
+						}}
+		158 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6629
+							instant_build = yes
+						}}
+		159 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 14671
+							instant_build = yes
+						}}
+		159 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9364
+							instant_build = yes
+						}}
+		}
+		}
+	focus = {
+		id = rhofoc10
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 0
+		y = 1
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = rhofoc7
+		prerequisite = { focus = rhofoc7 }
+		available = {
+		
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		declare_war_on = {
+				target = AUV
+				type = annex_everything
+			}	
+		}
+		}
+	focus = {
+		id = rhofoc11
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 1
+		y = 2
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = rhofoc7
+		prerequisite = { focus = rhofoc7 }
+		available = {
+		has_government = communism
+		161 = {is_owned_and_controlled_by = RHO}
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		CAT = {country_event = rhocat.1}
+		}
+		}
+	focus = {
+		id = rhofoc12
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = -1
+		y = 2
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = rhofoc7
+		prerequisite = { focus = rhofoc7 }
+		available = {
+		has_government = anarchy
+		161 = {is_owned_and_controlled_by = RHO}
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		PRS = {country_event = rhoara.1}
+		}
+		}
+	focus = {
+		id = rhofoc13
+		icon = GFX_focus_prs_liberte
+		x = 0
+		y = 3
+ 	ai_will_do = {
+			factor = 100
+		}
+		relative_position_id = rhofoc7
+		prerequisite = { focus = rhofoc10 }
+		available = {
+		161 = {is_owned_and_controlled_by = RHO}
+				}
+		bypass = {
+		}
+		
+		cost = 10		
+
+		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		remove_ideas = 1934_rhoauv1
+		add_stability = 0.1
+		}
+		}
+	} 

@@ -1,0 +1,27 @@
+
+state={
+	id=148
+	name="Var"
+	provinces={
+		2124 6734 6813 7442 8210 9114 9400 9619 9854 15416 15426 15466 
+	}
+	history={
+		owner = PRO
+		add_core_of = PRO
+		add_claim_by = OCC
+		victory_points = {
+		15466 12
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+			#dockyard = 
+			#air_base = 
+			15466 = {naval_base = 1}
+		}
+	}
+	state_category=large_town
+	manpower=398662
+	buildings_max_level_factor=1.000
+}

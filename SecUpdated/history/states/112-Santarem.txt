@@ -1,0 +1,25 @@
+
+state={
+	id=112
+	name="Santarem"
+	provinces={
+		214 3318 5623 7311 9130 9608 15972 15998 16005 16024 16030 16034 16151 
+	}
+	history={
+		owner = ESR
+		add_core_of = ESR
+		victory_points = { 16024 7 }
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex	= 2
+			dockyard = 0
+			air_base= 2
+			#10423 = { naval_base = 6}
+		}
+
+	}
+	state_category = town
+	manpower=349282
+	buildings_max_level_factor=1.000
+}

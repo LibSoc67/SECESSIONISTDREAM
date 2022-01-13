@@ -1,0 +1,211 @@
+
+lan_takeover_group = {	
+ lantak1 = {		#IDK
+
+		icon = generic_form_nation		
+		available = {	}
+		fire_only_once = yes 
+		visible = {		
+		original_tag = LAN
+		has_completed_focus = lanfoc6
+		}		
+
+		cost = 25	
+		days_remove = 25
+		remove_effect = { 
+		set_country_flag = lantak1
+		transfer_state = 143
+		transfer_state = 146
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+	lantak2 = {		#IDK
+
+		icon = generic_form_nation		
+		available = {	}
+		fire_only_once = yes 
+		visible = {		
+		original_tag = LAN
+		has_completed_focus = lanfoc6
+		}		
+
+		cost = 25	
+		days_remove = 25
+		remove_effect = { 
+		set_country_flag = lantak2
+		custom_effect_tooltip = cet_lantak2
+			
+			}		
+		
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+	lantak3 = {		#IDK
+
+		icon = generic_form_nation		
+		available = {	}
+		fire_only_once = yes 
+		visible = {		
+		original_tag = LAN
+		has_completed_focus = lanfoc6
+		}		
+
+		cost = 25	
+		days_remove = 25
+		remove_effect = {
+	hidden_effect={	
+		
+create_field_marshal = {
+	name = "Samuel Payet"
+	picture = "occgen1.dds"
+	traits = { reckless }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Michel Bonhomme"
+	picture = "occgen3.dds"
+	traits = { armor_officer }
+	skill = 2
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Denis Leger"
+	picture = "occgen5.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_navy_leader = {
+	name = "Jean-François Darlan"
+		picture = "occwat1.dds"
+	traits = { craven superior_tactician }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	maneuvering_skill = 4
+	coordination_skill = 2
+}		
+		set_country_flag = lantak3
+			}
+			custom_effect_tooltip = cet_lantak3
+			}		
+		
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+}
+##################################FACTION JOINING##############################################################################
+lan_join_factions = {
+	lan_factions1 = {
+		icon = generic_form_nation		
+		available = { is_in_faction = no }
+		
+		fire_only_once = no 
+		days_re_enable = 5
+		
+		visible = {	
+		CAT = {is_faction_leader = yes exists = yes}
+		original_tag = LAN
+		}		
+
+		cost = 25	
+		complete_effect = { 
+		CAT = {country_event = {id = lanjoins.1 days = 2}}
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 0
+		}
+	}
+	lan_factions2 = {
+		icon = generic_form_nation		
+		available = { is_in_faction = no }
+		fire_only_once = no 
+		days_re_enable = 5 
+		visible = {	
+		CAV = {is_faction_leader = yes exists = yes}
+		original_tag = LAN
+		}		
+
+		cost = 25	
+		complete_effect = { 
+		CAV = {country_event = {id = lanjoins.5 days = 2}}
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 5
+		}
+	}
+	
+	lan_factions3 = {
+		icon = generic_form_nation		
+		available = { is_in_faction = no }
+		fire_only_once = no 
+		days_re_enable = 5
+		visible = {		
+		ADA = {is_faction_leader = yes exists = yes}
+		original_tag = LAN
+		}		
+
+		cost = 25	
+		complete_effect = { 
+		ADA = {country_event = {id = lanjoins.4 days = 2}}
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 5
+		}
+	}
+	
+	lan_factions4 = {
+		icon = generic_form_nation		
+		available = { is_in_faction = no }
+		fire_only_once = no 
+		days_re_enable = 5
+		visible = {		
+		GLC = {is_faction_leader = yes exists = yes}
+		original_tag = LAN
+		}		
+
+		cost = 25	
+		complete_effect = { 
+		GLC = {country_event = {id = lanjoins.6 days = 2}}
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 5
+		}
+	}
+
+}
+	

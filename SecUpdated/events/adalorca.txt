@@ -1,0 +1,67 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = adalorca
+
+################## Andalucian ##############
+country_event = {
+	id = adalorca.1
+	title = "Lorca for Peace"
+	desc = "It is no secret the Andalucians are striving to get their hands on Lorca. Yesterday they sent a offert: We give them those lands, and they will compromise to not demand any more land. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Never!"
+		ai_chance = { factor = 0 }
+		ADA = {create_wargoal = {
+				type = annex_everything
+				target = MUR
+				expire = 0
+		}}
+		CAT= {
+		country_event = cat_ada_mur.10}
+				
+			
+	}
+	option = { 
+		name = "The Ultimate price for salvation"
+		ai_chance = { factor = 100 }
+		ADA = {transfer_state = 34}
+	}
+}
+country_event = {
+	id = adalorca.2
+	title = "Murcia stands strong."
+	desc = "The foolish Murcians have refused our fair offert. When diplomacy fails, it is time for war."
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+
+	option = { 
+		name = "They will repent!"
+		ai_chance = { factor = 2 }
+		
+	}
+	
+	}
+
+######################## MURCIAN ####################
+country_event = {
+	id = adalorca.3
+	title = "Murcia folds."
+	desc = "They have surrendered control over Lorca. The Andalucian flag now flies with pride in the city."
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = { 
+		name = "Poggies"
+		ai_chance = { factor = 50 }
+		
+	}
+	}

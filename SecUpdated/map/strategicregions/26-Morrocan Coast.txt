@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=26
+	name="Morrocan Coast"
+	provinces={
+		17617 17675 17702 17793 17911 17982 17999 18092 18170 18214 18225 18355 18366 18408 18425 18574 18576 18595 18607 18690 18970 18974 18983 19003 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

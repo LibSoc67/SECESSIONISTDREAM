@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=30
+	name="Portuguese Atlantic"
+	provinces={
+		17489 17596 17660 17681 17695 17746 17782 17878 17901 17958 18066 18072 18187 18191 18263 18525 18551 18555 18802 
+	}
+	naval_terrain=water_deep_ocean
+	weather={
+	}
+}

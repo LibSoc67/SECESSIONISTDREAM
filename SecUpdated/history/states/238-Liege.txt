@@ -1,0 +1,24 @@
+
+state={
+	id=238
+	name="Liège"
+	provinces={
+		1777 4131 8842 13585 13620 13658 
+	}
+	history={
+		owner = WLL
+		add_core_of = WLL 
+		victory_points = {
+		4131 15
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 0
+			industrial_complex = 2
+		}
+
+	}
+	manpower=235948
+	state_category = town
+	buildings_max_level_factor=1.000
+}

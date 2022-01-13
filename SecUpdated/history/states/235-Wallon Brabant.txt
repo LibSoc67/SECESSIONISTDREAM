@@ -1,0 +1,24 @@
+
+state={
+	id=235
+	name="Wallon Brabant"
+	provinces={
+		10387 13565 13580 
+	}
+	history={
+		owner = WLL
+		add_core_of = WLL 
+		victory_points = {
+			13580 5
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 0
+			industrial_complex = 2
+		}
+
+	}
+	manpower=188928
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

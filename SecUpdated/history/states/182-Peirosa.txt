@@ -1,0 +1,34 @@
+
+state={
+	id=182
+	name="Peirosa"
+	provinces={
+		1650 4600 7808 8848 15040 15150 
+	}
+	resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=0.000
+		oil=0.000
+		chromium=0.000
+		aluminium=20.000
+	}
+history={
+		owner = PEI
+		add_core_of = PEI
+		victory_points = {
+		7808 4
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+			#dockyard = 
+			air_base = 1
+			# = {naval_base = 4}
+		}
+	}
+	state_category = rural
+	manpower=219382
+	buildings_max_level_factor=1.000
+}

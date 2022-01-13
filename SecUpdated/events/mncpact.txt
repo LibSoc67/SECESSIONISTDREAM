@@ -1,0 +1,94 @@
+﻿###########################
+# Ultimatum To La Rioja Events
+###########################
+
+add_namespace = mncpact
+
+# penis
+country_event = {
+	id = mncpact.1
+	title = "A defensive pact with Monaco?"
+	desc = "Monaco wants to make a defensive pact between all the monarchies of Europe. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Yes"
+		ai_chance = { factor = 100 }
+		give_guarantee = MNC
+		MNC = {give_guarantee = AQU}
+		MNC = {set_country_flag = aquyes}
+		
+}
+	option = { 
+		name = "No"
+		ai_chance = { factor = 0 }
+	MNC = {add_opinion_modifier = { target = AQU modifier = large_decrease}}
+		
+
+}}
+country_event = {
+	id = mncpact.2
+	title = "A defensive pact with Monaco?"
+	desc = "Monaco wants to make a defensive pact between all the monarchies of Europe. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Yes"
+		ai_chance = { factor = 100 }
+		give_guarantee = MNC
+		MNC = {give_guarantee = NAR}
+		
+		MNC = {set_country_flag = naryes}
+		
+}
+	option = { 
+		name = "No"
+		ai_chance = { factor = 0 }
+	MNC = {add_opinion_modifier = { target = NAR modifier = large_decrease}}
+		
+
+}}
+country_event = {
+	id = mncpact.3
+	title = "Formalizing the pact?"
+	desc = "Monaco wants to formalize the defensive pact with all the monarchies of Europe. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Yes"
+		ai_chance = { factor = 100 }
+		MNC = { add_to_faction = AQU }
+}
+	option = { 
+		name = "No"
+		ai_chance = { factor = 0 }
+	MNC = {add_opinion_modifier = { target = AQU modifier = large_decrease}}
+		
+
+}}
+country_event = {
+	id = mncpact.4
+	title = "Formalizing the pact?"
+	desc = "Monaco wants to formalize the defensive pact with all the monarchies of Europe. Shall we accept?" 
+	picture = GFX_ultimatumtorioja
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = "Yes"
+		ai_chance = { factor = 100 }
+		MNC = { add_to_faction = NAR }
+}
+	option = { 
+		name = "No"
+		ai_chance = { factor = 0 }
+	MNC = {add_opinion_modifier = { target = NAR modifier = large_decrease}}
+		
+
+}}

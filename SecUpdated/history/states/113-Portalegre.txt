@@ -1,0 +1,36 @@
+
+state={
+	id=113
+	name="Portalegre"
+resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=19.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = ALE
+		add_core_of = ALE
+		victory_points = {
+			8942 7 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 0
+			air_base = 0
+
+		}
+
+	}
+
+	provinces={
+		3861 5177 5781 7728 8942 9316 16107 16169 16201 
+	}
+	manpower=98273
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

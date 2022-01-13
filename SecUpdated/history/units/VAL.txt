@@ -1,0 +1,68 @@
+﻿division_template = {
+	name = "Divisió d'infanteria"  
+	division_names_group = SPAN_INFB_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "Divisió de tancs"  
+	division_names_group = SPR_ARM_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 0 }
+	}
+}
+
+
+units = {
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4529
+		division_template = "Divisió d'infanteria"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 5127
+		division_template = "Divisió d'infanteria"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+
+	}
+
+
+	##### No Notable Naval Forces #####
+}
+
+##### No Notable Air Forces #####
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "VAL"
+		}
+		requested_factories = 3
+		progress = 0.21
+		efficiency = 100
+	}
+	
+}

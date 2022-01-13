@@ -1,0 +1,652 @@
+
+andcategory = {
+	prs_dec_3 = {
+		icon = generic_form_nation		
+		available = {	
+
+		}
+		cost = 100
+		fire_only_once = yes
+		visible = {		
+		tag = PRS
+		}		
+		days_remove = 50
+		remove_effect = {
+		add_stability = 0.05
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	prs_dec_4 = {
+		icon = generic_form_nation		
+		available = {	
+
+		}
+		cost = 125
+		fire_only_once = yes
+		visible = {		
+		tag = PRS
+		}		
+		days_remove = 75
+		remove_effect = {
+		add_stability = 0.07
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	prs_dec_5 = {
+		icon = generic_form_nation		
+		available = {	
+
+		}
+		cost = 85
+		fire_only_once = yes
+		visible = {		
+		tag = PRS
+		}		
+		days_remove = 50
+		remove_effect = {
+		add_stability = 0.04
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	prs_dec_6 = {
+		icon = generic_form_nation		
+		available = {	
+
+		}
+		cost = 125
+		fire_only_once = yes
+		visible = {		
+		tag = PRS
+		}		
+		days_remove = 200
+		remove_effect = {
+		add_stability = 0.09
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	prs_dec_7 = {
+		icon = generic_form_nation		
+		available = {	
+
+		}
+		cost = 125
+		fire_only_once = yes
+		visible = {		
+		tag = PRS
+		}		
+		days_remove = 150
+		remove_effect = {
+		add_stability = 0.04
+		add_tech_bonus = {
+				name = "Electronics"
+				bonus = 0.4
+				uses = 1
+				category = electronics
+			}
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	prs_dec_8 = {
+		icon = generic_form_nation		
+		available = {	
+
+		}
+		cost = 75
+		fire_only_once = no
+		days_re_enable = 100
+		visible = {		
+		tag = PRS
+		}		
+		days_remove = 25
+		remove_effect = {
+		custom_effect_tooltip = "This decision can be taken every 100 days."
+		add_manpower = 1000
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	prs_occ_pact = {		
+
+		icon = generic_form_nation		
+	
+		available = {	
+		has_non_aggression_pact_with = OCC
+		OR = {
+		164 = {is_owned_and_controlled_by = OCC}
+		161 = {is_owned_and_controlled_by = OCC}
+		168 = {is_owned_and_controlled_by = OCC}
+		169 = {is_owned_and_controlled_by = OCC}
+		170 = {is_owned_and_controlled_by = OCC}
+		171 = {is_owned_and_controlled_by = OCC}
+		159 = {is_owned_and_controlled_by = OCC}
+		155 = {is_owned_and_controlled_by = OCC}
+		156 = {is_owned_and_controlled_by = OCC}
+		158 = {is_owned_and_controlled_by = OCC}
+		157 = {is_owned_and_controlled_by = OCC}
+				}
+}
+				
+		
+		
+		fire_only_once = no
+		days_re_enable = 25
+		
+
+		visible = {		
+		original_tag = PRS
+		has_non_aggression_pact_with = OCC
+		}		
+	
+		complete_effect = {
+		OCC = {country_event = prsait.9}
+		}
+		
+		}
+	prs_occ_pact1 = {		
+
+		icon = generic_form_nation		
+	
+		available = {	
+		has_non_aggression_pact_with = PRS
+		OR = {
+		167 = {is_owned_and_controlled_by = OCC}
+		166 = {is_owned_and_controlled_by = OCC}
+		165 = {is_owned_and_controlled_by = OCC}
+		162 = {is_owned_and_controlled_by = OCC}
+		163 = {is_owned_and_controlled_by = OCC}
+		160 = {is_owned_and_controlled_by = OCC}
+		153 = {is_owned_and_controlled_by = OCC}
+		154 = {is_owned_and_controlled_by = OCC}
+		137 = {is_owned_and_controlled_by = OCC}
+		136 = {is_owned_and_controlled_by = OCC}
+		135 = {is_owned_and_controlled_by = OCC}
+		134 = {is_owned_and_controlled_by = OCC}
+		133 = {is_owned_and_controlled_by = OCC}
+				}
+}
+				
+		
+		
+		fire_only_once = no
+		days_re_enable = 25
+		
+
+		visible = {		
+		original_tag = OCC
+		has_non_aggression_pact_with = PRS
+		}		
+	
+		complete_effect = {
+		PRS = {country_event = prsait.10}
+		}
+		
+		}
+prs_dec_1 = {		#Form HE
+
+		icon = generic_form_nation		
+	
+		available = {	
+		
+				PRS = {custom_trigger_tooltip = { tooltip = ctt_xp50 has_army_experience > 50 }}
+}
+				
+		
+		
+		fire_only_once = yes
+		
+
+		visible = {		
+		original_tag = PRS
+		has_completed_focus = prsfoc19
+		}		
+	
+		complete_effect = {army_experience = -50}
+		days_remove = 150
+		remove_effect = {
+		set_country_flag = prs_dec_1_done
+		swap_ideas = {
+		remove_idea = paris_comune3
+		add_idea = paris_reformed
+		}
+		}
+		
+	}
+prs_dec_2 = {		#Form HE
+
+		icon = generic_form_nation		
+	
+		available = {	
+		
+				PRS = {custom_trigger_tooltip = { tooltip = ctt_xp50 has_army_experience > 50 }}
+}
+				
+		
+		
+		fire_only_once = yes
+		
+
+		visible = {		
+		original_tag = PRS
+		has_country_flag = prs_dec_1_done
+		}		
+	
+		complete_effect = {army_experience = -50}
+		days_remove = 150
+		remove_effect = {
+		remove_ideas = paris_reformed
+		}
+		
+		ai_will_do = {	
+			factor = 100
+		}
+	}
+	
+	}
+prs_militias = {
+	prs_militias1 = {
+	icon = generic_form_nation		
+	
+		available = {	
+		
+				196 = {is_owned_and_controlled_by = PRS}
+		}
+				
+		
+		
+		fire_only_once = yes
+		
+
+		visible = {		
+		196 = {is_owned_and_controlled_by = PRS}
+		}		
+		
+		days_remove = 20
+		remove_effect = {
+		196 = {create_unit = {
+			division = "name = \"Milices libertaires\" division_template = \"Milices libertaires\" start_experience_factor = 0.1 start_equipment_factor = 0.6"
+			owner = PRS
+			}
+			}
+		196 = {create_unit = {
+			division = "name = \"Milices libertaires\" division_template = \"Milices libertaires\" start_experience_factor = 0.1 start_equipment_factor = 0.3"
+			owner = PRS
+			}
+		}
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	prs_militias2 = {
+	icon = generic_form_nation		
+	
+		available = {	
+		
+				201 = {is_owned_and_controlled_by = PRS}
+		}
+				
+		
+		
+		fire_only_once = yes
+		
+
+		visible = {		
+		201 = {is_owned_and_controlled_by = PRS}
+		}		
+		
+		days_remove = 20
+		remove_effect = {
+		201 = {create_unit = {
+			division = "name = \"Milices libertaires\" division_template = \"Milices libertaires\" start_experience_factor = 0.1 start_equipment_factor = 0.2"
+			owner = PRS
+			}
+		}
+		201 = {create_unit = {
+			division = "name = \"Milices libertaires\" division_template = \"Milices libertaires\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+			owner = PRS
+			}
+		}
+		}
+		
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	prs_militias3 = {
+	icon = generic_form_nation		
+	
+		available = {	
+		
+				188 = {is_owned_and_controlled_by = PRS}
+		}
+				
+		
+		
+		fire_only_once = yes
+		
+
+		visible = {		
+		188 = {is_owned_and_controlled_by = PRS}
+		}		
+		
+		days_remove = 20
+		remove_effect = {
+		188 = {create_unit = {
+			division = "name = \"Milices libertaires\" division_template = \"Milices libertaires\" start_experience_factor = 0.1 start_equipment_factor = 0.4"
+			owner = PRS
+			}
+		}
+		188 = {create_unit = {
+			division = "name = \"Milices libertaires\" division_template = \"Milices libertaires\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+			owner = PRS
+			}
+		}
+		}
+		
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	prs_militias4 = {
+	icon = generic_form_nation		
+	
+		available = {	
+		
+				194 = {is_owned_and_controlled_by = PRS}
+		}
+				
+		
+		
+		fire_only_once = yes
+		
+
+		visible = {		
+		194 = {is_owned_and_controlled_by = PRS}
+		}		
+		
+		days_remove = 20
+		remove_effect = {
+		194 = {create_unit = {
+			division = "name = \"Milices libertaires\" division_template = \"Milices libertaires\" start_experience_factor = 0.1 start_equipment_factor = 0.2"
+			owner = PRS
+			}
+		}
+		194 = {create_unit = {
+			division = "name = \"Milices libertaires\" division_template = \"Milices libertaires\" start_experience_factor = 0.1 start_equipment_factor = 0.3"
+			owner = PRS
+			}
+		}
+		}
+		
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	prs_militias5 = {
+	icon = generic_form_nation		
+	
+		available = {	
+		
+				203 = {is_owned_and_controlled_by = PRS}
+		}
+				
+		
+		
+		fire_only_once = yes
+		
+
+		visible = {		
+		203 = {is_owned_and_controlled_by = PRS}
+		}		
+		
+		days_remove = 20
+		remove_effect = {
+		203 = {create_unit = {
+			division = "name = \"Milices libertaires\" division_template = \"Milices libertaires\" start_experience_factor = 0.1 start_equipment_factor = 0.3"
+			owner = PRS
+			}
+		}
+		203 = {create_unit = {
+			division = "name = \"Milices libertaires\" division_template = \"Milices libertaires\" start_experience_factor = 0.1 start_equipment_factor = 0.2"
+			owner = PRS
+			}
+		}
+		}
+		
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	prs_militias6 = {
+	icon = generic_form_nation		
+	
+		available = {
+has_manpower > 5000
+has_equipment = {
+		infantry_equipment > 1000
+		}		
+		
+				19 = {is_owned_and_controlled_by = PRS}
+		}
+				
+		
+		
+		fire_only_once = no
+		days_re_enable = 25
+
+		visible = {		
+		19 = {is_owned_and_controlled_by = PRS}
+		}		
+		complete_effect = { 
+		add_manpower = -5000 
+		add_equipment_to_stockpile = { type = infantry_equipment amount = -1000 } 
+		}
+		days_remove = 20
+		remove_effect = {
+		custom_effect_tooltip = "This special decision can be done every 25 days."
+		19 = {create_unit = {
+			division = "name = \"Milices libertaires\" division_template = \"Milices libertaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+			owner = PRS
+			}
+		}
+		19 = {create_unit = {
+			division = "name = \"Milices libertaires\" division_template = \"Milices libertaires\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+			owner = PRS
+			}
+		}
+		}
+		
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+}
+prs_liberation = {
+
+	prs_liberation1 = {
+	icon = generic_form_nation		
+	
+		available = {	
+		has_equipment = {
+		infantry_equipment > 2000
+		}
+
+		}
+				
+		
+		
+		fire_only_once = yes
+		
+
+		visible = {		
+		
+		}		
+		
+		days_remove = 20
+		remove_effect = {
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -2000
+			}
+		set_country_flag = prs_lib1
+		}
+		
+		
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	prs_liberation2 = {
+	icon = generic_form_nation		
+	
+		available = {	
+		has_manpower > 2000
+		
+
+		}
+				
+		
+		
+		fire_only_once = yes
+		
+
+		visible = {		
+		
+		}		
+		
+		days_remove = 20
+		remove_effect = {
+		add_manpower = -2000
+		set_country_flag = prs_lib2
+		}
+		
+		
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	prs_liberation3 = {
+	icon = generic_form_nation		
+	
+		available = {	
+		has_political_power > 100
+		
+
+		}
+				
+		
+		
+		fire_only_once = yes
+		
+
+		visible = {		
+		
+		}		
+		
+		days_remove = 20
+		remove_effect = {
+		add_political_power = -100
+		set_country_flag = prs_lib3
+		}
+		
+		
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	prs_liberation4 = {
+	icon = generic_form_nation		
+	
+		available = {	
+		
+		PIR = {is_puppet_of = PRS}
+		has_war = no
+		PIR = {has_war = no}
+
+		}
+				
+		cost = 150
+		
+		fire_only_once = yes
+		
+		
+		visible = {		
+		
+		}		
+		
+		days_remove = 50
+		remove_effect = {
+		annex_country = {
+		target = PIR
+		transfer_troops = yes
+		}
+		}
+		
+		
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	prs_liberation5 = {
+	icon = generic_form_nation		
+	
+		available = {	
+		
+		HNO = {is_puppet_of = PRS}
+		has_war = no
+		HNO = {has_war = no}
+		186 = {is_owned_and_controlled_by = HNO}
+		}
+				
+		cost = 150
+		
+		fire_only_once = yes
+		
+		
+		visible = {		
+		
+		}		
+		
+		days_remove = 50
+		remove_effect = {
+		annex_country = {
+		target = HNO
+		transfer_troops = yes
+		}
+		}
+		
+		
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+}
+	

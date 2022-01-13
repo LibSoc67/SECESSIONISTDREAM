@@ -1,0 +1,31 @@
+
+state={
+	id=25
+	name="Jaén"
+	provinces={
+		363 400 722 3461 4965 5085 5572 8220 16487 16511 16538 
+	}
+	resources={
+		rubber=4.000
+		tungsten=0.000
+		steel=14.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = ADA 
+		add_core_of = ADA
+		victory_points = {
+		3461 12	
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	state_category=rural
+	manpower=364902
+	buildings_max_level_factor=1.000
+}

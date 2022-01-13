@@ -1,0 +1,20 @@
+
+state={
+	id=48
+	name="Subbética"
+	provinces={
+		522 4629 10300 16522 16545 
+	}
+	history={
+		owner = ADA
+		add_core_of = ADA
+		
+		buildings = {
+			infrastructure = 4
+			 
+		}
+	}
+	state_category=pastoral
+	manpower=70201
+	buildings_max_level_factor=1.000
+}

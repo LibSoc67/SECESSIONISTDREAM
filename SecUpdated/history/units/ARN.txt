@@ -1,0 +1,30 @@
+﻿
+division_template = {
+	name = "Divisió d'infanteria"  
+	division_names_group = SPAN_INFB_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		
+	}
+}
+
+units = {
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 15600
+		division_template = "Divisió d'infanteria"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	
+}
+
+##### No Notable Air Forces #####
+
+	
+}

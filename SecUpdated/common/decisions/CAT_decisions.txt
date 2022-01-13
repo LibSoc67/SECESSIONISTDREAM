@@ -1,0 +1,950 @@
+#####################################################################################################################
+# COMMENTS HAVE BEEN INCLUDED FOR SAKE OF EXPLANATION, CAN BE REMOVED #
+# ID's must not include spaces!
+# Decisions MUST be visible for the AI to execute them, if in doubt, switch tag to the AI country and check if they can see/execute the mission.
+#####################################################################################################################
+andcategory = {
+catsar = {	 	#SARDENYA as puppet
+
+		icon = generic_form_nation		
+		available = {	
+		has_completed_focus = catsar3
+		OR = {
+		120 = {is_owned_and_controlled_by = CAT}
+		121 = {is_owned_and_controlled_by = CAT}
+		122 = {is_owned_and_controlled_by = CAT}
+		123 = {is_owned_and_controlled_by = CAT}
+		124 = {is_owned_and_controlled_by = CAT}
+		}
+		}
+				
+		
+		
+		fire_only_once = yes #If set to yes, the decision will only appear once, after execution will not appear again.
+		
+
+		visible = {		
+		original_tag = CAT
+		
+		}		
+
+		cost = 25	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+		
+			SAR = { 
+			
+			if = {limit={120 = {is_owned_and_controlled_by = CAT}}transfer_state = 120}
+			if = {limit={121 = {is_owned_and_controlled_by = CAT}}transfer_state = 121}
+			if = {limit={122 = {is_owned_and_controlled_by = CAT}}transfer_state = 122}
+			if = {limit={123 = {is_owned_and_controlled_by = CAT}}transfer_state = 123}
+			if = {limit={124 = {is_owned_and_controlled_by = CAT}}transfer_state = 124}
+			
+			set_cosmetic_tag = Cosmetic_CATSAR }
+			CAT = {puppet = SAR}
+			
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 30
+		}
+	}
+catmur = {	 	#MURCIA as puppet
+
+		icon = generic_form_nation		
+		available = {	
+		OR = {has_completed_focus = cat_warmurcia3 has_completed_focus = cat_warmurcia4}
+		OR = {
+		32 = {is_owned_and_controlled_by = CAT}
+		36 = {is_owned_and_controlled_by = CAT}
+		33 = {is_owned_and_controlled_by = CAT}
+		34 = {is_owned_and_controlled_by = CAT}
+		35 = {is_owned_and_controlled_by = CAT}
+		}
+		}
+				
+		
+		
+		fire_only_once = yes #If set to yes, the decision will only appear once, after execution will not appear again.
+		
+
+		visible = {		
+		original_tag = CAT
+		
+		}		
+
+		cost = 25	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+		
+			MUR = { 
+			remove_ideas = {murtreaty}
+			if = {limit={32 = {is_owned_and_controlled_by = CAT}}transfer_state = 32}
+			if = {limit={36 = {is_owned_and_controlled_by = CAT}}transfer_state = 36}
+			if = {limit={33 = {is_owned_and_controlled_by = CAT}}transfer_state = 33}
+			if = {limit={34 = {is_owned_and_controlled_by = CAT}}transfer_state = 34}
+			if = {limit={35 = {is_owned_and_controlled_by = CAT}}transfer_state = 35}
+			set_cosmetic_tag = Cosmetic_CATMUR }
+			CAT = {puppet = MUR}
+			
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 30
+		}
+	}
+	cat12 = {		#Sardignia
+
+		icon = generic_form_nation		
+		available = {	
+		has_country_flag = sarsaidyes
+				SAR = {OR = {has_government = communism has_government = mlism}}
+}
+				
+		
+		
+		fire_only_once = yes #If set to yes, the decision will only appear once, after execution will not appear again.
+		
+
+		visible = {		
+		original_tag = CAT
+		has_country_flag = sarsaidyes
+		}		
+
+		cost = 25	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+		
+			SAR = { country_event = vascat.3  }
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 30
+		}
+	}
+	cat13 = {		#Invite Heuskal Herria
+
+		icon = generic_form_nation		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	
+		has_completed_focus = astalinistcoup
+				CAL = {has_government = mlism}
+}
+				
+		
+		
+		fire_only_once = yes #If set to yes, the decision will only appear once, after execution will not appear again.
+		
+
+		visible = {		
+		original_tag = CAT
+		has_completed_focus = stalinistsolidarity
+		}		
+
+		cost = 25	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+		
+			CAL = { country_event = vascat.2  }
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 30
+		}
+	}
+cat14 = {	 	#Aragó as puppet
+
+		icon = generic_form_nation		
+		available = {	
+		has_completed_focus = catfra
+		19 = {is_owned_and_controlled_by = CAT}
+		20 = {is_owned_and_controlled_by = CAT}
+		21 = {is_owned_and_controlled_by = CAT}
+		}
+				
+		
+		
+		fire_only_once = yes #If set to yes, the decision will only appear once, after execution will not appear again.
+		
+
+		visible = {		
+		original_tag = CAT
+		
+		}		
+
+		cost = 25	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+		
+			ARA = { transfer_state = 19 transfer_state = 20 transfer_state = 21 set_cosmetic_tag = Cosmetic_CATARA }
+			CAT = {puppet = ARA}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 30
+		}
+	}
+cat15 = {	 	#Edetània Core
+
+		icon = generic_form_nation		
+		available = {	
+		
+		228 = {is_owned_and_controlled_by = CAT}
+		}
+				
+		
+		
+		fire_only_once = yes #If set to yes, the decision will only appear once, after execution will not appear again.
+		
+
+		visible = {		
+		original_tag = CAT
+		228 = {is_owned_and_controlled_by = CAT}
+		}		
+
+		cost = 25	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+		
+			add_state_core = 228
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 30
+		}
+	}
+cat1 = {		#Invite Heuskal Herria
+
+		icon = generic_form_nation		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	
+		has_completed_focus = astalinistcoup
+				VAS = {has_government = mlism}
+}
+				
+		
+		
+		fire_only_once = yes #If set to yes, the decision will only appear once, after execution will not appear again.
+		
+
+		visible = {		
+		original_tag = CAT
+		has_completed_focus = stalinistsolidarity
+		}		
+
+		cost = 25	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+		
+			VAS = { country_event = vascat.1  }
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 30
+		}
+	}
+cat2 = {		#Influence Val
+
+		icon = generic_form_nation		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	
+	VAL = {exists = yes}
+	has_completed_focus = catcon
+	}
+				
+		
+		
+		fire_only_once = no #If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 1
+
+		visible = {		
+		original_tag = CAT
+		VAL = {exists = yes}
+		has_completed_focus = catcon
+		}		
+
+		cost = 30	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+		
+			if = {
+			limit = {CAT = {has_government = communism}}
+			VAL = {add_popularity = {ideology = communism popularity = 0.05}}
+			}
+			if = {
+			limit = {CAT = {has_government = mlism}}
+			VAL = {add_popularity = {ideology = mlism popularity = 0.05}}
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10
+		}
+	}
+cat3 = {		#Influence MLL
+
+		icon = generic_form_nation		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	
+	MLL = {exists = yes}
+	has_completed_focus = catcon
+	}
+				
+		
+		
+		fire_only_once = no 
+		days_re_enable = 1
+
+		visible = {		
+		original_tag = CAT
+		MLL = { exists = yes }
+		has_completed_focus = catcon
+		}		
+
+		cost = 20	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+		
+			if = {
+			limit = {CAT = {has_government = communism}}
+			MLL = {add_popularity = {ideology = communism popularity = 0.05}}
+			}
+			if = {
+			limit = {CAT = {has_government = mlism}}
+			MLL = {add_popularity = {ideology = mlism popularity = 0.05}}
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10
+		}
+	}
+cat4 = {		#Influence PRP
+
+		icon = generic_form_nation		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	
+	PRP = {exists = yes}
+	has_completed_focus = catcon
+	}
+				
+		fire_only_once = no 
+		days_re_enable = 1
+		
+		
+
+		visible = {		
+		original_tag = CAT
+		PRP = { exists = yes }
+		has_completed_focus = catcon
+		}		
+
+		cost = 15	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+		
+			if = {
+			limit = {CAT = {has_government = communism}}
+			PRP = {add_popularity = {ideology = communism popularity = 0.05}}
+			}
+			if = {
+			limit = {CAT = {has_government = mlism}}
+			PRP = {add_popularity = {ideology = mlism popularity = 0.05}}
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10
+		}
+	}
+cat5 = {		#Anti fascism
+
+		icon = generic_form_nation		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	
+	}
+				
+		fire_only_once = no 
+		days_re_enable = 1
+		
+		
+
+		visible = {		
+		original_tag = CAT
+		NOT = {has_government = fascism}
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+		
+			add_popularity = {ideology = fascism popularity = -0.1}}
+		
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 15
+		}
+	}
+cat6 = {		#Anti monarchy
+
+		icon = generic_form_nation		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	
+	}
+				
+		fire_only_once = no 
+		days_re_enable = 1
+		
+		
+
+		visible = {		
+		original_tag = CAT
+		NOT = {has_government = neutrality}
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+		
+			add_popularity = {ideology = neutrality popularity = -0.1}}
+		
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 15
+		}
+	}
+	
+cat7 = {		#Anti liberal
+
+		icon = generic_form_nation		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	
+	}
+				
+		fire_only_once = no 
+		days_re_enable = 1
+		
+		
+
+		visible = {		
+		original_tag = CAT
+		NOT = {has_government = democratic}
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+		
+			add_popularity = {ideology = democratic popularity = -0.1}}
+		
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 15
+		}
+	}
+	cat8 = {		#Influence OCC
+
+		icon = generic_form_nation		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	
+	OCC = {exists = yes}
+	has_completed_focus = catocc
+	}
+				
+		fire_only_once = no 
+		days_re_enable = 1
+		
+		
+
+		visible = {		
+		original_tag = CAT
+		OCC = { exists = yes }
+		has_completed_focus = catocc
+		}		
+
+		cost = 30	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+		
+			OCC = {add_popularity = {ideology = communism popularity = 0.05}}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 10
+		}
+	}
+cat9 = {	
+
+		icon = generic_form_nation	
+		available = {	
+	PRP = {communism > 0.50 }
+	
+	}
+				
+		fire_only_once = no 
+		days_re_enable = 1
+		
+		
+
+		visible = {		
+		original_tag = CAT
+		PRP = {exists = yes is_puppet = yes is_puppet_of = CAT}
+		
+		}		
+
+		cost = 50
+
+		complete_effect = {
+add_state_core = 17
+add_state_core = 18		
+		annex_country = {
+    target = PRP
+    transfer_troops = yes
+	}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 100
+		}
+	}
+cat10 = {	
+
+		icon = generic_form_nation	
+		available = {	
+	VAL = {communism > 0.50 }
+	
+	}
+				
+		fire_only_once = no 
+		days_re_enable = 1
+		
+		
+
+		visible = {		
+		original_tag = CAT
+		VAL = {exists = yes is_puppet = yes is_puppet_of = CAT}
+		
+		}		
+
+		cost = 50
+
+		complete_effect = {
+add_state_core = 11
+add_state_core = 12
+add_state_core = 13
+add_state_core = 227
+		annex_country = {
+		
+    target = VAL
+    transfer_troops = yes
+	}} 
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 100
+		}
+	}	
+cat11 = {	
+
+		icon = generic_form_nation	
+		available = {	
+	MLL = {communism > 0.50 }
+	
+	}
+				
+		fire_only_once = no 
+		days_re_enable = 1
+		
+		
+
+		visible = {		
+		original_tag = CAT
+		MLL = {exists = yes is_puppet = yes is_puppet_of = CAT}
+		
+		}		
+
+		cost = 50
+
+		complete_effect = {		
+	add_state_core = 14 	
+	add_state_core = 15 		
+	add_state_core = 16 
+		annex_country = {
+    target = MLL
+    transfer_troops = yes
+	}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 100
+		}
+	}	
+	
+	
+	}
+	resourcescategory = {
+	catres1 = {		#IDK
+
+		icon = generic_form_nation		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	7 = {owner = { tag = CAT }}
+	}
+				
+		fire_only_once = yes 
+		days_re_enable = 1
+		
+		
+
+		visible = {		
+		original_tag = CAT
+		has_completed_focus = economy3
+		}		
+
+		cost = 40	
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		
+		7= {add_resource = {type = steel amount = 12}}
+			
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+	catres2 = {		#IDK
+
+		icon = generic_form_nation		
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	8 = {owner = { tag = CAT }}
+	}
+				
+		fire_only_once = yes 
+		days_re_enable = 1
+		
+		
+
+		visible = {		
+		original_tag = CAT
+		has_completed_focus = economy3
+		}		
+
+		cost = 20	
+
+		complete_effect = {		
+		8= {add_resource = {type = steel amount = 7}}
+			
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+	catres3 = {		#IDK
+
+		icon = generic_form_nation		
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	5 = {owner = { tag = CAT } }
+	}
+				
+		fire_only_once = yes 
+		days_re_enable = 1
+		
+		
+
+		visible = {		
+		original_tag = CAT
+		has_completed_focus = economy3
+		}		
+
+		cost = 20	
+
+		complete_effect = {		
+		5= {add_resource = {type = chromium amount = 7}}
+			
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+	}
+	amnesty = {
+	amnesty1 = {		#IDK
+
+		icon = generic_form_nation		
+		available = {	}
+		fire_only_once = yes 
+		visible = {		
+		original_tag = CAT
+		has_completed_focus = trial6
+		}		
+
+		cost = 25	
+
+		complete_effect = {		
+		set_country_flag = amnesty1
+			
+			
+			}
+		
+		
+		
+
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+	amnesty2 = {		#IDK
+
+		icon = generic_form_nation		
+		available = {	}
+		fire_only_once = yes 
+		visible = {		
+		original_tag = CAT
+		has_completed_focus = trial6
+		}		
+
+		cost = 25	
+
+		complete_effect = {		
+		set_country_flag = amnesty2
+			}
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+	amnesty3 = {		#IDK
+
+		icon = generic_form_nation		
+		available = {	}
+		fire_only_once = yes 
+		visible = {		
+		has_country_flag = amnesty1
+		has_country_flag = amnesty2
+		}		
+
+		cost = 25	
+
+		complete_effect = {		
+		set_country_flag = freee
+			}
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+	}
+	overthrow = {
+	
+	overthrow1 = {		
+
+		icon = generic_form_nation		
+		available = {	}
+		fire_only_once = yes 
+		visible = {
+original_tag = CAT		
+		has_completed_focus = trial8
+		}		
+
+		cost = 25	
+
+		complete_effect = {		
+		set_country_flag = ov1
+		add_popularity = {
+			ideology = mlism
+			popularity = 0.1}
+		
+			}
+		ai_will_do = {	
+			factor = 20
+		}
+	}
+	overthrow2 = {		
+
+		icon = generic_form_nation		
+		available = {	}
+		fire_only_once = yes 
+		visible = {		
+		has_completed_focus = trial8
+		}		
+
+		cost = 25	
+
+		complete_effect = {
+add_popularity = {
+			ideology = mlism
+			popularity = 0.1}		
+		set_country_flag = ov2
+			}
+		ai_will_do = {	
+			factor = 20
+		}
+	}
+	overthrow3 = {		
+
+		icon = generic_form_nation		
+		available = {	}
+		fire_only_once = yes 
+		visible = {		
+		has_completed_focus = trial8
+		}		
+
+		cost = 25	
+
+		complete_effect = {	
+add_popularity = {
+			ideology = mlism
+			popularity = 0.15}		
+		set_country_flag = ov3
+			}
+		ai_will_do = {	
+			factor = 20
+		}
+	}
+	
+	
+	}
+	cavatwarcat = {
+	cavatwarcat1 = {		
+
+		icon = generic_form_nation		
+		available = {has_country_flag = cavatwar}
+		fire_only_once = yes 
+		visible = {		
+		}		
+
+		cost = 25	
+
+		complete_effect = {		
+		 declare_war_on = {
+				target = ARA
+				type = annex_everything
+			}
+			}
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+	
+	}
+	calatwarcat = {
+	cavatwarcat1 = {		
+
+		icon = generic_form_nation		
+		available = {	}
+		fire_only_once = yes 
+		visible = {		
+		has_completed_focus = trial8
+		}		
+
+		cost = 25	
+
+		complete_effect = {		
+		 declare_war_on = {
+				target = ARA
+				type = annex_everything
+			}
+			}
+		ai_will_do = {	
+			factor = 2
+		}
+	}
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	

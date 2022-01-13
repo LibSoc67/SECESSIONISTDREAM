@@ -1,0 +1,30 @@
+
+state={
+	id=53
+	name="Hellín"
+resources={
+		rubber=0.000
+		tungsten=0.000
+		steel=7.000
+		oil=0.000
+		chromium=0.000
+		aluminium=0.000
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL
+		add_claim_by = MUR
+		buildings = {
+			infrastructure = 4
+
+		}
+
+	}
+
+	provinces={
+		5010 7461 8639 8954 
+	}
+	manpower=123202
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}
