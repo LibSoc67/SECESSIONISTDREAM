@@ -1,6 +1,10 @@
 state={
 	id=255
 	name="Devon"
+		history = {
+		owner = NUL
+		controller = NUL
+		}
 	provinces={
 		229 2247 5558 6781 7005 8587 9340 9504 13210 13279 13303 13323 13327 13371 13471 
 	}
