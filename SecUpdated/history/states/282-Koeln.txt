@@ -1,0 +1,27 @@
+state={
+	id=282
+	name="Köln"
+	provinces={
+		13372 9706 13472 13519 3506 9472 13561 5537 13648
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+    history={
+        owner = RHP
+        add_core_of = RHP
+		victory_points = {
+        13519 10
+		}
+		victory_points = {
+		13372 10
+        }
+        buildings = {
+            infrastructure = 4
+            industrial_complex = 1
+
+        }
+
+    }
+    state_category=city
+}

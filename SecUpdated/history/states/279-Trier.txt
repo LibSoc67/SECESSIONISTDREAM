@@ -1,0 +1,27 @@
+state={
+	id=279
+	name="Trier"
+	provinces={
+		11267 3137 9821 7565 11163 4974 13870 13813 5977 5500 13807 13842 10255
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+    history={
+        owner = RHP
+		add_core_of = RHP
+		victory_points = {
+        11267 10
+		}
+		victory_points = {
+        11163 5
+        }
+        buildings = {
+            infrastructure = 4
+            industrial_complex = 1
+
+        }
+
+    }
+    state_category=city
+}
