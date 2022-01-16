@@ -1,17 +1,11 @@
 
 state={
-	id=282
-	name="Köln"
+	id=332
+	name="Potsdam"
 
 	history={
 		owner = RHP
 		add_core_of = RHP
-		victory_points = {
-			13519 10 
-		}
-		victory_points = {
-			13372 10 
-		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
@@ -21,7 +15,7 @@ state={
 	}
 
 	provinces={
-		3506 5537 9472 9706 13372 13373 13415 13450 13472 13519 13561 13648 
+		314 1030 1968 2683 3709 4360 5238 6518 7636 7685 7807 8417 9499 10373 13169 13188 13212 13246 13251 13302 13345 
 	}
 	manpower=30290
 	buildings_max_level_factor=1.000

@@ -1,27 +1,27 @@
 
 state={
-	id=282
-	name="Köln"
+	id=306
+	name="Gließen"
 
 	history={
 		owner = RHP
 		add_core_of = RHP
-		victory_points = {
-			13519 10 
-		}
-		victory_points = {
-			13372 10 
-		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 
 		}
+		victory_points = {
+        5902 10
+		}
+		victory_points = {
+        68 3
+		}
 
 	}
 
 	provinces={
-		3506 5537 9472 9706 13372 13373 13415 13450 13472 13519 13561 13648 
+		68 5902 10294 13566 13567 13602 13608 13621 
 	}
 	manpower=30290
 	buildings_max_level_factor=1.000

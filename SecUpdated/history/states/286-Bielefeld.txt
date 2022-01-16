@@ -1,27 +1,27 @@
 
 state={
-	id=282
-	name="Köln"
+	id=286
+	name="Bielefeld"
 
 	history={
 		owner = RHP
 		add_core_of = RHP
-		victory_points = {
-			13519 10 
-		}
-		victory_points = {
-			13372 10 
-		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 
 		}
+		victory_points = {
+        8780 10
+		}
+		victory_points = {
+		4672 10
+        }
 
 	}
 
 	provinces={
-		3506 5537 9472 9706 13372 13373 13415 13450 13472 13519 13561 13648 
+		1183 4321 4672 7008 8510 8780 8813 13138 13262 13364 
 	}
 	manpower=30290
 	buildings_max_level_factor=1.000

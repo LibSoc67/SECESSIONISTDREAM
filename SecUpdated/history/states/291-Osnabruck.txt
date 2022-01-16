@@ -1,0 +1,39 @@
+
+state={
+	id=291
+	name="Osnabruck"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		victory_points = {
+        5232 10
+		}
+		victory_points = {
+        12880 5
+		}
+		victory_points = {
+        1427 5
+		}
+		victory_points = {
+        13051 3
+		}
+		victory_points = {
+        13054 1
+		}
+
+	}
+
+	provinces={
+		810 1427 2828 2898 2910 3267 5189 5232 7070 8023 8981 9665 12807 12880 12939 13051 13054 13057 13081 13086 13095 13118 13123 13162 13219 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,39 @@
+
+state={
+	id=287
+	name="Hannover"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		victory_points = {
+        5866 15
+		}
+		victory_points = {
+		7327 10
+        }
+		victory_points = {
+		9718 10
+        }
+		victory_points = {
+		5619 4
+        }
+		victory_points = {
+		13187 6
+        }
+
+	}
+
+	provinces={
+		222 3363 3919 4212 5148 5562 5619 5866 6184 7327 8202 8250 8314 8460 9718 10372 10777 12900 12955 12969 13007 13013 13045 13063 13120 13168 13171 13187 13202 13215 13220 13231 13250 13255 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,27 +1,27 @@
 
 state={
-	id=282
-	name="Köln"
+	id=284
+	name="Münster"
 
 	history={
 		owner = RHP
 		add_core_of = RHP
-		victory_points = {
-			13519 10 
-		}
-		victory_points = {
-			13372 10 
-		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 
 		}
+		victory_points = {
+        13245 10
+		}
+		victory_points = {
+		9519 5
+        }
 
 	}
 
 	provinces={
-		3506 5537 9472 9706 13372 13373 13415 13450 13472 13519 13561 13648 
+		118 1956 3236 7346 7810 9519 13211 13230 13235 13245 
 	}
 	manpower=30290
 	buildings_max_level_factor=1.000

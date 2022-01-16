@@ -1,17 +1,11 @@
 
 state={
-	id=282
-	name="Köln"
+	id=334
+	name="Prenziau"
 
 	history={
 		owner = RHP
 		add_core_of = RHP
-		victory_points = {
-			13519 10 
-		}
-		victory_points = {
-			13372 10 
-		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
@@ -21,7 +15,7 @@ state={
 	}
 
 	provinces={
-		3506 5537 9472 9706 13372 13373 13415 13450 13472 13519 13561 13648 
+		1180 1779 1842 3190 3487 4482 5358 6516 6757 7764 9536 12985 13005 13105 13144 13164 13176 
 	}
 	manpower=30290
 	buildings_max_level_factor=1.000
