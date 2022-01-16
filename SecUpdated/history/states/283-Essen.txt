@@ -1,0 +1,24 @@
+state={
+	id=283
+	name="Essen"
+	provinces={
+		13298 6802
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+    history={
+        owner = RHP
+        add_core_of = RHP
+		victory_points = {
+        6802 10
+        }
+        buildings = {
+            infrastructure = 4
+            industrial_complex = 1
+
+        }
+
+    }
+    state_category=city
+}

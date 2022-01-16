@@ -1,0 +1,24 @@
+
+state={
+	id=324
+	name="Gardelegen"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		3652 5377 7829 9334 13029 13049 13058 13082 13109 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

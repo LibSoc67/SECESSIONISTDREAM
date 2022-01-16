@@ -1,0 +1,24 @@
+
+state={
+	id=339
+	name="Dreslau"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		2822 3010 3202 3875 5452 6996 7611 8316 10189 10238 10987 13366 13424 13425 13465 13529 13563 13582 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,27 @@
+
+state={
+	id=295
+	name="Wismar"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		victory_points = {
+        5564 10
+		}
+
+	}
+
+	provinces={
+		1818 5564 8582 8713 12746 12811 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

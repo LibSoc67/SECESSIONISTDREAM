@@ -1,0 +1,30 @@
+
+state={
+	id=305
+	name="Kassel"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		victory_points = {
+        13416 10
+		}
+		victory_points = {
+        13535 3
+		}
+
+	}
+
+	provinces={
+		633 4699 6662 8879 13374 13416 13433 13434 13461 13478 13517 13523 13535 13543 13549 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,24 @@
+
+state={
+	id=301
+	name="Stargard"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		1635 1642 1690 4818 5336 5838 6280 6316 7470 7955 8133 9559 10142 10331 12721 12755 12769 12786 12801 12805 12815 12830 12847 12868 12871 12881 12892 12964 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

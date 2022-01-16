@@ -1,0 +1,27 @@
+
+state={
+	id=289
+	name="Bremen"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		victory_points = {
+        7817 20
+		}
+
+	}
+
+	provinces={
+		1597 7817 10944 12906 12920 12934 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

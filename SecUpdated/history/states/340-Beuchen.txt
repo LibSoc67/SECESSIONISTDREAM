@@ -1,0 +1,24 @@
+
+state={
+	id=340
+	name="Beuchen"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		1225 3565 4302 6195 6982 7107 7982 9571 13524 13530 13557 13571 13588 13604 13646 13676 13678 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

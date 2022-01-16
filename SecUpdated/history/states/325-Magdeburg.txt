@@ -1,0 +1,24 @@
+
+state={
+	id=325
+	name="Magdeburg"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		3990 5721 6918 7493 8075 8215 10069 10723 13125 13143 13163 13178 13193 13216 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,24 @@
+
+state={
+	id=344
+	name="Elbing"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		3673 7683 8241 8447 9918 12612 12643 12703 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,24 @@
+
+state={
+	id=318
+	name="Regensburg"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		999 3891 4372 4661 5130 6771 6917 8484 9656 10468 10828 11243 14040 14069 14075 14123 14167 14188 14262 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

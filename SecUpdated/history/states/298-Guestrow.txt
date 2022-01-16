@@ -1,0 +1,27 @@
+
+state={
+	id=298
+	name="Güstrow"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		victory_points = {
+        1765 5
+		}
+
+	}
+
+	provinces={
+		1765 2430 5822 7056 9520 9882 12777 12808 12846 12865 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,24 @@
+
+state={
+	id=334
+	name="Prenziau"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		1180 1779 1842 3190 3487 4482 5358 6516 6757 7764 9536 12985 13005 13105 13144 13164 13176 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,24 @@
+
+state={
+	id=311
+	name="Freiburg"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		3863 3887 4913 5441 7447 9084 9900 11313 14347 14357 14358 14379 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

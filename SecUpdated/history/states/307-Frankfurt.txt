@@ -1,0 +1,24 @@
+
+state={
+	id=307
+	name="Frankfurt"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		586 3475 7919 8918 9680 9969 10888 11148 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,24 @@
+
+state={
+	id=320
+	name="Münich"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		2010 2832 3980 6433 6949 8193 8807 8836 10844 14246 14280 14296 14318 14328 14340 14349 14435 14450 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

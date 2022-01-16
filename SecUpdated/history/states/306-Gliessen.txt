@@ -1,0 +1,30 @@
+
+state={
+	id=306
+	name="Gließen"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		victory_points = {
+        5902 10
+		}
+		victory_points = {
+        68 3
+		}
+
+	}
+
+	provinces={
+		68 5902 10294 13566 13567 13602 13608 13621 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

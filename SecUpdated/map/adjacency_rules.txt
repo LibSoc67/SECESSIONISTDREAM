@@ -1,6 +1,5 @@
 
-adjacency_rule
-{
+adjacency_rule = {
 	name = "WHITE_SEA_BALTIC_CANAL_1"
 
 	contested =
@@ -38,8 +37,7 @@ adjacency_rule
 	offset = { 0 0 0 }
 }
 
-adjacency_rule
-{
+adjacency_rule = {
 	name = "WHITE_SEA_BALTIC_CANAL_2"
 
 	contested =
@@ -78,8 +76,7 @@ adjacency_rule
 	offset = { 0 0 0 }
 }
 
-adjacency_rule
-{
+adjacency_rule = {
 	name = "WHITE_SEA_BALTIC_CANAL_3"
 
 	contested =
@@ -117,8 +114,7 @@ adjacency_rule
 	offset = { 0 0 0 }
 }
 
-adjacency_rule
-{
+adjacency_rule = {
 	name = "WHITE_SEA_BALTIC_CANAL_4"
 
 	contested =

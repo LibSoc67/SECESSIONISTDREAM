@@ -1,0 +1,24 @@
+
+state={
+	id=326
+	name="Dessau"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		812 4342 5967 6459 7603 7762 7770 8490 10967 13259 13271 13308 13314 13333 13484 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

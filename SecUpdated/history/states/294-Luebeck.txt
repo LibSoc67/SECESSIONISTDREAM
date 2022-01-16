@@ -1,0 +1,30 @@
+
+state={
+	id=294
+	name="Lübeck"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		victory_points = {
+        4799 10
+		}
+		victory_points = {
+        2581 3
+		}
+
+	}
+
+	provinces={
+		2528 2581 4799 10415 10990 12732 12768 12779 12800 12814 12829 12862 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

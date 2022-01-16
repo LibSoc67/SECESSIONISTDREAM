@@ -1,0 +1,24 @@
+
+state={
+	id=316
+	name="Beyreuth"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		346 2082 2410 3094 6437 6622 13724 13741 13802 13819 13838 13851 13857 13894 13900 13906 13914 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

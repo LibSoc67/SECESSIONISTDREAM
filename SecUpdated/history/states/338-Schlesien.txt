@@ -1,0 +1,24 @@
+
+state={
+	id=338
+	name="Schlesien"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		834 1871 2751 2940 3249 4984 6460 6730 6777 8865 9399 9602 9778 9784 10576 11156 13242 13291 13315 13334 13339 13359 13365 13378 13390 13396 13397 13408 13417 13429 13438 13451 13480 13485 13491 13515 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

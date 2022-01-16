@@ -1,0 +1,24 @@
+
+state={
+	id=309
+	name="Baden"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		1651 6381 6575 6877 6990 10505 11122 13923 13967 13972 14031 14052 14063 14129 14130 14161 14183 14218 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

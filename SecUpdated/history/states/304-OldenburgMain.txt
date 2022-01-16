@@ -1,0 +1,27 @@
+
+state={
+	id=304
+	name="Oldenburg Main"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		victory_points = {
+        9387 10
+		}
+
+	}
+
+	provinces={
+		1896 7405 9387 9502 12984 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

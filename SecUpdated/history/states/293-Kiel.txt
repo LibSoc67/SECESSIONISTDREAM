@@ -1,0 +1,30 @@
+
+state={
+	id=293
+	name="Kiel"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		victory_points = {
+        12617 5
+		}
+		victory_points = {
+        12695 10
+		}
+
+	}
+
+	provinces={
+		290 1972 4555 5542 6868 8564 9811 10410 12605 12617 12695 12711 12731 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

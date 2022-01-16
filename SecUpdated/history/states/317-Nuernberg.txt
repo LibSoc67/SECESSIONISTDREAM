@@ -1,0 +1,24 @@
+
+state={
+	id=317
+	name="Nürnberg"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		1594 2044 3539 4456 4845 5115 6569 6612 7018 7633 8352 8928 9287 10150 13953 13969 14010 14036 14081 14120 14197 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

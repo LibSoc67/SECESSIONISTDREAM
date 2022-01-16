@@ -1,0 +1,24 @@
+
+state={
+	id=335
+	name="Cottbus"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		171 2502 4489 7488 9100 9884 13139 13197 13213 13232 13280 13304 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

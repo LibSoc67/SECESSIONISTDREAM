@@ -796,3 +796,7 @@ NUL = {
 	color = rgba { 35 47 42 0 }
 	color_ui = rgba { 35 47 42 0 }
 }
+RHP = {
+	color = rgb { 107 63 127 }
+	color_ui = rgb { 107 63 127 }
+}

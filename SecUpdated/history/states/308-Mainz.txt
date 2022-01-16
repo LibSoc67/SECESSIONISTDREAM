@@ -1,0 +1,24 @@
+
+state={
+	id=308
+	name="Mainz"
+
+	history={
+		owner = RHP
+		add_core_of = RHP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		1269 6059 8600 8902 9515 10974 13683 13735 13749 13780 13793 13814 13865 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}
