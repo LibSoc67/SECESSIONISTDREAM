@@ -4,11 +4,12 @@ state={
 	name="Tilsit"
 
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = OPR
+		add_core_of = OPR
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 2
 
 		}
 
@@ -17,7 +18,7 @@ state={
 	provinces={
 		2565 4038 6935 9767 12466 
 	}
-	manpower=30290
+	manpower=706310
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

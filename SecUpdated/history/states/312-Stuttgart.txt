@@ -3,13 +3,27 @@ state={
 	id=312
 	name="Stuttgart"
 
+	resources={
+		steel=2
+		aluminium=4
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = WRT
+		add_core_of = WRT
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 3
+			arms_factory = 3
 
+		}
+		victory_points = {
+        14179 15
+		}
+		victory_points = {
+        9252 5
+		}
+		victory_points = {
+        14003 8
 		}
 
 	}
@@ -17,8 +31,8 @@ state={
 	provinces={
 		3398 3747 5704 6714 8155 8570 8843 9252 9393 9469 9998 13968 13984 14003 14060 14080 14100 14106 14127 14134 14179 14186 14191 14227 14256 
 	}
-	manpower=30290
+	manpower=2280000
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=large_city
 	local_supplies=0.000
 }

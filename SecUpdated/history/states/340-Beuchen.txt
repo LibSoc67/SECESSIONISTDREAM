@@ -4,12 +4,19 @@ state={
 	name="Beuchen"
 
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = SLS
+		add_core_of = SLS
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
+			arms_factory = 2
 
+		}
+		victory_points = {
+        7982 6
+		}
+		victory_points = {
+        13678 5
 		}
 
 	}
@@ -17,7 +24,7 @@ state={
 	provinces={
 		1225 3565 4302 6195 6982 7107 7982 9571 13524 13530 13557 13571 13588 13604 13646 13676 13678 
 	}
-	manpower=30290
+	manpower=826840
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

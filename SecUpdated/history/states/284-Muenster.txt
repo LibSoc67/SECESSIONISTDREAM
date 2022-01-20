@@ -3,12 +3,16 @@ state={
 	id=284
 	name="Münster"
 
+	resources={
+		steel=3
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = WFL
+		add_core_of = WFL
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 2
 
 		}
 		victory_points = {
@@ -23,7 +27,7 @@ state={
 	provinces={
 		118 1956 3236 7346 7810 9519 13211 13230 13235 13245 
 	}
-	manpower=30290
+	manpower=1080000
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

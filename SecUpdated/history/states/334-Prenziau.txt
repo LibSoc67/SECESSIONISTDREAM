@@ -1,15 +1,28 @@
 
 state={
 	id=334
-	name="Prenziau"
+	name="Soldin"
 
+	resources={
+		aluminium=20
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = BDB
+		add_core_of = BDB
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
+			arms_factory = 2
 
+		}
+		victory_points = {
+        13005 10
+		}
+		victory_points = {
+        7764 5
+		}
+		victory_points = {
+        13164 5
 		}
 
 	}
@@ -17,7 +30,7 @@ state={
 	provinces={
 		1180 1779 1842 3190 3487 4482 5358 6516 6757 7764 9536 12985 13005 13105 13144 13164 13176 
 	}
-	manpower=30290
+	manpower=928570
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

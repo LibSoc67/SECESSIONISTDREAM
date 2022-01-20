@@ -1,15 +1,23 @@
 
 state={
 	id=309
-	name="Baden"
+	name="Karlsruhe"
 
+	resources={
+		steel=1
+		aluminium=6
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = BAD
+		add_core_of = BAD
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 3
+			arms_factory = 3
 
+		}
+		victory_points = {
+        14052 10
 		}
 
 	}
@@ -17,8 +25,8 @@ state={
 	provinces={
 		1651 6381 6575 6877 6990 10505 11122 13923 13967 13972 14031 14052 14063 14129 14130 14161 14183 14218 
 	}
-	manpower=30290
+	manpower=931230
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=large_city
 	local_supplies=0.000
 }

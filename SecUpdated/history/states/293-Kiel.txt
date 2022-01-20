@@ -3,12 +3,17 @@ state={
 	id=293
 	name="Kiel"
 
+	resources={
+		steel=1
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = SWH
+		add_core_of = SWH
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 3
+			dockyard = 3
 
 		}
 		victory_points = {
@@ -23,8 +28,8 @@ state={
 	provinces={
 		290 1972 4555 5542 6868 8564 9811 10410 12605 12617 12695 12711 12731 
 	}
-	manpower=30290
+	manpower=565510
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=large_city
 	local_supplies=0.000
 }

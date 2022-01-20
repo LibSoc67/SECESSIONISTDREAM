@@ -3,13 +3,20 @@ state={
 	id=308
 	name="Mainz"
 
+	resources={
+		steel=1
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = HSE
+		add_core_of = HSE
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 2
 
+		}
+		victory_points = {
+        6059 10
 		}
 
 	}
@@ -17,7 +24,7 @@ state={
 	provinces={
 		1269 6059 8600 8902 9515 10974 13683 13735 13749 13780 13793 13814 13865 
 	}
-	manpower=30290
+	manpower=784990
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

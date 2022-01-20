@@ -3,21 +3,24 @@ state={
 	id=331
 	name="Plauen"
 
+	resources={
+		steel=2
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = SSN
+		add_core_of = SSN
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
-
+            industrial_complex = 2
+			arms_factory = 2
 		}
 
 	}
 
 	provinces={
-		7223 10685 13714 13721 
+		7223 10685 13714 13721 5185
 	}
-	manpower=30290
+	manpower=466410
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

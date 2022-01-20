@@ -3,13 +3,26 @@ state={
 	id=321
 	name="Erfurt"
 
+	resources={
+		steel=30
+		aluminium=2
+		tungsten=10
+		chromium=20
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = THR
+		add_core_of = THR
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 3
+			arms_factory = 3
 
+		}
+		victory_points = {
+        13586 10
+		}
+		victory_points = {
+        9806 8
 		}
 
 	}
@@ -17,7 +30,7 @@ state={
 	provinces={
 		9806 10551 10780 13554 13586 13685 
 	}
-	manpower=30290
+	manpower=1120000
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

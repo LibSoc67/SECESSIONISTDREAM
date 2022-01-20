@@ -3,12 +3,16 @@ state={
 	id=305
 	name="Kassel"
 
+	resources={
+		steel=1
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = HSE
+		add_core_of = HSE
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 2
 
 		}
 		victory_points = {
@@ -23,7 +27,7 @@ state={
 	provinces={
 		633 4699 6662 8879 13374 13416 13433 13434 13461 13478 13517 13523 13535 13543 13549 
 	}
-	manpower=30290
+	manpower=894500
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

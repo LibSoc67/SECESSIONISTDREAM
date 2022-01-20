@@ -3,13 +3,20 @@ state={
 	id=337
 	name="East Berlin"
 
+	resources={
+		steel=2
+		aluminium=1
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = BRN
+		add_core_of = BRN
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 
+		}
+		victory_points = {
+        13074 25
 		}
 
 	}
@@ -17,8 +24,8 @@ state={
 	provinces={
 		13074
 	}
-	manpower=30290
+	manpower=1100000
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=megalopolis
 	local_supplies=0.000
 }

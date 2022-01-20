@@ -1,15 +1,19 @@
 
 state={
 	id=288
-	name="Hamelin"
+	name="Göttingen"
 
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = HAN
+		add_core_of = HAN
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
+			arms_factory = 1
 
+		}
+		victory_points = {
+        13352 5
 		}
 
 	}
@@ -17,8 +21,8 @@ state={
 	provinces={
 		1235 2081 3513 4012 13311 13352 13377 
 	}
-	manpower=30290
+	manpower=99660
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=large_town
 	local_supplies=0.000
 }

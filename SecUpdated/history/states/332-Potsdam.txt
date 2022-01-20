@@ -3,13 +3,28 @@ state={
 	id=332
 	name="Potsdam"
 
+	resources={
+		tungsten=2
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
-		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
-
+		owner = BDB
+		add_core_of = BDB
+        buildings = {
+            infrastructure = 4
+            industrial_complex = 3
+			arms_factory = 4
+        }
+		victory_points = {
+        9499 15
+		}
+		victory_points = {
+        13188 3
+		}
+		victory_points = {
+        3709 3
+		}
+		victory_points = {
+        7807 3
 		}
 
 	}
@@ -17,8 +32,8 @@ state={
 	provinces={
 		314 1030 1968 2683 3709 4360 5238 6518 7636 7685 7807 8417 9499 10373 13169 13188 13212 13246 13251 13302 13345 
 	}
-	manpower=30290
+	manpower=1010000
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=large_city
 	local_supplies=0.000
 }

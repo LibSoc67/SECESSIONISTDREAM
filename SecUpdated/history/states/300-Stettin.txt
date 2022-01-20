@@ -3,12 +3,18 @@ state={
 	id=300
 	name="Stettin"
 
+	resources={
+		steel=80
+		aluminium=30
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = POM
+		add_core_of = POM
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
+			arms_factory = 2
+			dockyard = 2
 
 		}
 		victory_points = {
@@ -26,7 +32,7 @@ state={
 	provinces={
 		7441 7963 8238 12790 12835 12863 
 	}
-	manpower=30290
+	manpower=898255
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

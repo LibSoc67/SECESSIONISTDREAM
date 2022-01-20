@@ -4,11 +4,12 @@ state={
 	name="Marienwerder"
 
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = WPR
+		add_core_of = WPR
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
 
 		}
 
@@ -17,7 +18,7 @@ state={
 	provinces={
 		2008 3934 4222 4243 4473 4643 6109 8650 8705 9168 12682 12698 12756 12757 12771 
 	}
-	manpower=30290
+	manpower=393630
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

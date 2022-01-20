@@ -4,7 +4,11 @@ state={
 	provinces={
 		14030 13982 7236 6089 10185 13779 9004 6977 13878 1924 13966 13983 14026 7740 13988 2263
 	}
-	manpower=30290
+	resources={
+		steel=175 # was: 100
+		aluminium=54 # was: 24
+	}
+	manpower=781270
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
     history={
@@ -21,7 +25,8 @@ state={
         }
         buildings = {
             infrastructure = 4
-            industrial_complex = 1
+			industrial_complex = 3
+			arms_factory = 4
 
         }
 

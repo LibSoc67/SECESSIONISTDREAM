@@ -3,21 +3,25 @@ state={
 	id=326
 	name="Dessau"
 
+	resources={
+		steel=1
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = SAH
+		add_core_of = SAH
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 3
 
 		}
 
 	}
 
 	provinces={
-		812 4342 5967 6459 7603 7762 7770 8490 10967 13259 13271 13308 13314 13333 13484 
+		812 4342 5967 6459 7603 7762 7770 8490 10967 13259 13271 13308 13314 13333 
 	}
-	manpower=30290
+	manpower=1150000
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

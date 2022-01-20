@@ -3,13 +3,26 @@ state={
 	id=335
 	name="Cottbus"
 
+	resources={
+		aluminium=20
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = BDB
+		add_core_of = BDB
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
+			arms_factory = 2
 
+		}
+		victory_points = {
+        13213 10
+		}
+		victory_points = {
+        171 5
+		}
+		victory_points = {
+        2502 3
 		}
 
 	}
@@ -17,7 +30,7 @@ state={
 	provinces={
 		171 2502 4489 7488 9100 9884 13139 13197 13213 13232 13280 13304 
 	}
-	manpower=30290
+	manpower=876770
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

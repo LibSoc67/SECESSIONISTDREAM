@@ -3,13 +3,23 @@ state={
 	id=313
 	name="Tubingen"
 
+	resources={
+		aluminium=2
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = WRT
+		add_core_of = WRT
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 2
 
+		}
+		victory_points = {
+        10346 10
+		}
+		victory_points = {
+        7662 5
 		}
 
 	}
@@ -17,7 +27,7 @@ state={
 	provinces={
 		3816 4763 4983 7662 10346 11190 11315 14178 14261 
 	}
-	manpower=30290
+	manpower=383410
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

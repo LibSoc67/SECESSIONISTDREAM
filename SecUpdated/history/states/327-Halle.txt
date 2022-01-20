@@ -3,21 +3,25 @@ state={
 	id=327
 	name="Halle"
 
+	resources={
+		steel=2
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = SAH
+		add_core_of = SAH
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 4
+			arms_factory = 3
 
 		}
 
 	}
 
 	provinces={
-		573 2970 2989 5100 5359 8896 9541 11061 13368 13406 13407 13457 13468 13518 13539 13555 
+		573 2970 2989 5100 5359 8896 9541 11061 13368 13406 13407 13457 13468 13518 13539 13555 7439
 	}
-	manpower=30290
+	manpower=2590000
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

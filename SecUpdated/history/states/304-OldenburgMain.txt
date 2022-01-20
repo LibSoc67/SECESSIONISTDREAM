@@ -3,12 +3,16 @@ state={
 	id=304
 	name="Oldenburg Main"
 
+	resources={
+		steel=2
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = ODB
+		add_core_of = ODB
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 3
+			arms_factory = 3
 
 		}
 		victory_points = {
@@ -20,7 +24,7 @@ state={
 	provinces={
 		1896 7405 9387 9502 12984 
 	}
-	manpower=30290
+	manpower=849210
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000
