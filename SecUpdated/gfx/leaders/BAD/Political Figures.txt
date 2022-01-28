@@ -1,0 +1,52 @@
+Ideologies:
+democratic
+communism
+fascism
+neutrality
+anarchy (Stateless society)
+mlism (Totalitarian Communism)
+
+BAD:
+democratic:
+SPD (conserve)
+1. Adam Remmele
+ Rule: 23 November 1927	- 23 November 1928
+ Birth: 26 December 1877
+ Death: 9 September 1951
+Centre (center)
+2. Josef Schmitt
+ Rule: 14 August 1920 - 23 November 1921
+ Birth: 22. August 1875
+ Death: 1945
+DDP (libs): 
+3. Willy Hellpach
+ Rule: 23 November 1924	- 23 November 1925
+ Birth: 26 February 1877
+ Death: 6 July 1955
+neutality:
+
+Election History:
+1	Anton Geiß	10 November 1918	14 August 1920	SPD
+2	Gustav Trunk	14 August 1920	23 November 1921	Centre
+3	Hermann Hummel	23 November 1921	23 November 1922	DDP
+4	Adam Remmele	23 November 1922	23 November 1923	SPD
+5	Heinrich Köhler	23 November 1923	23 November 1924	Centre
+6	Willy Hellpach	23 November 1924	23 November 1925	DDP
+-	Gustav Trunk	23 November 1925	23 November 1926	Centre
+-	Heinrich Köhler	23 November 1926	3 February 1927	Centre
+-	Gustav Trunk	3 February 1927	23 November 1928	Centre
+-	Adam Remmele	23 November 1927	23 November 1928	SPD
+7	Josef Schmitt	23 November 1928	20 November 1930	Centre
+8	Franz Josef Wittemann	20 November 1930	10 September 1931	Centre
+-	Josef Schmitt	10 September 1931	11 March 1933	Centre
+
+KPD:
+
+
+NAZI Leader:
+
+
+Stalinism:
+
+Anarchist:
+Fritz Kater

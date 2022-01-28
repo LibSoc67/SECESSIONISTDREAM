@@ -1,7 +1,7 @@
 
 state={
 	id=308
-	name="Mainz"
+	name="Frankfurt"
 
 	resources={
 		steel=1
@@ -16,7 +16,13 @@ state={
 
 		}
 		victory_points = {
-        6059 10
+        6059 15
+		}
+		victory_points = {
+        13793 10
+		}
+		victory_points = {
+        13735 10
 		}
 
 	}

@@ -1,9 +1,10 @@
 
 state={
 	id=334
-	name="Soldin"
+	name="Driesen"
 
 	resources={
+		steel=10
 		aluminium=20
 	}
 	history={

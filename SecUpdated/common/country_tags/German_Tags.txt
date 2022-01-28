@@ -1,4 +1,3 @@
-
 BAD = "countries/Germany.txt"
 BDB = "countries/Germany.txt"
 BRN = "countries/Germany.txt"
