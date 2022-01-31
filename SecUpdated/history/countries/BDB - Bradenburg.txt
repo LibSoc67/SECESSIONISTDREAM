@@ -112,100 +112,26 @@ set_stability = 0.8
 set_war_support = 0.5
 
 
-1939.1.1 = {
-}
-
-
 set_politics = {
-	ruling_party = democratic
+	ruling_party = fascism
 	last_election = "1935.6.4"
 	election_frequency = 1
 	elections_allowed = no
 }
-create_country_leader = {
-	name = "Paul Poidevin"
-	desc = ""
-	picture = "rho1.dds"
-	ideology = marxism 
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Revolutionary Council"
-	desc = ""
-	picture = "genanar.dds"
-	ideology = anarchism 
-	traits = {
-		#
-	}
-}
+
+
+recruit_character = GER_Arkadi_Maslow
+recruit_character = GER_Emil_Stuertz
+
 set_popularities = {
-		democratic = 7
-		fascism = 20
-		communism = 25
-		neutrality = 20
-		anarchy = 25
-		mlism = 3
+		democratic = 6
+		fascism = 47
+		communism = 0
+		neutrality = 28
+		anarchy = 0
+		mlism = 19
 	}
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1935.6.4"
-		election_frequency = 1
-		elections_allowed = no
-	}
-	set_popularities = {
-		communism = 37
-		neutrality = 63
-	}
-}
-add_ideas = {
-	GER_FAC
-}
-add_namespace = {
-	name = "ger_unit_leader"
-	type = unit_leader
-}  
-
-create_field_marshal = {
-	name = "Antoine Mayotte"
-	picture = "rhogen1.dds"
-	traits = {  }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Luis Lacroix"
-	picture = "rhogen2.dds"
-	traits = {  }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Henri Frenay"
-	picture = "rhogen4.dds"
-	traits = {  }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Travis Maçon"
-	picture = "rhogen3.dds"
-	traits = {  }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 3
+add_timed_idea = {
+	idea = GER_FAC days = 720
 }

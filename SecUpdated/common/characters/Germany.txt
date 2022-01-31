@@ -1,0 +1,1720 @@
+characters={
+#Communists
+GER_Albert_Buchmann = {
+		name = "Albert Buchmann"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Albert_Buchmann
+			}
+			army = {
+				large = GFX_Albert_Buchmann
+				small = GFX_Albert_Buchmann_Small
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Albert_Buchmann
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Arkadi_Maslow = {
+		name = "Arkadi Maslow"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Arkadi_Maslow
+			}
+			army = {
+				large = GFX_Arkadi_Maslow
+				small = GFX_Arkadi_Maslow_Small
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Arkadi_Maslow
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_August_Thalheimer = {
+		name = "August Thalheimer"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_August_Thalheimer
+			}
+			army = {
+				large = GFX_August_Thalheimer
+				small = GFX_August_Thalheimer_Small
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = August_Thalheimer
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Arthur_Rosenberg = {
+		name = "Arthur Rosenberg"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Arthur_Rosenberg
+			}
+			army = {
+				large = GFX_Arthur_Rosenberg
+				small = GFX_Arthur_Rosenberg_Small
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Arthur_Rosenberg
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Charlotte_Bischoff = {
+		name = "Charlotte Bischoff"
+		gender = female
+		portraits = {
+			civilian = {
+				large = GFX_Charlotte_Bischoff
+			}
+			army = {
+				large = GFX_Charlotte_Bischoff
+				small = GFX_Charlotte_Bischoff_Small
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Charlotte_Bischoff
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Erich_Honecker = {
+		name = "Erich Honecker"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Erich_Honecker
+			}
+			army = {
+				large = GFX_Erich_Honecker
+				small = GFX_Erich_Honecker_Small
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Erich_Honecker
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Erich_Mielke = {
+		name = "Erich Mielke"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Erich_Mielke
+			}
+			army = {
+				large = GFX_Erich_Mielke
+				small = GFX_Erich_Mielke_Small
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Erich_Mielke
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Ernst_Thaelmann = {
+		name = "Ernst Thälmann"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Ernst_Thaelmann
+			}
+			army = {
+				large = GFX_Ernst_Thaelmann
+				small = GFX_Ernst_Thaelmann_Small
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Ernst_Thaelmann
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Erich_Wollenberg = {
+		name = "Erich Wollenberg"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Erich_Wollenberg
+			}
+			army = {
+				large = GFX_Erich_Wollenberg
+				small = GFX_Erich_Wollenberg_Small
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Erich_Wollenberg
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Hans_Beimler = {
+		name = "Hans Beimler"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Hans_Beimler
+			}
+			army = {
+				large = GFX_Hans_Beimler
+				small = GFX_Hans_Beimler_Small
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Hans_Beimler
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Heinrich_Brandler = {
+		name = "Heinrich Brandler"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Heinrich_Brandler
+			}
+			army = {
+				large = GFX_Heinrich_Brandler
+				small = GFX_Heinrich_Brandler_Small
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Heinrich_Brandler
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Hans_Kippenberger = {
+		name = "Hans Kippenberger"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Hans_Kippenberger
+			}
+			army = {
+				large = GFX_Hans_Kippenberger
+				small = GFX_Hans_Kippenberger_Small
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Hans_Kippenberger
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Heinz_Neumann = {
+		name = "Heinz Neumann"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Heinz_Neumann
+			}
+			army = {
+				large = GFX_Heinz_Neumann
+				small = GFX_Heinz_Neumann_Small
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Heinz_Neumann
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Hugo_Urbahns = {
+		name = "Hugo Urbahns"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Hugo_Urbahns
+			}
+			army = {
+				large = GFX_Hugo_Urbahns
+				small = GFX_Hugo_Urbahns_Small
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Hugo_Urbahns
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Jakob_Dautzenberg = {
+		name = "Jakob Dautzenberg"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Jakob_Dautzenberg
+			}
+			army = {
+				large = GFX_Jakob_Dautzenberg
+				small = GFX_Jakob_Dautzenberg_Small
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Jakob_Dautzenberg
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Karl_Korsch = {
+		name = "Karl Korsch"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Karl_Korsch
+			}
+			army = {
+				large = GFX_Karl_Korsch
+				small = GFX_Karl_Korsch_Small
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Karl_Korsch
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Karl_Radek = {
+		name = "Karl Radek"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Karl_Radek
+			}
+			army = {
+				large = GFX_Karl_Radek
+				small = GFX_Karl_Radek_Small
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Karl_Radek
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Ruth_Fischer = {
+		name = "Ruth Fischer"
+		gender = female
+		portraits = {
+			civilian = {
+				large = GFX_Ruth_Fischer
+			}
+			army = {
+				large = GFX_Ruth_Fischer
+				small = GFX_Ruth_Fischer_Small
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Ruth_Fischer
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Walter_Ulbricht = {
+		name = "Walter Ulbricht"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Walter_Ulbricht
+			}
+			army = {
+				large = GFX_Walter_Ulbricht
+				small = GFX_Walter_Ulbricht_Small
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Walter_Ulbricht
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Werner_Scholem = {
+		name = "Werner Scholem"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Werner_Scholem
+			}
+			army = {
+				large = GFX_Werner_Scholem
+				small = GFX_Werner_Scholem_Small
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Werner_Scholem
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Wilhelm_Pieck = {
+		name = "Wilhelm Pieck"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Wilhelm_Pieck
+			}
+			army = {
+				large = GFX_Wilhelm_Pieck
+				small = GFX_Wilhelm_Pieck_Small
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Wilhelm_Pieck
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Willi_Bleicher = {
+		name = "Willi Bleicher"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Willi_Bleicher
+			}
+			army = {
+				large = GFX_Willi_Bleicher
+				small = GFX_Willi_Bleicher_Small
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Willi_Bleicher
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Willi_Bredel = {
+		name = "Willi Bredel"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Willi_Bredel
+			}
+			army = {
+				large = GFX_Willi_Bredel
+				small = GFX_Willi_Bredel_Small
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Willi_Bredel
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Rosa_Luxemburg = {
+		name = "Rosa Luxemburg"
+		gender = female
+		portraits = {
+			civilian = {
+				large = GFX_Rosa_Luxemburg
+			}
+			army = {
+				large = GFX_Rosa_Luxemburg
+				small = GFX_Rosa_Luxemburg_Small
+			}
+		}
+		country_leader = {
+			ideology = anarchy
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Rosa_Luxemburg
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Josef_Stalin = {
+		name = "Josef Stalin"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Josef_Stalin
+			}
+			army = {
+				large = GFX_Josef_Stalin
+				small = GFX_Josef_Stalin_Small
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Josef_Stalin
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+			political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+#Fascists
+GER_Adolf_Wagner = {
+		name = "Adolf Wagner"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Adolf_Wagner
+			}
+			army = {
+				large = GFX_Adolf_Wagner
+				small = GFX_Adolf_Wagner_Small
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Adolf_Wagner
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Albert_Forster = {
+		name = "Albert Forster"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Albert_Forster
+			}
+			army = {
+				large = GFX_Albert_Forster
+				small = GFX_Albert_Forster_Small
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Albert_Forster
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Carl_Roever = {
+		name = "Carl Röver"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Carl_Roever
+			}
+			army = {
+				large = GFX_Carl_Roever
+				small = GFX_Carl_Roever_Small
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Carl_Roever
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Emil_Stuertz = {
+		name = "Emil Stürtz"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Emil_Stuertz
+			}
+			army = {
+				large = GFX_Emil_Stuertz
+				small = GFX_Emil_Stuertz_Small
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Emil_Stuertz
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Erich_Koch = {
+		name = "Erich Koch"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Erich_Koch
+			}
+			army = {
+				large = GFX_Erich_Koch
+				small = GFX_Erich_Koch_Small
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Erich_Koch
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Franz_Schwede = {
+		name = "Franz Schwede"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Franz_Schwede
+			}
+			army = {
+				large = GFX_Franz_Schwede
+				small = GFX_Franz_Schwede_Small
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Franz_Schwede
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Fritz_Sauckel = {
+		name = "Fritz Sauckel"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Fritz_Sauckel
+			}
+			army = {
+				large = GFX_Fritz_Sauckel
+				small = GFX_Fritz_Sauckel_Small
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Fritz_Sauckel
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Gustav_Simon = {
+		name = "Gustav Simon"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Gustav_Simon
+			}
+			army = {
+				large = GFX_Gustav_Simon
+				small = GFX_Gustav_Simon_Small
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Gustav_Simon
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Herbert_Albrecht = {
+		name = "Herbert Albrecht"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Herbert_Albrecht
+			}
+			army = {
+				large = GFX_Herbert_Albrecht
+				small = GFX_Herbert_Albrecht_Small
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Herbert_Albrecht
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Joachim_Eggeling = {
+		name = "Joachim Eggeling"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Joachim_Eggeling
+			}
+			army = {
+				large = GFX_Joachim_Eggeling
+				small = GFX_Joachim_Eggeling_Small
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Joachim_Eggeling
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Josef_Wagner = {
+		name = "Josef Wagner"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Josef_Wagner
+			}
+			army = {
+				large = GFX_Josef_Wagner
+				small = GFX_Josef_Wagner_Small
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Josef_Wagner
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Joseph_Goebbels = {
+		name = "Joseph Goebbels"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Joseph_Goebbels
+			}
+			army = {
+				large = GFX_Joseph_Goebbels
+				small = GFX_Joseph_Goebbels_Small
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Joseph_Goebbels
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Karl_Kaufmann = {
+		name = "Karl Kaufmann"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Karl_Kaufmann
+			}
+			army = {
+				large = GFX_Karl_Kaufmann
+				small = GFX_Karl_Kaufmann_Small
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Karl_Kaufmann
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Karl_Weinrich = {
+		name = "Karl Weinrich"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Karl_Weinrich
+			}
+			army = {
+				large = GFX_Karl_Weinrich
+				small = GFX_Karl_Weinrich_Small
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Karl_Weinrich
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Helmuth_Brueckner = {
+		name = "Helmuth Brückner"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Helmuth_Brueckner
+			}
+			army = {
+				large = GFX_Helmuth_Brueckner
+				small = GFX_Helmuth_Brueckner_Small
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Helmuth_Brueckner
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Hinrich_Lohse = {
+		name = "Hinrich Lohse"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Hinrich_Lohse
+			}
+			army = {
+				large = GFX_Hinrich_Lohse
+				small = GFX_Hinrich_Lohse_Small
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Hinrich_Lohse
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Martin_Mutschmann = {
+		name = "Martin Mutschmann"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Martin_Mutschmann
+			}
+			army = {
+				large = GFX_Martin_Mutschmann
+				small = GFX_Martin_Mutschmann_Small
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Martin_Mutschmann
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Otto_Telschow = {
+		name = "Otto Telschow"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Otto_Telschow
+			}
+			army = {
+				large = GFX_Otto_Telschow
+				small = GFX_Otto_Telschow_Small
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Otto_Telschow
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Robert_Wagner = {
+		name = "Robert Wagner"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Robert_Wagner
+			}
+			army = {
+				large = GFX_Robert_Wagner
+				small = GFX_Robert_Wagner_Small
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Robert_Wagner
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Rudolf_Jordan = {
+		name = "Rudolf Jordan"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Rudolf_Jordan
+			}
+			army = {
+				large = GFX_Rudolf_Jordan
+				small = GFX_Rudolf_Jordan_Small
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Rudolf_Jordan
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Wilhelm_Murr = {
+		name = "Wilhelm Murr"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Wilhelm_Murr
+			}
+			army = {
+				large = GFX_Wilhelm_Murr
+				small = GFX_Wilhelm_Murr_Small
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Wilhelm_Murr
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Adolf_Hitler = {
+		name = "Adolf Hitler"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Adolf_Hitler
+			}
+			army = {
+				large = GFX_Adolf_Hitler
+				small = GFX_Adolf_Hitler_Small
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Adolf_Hitler
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+GER_Albert_Speer = {
+		name = "Albert Speer"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Albert_Speer
+			}
+			army = {
+				large = GFX_Albert_Speer
+				small = GFX_Albert_Speer_Small
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Albert_Speer
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				political_power_factor = 0.15
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+	
+}

@@ -1,0 +1,389 @@
+spriteTypes = {
+	#KPD
+	spriteType = {
+		name = "GFX_Albert_Buchmann"
+		texturefile = "gfx/leaders/KPD/Albert_Buchmann.dds"
+	}
+		spriteType = {
+		name = "GFX_Albert_Buchmann_Small"
+		texturefile = "gfx/interface/ideas/KPD/Albert_Buchmann_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Arkadi_Maslow"
+		texturefile = "gfx/leaders/KPD/Arkadi_Maslow.dds"
+	}
+		spriteType = {
+		name = "GFX_Arkadi_Maslow_Small"
+		texturefile = "gfx/interface/ideas/KPD/Arkadi_Maslow_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Arthur_Rosenberg"
+		texturefile = "gfx/leaders/KPD/Arthur_Rosenberg.dds"
+	}
+		spriteType = {
+		name = "GFX_Arthur_Rosenberg_Small"
+		texturefile = "gfx/interface/ideas/KPD/Arthur_Rosenberg_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_August_Thalheimer"
+		texturefile = "gfx/leaders/KPD/August_Thalheimer.dds"
+	}
+		spriteType = {
+		name = "GFX_August_Thalheimer_Small"
+		texturefile = "gfx/interface/ideas/KPD/August_Thalheimer_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Charlotte_Bischoff"
+		texturefile = "gfx/leaders/KPD/Charlotte_Bischoff.dds"
+	}
+		spriteType = {
+		name = "GFX_Charlotte_Bischoff_Small"
+		texturefile = "gfx/interface/ideas/KPD/Charlotte_Bischoff_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Erich_Honecker"
+		texturefile = "gfx/leaders/KPD/Erich_Honecker.dds"
+	}
+		spriteType = {
+		name = "GFX_Erich_Honecker_Small"
+		texturefile = "gfx/interface/ideas/KPD/Erich_Honecker_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Erich_Mielke"
+		texturefile = "gfx/leaders/KPD/Erich_Mielke.dds"
+	}
+		spriteType = {
+		name = "GFX_Erich_Mielke_Small"
+		texturefile = "gfx/interface/ideas/KPD/Erich_Mielke_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Erich_Wollenberg"
+		texturefile = "gfx/leaders/KPD/Erich_Wollenberg.dds"
+	}
+		spriteType = {
+		name = "GFX_Erich_Wollenberg_Small"
+		texturefile = "gfx/interface/ideas/KPD/Erich_Wollenberg_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Ernst_Thaelmann"
+		texturefile = "gfx/leaders/KPD/Ernst_Thaelmann.dds"
+	}
+		spriteType = {
+		name = "GFX_Ernst_Thaelmann_Small"
+		texturefile = "gfx/interface/ideas/KPD/Ernst_Thaelmann_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Hans_Beimler"
+		texturefile = "gfx/leaders/KPD/Hans_Beimler.dds"
+	}
+		spriteType = {
+		name = "GFX_Hans_Beimler_Small"
+		texturefile = "gfx/interface/ideas/KPD/Hans_Beimler_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Hans_Kippenberger"
+		texturefile = "gfx/leaders/KPD/Hans_Kippenberger.dds"
+	}
+		spriteType = {
+		name = "GFX_Hans_Kippenberger_Small"
+		texturefile = "gfx/interface/ideas/KPD/Hans_Kippenberger_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Heinrich_Brandler"
+		texturefile = "gfx/leaders/KPD/Heinrich_Brandler.dds"
+	}
+		spriteType = {
+		name = "GFX_Heinrich_Brandler_Small"
+		texturefile = "gfx/interface/ideas/KPD/Heinrich_Brandler_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Heinz_Neumann"
+		texturefile = "gfx/leaders/KPD/Heinz_Neumann.dds"
+	}
+		spriteType = {
+		name = "GFX_Heinz_Neumann_Small"
+		texturefile = "gfx/interface/ideas/KPD/Heinz_Neumann_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Hugo_Urbahns"
+		texturefile = "gfx/leaders/KPD/Hugo_Urbahns.dds"
+	}
+		spriteType = {
+		name = "GFX_Hugo_Urbahns_Small"
+		texturefile = "gfx/interface/ideas/KPD/Hugo_Urbahns_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Jakob_Dautzenberg"
+		texturefile = "gfx/leaders/KPD/Jakob_Dautzenberg.dds"
+	}
+		spriteType = {
+		name = "GFX_Jakob_Dautzenberg_Small"
+		texturefile = "gfx/interface/ideas/KPD/Jakob_Dautzenberg_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Josef_Stalin"
+		texturefile = "gfx/leaders/KPD/Josef_Stalin.dds"
+	}
+		spriteType = {
+		name = "GFX_Josef_Stalin_Small"
+		texturefile = "gfx/interface/ideas/KPD/Josef_Stalin_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Karl_Korsch"
+		texturefile = "gfx/leaders/KPD/Karl_Korsch.dds"
+	}
+		spriteType = {
+		name = "GFX_Karl_Korsch_Small"
+		texturefile = "gfx/interface/ideas/KPD/Karl_Korsch_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Karl_Radek"
+		texturefile = "gfx/leaders/KPD/Karl_Radek.dds"
+	}
+		spriteType = {
+		name = "GFX_Karl_Radek_Small"
+		texturefile = "gfx/interface/ideas/KPD/Karl_Radek_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Rosa_Luxemburg"
+		texturefile = "gfx/leaders/KPD/Rosa_Luxemburg.dds"
+	}
+		spriteType = {
+		name = "GFX_Rosa_Luxemburg_Small"
+		texturefile = "gfx/interface/ideas/KPD/Rosa_Luxemburg_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Ruth_Fischer"
+		texturefile = "gfx/leaders/KPD/Ruth_Fischer.dds"
+	}
+		spriteType = {
+		name = "GFX_Ruth_Fischer_Small"
+		texturefile = "gfx/interface/ideas/KPD/Ruth_Fischer_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Walter_Ulbricht"
+		texturefile = "gfx/leaders/KPD/Walter_Ulbricht.dds"
+	}
+		spriteType = {
+		name = "GFX_Walter_Ulbricht_Small"
+		texturefile = "gfx/interface/ideas/KPD/Walter_Ulbricht_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Werner_Scholem"
+		texturefile = "gfx/leaders/KPD/Werner_Scholem.dds"
+	}
+		spriteType = {
+		name = "GFX_Werner_Scholem_Small"
+		texturefile = "gfx/interface/ideas/KPD/Werner_Scholem_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Wilhelm_Pieck"
+		texturefile = "gfx/leaders/KPD/Wilhelm_Pieck.dds"
+	}
+		spriteType = {
+		name = "GFX_Wilhelm_Pieck_Small"
+		texturefile = "gfx/interface/ideas/KPD/Wilhelm_Pieck_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Willi_Bleicher"
+		texturefile = "gfx/leaders/KPD/Willi_Bleicher.dds"
+	}
+	spriteType = {
+		name = "GFX_Willi_Bleicher_Small"
+		texturefile = "gfx/interface/ideas/KPD/Willi_Bleicher_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Willi_Bredel"
+		texturefile = "gfx/leaders/KPD/Willi_Bredel.dds"
+	}
+		spriteType = {
+		name = "GFX_Willi_Bredel_Small"
+		texturefile = "gfx/interface/ideas/KPD/Willi_Bredel_idea.dds"
+	}
+	#NSDAP
+	
+	spriteType = {
+		name = "GFX_Adolf_Wagner"
+		texturefile = "gfx/leaders/NSDAP/Adolf_Wagner.dds"
+	}
+		spriteType = {
+		name = "GFX_Adolf_Wagner_Small"
+		texturefile = "gfx/interface/ideas/NSDAP/Adolf_Wagner_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Albert_Forster"
+		texturefile = "gfx/leaders/NSDAP/Albert_Forster.dds"
+	}
+		spriteType = {
+		name = "GFX_Albert_Forster_Small"
+		texturefile = "gfx/interface/ideas/NSDAP/Albert_Forster_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Carl_Roever"
+		texturefile = "gfx/leaders/NSDAP/Carl_Roever.dds"
+	}
+		spriteType = {
+		name = "GFX_Carl_Roever_Small"
+		texturefile = "gfx/interface/ideas/NSDAP/Carl_Roever_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Emil_Stuertz"
+		texturefile = "gfx/leaders/NSDAP/Emil_Stuertz.dds"
+	}
+		spriteType = {
+		name = "GFX_Emil_Stuertz_Small"
+		texturefile = "gfx/interface/ideas/NSDAP/Emil_Stuertz_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Erich_Koch"
+		texturefile = "gfx/leaders/NSDAP/Erich_Koch.dds"
+	}
+		spriteType = {
+		name = "GFX_Erich_Koch_Small"
+		texturefile = "gfx/interface/ideas/NSDAP/Erich_Koch_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Franz_Schwede"
+		texturefile = "gfx/leaders/NSDAP/Franz_Schwede.dds"
+	}
+		spriteType = {
+		name = "GFX_Franz_Schwede_Small"
+		texturefile = "gfx/interface/ideas/NSDAP/Franz_Schwede_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Fritz_Sauckel"
+		texturefile = "gfx/leaders/NSDAP/Fritz_Sauckel.dds"
+	}
+		spriteType = {
+		name = "GFX_Fritz_Sauckel_Small"
+		texturefile = "gfx/interface/ideas/NSDAP/Fritz_Sauckel_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Gustav_Simon"
+		texturefile = "gfx/leaders/NSDAP/Gustav_Simon.dds"
+	}
+		spriteType = {
+		name = "GFX_Gustav_Simon_Small"
+		texturefile = "gfx/interface/ideas/NSDAP/Gustav_Simon_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Herbert_Albrecht"
+		texturefile = "gfx/leaders/NSDAP/Herbert_Albrecht.dds"
+	}
+		spriteType = {
+		name = "GFX_Herbert_Albrecht_Small"
+		texturefile = "gfx/interface/ideas/NSDAP/Herbert_Albrecht_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Joachim_Eggeling"
+		texturefile = "gfx/leaders/NSDAP/Joachim_Eggeling.dds"
+	}
+		spriteType = {
+		name = "GFX_Joachim_Eggeling_Small"
+		texturefile = "gfx/interface/ideas/NSDAP/Joachim_Eggeling_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Josef_Wagner"
+		texturefile = "gfx/leaders/NSDAP/Josef_Wagner.dds"
+	}
+		spriteType = {
+		name = "GFX_Josef_Wagner_Small"
+		texturefile = "gfx/interface/ideas/NSDAP/Josef_Wagner_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Joseph_Goebbels"
+		texturefile = "gfx/leaders/NSDAP/Joseph_Goebbels.dds"
+	}
+		spriteType = {
+		name = "GFX_Joseph_Goebbels_Small"
+		texturefile = "gfx/interface/ideas/NSDAP/Joseph_Goebbels_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Karl_Kaufmann"
+		texturefile = "gfx/leaders/NSDAP/Karl_Kaufmann.dds"
+	}
+		spriteType = {
+		name = "GFX_Karl_Kaufmann_Small"
+		texturefile = "gfx/interface/ideas/NSDAP/Karl_Kaufmann_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Karl_Weinrich"
+		texturefile = "gfx/leaders/NSDAP/Karl_Weinrich.dds"
+	}
+		spriteType = {
+		name = "GFX_Karl_Weinrich_Small"
+		texturefile = "gfx/interface/ideas/NSDAP/Karl_Weinrich_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Helmuth_Brueckner"
+		texturefile = "gfx/leaders/NSDAP/Helmuth_Brueckner.dds"
+	}
+		spriteType = {
+		name = "GFX_Helmuth_Brueckner_Small"
+		texturefile = "gfx/interface/ideas/NSDAP/Helmuth_Brueckner_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Hinrich_Lohse"
+		texturefile = "gfx/leaders/NSDAP/Hinrich_Lohse.dds"
+	}
+		spriteType = {
+		name = "GFX_Hinrich_Lohse_Small"
+		texturefile = "gfx/interface/ideas/NSDAP/Hinrich_Lohse_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Martin_Mutschmann"
+		texturefile = "gfx/leaders/NSDAP/Martin_Mutschmann.dds"
+	}
+		spriteType = {
+		name = "GFX_Martin_Mutschmann_Small"
+		texturefile = "gfx/interface/ideas/NSDAP/Martin_Mutschmann_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Otto_Telschow"
+		texturefile = "gfx/leaders/NSDAP/Otto_Telschow.dds"
+	}
+		spriteType = {
+		name = "GFX_Otto_Telschow_Small"
+		texturefile = "gfx/interface/ideas/NSDAP/Otto_Telschow_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Robert_Wagner"
+		texturefile = "gfx/leaders/NSDAP/Robert_Wagner.dds"
+	}
+		spriteType = {
+		name = "GFX_Robert_Wagner_Small"
+		texturefile = "gfx/interface/ideas/NSDAP/Robert_Wagner_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Rudolf_Jordan"
+		texturefile = "gfx/leaders/NSDAP/Rudolf_Jordan.dds"
+	}
+		spriteType = {
+		name = "GFX_Rudolf_Jordan_Small"
+		texturefile = "gfx/interface/ideas/NSDAP/Rudolf_Jordan_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Wilhelm_Murr"
+		texturefile = "gfx/leaders/NSDAP/Wilhelm_Murr.dds"
+	}
+		spriteType = {
+		name = "GFX_Wilhelm_Murr_Small"
+		texturefile = "gfx/interface/ideas/NSDAP/Wilhelm_Murr_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Adolf_Hitler"
+		texturefile = "gfx/leaders/NSDAP/Adolf_Hitler.dds"
+	}
+		spriteType = {
+		name = "GFX_Adolf_Hitler_Small"
+		texturefile = "gfx/interface/ideas/NSDAP/Adolf_Hitler_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Albert_Speer"
+		texturefile = "gfx/leaders/NSDAP/Albert_Speer.dds"
+	}
+		spriteType = {
+		name = "GFX_Albert_Speer_Small"
+		texturefile = "gfx/interface/ideas/NSDAP/Albert_Speer_idea.dds"
+	}
+}

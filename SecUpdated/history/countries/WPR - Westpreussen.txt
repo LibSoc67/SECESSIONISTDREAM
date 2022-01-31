@@ -113,51 +113,26 @@ set_research_slots = 4
 set_stability = 0.8
 set_war_support = 0.5
 
-add_ideas = {
-	GER_FAC
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.6.4"
+	election_frequency = 1
+	elections_allowed = no
 }
-add_namespace = {
-	name = "ger_unit_leader"
-	type = unit_leader
-}  
 
-create_field_marshal = {
-	name = "Antoine Mayotte"
-	picture = "rhogen1.dds"
-	traits = {  }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Luis Lacroix"
-	picture = "rhogen2.dds"
-	traits = {  }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Henri Frenay"
-	picture = "rhogen4.dds"
-	traits = {  }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Travis Maçon"
-	picture = "rhogen3.dds"
-	traits = {  }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 3
-}
+
+recruit_character = GER_Wilhelm_Pieck
+recruit_character = GER_Albert_Forster
+
+set_popularities = {
+		democratic = 32
+		fascism = 1
+		communism = 26
+		neutrality = 36
+		anarchy = 0
+		mlism = 5
+	}
+
+add_timed_idea = {
+	idea = GER_FAC days = 720
+} 
