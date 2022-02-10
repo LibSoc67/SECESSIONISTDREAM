@@ -63,7 +63,7 @@ if = {
 		early_battlecruiser = 1
 		transport = 1
 	}
-	set_naval_oob = "GER_1936_naval"
+	
 }
 if = {
 	limit = {
@@ -95,7 +95,6 @@ if = {
 		sonar = 1
 		basic_cruiser_armor_scheme = 1
 	}
-	set_naval_oob = "GER_1936_naval_mtg"
 }
 if = {
 	limit = {
@@ -122,6 +121,9 @@ set_politics = {
 
 recruit_character = GER_Erich_Mielke
 recruit_character = GER_Herbert_Albrecht
+recruit_character = GER_Wilhelm_Hoecker
+recruit_character = GER_Frederick_Francis_IV
+add_ideas = GER_Herbert_Albrecht
 
 set_popularities = {
 		democratic = 10

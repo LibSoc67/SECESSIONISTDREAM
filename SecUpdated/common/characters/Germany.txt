@@ -26,7 +26,7 @@ GER_Albert_Buchmann = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -61,7 +61,7 @@ GER_Arkadi_Maslow = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -102,7 +102,7 @@ GER_August_Thalheimer = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -137,7 +137,7 @@ GER_Arthur_Rosenberg = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -172,7 +172,7 @@ GER_Charlotte_Bischoff = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -207,7 +207,7 @@ GER_Erich_Honecker = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -242,7 +242,7 @@ GER_Erich_Mielke = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -283,7 +283,7 @@ GER_Ernst_Thaelmann = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -318,7 +318,7 @@ GER_Erich_Wollenberg = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -353,7 +353,7 @@ GER_Hans_Beimler = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -388,7 +388,7 @@ GER_Heinrich_Brandler = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -423,7 +423,7 @@ GER_Hans_Kippenberger = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -458,7 +458,7 @@ GER_Heinz_Neumann = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -493,7 +493,7 @@ GER_Hugo_Urbahns = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -528,7 +528,7 @@ GER_Jakob_Dautzenberg = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -563,7 +563,7 @@ GER_Karl_Korsch = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -598,7 +598,7 @@ GER_Karl_Radek = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -633,7 +633,7 @@ GER_Ruth_Fischer = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -674,7 +674,7 @@ GER_Walter_Ulbricht = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -709,7 +709,7 @@ GER_Werner_Scholem = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -750,7 +750,7 @@ GER_Wilhelm_Pieck = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -785,7 +785,7 @@ GER_Willi_Bleicher = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -820,7 +820,7 @@ GER_Willi_Bredel = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -867,7 +867,7 @@ GER_Rosa_Luxemburg = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -902,7 +902,7 @@ GER_Josef_Stalin = {
 				
 			}
 			traits = {
-			political_power_factor = 0.15
+			communist_revolutionary silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -938,7 +938,7 @@ GER_Adolf_Wagner = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				fascist_demagogue silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -973,7 +973,7 @@ GER_Albert_Forster = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				fascist_demagogue silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -1008,7 +1008,7 @@ GER_Carl_Roever = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				fascist_demagogue silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -1043,7 +1043,7 @@ GER_Emil_Stuertz = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				fascist_demagogue silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -1078,7 +1078,7 @@ GER_Erich_Koch = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				fascist_demagogue silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -1113,7 +1113,7 @@ GER_Franz_Schwede = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				fascist_demagogue silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -1148,7 +1148,7 @@ GER_Fritz_Sauckel = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				fascist_demagogue silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -1183,7 +1183,7 @@ GER_Gustav_Simon = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				fascist_demagogue silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -1218,7 +1218,7 @@ GER_Herbert_Albrecht = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				fascist_demagogue silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -1253,7 +1253,7 @@ GER_Joachim_Eggeling = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				fascist_demagogue silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -1288,7 +1288,7 @@ GER_Josef_Wagner = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				fascist_demagogue silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -1323,7 +1323,7 @@ GER_Joseph_Goebbels = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				fascist_demagogue silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -1358,7 +1358,7 @@ GER_Karl_Kaufmann = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				fascist_demagogue silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -1393,7 +1393,7 @@ GER_Karl_Weinrich = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				fascist_demagogue silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -1428,7 +1428,7 @@ GER_Helmuth_Brueckner = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				fascist_demagogue silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -1463,7 +1463,7 @@ GER_Hinrich_Lohse = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				fascist_demagogue silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -1498,7 +1498,7 @@ GER_Martin_Mutschmann = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				fascist_demagogue silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -1533,7 +1533,7 @@ GER_Otto_Telschow = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				fascist_demagogue silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -1568,7 +1568,7 @@ GER_Robert_Wagner = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				fascist_demagogue silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -1603,7 +1603,7 @@ GER_Rudolf_Jordan = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				fascist_demagogue silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -1638,7 +1638,7 @@ GER_Wilhelm_Murr = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				fascist_demagogue silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -1673,7 +1673,7 @@ GER_Adolf_Hitler = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				fascist_demagogue silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -1708,7 +1708,44 @@ GER_Albert_Speer = {
 				
 			}
 			traits = {
-				political_power_factor = 0.15
+				fascist_demagogue silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+#Other Leaders
+
+#Baden
+GER_Josef_Schmitt = {
+		name = "Josef Schmitt"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Josef_Schmitt
+			}
+			army = {
+				large = GFX_Josef_Schmitt
+				small = GFX_Josef_Schmitt_Small
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Josef_Schmitt
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				democratic_reformer silent_workhorse
 			}
 			
 			#ai_will_do = {
@@ -1717,4 +1754,874 @@ GER_Albert_Speer = {
 		}
 	}
 	
+GER_Berthold_Karl = {
+		name = "Berthold Karl"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Berthold_Karl
+			}
+			army = {
+				large = GFX_Berthold_Karl
+				small = GFX_Berthold_Karl_Small
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Berthold_Karl
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				staunch_monarchist silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+
+#Bayern
+GER_Fritz_Schaeffer = {
+		name = "Fritz Schäffer"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Fritz_Schaeffer
+			}
+			army = {
+				large = GFX_Fritz_Schaeffer
+				small = GFX_Fritz_Schaeffer_Small
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Fritz_Schaeffer
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				democratic_reformer silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+
+GER_Rupprecht_Ferdinand = {
+		name = "Rupprecht Ferdinand"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Rupprecht_Ferdinand
+			}
+			army = {
+				large = GFX_Rupprecht_Ferdinand
+				small = GFX_Rupprecht_Ferdinand_Small
+			}
+		}
+		country_leader = {
+			ideology = moderatism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Rupprecht_Ferdinand
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				staunch_monarchist silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+
+#Hamburg
+GER_Herbert_Ruscheweyh = {
+		name = "Herbert Ruscheweyh"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Herbert_Ruscheweyh
+			}
+			army = {
+				large = GFX_Herbert_Ruscheweyh
+				small = GFX_Herbert_Ruscheweyh_Small
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Herbert_Ruscheweyh
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				staunch_monarchist silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+
+#Hessen
+GER_Karl_Geiler = {
+		name = "Karl Geiler"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Karl_Geiler
+			}
+			army = {
+				large = GFX_Karl_Geiler
+				small = GFX_Karl_Geiler_Small
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Karl_Geiler
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				democratic_reformer silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+
+GER_Ernst_Ludwig = {
+		name = "Ernst Ludwig"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Ernst_Ludwig
+			}
+			army = {
+				large = GFX_Ernst_Ludwig
+				small = GFX_Ernst_Ludwig_Small
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Ernst_Ludwig
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				staunch_monarchist silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+
+#Mecklenburg
+GER_Wilhelm_Hoecker = {
+		name = "Wilhelm Höcker"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Wilhelm_Hoecker
+			}
+			army = {
+				large = GFX_Wilhelm_Hoecker
+				small = GFX_Wilhelm_Hoecker_Small
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Wilhelm_Hoecker
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				democratic_reformer silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+
+GER_Frederick_Francis_IV = {
+		name = "Frederick Francis IV"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Frederick_Francis_IV
+			}
+			army = {
+				large = GFX_Frederick_Francis_IV
+				small = GFX_Frederick_Francis_IV_Small
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Frederick_Francis_IV
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				staunch_monarchist silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+
+#Oldenburg
+GER_Nikolaus_Wilhelm = {
+		name = "Nikolaus Wilhelm"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Nikolaus_Wilhelm
+			}
+			army = {
+				large = GFX_Nikolaus_Wilhelm
+				small = GFX_Nikolaus_Wilhelm_Small
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Nikolaus_Wilhelm
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				staunch_monarchist silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+
+GER_Hermann_Ehlers = {
+		name = "Hermann Ehlers"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Hermann_Ehlers
+			}
+			army = {
+				large = GFX_Hermann_Ehlers
+				small = GFX_Hermann_Ehlers_Small
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Hermann_Ehlers
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				democratic_reformer silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+
+#Rhine-Pfalz
+GER_Konrad_Adenauer = {
+		name = "Konrad Adenauer"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Konrad_Adenauer
+			}
+			army = {
+				large = GFX_Konrad_Adenauer
+				small = GFX_Konrad_Adenauer_Small
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Konrad_Adenauer
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				democratic_reformer silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+
+GER_Wilhelm_II = {
+		name = "Wilhelm II"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Wilhelm_II
+			}
+			army = {
+				large = GFX_Wilhelm_II
+				small = GFX_Wilhelm_II_Small
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Wilhelm_II
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				staunch_monarchist silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+
+#Ostprussia
+GER_Franz_von_Papen = {
+		name = "Franz von Papen"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Franz_von_Papen
+			}
+			army = {
+				large = GFX_Franz_von_Papen
+				small = GFX_Franz_von_Papen_Small
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = moderatism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Franz_von_Papen
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				staunch_monarchist democratic_reformer silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+
+#Sachsen
+GER_Walther_Schieck = {
+		name = "Walther Schieck"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Walther_Schieck
+			}
+			army = {
+				large = GFX_Walther_Schieck
+				small = GFX_Walther_Schieck_Small
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = anti_revisionism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Walther_Schieck
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				staunch_monarchist democratic_drift = 0.03 silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+
+GER_Friedrich_Christian = {
+		name = "Friedrich Christian"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Friedrich_Christian
+			}
+			army = {
+				large = GFX_Friedrich_Christian
+				small = GFX_Friedrich_Christian_Small
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Friedrich_Christian
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				staunch_monarchist silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+
+#Sachsen-Anhalt
+GER_Heinrich_Deist = {
+		name = "Heinrich Deist"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Heinrich_Deist
+			}
+			army = {
+				large = GFX_Heinrich_Deist
+				small = GFX_Heinrich_Deist_Small
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Heinrich_Deist
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				democratic_reformer silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+
+GER_Joachim_Ernst = {
+		name = "Joachim Ernst"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Joachim_Ernst
+			}
+			army = {
+				large = GFX_Joachim_Ernst
+				small = GFX_Joachim_Ernst_Small
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Joachim_Ernst
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				staunch_monarchist silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+
+#Thüringen
+GER_Erwin_Baum = {
+		name = "Erwin Baum"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Erwin_Baum
+			}
+			army = {
+				large = GFX_Erwin_Baum
+				small = GFX_Erwin_Baum_Small
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Erwin_Baum
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				democratic_reformer silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+
+GER_Karl_August = {
+		name = "Karl August"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Karl_August
+			}
+			army = {
+				large = GFX_Karl_August
+				small = GFX_Karl_August_Small
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Karl_August
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				staunch_monarchist silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+#Westprussia
+GER_Wilhelm_Marx = {
+		name = "Wilhelm Marx"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Wilhelm_Marx
+			}
+			army = {
+				large = GFX_Wilhelm_Marx
+				small = GFX_Wilhelm_Marx_Small
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Wilhelm_Marx
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				democratic_reformer silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+
+GER_Wilhelm_III = {
+		name = "Wilhelm III"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Wilhelm_III
+			}
+			army = {
+				large = GFX_Wilhelm_III
+				small = GFX_Wilhelm_III_Small
+			}
+		}
+		country_leader = {
+			ideology = moderatism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Wilhelm_III
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				staunch_monarchist silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+
+#Westfallen
+GER_Heinrich_Bruning = {
+		name = "Heinrich Bruning"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Heinrich_Bruning
+			}
+			army = {
+				large = GFX_Heinrich_Bruning
+				small = GFX_Heinrich_Bruning_Small
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Heinrich_Bruning
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				democratic_reformer silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+
+GER_Friedrich_Hermann = {
+		name = "Friedrich Hermann"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Friedrich_Hermann
+			}
+			army = {
+				large = GFX_Friedrich_Hermann
+				small = GFX_Friedrich_Hermann_Small
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Friedrich_Hermann
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				staunch_monarchist silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+
+#Württemburg
+GER_Albrecht_Koenig = {
+		name = "Albrecht König"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Albrecht_Koenig
+			}
+			army = {
+				large = GFX_Albrecht_Koenig
+				small = GFX_Albrecht_Koenig_Small
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = moderatism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Albrecht_Koenig
+			cost = 50
+			allowed = {
+				
+			}
+			traits = {
+				staunch_monarchist silent_workhorse
+			}
+			
+			#ai_will_do = {
+			#	factor = 1.500
+			#}
+		}
+	}
+
 }

@@ -63,7 +63,7 @@ if = {
 		early_battlecruiser = 1
 		transport = 1
 	}
-	set_naval_oob = "GER_1936_naval"
+	
 }
 if = {
 	limit = {
@@ -95,7 +95,6 @@ if = {
 		sonar = 1
 		basic_cruiser_armor_scheme = 1
 	}
-	set_naval_oob = "GER_1936_naval_mtg"
 }
 if = {
 	limit = {
@@ -124,6 +123,7 @@ recruit_character = GER_Ernst_Thaelmann
 recruit_character = GER_Arthur_Rosenberg
 recruit_character = GER_Ruth_Fischer
 recruit_character = GER_Joseph_Goebbels
+add_ideas = GER_Ernst_Thaelmann
 
 set_popularities = {
 		democratic = 6

@@ -64,7 +64,7 @@ if = {
 		early_battlecruiser = 1
 		transport = 1
 	}
-	set_naval_oob = "GER_1936_naval"
+	
 }
 if = {
 	limit = {
@@ -96,7 +96,6 @@ if = {
 		sonar = 1
 		basic_cruiser_armor_scheme = 1
 	}
-	set_naval_oob = "GER_1936_naval_mtg"
 }
 if = {
 	limit = {
@@ -123,6 +122,9 @@ set_politics = {
 
 recruit_character = GER_Jakob_Dautzenberg
 recruit_character = GER_Fritz_Sauckel
+recruit_character = GER_Erwin_Baum
+recruit_character = GER_Karl_August
+add_ideas = GER_Karl_August
 
 set_popularities = {
 		democratic = 20

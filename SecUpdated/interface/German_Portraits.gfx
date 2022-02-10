@@ -180,9 +180,9 @@ spriteTypes = {
 		name = "GFX_Wilhelm_Pieck"
 		texturefile = "gfx/leaders/KPD/Wilhelm_Pieck.dds"
 	}
-		spriteType = {
-		name = "GFX_Wilhelm_Pieck_Small"
-		texturefile = "gfx/interface/ideas/KPD/Wilhelm_Pieck_idea.dds"
+	spriteType = {
+	name = "GFX_Wilhelm_Pieck_Small"
+	texturefile = "gfx/interface/ideas/KPD/Wilhelm_Pieck_idea.dds"
 	}
 	spriteType = {
 		name = "GFX_Willi_Bleicher"
@@ -196,9 +196,9 @@ spriteTypes = {
 		name = "GFX_Willi_Bredel"
 		texturefile = "gfx/leaders/KPD/Willi_Bredel.dds"
 	}
-		spriteType = {
-		name = "GFX_Willi_Bredel_Small"
-		texturefile = "gfx/interface/ideas/KPD/Willi_Bredel_idea.dds"
+	spriteType = {
+	name = "GFX_Willi_Bredel_Small"
+	texturefile = "gfx/interface/ideas/KPD/Willi_Bredel_idea.dds"
 	}
 	#NSDAP
 	
@@ -386,4 +386,241 @@ spriteTypes = {
 		name = "GFX_Albert_Speer_Small"
 		texturefile = "gfx/interface/ideas/NSDAP/Albert_Speer_idea.dds"
 	}
+	#Other Leaders
+	
+	#BAD - Baden
+	spriteType = {
+		name = "GFX_Josef_Schmitt"
+		texturefile = "gfx/leaders/BAD/Josef_Schmitt.dds"
+	}
+		spriteType = {
+		name = "GFX_Josef_Schmitt_Small"
+		texturefile = "gfx/interface/ideas/Germany/BAD/Josef_Schmitt_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Berthold_Karl"
+		texturefile = "gfx/leaders/BAD/Berthold_Karl.dds"
+	}
+		spriteType = {
+		name = "GFX_Berthold_Karl_Small"
+		texturefile = "gfx/interface/ideas/Germany/BAD/Berthold_Karl_idea.dds"
+	}
+	#BRN - Berlin
+	#BDB - Bradenburg
+	#BYN - Bayern
+	spriteType = {
+		name = "GFX_Fritz_Schaeffer"
+		texturefile = "gfx/leaders/BYN/Fritz_Schaeffer.dds"
+	}
+		spriteType = {
+		name = "GFX_Fritz_Schaeffer_Small"
+		texturefile = "gfx/interface/ideas/Germany/BYN/Fritz_Schaeffer_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Rupprecht_Ferdinand"
+		texturefile = "gfx/leaders/BYN/Rupprecht_Ferdinand.dds"
+	}
+		spriteType = {
+		name = "GFX_Rupprecht_Ferdinand_Small"
+		texturefile = "gfx/interface/ideas/Germany/BYN/Rupprecht_Ferdinand_idea.dds"
+	}
+	
+	#HMB - Hamburg
+	spriteType = {
+		name = "GFX_Herbert_Ruscheweyh"
+		texturefile = "gfx/leaders/HMB/Herbert_Ruscheweyh.dds"
+	}
+	spriteType = {
+	name = "GFX_Herbert_Ruscheweyh_Small"
+	texturefile = "gfx/interface/ideas/Germany/HMB/Herbert_Ruscheweyh_idea.dds"
+	}
+	#HAN - Hannover
+	#HSE - Hessen
+	spriteType = {
+		name = "GFX_Karl_Geiler"
+		texturefile = "gfx/leaders/HSE/Karl_Geiler.dds"
+	}
+	spriteType = {
+	name = "GFX_Karl_Geiler_Small"
+	texturefile = "gfx/interface/ideas/Germany/HSE/Karl_Geiler_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Ludwig_Chlodwig"
+		texturefile = "gfx/leaders/HSE/Ludwig_Chlodwig.dds"
+	}
+	spriteType = {
+	name = "GFX_Ludwig_Chlodwig_Small"
+	texturefile = "gfx/interface/ideas/Germany/HSE/Ludwig_Chlodwig_idea.dds"
+	}
+	
+	#MKB - Mecklenburg
+	spriteType = {
+		name = "GFX_Wilhelm_Hoecker"
+		texturefile = "gfx/leaders/MKB/Wilhelm_Hoecker.dds"
+	}
+	spriteType = {
+	name = "GFX_Wilhelm_Hoecker_Small"
+	texturefile = "gfx/interface/ideas/Germany/MKB/Wilhelm_Hoecker_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Frederick_Francis_IV"
+		texturefile = "gfx/leaders/MKB/Frederick_Francis_IV.dds"
+	}
+	spriteType = {
+	name = "GFX_Frederick_Francis_IV_Small"
+	texturefile = "gfx/interface/ideas/Germany/MKB/Frederick_Francis_IV_idea.dds"
+	}
+	
+	#ODB - Oldenburg
+	spriteType = {
+		name = "GFX_Nikolaus_Wilhelm"
+		texturefile = "gfx/leaders/ODB/Nikolaus_Wilhelm.dds"
+	}
+	spriteType = {
+	name = "GFX_Nikolaus_Wilhelm_Small"
+	texturefile = "gfx/interface/ideas/Germany/ODB/Nikolaus_Wilhelm_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Hermann_Ehlers"
+		texturefile = "gfx/leaders/ODB/Hermann_Ehlers.dds"
+	}
+	spriteType = {
+	name = "GFX_Hermann_Ehlers_Small"
+	texturefile = "gfx/interface/ideas/Germany/ODB/Hermann_Ehlers_idea.dds"
+	}
+	
+	#OPR - Ostprussia
+	spriteType = {
+		name = "GFX_Franz_von_Papen"
+		texturefile = "gfx/leaders/OPR/Franz_von_Papen.dds"
+	}
+	spriteType = {
+	name = "GFX_Franz_von_Papen_Small"
+	texturefile = "gfx/interface/ideas/Germany/OPR/Franz_von_Papen_idea.dds"
+	}
+	
+	#POM - Pommern
+	
+	#RHP - Rhine Pfalz
+	spriteType = {
+		name = "GFX_Konrad_Adenauer"
+		texturefile = "gfx/leaders/RHP/Konrad_Adenauer.dds"
+	}
+	spriteType = {
+	name = "GFX_Konrad_Adenauer_Small"
+	texturefile = "gfx/interface/ideas/Germany/RHP/Konrad_Adenauer_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Wilhelm_II"
+		texturefile = "gfx/leaders/RHP/Wilhelm_II.dds"
+	}
+	spriteType = {
+	name = "GFX_Wilhelm_II_Small"
+	texturefile = "gfx/interface/ideas/Germany/RHP/Wilhelm_II_idea.dds"
+	}
+	
+	#SAH - Sachsen Anhalt
+	spriteType = {
+		name = "GFX_Heinrich_Deist"
+		texturefile = "gfx/leaders/SAH/Heinrich_Deist.dds"
+	}
+	spriteType = {
+	name = "GFX_Heinrich_Deist_Small"
+	texturefile = "gfx/interface/ideas/Germany/SAH/Heinrich_Deist_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Joachim_Ernst"
+		texturefile = "gfx/leaders/SAH/Joachim_Ernst.dds"
+	}
+	spriteType = {
+	name = "GFX_Joachim_Ernst_Small"
+	texturefile = "gfx/interface/ideas/Germany/SAH/Joachim_Ernst_idea.dds"
+	}
+	
+	#SLS - Schlesien
+	
+	#SSN - Sachsen
+	spriteType = {
+		name = "GFX_Walther_Schieck"
+		texturefile = "gfx/leaders/SSN/Walther_Schieck.dds"
+	}
+	spriteType = {
+	name = "GFX_Walther_Schieck_Small"
+	texturefile = "gfx/interface/ideas/Germany/SSN/Walther_Schieck_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Friedrich_Christian"
+		texturefile = "gfx/leaders/SSN/Friedrich_Christian.dds"
+	}
+	spriteType = {
+	name = "GFX_Friedrich_Christian_Small"
+	texturefile = "gfx/interface/ideas/Germany/SSN/Friedrich_Christian_idea.dds"
+	}
+	
+	#SWH - Schleswig Holstein
+	
+	#THR - Thüringen
+	spriteType = {
+		name = "GFX_Erwin_Baum"
+		texturefile = "gfx/leaders/THR/Erwin_Baum.dds"
+	}
+	spriteType = {
+	name = "GFX_Erwin_Baum_Small"
+	texturefile = "gfx/interface/ideas/Germany/THR/Erwin_Baum_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Karl_August"
+		texturefile = "gfx/leaders/THR/Karl_August.dds"
+	}
+	spriteType = {
+	name = "GFX_Karl_August_Small"
+	texturefile = "gfx/interface/ideas/Germany/THR/Karl_August_idea.dds"
+	}
+	
+	#WRT - Württemburg
+	spriteType = {
+		name = "GFX_Albrecht_Koenig"
+		texturefile = "gfx/leaders/WRT/Albrecht_Koenig.dds"
+	}
+	spriteType = {
+	name = "GFX_Albrecht_Koenig_Small"
+	texturefile = "gfx/interface/ideas/Germany/WRT/Albrecht_Koenig_idea.dds"
+	}
+	
+	#WFL - Westfallen
+	spriteType = {
+		name = "GFX_Heinrich_Bruning"
+		texturefile = "gfx/leaders/WFL/Heinrich_Bruning.dds"
+	}
+	spriteType = {
+	name = "GFX_Heinrich_Bruning_Small"
+	texturefile = "gfx/interface/ideas/Germany/WFL/Heinrich_Bruning_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Friedrich_Hermann"
+		texturefile = "gfx/leaders/WFL/Friedrich_Hermann.dds"
+	}
+	spriteType = {
+	name = "GFX_Friedrich_Hermann_Small"
+	texturefile = "gfx/interface/ideas/Germany/WFL/Friedrich_Hermann_idea.dds"
+	}
+	
+	#WPR - Westprussia
+	spriteType = {
+		name = "GFX_Wilhelm_Marx"
+		texturefile = "gfx/leaders/WPR/Wilhelm_Marx.dds"
+	}
+	spriteType = {
+	name = "GFX_Wilhelm_Marx_Small"
+	texturefile = "gfx/interface/ideas/Germany/WPR/Wilhelm_Marx_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Wilhelm_III"
+		texturefile = "gfx/leaders/WPR/Wilhelm_III.dds"
+	}
+	spriteType = {
+	name = "GFX_Wilhelm_III_Small"
+	texturefile = "gfx/interface/ideas/Germany/WPR/Wilhelm_III_idea.dds"
+	}
+	
 }

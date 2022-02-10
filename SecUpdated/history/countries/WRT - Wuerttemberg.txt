@@ -64,7 +64,7 @@ if = {
 		early_battlecruiser = 1
 		transport = 1
 	}
-	set_naval_oob = "GER_1936_naval"
+	
 }
 if = {
 	limit = {
@@ -96,7 +96,6 @@ if = {
 		sonar = 1
 		basic_cruiser_armor_scheme = 1
 	}
-	set_naval_oob = "GER_1936_naval_mtg"
 }
 if = {
 	limit = {
@@ -122,6 +121,8 @@ set_politics = {
 
 recruit_character = GER_August_Thalheimer
 recruit_character = GER_Wilhelm_Murr
+recruit_character = GER_Albrecht_Koenig
+add_ideas = GER_Albrecht_Koenig
 
 set_popularities = {
 		democratic = 17

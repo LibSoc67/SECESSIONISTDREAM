@@ -65,7 +65,7 @@ if = {
 		early_battlecruiser = 1
 		transport = 1
 	}
-	set_naval_oob = "GER_1936_naval"
+	
 }
 if = {
 	limit = {
@@ -97,7 +97,6 @@ if = {
 		sonar = 1
 		basic_cruiser_armor_scheme = 1
 	}
-	set_naval_oob = "GER_1936_naval_mtg"
 }
 if = {
 	limit = {
@@ -123,6 +122,9 @@ set_politics = {
 
 recruit_character = GER_Wilhelm_Pieck
 recruit_character = GER_Albert_Forster
+recruit_character = GER_Wilhelm_Marx
+recruit_character = GER_Wilhelm_III
+add_ideas = GER_Wilhelm_III
 
 set_popularities = {
 		democratic = 32
