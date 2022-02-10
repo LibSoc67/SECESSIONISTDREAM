@@ -3,19 +3,23 @@ state={
 	id=286
 	name="Bielefeld"
 
+	resources={
+		steel=1
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = WFL
+		add_core_of = WFL
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 3
+			arms_factory = 3
 
 		}
 		victory_points = {
         8780 10
 		}
 		victory_points = {
-		4672 10
+		4672 8
         }
 
 	}
@@ -23,7 +27,7 @@ state={
 	provinces={
 		1183 4321 4672 7008 8510 8780 8813 13138 13262 13364 
 	}
-	manpower=30290
+	manpower=1320000
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

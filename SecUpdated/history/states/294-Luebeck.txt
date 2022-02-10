@@ -3,12 +3,17 @@ state={
 	id=294
 	name="Lübeck"
 
+	resources={
+		steel=1
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = SWH
+		add_core_of = SWH
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
+			arms_factory = 2
+			dockyard = 2
 
 		}
 		victory_points = {
@@ -23,7 +28,7 @@ state={
 	provinces={
 		2528 2581 4799 10415 10990 12732 12768 12779 12800 12814 12829 12862 
 	}
-	manpower=30290
+	manpower=524410
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

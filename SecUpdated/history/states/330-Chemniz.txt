@@ -1,23 +1,33 @@
 
 state={
 	id=330
-	name="Chemniz"
+	name="Chemnitz"
 
+	resources={
+		steel=8
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = SSN
+		add_core_of = SSN
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 3
 
+		}
+		victory_points = {
+        9192 10
+		}
+		victory_points = {
+        13596 5
 		}
 
 	}
 
 	provinces={
-		4063 5629 6314 9192 10592 13595 13596 13633 13674 13700 
+		4063 5629 6314 9192 10592 13595 13596 13633 13674 13700 8497 
 	}
-	manpower=30290
+	manpower=847220
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

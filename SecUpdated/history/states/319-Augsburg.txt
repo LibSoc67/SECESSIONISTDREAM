@@ -4,12 +4,28 @@ state={
 	name="Augsburg"
 
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = BYN
+		add_core_of = BYN
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 3
+			arms_factory = 2
 
+		}
+		victory_points = {
+        10643 10
+		}
+		victory_points = {
+        14156 5
+		}
+		victory_points = {
+        1215 8
+		}
+		victory_points = {
+        7776 5
+		}
+		victory_points = {
+        7435 5
 		}
 
 	}
@@ -17,7 +33,7 @@ state={
 	provinces={
 		1215 1921 3476 3478 3935 5702 7388 7435 7648 7776 8461 9859 10643 14152 14153 14240 14304 14345 14348 14376 14454 
 	}
-	manpower=30290
+	manpower=759190
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

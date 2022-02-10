@@ -3,13 +3,21 @@ state={
 	id=310
 	name="Offenburg"
 
+	resources={
+		steel=1
+		aluminium=1
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = BAD
+		add_core_of = BAD
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
+			arms_factory = 2
 
+		}
+		victory_points = {
+        4309 10
 		}
 
 	}
@@ -17,7 +25,7 @@ state={
 	provinces={
 		4309 6207 8191 14252 14324 
 	}
-	manpower=30290
+	manpower=259238
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

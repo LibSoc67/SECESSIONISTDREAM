@@ -3,6 +3,9 @@ state={
 	id=282
 	name="Köln"
 
+	resources={
+		steel=30
+	}
 	history={
 		owner = RHP
 		add_core_of = RHP
@@ -14,7 +17,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 3
 
 		}
 
@@ -23,7 +27,7 @@ state={
 	provinces={
 		3506 5537 9472 9706 13372 13373 13415 13450 13472 13519 13561 13648 
 	}
-	manpower=30290
+	manpower=3120000
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

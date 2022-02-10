@@ -4,12 +4,22 @@ state={
 	name="Würzberg"
 
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = BYN
+		add_core_of = BYN
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 2
 
+		}
+		victory_points = {
+        6543 10
+		}
+		victory_points = {
+        7295 8
+		}
+		victory_points = {
+        13973 3
 		}
 
 	}
@@ -17,7 +27,7 @@ state={
 	provinces={
 		332 2087 2522 2833 3254 6212 6543 7295 7581 8175 8454 11236 13711 13740 13774 13781 13799 13890 13973 
 	}
-	manpower=30290
+	manpower=333731
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

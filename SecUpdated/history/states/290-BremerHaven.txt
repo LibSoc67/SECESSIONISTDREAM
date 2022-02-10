@@ -3,12 +3,18 @@ state={
 	id=290
 	name="Bremen-Haven"
 
+	resources={
+		steel=1
+		oil=1
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = HAN
+		add_core_of = HAN
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 2
+			dockyard = 4
 
 		}
 		victory_points = {
@@ -20,8 +26,8 @@ state={
 	provinces={
 		3009 3723 4944 7323 12773 12796 12845 12861 
 	}
-	manpower=30290
+	manpower=512120
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=large_city
 	local_supplies=0.000
 }

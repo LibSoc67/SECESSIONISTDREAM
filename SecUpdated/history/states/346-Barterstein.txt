@@ -4,12 +4,19 @@ state={
 	name="Barterstein"
 
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = WPR
+		add_core_of = WPR
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
 
+		}
+		victory_points = {
+        9853 8
+		}
+		victory_points = {
+        1790 4
 		}
 
 	}
@@ -17,7 +24,7 @@ state={
 	provinces={
 		1790 2508 7276 8098 9853 11245 12583 12628 12629 12634 12645 12665 
 	}
-	manpower=30290
+	manpower=369300
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

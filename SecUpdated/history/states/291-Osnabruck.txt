@@ -1,14 +1,16 @@
 
 state={
 	id=291
-	name="Osnabruck"
+	name="Osnabrück"
 
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = HAN
+		add_core_of = HAN
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 2
+			dockyard = 2
 
 		}
 		victory_points = {
@@ -32,7 +34,7 @@ state={
 	provinces={
 		810 1427 2828 2898 2910 3267 5189 5232 7070 8023 8981 9665 12807 12880 12939 13051 13054 13057 13081 13086 13095 13118 13123 13162 13219 
 	}
-	manpower=30290
+	manpower=866460
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

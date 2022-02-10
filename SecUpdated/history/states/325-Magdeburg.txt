@@ -4,12 +4,19 @@ state={
 	name="Magdeburg"
 
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = SAH
+		add_core_of = SAH
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
+			arms_factory = 2
 
+		}
+		victory_points = {
+        13216 10
+		}
+		victory_points = {
+        3990 3
 		}
 
 	}
@@ -17,7 +24,7 @@ state={
 	provinces={
 		3990 5721 6918 7493 8075 8215 10069 10723 13125 13143 13163 13178 13193 13216 
 	}
-	manpower=30290
+	manpower=1570000
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

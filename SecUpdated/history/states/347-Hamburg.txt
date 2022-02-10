@@ -3,13 +3,23 @@ state={
 	id=347
 	name="Hamburg"
 
+	resources={
+		steel=4
+		aluminium=2
+		oil=1
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = HMB
+		add_core_of = HMB
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 3
+			arms_factory = 4
+			dockyard = 3
 
+		}
+		victory_points = {
+        3547 25
 		}
 
 	}
@@ -17,8 +27,8 @@ state={
 	provinces={
 		3547 
 	}
-	manpower=30290
+	manpower=1990000
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=metropolis
 	local_supplies=0.000
 }

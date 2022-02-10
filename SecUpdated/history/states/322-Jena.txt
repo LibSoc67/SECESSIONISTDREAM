@@ -3,13 +3,25 @@ state={
 	id=322
 	name="Jena"
 
+	resources={
+		steel=10
+		tungsten=8
+		chromium=2
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = THR
+		add_core_of = THR
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 2
 
+		}
+		victory_points = {
+        7641 15
+		}
+		victory_points = {
+        7410 14
 		}
 
 	}
@@ -17,7 +29,7 @@ state={
 	provinces={
 		1646 7410 7641 13550 13637 
 	}
-	manpower=30290
+	manpower=708712
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

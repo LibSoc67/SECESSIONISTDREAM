@@ -3,13 +3,22 @@ state={
 	id=324
 	name="Gardelegen"
 
+	resources={
+		steel=1
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = SAH
+		add_core_of = SAH
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
-
+			arms_factory = 2
+		}
+		victory_points = {
+        3652 10
+		}
+		victory_points = {
+        13058 5
 		}
 
 	}
@@ -17,7 +26,7 @@ state={
 	provinces={
 		3652 5377 7829 9334 13029 13049 13058 13082 13109 
 	}
-	manpower=30290
+	manpower=1260000
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

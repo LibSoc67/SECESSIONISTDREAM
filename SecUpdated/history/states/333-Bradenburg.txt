@@ -3,13 +3,29 @@ state={
 	id=333
 	name="Bradenburg"
 
+	resources={
+		steel=10
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = BDB
+		add_core_of = BDB
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+            industrial_complex = 3
+			arms_factory = 3
 
+		}
+		victory_points = {
+        3222 20
+		}
+		victory_points = {
+        10584 5
+		}
+		victory_points = {
+        10341 5
+		}
+		victory_points = {
+        12935 5
 		}
 
 	}
@@ -17,8 +33,8 @@ state={
 	provinces={
 		847 876 2074 3222 4911 5098 6762 9412 9569 9675 10584 12891 12918 12935 12943 12956 12959 12990 13023 13024 13030 13040 13041 13064 13070 
 	}
-	manpower=30290
+	manpower=1120000
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=large_city
 	local_supplies=0.000
 }

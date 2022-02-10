@@ -3,21 +3,32 @@ state={
 	id=323
 	name="Gera"
 
+	resources={
+		steel=10
+		aluminium=1
+		tungsten=2
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = THR
+		add_core_of = THR
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 3
 
 		}
-
+		victory_points = {
+        13603 10
+		}
+		victory_points = {
+        13581 5
+		}
 	}
 
 	provinces={
-		5185 5734 7439 8497 13581 13603 
+	 5734 13581 13603 
 	}
-	manpower=30290
+	manpower=804659
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

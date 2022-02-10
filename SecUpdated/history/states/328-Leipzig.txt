@@ -3,21 +3,31 @@ state={
 	id=328
 	name="Leipzig"
 
+	resources={
+		steel=82
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = SSN
+		add_core_of = SSN
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 3
+			arms_factory = 3
 
+		}
+		victory_points = {
+        7587 15
+		}
+		victory_points = {
+        13526 8
 		}
 
 	}
 
 	provinces={
-		611 7587 7672 8445 8660 13442 13479 13526 
+		611 7587 7672 8445 8660 13442 13479 13526 13484
 	}
-	manpower=30290
+	manpower=1440000
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

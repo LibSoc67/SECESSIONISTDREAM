@@ -4,11 +4,13 @@ state={
 	name="Rostock"
 
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = MKB
+		add_core_of = MKB
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
+			arms_factory = 2
+			dockyard = 2
 
 		}
 		victory_points = {
@@ -20,7 +22,7 @@ state={
 	provinces={
 		40 4269 12690 
 	}
-	manpower=30290
+	manpower=595550
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

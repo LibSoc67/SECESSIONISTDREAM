@@ -3,13 +3,26 @@ state={
 	id=314
 	name="Ulm"
 
+	resources={
+		aluminium=6
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = WRT
+		add_core_of = WRT
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 2
 
+		}
+		victory_points = {
+        14233 10
+		}
+		victory_points = {
+        9779 5
+		}
+		victory_points = {
+        14338 5
 		}
 
 	}
@@ -17,7 +30,7 @@ state={
 	provinces={
 		472 1009 4369 4557 7449 8472 9779 10978 14233 14295 14338 
 	}
-	manpower=30290
+	manpower=420450
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

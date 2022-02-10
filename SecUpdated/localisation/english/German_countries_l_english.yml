@@ -18,3 +18,93 @@
  RHP_anarchy_DEF:0 "the Anarchist Rhine-Pfalz"
  RHP_anarchy_ADJ:0 "Anarcho Rhein-Pfälzer"
  RHP:0 "Rhine-Pfalz"
+ RHP_DEF:0 "Rhine-Pfalz"
+ RHP_ADJ:0 "Rhein-Pfälzer"
+ 
+ BAD:0 "Baden"
+ BAD_DEF:0 "Baden"
+ BAD_ADJ:0 "Baden"
+ 
+ BDB:0 "Bradenburg"
+ BDB_DEF:0 "Bradenburg"
+ BDB_ADJ:0 "Bradenburger"
+ 
+ BRN:0 "Berlin"
+ BRN_DEF:0 "Berlin"
+ BRN_ADJ:0 "Berliner"
+ 
+ BYN:0 "Bayern"
+ BYN_DEF:0 "Bayern"
+ BYN_ADJ:0 "Bayerische"
+ 
+ HAN:0 "Hannover"
+ HAN_DEF:0 "Hannover"
+ HAN_ADJ:0 "Hannover"
+ HAN_fascism:0 "Hannover"
+ HAN_fascism_DEF:0 "Hannover"
+ HAN_fascism_ADJ:0 "Hannover"
+ HAN_democratic:0 "Hannover"
+ HAN_democratic_DEF:0 "Hannover"
+ HAN_democratic_ADJ:0 "Hannover"
+ HAN_communism:0 "Hannover"
+ HAN_communism_DEF:0 "Hannover"
+ HAN_communism_ADJ:0 "Hannover"
+ HAN_neutrality:0 "Hannover"
+ HAN_neutrality_DEF:0 "Hannover"
+ HAN_neutrality_ADJ:0 "Hannover"
+ 
+ HMB:0 "Hamburg"
+ HMB_DEF:0 "Hamburg"
+ HMB_ADJ:0 "Hamburger"
+ 
+ HSE:0 "Hesse-Nassau"
+ HSE_DEF:0 "Hessen"
+ HSE_ADJ:0 "Hessen"
+ 
+ MKB:0 "Mecklenburg"
+ MKB_DEF:0 "Mecklenburg"
+ MKB_ADJ:0 "Mecklenburger"
+ 
+ ODB:0 "Oldenburg"
+ ODB_DEF:0 "Oldenburg"
+ ODB_ADJ:0 "Oldenburger"
+ 
+ OPR:0 "Ostpreußen"
+ OPR_DEF:0 "Ostpreussen"
+ OPR_ADJ:0 "Ostpreussen"
+ 
+ POM:0 "Pommern"
+ POM_DEF:0 "Pommern"
+ POM_ADJ:0 "Pommern"
+ 
+ SAH:0 "Sachsen-Anhalt"
+ SAH_DEF:0 "Sachsen-Anhalt"
+ SAH_ADJ:0 "Sachsen-Anhalt"
+ 
+ SLS:0 "Schlesien"
+ SLS_DEF:0 "Schlesien"
+ SLS_ADJ:0 "Schlesien"
+ 
+ SSN:0 "Sachsen"
+ SSN_DEF:0 "Sachsen"
+ SSN_ADJ:0 "Sachsen"
+ 
+ SWH:0 "Schleswig-Holstein"
+ SWH_DEF:0 "Schleswig-Holstein"
+ SWH_ADJ:0 "Schleswig-Holstein"
+ 
+ THR:0 "Thüringen"
+ THR_DEF:0 "Thüringen"
+ THR_ADJ:0 "Thüringen"
+ 
+ WFL:0 "Westfalen"
+ WFL_DEF:0 "Westfalen"
+ WFL_ADJ:0 "Westfalen"
+ 
+ WPR:0 "Westpreußen"
+ WPR_DEF:0 "Westpreussen"
+ WPR_ADJ:0 "Westpreussen"
+ 
+ WRT:0 "Württemberg"
+ WRT_DEF:0 "Württemberg"
+ WRT_ADJ:0 "Württemberger"

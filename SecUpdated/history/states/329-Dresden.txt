@@ -3,13 +3,26 @@ state={
 	id=329
 	name="Dresden"
 
+	resources={
+		steel=126
+	}
 	history={
-		owner = RHP
-		add_core_of = RHP
+		owner = SSN
+		add_core_of = SSN
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
+			arms_factory = 2
 
+		}
+		victory_points = {
+        13507 15
+		}
+		victory_points = {
+        10177 8
+		}
+		victory_points = {
+        9216 5
 		}
 
 	}
@@ -17,7 +30,7 @@ state={
 	provinces={
 		230 2662 3888 5962 9216 10014 10177 11175 13500 13507 13514 13527 13540 13574 
 	}
-	manpower=30290
+	manpower=1340000
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000
