@@ -1,0 +1,9 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Reichsmark"
+		texturefile = "gfx/interface/icons/Reichsmark.dds"
+	}
+	spriteType = {
+		name = "GFX_Money_Background"
+		texturefile = "gfx/interface/icons/Money_Background.dds"
+	}

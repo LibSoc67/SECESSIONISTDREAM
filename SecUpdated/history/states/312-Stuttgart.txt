@@ -12,8 +12,8 @@ state={
 		add_core_of = WRT
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 3
-			arms_factory = 3
+			industrial_complex = 2
+			arms_factory = 2
 
 		}
 		victory_points = {

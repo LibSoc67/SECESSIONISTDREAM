@@ -27,8 +27,8 @@
  hold_the_neutral_national_referendum_desc:0 "With sufficient support, we may now safely hold a referendum to affect a change of government, without bloodshed."
  military_support_for_neutral_civil_war:0 "Has military support for the civil war.\n"
  
- mlism_on_the_rise:0 "Totalitarianism on the Rise"
- mlism_on_the_rise_desc:0 "Vocal political elements have begun to speak up in favor of totalitarian values, finding support with an increasing number of the population. The nation's path to totalitarianism lies open, merely awaiting the choice of peaceful or violent transition."
+ mlism_on_the_rise:0 "Stalinism on the Rise"
+ mlism_on_the_rise_desc:0 "Vocal political elements have begun to speak up in favor of Stalinist values, finding support with an increasing number of the population. The nation's path to Stalinism lies open, merely awaiting the choice of peaceful or violent transition."
  prepare_for_mlism_civil_war:0 "Prepare for Civil War"
  prepare_for_mlism_civil_war_desc:1 "We have no time to wait for the slow changes in the minds of the people. For their own sake, we must force the matter swiftly, even if some may lose their lives in the process. Unlike a peaceful referendum, a civil war will cause tremendous devastation to our armed forces and the country's industry and infrastructure, but it is also quicker, and ensures we will be able to force our will through more forcefully afterwards."
  expand_civil_mlism_support:0 "Expand Civil Support"
@@ -36,9 +36,9 @@
  army_support_for_mlism_civil_war:0 "Expand Military Support"
  army_support_for_mlism_civil_war_desc:0 "Without ample support of the military, any hope of victory in an armed ideological struggle would be vain. We must ensure the loyalty of well-placed units of our military forces."
  ensure_general_loyalty_for_mlism_civil_war:1 "Ensure Lower Army Command Loyalty"
- ensure_general_loyalty_for_mlism_civil_war_desc:0 "It is possible certain generals harbor secret sentiments in favor of totalitarianism. We must approach them and ensure their loyalty for when the fighting starts."
+ ensure_general_loyalty_for_mlism_civil_war_desc:0 "It is possible certain generals harbor secret sentiments in favor of Stalinism. We must approach them and ensure their loyalty for when the fighting starts."
  ensure_marshal_loyalty_for_mlism_civil_war:0 "Ensure Upper Army Command Loyalty"
- ensure_marshal_loyalty_for_mlism_civil_war_desc:0 "It is possible certain field marshals harbor secret sentiments in favor of totalitarianism. We must approach them and ensure their loyalty for when the fighting starts."
+ ensure_marshal_loyalty_for_mlism_civil_war_desc:0 "It is possible certain field marshals harbor secret sentiments in favor of Stalinism. We must approach them and ensure their loyalty for when the fighting starts."
  siphon_equipment_stockpiles_for_mlism_civil_war:0 "Siphon Equipment"
  siphon_equipment_stockpiles_for_mlism_civil_war_desc:0 "By skimming the nation's equipment stores we can create a minor cache of weaponry to aid us in our future struggle."
  formulate_surprise_attack_plan_for_mlism_civil_war:0 "Formulate Surprise Attack Plan"
@@ -55,3 +55,28 @@
  hold_the_mlism_national_referendum_desc:0 "With sufficient support, we may now safely hold a referendum to affect a change of government, without bloodshed."
  military_support_for_mlism_civil_war:0 "Has military support for the civil war.\n"
  
+
+ anti_neutral_raids:0 "Anti-Centralist Raids"
+ anti_neutral_raids_desc:0 "We must crack down on extreme centralist elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the government."
+ anti_mlism_raids:0 "Anti-Stalinist Raids"
+ anti_mlism_raids_desc:0 "We must crack down on stalinist elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the government."
+ anti_anarchy_raids:0 "Anti-Anarchist Raids"
+ anti_anarchy_raids_desc:0 "We must crack down on anarchist elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the government."
+ 
+ ban_neutrality_party:0 "Ban Centralism"
+ ban_neutrality_party_desc:0 "In the current situation, allowing extreme centralist parties to continue to organize would undermine our ability to govern effectively. Drastic measures will need to be taken."
+ ban_neutrality_party_tt:1 "Change in popularity of Centralism: §G-§![?.Root.party_popularity@neutrality|%0G].\n"
+ 
+ ban_mlism_party:0 "Ban Stalinism"
+ ban_mlism_party_desc:0 "In the current situation, allowing stalinist parties to continue to organize would undermine our ability to govern effectively. Drastic measures will need to be taken."
+ ban_mlism_party_tt:1 "Change in popularity of Stalinism: §G-§![?.Root.party_popularity@mlism|%0G].\n"
+ 
+ ban_anarchy_party:0 "Ban Anarchism"
+ ban_anarchy_party_desc:0 "In the current situation, allowing anarchists to continue to organize would undermine our ability to govern effectively. Drastic measures will need to be taken."
+ ban_anarchy_party_tt:1 "Change in popularity of Anarchism: §G-§![?.Root.party_popularity@anarchy|%0G].\n"
+ 
+ 
+ institute_press_censorship_mlism_state:0 "Institute Press Censorship"
+ institute_press_censorship_mlism_state_desc:0 "These are dangerous times and we can't allow dissenting voices to tear our country apart. Restricting the freedom of the press is necessary to ensure that the truth is heard loud and clear."
+ institute_press_censorship_anarchy_state:0 "Surpress Anti-Anarchist messages"
+ institute_press_censorship_anarchy_state_desc:0 "These are dangerous times and we can't allow dissenting voices to tear our country apart. By propagating how much worse other types of government are, we can stabilize support for the anarchist cause."
