@@ -1,0 +1,28 @@
+
+state={
+	id=422
+	name="Catanzaru"
+	provinces={
+		3315 3373 9490 10113 10756 16399 16427 16471 
+	}
+	history={
+		owner = CLB
+		add_core_of = CLB
+		victory_points = {
+		3373 7
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+			#dockyard = 
+			#air_base = 
+
+		}
+
+	}
+	state_category=town
+	manpower=340300
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

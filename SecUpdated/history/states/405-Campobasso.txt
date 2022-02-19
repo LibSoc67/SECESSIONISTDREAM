@@ -1,0 +1,28 @@
+
+state={
+	id=405
+	name="Cambuàsce"
+
+	history={
+		owner = MLS
+		add_core_of = MLS
+		victory_points = {
+		15894 3
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+
+	}
+
+	provinces={
+		2335 7529 9093 15827 15894 19293 
+	}
+	manpower=270964
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

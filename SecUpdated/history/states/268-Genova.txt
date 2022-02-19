@@ -1,7 +1,7 @@
 
 state={
 	id=268
-	name="Zena"
+	name="Zêna"
 	provinces={
 		6404 10289 15151 
 	}
@@ -9,7 +9,10 @@ state={
 		owner = LIG
 		add_core_of = LIG
 		victory_points = {
-		15151 25 
+		15151 30 
+		}
+		victory_points = {
+		10289 1 
 		}
 		buildings = {
 			infrastructure = 8

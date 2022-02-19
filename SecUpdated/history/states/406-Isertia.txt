@@ -1,0 +1,26 @@
+
+state={
+	id=406
+	name="Isernia"
+	provinces={
+		3413 15883 15914 19292 
+	}
+	history={
+		owner = MLS
+		add_core_of = MLS
+		victory_points = {
+		15883 2
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+
+		}
+
+	}
+	state_category=pastoral
+	manpower=117304
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

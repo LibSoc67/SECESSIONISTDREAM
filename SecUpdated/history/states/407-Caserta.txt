@@ -1,0 +1,28 @@
+
+state={
+	id=407
+	name="Caserta"
+
+	history={
+		owner = CAP
+		add_core_of = CAP
+		victory_points = {
+			6744 5 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+
+		}
+
+	}
+
+	provinces={
+		632 1195 6744 8956 15951 19296 19307 
+	}
+	manpower=519400
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

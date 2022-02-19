@@ -2,9 +2,6 @@
 state={
 	id=4
 	name="Alt Pirineu"
-	provinces={
-		1783 6086 6253 7234 10076 15566 15652 
-	}
 	resources={
 		rubber=0.000
 		tungsten=0.000
@@ -15,14 +12,14 @@ state={
 	}
 
 	history={
-	victory_points = {
-		15652 3
+		victory_points = {
+			15652 3 
 		}
-	victory_points = {
-		6253 2
+		victory_points = {
+			6253 2 
 		}
-	victory_points = {
-		7234 1
+		victory_points = {
+			7234 1 
 		}
 		owner = CAT
 		add_core_of = CAT
@@ -30,9 +27,16 @@ state={
 			infrastructure = 5
 			arms_factory = 0
 			industrial_complex = 2
+
 		}
+
 	}
-	state_category=town
+
+	provinces={
+		1783 6086 6253 7234 10076 15566 15652 19272 19273 
+	}
 	manpower=54030
 	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

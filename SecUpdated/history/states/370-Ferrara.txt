@@ -1,0 +1,30 @@
+
+state={
+	id=370
+	name="Ferrara"
+
+	history={
+		owner = ERG
+		add_core_of = ERG
+		victory_points = {
+		4009 5
+		}
+		victory_points = {
+		6196 2
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+
+		}
+
+	}
+
+	provinces={
+		1819 1846 4009 5046 6196 15042 
+	}
+	manpower=245348
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

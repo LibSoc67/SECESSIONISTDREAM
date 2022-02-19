@@ -1,24 +1,28 @@
+
 state={
 	id=269
 	name="La Spezia"
-	provinces={
-		15166 
-	}
+
 	history={
 		owner = LIG
 		add_core_of = LIG
 		victory_points = {
-
+			10040 4 
 		}
 		buildings = {
 			infrastructure = 6
 			arms_factory = 1
 			industrial_complex = 1
+
 		}
 
 	}
-	state_category=town
-	manpower=136231
+
+	provinces={
+		378 10040 15166 19267 
+	}
+	manpower=336231
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
 }

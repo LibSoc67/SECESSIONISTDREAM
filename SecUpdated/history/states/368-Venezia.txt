@@ -1,0 +1,30 @@
+
+state={
+	id=368
+	name="Venesia"
+	provinces={
+		5460 14860 14877 
+	}
+	history={
+		owner = VNT
+		add_core_of = VNT
+		victory_points = {
+		14860 35
+		}
+		victory_points = {
+		5460 3
+		}
+		buildings = {
+			infrastructure = 9
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 6
+		}
+
+	}
+	state_category=city
+	manpower=629123
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

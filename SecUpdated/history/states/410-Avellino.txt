@@ -1,0 +1,29 @@
+
+state={
+	id=410
+	name="Avellino"
+	provinces={
+		6466 8125 16010 16049 16082 19297 
+	}
+	history={
+		owner = CAP
+		add_core_of = CAP
+		victory_points = {
+		16049 3
+		}
+		victory_points = {
+		19297 2
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+
+	}
+	state_category=town
+	manpower=319200
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

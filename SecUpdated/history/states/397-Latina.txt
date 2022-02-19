@@ -1,0 +1,29 @@
+
+state={
+	id=397
+	name="Latina"
+
+	history={
+		owner = RMA
+		add_core_of = RMA
+		victory_points = {
+			9138 10 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 0
+			dockyard = 1
+
+		}
+
+	}
+
+	provinces={
+		6841 9138 15887 19306 
+	}
+	manpower=420900
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

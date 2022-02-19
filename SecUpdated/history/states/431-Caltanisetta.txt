@@ -1,0 +1,29 @@
+
+state={
+	id=431
+	name="Cartanissetta"
+	provinces={
+		852 1279 3068 16637 16675 
+	}
+	history={
+		owner = SIC
+		add_core_of = SIC
+		victory_points = {
+		1279 5
+		}
+		victory_points = {
+		16675 6
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 0
+		#11155 = {naval_base = 6}
+		}
+
+	}
+	state_category=rural
+	manpower=238200
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

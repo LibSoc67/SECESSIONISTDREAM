@@ -1,0 +1,25 @@
+
+state={
+	id=361
+	name="Pordenone"
+	provinces={
+		1219 6861 7344 7401 8635 
+	}
+	history={
+		owner = FIU
+		add_core_of = FIU
+		victory_points = {
+		7344 7
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			dockyard = 1
+		}
+
+	}
+	state_category=rural
+	manpower=170956
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

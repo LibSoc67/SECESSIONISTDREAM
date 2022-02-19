@@ -1,0 +1,23 @@
+state={
+	id=436
+	name="Gozo"
+	provinces={
+		17468 
+	}
+	history={
+		owner = MLT
+		add_core_of = MLT
+		victory_points = {
+		17468 1
+		}
+		buildings = {
+			infrastructure = 5
+		17468 = {naval_base = 1}
+		}
+
+	}
+	state_category=pastoral
+	manpower=27100
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=348
+	name="Pavia"
+	provinces={
+		7058 9530 14891 
+	}
+	history={
+		owner = LOM
+		add_core_of = LOM
+		victory_points = {
+		14891 4	
+		}
+		victory_points = {
+		9530 3	
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 2
+
+		}
+
+	}
+	state_category=town
+	manpower=310948
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

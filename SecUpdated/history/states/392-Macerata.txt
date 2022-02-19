@@ -1,0 +1,32 @@
+
+state={
+	id=392
+	name="Greater Macerata"
+	provinces={
+		4477 8105 8889 15487 15520 15556 
+	}
+	history={
+		owner = MAR
+		add_core_of = MAR
+		victory_points = {
+		15487 4
+		}
+		victory_points = {
+		8889 2
+		}
+		victory_points = {
+		4477 3
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+
+		}
+
+	}
+	state_category = town
+	manpower=305200
+	
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

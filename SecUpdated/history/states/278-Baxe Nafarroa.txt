@@ -1,27 +1,30 @@
+
 state={
 	id=278
 	name="Baxe Nafarroa"
-	provinces={
-		2738 
-	}
-	manpower=30290
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
-    history={
-        owner = NAF
-        add_claim_by = OCC
+
+	history={
+		owner = NAF
+		add_claim_by = OCC
 		add_claim_by = VAS
 		add_core_of = NAF
 		add_core_of = AQU
 		victory_points = {
-        2738 2
-        }
-        buildings = {
-            infrastructure = 4
-            industrial_complex = 1
+			2738 2 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
 
-        }
+		}
 
-    }
-    state_category=rural
+	}
+
+	provinces={
+		2738 19279 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

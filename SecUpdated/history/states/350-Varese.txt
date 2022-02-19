@@ -1,0 +1,25 @@
+
+state={
+	id=350
+	name="Varés"
+	provinces={
+		5814 10784 
+	}
+	history={
+		owner = LOM
+		add_core_of = LOM
+		victory_points = {
+		10784 4
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+		}
+
+	}
+	state_category=town
+	manpower=452312
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

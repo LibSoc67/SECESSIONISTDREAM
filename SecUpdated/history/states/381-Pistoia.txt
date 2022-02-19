@@ -1,0 +1,28 @@
+
+state={
+	id=381
+	name="Pistoia-Prato"
+	provinces={
+		15288 15298 
+	}
+	history={
+		owner = TOS
+		add_core_of = TOS
+		victory_points = {
+		15288 4
+		}
+		victory_points = {
+		15298 10
+		}
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 2
+			arms_factory = 0
+		}
+
+	}
+	state_category=town
+	manpower=388341
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

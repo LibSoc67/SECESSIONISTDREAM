@@ -1,0 +1,142 @@
+﻿capital = 382
+oob = "TOS"
+# Starting tech
+set_technology = {
+	gw_artillery = 1
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+	basic_heavy_tank_chassis = 1
+	engine_tech_1 = 1
+	motorised_infantry = 1
+	early_fighter = 1
+	radio = 1
+}
+set_research_slots = 4
+set_convoys = 45
+
+1939.1.1 = {
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	set_technology = {
+		tech_support = 1
+		tech_recon = 1
+		support_weapons = 1
+		gw_artillery = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+create_equipment_variant = {
+		name = "Panzer I"
+		type = light_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_auto_cannon
+			turret_type_slot = tank_light_two_man_tank_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 3
+			tank_nsb_armor_upgrade = 2
+		}
+		icon = "gfx/interface/technologies/ger_imp_light_tank.dds"
+	}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.6.4"
+	election_frequency = 1
+	elections_allowed = no
+}
+create_country_leader = {
+	name = "Joan Maraca"
+	picture = "aladem.dds"
+	ideology = socialism 
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Alberto Garaö"
+	picture = "alacom.dds"
+	ideology = marxism 
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Abel Fontaine"
+	picture = "alafas.dds"
+	ideology = fascism_ideology 
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Pepe Limao "
+	picture = "alaneu.dds"
+	ideology = centrism 
+	traits = {
+		#
+	}
+}
+set_popularities = {
+	democratic = 31
+	fascism = 3
+	communism = 31
+	neutrality = 35
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1935.6.4"
+		election_frequency = 1
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 10
+		fascism = 30
+		communism = 10
+		neutrality = 50
+	}
+}
+
+ 

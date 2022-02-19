@@ -1,0 +1,28 @@
+
+state={
+	id=373
+	name="Reggio Emilia"
+	provinces={
+		2656 5247 15082 15158 
+	}
+	history={
+		owner = ERG
+		add_core_of = ERG
+		victory_points = {
+		15082 5
+		}
+		victory_points = {
+		15158 2
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			arms_factory = 1
+		}
+
+	}
+	state_category=town
+	manpower=457941
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

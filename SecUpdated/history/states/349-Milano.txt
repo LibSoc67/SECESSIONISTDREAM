@@ -1,0 +1,30 @@
+
+state={
+	id=349
+	name="Milan"
+	provinces={
+		5031 14830 14859 
+	}
+	history={
+		owner = LOM
+		add_core_of = LOM
+		victory_points = {
+		5031 40	
+		}
+		victory_points = {
+		14830 5	
+		}
+		buildings = {
+			infrastructure = 10
+			arms_factory = 2
+			industrial_complex = 4
+			air_base = 7
+
+		}
+
+	}
+	state_category=large_city
+	manpower=1615794
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=433
+	name="Tràpani"
+	provinces={
+		3664 7473 7558 8408 11252 16593 16630 16643 
+	}
+	history={
+		owner = SIC
+		add_core_of = SIC
+		victory_points = {
+		11252 6
+		}
+		victory_points = {
+		16630 6
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+		11252 = {naval_base = 3}
+		}
+
+	}
+	state_category=town
+	manpower=344379
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

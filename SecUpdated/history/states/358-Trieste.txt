@@ -1,0 +1,24 @@
+state={
+	id=358
+	name="Trieste"
+	provinces={
+		19308 9378
+	}
+	history={
+		owner = FIU
+		add_core_of = FIU
+		victory_points = {
+		19308 10
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 1
+		}
+
+	}
+	state_category=town
+	manpower=248407
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=385
+	name="Grosseto"
+	provinces={
+		349 3842 10264 15606 15648 15683 
+	}
+	history={
+		owner = TOS
+		add_core_of = TOS
+		victory_points = {
+		15648 4
+		}
+		victory_points = {
+		15683 2
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 0
+		}
+
+	}
+	state_category=pastoral
+	manpower=170328
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

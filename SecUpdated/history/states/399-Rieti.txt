@@ -1,0 +1,28 @@
+
+state={
+	id=399
+	name="Sabina"
+
+	history={
+		owner = RMA
+		add_core_of = RMA
+		victory_points = {
+			3903 3 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 0
+			arms_factory = 0
+
+		}
+
+	}
+
+	provinces={
+		627 2843 3903 6405 15640 15706 15755 15797 19287 19294 19295 
+	}
+	manpower=137888
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

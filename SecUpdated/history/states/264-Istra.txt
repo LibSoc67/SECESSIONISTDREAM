@@ -1,8 +1,25 @@
 state={
 	id=264
-	name="STATE_254"
+	name="Eîstria"
 	provinces={
 		200 557 8750 14987 
+	}
+	history={
+		owner = IST
+		add_core_of = IST
+		victory_points = {
+		14987 5
+		}
+		victory_points = {
+		8750 2
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 4
+		}
+
 	}
 	manpower=378272
 	state_category = town

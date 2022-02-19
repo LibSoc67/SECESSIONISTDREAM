@@ -1,0 +1,26 @@
+
+state={
+	id=366
+	name="Pàdova"
+	provinces={
+		2698 9813 10991 14854 14953 
+	}
+	history={
+		owner = VNT
+		add_core_of = VNT
+		victory_points = {
+		2698 20
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 5
+		}
+
+	}
+	state_category=large_town
+	manpower=668025
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

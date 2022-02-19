@@ -3,7 +3,7 @@ state={
 	id=275
 	name="Biella-Vercelli"
 	provinces={
-		2111 5835 10262 14829 14900 14938 
+		2111 5835 10262 14829 14900 14938 14858
 	}
 	history={
 		owner = PIE

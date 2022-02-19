@@ -1,0 +1,35 @@
+
+state={
+	id=363
+	name="Süd Tirol"
+
+	history={
+	victory_points = {
+		19264 10
+		}
+	victory_points = {
+		14626 4
+		}
+	victory_points = {
+		14641 2
+		}
+		owner = STR
+		add_core_of = STR
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 2
+
+		}
+
+	}
+
+	provinces={
+		3508 4044 5784 8617 9549 10193 14577 14609 14626 14641 19264 19265 
+	}
+	manpower=295723
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

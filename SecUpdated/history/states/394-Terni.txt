@@ -1,0 +1,25 @@
+
+state={
+	id=394
+	name="Terni"
+	provinces={
+		8104 8194 10771 15639 15664 
+	}
+	history={
+		owner = UMB
+		add_core_of = UMB
+		victory_points = {
+		8104 7
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+
+		}
+
+	}
+	state_category = pastoral
+	manpower=175000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

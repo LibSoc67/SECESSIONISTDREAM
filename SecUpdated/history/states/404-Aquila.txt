@@ -1,0 +1,26 @@
+
+state={
+	id=404
+	name="L'Aquila"
+	provinces={
+		5344 5533 7745 15772 15843 
+	}
+	history={
+		owner = ABZ
+		add_core_of = ABZ
+		victory_points = {
+		15772 3
+		}
+		buildings = {
+			infrastructure = 6 
+			industrial_complex = 1
+			arms_factory = 0
+
+		}
+
+	}
+	state_category=rural
+	manpower=310000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

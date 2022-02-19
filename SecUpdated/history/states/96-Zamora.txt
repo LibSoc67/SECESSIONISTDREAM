@@ -2,7 +2,7 @@
 state={
 	id=96
 	name="Zamora"
-resources={
+	resources={
 		rubber=5.000
 		tungsten=21.000
 		steel=0.000
@@ -10,6 +10,7 @@ resources={
 		chromium=0.000
 		aluminium=0.000
 	}
+
 	history={
 		owner = LEO
 		add_core_of = LEO
@@ -27,9 +28,10 @@ resources={
 	}
 
 	provinces={
-		1290 1560 2384 6400 6852 6929 10696 10778 15446 
+		1290 1560 2384 6400 6852 6929 10696 10778 15446 19274 
 	}
 	manpower=280292
 	buildings_max_level_factor=1.000
 	state_category=town
+	local_supplies=0.000
 }

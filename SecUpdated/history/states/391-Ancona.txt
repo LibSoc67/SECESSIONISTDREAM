@@ -1,0 +1,25 @@
+
+state={
+	id=391
+	name="Ancona"
+	provinces={
+		5297 15407 15444 15453 4606 10095 
+	}
+	history={
+		owner = MAR
+		add_core_of = MAR
+		victory_points = {
+		4606 7
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			arms_factory = 1
+		}
+
+	}
+	state_category = town
+	manpower=372229
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

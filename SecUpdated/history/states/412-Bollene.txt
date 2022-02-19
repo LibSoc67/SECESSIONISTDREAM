@@ -1,0 +1,22 @@
+state={
+	id=412
+	name="Bollene"
+	provinces={
+		15195 
+	}
+	manpower=7100
+	history={
+		owner = LAN
+		add_core_of = LAN
+		victory_points = {
+		15195 1
+		}
+		buildings = {
+			infrastructure = 4
+		}
+
+	}
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

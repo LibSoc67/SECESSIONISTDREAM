@@ -8,12 +8,13 @@ state={
 	owner = MRP
 	add_core_of = MRP
 
-	}
+	
 	buildings = {
 			infrastructure = 3
 			arms_factory = 1
 			industrial_complex	= 1
 
+		}
 		}
 	manpower= 114397
 	state_category = rural

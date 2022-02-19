@@ -1,0 +1,26 @@
+
+state={
+	id=355
+	name="Sondrio"
+
+	history={
+		owner = LOM
+		add_core_of = LOM
+		victory_points = {
+			14707 2
+		}
+		buildings = {
+			infrastructure = 4
+
+		}
+
+	}
+
+	provinces={
+		3496 3521 4645 9439 9837 14707 14747 
+	}
+	manpower=121781
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

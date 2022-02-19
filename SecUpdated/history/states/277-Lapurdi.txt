@@ -1,27 +1,30 @@
+
 state={
 	id=277
 	name="Lapurdi"
-	provinces={
-		15261 8120
-	}
-	manpower=243466
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
-    history={
-        owner = NAF
-        add_claim_by = OCC
+
+	history={
+		owner = NAF
+		add_claim_by = OCC
 		add_claim_by = VAS
 		add_core_of = NAF
 		add_core_of = AQU
-        victory_points = {
-        15261 10
-        }
-        buildings = {
-            infrastructure = 4
-            industrial_complex = 1
+		victory_points = {
+			19280 10 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
 
-        }
+		}
 
-    }
-    state_category=rural
+	}
+
+	provinces={
+		8120 15261 19280 19281 19283 19286 
+	}
+	manpower=243466
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

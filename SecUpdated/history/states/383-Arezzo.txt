@@ -1,0 +1,25 @@
+
+state={
+	id=383
+	name="Arezzo"
+	provinces={
+		7752 15483 19277 19278
+	}
+	history={
+		owner = TOS
+		add_core_of = TOS
+		victory_points = {
+		15483 10
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 0
+			arms_factory = 1
+		}
+
+	}
+	state_category=rural
+	manpower=202909
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

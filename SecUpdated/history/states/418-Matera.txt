@@ -1,0 +1,33 @@
+
+state={
+	id=418
+	name="Matàrë"
+	provinces={
+		6562 8054 16097 16120 16162 16182 16220 16247 
+	}
+	history={
+		owner = BSL
+		add_core_of = BSL
+		victory_points = {
+		16097 5
+		}
+		victory_points = {
+		16220 1
+		}
+		
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 0
+			dockyard = 1
+			air_base = 2
+			16220 = {naval_base = 2}
+
+		}
+
+	}
+	state_category=rural
+	manpower=210300
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

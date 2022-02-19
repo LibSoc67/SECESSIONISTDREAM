@@ -1,0 +1,29 @@
+
+state={
+	id=415
+	name="Tarde"
+	provinces={
+		1087 2908 10817 16088 16116 16124 19300 
+	}
+	history={
+		owner = PUG
+		add_core_of = PUG
+		victory_points = {
+		2908 10
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 1
+			#dockyard = 
+			air_base = 3
+			2908 = {naval_base = 4}
+
+		}
+
+	}
+	state_category=town
+	manpower=370900
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

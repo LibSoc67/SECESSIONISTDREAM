@@ -1,0 +1,26 @@
+
+state={
+	id=408
+	name="Benevento"
+	provinces={
+		2570 15942 15946 15984 16031 19299 
+	}
+	history={
+		owner = CAP
+		add_core_of = CAP
+		victory_points = {
+		2570 4
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+
+	}
+	state_category=town
+	manpower=333203
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=417
+	name="Lècce"
+	provinces={
+		3964 8899 16134 16163 16191 16226 16227 16243 16260 
+	}
+	history={
+		owner = PUG
+		add_core_of = PUG
+		victory_points = {
+		16134 6
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+			#dockyard = 
+			#air_base = 
+	16134 = {naval_base = 2}
+		}
+
+	}
+	state_category=large_town
+	manpower=560900
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

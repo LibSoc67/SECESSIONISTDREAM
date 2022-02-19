@@ -8,13 +8,13 @@ state={
 	owner = KRA
 	add_core_of = KRA
 
-	}
+	
 	buildings = {
 			infrastructure = 3
 			arms_factory = 1
 			industrial_complex	= 1
 
-		}
+		}}
 	manpower=150641
 	state_category = rural
 	buildings_max_level_factor=1.000

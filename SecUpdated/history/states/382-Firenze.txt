@@ -1,0 +1,29 @@
+
+state={
+	id=382
+	name="Firenze"
+	provinces={
+		2251 4206 7822 10675 15348 15366 15387 15448 
+	}
+	history={
+		owner = TOS
+		add_core_of = TOS
+		victory_points = {
+		15348 30
+		}
+		victory_points = {
+		4206 3
+		}
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 6
+		}
+
+	}
+	state_category=city
+	manpower=694100
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

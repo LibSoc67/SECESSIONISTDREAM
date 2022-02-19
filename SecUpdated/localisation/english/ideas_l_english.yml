@@ -1,5 +1,5 @@
 ﻿l_english:
-
+ 
  cen_legacy:0 "Sorel Legacy"
  cen_legacy_desc:0 "Georges Sorel ideas greatly inspired the Cercle Proudhon, a party that fused fascism and authoritarian third-positionist ideas, such as tradition and the nation, with mutualism and libertarian third-positionist ideas, such as decentralized workers managment, anti-politics and anti-democracy. \nIn 1931, they helped to carry out the Glorieuse Révolution, in which they took over the dying republic of Centre, and installed the National-Syndicalist regime that is still alive today. This factions popularity is currently:§G High§!."
  cen_legacy1:0 "Sorel Legacy"
@@ -29,11 +29,15 @@
  cen_msn2:0 "Moviment de Salut National"
  cen_msn2_desc:0 "The Moviment de Salut National is a fascist terrorist organitzation that aims to unite all of Occitania and all of France. Their paramilitar militias were key in defeating the liberal pre-1931 goverment.\nThis factions popularity is currently:§R Low§!."
  cen_nat_marx_unions:0 "Proletarian Heroes"
- 
- 
+ pacifiers:0 "Pacifiers"
+ despotist_tendencies:0 "Despotist Tendencies
  
  very_harsh:0 "Very Harsh"
  secret_police:0 "Head of the Police"
+ preffeto_di_ferro:0 "Preffeto di Ferro"
+ 6_prince:0 "the 6th Prince"
+ house_of_murat:0 "House of Murat"
+ life_movie:0 "Life is a Movie"
  
  cav_infra:0 "Poor infrastructures"
  cav_infra2:0 "Developing the Railway"

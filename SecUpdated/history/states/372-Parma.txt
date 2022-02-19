@@ -1,0 +1,26 @@
+
+state={
+	id=372
+	name="Parma"
+	provinces={
+		4727 5330 5555 5898 15057 15059 
+	}
+	history={
+		owner = ERG
+		add_core_of = ERG
+		victory_points = {
+		15059 15
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 4
+		}
+
+	}
+	state_category=town
+	manpower=345192
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

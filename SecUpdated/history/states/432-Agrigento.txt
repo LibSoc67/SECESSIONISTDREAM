@@ -1,0 +1,26 @@
+
+state={
+	id=432
+	name="Giurgenti"
+	provinces={
+		3342 8728 10493 16663 16683 
+	}
+	history={
+		owner = SIC
+		add_core_of = SIC
+		victory_points = {
+		3342 4
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+		3342 = {naval_base = 2}
+		}
+
+	}
+	state_category=town
+	manpower=336200
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

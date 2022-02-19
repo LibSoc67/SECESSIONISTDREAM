@@ -1,0 +1,32 @@
+
+state={
+	id=396
+	name="Subscriptio Romae"
+
+	history={
+		owner = RMA
+		add_core_of = RMA
+		victory_points = {
+			15766 4 
+		}
+		victory_points = {
+			15747 5 
+		}
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 2
+			air_base = 10
+			arms_factory = 4
+
+		}
+
+	}
+
+	provinces={
+		6163 7840 8884 8894 9773 15747 15766 15851 19310 19311 19312 19313 
+	}
+	manpower=1402915
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

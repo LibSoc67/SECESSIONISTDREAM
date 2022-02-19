@@ -1,0 +1,28 @@
+
+state={
+	id=423
+	name="Reggiu di Calabria"
+	provinces={
+		1681 8677 16559 16569 16575 16586 19302 19303 
+	}
+	history={
+		owner = CLB
+		add_core_of = CLB
+		victory_points = {
+		16569 15
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			arms_factory = 1
+			#dockyard = 1
+			air_base = 5
+
+		}
+
+	}
+	state_category=town
+	manpower=570900
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

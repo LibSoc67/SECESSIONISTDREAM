@@ -1,0 +1,25 @@
+
+state={
+	id=362
+	name="Trento"
+	provinces={
+		4552 6305 6418 9494 14658 14668 14683 14684 14715 14740 14763 14767 14785 
+	}
+	history={
+		owner = STR
+		add_core_of = STR
+		victory_points = { 14715 15 }
+		victory_points = { 5784 1 }
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex	= 2
+			air_base= 4
+		}
+
+	}
+	state_category = large_town
+	manpower=317562
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

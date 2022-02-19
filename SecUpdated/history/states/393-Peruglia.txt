@@ -1,0 +1,28 @@
+
+state={
+	id=393
+	name="Peruglia"
+	provinces={
+		3149 6224 6933 10256 10755 15417 15533 15543 
+	}
+	history={
+		owner = UMB
+		add_core_of = UMB
+		victory_points = {
+		3149 15
+		}
+		victory_points = {
+		6933 2
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			arms_factory = 1
+		}
+
+	}
+	state_category = large_town
+	manpower=422920
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

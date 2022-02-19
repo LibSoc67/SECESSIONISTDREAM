@@ -1,0 +1,29 @@
+
+state={
+	id=375
+	name="Bologna"
+
+	history={
+		owner = ERG
+		add_core_of = ERG
+		victory_points = {
+		15183 20
+		}
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 6
+
+		}
+
+	}
+
+	provinces={
+		361 3634 9893 15183 15210 
+	}
+	manpower=724200
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

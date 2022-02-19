@@ -1,0 +1,28 @@
+
+state={
+	id=380
+	name="Lucca"
+	provinces={
+		7184 11078 15267 15295 15323 
+	}
+	history={
+		owner = TOS
+		add_core_of = TOS
+		victory_points = {
+		11078 4
+		}
+		victory_points = {
+		15295 2
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+		}
+
+	}
+	state_category=rural
+	manpower=266430
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

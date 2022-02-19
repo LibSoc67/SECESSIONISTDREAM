@@ -1,0 +1,34 @@
+
+state={
+	id=413
+	name="Fògge"
+	provinces={
+		2499 5513 5723 5907 9155 10862 15798 15801 15844 15856 15873 15884 15900 15910 15952 19298 
+	}
+	history={
+		owner = PUG
+		add_core_of = PUG
+		victory_points = {
+		15884 10
+		}
+		victory_points = {
+		5513 2
+		}
+		victory_points = {
+		15844 2
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
+			air_base = 4
+
+		}
+
+	}
+	state_category=town
+	manpower=554900
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

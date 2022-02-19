@@ -1,0 +1,28 @@
+
+state={
+	id=425
+	name="Missina"
+	provinces={
+		7576 8127 11155 16577 16589 16596 16617 17435 17437 17439 
+	}
+	history={
+		owner = SIC
+		add_core_of = SIC
+		victory_points = {
+		11155 15
+		}
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
+			air_base = 6
+		11155 = {naval_base = 6}
+		}
+
+	}
+	state_category=large_town
+	manpower=510310
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,35 @@
+
+state={
+	id=409
+	name="Napoli"
+	provinces={
+		10642 11346 16063 16081 16086 17410 
+	}
+	history={
+		owner = CAP
+		add_core_of = CAP
+		victory_points = {
+		11346 30
+		}
+		victory_points = {
+		16086 5
+		}
+		victory_points = {
+		10642 3
+		}
+		victory_points = {
+		16063 3
+		}
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 3
+			arms_factory = 2
+
+		}
+
+	}
+	state_category=large_city
+	manpower=1120922
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

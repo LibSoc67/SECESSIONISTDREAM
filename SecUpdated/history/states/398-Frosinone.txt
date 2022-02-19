@@ -1,0 +1,28 @@
+
+state={
+	id=398
+	name="Frosinone"
+
+	history={
+		owner = RMA
+		add_core_of = RMA
+		victory_points = {
+			10637 4 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+
+	}
+
+	provinces={
+		2287 3776 10011 10637 15950 19309 
+	}
+	manpower=391400
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

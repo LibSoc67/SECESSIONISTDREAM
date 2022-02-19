@@ -1,0 +1,25 @@
+
+state={
+	id=357
+	name="Geneva"
+	provinces={
+		14701 
+	}
+	history={
+		owner = GEV
+		add_core_of = GEV
+		victory_points = {
+		14701 25
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 2
+		}
+
+	}
+	state_category=large_town
+	manpower=194837
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

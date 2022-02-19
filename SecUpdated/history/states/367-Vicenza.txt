@@ -1,0 +1,28 @@
+
+state={
+	id=367
+	name="Vicensa"
+	provinces={
+		836 14791 14808 14835 14839 
+	}
+	history={
+		owner = VNT
+		add_core_of = VNT
+		victory_points = {
+		14835 4
+		}
+		victory_points = {
+		14839 6
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 2
+		}
+
+	}
+	state_category=large_town
+	manpower=559375
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

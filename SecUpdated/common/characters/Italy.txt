@@ -1,0 +1,144 @@
+characters={
+	ERG_Balbo={
+		name="Italo Balbo"
+		portraits={
+			civilian={
+				large="gfx/leaders/ERG/italobalbo.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+			traits={ fascist_sympathies generalissimo }
+		}
+	}
+	RMA_spqr={
+		name="Senatus"
+		portraits={
+			civilian={
+				large="gfx/leaders/RMA/spqr.dds"
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			expire="1965.1.1.1"
+			id=-1
+			traits={ pacifiers despotist_tendencies }
+		}
+	}
+	SIC_Mori={
+		name="Cesare Mori"
+		portraits={
+			civilian={
+				large="gfx/leaders/SIC/mori.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+			traits={ preffeto_di_ferro }
+		}
+	}
+	CLB_Repaci={
+		name="Francesco Rèpaci"
+		portraits={
+			civilian={
+				large="gfx/leaders/CLB/Repaci.dds"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			expire="1965.1.1.1"
+			id=-1
+			traits={  }
+		}
+	}
+	CLB_Jacomoni={
+		name="Francesco Jacomoni"
+		portraits={
+			civilian={
+				large="gfx/leaders/CLB/Jacomoni.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+			traits={  }
+		}
+	}
+	CAP_Murat={
+		name="Joachim Napoléon"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAP/Murat.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+			traits={house_of_murat 6_prince }
+		}
+	}
+	BSL_boccia={
+		name="Tanio Boccia"
+		portraits={
+			civilian={
+				large="gfx/leaders/BSL/boccia.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+			traits={ life_movie }
+		}
+	}
+	PUG_giovine={
+		name="Alfredo Giovine"
+		portraits={
+			civilian={
+				large="gfx/leaders/PUG/giovine.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+			traits={  }
+		}
+	}
+	MLS_gaglia={
+		name="Alessandro de Gaglia"
+		portraits={
+			civilian={
+				large="gfx/leaders/ITALIA/gaglia.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+			traits={  }
+		}
+	}
+	ABZ_troilo={
+		name="Ettore Troilo"
+		portraits={
+			civilian={
+				large="gfx/leaders/ABZ/troilo.dds"
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+			traits={  }
+		}
+	}
+	
+
+}

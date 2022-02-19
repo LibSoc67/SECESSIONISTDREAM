@@ -2,9 +2,6 @@
 state={
 	id=7
 	name="LLeida"
-	provinces={
-		3211 6174 7821 11320 15729 
-	}
 	resources={
 		rubber=0.000
 		tungsten=0.000
@@ -12,12 +9,13 @@ state={
 		chromium=0.000
 		aluminium=0.000
 	}
-		history={
+
+	history={
 		victory_points = {
-		15729 7
+			15729 7 
 		}
 		victory_points = {
-		6174 1
+			6174 1 
 		}
 		owner = CAT
 		add_core_of = CAT
@@ -26,9 +24,16 @@ state={
 			arms_factory = 1
 			industrial_complex = 1
 			air_base = 1
+
 		}
+
 	}
-	state_category=town
+
+	provinces={
+		3211 6174 7821 11320 15729 19275 
+	}
 	manpower=230608
 	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

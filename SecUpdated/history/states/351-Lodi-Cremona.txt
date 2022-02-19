@@ -1,0 +1,25 @@
+
+state={
+	id=351
+	name="Lodi-Cremona"
+	provinces={
+		4848 5595 9048 9798 14897 14920 14921 
+	}
+	history={
+		owner = LOM
+		add_core_of = LOM
+		victory_points = {
+		
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 0
+			industrial_complex = 1
+		}
+
+	}
+	state_category=rural
+	manpower=257208
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

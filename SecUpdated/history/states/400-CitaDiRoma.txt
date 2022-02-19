@@ -1,0 +1,40 @@
+
+state={
+	id=400
+	name="Urbs Romana"
+
+	history={
+		owner = RMA
+		add_core_of = RMA
+		victory_points = {
+			15850 50 
+		}
+		victory_points = {
+			19288 5 
+		}
+		victory_points = {
+			19291 4 
+		}
+		victory_points = {
+			19289 4 
+		}
+		victory_points = {
+			8383 6 
+		}
+		buildings = {
+			infrastructure = 10
+			industrial_complex = 4
+			arms_factory = 1
+			8383 = {naval_base = 7}
+		}
+
+	}
+	state_category=large_city
+
+	provinces={
+		8383 15850 19290 19291 19288 19289 
+	}
+	manpower=1150589
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

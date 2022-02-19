@@ -1,4 +1,35 @@
 leader_traits = {
+	life_movie = {
+	random = no
+	stability_factor = 0.15
+	}
+	preffeto_di_ferro = {
+	random = no
+	stability_weekly = 0.01
+	political_power_factor = -0.1
+	}
+	house_of_murat = {
+	random = no
+	political_power_factor = 0.15
+	}
+	6_prince = {
+	random = no
+	conscription = 0.005
+	}
+	Generalissimo = {
+	random = no
+	army_org_factor = 0.05
+	}
+	pacifiers = {
+	random = no
+	conscription = -0.01
+	war_support_factor = -0.2
+	}
+	despotist_tendencies = {
+	random = no
+	neutrality_drift = -0.02
+	democratic_drift = -0.02
+	}
 	broad_base = {
 	random = no
 	political_power_gain = 0.07

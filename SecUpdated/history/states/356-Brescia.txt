@@ -1,0 +1,31 @@
+
+state={
+	id=356
+	name="Brèsa"
+	provinces={
+		3337 7001 9785 14738 14824 14853 14888 14892 
+	}
+	history={
+		owner = LOM
+		add_core_of = LOM
+		victory_points = {
+		14853 15
+		}
+		victory_points = {
+		14824 1
+		}
+		victory_points = {
+		14892 2
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 4
+		}
+
+	}
+	state_category=city
+	manpower=742397
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

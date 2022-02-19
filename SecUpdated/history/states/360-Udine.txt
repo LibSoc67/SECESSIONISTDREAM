@@ -1,0 +1,28 @@
+
+state={
+	id=360
+	name="Udin"
+	provinces={
+		2391 8039 14653 14700 14708 14748 
+	}
+	history={
+		owner = FIU
+		add_core_of = FIU
+		victory_points = {
+		14708 15
+		}
+		victory_points = {
+		2391 4
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+		}
+
+	}
+	state_category=town
+	manpower=330792
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

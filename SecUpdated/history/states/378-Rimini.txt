@@ -1,0 +1,27 @@
+
+state={
+	id=378
+	name="Rimini"
+
+	history={
+		owner = ERG
+		add_core_of = ERG
+		victory_points = {
+		7246 7
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+	state_category=rural
+
+	provinces={
+		3408 7246 10249 
+	}
+	manpower=252940
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

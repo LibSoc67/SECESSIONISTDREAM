@@ -1,0 +1,28 @@
+
+state={
+	id=416
+	name="Brìnnisi"
+	provinces={
+		3061 4223 7782 16089 
+	}
+	history={
+		owner = PUG
+		add_core_of = PUG
+		victory_points = {
+		4223 6
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 0
+			#dockyard = 
+			#air_base = 
+
+		}
+
+	}
+	state_category=rural
+	manpower=202900
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
