@@ -224,7 +224,6 @@ country_event = {
 		NOT = { has_government = democratic }
 		democratic > 0.6
 		NOT = { democratic > 0.7 }
-		check_has_focus_tree_to_switch_to_democratic = yes
 	}
 
 	fire_only_once = yes
@@ -318,11 +317,6 @@ country_event = {
 
 		ai_chance = {
 			base = 1
-			modifier = {
-				factor = 0
-				has_dlc = "Battle for the Bosporus"
-				original_tag = BUL
-			}
 		}
 
 		add_political_power = -20
@@ -416,7 +410,6 @@ country_event = {
 		#has_idea = fascist_revolutionaries
 		NOT = { has_government = fascism }
 		has_civil_war = no
-		check_has_focus_tree_to_switch_to_fascism = yes
 	}
 
 	mean_time_to_happen = {
@@ -786,5 +779,45 @@ country_event = {
 			}
 			ROOT = { annex_country = { target = PREV transfer_troops = yes } }
 		}
+	}
+}
+
+# political.29 Neutrality
+
+country_event = {
+	id = political.29
+	title = political.29.t
+	desc = political.29.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+
+	option = {
+		name = political.29.c
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+
+# political.30 Totalitarian
+
+country_event = {
+	id = political.30
+	title = political.30.t
+	desc = political.30.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+
+	option = {
+		name = political.30.c
+		set_politics = {
+			ruling_party = mlism
+			elections_allowed = no
+		}
+		add_stability = -0.05
 	}
 }

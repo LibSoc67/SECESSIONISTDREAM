@@ -1,0 +1,63 @@
+scripted_gui = {
+
+	Reichsmark_GUI = {
+	
+		context_type = player_context
+		
+		#context_type = politics_tab
+		parent_window_token = politics_tab
+		window_name = german_moneytotal
+		
+		visible = {	
+		ROOT = {
+			#is_ai = no 
+			OR = {
+			tag = BAD
+			tag = BDB
+			tag = BRN
+			tag = BYN
+			tag = HSE
+			tag = HAN
+			tag = HMB
+			tag = MKB
+			tag = POM
+			tag = ODB
+			tag = OPR
+			tag = SAH
+			tag = SLS
+			tag = SSN
+			tag = SWH
+			tag = THR
+			tag = RHP
+			tag = WPR
+			tag = WFL
+			tag = WRT
+			}
+			}
+		}
+		#effects = {
+		#	open_ChildNations_click = {
+		#		ROOT = {
+		#			set_country_flag = ChildNations_show_gui
+		#		}
+		#	}
+		#}
+		
+		#triggers = {
+		#		Child_Nations_Button_1_visible = {NOT = {has_country_flag = CN_Parent1 has_country_flag = CN_Parent1Found}}
+		#		Child_Nations_Button_2_visible = {NOT = {has_country_flag = CN_Parent2 has_country_flag = CN_Parent2Found}}
+		#		Child_Nations_Button_1_2_visible = {NOT = {has_country_flag = CN_Parent1 NOT = {has_country_flag = CN_Parent1Found}}}
+		#		Child_Nations_Button_2_2_visible = {NOT = {has_country_flag = CN_Parent2 NOT = {has_country_flag = CN_Parent2Found}}}
+		#		Child_Nations_Button_1_Click_visible = {has_country_flag = CN_Parent1 }
+		#		Child_Nations_Button_2_Click_visible = {has_country_flag = CN_Parent2 }
+		#
+		#}
+		#properties = {
+		#
+		#
+		#}
+		
+	}
+	
+}
+

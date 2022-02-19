@@ -1,6 +1,6 @@
 ﻿
 division_template = {
-	name = "Marscharmee Rhine-Pfalz"  
+	name = "Marscharmee Baden"  
 	division_names_group = GER_Inf_01
 
 	regiments = {
@@ -13,9 +13,99 @@ division_template = {
 }
 
 units = {
+#10 soldiers
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 14052
+		division_template = "Marscharmee Baden"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 13967
+		division_template = "Marscharmee Baden"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 1651
+		division_template = "Marscharmee Baden"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 13972
+		division_template = "Marscharmee Baden"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 7447
+		division_template = "Marscharmee Baden"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 13923
+		division_template = "Marscharmee Baden"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 4309
+		division_template = "Marscharmee Baden"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 14357
+		division_template = "Marscharmee Baden"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+		location = 10505
+		division_template = "Marscharmee Baden"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 10
+		}
+		location = 14052
+		division_template = "Marscharmee Baden"
+		start_experience_factor = 0.3
+	}
 	
 
-	##### No Notable Naval Forces #####
 }
 
 ##### No Notable Air Forces #####
@@ -24,7 +114,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = "RHP"
+			creator = "BAD"
 		}
 		requested_factories = 4
 		progress = 0.21

@@ -1,6 +1,6 @@
 ﻿
 division_template = {
-	name = "Marscharmee Rhine-Pfalz"  
+	name = "Marscharmee Ostpreußen"  
 	division_names_group = GER_Inf_01
 
 	regiments = {
@@ -13,9 +13,79 @@ division_template = {
 }
 
 units = {
-	
-
-	##### No Notable Naval Forces #####
+	#8 divisions
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9165
+		division_template = "Marscharmee Ostpreußen"
+		start_experience_factor = 0.24
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 1408
+		division_template = "Marscharmee Ostpreußen"
+		start_experience_factor = 0.24
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 2217
+		division_template = "Marscharmee Ostpreußen"
+		start_experience_factor = 0.24
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 5328
+		division_template = "Marscharmee Ostpreußen"
+		start_experience_factor = 0.24
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 12557
+		division_template = "Marscharmee Ostpreußen"
+		start_experience_factor = 0.24
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 7062
+		division_template = "Marscharmee Ostpreußen"
+		start_experience_factor = 0.24
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 6272
+		division_template = "Marscharmee Ostpreußen"
+		start_experience_factor = 0.24
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 10041
+		division_template = "Marscharmee Ostpreußen"
+		start_experience_factor = 0.24
+	}
 }
 
 ##### No Notable Air Forces #####
@@ -24,7 +94,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = "RHP"
+			creator = "OPR"
 		}
 		requested_factories = 4
 		progress = 0.21

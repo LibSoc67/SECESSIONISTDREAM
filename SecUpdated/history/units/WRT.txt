@@ -1,6 +1,6 @@
 ﻿
 division_template = {
-	name = "Marscharmee Rhine-Pfalz"  
+	name = "Marscharmee Württemburg"  
 	division_names_group = GER_Inf_01
 
 	regiments = {
@@ -11,11 +11,80 @@ division_template = {
 		infantry = { x = 0 y = 4 }
 	}
 }
-
+#8 units
 units = {
-	
-
-	##### No Notable Naval Forces #####
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8843
+		division_template = "Marscharmee Württemburg"
+		start_experience_factor = 0.28
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 14080
+		division_template = "Marscharmee Württemburg"
+		start_experience_factor = 0.28
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 14191
+		division_template = "Marscharmee Württemburg"
+		start_experience_factor = 0.28
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 1009
+		division_template = "Marscharmee Württemburg"
+		start_experience_factor = 0.28
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 9779
+		division_template = "Marscharmee Württemburg"
+		start_experience_factor = 0.28
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 10346
+		division_template = "Marscharmee Württemburg"
+		start_experience_factor = 0.28
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 14179
+		division_template = "Marscharmee Württemburg"
+		start_experience_factor = 0.28
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 9252
+		division_template = "Marscharmee Württemburg"
+		start_experience_factor = 0.28
+	}
 }
 
 ##### No Notable Air Forces #####
@@ -24,7 +93,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = "RHP"
+			creator = "WRT"
 		}
 		requested_factories = 4
 		progress = 0.21

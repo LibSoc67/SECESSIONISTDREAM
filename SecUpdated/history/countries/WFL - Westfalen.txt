@@ -137,5 +137,5 @@ set_popularities = {
 	}
 
 add_timed_idea = {
-	idea = GER_FAC days = 720
+	
 }

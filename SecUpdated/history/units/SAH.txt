@@ -1,6 +1,6 @@
 ﻿
 division_template = {
-	name = "Marscharmee Rhine-Pfalz"  
+	name = "Marscharmee Sachsen-Anhalt"  
 	division_names_group = GER_Inf_01
 
 	regiments = {
@@ -13,9 +13,88 @@ division_template = {
 }
 
 units = {
-	
-
-	##### No Notable Naval Forces #####
+#8 units
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3652
+		division_template = "Marscharmee Sachsen-Anhalt"
+		start_experience_factor = 0.22
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 13058
+		division_template = "Marscharmee Sachsen-Anhalt"
+		start_experience_factor = 0.22
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 3990
+		division_template = "Marscharmee Sachsen-Anhalt"
+		start_experience_factor = 0.22
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 13216
+		division_template = "Marscharmee Sachsen-Anhalt"
+		start_experience_factor = 0.22
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 10967
+		division_template = "Marscharmee Sachsen-Anhalt"
+		start_experience_factor = 0.22
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 5967
+		division_template = "Marscharmee Sachsen-Anhalt"
+		start_experience_factor = 0.22
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 13368
+		division_template = "Marscharmee Sachsen-Anhalt"
+		start_experience_factor = 0.22
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 8896
+		division_template = "Marscharmee Sachsen-Anhalt"
+		start_experience_factor = 0.22
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+		location = 13308
+		division_template = "Marscharmee Sachsen-Anhalt"
+		start_experience_factor = 0.22
+	}
 }
 
 ##### No Notable Air Forces #####
@@ -24,7 +103,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = "RHP"
+			creator = "SAH"
 		}
 		requested_factories = 4
 		progress = 0.21
