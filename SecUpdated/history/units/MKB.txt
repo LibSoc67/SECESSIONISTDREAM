@@ -1,6 +1,6 @@
 ﻿
 division_template = {
-	name = "Marscharmee Rhine-Pfalz"  
+	name = "Marscharmee Mecklenburg"  
 	division_names_group = GER_Inf_01
 
 	regiments = {
@@ -13,7 +13,98 @@ division_template = {
 }
 
 units = {
-	
+	#10 divisions
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9439
+		division_template = "Marscharmee Mecklenburg"
+		start_experience_factor = 0.24
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 5564
+		division_template = "Marscharmee Mecklenburg"
+		start_experience_factor = 0.24
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12690
+		division_template = "Marscharmee Mecklenburg"
+		start_experience_factor = 0.24
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 1765
+		division_template = "Marscharmee Mecklenburg"
+		start_experience_factor = 0.24
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 6275
+		division_template = "Marscharmee Mecklenburg"
+		start_experience_factor = 0.24
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 4002
+		division_template = "Marscharmee Mecklenburg"
+		start_experience_factor = 0.24
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 12867
+		division_template = "Marscharmee Mecklenburg"
+		start_experience_factor = 0.24
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 1818
+		division_template = "Marscharmee Mecklenburg"
+		start_experience_factor = 0.24
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+		location = 8582
+		division_template = "Marscharmee Mecklenburg"
+		start_experience_factor = 0.24
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 10
+		}
+		location = 12746
+		division_template = "Marscharmee Mecklenburg"
+		start_experience_factor = 0.24
+	}
 
 	##### No Notable Naval Forces #####
 }
@@ -24,7 +115,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = "RHP"
+			creator = "MKB"
 		}
 		requested_factories = 4
 		progress = 0.21

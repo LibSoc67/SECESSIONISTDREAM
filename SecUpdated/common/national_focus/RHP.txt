@@ -1,0 +1,655 @@
+focus_tree = {
+
+	id = RHP_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+				tag = RHP
+		}
+	}
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1500 }
+	focus = {
+		id = RHP_Test1
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 0
+		ai_will_do = {
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 2
+
+		mutually_exclusive = {} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RHP_Test2
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 3
+		y = 0
+		ai_will_do = {
+		}
+		
+		available = {
+		OR = {
+		has_completed_focus = RHP_Test3
+		has_completed_focus = RHP_Test4
+		has_completed_focus = RHP_Test5
+		has_completed_focus = RHP_Test16
+		}
+		}
+		bypass = {
+		
+		}
+		
+		cost = 2
+
+		mutually_exclusive = {} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RHP_Test3
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 6
+		y = 0
+		ai_will_do = {
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 2
+
+		mutually_exclusive = {focus = RHP_Test4 focus = RHP_Test5 focus = RHP_Test16} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RHP_Test4
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 8
+		y = 0
+		ai_will_do = {
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 2
+
+		mutually_exclusive = {focus = RHP_Test3 focus = RHP_Test5 focus = RHP_Test16} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RHP_Test5
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 10
+		y = 0
+		ai_will_do = {
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 2
+
+		mutually_exclusive = {focus = RHP_Test3 focus = RHP_Test4 focus = RHP_Test16} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RHP_Test16
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 12
+		y = 0
+		ai_will_do = {
+		}
+		#allow_branch = {
+		#has_government = mlism
+		#}
+		
+		available = {
+		always = no
+		}
+		bypass = {
+		has_government = mlism
+		}
+		
+		cost = 2
+
+		mutually_exclusive = {focus = RHP_Test3 focus = RHP_Test4 focus = RHP_Test5} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RHP_Test6
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 1
+		ai_will_do = {
+		}
+		
+		prerequisite = {focus = RHP_Test1}
+		prerequisite = {focus = RHP_Test2}
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 2
+
+		mutually_exclusive = {} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RHP_Test7
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 2
+		ai_will_do = {
+		}
+		
+		prerequisite = {focus = RHP_Test6}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 2
+
+		mutually_exclusive = {} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RHP_Test8
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 3
+		y = 2
+		ai_will_do = {
+		}
+		
+		prerequisite = {focus = RHP_Test6}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 2
+
+		mutually_exclusive = {} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RHP_Test9
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 5
+		y = 2
+		ai_will_do = {
+		}
+		
+		prerequisite = {focus = RHP_Test6}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 2
+
+		mutually_exclusive = {} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RHP_Test10
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 7
+		y = 2
+		ai_will_do = {
+		}
+		
+		prerequisite = {focus = RHP_Test6}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 2
+
+		mutually_exclusive = {focus = RHP_Test15} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RHP_Test15
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 9
+		y = 2
+		ai_will_do = {
+		}
+		
+		prerequisite = {focus = RHP_Test6}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 2
+
+		mutually_exclusive = {focus = RHP_Test10} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RHP_Test11
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 7
+		y = 1
+		ai_will_do = {
+		}
+		
+		prerequisite = {focus = RHP_Test3}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 2
+
+		mutually_exclusive = {} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RHP_Test12
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 9
+		y = 1
+		ai_will_do = {
+		}
+		
+		prerequisite = {focus = RHP_Test3 focus = RHP_Test4 focus = RHP_Test5}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 2
+
+		mutually_exclusive = {} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RHP_Test13
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 11
+		y = 1
+		ai_will_do = {
+		}
+		
+		prerequisite = {focus = RHP_Test5 focus = RHP_Test16}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 2
+
+		mutually_exclusive = {} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RHP_Test14
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 3
+		ai_will_do = {
+		}
+		
+		prerequisite = {focus = RHP_Test7}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 2
+
+		mutually_exclusive = {} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RHP_Test17
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 3
+		y = 3
+		ai_will_do = {
+		}
+		
+		prerequisite = {focus = RHP_Test8}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 2
+
+		mutually_exclusive = {} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RHP_Test18
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 5
+		y = 3
+		ai_will_do = {
+		}
+		
+		prerequisite = {focus = RHP_Test9}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 2
+
+		mutually_exclusive = {} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RHP_Test19
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 7
+		y = 3
+		ai_will_do = {
+		}
+		
+		prerequisite = {focus = RHP_Test10}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 2
+
+		mutually_exclusive = {} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RHP_Test20
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 9
+		y = 3
+		ai_will_do = {
+		}
+		
+		prerequisite = {focus = RHP_Test15}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 2
+
+		mutually_exclusive = {} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RHP_Test21
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 4
+		ai_will_do = {
+		}
+		
+		prerequisite = {focus = RHP_Test14 focus = RHP_Test17}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 2
+
+		mutually_exclusive = {} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RHP_Test22
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 5
+		ai_will_do = {
+		}
+		
+		prerequisite = {focus = RHP_Test21}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 2
+
+		mutually_exclusive = {} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RHP_Test23
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 11
+		y = 2
+		ai_will_do = {
+		}
+		
+		prerequisite = {focus = RHP_Test13}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 2
+
+		mutually_exclusive = {} 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+}

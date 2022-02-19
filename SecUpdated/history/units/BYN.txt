@@ -1,0 +1,178 @@
+﻿
+division_template = {
+	name = "Marscharmee Bayern"  
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+	}
+}
+
+units = {
+#16 soldiers
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 14328
+		division_template = "Marscharmee Bayern"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 8807
+		division_template = "Marscharmee Bayern"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 14435
+		division_template = "Marscharmee Bayern"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 7776
+		division_template = "Marscharmee Bayern"
+		start_experience_factor = 0.21
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 2044
+		division_template = "Marscharmee Bayern"
+		start_experience_factor = 0.21
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 13973
+		division_template = "Marscharmee Bayern"
+		start_experience_factor = 0.21
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 13781
+		division_template = "Marscharmee Bayern"
+		start_experience_factor = 0.21
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 2410
+		division_template = "Marscharmee Bayern"
+		start_experience_factor = 0.21
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+		location = 4456
+		division_template = "Marscharmee Bayern"
+		start_experience_factor = 0.21
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 10
+		}
+		location = 14328
+		division_template = "Marscharmee Bayern"
+		start_experience_factor = 0.21
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 11
+		}
+		location = 4372
+		division_template = "Marscharmee Bayern"
+		start_experience_factor = 0.21
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 12
+		}
+		location = 3539
+		division_template = "Marscharmee Bayern"
+		start_experience_factor = 0.21
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 13
+		}
+		location = 10643
+		division_template = "Marscharmee Bayern"
+		start_experience_factor = 0.21
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 14
+		}
+		location = 10648
+		division_template = "Marscharmee Bayern"
+		start_experience_factor = 0.21
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 15
+		}
+		location = 13906
+		division_template = "Marscharmee Bayern"
+		start_experience_factor = 0.21
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 16
+		}
+		location = 13741
+		division_template = "Marscharmee Bayern"
+		start_experience_factor = 0.21
+	}
+
+	##### No Notable Naval Forces #####
+}
+
+##### No Notable Air Forces #####
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "BYN"
+		}
+		requested_factories = 4
+		progress = 0.21
+		efficiency = 100
+	}
+	
+}

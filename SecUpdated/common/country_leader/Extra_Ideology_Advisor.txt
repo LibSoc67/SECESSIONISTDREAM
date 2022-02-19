@@ -1,0 +1,11 @@
+leader_traits = {
+	mlism_booster = {
+		random = no
+		sprite = 13
+		mlism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

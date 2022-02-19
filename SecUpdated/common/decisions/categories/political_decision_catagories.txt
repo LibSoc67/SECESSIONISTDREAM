@@ -19,6 +19,14 @@ communism_on_the_rise = {
 	icon = generic_communism
 }
 
-totalitarianism_on_the_rise = {
+mlism_on_the_rise = {
 	icon = generic_neutrality
+}
+
+political_actions = {
+	icon = generic_political_actions
+
+	allowed = {
+		always = yes
+	}
 }
