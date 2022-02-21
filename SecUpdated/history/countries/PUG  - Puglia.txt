@@ -54,16 +54,16 @@ recruit_character = PUG_giovine
 	}
 }
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1934.4.2"
 	election_frequency = 24
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 60
-	communism = 10
-	neutrality = 11
-	mlism = 11
+	democratic = 65
+	communism = 9
+	neutrality = 9
+	mlism = 9
 	anarchy = 8
 }
 

@@ -30,9 +30,14 @@
  cen_msn2_desc:0 "The Moviment de Salut National is a fascist terrorist organitzation that aims to unite all of Occitania and all of France. Their paramilitar militias were key in defeating the liberal pre-1931 goverment.\nThis factions popularity is currently:§R Low§!."
  cen_nat_marx_unions:0 "Proletarian Heroes"
  pacifiers:0 "Pacifiers"
- despotist_tendencies:0 "Despotist Tendencies
- 
+ despotist_tendencies:0 "Despotist Tendencies"
+ agriculture:0 "Minister of Agriculture"
+ eternal_marshall:0 "Eternal Marshall"
  very_harsh:0 "Very Harsh"
+ serenissimo_doge:0 "Serenissimo Doge"
+ house_savoy:0 "House of Savoy"
+ buisnessman:0 "Buisnessman"
+ 
  secret_police:0 "Head of the Police"
  preffeto_di_ferro:0 "Preffeto di Ferro"
  6_prince:0 "the 6th Prince"

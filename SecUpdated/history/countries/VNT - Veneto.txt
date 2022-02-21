@@ -80,50 +80,22 @@ create_equipment_variant = {
 	}
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1935.6.4"
-	election_frequency = 1
-	elections_allowed = no
-}
-create_country_leader = {
-	name = "Joan Maraca"
-	picture = "aladem.dds"
-	ideology = socialism 
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Alberto Garaö"
-	picture = "alacom.dds"
-	ideology = marxism 
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Abel Fontaine"
-	picture = "alafas.dds"
-	ideology = fascism_ideology 
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Pepe Limao "
-	picture = "alaneu.dds"
-	ideology = centrism 
-	traits = {
-		#
-	}
-}
-set_popularities = {
-	democratic = 31
-	fascism = 3
-	communism = 31
-	neutrality = 35
+	ruling_party = democratic
+	last_election = "1934.7.3"
+	election_frequency = 48
+	elections_allowed = yes
 }
 
+set_popularities = {
+	democratic = 61
+	fascism = 12
+	communism = 1
+	neutrality = 8
+	anarchy = 16
+	mlism = 2
+}
+recruit_character = VNT_Marinelli
+recruit_character = VNT_luzzatti
 1939.1.1 = {
 	set_politics = {
 		ruling_party = neutrality

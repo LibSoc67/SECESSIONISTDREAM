@@ -15,7 +15,7 @@ set_technology = {
 }
 set_research_slots = 3
 set_convoys = 45
-
+recruit_character = SMR_gozi
 1939.1.1 = {
 	
 	#generic focuses
@@ -80,48 +80,18 @@ create_equipment_variant = {
 	}
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = fascism
 	last_election = "1935.6.4"
 	election_frequency = 1
 	elections_allowed = no
 }
-create_country_leader = {
-	name = "Joan Maraca"
-	picture = "aladem.dds"
-	ideology = socialism 
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Alberto Garaö"
-	picture = "alacom.dds"
-	ideology = marxism 
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Abel Fontaine"
-	picture = "alafas.dds"
-	ideology = fascism_ideology 
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Pepe Limao "
-	picture = "alaneu.dds"
-	ideology = centrism 
-	traits = {
-		#
-	}
-}
 set_popularities = {
-	democratic = 31
-	fascism = 3
-	communism = 31
-	neutrality = 35
+	democratic = 1
+	fascism = 48
+	communism = 3
+	neutrality = 4
+	mlism = 40
+	anarchy = 4
 }
 
 1939.1.1 = {

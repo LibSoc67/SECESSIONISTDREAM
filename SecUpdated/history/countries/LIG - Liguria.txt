@@ -94,8 +94,8 @@ set_party_name = {
     long_name = "Black Front"
     name = "BF"
 }
-
-
+recruit_character = LIG_togliatti
+recruit_character = LIG_dossetti
 
 
 

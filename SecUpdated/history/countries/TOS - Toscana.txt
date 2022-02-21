@@ -85,45 +85,17 @@ set_politics = {
 	election_frequency = 1
 	elections_allowed = no
 }
-create_country_leader = {
-	name = "Joan Maraca"
-	picture = "aladem.dds"
-	ideology = socialism 
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Alberto Garaö"
-	picture = "alacom.dds"
-	ideology = marxism 
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Abel Fontaine"
-	picture = "alafas.dds"
-	ideology = fascism_ideology 
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Pepe Limao "
-	picture = "alaneu.dds"
-	ideology = centrism 
-	traits = {
-		#
-	}
-}
 set_popularities = {
-	democratic = 31
-	fascism = 3
-	communism = 31
-	neutrality = 35
+	democratic = 14
+	fascism = 20
+	communism = 12
+	neutrality = 40
+	anarchy = 4
+	mlism = 10
 }
-
+recruit_character = TOS_Guano
+recruit_character = TOS_Fanfani
+recruit_character = TOS_Pavolini
 1939.1.1 = {
 	set_politics = {
 		ruling_party = neutrality

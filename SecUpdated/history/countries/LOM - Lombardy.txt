@@ -58,53 +58,21 @@ set_research_slots = 4
 
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = fascism
 	last_election = "1935.6.4"
 	election_frequency = 4
 	elections_allowed = yes
 }
-create_country_leader = {
-	name = "Andreo Carvalho"
-	desc = "Yes"
-	picture = "aledem.dds"
-	ideology = socialism 
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Alberto Garaö"
-	picture = "alecom.dds"
-	ideology = marxism 
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Abel Fontaine"
-	picture = "alefas.dds"
-	ideology = fascism_ideology 
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Joao Amorim "
-	picture = "aleneu.dds"
-	ideology = centrism 
-	traits = {
-		#
-	}
-}
 set_popularities = {
-	democratic = 78
-	fascism = 2
-	communism = 7
-	neutrality = 7
-	anarchy = 4
-	mlism = 2
+	democratic = 15
+	fascism = 46
+	communism = 3
+	neutrality = 6
+	anarchy = 24
+	mlism = 6
 }
-
+recruit_character = LOM_Bono
+recruit_character = LOM_bonomi
 1939.1.1 = {
 	set_politics = {
 		ruling_party = communism

@@ -139,6 +139,266 @@ characters={
 			traits={  }
 		}
 	}
-	
+	LIG_togliatti={
+		name="Palmiro Togliatti"
+	portraits={
+		civilian={
+		large="gfx/leaders/ITALIA/Togliatti.dds"
+		}
+	}
+		country_leader={
+			ideology=leninism
+			expire="1965.1.1.1"
+			id=-1
+			traits={  }
+		}
+	}
+	LIG_dossetti={
+		name="Giuseppe Dossetti"
+	portraits={
+		civilian={
+		large="gfx/leaders/ITALIA/Dossetti.dds"
+		}
+	}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+			traits={  }
+		}
+	}
+	TOS_Fanfani={
+		name="Amintore Fanfani"
+		portraits={
+		civilian={
+		large="gfx/leaders/ITALIA/Fanfani.dds"
+		}
+	}
+		country_leader={
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+			traits={  }
+		}
+	}
+	TOS_Guano={
+		name="Emiliano Guano"
+		portraits={
+		civilian={
+		large="gfx/leaders/ITALIA/Guano.dds"
+		}
+	}
+		country_leader={
+			ideology=moderatism
+			expire="1965.1.1.1"
+			id=-1
+			traits={  }
+		}
+	}
+	ERG_Mussolini={
+		name="Benito Mussolini"
+		portraits={
+		civilian={
+		large="gfx/leaders/ITALIA/Mussolini.dds"
+		}
+	}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+			traits={ Duce }
+		}
+	}
+	ERG_pareschi={
+		name="Carlo Pareschi"
+		portraits={
+			army={
+				small="GFX_idea_pareschi"
+				
+			}
+			}
+		advisor={
+			slot = political_advisor
+			idea_token = ERG_pareschi
+			allowed = {
+				original_tag = ERG
+			}
+			traits = {
+				agriculture
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	UMB_cianetti={
+		name="Tullio Cianetti"
+		portraits={
+		civilian={
+		large="gfx/leaders/ITALIA/cianetti.dds"
+		}
+	}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+			traits={  }
+		}
+	}
+	LOM_Bono={
+		name="Emilio de Bono"
+		portraits={
+		civilian={
+		large="gfx/leaders/ITALIA/bono.dds"
+		}
+	}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+			traits={ eternal_marshall  }
+		}
+	}
+	TOS_Pavolini={
+		name="Alessandro Pavolini"
+		portraits={
+		civilian={
+		large="gfx/leaders/ITALIA/pavolini.dds"
+		}
+	}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+			traits={ very_harsh  }
+		}
+	}
+	VNT_Marinelli={
+		name="Giovanni Marinelli"
+		portraits={
+		civilian={
+		large="gfx/leaders/ITALIA/Marinelli.dds"
+		}
+	}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+			traits={  }
+		}
+	}
+	SMR_Gozi={
+		name="Giuliano Gozi"
+		portraits={
+		civilian={
+		large="gfx/leaders/ITALIA/gozi.dds"
+		}
+	}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+			traits={  }
+		}
+	}
+	MAR_Sabbata={
+		name="Giorgio de Sabbata"
+		portraits={
+		civilian={
+		large="gfx/leaders/ITALIA/Sabbata.dds"
+		}
+	}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+			traits={  }
+		}
+	}
+	LOM_bonomi={
+		name="Ivanoe Bonomi"
+		portraits={
+		civilian={
+		large="gfx/leaders/ITALIA/bonomi.dds"
+		}
+	}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+			traits={  }
+		}
+	}
+	VNT_luzzatti={
+		name="Luigi Luzzatti"
+		portraits={
+		civilian={
+		large="gfx/leaders/ITALIA/luzzatti.dds"
+		}
+	}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+			traits={ serenissimo_doge }
+		}
+	}
+	SIC_Orlando={
+		name="Vittorio Orlando"
+		portraits={
+		civilian={
+		large="gfx/leaders/ITALIA/orlando.dds"
+		}
+	}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+			traits={ }
+		}
+	}
+	MAR_Murri={
+		name="Romolo Murri"
+		portraits={
+		civilian={
+		large="gfx/leaders/ITALIA/murri.dds"
+		}
+	}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+			traits={ }
+		}
+	}
+	STR_Gasperi={
+		name="Alcide De Gasperi"
+		portraits={
+		civilian={
+		large="gfx/leaders/ITALIA/Gasperi.dds"
+		}
+	}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+			traits={ }
+		}
+	}
+	FIU_illy={
+		name="Francesco Illy"
+		portraits={
+		civilian={
+		large="gfx/leaders/ITALIA/illy.dds"
+		}
+	}
+		country_leader={
+			ideology=oligarchism
+			expire="1965.1.1.1"
+			id=-1
+			traits={ buisnessman }
+		}
+	}
 
 }
