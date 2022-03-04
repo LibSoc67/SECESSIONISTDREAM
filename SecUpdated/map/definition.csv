@@ -6234,7 +6234,7 @@
 6233;155;238;124;land;false;desert;1
 6234;173;243;237;land;false;plains;1
 6235;182;212;231;land;false;forest;1
-6236;220;226;231;land;false;plains;1
+6236;220;226;231;land;true;plains;1
 6237;218;113;209;land;false;forest;1
 6238;229;251;163;land;false;hills;1
 6239;220;238;95;land;false;forest;1

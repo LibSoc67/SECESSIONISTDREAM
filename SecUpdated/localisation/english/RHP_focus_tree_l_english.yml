@@ -1,0 +1,16 @@
+﻿l_english:
+ RHP_Test1:0 "Increase Industrial Research Spending"
+ RHP_Test1_desc:0 "§Y[RHP.GetLeader]'s§! belief is that a nation with an outdated industry will eventually fail. One of his most trusted advisors, §YGerhard Weber§!, promises advances in that field if funded."
+ RHP_Test1_tt:0 "§R-0.3§!§YM Reichsmark§!"
+ RHP_Test1_req_tt:0 "We need §G0.3§!§YM Reichsmark§! to do this focus."
+ RHP_Test2:0 "More Industrial Buildings"
+ RHP_Test2_desc:0 "[RHP_Test2_Scripted]"
+ RHP_Test2_desc_1:0 "$YEssen§! is fertile ground to build more Industrial Complexes. With funding given to key private companies, our economic capabilities will increase."
+ RHP_Test2_desc_2:0 "$YEssen§! is fertile ground to build more Industrial Complexes. With funding given to state-ran companies, our economic capabilities will increase."
+ RHP_Test2_req_1_tt:0 "We need §G0.5§!§YM Reichsmark§! to do this focus."
+ RHP_Test2_req_2_tt:0 "We need §G1§!§YM Reichsmark§! to do this focus."
+ RHP_Test2_tt_1:0 "§R-0.5§!§YM Reichsmark§!"
+ RHP_Test2_tt_2:0 "§R-1§!§YM Reichsmark§!"
+ RHP_Test6:0 "Create the §YIMRAM§!"
+ RHP_Test6_desc:0 "While the projects we have already completed are a good start, a systematic approach shoud be taken to keep our economy strong. Creating the IMRAM (Industrial and Militaristic Research and Advancement Ministry) will be the most direct way to use our government funds for industrial uses."
+ 
