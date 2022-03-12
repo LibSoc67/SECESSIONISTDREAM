@@ -1,0 +1,21 @@
+on_actions = {
+on_startup = {
+effect = {
+every_country = {
+if = {
+limit = {OR = { tag = BAD tag = BYN tag = BRN tag = BDB tag = HSE tag = HAN tag = HMB tag = MKB tag = POM tag = ODB tag = OPR tag = RHP tag = SAH tag = SSN tag = SLS tag = SWH tag = WFL tag = WPR tag = WRT tag = THR }}
+Create_Economy = yes
+}
+}
+}
+}
+on_monthly = {
+effect = {
+if = {
+limit = {OR = { tag = BAD tag = BYN tag = BRN tag = BDB tag = HSE tag = HAN tag = HMB tag = MKB tag = POM tag = ODB tag = OPR tag = RHP tag = SAH tag = SSN tag = SLS tag = SWH tag = WFL tag = WPR tag = WRT tag = THR }}
+Income_Economy = yes
+Update_Economy = yes
+}
+}
+}
+}

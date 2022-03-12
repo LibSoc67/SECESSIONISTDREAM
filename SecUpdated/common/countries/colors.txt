@@ -115,8 +115,8 @@ LEO = {
 }
 #TheHunterManX
 NUL = {
-	color = rgba { 35 47 42 0 }
-	color_ui = rgba { 35 47 42 0 }
+	color = rgb { 35 47 42 }
+	color_ui = rgb { 35 47 42 }
 }
 BDB = {
 	color = rgb { 230 0 0 }

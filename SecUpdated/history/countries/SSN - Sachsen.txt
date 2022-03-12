@@ -135,6 +135,7 @@ set_popularities = {
 		mlism = 21
 	}
 
+add_ideas = Mixed_Economy
 add_timed_idea = {
 	
 }

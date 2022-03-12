@@ -1,4 +1,4 @@
 ﻿l_english:
  reichsmark_symbol_tt:0 "This symbol represents our country's currency, the Reichsmark."
- GER_money_tt:0 "We have §YWIP§! Reichsmark. Due to our economic model, we can only use WIP of it."
- GER_money:0 "§YWIP§!"
+ GER_money_tt:0 "We have §Y[?THIS.Reichsmark]§!M Reichsmark. Due to our economic model, we can use §Y[?THIS.ReichsmarkUse]§!M Reichsmark.\nWe gain §G[?THIS.ReichsmarkIncome]§!M Reichsmark.\nWe lose §R[?THIS.ReichsmarkLoss]§!M Reichsmark\n\n§gMoney can be used for focus trees or decisions. It is increased each month by income and decreased by expenses, such as military. Government spending is how much you can use each month.§!"
+ GER_money:0 "§Y[?THIS.Reichsmark]§!M"

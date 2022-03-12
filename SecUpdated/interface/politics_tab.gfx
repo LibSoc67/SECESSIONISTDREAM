@@ -1,0 +1,7 @@
+spriteTypes = {
+
+SpriteType = {
+	name = PT_Ideologies_Background
+	texturefile = "gfx/interface/politics_tab/Faction_Hide.dds"
+}
+}

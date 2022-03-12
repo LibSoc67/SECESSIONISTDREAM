@@ -1,0 +1,3 @@
+IMRAM_Decisions = {
+	icon = generic_economy
+}

@@ -134,7 +134,7 @@ set_popularities = {
 		anarchy = 0
 		mlism = 5
 	}
-
+add_ideas = Pro_Capitalist
 add_timed_idea = {
 	
 } 

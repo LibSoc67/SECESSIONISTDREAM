@@ -60,9 +60,9 @@ guiTypes = {
 			margin = { top = 3 bottom = 2}
 			background = {
 				name = "Background"		
-				#spriteType ="GFX_pol_piechart_bg"
+				spriteType ="PT_Ideologies_Background"
 				position = { x = -50 y = -6 }
-				alwaystransparent = yes
+				#alwaystransparent = yes
 			}
 			
 			gridBoxType = {

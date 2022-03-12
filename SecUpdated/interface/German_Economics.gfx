@@ -1,0 +1,27 @@
+spriteTypes = {
+	spriteType = {
+	name = "GFX_idea_Heavily_Capitalist"
+	texturefile = "gfx/interface/icons/Heavily_Capitalist.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_Pro_Capitalist"
+	texturefile = "gfx/interface/icons/Pro_Capitalist.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_Mixed_Economy"
+	texturefile = "gfx/interface/icons/Mixed_Economy.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_Socialist_Economy"
+	texturefile = "gfx/interface/icons/Socialist_Economy.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_Totalitarian_Economy"
+	texturefile = "gfx/interface/icons/Totalitarian_Economy.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_Anarchist_Economy"
+	texturefile = "gfx/interface/icons/Anarchist_Economy.dds"
+	}
+	
+}

@@ -1,0 +1,157 @@
+ideas = {
+	economy = {
+		law = yes
+		use_list_view = yes
+		Heavily_Capitalist = { 
+			available = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			
+			allowed = {
+				OR = { tag = BAD tag = BYN tag = BRN tag = BDB tag = HSE tag = HAN tag = HMB tag = MKB tag = POM tag = ODB tag = OPR tag = RHP tag = SAH tag = SSN tag = SLS tag = SWH tag = WFL tag = WPR tag = WRT tag = THR }
+				NOT = {has_government = anarchy}
+			}
+			cost = 150
+			removal_cost = -1
+			level = 1
+			
+			modifier = {
+			#Focus Bonus 50%
+			consumer_goods_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.2
+			production_speed_industrial_complex_factor = -0.8
+			production_speed_arms_factory_factor = -0.8
+			production_speed_dockyard_factor = -0.4
+			anarchy_drift = 0.01
+			communism_drift = 0.01
+			mlism_drift = 0.01
+			}
+		}
+		Pro_Capitalist = { 
+			
+			available = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			allowed = {
+				OR = { tag = BAD tag = BYN tag = BRN tag = BDB tag = HSE tag = HAN tag = HMB tag = MKB tag = POM tag = ODB tag = OPR tag = RHP tag = SAH tag = SSN tag = SLS tag = SWH tag = WFL tag = WPR tag = WRT tag = THR }
+				NOT = {has_government = anarchy}
+			}
+			cost = 150
+			removal_cost = -1
+			level = 2
+			
+			modifier = {
+			#Focus Bonus 25%
+			consumer_goods_factor = 0.15
+			production_factory_efficiency_gain_factor = 0.1
+			production_speed_industrial_complex_factor = -0.4
+			production_speed_arms_factory_factor = -0.4
+			production_speed_dockyard_factor = -0.2
+			}
+		}
+		Mixed_Economy = {
+			available = {
+				OR = {
+					has_government = mlism
+					has_government = communism
+					has_government = fascism
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			allowed = {
+				OR = { tag = BAD tag = BYN tag = BRN tag = BDB tag = HSE tag = HAN tag = HMB tag = MKB tag = POM tag = ODB tag = OPR tag = RHP tag = SAH tag = SSN tag = SLS tag = SWH tag = WFL tag = WPR tag = WRT tag = THR }
+				NOT = {has_government = anarchy}
+			}
+			cost = 150
+			removal_cost = -1
+			level = 3
+			
+			modifier = {
+			#Focus Bonus 0%
+			consumer_goods_factor = 0.25
+			}
+		}
+		Socialist_Economy = { 
+			available = {
+				OR = {
+					has_government = mlism
+					has_government = communism
+					has_government = neutrality
+				}
+			}
+			allowed = {
+				OR = { tag = BAD tag = BYN tag = BRN tag = BDB tag = HSE tag = HAN tag = HMB tag = MKB tag = POM tag = ODB tag = OPR tag = RHP tag = SAH tag = SSN tag = SLS tag = SWH tag = WFL tag = WPR tag = WRT tag = THR }
+				NOT = {has_government = anarchy}
+			}
+			cost = 150
+			removal_cost = -1
+			level = 4
+			
+			modifier = {
+			#Focus Bonus -25%
+			consumer_goods_factor = 0.35
+			production_factory_efficiency_gain_factor = -0.1
+			production_speed_industrial_complex_factor = 0.4
+			production_speed_arms_factory_factor = 0.4
+			production_speed_dockyard_factor = 0.2
+			}
+		}
+		Totalitarian_Economy = { 
+			available = {
+				OR = {
+					has_government = mlism
+					has_government = communism
+					has_government = neutrality
+				}
+			}
+			allowed = {
+				OR = { tag = BAD tag = BYN tag = BRN tag = BDB tag = HSE tag = HAN tag = HMB tag = MKB tag = POM tag = ODB tag = OPR tag = RHP tag = SAH tag = SSN tag = SLS tag = SWH tag = WFL tag = WPR tag = WRT tag = THR }
+				NOT = {has_government = anarchy}
+			}
+			cost = 150
+			removal_cost = -1
+			level = 5
+			
+			modifier = {
+			#Focus Bonus -50%
+			consumer_goods_factor = 0.55
+			production_factory_efficiency_gain_factor = -0.2
+			production_speed_industrial_complex_factor = 0.8
+			production_speed_arms_factory_factor = 0.8
+			production_speed_dockyard_factor = 0.4
+			democratic_drift = 0.01
+			fascism_drift = 0.01
+			anarchy_drift = 0.01
+			}
+		}
+		Anarchist_Economy = { 
+			
+			available = {
+			always = yes
+			}
+			allowed = {
+				OR = { tag = BAD tag = BYN tag = BRN tag = BDB tag = HSE tag = HAN tag = HMB tag = MKB tag = POM tag = ODB tag = OPR tag = RHP tag = SAH tag = SSN tag = SLS tag = SWH tag = WFL tag = WPR tag = WRT tag = THR }
+				has_government = anarchy
+			}
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+			#Focus Bonus -50%
+			production_factory_efficiency_gain_factor = -0.3
+			production_speed_industrial_complex_factor = 1.2
+			production_speed_arms_factory_factor = 1.2
+			production_speed_dockyard_factor = 0.8
+			}
+		}
+	}
+}

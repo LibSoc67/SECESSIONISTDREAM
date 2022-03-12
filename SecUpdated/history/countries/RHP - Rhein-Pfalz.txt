@@ -134,6 +134,9 @@ set_popularities = {
 		mlism = 12
 	}
 
-add_timed_idea = {
-	
-}
+add_ideas = Pro_Capitalist
+add_ideas = tank_designer_RHP
+add_ideas = naval_manufacturer_RHP
+add_ideas = light_aircraft_manufacturer_RHP
+add_ideas = industrial_concern_RHP
+add_ideas = infantry_equipment_manufacturer_RHP

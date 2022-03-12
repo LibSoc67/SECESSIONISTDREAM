@@ -1,0 +1,13 @@
+
+defined_text = { # Country
+	name = RHP_Test2_Scripted
+#	text = {
+#		trigger = {			
+#		
+#		}
+#		localization_key = 
+#	}
+#	text = {
+#		localization_key = 
+#	}
+}

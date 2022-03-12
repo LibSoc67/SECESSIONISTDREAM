@@ -1,0 +1,57 @@
+Create_Economy = {
+	set_variable = {THIS.Reichsmark = 1}
+	set_variable = {THIS.ReichsmarkUse = 1}
+	set_variable = {THIS.ReichsmarkIncome = 0}
+	set_variable = {THIS.ReichsmarkLoss = 0}
+	#Presets
+	if = {limit = {tag = RHP} set_variable = {THIS.Reichsmark = 3.2}}
+	
+	set_temp_variable = {temp1 = THIS.num_of_civilian_factories_available_for_projects}
+	multiply_temp_variable = {temp1 = 0.1}
+	set_variable = {THIS.ReichsmarkIncome = temp1}
+	
+	set_temp_variable = {temp1 = THIS.num_divisions}
+	multiply_temp_variable = {temp1 = 0.01}
+	set_variable = {THIS.ReichsmarkLoss = temp1}
+	
+	Update_Economy = yes
+}
+Income_Economy = {
+	set_temp_variable = {temp1 = THIS.num_of_civilian_factories_available_for_projects}
+	multiply_temp_variable = {temp1 = 0.1}
+	set_variable = {THIS.ReichsmarkIncome = temp1}
+	add_to_variable = {THIS.Reichsmark = temp1}
+	#log = "[?THIS.num_divisions]"
+	set_temp_variable = {temp1 = THIS.num_divisions}
+	multiply_temp_variable = {temp1 = 0.01}
+	set_variable = {THIS.ReichsmarkLoss = temp1}
+	subtract_from_variable = {THIS.Reichsmark = temp1}
+}
+Update_Economy = {
+	set_temp_variable = {temp1 = THIS.Reichsmark}
+	if = {
+	limit = {has_idea = Heavily_Capitalist}
+	multiply_temp_variable = {temp1 = 0.1}
+	}
+	if = {
+	limit = {has_idea = Pro_Capitalist}
+	multiply_temp_variable = {temp1 = 0.25}
+	}
+	if = {
+	limit = {has_idea = Mixed_Economy}
+	multiply_temp_variable = {temp1 = 0.45}
+	}
+	if = {
+	limit = {has_idea = Socialist_Economy}
+	multiply_temp_variable = {temp1 = 0.75}
+	}
+	if = {
+	limit = {has_idea = Totalitarian_Economy}
+	multiply_temp_variable = {temp1 = 1}
+	}
+	if = {
+	limit = {has_idea = Anarchist_Economy}
+	multiply_temp_variable = {temp1 = 0}
+	}
+	set_variable = {THIS.ReichsmarkUse = temp1}
+}

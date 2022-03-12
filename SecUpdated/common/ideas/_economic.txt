@@ -7,6 +7,7 @@ ideas = {
 			picture = SPR_collectivized_society		
 			
 			allowed = {
+					NOT = {OR = { tag = BAD tag = BYN tag = BRN tag = BDB tag = HSE tag = HAN tag = HMB tag = MKB tag = POM tag = ODB tag = OPR tag = RHP tag = SAH tag = SSN tag = SLS tag = SWH tag = WFL tag = WPR tag = WRT tag = THR }}
 					has_government = anarchy
 					}
 			removal_cost = -1
@@ -34,6 +35,7 @@ ideas = {
 			picture = SPR_collectivized_society		
 			
 			allowed = {
+					NOT = {OR = { tag = BAD tag = BYN tag = BRN tag = BDB tag = HSE tag = HAN tag = HMB tag = MKB tag = POM tag = ODB tag = OPR tag = RHP tag = SAH tag = SSN tag = SLS tag = SWH tag = WFL tag = WPR tag = WRT tag = THR }}
 					has_government = anarchy
 					}
 			removal_cost = -1
@@ -55,6 +57,7 @@ ideas = {
 			picture = SPR_collectivized_society		
 			
 			allowed = {
+					NOT = {OR = { tag = BAD tag = BYN tag = BRN tag = BDB tag = HSE tag = HAN tag = HMB tag = MKB tag = POM tag = ODB tag = OPR tag = RHP tag = SAH tag = SSN tag = SLS tag = SWH tag = WFL tag = WPR tag = WRT tag = THR }}
 					has_government = anarchy
 					}
 			removal_cost = -1
@@ -149,6 +152,7 @@ ideas = {
 		civilian_economy = {
 			allowed = {
 					NOT = {has_government = anarchy}
+					NOT = {OR = { tag = BAD tag = BYN tag = BRN tag = BDB tag = HSE tag = HAN tag = HMB tag = MKB tag = POM tag = ODB tag = OPR tag = RHP tag = SAH tag = SSN tag = SLS tag = SWH tag = WFL tag = WPR tag = WRT tag = THR }}
 					}
 		
 			cost = 150
@@ -171,6 +175,7 @@ ideas = {
 		
 		low_economic_mobilisation = {
 			allowed = {
+					NOT = {OR = { tag = BAD tag = BYN tag = BRN tag = BDB tag = HSE tag = HAN tag = HMB tag = MKB tag = POM tag = ODB tag = OPR tag = RHP tag = SAH tag = SSN tag = SLS tag = SWH tag = WFL tag = WPR tag = WRT tag = THR }}
 					NOT = {has_government = anarchy}
 					}
 			available = {
@@ -250,6 +255,7 @@ ideas = {
 		
 		partial_economic_mobilisation = {
 			allowed = {
+					NOT = {OR = { tag = BAD tag = BYN tag = BRN tag = BDB tag = HSE tag = HAN tag = HMB tag = MKB tag = POM tag = ODB tag = OPR tag = RHP tag = SAH tag = SSN tag = SLS tag = SWH tag = WFL tag = WPR tag = WRT tag = THR }}
 					NOT = {has_government = anarchy}
 					}
 			available = {
@@ -324,6 +330,7 @@ ideas = {
 		war_economy = {
 			
 			allowed = {
+					NOT = {OR = { tag = BAD tag = BYN tag = BRN tag = BDB tag = HSE tag = HAN tag = HMB tag = MKB tag = POM tag = ODB tag = OPR tag = RHP tag = SAH tag = SSN tag = SLS tag = SWH tag = WFL tag = WPR tag = WRT tag = THR }}
 					NOT = {has_government = anarchy}
 					}
 			available = {
@@ -416,6 +423,7 @@ ideas = {
 		
 		tot_economic_mobilisation = {
 			allowed = {
+					NOT = {OR = { tag = BAD tag = BYN tag = BRN tag = BDB tag = HSE tag = HAN tag = HMB tag = MKB tag = POM tag = ODB tag = OPR tag = RHP tag = SAH tag = SSN tag = SLS tag = SWH tag = WFL tag = WPR tag = WRT tag = THR }}
 					NOT = {has_government = anarchy}
 					}
 			

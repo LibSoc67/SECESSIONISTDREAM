@@ -135,6 +135,7 @@ set_popularities = {
 		mlism = 0
 	}
 
+add_ideas = Pro_Capitalist
 add_timed_idea = {
 	
 }

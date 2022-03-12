@@ -1,0 +1,228 @@
+ideas = {
+	#Upgradable Tank Manufacturer (use tank_designer_germany = {swap_country_leader_traits = {remove = tank_manufacturer_1 add = tank_manufacturer_2}})
+	tank_manufacturer = { 
+	
+		designer = yes
+		
+		tank_designer_RHP = {
+
+			picture = generic_tank_manufacturer_1
+			
+			allowed = {
+				tag = RHP
+			}
+			
+			cost = 0
+			removal_cost = -1
+			
+			research_bonus = {
+				armor = 15
+			}
+			traits = { tank_manufacturer_1 }
+		}
+	}
+	
+	naval_manufacturer = { 
+	#Upgradable Naval Manufacturer
+	
+		designer = yes
+	
+		naval_manufacturer_RHP = {
+			
+			picture = generic_naval_manufacturer_1
+
+			allowed = {
+				tag = RHP
+			}
+			
+			cost = 0
+			removal_cost = -1
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { naval_manufacturer_1 }
+		}
+	}
+
+	aircraft_manufacturer = { 
+	#Upgradable Air Manufacturer
+	
+		designer = yes
+	
+		light_aircraft_manufacturer_RHP = {
+			
+			picture = generic_air_manufacturer_1
+
+			allowed = {
+				tag = RHP
+			}
+			
+			cost = 0
+			removal_cost = -1
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer_1 }
+		}
+		
+		medium_aircraft_manufacturer_RHP = {
+			
+			picture = generic_air_manufacturer_3
+
+			allowed = {
+				tag = RHP
+			}
+			
+			cost = 0
+			removal_cost = -1
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer_1 }
+		}
+		
+		heavy_aircraft_manufacturer_RHP = {
+
+			picture = generic_air_manufacturer_2
+			
+			allowed = {
+				tag = RHP
+			}
+			
+			cost = 0
+			removal_cost = -1
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer_1 }
+		}
+		
+		naval_aircraft_manufacturer_RHP = {
+			
+			picture = generic_naval_manufacturer_2
+
+			allowed = {
+				tag = RHP
+			}
+			
+			cost = 0
+			removal_cost = -1
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { naval_aircraft_manufacturer_1 }
+		}
+	}
+
+	industrial_concern = {
+	#Upgradable Industrial Idea
+	
+		industrial_concern_RHP = {
+			
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				tag = RHP
+			}
+			
+			cost = 0
+			removal_cost = -1
+			if = {
+			limit = {check_variable = {THIS.Reichsmark > 0}}
+			research_bonus = {
+				industry = 0.15
+			}
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		electronics_concern_RHP = {
+			
+			picture = generic_electronics_concern_1
+
+			allowed = {
+				tag = RHP
+			}
+			
+			cost = 0
+			removal_cost = -1
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}
+	}
+
+	materiel_manufacturer = {
+	#Upgradable Material Manufacturer
+	
+		designer = yes
+	
+		motorized_equipment_manufacturer_RHP = {
+			
+			picture = generic_motorized_equipment_manufacturer_3
+
+			allowed = {
+				tag = RHP
+			}
+			
+			cost = 0
+			removal_cost = -1
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+		
+		infantry_equipment_manufacturer_RHP = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+				tag = RHP
+			}
+			
+			cost = 0
+			removal_cost = -1
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+		
+		artillery_manufacturer_RHP = {
+			
+			picture = generic_artillery_manufacturer_2
+
+			allowed = {
+				tag = RHP
+			}
+			
+			cost = 0
+			removal_cost = -1
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+		}
+	}
+}
